@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ADDRESSED_COPY_INITIALIZATION_AND_IDENTITY_PRESERVED",
+  "before": {
+    "Returned": 305419896,
+    "Argument": 305419896,
+    "Slot": -7,
+    "Error": null
+  },
+  "after": {
+    "Returned": 305419896,
+    "Argument": 305419896,
+    "Slot": -7,
+    "Error": null
+  },
+  "initializer_retained": true,
+  "address_identity_retained": true,
+  "core_assembly_sha256": "18e25d76f4cbb75c362342b22891581a3b1da8fa83c1ebc1756bd919a158cbc5",
+  "scope": "Independent ISIL fixture copies an input into distinct local storage, reads and mutates that storage through its address, and requires the original input to remain unchanged. No application metadata or native code is involved; actual SetAge input provenance is tested separately."
+}

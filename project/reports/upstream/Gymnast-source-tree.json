@@ -1,0 +1,307 @@
+{
+  "sha": "539d6e7833fb22b0e40bd9db1bf37b3407a6a216",
+  "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/539d6e7833fb22b0e40bd9db1bf37b3407a6a216",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+      "size": 66,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/dfe0770424b2a19faf507a501ebfc23be8f54e7b"
+    },
+    {
+      "path": "Addon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "25a14a06516539f1f1b83a7e5e504e3d8dcfacc9",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/25a14a06516539f1f1b83a7e5e504e3d8dcfacc9"
+    },
+    {
+      "path": "Addon/blender",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b385e594287a5dfb9927468158b8ed1ac151712d",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/b385e594287a5dfb9927468158b8ed1ac151712d"
+    },
+    {
+      "path": "Addon/blender/gymnast-tool-suite",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "027eadded7ae8af6dd3cb2e00d6961f561b8919c",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/027eadded7ae8af6dd3cb2e00d6961f561b8919c"
+    },
+    {
+      "path": "Addon/blender/gymnast-tool-suite/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6ab6da1317ddc76065daf9b4b22e37b95afb39a",
+      "size": 1679,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/a6ab6da1317ddc76065daf9b4b22e37b95afb39a"
+    },
+    {
+      "path": "Addon/blender/gymnast-tool-suite/animationPanel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "042baf77bcdeef95d64c5be0a40825ad7eb464c2",
+      "size": 46172,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/042baf77bcdeef95d64c5be0a40825ad7eb464c2"
+    },
+    {
+      "path": "Addon/blender/gymnast-tool-suite/modelPanel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8496a1ca41eac94be03f2188d56abe08d95034c",
+      "size": 83054,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/e8496a1ca41eac94be03f2188d56abe08d95034c"
+    },
+    {
+      "path": "Addon/blender/gymnast-tool-suite/moveEditor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a81f708797021d046f57795398c73426374dab9b",
+      "size": 160076,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/a81f708797021d046f57795398c73426374dab9b"
+    },
+    {
+      "path": "Addon/cascadeur",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f78233ba747119f95149b67dbae1fc744410503f",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/f78233ba747119f95149b67dbae1fc744410503f"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ea81c982cb7fd0819b18e692655fee3abafc1c44",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/ea81c982cb7fd0819b18e692655fee3abafc1c44"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite/capsule.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "832b08b8c2958ed8c1fa807a95a28c273051cadf",
+      "size": 99651,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/832b08b8c2958ed8c1fa807a95a28c273051cadf"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite/capsule_ghost.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb7bffe7654579962681e05640dc93a72ab00668",
+      "size": 494,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/bb7bffe7654579962681e05640dc93a72ab00668"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite/shadow_fight_2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23b0db47552d4130ccafc25efebdc270d530c810",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/23b0db47552d4130ccafc25efebdc270d530c810"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite/shadow_fight_2/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite/shadow_fight_2/export_bin_sf2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ec45ba037140bb42c1d219606ab44ba73fa31c3",
+      "size": 6574,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/8ec45ba037140bb42c1d219606ab44ba73fa31c3"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite/shadow_fight_2/import_bin_sf2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a32c77160d3b7b9ec6c45e6c89cda670c90fc385",
+      "size": 36395,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/a32c77160d3b7b9ec6c45e6c89cda670c90fc385"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite/vector",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a353f9298ac770c94d87b621b3e9c0b66ccf3878",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/a353f9298ac770c94d87b621b3e9c0b66ccf3878"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite/vector/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite/vector/export_bin_vector.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4d0388dda3444e5b77b022a8b883289417b5d77",
+      "size": 6107,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/a4d0388dda3444e5b77b022a8b883289417b5d77"
+    },
+    {
+      "path": "Addon/cascadeur/gymnast_tool_suite/vector/import_bin_vector.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8a3c4ae2e5fbef815df17f04556bc0b0b71ed9a",
+      "size": 35365,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/a8a3c4ae2e5fbef815df17f04556bc0b0b71ed9a"
+    },
+    {
+      "path": "Blender Scenes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c98a43193956cf1adfebd971d03ac647859bd5d3",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/c98a43193956cf1adfebd971d03ac647859bd5d3"
+    },
+    {
+      "path": "Blender Scenes/EmptyScene.blend",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8e02061cb7879b2138e9cd182abacd134ac906a",
+      "size": 1061183,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/c8e02061cb7879b2138e9cd182abacd134ac906a"
+    },
+    {
+      "path": "Blender Scenes/Shadow Fight 2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "104e7f70eb9860f19066ade94f4ca4438051aa36",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/104e7f70eb9860f19066ade94f4ca4438051aa36"
+    },
+    {
+      "path": "Blender Scenes/Shadow Fight 2/SF2Rig_Armature.blend",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "236f539540c4fc6531f1d2609da8f5e048ad9203",
+      "size": 6442745,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/236f539540c4fc6531f1d2609da8f5e048ad9203"
+    },
+    {
+      "path": "Blender Scenes/Shadow Fight 2/SF2Rig_ArmatureIK.blend",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf778c74b6ba2bd337ca35b17c408174374a1ddb",
+      "size": 6607046,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/bf778c74b6ba2bd337ca35b17c408174374a1ddb"
+    },
+    {
+      "path": "Blender Scenes/Shadow Fight 2/SF2Rig_NoArmature.blend",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3f6a42e12083f893b3ff9509dfdbe22fb2ed0c3",
+      "size": 6344202,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/e3f6a42e12083f893b3ff9509dfdbe22fb2ed0c3"
+    },
+    {
+      "path": "Blender Scenes/Vector",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82c0ea786a0e6158cb5fbbef806e442c468a015a",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/82c0ea786a0e6158cb5fbbef806e442c468a015a"
+    },
+    {
+      "path": "Blender Scenes/Vector/VectorRig_Armature.blend",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fae35af2366848caa4ba6fbe163b27234dee9ae9",
+      "size": 4765072,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/fae35af2366848caa4ba6fbe163b27234dee9ae9"
+    },
+    {
+      "path": "Blender Scenes/Vector/VectorRig_ArmatureIK.blend",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa39aecaa315b8ab526f3f47bcae80241ee05a26",
+      "size": 4933919,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/fa39aecaa315b8ab526f3f47bcae80241ee05a26"
+    },
+    {
+      "path": "Blender Scenes/Vector/VectorRig_NoArmature.blend",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "072983aef56aff04856ea1e3c21ae97860fb34a1",
+      "size": 4692085,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/072983aef56aff04856ea1e3c21ae97860fb34a1"
+    },
+    {
+      "path": "Cascadeur Scenes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad5f7f24bf9a00d8b616e8975469da35395d4017",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/ad5f7f24bf9a00d8b616e8975469da35395d4017"
+    },
+    {
+      "path": "Cascadeur Scenes/ShadowFight2Rig.casc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4767502c516e4b408890a500a52087a3bcbde64e",
+      "size": 4482146,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/4767502c516e4b408890a500a52087a3bcbde64e"
+    },
+    {
+      "path": "Cascadeur Scenes/VectorRig.casc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60044416491430f632b7e301e58e7324dd72e33c",
+      "size": 4087802,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/60044416491430f632b7e301e58e7324dd72e33c"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e62ec04cdeece724caeeeeaeb6ae1f6af1bb6b9a",
+      "size": 35129,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/e62ec04cdeece724caeeeeaeb6ae1f6af1bb6b9a"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8b646ace9f7440a6310fe109837792a57809edf",
+      "size": 6924,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/c8b646ace9f7440a6310fe109837792a57809edf"
+    },
+    {
+      "path": "Sample Animation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "345d7e22a2b2dfde1075731853bd00451b05cd0b",
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/trees/345d7e22a2b2dfde1075731853bd00451b05cd0b"
+    },
+    {
+      "path": "Sample Animation/Double_Punch.blend",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1722d747c59b48f1fa4719b3a2b4470bc3d20bb",
+      "size": 6085092,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/a1722d747c59b48f1fa4719b3a2b4470bc3d20bb"
+    },
+    {
+      "path": "Sample Animation/Hook_Grab.blend",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3b249bd1782118cbf2452439d677a69effc2c59",
+      "size": 6108699,
+      "url": "https://api.github.com/repos/FlipThoseTitle/Gymnast-Tool-Suite/git/blobs/a3b249bd1782118cbf2452439d677a69effc2c59"
+    }
+  ],
+  "truncated": false
+}

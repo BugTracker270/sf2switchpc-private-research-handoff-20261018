@@ -1,0 +1,83 @@
+{
+  "status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+  "recovery_run": "nso-attributes-v14",
+  "assemblies": [
+    {
+      "restore_exit_code": 0,
+      "folder": "F:\\SF2SwitchPC\\analysis\\il2cpp\\source-build-nso-attributes-v14\\Assembly-CSharp-firstpass",
+      "assembly": "Assembly-CSharp-firstpass",
+      "export_exit_code": 0,
+      "build_exit_code": 1,
+      "source_files": [
+        {
+          "path": "analysis\\il2cpp\\source-build-nso-attributes-v14\\Assembly-CSharp-firstpass\\Assembly-CSharp-firstpass.decompiled.cs",
+          "bytes": 13787843,
+          "sha256": "6ef5278e3eb316a01e6bcf2374c15120a5ddb611950152e63f71b3e78da659f6"
+        }
+      ],
+      "unique_compiler_diagnostic_lines": 4332,
+      "compiler_error_line_occurrences": 8664,
+      "error_codes": {
+        "CS1519": 518,
+        "CS1525": 1989,
+        "CS1001": 852,
+        "CS1514": 8,
+        "CS1513": 60,
+        "CS1014": 40,
+        "CS1002": 267,
+        "CS1031": 13,
+        "CS1026": 63,
+        "CS8124": 3,
+        "CS0116": 48,
+        "CS1022": 17,
+        "CS8803": 1,
+        "CS0106": 177,
+        "CS1056": 202,
+        "CS1003": 48,
+        "CS1013": 6,
+        "CS8641": 20
+      },
+      "build_log": "logs\\source-build-nso-attributes-v14-Assembly-CSharp-firstpass.log"
+    },
+    {
+      "restore_exit_code": 0,
+      "folder": "F:\\SF2SwitchPC\\analysis\\il2cpp\\source-build-nso-attributes-v14\\Assembly-CSharp",
+      "assembly": "Assembly-CSharp",
+      "export_exit_code": 0,
+      "build_exit_code": 1,
+      "source_files": [
+        {
+          "path": "analysis\\il2cpp\\source-build-nso-attributes-v14\\Assembly-CSharp\\Assembly-CSharp.decompiled.cs",
+          "bytes": 24242552,
+          "sha256": "d93f4edcf20e9f43dcbb1a26f3036435729963b09e60ffe7c39e9b4ebcf1af3e"
+        }
+      ],
+      "unique_compiler_diagnostic_lines": 2143,
+      "compiler_error_line_occurrences": 4286,
+      "error_codes": {
+        "CS1519": 82,
+        "CS1056": 202,
+        "CS1525": 491,
+        "CS1002": 274,
+        "CS1003": 56,
+        "CS1026": 55,
+        "CS1513": 90,
+        "CS1001": 115,
+        "CS1514": 22,
+        "CS1014": 198,
+        "CS1013": 16,
+        "CS1031": 18,
+        "CS8124": 4,
+        "CS0116": 98,
+        "CS8803": 1,
+        "CS1022": 81,
+        "CS0106": 333,
+        "CS1526": 4,
+        "CS8641": 3
+      },
+      "build_log": "logs\\source-build-nso-attributes-v14-Assembly-CSharp.log"
+    }
+  ],
+  "whole_game_source_ready": false,
+  "scope": "Diagnostic .NET 10 compiler check of complete game-assembly C# exports against recovered dependency metadata. This is not a Unity build, portable game, original-runtime validation or semantic completeness proof. Compiler diagnostic lines are deduplicated across repeated build summaries; counts are not independent root causes or a completeness percentage. Successful compilation alone would not clear helper/placeholder/ABI/behavior gates."
+}

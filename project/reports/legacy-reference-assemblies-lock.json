@@ -1,0 +1,541 @@
+{
+  "status": "PASS_OFFICIAL_CATALOG_PACKAGE_SHA512",
+  "package": "microsoft.netframework.referenceassemblies.net35",
+  "version": "1.0.3",
+  "source": "https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net35/1.0.3/microsoft.netframework.referenceassemblies.net35.1.0.3.nupkg",
+  "registration": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netframework.referenceassemblies.net35/1.0.3.json",
+  "official_catalog": "https://api.nuget.org/v3/catalog0/data/2022.08.19.22.03.13/microsoft.netframework.referenceassemblies.net35.1.0.3.json",
+  "package_sha512_base64": "l0U4pfjnh80q9nnMSy6h9OaaLt9289Qo2lOzYaoNXwz4BBUgx1FeQA/Bbz3hc1+CUvDpziG77O8i1DZ6bXIK+A==",
+  "package_sha256": "b16156111a88670d91a757fbd465fcb4856e034b1a4d523ae2c41a470f3578f9",
+  "bytes": 6852581,
+  "files": [
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Accessibility.dll",
+      "bytes": 20904,
+      "sha256": "0bcc1e406e4e98ac1501dfabec207e7fe97596c28467a9bd0b3c3d2ead395f65"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\AspNetMMCExt.dll",
+      "bytes": 378792,
+      "sha256": "3668a90d13e37f496fda5384416103e3b2bdf9cbaf748ca7c10fc1f2802b6bbe"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\cscompmgd.dll",
+      "bytes": 16296,
+      "sha256": "da4b68d8ae136240ab66c1212ee2313ab466e02e2c6b1a8e0a8ef55e9bcf6b36"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\CustomMarshalers.dll",
+      "bytes": 31152,
+      "sha256": "994eebb72e6f1d328eb6aebd6e3c5f213c3c1334433480ba5ddfbf6e4db4e38a"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\IEExecRemote.dll",
+      "bytes": 16304,
+      "sha256": "6d8d5c5278595ba80b2f6c09bb0b7ce9031493221b786c558ed41407da121d08"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\IEHost.dll",
+      "bytes": 34736,
+      "sha256": "be579003c2ec14137e0747ded1d1a17d0afb7852cad5c628d0111c184f077687"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\IIEHost.dll",
+      "bytes": 16296,
+      "sha256": "9e7eac3acbed9209a1ebd961ef02a50a7fe8bbbb87d3448c63c6e86cddb03cb2"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\ISymWrapper.dll",
+      "bytes": 39336,
+      "sha256": "833d7313566c879faad9eb23eb816000465673964abe45c58741d282d882fbfe"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Conversion.v3.5.dll",
+      "bytes": 38800,
+      "sha256": "c3781b7c8a7b835a5e2f1cc064f80b692e68bcd4724dc4b0bcc19ffd6a1db77a"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Engine.dll",
+      "bytes": 100264,
+      "sha256": "e7163452886d45bb7c85cc49299eed1140cc8a5314658f3d7daf44cf0d5f68b4"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Framework.dll",
+      "bytes": 38824,
+      "sha256": "3d039555559da5c10caafaca1c5f857a4540f332b9323a9b2338bef9bb113b14"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Tasks.dll",
+      "bytes": 219056,
+      "sha256": "4229079be3ecc89be70f5469dda478c386a007d585095006d45b13644f721309"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Utilities.dll",
+      "bytes": 42928,
+      "sha256": "373d8c0a02669f62c4fb1a94b9e04dfc65ed94d65124cf889cb6f405cbdf205a"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Utilities.v3.5.dll",
+      "bytes": 47016,
+      "sha256": "c3486655225a3815111e9acf93d504d8e8831cc8ff8be7532ad2096e0dc71081"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.JScript.dll",
+      "bytes": 128944,
+      "sha256": "db721a8e8806f40fdd80193c9385684afb2cfc84663f991555a2cdeb2227094c"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualBasic.Compatibility.Data.dll",
+      "bytes": 55208,
+      "sha256": "bfa8533fd49dbd8f415c59fd83e6c8eff9dbf17611c32a4e0b08a7903f023e46"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualBasic.Compatibility.dll",
+      "bytes": 173992,
+      "sha256": "e87ae253470790741846320e2da285317756cb747cf4c302137450e2c9e9fa3c"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualBasic.dll",
+      "bytes": 145328,
+      "sha256": "556d16337695d6ee58ccbc53cd1e03c0f8127109c094d3e88a79b12d6362d8a8"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualBasic.Vsa.dll",
+      "bytes": 30632,
+      "sha256": "3ee3bc04f308e611df438704b0823c9e71e7adcdbfd76b5fef57c58cade91e0a"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualC.dll",
+      "bytes": 15784,
+      "sha256": "a6ff13b02c3b97b76f248ba6736e5e4b87ba9b65f0a436f930b7564e56b36cd2"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualC.STLCLR.dll",
+      "bytes": 33704,
+      "sha256": "6fecef7716abd85f819e9c3e12c09ab57c86eba32828984ce1980eb7d2589f75"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Vsa.dll",
+      "bytes": 38832,
+      "sha256": "6662d1c71d10cc705105bf26cd42110c7c93be57551ad6c52a9414631e27c962"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Vsa.Vb.CodeDOMProcessor.dll",
+      "bytes": 16808,
+      "sha256": "5b1775e41d50597e65e20889edc58e89761dc09d325b42a95efe11985e6c71fd"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft_VsaVb.dll",
+      "bytes": 17320,
+      "sha256": "f11cf52bc50ded075f3ad527a6f675af06715c7ccef140b16a7b3e66374e42e6"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\mscorlib.dll",
+      "bytes": 1800104,
+      "sha256": "881b727119658de055dd21dedce18c0df6c7671b4d56adee0a26b59fd38add79"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationBuildTasks.dll",
+      "bytes": 71568,
+      "sha256": "a6eb5bbf628847e5b110bb863c6fc306cb892bc7479e5d45ca98a15eb109fe35"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationCore.dll",
+      "bytes": 755624,
+      "sha256": "48827a44aefe48fb835c16384b1f933e30797f2e105eda4f8fd1ede79e0142b8"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationFramework.Aero.dll",
+      "bytes": 133032,
+      "sha256": "3005d441784a53eb5b0e9497cae97a88fdbbe70dee6d77683d018b43b47bb7d0"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationFramework.Classic.dll",
+      "bytes": 116648,
+      "sha256": "e6535f37e2731bb7b013e3b45ac7d5ed0696b9867367af56effb7d0d06515880"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationFramework.dll",
+      "bytes": 645032,
+      "sha256": "b56a1de5057260aeba66e5d975045bd197ad9ea15fca6b1ecd836ce917ae37fe"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationFramework.Luna.dll",
+      "bytes": 321456,
+      "sha256": "7f0a31644d2703ec8c021cc004bf828d714dc7c6d6e44787cdde89bfc373dd5f"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationFramework.Royale.dll",
+      "bytes": 124840,
+      "sha256": "198ebd43c11c5cfdd572808494f2b1a0c701d755198628ae71ac1385928e5b87"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\ReachFramework.dll",
+      "bytes": 83888,
+      "sha256": "68d1b90262842bb716f9eb65898ef8463a93bb9a27d8d5f54539eca1058a522b"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\sysglobl.dll",
+      "bytes": 38824,
+      "sha256": "b88bbc14fc36939a8283fc168aa21f284433fb05da202c0cad3edfcf3752a31f"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.AddIn.Contract.dll",
+      "bytes": 38800,
+      "sha256": "04cbc8dd6f45f90d05e9e5b75316cad3b15ce22cc3aed64335493ed1a49cd776"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.AddIn.dll",
+      "bytes": 46992,
+      "sha256": "705d98588342d2c08fad39102e3ee137d1fa2d7d75d59e3f54337a4e2ba18301"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.ComponentModel.DataAnnotations.dll",
+      "bytes": 38824,
+      "sha256": "2b3abb1427519a687e4b85c8d37069eb2113b552b453fe154e8dd9c247f75c5f"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Configuration.dll",
+      "bytes": 96168,
+      "sha256": "1635ccf4054391056bcb490f9412232799d4b8fc37323e98f3211f907c25372d"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Configuration.Install.dll",
+      "bytes": 47024,
+      "sha256": "b1139f624de1a4d3b000f7788ecd215aff8dcf1c678653acd30268b2bfa66831"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Core.dll",
+      "bytes": 157608,
+      "sha256": "21281280ecd22adbe03966a0f0cc764f41c5d139f4fef41c317865ac0b773dd7"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.DataSetExtensions.dll",
+      "bytes": 30640,
+      "sha256": "2bd2eb39b472817a9309e6abe57be614e0a4fad99b86fd1e18219caafb56f1f4"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.dll",
+      "bytes": 566184,
+      "sha256": "b6ef0492c27da04cf20bc547a6c02a6ee0052a162b2bd2cf793215baf11e9840"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Entity.Design.dll",
+      "bytes": 42920,
+      "sha256": "c3a8d54226aaa8d98f5bb1cda4668db64147fb317cd4df3e0d6e21115549967f"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Entity.dll",
+      "bytes": 608168,
+      "sha256": "99fa2b57ec627114f64eb6a3b954def9788f0aa9e64a925709a39ad1350ec06e"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Linq.dll",
+      "bytes": 87952,
+      "sha256": "50201cfeb763322eec2951627f829c042e8fd09bd6f9df7deeadf9fd858aa251"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.OracleClient.dll",
+      "bytes": 147880,
+      "sha256": "dfcd1e7cfebf551ac897b02f69a20ef070e704001b8b4c0175a06471f20a56a6"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Services.Client.dll",
+      "bytes": 75688,
+      "sha256": "30f93b032538d7544418b3f81f839a1ffa70f3286a53b3ce822693bb865a06aa"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Services.Design.dll",
+      "bytes": 38824,
+      "sha256": "9d925e7996ef989437cb7e3f5a44e8581be766293bb8c01aa75d897ad0739648"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Services.dll",
+      "bytes": 133032,
+      "sha256": "08e39aa2050a6a86f4356b773282e3a8fe1b837110d7d796fa1da714b0068f03"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.SqlXml.dll",
+      "bytes": 71568,
+      "sha256": "ed81a13b429e824a02fcebe2f66d5f99655ecd69767913dad43218cc3e0b7cad"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Deployment.dll",
+      "bytes": 403368,
+      "sha256": "8fa1384426eb0aae4491d90f603e2921ccbeea350b8f8c6e0218dbd5b91c803f"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Design.dll",
+      "bytes": 1357744,
+      "sha256": "5a20326a27df33ecb69994bade7097985e62d55105a54b900ad3ad7c70df1eb2"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.DirectoryServices.AccountManagement.dll",
+      "bytes": 63376,
+      "sha256": "0536843204408eba164f9c404616c1d7fb31f403f64e6cbdaa4aad83c5b1d6a4"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.DirectoryServices.dll",
+      "bytes": 120744,
+      "sha256": "ae9af63bb58944261158043e19a10205f7f7a572cc5d8558e66370f9d60b0c0f"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.DirectoryServices.Protocols.dll",
+      "bytes": 71592,
+      "sha256": "b7b45872f7a58beaa8cd0770dccbe6eb5b8e0f0096d3a329f4d045dca9b45d3e"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.dll",
+      "bytes": 677800,
+      "sha256": "2a45804364af991433b1c2afbf49c515f41dfdb355cc454f5869d83cf476a1c1"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Drawing.Design.dll",
+      "bytes": 38824,
+      "sha256": "47d6803447e98435aa78c24dadee31b93cbc6ad740c4542be76a1bc67d27b9a8"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Drawing.dll",
+      "bytes": 194472,
+      "sha256": "2c62c28c704017ae1d1cf3046854224f182e85e16eb12355697fa747cd1e0f37"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.EnterpriseServices.dll",
+      "bytes": 79784,
+      "sha256": "0b85c211d9ec581529081d10100737491fb7fa9e12ed0d29117271a3d2abb8fe"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.EnterpriseServices.Thunk.dll",
+      "bytes": 58256,
+      "sha256": "f9c2908a904b1ed6127210e6352a697f6eebbf7d7f507f570ff45d61e62b69bf"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.EnterpriseServices.Wrapper.dll",
+      "bytes": 123816,
+      "sha256": "4bbccf3060f6ae274798f7ff101691104337971c633b7c7dd7a5345c3cc7022a"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.IdentityModel.dll",
+      "bytes": 112528,
+      "sha256": "74e6879fdd8bc789be70603774f5aea1762667783f254688435811929ebacad8"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.IdentityModel.Selectors.dll",
+      "bytes": 67496,
+      "sha256": "dd998ba263e8e6cdb719511ed61e7766df87eac77de27145785087b353b49348"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.IO.Log.dll",
+      "bytes": 47024,
+      "sha256": "dd9f6966eaca3d13fc6695af686c52841b36e628207b90f6cbc13713e259ffaa"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Management.dll",
+      "bytes": 67472,
+      "sha256": "eac2a7e0978a458cd0566bde4623d45d7e8f7347dd4909805a0001cf735b7c4d"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Management.Instrumentation.dll",
+      "bytes": 34728,
+      "sha256": "a0019ac88fed791d37fc96d3aaa2867c0e7034dbe34b265053cf8f61dfce3865"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Messaging.dll",
+      "bytes": 128912,
+      "sha256": "320e64f930fd47e1c193626f783372481d17ea334ed6a7437a2dfd1d78bba597"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Net.dll",
+      "bytes": 63376,
+      "sha256": "c01d2ab70b3ce06065235a203c5c1f5eaac38ca26742a506cc7860f1674b7f45"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Printing.dll",
+      "bytes": 92080,
+      "sha256": "730d958ec7d7d278fd42137f278fbb8984c6cc0f22de76770340717cb9300d95"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Runtime.Remoting.dll",
+      "bytes": 59304,
+      "sha256": "a8e3f0fba7fe62b2b06850edbd0985d48605b3dc3fc94c06b7d343bceb463b0c"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Runtime.Serialization.dll",
+      "bytes": 133008,
+      "sha256": "ef962986e3facce8074454d4818e68782d3d1e2afe7bc2c913a0ce8fb0eea4f5"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Runtime.Serialization.Formatters.Soap.dll",
+      "bytes": 34736,
+      "sha256": "dd1da60e8bf86d64e82d615502a68f65ba2d4314a71484579decc33d94881a91"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Security.dll",
+      "bytes": 71568,
+      "sha256": "e31f6afe0a9ff7956064a6cce285287b2e08efa36f39f62319a4ace067d4255f"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.ServiceModel.dll",
+      "bytes": 812968,
+      "sha256": "b556a4a182a4d19a2b3e0c0c9a6575981f649679dfd9d9a8d8db99d1c4e78082"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.ServiceModel.Web.dll",
+      "bytes": 124848,
+      "sha256": "2c1922ba097cf804a4e98f973700bc0380fd6a877a4518c71ebd8bb9dabf169f"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.ServiceProcess.dll",
+      "bytes": 63400,
+      "sha256": "4321f5d5b7e8ef60ecc50bda2e2b1a4fed5645831cfefa69148198961de1f3c1"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Speech.dll",
+      "bytes": 280488,
+      "sha256": "2a8301daaa033319cd4b7deadebf4417aead5b7d72b6112f05cf2dd4c03ae8d6"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Transactions.dll",
+      "bytes": 38824,
+      "sha256": "9db9377486999148420968a71f3cf82dabd0baf77cd94127cc86a151f8024629"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Abstractions.dll",
+      "bytes": 59304,
+      "sha256": "5812d6e1fc459c4c44fdaab3bf8142ffec2b6b9f417ffe536b5a4125ef2a9aae"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.dll",
+      "bytes": 1652656,
+      "sha256": "2f7346ce9a39fb40b7530ae545cb2fcdd4d66f6c7505fd04b74f6ae16d61e124"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.DynamicData.Design.dll",
+      "bytes": 26536,
+      "sha256": "58ce4f6963d35796e3bf816d165232fe7fce47d622b2eb0dfa1a5f3efeb8b729"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.DynamicData.dll",
+      "bytes": 128912,
+      "sha256": "028584fd7e24881f8991620211bb88a61805514bacf2bd61255dcd2a99b6e0d1"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Entity.Design.dll",
+      "bytes": 51088,
+      "sha256": "cc369f2bc7e5f2c38953796e2a10979ec579adacf29ad7179dd589ddcddca38d"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Entity.dll",
+      "bytes": 59312,
+      "sha256": "bb26b6f130e6e822faf5730c2bcb9f2dbbafd6b847c75eee2e86c2e0b97fdceb"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Extensions.Design.dll",
+      "bytes": 87976,
+      "sha256": "178b06a07420bf9ee0ff7baaa1f16eb5db23957def0fa971b068101621790e8f"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Extensions.dll",
+      "bytes": 747432,
+      "sha256": "b843eca664f6c473ba351fc500aed52e784772b5979f0b85b96672a3febf0e55"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Mobile.dll",
+      "bytes": 214952,
+      "sha256": "8f3360d9febee6bff0dbfeee800420ade2cc9b5f8f3b44d09ed9d7f317d8c5e3"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.RegularExpressions.dll",
+      "bytes": 26536,
+      "sha256": "487c84c84d9a933d26ecfec8e6adaefc6bee21214f8da1c598f18bd89a1d7576"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Routing.dll",
+      "bytes": 38832,
+      "sha256": "512ae0481137a48c139ffe5d185c8d3722cf69b11017c6e4e60d1c127475b346"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Services.dll",
+      "bytes": 165800,
+      "sha256": "8435caba795d7758c898246345d959b2b0eadb051cec37c1e15ecf2a1f56fb72"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Windows.Forms.dll",
+      "bytes": 1509296,
+      "sha256": "2ba080ec1ab9546c63055053cb08caedf7927253f3b28e5d28ffb2aaceba701f"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Windows.Presentation.dll",
+      "bytes": 16784,
+      "sha256": "6a4bacd3e3625c67e30c093012742c0ff3259f0a7095e548ae43f3183af43e69"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Workflow.Activities.dll",
+      "bytes": 366504,
+      "sha256": "955697f0a63f51b2b0ea618cb5cd1a7495a55bab8f7ad02272db841f9082c9a5"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Workflow.ComponentModel.dll",
+      "bytes": 513960,
+      "sha256": "28dc8bdf9a184d6c494b7ba6e279c4e02534755ee453a74643d332e41c30120b"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Workflow.Runtime.dll",
+      "bytes": 83880,
+      "sha256": "cdcf75cf187f17a0f619f2b60d98e4613ac3af24db5961222ceda11a5743e41f"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.WorkflowServices.dll",
+      "bytes": 169896,
+      "sha256": "67eaa6d01eed45ef494030b78a69be13d336d3e072998fdc9da425c4abb183be"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Xml.dll",
+      "bytes": 350120,
+      "sha256": "24da685bea441dd5bb05d8fcc2be601fc63eaa069b6385d9cebb0b4a6a12bbd3"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Xml.Linq.dll",
+      "bytes": 47016,
+      "sha256": "c53644463ba7db51ff450583e09663909f782c5aa297c478ba5bf3ddfb86aa15"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\UIAutomationClient.dll",
+      "bytes": 51112,
+      "sha256": "8af527ec21e08dd5d5627e0b28b86eac08f174cef6908a45f24a0eeef465a769"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\UIAutomationClientsideProviders.dll",
+      "bytes": 34728,
+      "sha256": "3029a95e629ee83b4a69a0135989648a0b2b63aa62915e07fe291b36b5867400"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\UIAutomationProvider.dll",
+      "bytes": 34736,
+      "sha256": "f2fb020c9635fb496093606c0ec9fea5b27514de063e52c967e1bfe323e99584"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\UIAutomationTypes.dll",
+      "bytes": 42920,
+      "sha256": "26a5b8bf42d9ef03ccca38f0cbba62601ac8982c9663377073e3dba161d57cec"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\WindowsBase.dll",
+      "bytes": 178088,
+      "sha256": "3eeae33f6263b0ddec313cc1cffd8194116d934b0493cf19b5caf71092ff843b"
+    },
+    {
+      "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\WindowsFormsIntegration.dll",
+      "bytes": 42928,
+      "sha256": "11a77eacd23b3be373f0fa07f5c73caf220b35f353342618f0eea5f80f4745ec"
+    }
+  ],
+  "package_license_url": "https://github.com/Microsoft/dotnet/blob/master/LICENSE",
+  "host_installation": false,
+  "purpose": "Compiler/decompiler reference metadata for the observed legacy mscorlib/System 2.0 and System.Core 3.5 API family. This is an unstripped reference profile, not recovered game logic, a runtime implementation or a selected future port target.",
+  "signature_verification": {
+    "log": "logs/legacy-reference-nuget-signature-v1.log",
+    "exit_code": 0,
+    "status": "PASS_NUGET_PACKAGE_SIGNATURE_AND_TIMESTAMP"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS_IMMUTABLE_V37_REVIEWED_SOURCE_CAPTURE",
+  "core_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+  "sources": [
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\Instruction.cs",
+      "snapshot_path": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\Instruction.cs",
+      "sha256": "22592040093b3b950b24c7db62878082d457dc0f9f7e34cf6c479b641091be93"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\MetadataResolver.cs",
+      "snapshot_path": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\MetadataResolver.cs",
+      "sha256": "f43a3c22253d039f61e46fcf11e362d96cda4c49d15b78ea4247bb809f74fb98"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64IndirectReturns.cs",
+      "snapshot_path": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64IndirectReturns.cs",
+      "sha256": "3eef62ee57c21363a961b487d1eb7ca886b3cfcbed4c24ae7f054dc058ff1341"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\InstructionSets\\NewArmV8InstructionSet.cs",
+      "snapshot_path": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\InstructionSets\\NewArmV8InstructionSet.cs",
+      "sha256": "dcd50974ed956dea971c165cc59c7611e4a3b9c8d81cc2a169dcd9b51c9b91ac"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Model\\Contexts\\MethodAnalysisContext.cs",
+      "snapshot_path": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Model\\Contexts\\MethodAnalysisContext.cs",
+      "sha256": "8f551d9b1d49ef594fdebb7375daadc7a7a88d1690fb7ddf8853ae4799f4068d"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\IlGenerator.cs",
+      "snapshot_path": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\IlGenerator.cs",
+      "sha256": "00f82a270fc70fa643390ff01d9684fa6de12c64997ebf1dea2e49d896b14dda"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ClassLayoutAbi.cs",
+      "snapshot_path": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ClassLayoutAbi.cs",
+      "sha256": "9e4daa163c2677d940ef1696e92b42cdb90d4c896fb5b680db5e43e8d23d8d99"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64OverflowExceptionAbi.cs",
+      "snapshot_path": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64OverflowExceptionAbi.cs",
+      "sha256": "cf78e506b535b0aab18160a8e9586e4d9c563060d4dd4e69d13f5cfd008e8998"
+    }
+  ],
+  "source_count": 8,
+  "source_review_sha256": "8a193c6b4478e712697cbe9f46d603425c06f53cfd55b7efcbaede0e329ae8e8",
+  "recovery_invocation_sha256": "42de2c7fbeb548c3eedcb8bd5805246c1a5a031c408f0df2d8fc4160d8a457ae",
+  "source_review_snapshot": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\source-review.json",
+  "recovery_invocation_snapshot": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\recovery-invocation.json",
+  "source_mutated": false,
+  "core_built": false,
+  "capture_source_sha256": "aa2b5c3d3e142733005a1a9208aae2962b5bf46874310ef5d993317cb58a6f40",
+  "manifest_path": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\manifest.json",
+  "manifest_sha256": "d8d324f5abaf890c53e248001a2be96667a581ba07f837866cb11a122b4735a2"
+}

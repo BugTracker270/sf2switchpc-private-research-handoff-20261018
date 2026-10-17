@@ -1,0 +1,48 @@
+{
+  "status": "PASS_INDEPENDENT_SYNTHETIC_EXCEPTION_REGION_STRUCTURAL_REVIEW",
+  "checks": 8,
+  "tests": [
+    {
+      "name": "leave cannot continue inside handler",
+      "status": "PASS"
+    },
+    {
+      "name": "leave cannot continue inside protected region",
+      "status": "PASS"
+    },
+    {
+      "name": "exceptional entry cannot expose a synthetic call result even without native token names",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate storage identity rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "finally end cannot retain an evaluation-stack value",
+      "status": "PASS"
+    },
+    {
+      "name": "conditional branch cannot enter handler through a separate successor",
+      "status": "PASS"
+    },
+    {
+      "name": "normal leave retains finally root independently of exceptional transfers",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh clone preserves exceptional storage identities and pre-result phase",
+      "status": "PASS"
+    }
+  ],
+  "region_source_sha256": "731e3bf80d70a2fe378e8bac65272400382c21cb3424fc066da8dd3038bbbe98",
+  "owner_test_source_sha256": "a95730650d55b0d7864a4e48b0dec616da7d4ed8b0138a69651fbbd5ee9796db",
+  "review_source_sha256": "2687e95794b447f71ff05a40b6330bf371e60809af66bd4f77ebe0c41ea9d260",
+  "findings": [],
+  "source_edited": false,
+  "core_built": false,
+  "proprietary_inputs_read": false,
+  "guest_execution_performed": false,
+  "production_eh_ready": false,
+  "scope": "Static review and disjoint synthetic structural fixtures only. Explicit immutable tuple/model shape checks, normal versus exceptional entry/continuation separation, exact storage identities, pre-result exception phase and clone anchors are checked within the single-finally/void contract. Stack heights and throw/effect flags remain supplied contracts; no instruction typing, SSA, native mapping, CLR emission, unwinder or behavioral equivalence is inferred. No unsafe structural acceptance was found in that stated subset."
+}

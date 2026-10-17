@@ -1,0 +1,33 @@
+{
+  "status": "SAVED_PENDING_NATIVE_CIL_ATTRIBUTION",
+  "before_run": "nso-assembly-leaf-getter-v39",
+  "after_run": "nso-object-isinst-abi-v40",
+  "added_semantic_occurrences": 8,
+  "textual_owner_groups": 7,
+  "native_or_cil_semantics_verified": false,
+  "full_clean_decompile_complete": false,
+  "source_or_core_modified": false,
+  "unfinished": "Exact source-method scope and before/after original CIL/native pointer-result/control-use attribution remain unverified for all 8 additions. No harmlessness or semantic-correction claim is accepted.",
+  "receipts": [
+    {
+      "path": "reports/compiler-diagnostic-delta-v40.json",
+      "sha256": "32b341c34c85d1354c855474e6a424067fc81e372baa3056560e7eb30be0b509"
+    },
+    {
+      "path": "reports/compiler-diagnostic-added-locations-v40.json",
+      "sha256": "8b96b28ed39e7e66bfad06016ff2ccf52a5b9fac829f161f3d8965a3de069fb9"
+    },
+    {
+      "path": "reports/compiler-diagnostic-added-methods-v40.json",
+      "sha256": "29135673cc2824c160288dc4f3c0f113fdd873e5df6362edf6e76f5963f0b704"
+    }
+  ],
+  "preserving": [
+    "src/re/tools/capture_added_compiler_diagnostics.py",
+    "src/re/tools/refine_added_diagnostic_methods.py",
+    "analysis/reconstruction/compiler-additions-v40/source-context.json",
+    "logs/compiler-diagnostic-added-locations-v40.log",
+    "logs/compiler-diagnostic-added-methods-v40.log"
+  ],
+  "next_if_resumed": "Verify source scopes; bind recovered method tokens and original native RVAs; compare v39/v40 CIL with exact result-pointer/null-control provenance. Four object & int alignment candidates require particular care; do not infer native literal arithmetic from their diagnostic text."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_ORIGINAL_VECTOR3_THREE_FP_REGISTER_OBSERVATIONS",
+  "cases": 64,
+  "component_observations": 192,
+  "input_registers": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+  ],
+  "result_registers": [
+    "S0",
+    "S1",
+    "S2"
+  ],
+  "original_text_sha256": "eb1a6a3fa6769cfee5ff13ceee0e48c0030c2b4e1242bb6cf4a747addca82528",
+  "fixture_sha256": "a90434a7d325d6761703a46412a5e30e7585b90179a80568c3c74ca673330c6f",
+  "scope": "Original four-instruction Vector3 addition, no executed runtime/game hooks. Finite inputs include signed zero, subnormals, extreme values and possible output overflow. No NaN-payload, other HFA shapes, stack spills or complete ABI certification."
+}

@@ -1,0 +1,69 @@
+{
+  "status": "PASS_ACTUAL_RECOVERED_FACTORY_CONSTRUCTORS_AT_CLR_BOUNDARY",
+  "recovery_run": "nso-object-isinst-abi-v40",
+  "cases": 224,
+  "checks": 1344,
+  "selected_constructors": 7,
+  "fatal": null,
+  "original_caller_il_sha256": "17c4531d2f4b779de7d60243e3e9fc55051bd2f4ed64dd802b9416630912a105",
+  "slices": [
+    {
+      "original_il_offset": 1872,
+      "original_il_sha256": "3df3528e86305333556b08e7df4d0f5ff5b6dd4bbe083554ce78802f80fc619e",
+      "exact_type": "System.ArrayTypeMismatchException",
+      "constructor": ".ctor()",
+      "cases": 32,
+      "checks": 192
+    },
+    {
+      "original_il_offset": 1939,
+      "original_il_sha256": "3df3528e86305333556b08e7df4d0f5ff5b6dd4bbe083554ce78802f80fc619e",
+      "exact_type": "System.ArrayTypeMismatchException",
+      "constructor": ".ctor()",
+      "cases": 32,
+      "checks": 192
+    },
+    {
+      "original_il_offset": 2061,
+      "original_il_sha256": "3df3528e86305333556b08e7df4d0f5ff5b6dd4bbe083554ce78802f80fc619e",
+      "exact_type": "System.ArrayTypeMismatchException",
+      "constructor": ".ctor()",
+      "cases": 32,
+      "checks": 192
+    },
+    {
+      "original_il_offset": 2183,
+      "original_il_sha256": "3df3528e86305333556b08e7df4d0f5ff5b6dd4bbe083554ce78802f80fc619e",
+      "exact_type": "System.ArrayTypeMismatchException",
+      "constructor": ".ctor()",
+      "cases": 32,
+      "checks": 192
+    },
+    {
+      "original_il_offset": 2305,
+      "original_il_sha256": "3df3528e86305333556b08e7df4d0f5ff5b6dd4bbe083554ce78802f80fc619e",
+      "exact_type": "System.ArrayTypeMismatchException",
+      "constructor": ".ctor()",
+      "cases": 32,
+      "checks": 192
+    },
+    {
+      "original_il_offset": 2427,
+      "original_il_sha256": "3df3528e86305333556b08e7df4d0f5ff5b6dd4bbe083554ce78802f80fc619e",
+      "exact_type": "System.ArrayTypeMismatchException",
+      "constructor": ".ctor()",
+      "cases": 32,
+      "checks": 192
+    },
+    {
+      "original_il_offset": 2549,
+      "original_il_sha256": "3df3528e86305333556b08e7df4d0f5ff5b6dd4bbe083554ce78802f80fc619e",
+      "exact_type": "System.ArrayTypeMismatchException",
+      "constructor": ".ctor()",
+      "cases": 32,
+      "checks": 192
+    }
+  ],
+  "assembly_sha256": "5ab955502d73f3307e9fe5c700d1a5ae62e8a1450e953f3fc3cfc342551d9150",
+  "scope": "Seven actual recovered parameterless ArrayTypeMismatchException newobj instructions in AuthenticationSample.Start, each isolated with ret appended and exact constructor token rebound to the host CLR contract. Checks exact type, constructor HResult/Message, null InnerException/StackTrace and fresh identity. No source edits, gameplay/Unity code or original ARM64 constructor bodies execute; no assertion of original exception-message localization, GC or full caller parity. A source error disappearing alone does not pass this probe."
+}

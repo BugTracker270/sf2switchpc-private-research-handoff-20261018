@@ -1,0 +1,24 @@
+{
+  "status": "PASS_RECORDED_REVIEWED_SOURCE_AND_RECOVERY_BUILD_BINDING",
+  "recovery_run": "nso-plain-frame-cfg-v35",
+  "core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+  "sources": [
+    {
+      "source": "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64ValueThisThunks.cs",
+      "snapshot": "analysis\\reference\\plain-frame-v35\\LegacyArm64ValueThisThunks.cs",
+      "sha256": "4a24d9598320b91ec19078882d9c46bd90b399c055301cdd81d61c4e2c9f1ee4"
+    },
+    {
+      "source": "refs/Cpp2IL/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs",
+      "snapshot": "analysis\\reference\\plain-frame-v35\\NewArmV8InstructionSet.cs",
+      "sha256": "b463b461da33a0359254813552777d96b4b718bdf195144f418506cea38f3d8b"
+    },
+    {
+      "source": "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64CfgInitializationPattern.cs",
+      "snapshot": "analysis\\reference\\plain-frame-v35\\LegacyArm64CfgInitializationPattern.cs",
+      "sha256": "e5e9bc6669d38f5879d79ca4a2cc0a2e7b5924cc405434c2e9eea1dd2cbdfcfa"
+    }
+  ],
+  "invocation_sha256": "decc9db743aaa26ca6c773253a5b1d0afe863ab62461fa6ca35d436e712e5dd7",
+  "review_sha256": "326e588873f57aaa19ba7962800c29c90cb871b25a4f648d079ed109f57204f8"
+}

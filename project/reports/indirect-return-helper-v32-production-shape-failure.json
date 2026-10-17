@@ -1,0 +1,188 @@
+{
+  "status": "FAIL_INDIRECT_RETURN_ADAPTER_GUARDS",
+  "checks": 23,
+  "failures": 1,
+  "tests": [
+    {
+      "name": "actual production converter binds reviewed return buffer",
+      "passed": false,
+      "details": {
+        "destination": "X0"
+      }
+    },
+    {
+      "name": "independent raw converter retains original X0 return destination",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "canonical full native-derived ISIL accepted with sole destination mutation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "already adapted call rejected atomically",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "disabled opt-in",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "unreviewed caller",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "incomplete native address correspondence",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "duplicate call native address",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "wrong direct target",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "wrong hidden register",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "overlapping hidden buffer",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "unreviewed escaping address register",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "unreviewed overlapping storage write",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "native X0 return pointer remains live",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "native X8 address remains live after clobber",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "branch target outside source instruction list",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "already normalized block target",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "nonsequential instruction identities",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "malformed consumer operands",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "unreviewed cleanup receiver",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "wrong cleanup consumer target",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "incomplete aggregate zero coverage",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    },
+    {
+      "name": "nonzero initializer payload",
+      "passed": true,
+      "details": {
+        "count": 0,
+        "atomic_rejection": true
+      }
+    }
+  ],
+  "game_code_executed": false,
+  "original_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "original_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "tool_core_sha256": "b13429fe68cb08c5f45b0188e3732ec25ae7abfd9d62282084e5150819a0f6b3",
+  "helper_source_sha256": "8c89942388dd92070a024e2238754d40aa83c1d7448c302e1e51209b526a2365",
+  "probe_source_sha256": "fcd0c143f4ef0772ba57d2a050abb412c634fdaa9a8b933c1c22fff14a7ab6c7",
+  "scope": "Actual production GetIsil converter result and original per-native-instruction conversion of the pinned SetStage body. Helper guards are exercised on disjoint copied ISIL/address fixtures; only a canonical accepted call destination may change. Negative fixture mutations are explicit diagnostic inputs, not recovered behavior. No game method executes, no CIL/source result or full game semantics is certified."
+}

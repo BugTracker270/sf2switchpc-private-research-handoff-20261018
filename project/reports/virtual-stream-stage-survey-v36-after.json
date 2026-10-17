@@ -1,0 +1,2499 @@
+{
+  "status": "READ_ONLY_ACTUAL_STREAM_VIRTUAL_DISPATCH_STAGE_SURVEY",
+  "core_sha256": "4c005f552b8ecb82974d23ad5a6d96e4e4cd97af3a252ddc273555bf8e90f68a",
+  "source_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "source_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "method": "BestHTTP.WebSocket.Frames.WebSocketFrameReader::Read",
+  "registered_rva": "0x4A0D70",
+  "metadata_target": "System.IO.Stream::ReadByte",
+  "slot": 19,
+  "stages": [
+    {
+      "stage": "ssa",
+      "calls": [
+        {
+          "index": 26,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v27",
+              "register": "X9",
+              "version": 1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v30",
+              "register": "X0",
+              "version": 2,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v29",
+              "register": "X0",
+              "version": 1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v28",
+              "register": "X1",
+              "version": 1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "methodInfo",
+              "register": "X2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v32",
+              "register": "X3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v33",
+              "register": "X4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 36,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v50",
+              "register": "X9",
+              "version": 2,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v52",
+              "register": "X0",
+              "version": 4,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v48",
+              "register": "X0",
+              "version": 3,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v51",
+              "register": "X1",
+              "version": 2,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "methodInfo",
+              "register": "X2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v32",
+              "register": "X3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v33",
+              "register": "X4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 195,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v135",
+              "register": "X10",
+              "version": 4,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v148",
+              "register": "X0",
+              "version": 37,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v190",
+              "register": "X0",
+              "version": 36,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v146",
+              "register": "X1",
+              "version": 20,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v144",
+              "register": "X2",
+              "version": 16,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v142",
+              "register": "X3",
+              "version": 7,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v140",
+              "register": "X4",
+              "version": 7,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 231,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v346",
+              "register": "X9",
+              "version": 6,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v239",
+              "register": "X0",
+              "version": 16,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v347",
+              "register": "X0",
+              "version": 15,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v236",
+              "register": "X1",
+              "version": 10,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v233",
+              "register": "X2",
+              "version": 7,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v230",
+              "register": "X3",
+              "version": 6,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v225",
+              "register": "X4",
+              "version": 6,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        }
+      ],
+      "slot_loads": [
+        {
+          "index": 23,
+          "destination": {
+            "kind": "local",
+            "Name": "v27",
+            "register": "X9",
+            "version": 1,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 600,
+            "base_kind": "LocalVariable",
+            "base_local": "v26",
+            "base_type": null,
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 24,
+          "destination": {
+            "kind": "local",
+            "Name": "v28",
+            "register": "X1",
+            "version": 1,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 608,
+            "base_kind": "LocalVariable",
+            "base_local": "v26",
+            "base_type": null,
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 34,
+          "destination": {
+            "kind": "local",
+            "Name": "v50",
+            "register": "X9",
+            "version": 2,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 600,
+            "base_kind": "LocalVariable",
+            "base_local": "v49",
+            "base_type": null,
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 35,
+          "destination": {
+            "kind": "local",
+            "Name": "v51",
+            "register": "X1",
+            "version": 2,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 608,
+            "base_kind": "LocalVariable",
+            "base_local": "v49",
+            "base_type": null,
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 4
+        }
+      ]
+    },
+    {
+      "stage": "before-type",
+      "calls": [
+        {
+          "index": 26,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v27",
+              "register": "X9",
+              "version": 1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v30",
+              "register": "X0",
+              "version": 2,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v29",
+              "register": "X0",
+              "version": 1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v28",
+              "register": "X1",
+              "version": 1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "methodInfo",
+              "register": "X2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v32",
+              "register": "X3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v33",
+              "register": "X4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 36,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v50",
+              "register": "X9",
+              "version": 2,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v52",
+              "register": "X0",
+              "version": 4,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v48",
+              "register": "X0",
+              "version": 3,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v51",
+              "register": "X1",
+              "version": 2,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "methodInfo",
+              "register": "X2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v32",
+              "register": "X3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v33",
+              "register": "X4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 195,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v135",
+              "register": "X10",
+              "version": 4,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v148",
+              "register": "X0",
+              "version": 37,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v190",
+              "register": "X0",
+              "version": 36,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v146",
+              "register": "X1",
+              "version": 20,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v144",
+              "register": "X2",
+              "version": 16,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v142",
+              "register": "X3",
+              "version": 7,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v140",
+              "register": "X4",
+              "version": 7,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 231,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v346",
+              "register": "X9",
+              "version": 6,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v239",
+              "register": "X0",
+              "version": 16,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v347",
+              "register": "X0",
+              "version": 15,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v236",
+              "register": "X1",
+              "version": 10,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v233",
+              "register": "X2",
+              "version": 7,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v230",
+              "register": "X3",
+              "version": 6,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v225",
+              "register": "X4",
+              "version": 6,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        }
+      ],
+      "slot_loads": [
+        {
+          "index": 23,
+          "destination": {
+            "kind": "local",
+            "Name": "v27",
+            "register": "X9",
+            "version": 1,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 600,
+            "base_kind": "LocalVariable",
+            "base_local": "v26",
+            "base_type": null,
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 24,
+          "destination": {
+            "kind": "local",
+            "Name": "v28",
+            "register": "X1",
+            "version": 1,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 608,
+            "base_kind": "LocalVariable",
+            "base_local": "v26",
+            "base_type": null,
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 34,
+          "destination": {
+            "kind": "local",
+            "Name": "v50",
+            "register": "X9",
+            "version": 2,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 600,
+            "base_kind": "LocalVariable",
+            "base_local": "v49",
+            "base_type": null,
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 35,
+          "destination": {
+            "kind": "local",
+            "Name": "v51",
+            "register": "X1",
+            "version": 2,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 608,
+            "base_kind": "LocalVariable",
+            "base_local": "v49",
+            "base_type": null,
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 4
+        }
+      ]
+    },
+    {
+      "stage": "after-type",
+      "calls": [
+        {
+          "index": 26,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v27",
+              "register": "X9",
+              "version": 1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v30",
+              "register": "X0",
+              "version": 2,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v29",
+              "register": "X0",
+              "version": 1,
+              "type": "System.IO.Stream"
+            },
+            {
+              "kind": "local",
+              "Name": "v28",
+              "register": "X1",
+              "version": 1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "methodInfo",
+              "register": "X2",
+              "version": -1,
+              "type": "Il2CppMethodInfo"
+            },
+            {
+              "kind": "local",
+              "Name": "v32",
+              "register": "X3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v33",
+              "register": "X4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 36,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v50",
+              "register": "X9",
+              "version": 2,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v52",
+              "register": "X0",
+              "version": 4,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v48",
+              "register": "X0",
+              "version": 3,
+              "type": "System.IO.Stream"
+            },
+            {
+              "kind": "local",
+              "Name": "v51",
+              "register": "X1",
+              "version": 2,
+              "type": "System.Byte[]"
+            },
+            {
+              "kind": "local",
+              "Name": "methodInfo",
+              "register": "X2",
+              "version": -1,
+              "type": "Il2CppMethodInfo"
+            },
+            {
+              "kind": "local",
+              "Name": "v32",
+              "register": "X3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v33",
+              "register": "X4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 195,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v135",
+              "register": "X10",
+              "version": 4,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v148",
+              "register": "X0",
+              "version": 37,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v190",
+              "register": "X0",
+              "version": 36,
+              "type": "System.IO.Stream"
+            },
+            {
+              "kind": "local",
+              "Name": "v146",
+              "register": "X1",
+              "version": 20,
+              "type": "System.Byte[]"
+            },
+            {
+              "kind": "local",
+              "Name": "v144",
+              "register": "X2",
+              "version": 16,
+              "type": "Il2CppMethodInfo"
+            },
+            {
+              "kind": "local",
+              "Name": "v142",
+              "register": "X3",
+              "version": 7,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v140",
+              "register": "X4",
+              "version": 7,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 231,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v346",
+              "register": "X9",
+              "version": 6,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v239",
+              "register": "X0",
+              "version": 16,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v347",
+              "register": "X0",
+              "version": 15,
+              "type": "System.IO.Stream"
+            },
+            {
+              "kind": "local",
+              "Name": "v236",
+              "register": "X1",
+              "version": 10,
+              "type": "System.Byte[]"
+            },
+            {
+              "kind": "local",
+              "Name": "v233",
+              "register": "X2",
+              "version": 7,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v230",
+              "register": "X3",
+              "version": 6,
+              "type": "System.Int32"
+            },
+            {
+              "kind": "local",
+              "Name": "v225",
+              "register": "X4",
+              "version": 6,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        }
+      ],
+      "slot_loads": [
+        {
+          "index": 23,
+          "destination": {
+            "kind": "local",
+            "Name": "v27",
+            "register": "X9",
+            "version": 1,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 600,
+            "base_kind": "LocalVariable",
+            "base_local": "v26",
+            "base_type": "Il2CppClass\u003CSystem.IO.Stream\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 24,
+          "destination": {
+            "kind": "local",
+            "Name": "v28",
+            "register": "X1",
+            "version": 1,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 608,
+            "base_kind": "LocalVariable",
+            "base_local": "v26",
+            "base_type": "Il2CppClass\u003CSystem.IO.Stream\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 34,
+          "destination": {
+            "kind": "local",
+            "Name": "v50",
+            "register": "X9",
+            "version": 2,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 600,
+            "base_kind": "LocalVariable",
+            "base_local": "v49",
+            "base_type": "Il2CppClass\u003CSystem.IO.Stream\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 35,
+          "destination": {
+            "kind": "local",
+            "Name": "v51",
+            "register": "X1",
+            "version": 2,
+            "type": "System.Byte[]"
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 608,
+            "base_kind": "LocalVariable",
+            "base_local": "v49",
+            "base_type": "Il2CppClass\u003CSystem.IO.Stream\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 4
+        }
+      ]
+    },
+    {
+      "stage": "simplified-ssa",
+      "calls": [
+        {
+          "index": 26,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v27",
+              "register": "X9",
+              "version": 1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v30",
+              "register": "X0",
+              "version": 2,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "stream",
+              "register": "X1",
+              "version": -1,
+              "type": "System.IO.Stream"
+            },
+            {
+              "kind": "local",
+              "Name": "v28",
+              "register": "X1",
+              "version": 1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "methodInfo",
+              "register": "X2",
+              "version": -1,
+              "type": "Il2CppMethodInfo"
+            },
+            {
+              "kind": "local",
+              "Name": "v32",
+              "register": "X3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v33",
+              "register": "X4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 36,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v50",
+              "register": "X9",
+              "version": 2,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v52",
+              "register": "X0",
+              "version": 4,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "stream",
+              "register": "X1",
+              "version": -1,
+              "type": "System.IO.Stream"
+            },
+            {
+              "kind": "local",
+              "Name": "v51",
+              "register": "X1",
+              "version": 2,
+              "type": "System.Byte[]"
+            },
+            {
+              "kind": "local",
+              "Name": "methodInfo",
+              "register": "X2",
+              "version": -1,
+              "type": "Il2CppMethodInfo"
+            },
+            {
+              "kind": "local",
+              "Name": "v32",
+              "register": "X3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v33",
+              "register": "X4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 195,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v135",
+              "register": "X10",
+              "version": 4,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v148",
+              "register": "X0",
+              "version": 37,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "stream",
+              "register": "X1",
+              "version": -1,
+              "type": "System.IO.Stream"
+            },
+            {
+              "kind": "local",
+              "Name": "v167",
+              "register": "X0",
+              "version": 35,
+              "type": "System.Byte[]"
+            },
+            {
+              "kind": "Immediate"
+            },
+            {
+              "kind": "Immediate"
+            },
+            {
+              "kind": "local",
+              "Name": "v140",
+              "register": "X4",
+              "version": 7,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 231,
+          "opcode": "IndirectCall",
+          "operand_count": 18,
+          "native_virtual_proof": false,
+          "operands": [
+            {
+              "kind": "local",
+              "Name": "v346",
+              "register": "X9",
+              "version": 6,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v239",
+              "register": "X0",
+              "version": 16,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "stream",
+              "register": "X1",
+              "version": -1,
+              "type": "System.IO.Stream"
+            },
+            {
+              "kind": "local",
+              "Name": "v344",
+              "register": "X21",
+              "version": 9,
+              "type": "System.Byte[]"
+            },
+            {
+              "kind": "local",
+              "Name": "v319",
+              "register": "X22",
+              "version": 7,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v230",
+              "register": "X3",
+              "version": 6,
+              "type": "System.Int32"
+            },
+            {
+              "kind": "local",
+              "Name": "v225",
+              "register": "X4",
+              "version": 6,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v34",
+              "register": "X5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v35",
+              "register": "X6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v36",
+              "register": "X7",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v37",
+              "register": "V0",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v38",
+              "register": "V1",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v39",
+              "register": "V2",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v40",
+              "register": "V3",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v41",
+              "register": "V4",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v42",
+              "register": "V5",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v43",
+              "register": "V6",
+              "version": -1,
+              "type": null
+            },
+            {
+              "kind": "local",
+              "Name": "v44",
+              "register": "V7",
+              "version": -1,
+              "type": null
+            }
+          ]
+        }
+      ],
+      "slot_loads": [
+        {
+          "index": 23,
+          "destination": {
+            "kind": "local",
+            "Name": "v27",
+            "register": "X9",
+            "version": 1,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 600,
+            "base_kind": "LocalVariable",
+            "base_local": "v26",
+            "base_type": "Il2CppClass\u003CSystem.IO.Stream\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 24,
+          "destination": {
+            "kind": "local",
+            "Name": "v28",
+            "register": "X1",
+            "version": 1,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 608,
+            "base_kind": "LocalVariable",
+            "base_local": "v26",
+            "base_type": "Il2CppClass\u003CSystem.IO.Stream\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 34,
+          "destination": {
+            "kind": "local",
+            "Name": "v50",
+            "register": "X9",
+            "version": 2,
+            "type": null
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 600,
+            "base_kind": "LocalVariable",
+            "base_local": "v49",
+            "base_type": "Il2CppClass\u003CSystem.IO.Stream\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 1
+        },
+        {
+          "index": 35,
+          "destination": {
+            "kind": "local",
+            "Name": "v51",
+            "register": "X1",
+            "version": 2,
+            "type": "System.Byte[]"
+          },
+          "source": {
+            "kind": "memory",
+            "Addend": 608,
+            "base_kind": "LocalVariable",
+            "base_local": "v49",
+            "base_type": "Il2CppClass\u003CSystem.IO.Stream\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "operand_uses": 4
+        }
+      ]
+    }
+  ],
+  "core_modified": false,
+  "game_methods_invoked": 0,
+  "scope": "Original method lifted through unchanged production SSA, metadata/type resolution and SSA simplification. Private stage graphs are local evidence only. This survey does not rewrite Core, emit edited DLLs, execute game methods or claim original override-dispatch parity. Ordinary Call opcodes do not themselves prove virtual dispatch."
+}

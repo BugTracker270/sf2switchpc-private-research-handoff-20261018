@@ -1,0 +1,140 @@
+{
+  "source_execution": false,
+  "files": 22,
+  "status": "PASS_ORIGINAL_POWERSHELL_SYNTAX",
+  "failures": 0,
+  "tests": [
+    {
+      "path": "src/tools/Invoke-RecoveryRegression.ps1",
+      "errors": [],
+      "sha256": "6d91cd926c20657501ca584eda5ca9659951df2db6f0b1f8fc65ad1c18dfb0ae",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-RustIl2CppProbe.ps1",
+      "errors": [],
+      "sha256": "921f69380edacd98e85beab3394b008b7cec1d87ba8d77428ad9c05a75bc040c",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-BetterCpp2IlSourceCheck.ps1",
+      "errors": [],
+      "sha256": "16a0a8802d0221082ead925aff063917014ab971eb4640fab1c35e35d44d0f0b",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-BetterCpp2IlProbe.ps1",
+      "errors": [],
+      "sha256": "da5b4900ceb7f156596be060f6f3634694434a26d2d863f8705f865cf7e631f9",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-AuxiliaryModuleRetry.ps1",
+      "errors": [],
+      "sha256": "47d645ea8e16a1d7b92293ad68f763be5100dc953d79d10096b11511f0058a65",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-AuxiliaryModulePass.ps1",
+      "errors": [],
+      "sha256": "c6e400386427a1cdfb2ed72a8b5e78b61dc79dfbceedfc5e576c91f80db310c4",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-AuxiliaryModuleRecovery.ps1",
+      "errors": [],
+      "sha256": "2d35c6281532e677b370ae9726f2ee03d7a898d42fcdebfc3ba6efec809c160f",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-SourceReferenceCheck.ps1",
+      "errors": [],
+      "sha256": "ed003c094f6d61920c89bd9488bcfaca367c6cc656e6e1cc5e69e54e0e2e55c0",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-ScopedSourceBuild.ps1",
+      "errors": [],
+      "sha256": "42f1a49d7ec02dacbfc55ed8ddda902a557dab82f9e3e1aaa0433a94dc896241",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-RecoveredSourceBuild.ps1",
+      "errors": [],
+      "sha256": "7f4c8bdd45f4d680817a89e6deacacaf42426e246d030d5918a2bd62aceafd18",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-UnwindNativeRecovery.ps1",
+      "errors": [],
+      "sha256": "59dc97c2665aa75033fb0385a255aaea6d1488ad3de69552eec22df2eb0330c1",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-ScopedRecoveryAudit.ps1",
+      "errors": [],
+      "sha256": "0cafdb5698a43b67b057ee2c55ddac772a60ca4ebc55216e57c3fac3f1388f71",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-NativeRegression.ps1",
+      "errors": [],
+      "sha256": "927f4ebf27211fc02aef0cf8cb7790ccbd3c0583202d803a50be96d3af3a4be3",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-ScopedNativeCorpus.ps1",
+      "errors": [],
+      "sha256": "4db0655b5edd2251897a593e8c5b723ebffc8535b953c6bd67790b2700361359",
+      "passed": true
+    },
+    {
+      "path": "src/tools/UsbBoundary.ps1",
+      "errors": [],
+      "sha256": "5952f6325cec5c57eeafada3d8a8205bdb2f72a8827929a9d99bfb7b214adde7",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-NativeCorpus.ps1",
+      "errors": [],
+      "sha256": "4efc9abfe6ac594db91eee1546b188b437793fa9f22a9652a24059dcf7cf3d96",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Prepare-Inputs.ps1",
+      "errors": [],
+      "sha256": "f8034ff38c23a44cc06d425ada50d31df6d4fba22e10e9d916b4cb387134f692",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Initialize-UsbWorkspace.ps1",
+      "errors": [],
+      "sha256": "b95eb045035ca66af99884f8b5ceb62ef861eb35374785ae179e02beb646b5b1",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Test-UsbWriteBoundary.ps1",
+      "errors": [],
+      "sha256": "a0f5dfdf02d4a54db0ab5c8f986605b18cf209c707803f0a9c36af253a54de4d",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-NativePostprocess.ps1",
+      "errors": [],
+      "sha256": "893e21c218448e6d8443b945c4de8153c210d65d4ff07007ce8d5616a0a25982",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Measure-UsbIo.ps1",
+      "errors": [],
+      "sha256": "83c252fef801b32b6c65caefd821ce281e2ade882459a7c982cc1ab502e35611",
+      "passed": true
+    },
+    {
+      "path": "src/tools/Invoke-Cpp2IlMetadataRecovery.ps1",
+      "errors": [],
+      "sha256": "003518a32113474adde5e884f10ae5f4ae70ee2dbd52b5510e31aa3683e11195",
+      "passed": true
+    }
+  ]
+}

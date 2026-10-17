@@ -1,0 +1,98 @@
+{
+  "status": "PASS_ACTUAL_ORIGINAL_CONSTRUCTOR_RECEIVER_AND_ASSEMBLY_GETTER_EMISSION",
+  "checks": 15,
+  "tests": [
+    {
+      "name": "original input identities",
+      "status": "PASS"
+    },
+    {
+      "name": "original private field receiver survives actual pipeline: 1E9EB0",
+      "status": "PASS"
+    },
+    {
+      "name": "actual attached original caller has assembly capability",
+      "status": "PASS"
+    },
+    {
+      "name": "original v38 caller has one exact backing field read",
+      "status": "PASS"
+    },
+    {
+      "name": "new actual caller emits exact existing nonvirtual internal getter",
+      "status": "PASS"
+    },
+    {
+      "name": "only original field load changes to exact getter call; all other effects/control remain",
+      "status": "PASS"
+    },
+    {
+      "name": "actual caller locals/init/EH remain unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "original private field receiver survives actual pipeline: 1F0E90",
+      "status": "PASS"
+    },
+    {
+      "name": "actual attached original caller has assembly capability",
+      "status": "PASS"
+    },
+    {
+      "name": "original v38 caller has one exact backing field read",
+      "status": "PASS"
+    },
+    {
+      "name": "new actual caller emits exact existing nonvirtual internal getter",
+      "status": "PASS"
+    },
+    {
+      "name": "only original field load changes to exact getter call; all other effects/control remain",
+      "status": "PASS"
+    },
+    {
+      "name": "actual caller locals/init/EH remain unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "both original Reader/Writer constructors inspected",
+      "status": "PASS"
+    },
+    {
+      "name": "original private field/internal getter metadata preserved",
+      "status": "PASS"
+    }
+  ],
+  "fatal": null,
+  "core_sha256": "52e9fa40275b71be5ea48e1bab1816e59dc4412ddfc0c627c29345f3086a4929",
+  "probe_source_sha256": "3220dbd92f1a8ec8a6aae71544b3e37e5fdfa3ca4768dcc656b91629a536a80e",
+  "baseline_run": "nso-virtual-companion-copy-v38",
+  "baseline_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192",
+  "methods": [
+    {
+      "original_native_rva": "0x1E9EB0",
+      "original_parameter_type": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader",
+      "backing_field_reads_before": 1,
+      "backing_field_reads_after": 0,
+      "exact_nonvirtual_getter_calls_after": 1,
+      "unchanged_other_instruction_rows": 13,
+      "receiver_type_preserved": true,
+      "existing_effect_and_control_rows_preserved": true
+    },
+    {
+      "original_native_rva": "0x1F0E90",
+      "original_parameter_type": "Newtonsoft.Json.Serialization.JsonSerializerInternalWriter",
+      "backing_field_reads_before": 1,
+      "backing_field_reads_after": 0,
+      "exact_nonvirtual_getter_calls_after": 1,
+      "unchanged_other_instruction_rows": 13,
+      "receiver_type_preserved": true,
+      "existing_effect_and_control_rows_preserved": true
+    }
+  ],
+  "private_detail_sha256": "a689e392f0ac8691804d9976ab6c8b7cca3a07e2f4b1051787696f85cd23130b",
+  "original_game_methods_executed": 0,
+  "production_outputs_written": false,
+  "whole_game_source_ready": false,
+  "scope": "Two actual original JsonSerializerProxy constructors run through current production Analyze and real IlGenerator in memory. Exact original receiver field read becomes existing internal nonvirtual getter call; normalized arg/local/branch macro forms compare every other effect/control instruction and local/init/EH shape with immutable v38. No constructor, getter, game or Unity code executes, and no complete assembly/source export or full behavior parity is claimed."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS_RECOVERED_CONSTRUCTION_AT_CLR_LIST_BOUNDARY",
+  "recovery_run": "nso-native-leaves-v29",
+  "cases": 32,
+  "checks": 128,
+  "raw_allocation_calls": 0,
+  "direct_constructor_calls": 0,
+  "newobj_constructors": 1,
+  "fatal": null,
+  "original_body_il_sha256": "3ca7bfb356dac1ce9286b2256e176a843a15690d4d08aed41c3e322ca2768516",
+  "slice_il_sha256": "08c7995d56b5481c89ecebf890c60ed69680b7a242689d3b07f785a71ace8768",
+  "assembly_sha256": "967ab18a3074deb27b5dbde65268584c4df59b312c2d46c5ee19177a5fea6488",
+  "scope": "Actual recovered allocation/constructor/field-store expression only, retaining its operations and local assignments; ret appended before the Unity base-constructor boundary. The receiver/one field map to isolated dynamic storage with the exact original closed List\u003CBackKeyController\u003E CLR type retained. No Game/Unity function is executed. List constructor and reflection allocation use the host CLR standard contracts, with exactly one constructor instruction required. Checks field non-null/exact type/empty Count/empty Capacity across 32 fresh storage objects. Original ARM64, Nintendo allocation/GC, Unity base initialization, exceptions and complete constructor/source correctness remain unverified."
+}

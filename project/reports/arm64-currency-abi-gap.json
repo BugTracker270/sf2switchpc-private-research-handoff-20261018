@@ -1,0 +1,54 @@
+{
+  "status": "CONFIRMED_SCOPED_AGGREGATE_RECOVERY_GAP",
+  "tool_source_sha256": "a2639c8df3dee7c8ade5c4143a5f74b18e6af2558918c32cc1e015b825e7c592",
+  "tool_source": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\Arm64CallingConventionResolver.cs",
+  "metadata_signature_counts": {
+    "ObscuredInt16": {
+      "return_method_records": 14,
+      "return_distinct_addresses": 14,
+      "by_value_argument_records": 27,
+      "by_value_argument_distinct_addresses": 27
+    },
+    "ObscuredLong32": {
+      "return_method_records": 6,
+      "return_distinct_addresses": 6,
+      "by_value_argument_records": 19,
+      "by_value_argument_distinct_addresses": 19
+    }
+  },
+  "witnesses": [
+    {
+      "rva": "0x794890",
+      "operation": "ObscuredInt to int",
+      "native": "Legacy static dummy X0; 16-byte value consumed from X1/X2; MethodInfo unused in this wrapper",
+      "resolver": "One integer register per non-floating managed argument; MethodInfo assigned X2, overlapping the second value word",
+      "native_text_sha256": "53a8a638ed29c62add2bf0e50b6b9ac3d4ed7b87231041827750aa3be6288a4f"
+    },
+    {
+      "rva": "0xD3D370",
+      "operation": "CurrencyStruct.set_Count",
+      "native": "Stores X1 and X2 together at this+0x18",
+      "resolver": "Single integer operand for the 16-byte managed count",
+      "native_text_sha256": "7a2dd33fdedf154abcdb5d6dfe32dc5d1dd95eee18191544eace83cb6bdcbc46"
+    },
+    {
+      "rva": "0x7926A0",
+      "operation": "int to ObscuredInt",
+      "native": "16-byte result in X0/X1",
+      "resolver": "ReturnRegister exposes X0 only",
+      "native_text_sha256": "a8235d69761afa86bdef86012afd95640d48c65a4b7d6499a9fd65082410ab76"
+    },
+    {
+      "rva": "0x792BB0",
+      "operation": "long to ObscuredLong control",
+      "native": "32-byte indirect result addressed by X8",
+      "resolver": "Hidden result buffer modeled for unboxed sizes greater than 16",
+      "native_text_sha256": "69df525b3241380b63e5c7d0c69c0d35ac63ff68ffa8280801602296cc0b6d06"
+    }
+  ],
+  "native_tests": {
+    "currency_int_checks": 15360,
+    "currency_long_checks": 20480
+  },
+  "scope": "Confirmed for these original currency shapes. Signature counts identify review candidates, not incorrect-method or reachable-call totals. No aggregate CIL fix, generic/HFA ABI certification or buildable game source claim. Full support must carry all words through entry, SSA, calls, returns, stack copies and CIL emission; advancing a register counter alone is insufficient."
+}

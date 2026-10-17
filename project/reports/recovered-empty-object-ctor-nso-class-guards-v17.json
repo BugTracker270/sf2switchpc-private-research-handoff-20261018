@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SCOPED_PROVEN_NOOP_CTOR_REMOVAL",
+  "recovery_run": "nso-class-guards-v17",
+  "source_nso_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "native_object_ctor": "0x65A2A0",
+  "native_cctor_call_site": "0xC4AC8",
+  "instruction": "RET X30",
+  "recovered_static_initializer_no_longer_calls_object_ctor": true,
+  "instance_constructors_retaining_object_ctor": 3,
+  "scope": "Only an original immediate-return Object constructor called outside a managed instance constructor is omitted. Ordinary constructor calls remain; allocation identity and complete initialization/source-build gates are independent. This witness covers VersionContainer, not all constructor contexts."
+}

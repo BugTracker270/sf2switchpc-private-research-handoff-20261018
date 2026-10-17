@@ -1,0 +1,35 @@
+{
+  "status": "PASS_RECOVERED_INT32_BOX_EXPRESSION_AT_TYPED_VALUE_BOUNDARY",
+  "assembly_sha256": "b531809e681980569ab0db3c9320a3580a8846debc8aed0d9b154457fb8da337",
+  "recovery_run": "nso-virtual-dispatch-v36",
+  "cases": 80,
+  "checks": 240,
+  "caller": "FyberPlugin.User::SetAge(System.Int32)",
+  "caller_rva": "0xF230F0",
+  "boxing_call_rva": "0xF23144",
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "native_input_window_sha256": "ac2a6da8e3b41f7df15a057c586db1324818cb5d48b64573b0acd60a843019bc",
+  "native_input_storage": "W1 -\u003E W19 -\u003E [SP\u002B0xC]",
+  "input_type_provenance_report_sha256": "27bfddfd4448a7fbe8236696372b44ef6d1186f3beecb00da488b649b1933411",
+  "native_type_info_slot": "0x3979BA8",
+  "box_instructions": 1,
+  "legacy_box_diagnostic_strings": 0,
+  "input_boundary": "actual typed Int32 local 2; unique copy chain from actual age argument 0",
+  "input_copy_chain": [
+    {
+      "local": 2,
+      "source": "actual age argument 0",
+      "load_il_offset": 122,
+      "store_il_offset": 126
+    }
+  ],
+  "original_body_il_sha256": "be727e21189f16fd302bb0b558819f10ae9c2736f20f3a1d7798a8b0073c7ab3",
+  "selected_expression_sha256": "f76213e8955a4d3f31bb444a8ce91ea698ba3012c42496fd7f20415171dce41a",
+  "expression_start_il_offset": 130,
+  "expression_end_il_offset": 139,
+  "fatal": null,
+  "original_native_executed": false,
+  "runtime_helpers_replaced": 0,
+  "whole_game_source_ready": false,
+  "scope": "Execute only the actual recovered Int32 box expression from the chosen present native caller. Require exact original native argument-copy/stack/type-slot/call witnesses, actual method argument signature, exact host CLR Int32 box type token and a unique typed copy chain whose stores dominate their original uses when a local supplies the value. Reject escaping addresses or modified input arguments. The original expression instructions are retained; only exact Int32 type tokens map to the same CLR type, one proven Int32 local may be supplied at its declared value boundary, and a return is appended. Check signed/raw-bit payload, boxed type identity and fresh object identity. Original native boxing runtime allocation/GC, metadata initialization, the remainder of SetAge, other primitive/nullable/ref/enum/custom types and Switch feature availability are outside this scope."
+}

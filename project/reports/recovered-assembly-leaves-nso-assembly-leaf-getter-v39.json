@@ -1,0 +1,820 @@
+{
+  "status": "PASS_FRESH_ORIGINAL_ASSEMBLY_GETTERS_AND_CONSTRUCTOR_CALL_CORRELATION",
+  "recovery_run": "nso-assembly-leaf-getter-v39",
+  "baseline_run": "nso-virtual-companion-copy-v38",
+  "checks": 118,
+  "tests": [
+    {
+      "name": "frozen78/15 original native/accessibility/emission contracts pass",
+      "passed": true
+    },
+    {
+      "name": "both contracts bind exact v39 Core",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: BestHTTP.Caching.HTTPCacheFileInfo::get_Uri",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: BestHTTP.Caching.HTTPCacheFileInfo::get_Uri",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: BestHTTP.Caching.HTTPCacheFileInfo::get_Uri",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: BestHTTP.Caching.HTTPCacheFileInfo::get_BodyLength",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: BestHTTP.Caching.HTTPCacheFileInfo::get_BodyLength",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: BestHTTP.Caching.HTTPCacheFileInfo::get_BodyLength",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: BestHTTP.Caching.HTTPCacheFileInfo::get_MappedNameIDX",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: BestHTTP.Caching.HTTPCacheFileInfo::get_MappedNameIDX",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: BestHTTP.Caching.HTTPCacheFileInfo::get_MappedNameIDX",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: BestHTTP.HTTPConnection::get_ServerAddress",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: BestHTTP.HTTPConnection::get_ServerAddress",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: BestHTTP.HTTPConnection::get_ServerAddress",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: BestHTTP.HTTPConnection::get_CurrentRequest",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: BestHTTP.HTTPConnection::get_CurrentRequest",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: BestHTTP.HTTPConnection::get_CurrentRequest",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: BestHTTP.HTTPConnection::get_Proxy",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: BestHTTP.HTTPConnection::get_Proxy",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: BestHTTP.HTTPConnection::get_Proxy",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: BestHTTP.HTTPConnection::get_LastProcessedUri",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: BestHTTP.HTTPConnection::get_LastProcessedUri",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: BestHTTP.HTTPConnection::get_LastProcessedUri",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_NewItems",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_NewItems",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_NewItems",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_NewStartingIndex",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_NewStartingIndex",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_NewStartingIndex",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_OldItems",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_OldItems",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_OldItems",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_OldStartingIndex",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_OldStartingIndex",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_OldStartingIndex",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Newtonsoft.Json.Schema.JsonSchema::get_InternalId",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Newtonsoft.Json.Schema.JsonSchema::get_InternalId",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Newtonsoft.Json.Schema.JsonSchema::get_InternalId",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Newtonsoft.Json.Serialization.JsonArrayContract::get_CollectionItemType",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Newtonsoft.Json.Serialization.JsonArrayContract::get_CollectionItemType",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Newtonsoft.Json.Serialization.JsonArrayContract::get_CollectionItemType",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Newtonsoft.Json.Serialization.JsonContract::get_InternalConverter",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Newtonsoft.Json.Serialization.JsonContract::get_InternalConverter",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Newtonsoft.Json.Serialization.JsonContract::get_InternalConverter",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Newtonsoft.Json.Serialization.JsonDictionaryContract::get_DictionaryKeyType",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Newtonsoft.Json.Serialization.JsonDictionaryContract::get_DictionaryKeyType",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Newtonsoft.Json.Serialization.JsonDictionaryContract::get_DictionaryKeyType",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Newtonsoft.Json.Serialization.JsonDictionaryContract::get_DictionaryValueType",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Newtonsoft.Json.Serialization.JsonDictionaryContract::get_DictionaryValueType",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Newtonsoft.Json.Serialization.JsonDictionaryContract::get_DictionaryValueType",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Newtonsoft.Json.Serialization.JsonSerializerInternalBase::get_Serializer",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Newtonsoft.Json.Serialization.JsonSerializerInternalBase::get_Serializer",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Newtonsoft.Json.Serialization.JsonSerializerInternalBase::get_Serializer",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Nekki.Audio.AudioUnit::get_Paused",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Nekki.Audio.AudioUnit::get_Paused",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Nekki.Audio.AudioUnit::get_Paused",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Unity.IO.Compression.DeflateInput::get_Count",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Unity.IO.Compression.DeflateInput::get_Count",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Unity.IO.Compression.DeflateInput::get_Count",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Unity.IO.Compression.DeflateInput::get_StartIndex",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Unity.IO.Compression.DeflateInput::get_StartIndex",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Unity.IO.Compression.DeflateInput::get_StartIndex",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Unity.IO.Compression.DeflateStreamAsyncResult::get_Result",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Unity.IO.Compression.DeflateStreamAsyncResult::get_Result",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Unity.IO.Compression.DeflateStreamAsyncResult::get_Result",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Unity.IO.Compression.FastEncoder::get_LastCompressionRatio",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Unity.IO.Compression.FastEncoder::get_LastCompressionRatio",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Unity.IO.Compression.FastEncoder::get_LastCompressionRatio",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Unity.IO.Compression.Match::get_Position",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Unity.IO.Compression.Match::get_Position",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Unity.IO.Compression.Match::get_Position",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Unity.IO.Compression.Match::get_Length",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Unity.IO.Compression.Match::get_Length",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Unity.IO.Compression.Match::get_Length",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Unity.IO.Compression.Match::get_Symbol",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Unity.IO.Compression.Match::get_Symbol",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Unity.IO.Compression.Match::get_Symbol",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: Unity.IO.Compression.OutputBuffer::get_BytesWritten",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: Unity.IO.Compression.OutputBuffer::get_BytesWritten",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: Unity.IO.Compression.OutputBuffer::get_BytesWritten",
+      "passed": true
+    },
+    {
+      "name": "immutable selected getter baseline assembly hash",
+      "passed": true
+    },
+    {
+      "name": "fresh getter keeps original Assembly/private/no-cctor/nongeneric/nonnested contract: InControl.UnityInputDevice::get_JoystickId",
+      "passed": true
+    },
+    {
+      "name": "fresh getter exactly returns same receiver field through local copies: InControl.UnityInputDevice::get_JoystickId",
+      "passed": true
+    },
+    {
+      "name": "fresh getter retains complete prior instructions/locals/init/maxstack/EH: InControl.UnityInputDevice::get_JoystickId",
+      "passed": true
+    },
+    {
+      "name": "all27 original selected getters examined",
+      "passed": true
+    },
+    {
+      "name": "fresh original constructor exactly substitutes its own internal getter: Newtonsoft.Json.Serialization.JsonSerializerInternalReader",
+      "passed": true
+    },
+    {
+      "name": "all other fresh constructor rows preserve original control/effect/operands: Newtonsoft.Json.Serialization.JsonSerializerInternalReader",
+      "passed": true
+    },
+    {
+      "name": "fresh constructor full local/init/maxstack/EH/signature shape remains exact: Newtonsoft.Json.Serialization.JsonSerializerInternalReader",
+      "passed": true
+    },
+    {
+      "name": "fresh original constructor exactly substitutes its own internal getter: Newtonsoft.Json.Serialization.JsonSerializerInternalWriter",
+      "passed": true
+    },
+    {
+      "name": "all other fresh constructor rows preserve original control/effect/operands: Newtonsoft.Json.Serialization.JsonSerializerInternalWriter",
+      "passed": true
+    },
+    {
+      "name": "fresh constructor full local/init/maxstack/EH/signature shape remains exact: Newtonsoft.Json.Serialization.JsonSerializerInternalWriter",
+      "passed": true
+    },
+    {
+      "name": "both original constructors compared",
+      "passed": true
+    }
+  ],
+  "getters": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.Caching.HTTPCacheFileInfo",
+      "field": "\u003CUri\u003Ek__BackingField",
+      "getter": "get_Uri",
+      "original_native_rva": "0x2294A0",
+      "current_getter_token": "06000036",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.Caching.HTTPCacheFileInfo",
+      "field": "\u003CBodyLength\u003Ek__BackingField",
+      "getter": "get_BodyLength",
+      "original_native_rva": "0x2294C0",
+      "current_getter_token": "0600003A",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.Caching.HTTPCacheFileInfo",
+      "field": "\u003CMappedNameIDX\u003Ek__BackingField",
+      "getter": "get_MappedNameIDX",
+      "original_native_rva": "0x229570",
+      "current_getter_token": "0600004E",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.HTTPConnection",
+      "field": "\u003CServerAddress\u003Ek__BackingField",
+      "getter": "get_ServerAddress",
+      "original_native_rva": "0x250CD0",
+      "current_getter_token": "0600022A",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.HTTPConnection",
+      "field": "\u003CCurrentRequest\u003Ek__BackingField",
+      "getter": "get_CurrentRequest",
+      "original_native_rva": "0x250D30",
+      "current_getter_token": "06000230",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.HTTPConnection",
+      "field": "\u003CProxy\u003Ek__BackingField",
+      "getter": "get_Proxy",
+      "original_native_rva": "0x250F60",
+      "current_getter_token": "06000237",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.HTTPConnection",
+      "field": "\u003CLastProcessedUri\u003Ek__BackingField",
+      "getter": "get_LastProcessedUri",
+      "original_native_rva": "0x250F90",
+      "current_getter_token": "0600023A",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs",
+      "field": "\u003CNewItems\u003Ek__BackingField",
+      "getter": "get_NewItems",
+      "original_native_rva": "0x654B90",
+      "current_getter_token": "06001197",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs",
+      "field": "\u003CNewStartingIndex\u003Ek__BackingField",
+      "getter": "get_NewStartingIndex",
+      "original_native_rva": "0x654BA0",
+      "current_getter_token": "06001199",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs",
+      "field": "\u003COldItems\u003Ek__BackingField",
+      "getter": "get_OldItems",
+      "original_native_rva": "0x654BB0",
+      "current_getter_token": "0600119B",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs",
+      "field": "\u003COldStartingIndex\u003Ek__BackingField",
+      "getter": "get_OldStartingIndex",
+      "original_native_rva": "0x654BC0",
+      "current_getter_token": "0600119D",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Schema.JsonSchema",
+      "field": "_internalId",
+      "getter": "get_InternalId",
+      "original_native_rva": "0x655F20",
+      "current_getter_token": "060011E9",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Serialization.JsonArrayContract",
+      "field": "\u003CCollectionItemType\u003Ek__BackingField",
+      "getter": "get_CollectionItemType",
+      "original_native_rva": "0x1E48A0",
+      "current_getter_token": "060012D8",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Serialization.JsonContract",
+      "field": "\u003CInternalConverter\u003Ek__BackingField",
+      "getter": "get_InternalConverter",
+      "original_native_rva": "0x1D61D0",
+      "current_getter_token": "060012E6",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Serialization.JsonDictionaryContract",
+      "field": "\u003CDictionaryKeyType\u003Ek__BackingField",
+      "getter": "get_DictionaryKeyType",
+      "original_native_rva": "0x1E5890",
+      "current_getter_token": "060012FE",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Serialization.JsonDictionaryContract",
+      "field": "\u003CDictionaryValueType\u003Ek__BackingField",
+      "getter": "get_DictionaryValueType",
+      "original_native_rva": "0x1E57A0",
+      "current_getter_token": "06001300",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Serialization.JsonSerializerInternalBase",
+      "field": "\u003CSerializer\u003Ek__BackingField",
+      "getter": "get_Serializer",
+      "original_native_rva": "0x1E6850",
+      "current_getter_token": "06001359",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Nekki.Audio.AudioUnit",
+      "field": "\u003CPaused\u003Ek__BackingField",
+      "getter": "get_Paused",
+      "original_native_rva": "0x10E9D90",
+      "current_getter_token": "060015DE",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.DeflateInput",
+      "field": "count",
+      "getter": "get_Count",
+      "original_native_rva": "0xB3B20",
+      "current_getter_token": "06001F71",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.DeflateInput",
+      "field": "startIndex",
+      "getter": "get_StartIndex",
+      "original_native_rva": "0xB3E30",
+      "current_getter_token": "06001F73",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.DeflateStreamAsyncResult",
+      "field": "m_Result",
+      "getter": "get_Result",
+      "original_native_rva": "0xB65D0",
+      "current_getter_token": "06001FAC",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.FastEncoder",
+      "field": "lastCompressionRatio",
+      "getter": "get_LastCompressionRatio",
+      "original_native_rva": "0xB46D0",
+      "current_getter_token": "06001FB6",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.Match",
+      "field": "pos",
+      "getter": "get_Position",
+      "original_native_rva": "0xB92F0",
+      "current_getter_token": "06002029",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.Match",
+      "field": "len",
+      "getter": "get_Length",
+      "original_native_rva": "0xB92E0",
+      "current_getter_token": "0600202B",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.Match",
+      "field": "symbol",
+      "getter": "get_Symbol",
+      "original_native_rva": "0xB9220",
+      "current_getter_token": "0600202D",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.OutputBuffer",
+      "field": "pos",
+      "getter": "get_BytesWritten",
+      "original_native_rva": "0xB4800",
+      "current_getter_token": "06002031",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "owner": "InControl.UnityInputDevice",
+      "field": "\u003CJoystickId\u003Ek__BackingField",
+      "getter": "get_JoystickId",
+      "original_native_rva": "0x11B87E0",
+      "current_getter_token": "060020C1",
+      "instructions": 3,
+      "exact_original_field_flow": true,
+      "original_flags_preserved": true
+    }
+  ],
+  "constructors": [
+    {
+      "parameter_type": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader",
+      "original_native_rva": "0x1E9EB0",
+      "current_method_token": "060013A3",
+      "changed_instruction_rows": 1,
+      "unchanged_instruction_rows": 13,
+      "original_receiver_sequence_preserved": true,
+      "body_shape_unchanged": true
+    },
+    {
+      "parameter_type": "Newtonsoft.Json.Serialization.JsonSerializerInternalWriter",
+      "original_native_rva": "0x1F0E90",
+      "current_method_token": "060013A4",
+      "changed_instruction_rows": 1,
+      "unchanged_instruction_rows": 13,
+      "original_receiver_sequence_preserved": true,
+      "body_shape_unchanged": true
+    }
+  ],
+  "selected_getters": 27,
+  "actual_constructors": 2,
+  "fatal": null,
+  "source_sha256": "76778949f694e11254fac2f4b24bba03f2fecba6e21d0d0ca3fae99f0f9f52fa",
+  "contract_report_sha256": "5ecbc526d3fb1689d41277014cd9fca9aa078318981de646357ddc18917dd806",
+  "production_report_sha256": "4c03b923fb775f36838a87af9c39e0b2030978331695e9af2a7612c96dd7ba24",
+  "invocation_report_sha256": "3a6c718323193358e4d138940fda87bea1c9196d9c1616f63d71ff10a42f5350",
+  "baseline_main_sha256": "b27b575f04159eb61cd50eaf21566e682b882726b5faa216bf1402b55e7ae27c",
+  "baseline_firstpass_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192",
+  "actual_main_sha256": "f1807583f68e4e2da6c65f57009d3c3207b400be56d1ba3b589cdb10c5d0c604",
+  "actual_firstpass_sha256": "410c413e323aab5c3c8f974ee296bf76c91e9ca0be108f594de872e1c5c9cff5",
+  "private_cil_comparison": "analysis/reconstruction/assembly-leaf-v39/fresh-output-cil-comparison.json",
+  "private_cil_sha256": "5064cfb6c067ee837f20885684b24990957cff772bee6360f6c8c0eec1b25f83",
+  "core_dependency_loaded": false,
+  "recovered_game_methods_invoked": 0,
+  "constructors_invoked": 0,
+  "original_cil_modified": false,
+  "metadata_flags_changed": false,
+  "tokens_remapped": 0,
+  "full_clean_decompile_ready": false,
+  "scope": "Offline AsmResolver metadata/CIL inspection of fresh complete v39 output. All27 native-selected internal getters must retain exact receiver-to-original-private-field-to-return value flow with no extra effects/EH or owner .cctor; two original proxy constructors must differ from immutable v38 only at exactly one private field load becoming the existing same-assembly nonvirtual getter Call. Argument/local macros and branch labels are normalized by exact index; all remaining operand identities, local type/pinning signatures, MaxStack, InitLocals and EH shape remain exact. Original code is never loaded for execution or rewritten; no whole-game behavior or compilation success is claimed."
+}

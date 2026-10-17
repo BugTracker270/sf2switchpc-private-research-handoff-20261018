@@ -1,0 +1,283 @@
+{
+  "status": "BOUNDED_COPY_FORWARDING_OR_READ_ORDER_FAILURE",
+  "label": "restart-v41-copy-guard",
+  "total": 27,
+  "failures": 3,
+  "cases": [
+    {
+      "mode": "memory-source-overwrite",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 17,
+      "after": 17,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move source @ source, other @ other\r\n2 Move result @ result, [copy @ copy\u002B10]\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "memory-source-overwrite",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": -33,
+      "after": -33,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move source @ source, other @ other\r\n2 Move result @ result, [copy @ copy\u002B10]\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "memory-source-overwrite",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 0,
+      "after": 0,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move source @ source, other @ other\r\n2 Move result @ result, [copy @ copy\u002B10]\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "plain-source-overwrite",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 4096,
+      "after": 4096,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move source @ source, other @ other\r\n2 Move result @ result, copy @ copy\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return source @ source\r\n"
+    },
+    {
+      "mode": "plain-source-overwrite",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": 12288,
+      "after": 12288,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move source @ source, other @ other\r\n2 Move result @ result, copy @ copy\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return source @ source\r\n"
+    },
+    {
+      "mode": "plain-source-overwrite",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 20480,
+      "after": 20480,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move source @ source, other @ other\r\n2 Move result @ result, copy @ copy\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return source @ source\r\n"
+    },
+    {
+      "mode": "no-overwrite",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 17,
+      "after": 17,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move result @ result, [copy @ copy\u002B10]\r\n2 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n2 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "no-overwrite",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": -33,
+      "after": -33,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move result @ result, [copy @ copy\u002B10]\r\n2 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n2 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "no-overwrite",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 0,
+      "after": 0,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move result @ result, [copy @ copy\u002B10]\r\n2 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n2 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "source-overwrite-after-read",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 17,
+      "after": 17,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move result @ result, [copy @ copy\u002B10]\r\n2 Move source @ source, other @ other\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "source-overwrite-after-read",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": -33,
+      "after": -33,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move result @ result, [copy @ copy\u002B10]\r\n2 Move source @ source, other @ other\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "source-overwrite-after-read",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 0,
+      "after": 0,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move result @ result, [copy @ copy\u002B10]\r\n2 Move source @ source, other @ other\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "destination-overwrite",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 29,
+      "after": 29,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move copy @ copy, other @ other\r\n2 Move result @ result, [copy @ copy\u002B10]\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return [other @ other\u002B10]\r\n"
+    },
+    {
+      "mode": "destination-overwrite",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": 91,
+      "after": 91,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move copy @ copy, other @ other\r\n2 Move result @ result, [copy @ copy\u002B10]\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return [other @ other\u002B10]\r\n"
+    },
+    {
+      "mode": "destination-overwrite",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 987654321,
+      "after": 987654321,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move copy @ copy, other @ other\r\n2 Move result @ result, [copy @ copy\u002B10]\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nReturn 2\r\n\r\n3 Return [other @ other\u002B10]\r\n"
+    },
+    {
+      "mode": "address-source-write",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 17,
+      "after": 17,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 CallVoid 0111, \u0026source @ source\r\n\nReturn 3\r\n\r\n2 Move result @ result, [copy @ copy\u002B10]\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 CallVoid 0111, \u0026source @ source\r\n\nReturn 3\r\n\r\n3 Return [copy @ copy\u002B10]\r\n"
+    },
+    {
+      "mode": "address-source-write",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": -33,
+      "after": -33,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 CallVoid 0111, \u0026source @ source\r\n\nReturn 3\r\n\r\n2 Move result @ result, [copy @ copy\u002B10]\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 CallVoid 0111, \u0026source @ source\r\n\nReturn 3\r\n\r\n3 Return [copy @ copy\u002B10]\r\n"
+    },
+    {
+      "mode": "address-source-write",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 0,
+      "after": 0,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 CallVoid 0111, \u0026source @ source\r\n\nReturn 3\r\n\r\n2 Move result @ result, [copy @ copy\u002B10]\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 CallVoid 0111, \u0026source @ source\r\n\nReturn 3\r\n\r\n3 Return [copy @ copy\u002B10]\r\n"
+    },
+    {
+      "mode": "load-before-memory-write",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 17,
+      "after": 29,
+      "passed": false,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move result @ result, [copy @ copy\u002B10]\r\n2 CallVoid 0222\r\n\nReturn 3\r\n\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n2 CallVoid 0222\r\n\nReturn 3\r\n\r\n3 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "load-before-memory-write",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": -33,
+      "after": 91,
+      "passed": false,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move result @ result, [copy @ copy\u002B10]\r\n2 CallVoid 0222\r\n\nReturn 3\r\n\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n2 CallVoid 0222\r\n\nReturn 3\r\n\r\n3 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "load-before-memory-write",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 0,
+      "after": 987654321,
+      "passed": false,
+      "before_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n0 Move copy @ copy, source @ source\r\n1 Move result @ result, [copy @ copy\u002B10]\r\n2 CallVoid 0222\r\n\nReturn 3\r\n\r\n3 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n\nExit 1\r\n\r\n\nCall 2\r\n\r\n2 CallVoid 0222\r\n\nReturn 3\r\n\r\n3 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "branch-overwrite-left",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 17,
+      "after": 17,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n0 Move copy @ copy, source @ source\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n2 Move source @ source, other @ other\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n5 Move result @ result, [copy @ copy\u002B10]\r\n6 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n6 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "branch-overwrite-left",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": -33,
+      "after": -33,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n0 Move copy @ copy, source @ source\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n2 Move source @ source, other @ other\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n5 Move result @ result, [copy @ copy\u002B10]\r\n6 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n6 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "branch-overwrite-left",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 0,
+      "after": 0,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n0 Move copy @ copy, source @ source\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n2 Move source @ source, other @ other\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n5 Move result @ result, [copy @ copy\u002B10]\r\n6 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n6 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "branch-overwrite-right",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 17,
+      "after": 17,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n0 Move copy @ copy, source @ source\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n2 Move source @ source, other @ other\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n5 Move result @ result, [copy @ copy\u002B10]\r\n6 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n6 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "branch-overwrite-right",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": -33,
+      "after": -33,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n0 Move copy @ copy, source @ source\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n2 Move source @ source, other @ other\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n5 Move result @ result, [copy @ copy\u002B10]\r\n6 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n6 Return [source @ source\u002B10]\r\n"
+    },
+    {
+      "mode": "branch-overwrite-right",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 0,
+      "after": 0,
+      "passed": true,
+      "before_graph": "Entry 0\r\n\r\n0 Move copy @ copy, source @ source\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n2 Move source @ source, other @ other\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n5 Move result @ result, [copy @ copy\u002B10]\r\n6 Return result @ result\r\n",
+      "after_graph": "Entry 0\r\n\r\n1 ConditionalJump @b10, condition @ condition\r\n\nExit 1\r\n\r\n\nUnknown 10\r\n\r\n3 Jump @b12\r\n\nUnknown 11\r\n\r\n4 Jump @b12\r\n\nUnknown 12\r\n\r\n6 Return [source @ source\u002B10]\r\n"
+    }
+  ],
+  "core_sha256": "204bcc3311fd3ee10ce0f5a9038426cccc24614037ec4f59d9b392302629608f",
+  "probe_source_sha256": "c03ab8e6e2462d264e0e886822198a4534bf50f7a0ef0197dec8390a9eaf7517",
+  "game_methods_executed": 0,
+  "game_metadata_loaded": false,
+  "scope": "Actual Simplifier.Simplify on real minimal ISIL/CFG/local objects; independent bounded interpreter compares original and transformed fixtures. Both branch paths, captured source reassignment, supplied byref write, and supplied memory-write boundary are tested. No game/native helper parity, full pipeline or full source recovery is claimed."
+}

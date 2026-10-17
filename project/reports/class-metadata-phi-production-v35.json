@@ -1,0 +1,200 @@
+{
+  "status": "PASS_PRODUCTION_EDGE_AWARE_CLASS_METADATA_PHI_LOWERING",
+  "checks": 73,
+  "actual_method": "BundlesUtil::GetAssetBundleSafe",
+  "actual_raw_call_index": 40,
+  "actual_phi_block": 7,
+  "actual_phi_destination": "v46",
+  "actual_phi_edges": [
+    {
+      "source_index": 1,
+      "predecessor": 6,
+      "source": "v20",
+      "definitions": [
+        {
+          "block": 24,
+          "position": 2,
+          "opcode": "Move",
+          "root_type": "BundlesUtil",
+          "definition_dominates_predecessor": true
+        }
+      ]
+    },
+    {
+      "source_index": 2,
+      "predecessor": 21,
+      "source": "v47",
+      "definitions": [
+        {
+          "block": 21,
+          "position": 1,
+          "opcode": "Move",
+          "root_type": "BundlesUtil",
+          "definition_dominates_predecessor": true
+        }
+      ]
+    }
+  ],
+  "actual_proposed_identity_proof": true,
+  "actual_call_stays_unresolved": false,
+  "production_lowering": true,
+  "fixtures": [
+    {
+      "name": "two independent exact metadata roots",
+      "expected": true,
+      "accepted": true,
+      "rejection": null
+    },
+    {
+      "name": "same root reused across both incoming edges",
+      "expected": true,
+      "accepted": true,
+      "rejection": null
+    },
+    {
+      "name": "conflicting original type identity despite matching propagated local type",
+      "expected": false,
+      "accepted": false,
+      "rejection": "conflicting-original-type-identity"
+    },
+    {
+      "name": "unknown incoming source",
+      "expected": false,
+      "accepted": false,
+      "rejection": "unknown-origin"
+    },
+    {
+      "name": "uninitialized incoming source",
+      "expected": false,
+      "accepted": false,
+      "rejection": "missing-or-multiple-definitions"
+    },
+    {
+      "name": "duplicate incoming definition",
+      "expected": false,
+      "accepted": false,
+      "rejection": "missing-or-multiple-definitions"
+    },
+    {
+      "name": "swapped predecessor source positions",
+      "expected": false,
+      "accepted": false,
+      "rejection": "definition-unavailable-at-edge-or-use"
+    },
+    {
+      "name": "missing predecessor source",
+      "expected": false,
+      "accepted": false,
+      "rejection": "malformed-phi-predecessor-arity"
+    },
+    {
+      "name": "extra predecessor source",
+      "expected": false,
+      "accepted": false,
+      "rejection": "malformed-phi-predecessor-arity"
+    },
+    {
+      "name": "duplicate predecessor",
+      "expected": false,
+      "accepted": false,
+      "rejection": "asymmetric-successor"
+    },
+    {
+      "name": "asymmetric predecessor edge",
+      "expected": false,
+      "accepted": false,
+      "rejection": "unreachable-or-asymmetric-predecessor"
+    },
+    {
+      "name": "predecessor outside graph",
+      "expected": false,
+      "accepted": false,
+      "rejection": "asymmetric-successor"
+    },
+    {
+      "name": "incoming untyped local",
+      "expected": false,
+      "accepted": false,
+      "rejection": "untyped-or-conflicting-runtime-class"
+    },
+    {
+      "name": "incoming local assigned wrong represented class",
+      "expected": false,
+      "accepted": false,
+      "rejection": "untyped-or-conflicting-runtime-class"
+    },
+    {
+      "name": "Phi placed after an ordinary instruction",
+      "expected": false,
+      "accepted": false,
+      "rejection": "phi-not-in-entry-prefix"
+    },
+    {
+      "name": "class local address escapes",
+      "expected": false,
+      "accepted": false,
+      "rejection": "class-local-address-escapes"
+    },
+    {
+      "name": "merge Phi defined after call",
+      "expected": false,
+      "accepted": false,
+      "rejection": "definition-unavailable-at-edge-or-use"
+    },
+    {
+      "name": "repeated false typing result is not cached across passes",
+      "expected": true,
+      "accepted": true,
+      "rejection": null
+    },
+    {
+      "name": "distinct local budget with 29 shared chain nodes",
+      "expected": true,
+      "accepted": true,
+      "rejection": null
+    },
+    {
+      "name": "distinct local budget with 30 shared chain nodes",
+      "expected": false,
+      "accepted": false,
+      "rejection": "origin-budget"
+    },
+    {
+      "name": "loop-carried origin dependency cycle",
+      "expected": false,
+      "accepted": false,
+      "rejection": "cyclic-origin"
+    },
+    {
+      "name": "shared acyclic Phi DAG depth3",
+      "expected": true,
+      "accepted": true,
+      "rejection": null
+    },
+    {
+      "name": "shared acyclic Phi DAG depth9",
+      "expected": false,
+      "accepted": false,
+      "rejection": "origin-visit-budget"
+    }
+  ],
+  "original_post_cctor_reload_indices": [
+    41,
+    42,
+    43
+  ],
+  "proposal_checker_left_graph_unchanged": true,
+  "remaining_runtime_class_flag_loads": 4,
+  "proposed_production_location": "KeyFunctionRecovery.HasExactClassMetadataOrigin only; retain existing target/ABI/unused-result/closed-type/API-overload gates.",
+  "proposed_rules": [
+    "Fresh dominance for the current immutable CFG pass; reachable reciprocal unique edges, unique SSA definition and available definition at each use.",
+    "Move roots must end at the same original represented TypeAnalysisContext object. Propagated names or RuntimeClass\u003CT\u003E alone do not prove identity.",
+    "Phi operand i\u002B1 is checked at Block.Predecessors[i] end, with exact arity and entry-prefix placement; do not require conditional source definitions to dominate the merge.",
+    "Separate active recursion path,32-distinct-local budget and256-total-visit budget: cycles/unknowns/escapes reject, small identical shared roots may pass, excessive shared-DAG traversal fails closed. No false-result cache survives type-fixpoint iterations.",
+    "Only class identity proof changes; preserve all post-cctor field reloads, branches, fields, original call position and initialization effects."
+  ],
+  "core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "scope": "The actual production type fixpoint lowers the previously unresolved original Phi helper to the exact existing managed void class-constructor contract. Original post-cctor class/static-storage/currentConfig reload instructions remain unchanged; no CFG branch is edited. Production lowering is also tested on independent positive/negative ISIL fixtures, with an independent edge-aware identity checker. No emitted recovered DLL/CIL execution, original class-constructor parity, whole-caller execution, source compilation or full-decompilation claim is made here."
+}

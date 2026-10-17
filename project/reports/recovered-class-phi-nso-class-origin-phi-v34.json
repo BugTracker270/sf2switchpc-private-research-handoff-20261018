@@ -1,0 +1,84 @@
+{
+  "status": "PASS_ACTUAL_GETSAFE_CLASS_INITIALIZER_CIL_CORRELATION",
+  "recovery_run": "nso-class-origin-phi-v34",
+  "baseline_run": "nso-class-guard-load-v33",
+  "checks": 13,
+  "before": {
+    "Run": "nso-class-guard-load-v33",
+    "AssemblySha256": "829674de6ee1d1a016b03c4c877de948de31b091d2e11793ade46cf8d83c0e83",
+    "CilSha256": "ca3f353600eaeda061242a0dbe52f9a9a92407e0c89fcefe2a3ce7cc68e73bb8",
+    "MethodToken": 100669368,
+    "OwnerToken": 33554935,
+    "FieldToken": 67111354,
+    "ConstructorRequests": 2,
+    "RawHelperDiagnostics": 1,
+    "RawClassFlagDiagnostics": 4,
+    "PostConstructorFieldReloads": 1,
+    "Pairs": [
+      {
+        "token_offset": 258,
+        "call_offset": 263,
+        "owner_token": "0x020001F7",
+        "helper_token": "0x0A00006E",
+        "original_current_config_reload_before_next_branch": false,
+        "reload_offset": null
+      },
+      {
+        "token_offset": 309,
+        "call_offset": 314,
+        "owner_token": "0x020001F7",
+        "helper_token": "0x0A00006E",
+        "original_current_config_reload_before_next_branch": true,
+        "reload_offset": 319
+      }
+    ]
+  },
+  "after": {
+    "Run": "nso-class-origin-phi-v34",
+    "AssemblySha256": "4df1261d5e9c8c0e0e40a6db2f6d57a71dde0940c109f89b1d1107e7f5365146",
+    "CilSha256": "775aff72f669fae89719ae5182bc8b8ee87aa075e25836d6903c35639ba553f9",
+    "MethodToken": 100669368,
+    "OwnerToken": 33554935,
+    "FieldToken": 67111354,
+    "ConstructorRequests": 3,
+    "RawHelperDiagnostics": 0,
+    "RawClassFlagDiagnostics": 4,
+    "PostConstructorFieldReloads": 2,
+    "Pairs": [
+      {
+        "token_offset": 194,
+        "call_offset": 199,
+        "owner_token": "0x020001F7",
+        "helper_token": "0x0A00006E",
+        "original_current_config_reload_before_next_branch": true,
+        "reload_offset": 204
+      },
+      {
+        "token_offset": 258,
+        "call_offset": 263,
+        "owner_token": "0x020001F7",
+        "helper_token": "0x0A00006E",
+        "original_current_config_reload_before_next_branch": false,
+        "reload_offset": null
+      },
+      {
+        "token_offset": 309,
+        "call_offset": 314,
+        "owner_token": "0x020001F7",
+        "helper_token": "0x0A00006E",
+        "original_current_config_reload_before_next_branch": true,
+        "reload_offset": 319
+      }
+    ]
+  },
+  "assembly_sha256": "4df1261d5e9c8c0e0e40a6db2f6d57a71dde0940c109f89b1d1107e7f5365146",
+  "baseline_assembly_sha256": "829674de6ee1d1a016b03c4c877de948de31b091d2e11793ade46cf8d83c0e83",
+  "cil_sha256": "775aff72f669fae89719ae5182bc8b8ee87aa075e25836d6903c35639ba553f9",
+  "baseline_cil_sha256": "ca3f353600eaeda061242a0dbe52f9a9a92407e0c89fcefe2a3ce7cc68e73bb8",
+  "recovered_cil_or_source_modified": false,
+  "tokens_remapped": 0,
+  "game_methods_invoked": 0,
+  "class_initializers_invoked": 0,
+  "whole_method_executed": false,
+  "scope": "Inspects unchanged actual recovered GetAssetBundleSafe bodies in separate collectible contexts. Every emitted RunClassConstructor request takes the exact original BundlesUtil ldtoken and real RuntimeTypeHandle API signature. The formerly raw request becomes a third exact pair, with its original currentConfig static-field reload retained before the next branch. Four raw class-flag diagnostics remain; original methods/.cctors are never invoked. This is structural CIL/native-IR correlation, not whole-method execution, complete semantic recovery, source buildability or full decompilation."
+}

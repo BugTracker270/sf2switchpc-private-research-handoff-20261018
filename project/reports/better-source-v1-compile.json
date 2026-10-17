@@ -1,0 +1,395 @@
+{
+  "reference_run": "nso-bool-fields-v19",
+  "run": "better-source-v1",
+  "scope": "Unchanged alternative-tool source with verified official legacy framework references and matching metadata-derived dependency assemblies. Parser errors precede reference binding. No gameplay, complete-source or semantic claim.",
+  "assemblies": [
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "Assembly-CSharp",
+      "log": "logs\\better-source-v1-compile-Assembly-CSharp.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {
+        "CS1056": 2,
+        "CS0839": 3,
+        "CS1525": 690,
+        "CS1002": 2,
+        "CS1513": 8,
+        "CS1519": 4
+      },
+      "exit_code": 1,
+      "assembly": "Assembly-CSharp-firstpass",
+      "log": "logs\\better-source-v1-compile-Assembly-CSharp-firstpass.log",
+      "source_files": [
+        {
+          "path": "analysis\\il2cpp\\better-source-v1\\CSharpSource\\Assembly-CSharp-firstpass\\AdvLog.cs",
+          "sha256": "46ce81f37e030852b6fe3f7de09b86c82f3b343002a44aacd8e43067c7f2fbb6"
+        },
+        {
+          "path": "analysis\\il2cpp\\better-source-v1\\CSharpSource\\Assembly-CSharp-firstpass\\VersionContainer.cs",
+          "sha256": "96150c7b7b883c7f4b95b18ff95945ef01e09c68c4df20944c67fc21b1024467"
+        }
+      ],
+      "unique_diagnostic_lines": 709
+    },
+    {
+      "error_codes": {
+        "CS1513": 2,
+        "CS1525": 37
+      },
+      "exit_code": 1,
+      "assembly": "DOTween",
+      "log": "logs\\better-source-v1-compile-DOTween.log",
+      "source_files": [
+        {
+          "path": "analysis\\il2cpp\\better-source-v1\\CSharpSource\\DOTween\\DG\\Tweening\\Plugins\\Vector3WrapperPlugin.cs",
+          "sha256": "cc2a0c749c6cdca34d1170831c0152df1cca9bb9593241c8e4231696fb92d3d1"
+        }
+      ],
+      "unique_diagnostic_lines": 39
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "DOTween46",
+      "log": "logs\\better-source-v1-compile-DOTween46.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "Facebook.Unity.Settings",
+      "log": "logs\\better-source-v1-compile-Facebook.Unity.Settings.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "FyberLitJson",
+      "log": "logs\\better-source-v1-compile-FyberLitJson.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "FyberPlugin",
+      "log": "logs\\better-source-v1-compile-FyberPlugin.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "Ionic.Zip.Unity",
+      "log": "logs\\better-source-v1-compile-Ionic.Zip.Unity.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "Mono.Security",
+      "log": "logs\\better-source-v1-compile-Mono.Security.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "mscorlib",
+      "log": "logs\\better-source-v1-compile-mscorlib.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "protobuf-net",
+      "log": "logs\\better-source-v1-compile-protobuf-net.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "SmartFox2X",
+      "log": "logs\\better-source-v1-compile-SmartFox2X.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "System",
+      "log": "logs\\better-source-v1-compile-System.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "System.Configuration",
+      "log": "logs\\better-source-v1-compile-System.Configuration.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "System.Core",
+      "log": "logs\\better-source-v1-compile-System.Core.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "System.Xml",
+      "log": "logs\\better-source-v1-compile-System.Xml.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "System.Xml.Linq",
+      "log": "logs\\better-source-v1-compile-System.Xml.Linq.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "TcpClientImplementation",
+      "log": "logs\\better-source-v1-compile-TcpClientImplementation.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine",
+      "log": "logs\\better-source-v1-compile-UnityEngine.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.AIModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.AIModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.AnimationModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.AnimationModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.AssetBundleModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.AssetBundleModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.AudioModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.AudioModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {
+        "CS1525": 285
+      },
+      "exit_code": 1,
+      "assembly": "UnityEngine.CoreModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.CoreModule.log",
+      "source_files": [
+        {
+          "path": "analysis\\il2cpp\\better-source-v1\\CSharpSource\\UnityEngine.CoreModule\\UnityEngine\\Vector3.cs",
+          "sha256": "9d9a2ac65c9726f9a608b3f575aa64c795f4c27e78e45f696b1d9a5ca1989f24"
+        },
+        {
+          "path": "analysis\\il2cpp\\better-source-v1\\CSharpSource\\UnityEngine.CoreModule\\UnityEngine\\Vector3Int.cs",
+          "sha256": "56ffbb74858c06dccdd9893e2397c7808c9bf160865afdf11bcd5c2f8d76a0c2"
+        }
+      ],
+      "unique_diagnostic_lines": 285
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.DirectorModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.DirectorModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.GameCenterModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.GameCenterModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.GridModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.GridModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.ImageConversionModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.ImageConversionModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.IMGUIModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.IMGUIModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.InputModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.InputModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.ParticleSystemModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.ParticleSystemModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.Physics2DModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.Physics2DModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.PhysicsModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.PhysicsModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.SharedInternalsModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.SharedInternalsModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.TerrainModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.TerrainModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.TextRenderingModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.TextRenderingModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.TilemapModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.TilemapModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.UI",
+      "log": "logs\\better-source-v1-compile-UnityEngine.UI.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.UIElementsModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.UIElementsModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.UIModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.UIModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.UnityWebRequestAssetBundleModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.UnityWebRequestAssetBundleModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.UnityWebRequestModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.UnityWebRequestModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.UnityWebRequestWWWModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.UnityWebRequestWWWModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    },
+    {
+      "error_codes": {},
+      "exit_code": 0,
+      "assembly": "UnityEngine.VRModule",
+      "log": "logs\\better-source-v1-compile-UnityEngine.VRModule.log",
+      "source_files": [],
+      "unique_diagnostic_lines": 0
+    }
+  ],
+  "status": "SOURCE_PROBE_BUILD_FAILED"
+}

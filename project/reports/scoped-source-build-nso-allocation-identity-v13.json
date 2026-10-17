@@ -1,0 +1,31 @@
+{
+  "exports": [
+    {
+      "type": "BestHTTP.Authentication.AuthenticationTypes",
+      "exit_code": 0
+    },
+    {
+      "type": "BestHTTP.Authentication.Credentials",
+      "exit_code": 0
+    }
+  ],
+  "build_exit_code": 1,
+  "sources": [
+    {
+      "path": "F:\\SF2SwitchPC\\analysis\\il2cpp\\scoped-source-build-nso-allocation-identity-v13\\BestHTTP.Authentication.AuthenticationTypes\\BestHTTP.Authentication.AuthenticationTypes.decompiled.cs",
+      "operand_warning_comments": 0,
+      "sha256": "0d59ef484034d0ed9435007ef537470f1bca7380d06c83599bdfd2d8fd89253b",
+      "recovery_helper_calls": 0
+    },
+    {
+      "path": "F:\\SF2SwitchPC\\analysis\\il2cpp\\scoped-source-build-nso-allocation-identity-v13\\BestHTTP.Authentication.Credentials\\BestHTTP.Authentication.Credentials.decompiled.cs",
+      "operand_warning_comments": 0,
+      "sha256": "2571decb57d1333c88a3efb30340a788084a4231170c700c780d30d12f898c3c",
+      "recovery_helper_calls": 0
+    }
+  ],
+  "scope": "Compiles the actual ILSpy exports of Credentials and AuthenticationTypes without source edits, external packages, recovered DLL references or replacement method bodies. This is a two-type source recovery/compiler experiment, not whole-game source, executable gameplay or semantic parity.",
+  "restore_exit_code": 0,
+  "status": "SCOPED_SOURCE_COMPILATION_FAILED",
+  "recovery_run": "nso-allocation-identity-v13"
+}

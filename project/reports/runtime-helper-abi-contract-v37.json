@@ -1,0 +1,515 @@
+{
+  "status": "PASS_EXACT_NATIVE_RUNTIME_HELPER_ABI_ONLY_CONTRACTS",
+  "checks": 96,
+  "fatal": null,
+  "tests": [
+    {
+      "name": "exact final dual-helper Core identity",
+      "status": "PASS"
+    },
+    {
+      "name": "original input hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "exact reviewed target accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "distinct cctor helper rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "interior address rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "zero target rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "disabled opt-in rejected after cache populated",
+      "status": "PASS"
+    },
+    {
+      "name": "reenabled exact target accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "exact original frame is 140 bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "native helper maps to original loaded image",
+      "status": "PASS"
+    },
+    {
+      "name": "derived relocated image identity is explicit",
+      "status": "PASS"
+    },
+    {
+      "name": "actual immutable image/frame guard accepts",
+      "status": "PASS"
+    },
+    {
+      "name": "old incomplete 112-byte frame rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "larger frame rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "negative raw offset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow raw offset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "out-of-range raw offset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "truncated loaded image rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "changed native helper byte rejected on copied image",
+      "status": "PASS"
+    },
+    {
+      "name": "changed non-helper image byte rejected on copied image",
+      "status": "PASS"
+    },
+    {
+      "name": "probe did not modify application image",
+      "status": "PASS"
+    },
+    {
+      "name": "SSA class and result remain separate original X0 versions",
+      "status": "PASS"
+    },
+    {
+      "name": "original class source provenance retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Boolean seed is canonical and original result reaches return",
+      "status": "PASS"
+    },
+    {
+      "name": "only the one real class operand remains a source",
+      "status": "PASS"
+    },
+    {
+      "name": "unused-effect DCE cannot remove the helper call",
+      "status": "PASS"
+    },
+    {
+      "name": "valid typed ABI is emission eligible only as unresolved call",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong target never constructs a narrowed call",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh identity clone preserves immutable ABI carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "production indirect-return clone explicitly preserves carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "foreign owner rejects same carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "stale target rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "stale void opcode rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "missing class argument rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "extra stale X1 input rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "missing carrier rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "conflicting result type rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "conflicting preexisting type fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong result register fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong class input register fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "stale target before seeding fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "single managed alias cannot capture reviewed helper",
+      "status": "PASS"
+    },
+    {
+      "name": "interchangeable managed aliases cannot capture helper",
+      "status": "PASS"
+    },
+    {
+      "name": "stale MethodInfo does not resolve helper to unrelated method",
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic allocation context cannot reinterpret helper as ctor",
+      "status": "PASS"
+    },
+    {
+      "name": "string-accessor negative uses real registered literal slot",
+      "status": "PASS"
+    },
+    {
+      "name": "literal slot argument cannot erase helper call",
+      "status": "PASS"
+    },
+    {
+      "name": "actual original reader has all four narrowed helper sites before alias selection",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow helper exact target and canonical base metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow helper rejects class-layout and cctor addresses",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow helper rejects interior and zero addresses",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow disabled opt-in rejects after cache populated",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow exact frame is 52 bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow maps into original loaded image",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow exact immutable image guard accepts",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow short frame rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow long frame rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow negative offset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow overflow offset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow out-of-range offset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow truncated image rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow changed native byte rejected on copy",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow unrelated image-byte change rejected on copy",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow one native pointer input and distinct original X0 result survive SSA",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow native message pointer is preserved without string conversion",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow result is exact base Exception and original live return",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow effectful helper survives DCE",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow base result retains diagnostic emission eligibility",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow clone preserves distinct immutable carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "production clone preserves overflow carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow wrong owner rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow wrong target never creates call",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow stale target rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow stale void opcode rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow missing message argument rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow extra stale MethodInfo input rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow missing carrier rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow wrong Boolean result rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow conflicting prior type fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow wrong result register fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow wrong message register fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow stale target fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow single managed alias excluded",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow interchangeable managed aliases excluded",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow stale MethodInfo cannot substitute managed method",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow synthetic allocation cannot reinterpret helper as ctor",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow literal slot cannot erase effectful factory",
+      "status": "PASS"
+    },
+    {
+      "name": "actual original reader preserves one factory signature before alias selection",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter preserves exact unresolved helper diagnostic",
+      "status": "PASS"
+    },
+    {
+      "name": "emitter does not replace helper with Boolean true or managed cctor",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter refuses stale carrier target",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter retains factory diagnostic and subsequent throw",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter does not invent exception constructor or native-message conversion",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter rejects stale overflow carrier target",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter rejects cross-helper carrier mixing",
+      "status": "PASS"
+    },
+    {
+      "name": "original input file hashes remain unchanged",
+      "status": "PASS"
+    }
+  ],
+  "core_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+  "original_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "probe_source_sha256": "30ab86a61a2755e17f5075471fa589c22d8d9d3548259feef3e9de928eeb53e7",
+  "helper_source_sha256": "9e4daa163c2677d940ef1696e92b42cdb90d4c896fb5b680db5e43e8d23d8d99",
+  "overflow_helper_source_sha256": "cf78e506b535b0aab18160a8e9586e4d9c563060d4dd4e69d13f5cfd008e8998",
+  "overflow_native_source_report_sha256": "5fa664552188753297ff397082c2b36937235b3c49894a8dffb7ab5081c8a728",
+  "native_source_report_sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594",
+  "native_oracle_report_sha256": "4cde7bdd4c52d92cd7c41c2f5295e4cd8fc4bb83f9934ac5058ead97d9ac3258",
+  "target": "0xB04F60",
+  "helper_bytes": 140,
+  "helper_sha256": "496575374643a8ca7a9f1181d685de0fa4ac68574a3cc50c315d52d74a4d7dd3",
+  "derived_loaded_image_bytes": 74363922,
+  "derived_loaded_image_sha256": "b84d5b3eb4a3a12d3260b06840414445fb2d2deff54d1ba84876e8fa28549449",
+  "ssa_result_version": 2,
+  "ssa_class_source_version": 1,
+  "original_reader_raw_sites": [
+    {
+      "index": 67,
+      "operands": 3,
+      "input_register": "X0",
+      "result_register": "X0",
+      "managed_alias_bypassed": true
+    },
+    {
+      "index": 123,
+      "operands": 3,
+      "input_register": "X0",
+      "result_register": "X0",
+      "managed_alias_bypassed": true
+    },
+    {
+      "index": 182,
+      "operands": 3,
+      "input_register": "X0",
+      "result_register": "X0",
+      "managed_alias_bypassed": true
+    },
+    {
+      "index": 213,
+      "operands": 3,
+      "input_register": "X0",
+      "result_register": "X0",
+      "managed_alias_bypassed": true
+    }
+  ],
+  "overflow_helper": {
+    "target": "0xB4D960",
+    "bytes": 52,
+    "sha256": "3b5fd1d3de5b03792cd3309198170fba22c09b9434a348fa01330c20d8709f3f",
+    "result_type": "mscorlib:System.Exception",
+    "native_const_char_message_input": "X0",
+    "original_reader_raw_sites": [
+      {
+        "index": 202,
+        "operands": 3,
+        "input_register": "X0",
+        "result_register": "X0",
+        "native_message_pointer_not_converted": true,
+        "managed_alias_bypassed": true
+      }
+    ]
+  },
+  "emitted_diagnostic_fixtures": [
+    {
+      "name": "OriginalNativeHelperDiagnostic",
+      "diagnostic_preserved": true,
+      "executed": false,
+      "instructions": [
+        {
+          "opcode": "ldstr",
+          "operand": "Method not found @B04F60"
+        },
+        {
+          "opcode": "call",
+          "operand": "System.Void System.Console::WriteLine(System.String)"
+        },
+        {
+          "opcode": "br",
+          "operand": "IL_000F"
+        },
+        {
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    },
+    {
+      "name": "OverflowFactoryDiagnosticThenOriginalThrow",
+      "diagnostic_preserved": true,
+      "subsequent_throw_preserved": true,
+      "executed": false,
+      "instructions": [
+        {
+          "opcode": "ldstr",
+          "operand": "Method not found @B4D960"
+        },
+        {
+          "opcode": "call",
+          "operand": "System.Void System.Console::WriteLine(System.String)"
+        },
+        {
+          "opcode": "br",
+          "operand": "IL_000F"
+        },
+        {
+          "opcode": "ldloc",
+          "operand": "V_1"
+        },
+        {
+          "opcode": "throw",
+          "operand": null
+        }
+      ]
+    }
+  ],
+  "core_modified": false,
+  "original_inputs_modified": false,
+  "recovered_output_modified": false,
+  "native_code_executed": false,
+  "recovered_game_methods_executed": 0,
+  "cold_layout_effects_implemented": false,
+  "managed_cctor_substituted": false,
+  "scope": "Two distinct exact native helper ABI contracts only: Class::Init(Il2CppClass*) returns Boolean; GetOverflowException(const char*) returns canonical base Exception. Original input metadata/image guards and independent raw-ISIL/SSA/local/resolver/emitter fixtures preserve original X0 input/result identities. Copied image negatives and temporary synthetic aliases are in-process and restored. Invalid native-pointer inputs test resolver exclusion only and never execute. Four class-layout sites and one factory site in the original reader are inspected before analysis. Real emission retains both numeric helper diagnostics and a factory-result throw; no helper is implemented, converted to a managed constructor, UTF-8-decoded or executed. Native initialized-layout evidence is separate. Cold layout, factory construction/message storage, locking, unwinding, assertion termination and actual recovered execution remain unproved."
+}

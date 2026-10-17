@@ -1,0 +1,35 @@
+{
+  "status": "PASS_ACTUAL_RECOVERED_SCALAR_CURRENCY_CODEC_VS_ORIGINAL_NATIVE",
+  "recovery_run": "nso-cfg-init-v31",
+  "cases": 1024,
+  "checks": 3072,
+  "zero_key_cases": 256,
+  "nonzero_key_cases": 768,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": null,
+  "methods": [
+    {
+      "method": "Encrypt",
+      "native_rva": "0x7A8C20",
+      "bytes": 90,
+      "cil_sha256": "c71470b38223fadfee615247784f7335125dcafdad86fb13eb891eaeb8dcaa15",
+      "MaxStackSize": 2,
+      "locals": 7
+    },
+    {
+      "method": "Decrypt",
+      "native_rva": "0x7A8D70",
+      "bytes": 90,
+      "cil_sha256": "c71470b38223fadfee615247784f7335125dcafdad86fb13eb891eaeb8dcaa15",
+      "MaxStackSize": 2,
+      "locals": 7
+    }
+  ],
+  "assembly_sha256": "1c03dc559015e0001a0a4b0258f036fb80b5a63784fa1d38168614e701ee7d51",
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "dynamic_clones": 0,
+  "scope": "Calls the actual recovered static Encrypt(int,int)/Decrypt(int,int) CIL directly in .NET, with no source/IL edits, clones or helper substitutions. Uses exact existing original ARM64 fixture values and an explicit initialized cryptoKey input; native metadata/class initialization macros are outside this comparison. Checks zero-key fallback, explicit-key XOR and unchanged static key. No default-key overload, aggregate conversion, detector callback, whole currency/economy, original runtime or full source claim."
+}

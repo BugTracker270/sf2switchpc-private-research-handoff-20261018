@@ -1,0 +1,365 @@
+{
+  "status": "DESIGN_ONLY_DUPLICATE_METADATA_INIT_FUSION_WITH_PRODUCTION_BLOCKERS",
+  "evidence_checks": 25,
+  "evidence_tests": [
+    {
+      "name": "exact source NewSpecific invokes Class::Init before any size or allocator work",
+      "passed": true
+    },
+    {
+      "name": "first original allocation call is exact B04F60 before rank/length guards",
+      "passed": true
+    },
+    {
+      "name": "native NewSpecific retains incoming class through original X0 to nested init",
+      "passed": true
+    },
+    {
+      "name": "allocation body matches existing separately scoped native array witness",
+      "passed": true
+    },
+    {
+      "name": "exact caller and allocator frames are zR with empty augmentation and no LSDA/personality",
+      "passed": true
+    },
+    {
+      "name": "initialized Class::Init source fast path skips cold initialization",
+      "passed": true
+    },
+    {
+      "name": "exact original Byte metadata has no managed static constructor",
+      "passed": true
+    },
+    {
+      "name": "previous host metadata witness remains unimplemented evidence only",
+      "passed": true
+    },
+    {
+      "name": "window0 has only two original register operations",
+      "passed": true
+    },
+    {
+      "name": "window0 restores exactly same saved klass and overwrites unused Boolean result",
+      "passed": true
+    },
+    {
+      "name": "window0 has exact nonthrowing constant length",
+      "passed": true
+    },
+    {
+      "name": "historical stage67 declares exact observed result once and never consumes it",
+      "passed": true
+    },
+    {
+      "name": "window1 has only two original register operations",
+      "passed": true
+    },
+    {
+      "name": "window1 restores exactly same saved klass and overwrites unused Boolean result",
+      "passed": true
+    },
+    {
+      "name": "window1 has exact nonthrowing constant length",
+      "passed": true
+    },
+    {
+      "name": "historical stage123 declares exact observed result once and never consumes it",
+      "passed": true
+    },
+    {
+      "name": "window2 has only two original register operations",
+      "passed": true
+    },
+    {
+      "name": "window2 restores exactly same saved klass and overwrites unused Boolean result",
+      "passed": true
+    },
+    {
+      "name": "window2 has exact nonthrowing constant length",
+      "passed": true
+    },
+    {
+      "name": "historical stage182 declares exact observed result once and never consumes it",
+      "passed": true
+    },
+    {
+      "name": "window3 has only two original register operations",
+      "passed": true
+    },
+    {
+      "name": "window3 restores exactly same saved klass and overwrites unused Boolean result",
+      "passed": true
+    },
+    {
+      "name": "variable window preserves native low32 mask; not initial contract candidate",
+      "passed": true
+    },
+    {
+      "name": "historical stage213 declares exact observed result once and never consumes it",
+      "passed": true
+    },
+    {
+      "name": "current unchanged Read source still contains four explicit layout diagnostics and four byte allocations",
+      "passed": true
+    }
+  ],
+  "evidence_failures": 0,
+  "recommendation": "Prefer exact duplicate-init/allocation fusion over a standalone TypeHandle-or-true Class::Init adapter. Initial production scope should be only the three proved constant Byte[] windows after all listed proof and EH gates exist.",
+  "inference": "Array::NewSpecific itself invokes the same Class::Init before checks/allocation. On a valid exact class, the outer call makes the nested call take the initialized fast path. If the result is dead, only nonthrowing register preparation intervenes and EH scope agrees, the composed operation can retain one metadata initialization inside allocation. This is a conditional composition argument, not evidence that initialization has no effects.",
+  "candidates": [
+    {
+      "native_init_call": "0x4a0e1c",
+      "native_allocation_call": "0x4a0e28",
+      "historical_ir_init_index": 67,
+      "historical_ir_allocation_index": 70,
+      "length_constant": 2,
+      "native_result_overwritten": true,
+      "historical_result_unused": true,
+      "proposed_initial_candidate": true,
+      "current_full_metadata_identity_and_ir_proof_implemented": false
+    },
+    {
+      "native_init_call": "0x4a0ed0",
+      "native_allocation_call": "0x4a0edc",
+      "historical_ir_init_index": 123,
+      "historical_ir_allocation_index": 126,
+      "length_constant": 8,
+      "native_result_overwritten": true,
+      "historical_result_unused": true,
+      "proposed_initial_candidate": true,
+      "current_full_metadata_identity_and_ir_proof_implemented": false
+    },
+    {
+      "native_init_call": "0x4a0f8c",
+      "native_allocation_call": "0x4a0f98",
+      "historical_ir_init_index": 182,
+      "historical_ir_allocation_index": 185,
+      "length_constant": 4,
+      "native_result_overwritten": true,
+      "historical_result_unused": true,
+      "proposed_initial_candidate": true,
+      "current_full_metadata_identity_and_ir_proof_implemented": false
+    },
+    {
+      "native_init_call": "0x4a1000",
+      "native_allocation_call": "0x4a100c",
+      "historical_ir_init_index": 213,
+      "historical_ir_allocation_index": 216,
+      "length_constant": null,
+      "native_result_overwritten": true,
+      "historical_result_unused": true,
+      "proposed_initial_candidate": false,
+      "current_full_metadata_identity_and_ir_proof_implemented": false
+    }
+  ],
+  "initial_static_candidates": 3,
+  "deferred_variable_candidates": 1,
+  "native_allocator": {
+    "rva": "0xb5fe50",
+    "end": "0xb5ffa4",
+    "bytes": 340,
+    "sha256": "b5f06a2413563cc4f795dbb9d54d039631f0a3ab9ccf16da5b17adebdac44d76"
+  },
+  "original_reader_frame": {
+    "rva": 4853104,
+    "end_rva": 4854060,
+    "fde_rva": 52667072,
+    "fde_end_rva": 52667112,
+    "cie_rva": 52097888,
+    "cfi_start": 52667089,
+    "cfi_bytes": 23
+  },
+  "exact_unwind_evidence": {
+    "0x4a0d70": {
+      "frame": {
+        "rva": 4853104,
+        "end_rva": 4854060,
+        "fde_rva": 52667072,
+        "fde_end_rva": 52667112,
+        "cie_rva": 52097888,
+        "cfi_start": 52667089,
+        "cfi_bytes": 23
+      },
+      "augmentation": "zR",
+      "fde_augmentation_bytes": 0,
+      "lsda_encoding": 255,
+      "personality": null,
+      "plain_no_lsda": true
+    },
+    "0xb04f60": {
+      "frame": {
+        "rva": 11554656,
+        "end_rva": 11554796,
+        "fde_rva": 56899280,
+        "fde_end_rva": 56899320,
+        "cie_rva": 56727496,
+        "cfi_start": 56899305,
+        "cfi_bytes": 15
+      },
+      "augmentation": "zPLR",
+      "fde_augmentation_bytes": 8,
+      "lsda_encoding": 28,
+      "personality": {
+        "encoding": 156,
+        "reference": 57098272
+      },
+      "plain_no_lsda": false
+    },
+    "0xb5fe50": {
+      "frame": {
+        "rva": 11927120,
+        "end_rva": 11927460,
+        "fde_rva": 53387808,
+        "fde_end_rva": 53387848,
+        "cie_rva": 52097888,
+        "cfi_start": 53387825,
+        "cfi_bytes": 23
+      },
+      "augmentation": "zR",
+      "fde_augmentation_bytes": 0,
+      "lsda_encoding": 255,
+      "personality": null,
+      "plain_no_lsda": true
+    }
+  },
+  "implementation_guards": [
+    "NSO metadata24 opt-in, exact reviewed loaded-image identity and original helper/allocator FDE hashes; never resolve by helper name alone.",
+    "Use actual app-owned System.Byte metadata identity from original mscorlib, exact SZARRAY shape/rank1, element size1 and absent original array/element .cctor. FullName alone is insufficient.",
+    "The layout call must retain its reviewed ABI carrier and exactly one valid non-null class operand; allocation must be the original B5FE50 call already destined for NewArr on the same exact class origin.",
+    "Prove the Boolean result unused by every deep operand, Phi, return, address, exceptional successor and copy; do not materialize true, null or a default result.",
+    "Start with length2/8/4 windows. Preserve original length operand and every allocation-result use; exclude variable/truncated/negative/large lengths until separate allocation-width and overflow proof.",
+    "Require unique available class definitions and exact same captured native klass value. Reject different metadata identities, mutable reloads, unknown origins, duplicate definitions and escapes.",
+    "Validate original local CFG and native call ordering, unique straight-line path and no interior incoming edge. Only the two observed nonthrowing register preparations may lie between calls.",
+    "Require equivalent native exception landing-pad/action scope for both outer-init and allocation sites, or an exact proof that neither has a caller cleanup/action. Preserve unrelated throw branches and do not infer this from missing recovered CIL EH.",
+    "Capture proof while SSA and original native-call identity exist, before SsaForm.Remove. Consume it only for the unchanged matching allocation after ArrayRecovery produces NewArr; late emission must reject stale owner/type/result/length/call identity.",
+    "Only remove the duplicate outer metadata-init operation as part of the exact matched allocation. No standalone helper replacement, global call deletion, RunClassConstructor, synthetic success or diagnostic suppression.",
+    "Preserve original allocation fault propagation and postallocation effects. Do not catch OutOfMemory/Overflow/TypeLoad failures, return an empty array, substitute cached arrays or merge two allocations.",
+    "Keep initialized/cold class evidence, host runtime array contract and managed constructor behavior separately measured. Runtime metadata statistics/GC/profiler/native stack traces are platform boundaries, not claimed identical implementations."
+  ],
+  "proposed_negative_fixture_families": [
+    "live Boolean branch/return/copy/address result",
+    "different class at allocation",
+    "same name from different assembly or app",
+    "non-Byte element",
+    "reference/custom/generic/cctor-bearing element",
+    "multidimensional/bounded/non-SZARRAY shape",
+    "null/unknown/ambiguous class",
+    "class definition after use or duplicate",
+    "class Phi with unknown incoming path",
+    "intervening call/store/volatile read/array access or throwing arithmetic",
+    "interior branch into pure preparation or allocation",
+    "one-sided or missing CFG edge",
+    "different EH landing pad/action or missing EH evidence",
+    "unknown allocator address or stale resolved-name alias",
+    "changed helper/allocator/image bytes or FDE",
+    "variable/negative/oversized/truncated length in initial constant-only scope",
+    "stale type/length/result/owner after capture",
+    "original managed class-init request adjacent to metadata helper",
+    "cold metadata failure must reach no allocator",
+    "allocation failure must reach no later store/call",
+    "separate allocations must retain fresh identity",
+    "constructor canary must remain untouched by byte-array allocation",
+    "unmatched standalone Class::Init remains diagnostic"
+  ],
+  "proposed_fixtures_executed": 0,
+  "production_blockers": [
+    "No production fusion/proof carrier exists. The three constant sites are static candidates, not accepted recoveries or runtime coverage.",
+    "Actual v38 metadata class identity, complete deep-use/availability and matching allocation identity must be checked in production SSA and revalidated at emission; historical v36 text is corroboration only.",
+    "The exact reader and allocator are now independently proved plain zR/empty-FDE-augmentation/no-LSDA frames. A production proof must bind those exact facts; other EH-bearing callers remain rejected. The nested layout helper has real cleanup, retained conceptually inside the allocation composition.",
+    "Existing 512-case layout witness covers initialized path only. Existing 582-case array witness supplies initialized class, allocator and exception boundaries. Neither executes actual cold InitLocked or native cleanup.",
+    "The prior TypeHandle canary witness is metadata observation, not NewArr execution. A separate host typed-byte-array/constructor-negative/failure-order contract is required; no build or runtime was run for this design.",
+    "Original native allocator/GC/OOM/profiler behavior is outside current executable parity. NewArr is a host-runtime abstraction with specified allocation failure, not a promise to reproduce native process assertions or C++ stack traces."
+  ],
+  "private_inventory": {
+    "path": "analysis/reference/byte-array-layout-fusion-v40/native-and-source-inventory.json",
+    "bytes": 17896,
+    "sha256": "26707b8103375700cbf07f9dcdaffd10ad90d338bd7571582f95a358f5d13ff9"
+  },
+  "local_common_array_source": [
+    {
+      "path": "analysis/reference/byte-array-layout-fusion-v40/runtime-source/Array.cpp",
+      "bytes": 8578,
+      "sha256": "b78b8acc4fd8bdd6a74b541054b95dc546dad6689a65a69a168fcd8dc75be605"
+    },
+    {
+      "path": "analysis/reference/byte-array-layout-fusion-v40/runtime-source/Array.h",
+      "bytes": 2561,
+      "sha256": "cf7d854fd96fd2c5ee5362bfccb8ed38af281bfc867178d412874d0553f395af"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "reports/class-layout-translation-contract-v37.json",
+      "bytes": 6160,
+      "sha256": "a53c4b47d6b2357b80a549107423485f2c376ff3be7918bea262235a4d47164d"
+    },
+    {
+      "path": "reports/class-layout-runtime-source-v37.json",
+      "bytes": 9297,
+      "sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594"
+    },
+    {
+      "path": "reports/clr-type-metadata-boundary-v37.json",
+      "bytes": 27163,
+      "sha256": "85bbcadc96656968a34cb04d64501267274101c5a02de051990d4a1148766863"
+    },
+    {
+      "path": "reports/scalar-boxing-metadata-v30.json",
+      "bytes": 8027,
+      "sha256": "96676225f7bd96469e5a905be40aea0ba01b392142410375289db7c3f410b0f7"
+    },
+    {
+      "path": "reports/native-array-boundary.json",
+      "bytes": 1223,
+      "sha256": "8b0eed852b9b00ee2b5300664058f83fe190dc075f507517062da471b53bcccd"
+    },
+    {
+      "path": "reports/class-layout-overflow-abi-production-ir-v37.json",
+      "bytes": 17622,
+      "sha256": "f72f9f67aee5c47762eb193093e2b8d7bcba7838684545b30e0527e8e584bfda"
+    },
+    {
+      "path": "reports/recovered-source-profile-legacy-reference-check-nso-virtual-companion-copy-v38.json",
+      "bytes": 925557,
+      "sha256": "bcbfb8c77a30988f85a2d430731607e09caa627eafdd8c50ac68c51fa55b1255"
+    },
+    {
+      "path": "reports/compiler-diagnostic-delta-v38.json",
+      "bytes": 15648,
+      "sha256": "101ab5c29bbf9ba367012cbf079729f1ce7f8d7f42e061d4e070c21227bb7c2b"
+    },
+    {
+      "path": "analysis/il2cpp/virtual-stream-stage-after-type-v36.txt",
+      "bytes": 23933,
+      "sha256": "0151ac8581e0653c9341bd5ca6384a0afbe618ccb01aed62c76bbf96f1fd746f"
+    },
+    {
+      "path": "analysis/il2cpp/source-profile-project-build-nso-virtual-companion-copy-v38/Assembly-CSharp-firstpass/BestHTTP/WebSocket/Frames/WebSocketFrameReader.cs",
+      "bytes": 10456,
+      "sha256": "a1f8803c37083322754115b45c428994f8a955af5c2d3023bde0ed340b571b0f"
+    }
+  ],
+  "official_host_contract_sources": [
+    {
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.reflection.emit.opcodes.newarr?view=net-10.0",
+      "supports": "NewArr allocates a zero-based single-dimensional array, zeroes elements, and propagates allocation/negative-size failures."
+    },
+    {
+      "url": "https://ecma-international.org/wp-content/uploads/ECMA-335_6th_edition_june_2012.pdf",
+      "section": "III.4.20",
+      "supports": "Metadata-token element identity, int32/native-int length and managed array allocation contract; does not establish IL2CPP cold metadata equivalence."
+    }
+  ],
+  "analysis_script_sha256": "5e832a417e3f8fb00d43ce005e8996c110342f31edc6aff8484a5ce2a6406510",
+  "core_edited": false,
+  "core_built": false,
+  "original_inputs_modified": false,
+  "native_executed": false,
+  "recovered_game_methods_invoked": 0,
+  "helper_suppressed": false,
+  "helper_translation_implemented": false,
+  "fusion_implemented": false,
+  "production_ready": false,
+  "full_clean_decompile_ready": false,
+  "portable_game_ready": false
+}

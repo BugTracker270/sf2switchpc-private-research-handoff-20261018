@@ -1,0 +1,18 @@
+{
+  "status": "REVIEW_DOCUMENT_CONSISTENCY",
+  "checks": {
+    "all_fenced_blocks_closed": true,
+    "eight_pending_diagnostics_explicit": true,
+    "no_full_decompile_claim": true,
+    "cloud_override_explicit": true,
+    "known_compile_blocker_explicit": true,
+    "all_required_artifacts_exist": true
+  },
+  "literal_project_references_checked": 81,
+  "missing_literal_references": [
+    "reports/byte-array-layout-fusion-design-v40.json/.md",
+    "reports/virtual-call-result-root-design-v39.json/.md"
+  ],
+  "python_syntax": "PASS",
+  "scope": "Document consistency and path existence; no game/tool build or semantic recovery."
+}

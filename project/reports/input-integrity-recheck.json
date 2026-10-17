@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-16T18:58:49.513381+00:00",
+  "inputs": [
+    {
+      "path": "input/base/Shadow Fight 2 [0100AB000ABFE000][v0][Base].nsp",
+      "sha256": "98d2d44f224321a174ce672826c5ece77d4f98350da336a21ffefc247e36cba5",
+      "status": "PASS_UNCHANGED"
+    },
+    {
+      "path": "input/update/Shadow Fight 2 [0100AB000ABFE800][v131072][Up v1.1.0].nsp",
+      "sha256": "21831c39c058b815d838a7543678685ef89e1e95778753e71091ae3b8415b8f8",
+      "status": "PASS_UNCHANGED"
+    }
+  ],
+  "original_archives_modified": false
+}

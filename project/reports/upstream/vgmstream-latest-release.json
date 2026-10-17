@@ -1,0 +1,43 @@
+{
+  "tag_name": "r2117",
+  "published_at": "2026-05-19T22:37:30Z",
+  "html_url": "https://github.com/vgmstream/vgmstream/releases/tag/r2117",
+  "assets": [
+    {
+      "name": "foo_input_vgmstream.fb2k-component",
+      "size": 8056438,
+      "browser_download_url": "https://github.com/vgmstream/vgmstream/releases/download/r2117/foo_input_vgmstream.fb2k-component",
+      "digest": "sha256:e81af7ba0909d90243153724fe353abc834bede27c50eac4780fd9e4711cd503"
+    },
+    {
+      "name": "vgmstream-linux.zip",
+      "size": 3385489,
+      "browser_download_url": "https://github.com/vgmstream/vgmstream/releases/download/r2117/vgmstream-linux.zip",
+      "digest": "sha256:2f98c77f756079f63fbd119939067f1ed461d77e70993bc4cc372736d859c84a"
+    },
+    {
+      "name": "vgmstream-mac.zip",
+      "size": 1282182,
+      "browser_download_url": "https://github.com/vgmstream/vgmstream/releases/download/r2117/vgmstream-mac.zip",
+      "digest": "sha256:cdabf633231a4556feb0048a71990c768e862f3695dd9458ae28e4d94aa50a99"
+    },
+    {
+      "name": "vgmstream-wasm.zip",
+      "size": 1818191,
+      "browser_download_url": "https://github.com/vgmstream/vgmstream/releases/download/r2117/vgmstream-wasm.zip",
+      "digest": "sha256:29f6ec1182925f232d7a5dc7a9d46c94a41740860c72667fd926d1cff2b0f698"
+    },
+    {
+      "name": "vgmstream-win.zip",
+      "size": 5851097,
+      "browser_download_url": "https://github.com/vgmstream/vgmstream/releases/download/r2117/vgmstream-win.zip",
+      "digest": "sha256:4fa8f0f567a3636e45931b8462a04898fbceca17290a1458b80063b9558b323b"
+    },
+    {
+      "name": "vgmstream-win64.zip",
+      "size": 4468180,
+      "browser_download_url": "https://github.com/vgmstream/vgmstream/releases/download/r2117/vgmstream-win64.zip",
+      "digest": "sha256:6c4a8a3813864fefed081bbd337dbc0ad93bf88e0b92f5db98d7ab258b22dc6c"
+    }
+  ]
+}

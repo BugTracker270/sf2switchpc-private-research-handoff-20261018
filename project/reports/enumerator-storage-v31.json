@@ -1,0 +1,301 @@
+{
+  "status": "PASS_OBSERVED_CIL_STORAGE_DEFECT_AND_ISOLATED_BCL_CONTROLS",
+  "checks": 23,
+  "selected_method": "Nekki.SF2.Core.Fights.Fight.SetStage",
+  "native_rva": "0xC9F3F0",
+  "host_runtime": ".NET 10.0.11",
+  "probe_source_sha256": "7c2ee15a1b186451a839325ec63b623a7cd7e41900f70879692b5e3490321fa4",
+  "bcl_reference_enumerator_size": 24,
+  "original_game_method_execution": false,
+  "production_recovery_changed": false,
+  "boundary": "Actual CIL operand/slot observations and isolated fragments. List\u003CModel\u003E is replaced only at explicit input/local/member tokens with BCL List\u003Cobject\u003E; all unused local storage is opaque object. No game helper bindings. Initialization-only and store-retarget controls are counterfactual diagnostic fixtures, not recovered behavior or a production fix. Whole method, native parity, game initialization and exceptions outside these fragments are untested.",
+  "runs": [
+    {
+      "run": "nso-native-leaves-v29",
+      "assembly_sha256": "967ab18a3074deb27b5dbde65268584c4df59b312c2d46c5ee19177a5fea6488",
+      "method_token": "0x0600092C",
+      "method_body_sha256": "c79dcd1ebfcf7507d182ae3cde0c33e6d15e5a0f2dc20feebf6d0d130a26e44f",
+      "method_body_bytes": 583,
+      "InitLocals": true,
+      "enum_local_slots": [
+        11,
+        34
+      ],
+      "actual_getenumerator_call_il": 474,
+      "actual_return_store_il": 479,
+      "actual_getenumerator_member_token": "0x0A0002FE",
+      "actual_getenumerator_declaring_type": "System.Collections.Generic.List\u00601[Nekki.SF2.Core.Fights.Model.Model]",
+      "actual_return_store_slot": 11,
+      "actual_consumer_slot": 34,
+      "distinct_storage": true,
+      "actual_consumed_local_type": "System.Collections.Generic.List\u00601\u002BEnumerator[Nekki.SF2.Core.Fights.Model.Model]",
+      "explicit_bcl_local_type_substitution": "System.Collections.Generic.List\u00601\u002BEnumerator[System.Object]",
+      "consumer_receiver_evidence": [
+        {
+          "method": "get_Current",
+          "member_token": "0x0A0002FF",
+          "call_il": 232,
+          "receiver_il": 228,
+          "slot": 34
+        },
+        {
+          "method": "Dispose",
+          "member_token": "0x0A000300",
+          "call_il": 418,
+          "receiver_il": 414,
+          "slot": 34
+        },
+        {
+          "method": "MoveNext",
+          "member_token": "0x0A000301",
+          "call_il": 545,
+          "receiver_il": 541,
+          "slot": 34
+        }
+      ],
+      "original_scalar_zero_stores": [],
+      "runtime_cases": [
+        {
+          "mode": "initialization_only_control",
+          "element_count": 0,
+          "result": null,
+          "exception": "System.NullReferenceException",
+          "passed": true,
+          "fragment_sha256": "86e4818967ed68e8e2eb69ce784712e353c78a3403829581a3cf2f9f3a7a4949",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": true,
+          "explicit_storage_retarget_control": false
+        },
+        {
+          "mode": "same_slot_control",
+          "element_count": 0,
+          "result": false,
+          "exception": null,
+          "passed": true,
+          "fragment_sha256": "7f350201173321062ad20533b553a0e3e15caa5625b55498ddfdcffb5044b97d",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": false,
+          "explicit_storage_retarget_control": true
+        },
+        {
+          "mode": "initialization_only_control",
+          "element_count": 1,
+          "result": null,
+          "exception": "System.NullReferenceException",
+          "passed": true,
+          "fragment_sha256": "86e4818967ed68e8e2eb69ce784712e353c78a3403829581a3cf2f9f3a7a4949",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": true,
+          "explicit_storage_retarget_control": false
+        },
+        {
+          "mode": "same_slot_control",
+          "element_count": 1,
+          "result": true,
+          "exception": null,
+          "passed": true,
+          "fragment_sha256": "7f350201173321062ad20533b553a0e3e15caa5625b55498ddfdcffb5044b97d",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": false,
+          "explicit_storage_retarget_control": true
+        },
+        {
+          "mode": "initialization_only_control",
+          "element_count": 3,
+          "result": null,
+          "exception": "System.NullReferenceException",
+          "passed": true,
+          "fragment_sha256": "86e4818967ed68e8e2eb69ce784712e353c78a3403829581a3cf2f9f3a7a4949",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": true,
+          "explicit_storage_retarget_control": false
+        },
+        {
+          "mode": "same_slot_control",
+          "element_count": 3,
+          "result": true,
+          "exception": null,
+          "passed": true,
+          "fragment_sha256": "7f350201173321062ad20533b553a0e3e15caa5625b55498ddfdcffb5044b97d",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": false,
+          "explicit_storage_retarget_control": true
+        },
+        {
+          "mode": "initialization_only_control",
+          "element_count": 8,
+          "result": null,
+          "exception": "System.NullReferenceException",
+          "passed": true,
+          "fragment_sha256": "86e4818967ed68e8e2eb69ce784712e353c78a3403829581a3cf2f9f3a7a4949",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": true,
+          "explicit_storage_retarget_control": false
+        },
+        {
+          "mode": "same_slot_control",
+          "element_count": 8,
+          "result": true,
+          "exception": null,
+          "passed": true,
+          "fragment_sha256": "7f350201173321062ad20533b553a0e3e15caa5625b55498ddfdcffb5044b97d",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": false,
+          "explicit_storage_retarget_control": true
+        }
+      ]
+    },
+    {
+      "run": "nso-value-this-box-v30",
+      "assembly_sha256": "09c00e64db2d7350f75af86461ba15e892f6a62591b7d92f4934e28047f0317d",
+      "method_token": "0x0600092C",
+      "method_body_sha256": "6a48eda78231d64eb4a0a963213fd198331d9206bca3f7a5e26bc57bbd3f02f7",
+      "method_body_bytes": 608,
+      "InitLocals": true,
+      "enum_local_slots": [
+        3,
+        12
+      ],
+      "actual_getenumerator_call_il": 499,
+      "actual_return_store_il": 504,
+      "actual_getenumerator_member_token": "0x0A000302",
+      "actual_getenumerator_declaring_type": "System.Collections.Generic.List\u00601[Nekki.SF2.Core.Fights.Model.Model]",
+      "actual_return_store_slot": 12,
+      "actual_consumer_slot": 3,
+      "distinct_storage": true,
+      "actual_consumed_local_type": "System.Collections.Generic.List\u00601\u002BEnumerator[Nekki.SF2.Core.Fights.Model.Model]",
+      "explicit_bcl_local_type_substitution": "System.Collections.Generic.List\u00601\u002BEnumerator[System.Object]",
+      "consumer_receiver_evidence": [
+        {
+          "method": "get_Current",
+          "member_token": "0x0A000303",
+          "call_il": 232,
+          "receiver_il": 228,
+          "slot": 3
+        },
+        {
+          "method": "Dispose",
+          "member_token": "0x0A000304",
+          "call_il": 434,
+          "receiver_il": 430,
+          "slot": 3
+        },
+        {
+          "method": "MoveNext",
+          "member_token": "0x0A000305",
+          "call_il": 570,
+          "receiver_il": 566,
+          "slot": 3
+        }
+      ],
+      "original_scalar_zero_stores": [
+        {
+          "producer_il": 460,
+          "store_il": 465,
+          "slot": 3
+        }
+      ],
+      "runtime_cases": [
+        {
+          "mode": "original_scalar_store",
+          "element_count": 0,
+          "result": null,
+          "exception": "System.NullReferenceException",
+          "passed": true,
+          "fragment_sha256": "9d7ae6e35a0ed9958be3556412574a6f83ec19d02b6bbb574904808be5e63718",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": true,
+          "explicit_storage_retarget_control": false
+        },
+        {
+          "mode": "initialization_only_control",
+          "element_count": 0,
+          "result": null,
+          "exception": "System.NullReferenceException",
+          "passed": true,
+          "fragment_sha256": "f79e09be3425a7911fee0882f74f835ef539fa8176850632ef483656ec8bd87d",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": true,
+          "explicit_storage_retarget_control": false
+        },
+        {
+          "mode": "same_slot_control",
+          "element_count": 0,
+          "result": false,
+          "exception": null,
+          "passed": true,
+          "fragment_sha256": "a87c71fdc88652603ef62c013f70e10c7b5720bb7c56ce58ad77338b41691734",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": false,
+          "explicit_storage_retarget_control": true
+        },
+        {
+          "mode": "initialization_only_control",
+          "element_count": 1,
+          "result": null,
+          "exception": "System.NullReferenceException",
+          "passed": true,
+          "fragment_sha256": "f79e09be3425a7911fee0882f74f835ef539fa8176850632ef483656ec8bd87d",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": true,
+          "explicit_storage_retarget_control": false
+        },
+        {
+          "mode": "same_slot_control",
+          "element_count": 1,
+          "result": true,
+          "exception": null,
+          "passed": true,
+          "fragment_sha256": "a87c71fdc88652603ef62c013f70e10c7b5720bb7c56ce58ad77338b41691734",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": false,
+          "explicit_storage_retarget_control": true
+        },
+        {
+          "mode": "initialization_only_control",
+          "element_count": 3,
+          "result": null,
+          "exception": "System.NullReferenceException",
+          "passed": true,
+          "fragment_sha256": "f79e09be3425a7911fee0882f74f835ef539fa8176850632ef483656ec8bd87d",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": true,
+          "explicit_storage_retarget_control": false
+        },
+        {
+          "mode": "same_slot_control",
+          "element_count": 3,
+          "result": true,
+          "exception": null,
+          "passed": true,
+          "fragment_sha256": "a87c71fdc88652603ef62c013f70e10c7b5720bb7c56ce58ad77338b41691734",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": false,
+          "explicit_storage_retarget_control": true
+        },
+        {
+          "mode": "initialization_only_control",
+          "element_count": 8,
+          "result": null,
+          "exception": "System.NullReferenceException",
+          "passed": true,
+          "fragment_sha256": "f79e09be3425a7911fee0882f74f835ef539fa8176850632ef483656ec8bd87d",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": true,
+          "explicit_storage_retarget_control": false
+        },
+        {
+          "mode": "same_slot_control",
+          "element_count": 8,
+          "result": true,
+          "exception": null,
+          "passed": true,
+          "fragment_sha256": "a87c71fdc88652603ef62c013f70e10c7b5720bb7c56ce58ad77338b41691734",
+          "exact_jit_rejection_required": false,
+          "original_storage_assignment_preserved": false,
+          "explicit_storage_retarget_control": true
+        }
+      ]
+    }
+  ]
+}

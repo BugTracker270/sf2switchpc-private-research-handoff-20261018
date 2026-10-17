@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ORIGINAL_REFERENCE_FIELD_SETTER",
+  "rva": "0x1520D00",
+  "field_offset": "0x38",
+  "cases": 64,
+  "checks": 128,
+  "native_sha256": "55a1599b679f87dfb56520f0d35f07e90aa68899adca72db4aa999da003ecacf",
+  "game_function_mocks": 0,
+  "runtime_replacement_hooks": 0,
+  "write_observation_hooks": 1,
+  "text_modified": false,
+  "initialization_guards_modified": false,
+  "scope": "Only the original two-instruction reference field setter executes. Arbitrary pointer payloads including null are stored into valid synthetic receiver bytes; an observational write hook checks exact address/width, and all unrelated receiver bytes are checked afterward. No runtime behavior is replaced. Pointer targets are opaque, with no GC, original class construction, caller, Unity or full-game parity claim."
+}

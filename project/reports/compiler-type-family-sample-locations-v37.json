@@ -1,0 +1,121 @@
+{
+  "status": "READ_ONLY_SELECTED_SOURCE_HASHES_AND_LOCATIONS",
+  "samples": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "family": "type_pointer",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\LitJson\\JsonMapper.cs",
+      "line": 173,
+      "diagnostic_count_in_file": 164,
+      "source_sha256": "b2f0717c60e55cd8ff4e9e50590926df08f442ca142a1e1cc7e6bc480237af00"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "family": "type_pointer",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\YamlDotNet\\Core\\Parser.cs",
+      "line": 106,
+      "diagnostic_count_in_file": 132,
+      "source_sha256": "0cfeed66499d87d02890abae65b3bafaa4a07efaa1adff1e1bac75112337dfa4"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "family": "object_mask",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\QiHe\\Yaml\\Grammar\\YamlParser.cs",
+      "line": 200,
+      "diagnostic_count_in_file": 150,
+      "source_sha256": "3561104d50a4ad6c31edf5304422bdfa1447418742f1a1eaa68853220b017c7e"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "family": "object_mask",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\LitJson\\JsonMapper.cs",
+      "line": 204,
+      "diagnostic_count_in_file": 42,
+      "source_sha256": "b2f0717c60e55cd8ff4e9e50590926df08f442ca142a1e1cc7e6bc480237af00"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "family": "object_array_pointer",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\CodeStage\\AntiCheat\\Examples\\ActTesterGui.cs",
+      "line": 576,
+      "diagnostic_count_in_file": 66,
+      "source_sha256": "a9dda71e6700c342e9e205e317be54e9bfeaf53992161fadabfc896ac6cd39f0"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "family": "object_array_pointer",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\JsonTextReader.cs",
+      "line": 198,
+      "diagnostic_count_in_file": 57,
+      "source_sha256": "07c59617eb82ad8602148728d7fb7369d60944a73747f0e06fc0e84d1bf5e22d"
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "family": "type_pointer",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Console\\ConsoleCommands.cs",
+      "line": 262,
+      "diagnostic_count_in_file": 313,
+      "source_sha256": "9ee5cafd66ccdc353641c32770f0667e2ef4f670e86a0d39a6e3b0e778e23b95"
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "family": "type_pointer",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\API\\ListSF.cs",
+      "line": 327,
+      "diagnostic_count_in_file": 192,
+      "source_sha256": "a565161a2bdf098df2073e7be7d51c04085676035640afde3ffdb51565af0060"
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "family": "mapping_array_pointer",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\InControl\\PlayStation4MacBTProfile.cs",
+      "line": 107,
+      "diagnostic_count_in_file": 26,
+      "source_sha256": "b0211944348b2c6abe8630e78b300e8487e96d158f59eb65fe9e15a950735394"
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "family": "mapping_array_pointer",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\InControl\\Xbox360LinuxProfile.cs",
+      "line": 137,
+      "diagnostic_count_in_file": 25,
+      "source_sha256": "9b41218531c70cac9d20ba3efe032f8b657339bbe6757bbb6a4361db95efd82a"
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "family": "object_mask",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\API\\ListSF.cs",
+      "line": 122,
+      "diagnostic_count_in_file": 81,
+      "source_sha256": "a565161a2bdf098df2073e7be7d51c04085676035640afde3ffdb51565af0060"
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "family": "object_mask",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Fights\\Model\\Model.cs",
+      "line": 2128,
+      "diagnostic_count_in_file": 60,
+      "source_sha256": "718096298e0770aebff95f733cfa476d49b29152d28507e8ac58892638420eac"
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "family": "object_array_pointer",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\InControl\\TestInputManager.cs",
+      "line": 1080,
+      "diagnostic_count_in_file": 33,
+      "source_sha256": "b05578e5f191e0be2ae3869c754bb03e318374ade17992984eb40df407bda1f0"
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "family": "object_array_pointer",
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\Utils\\DetailedLogTactics.cs",
+      "line": 191,
+      "diagnostic_count_in_file": 25,
+      "source_sha256": "4680ca2e6e88e0e20de978ddc036423fff6b8614ff2ea616f47e97e6d46bbca2"
+    }
+  ],
+  "private_context_path": "analysis\\reconstruction\\compiler-family-v37\\selected-source-contexts.json",
+  "private_context_sha256": "892a7798a7a7e84b5d1e20665d756d919ff86a281f8128fce6a1999da9abdcd7",
+  "source_edited": false,
+  "source_excerpts_in_report": false
+}

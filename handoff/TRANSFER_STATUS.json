@@ -1,0 +1,21 @@
+{
+  "status": "SOURCE_VIEW_READY_BULK_TRANSFER_HELD",
+  "repository_url": "https://github.com/BugTracker270/sf2switchpc-private-research-handoff-20261018",
+  "private": true,
+  "source_files": 1738,
+  "source_bytes": 70213777,
+  "full_project_uploaded": false,
+  "project_artifacts_uploaded": false,
+  "parent_private_repository_access": "404_NOT_FOUND_REPOSITORY_PERMISSION_PENDING",
+  "parent_binary_asset_retrieval": "UNSUPPORTED_BY_CURRENT_UTF8_ONLY_GITHUB_FETCH",
+  "bulk_upload": "HELD_UNTIL_SUPPORTED_ROUTE_AND_PARENT_ACCESS_VERIFIED",
+  "secret_review": "SOURCE_VIEW_REVIEWED; FULL_TREE_GIT_AND_ARCHIVES_PENDING",
+  "credential_exclusions": [
+    "input/keys/**",
+    "input/hactool-key-profile/**",
+    "Any detected token/credential/private-key material, including archive and Git copies; inseparable containers quarantined"
+  ],
+  "excluded_staging_path": "build/github-private-handoff-20261017/**",
+  "builds_or_decompilation_run_this_phase": false,
+  "preservation": "No canonical source or input file changed during transfer preparation. Original/nested Git remain local and are not pushed."
+}

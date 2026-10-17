@@ -1,0 +1,157 @@
+{
+  "status": "CONFIRMED_READ_DEPENDENT_PURE_ADDRESS_SSA_VERSION_LOSS",
+  "checks": 9,
+  "tests": [
+    {
+      "name": "plain-read address version",
+      "status": "PASS"
+    },
+    {
+      "name": "plain-read subsequent read uses new address version",
+      "status": "PASS"
+    },
+    {
+      "name": "memory-base-read address version",
+      "status": "PASS"
+    },
+    {
+      "name": "memory-base-read subsequent read uses new address version",
+      "status": "PASS"
+    },
+    {
+      "name": "no-read address version",
+      "status": "PASS"
+    },
+    {
+      "name": "overwritten-before-read address version",
+      "status": "PASS"
+    },
+    {
+      "name": "overwrite supplies subsequent read",
+      "status": "PASS"
+    },
+    {
+      "name": "call-address-then-read address version",
+      "status": "PASS"
+    },
+    {
+      "name": "call-address-then-read subsequent read uses new address version",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "mode": "plain-read",
+      "pure_address_creation": true,
+      "initializer": "stack_slot_v1",
+      "address_target": "stack_slot_v2",
+      "later_read": "stack_slot_v2",
+      "initialization_reaches_address": false,
+      "implicit_definition": null,
+      "before": [
+        "0 Move stack_slot, 20903",
+        "1 Move X0, \u0026stack_slot",
+        "2 Move result, stack_slot",
+        "3 Return result"
+      ],
+      "after": [
+        "0 Move stack_slot_v1, 20903",
+        "1 Move X0_v1, \u0026stack_slot_v2",
+        "2 Move result_v1, stack_slot_v2",
+        "3 Return result_v1"
+      ],
+      "conclusion": "Pure address creation advances slot version without a write or call; prior initializer is disconnected from address target."
+    },
+    {
+      "mode": "memory-base-read",
+      "pure_address_creation": true,
+      "initializer": "stack_slot_v1",
+      "address_target": "stack_slot_v2",
+      "later_read": "stack_slot_v2",
+      "initialization_reaches_address": false,
+      "implicit_definition": null,
+      "before": [
+        "0 Move stack_slot, 20903",
+        "1 Move X0, \u0026stack_slot",
+        "2 Move result, [stack_slot\u002B8]",
+        "3 Return result"
+      ],
+      "after": [
+        "0 Move stack_slot_v1, 20903",
+        "1 Move X0_v1, \u0026stack_slot_v2",
+        "2 Move result_v1, [stack_slot_v2\u002B8]",
+        "3 Return result_v1"
+      ],
+      "conclusion": "Pure address creation advances slot version without a write or call; prior initializer is disconnected from address target."
+    },
+    {
+      "mode": "no-read",
+      "pure_address_creation": true,
+      "initializer": "stack_slot_v1",
+      "address_target": "stack_slot_v1",
+      "later_read": null,
+      "initialization_reaches_address": true,
+      "implicit_definition": null,
+      "before": [
+        "0 Move stack_slot, 20903",
+        "1 Move X0, \u0026stack_slot",
+        "2 Return 0"
+      ],
+      "after": [
+        "0 Move stack_slot_v1, 20903",
+        "1 Move X0_v1, \u0026stack_slot_v1",
+        "2 Return 0"
+      ],
+      "conclusion": "Control: no later unoverwritten plain read, so address uses prior initializer version."
+    },
+    {
+      "mode": "overwritten-before-read",
+      "pure_address_creation": true,
+      "initializer": "stack_slot_v1",
+      "address_target": "stack_slot_v1",
+      "later_read": "stack_slot_v2",
+      "initialization_reaches_address": true,
+      "implicit_definition": null,
+      "before": [
+        "0 Move stack_slot, 20903",
+        "1 Move X0, \u0026stack_slot",
+        "2 Move stack_slot, 27159",
+        "3 Move result, stack_slot",
+        "4 Return result"
+      ],
+      "after": [
+        "0 Move stack_slot_v1, 20903",
+        "1 Move X0_v1, \u0026stack_slot_v1",
+        "2 Move stack_slot_v2, 27159",
+        "3 Move result_v1, stack_slot_v2",
+        "4 Return result_v1"
+      ],
+      "conclusion": "Control: no later unoverwritten plain read, so address uses prior initializer version."
+    },
+    {
+      "mode": "call-address-then-read",
+      "pure_address_creation": false,
+      "initializer": "stack_slot_v1",
+      "address_target": "stack_slot_v2",
+      "later_read": "stack_slot_v2",
+      "initialization_reaches_address": false,
+      "implicit_definition": null,
+      "before": [
+        "0 Move stack_slot, 20903",
+        "1 CallVoid 12345678, \u0026stack_slot",
+        "2 Move result, stack_slot",
+        "3 Return result"
+      ],
+      "after": [
+        "0 Move stack_slot_v1, 20903",
+        "1 CallVoid 12345678, \u0026stack_slot_v2",
+        "2 Move result_v1, stack_slot_v2",
+        "3 Return result_v1"
+      ],
+      "conclusion": "Actual byref call deliberately clobbers; caller input/storage linking needs separate alias reasoning."
+    }
+  ],
+  "loaded_core_sha256": "7ffff037f9a1e2f509950d81dda763ebb804835b1144c53d82b88a74e492a03c",
+  "core_source_sha256": "036b41f0259c6f02fec2a8a0f122137dd6c12a6b1a21f415b1b1bb34fe9ac6cc",
+  "scope": "Calls existing compiled SsaForm.Build on original minimal ISIL fixtures. Direct DLL reference has no Core project/build writes. Demonstrates pure address creation with a later plain or memory-base read; address-only successors do not trigger this behavior. Does not establish actual SetStage lowering or propose suppressing real byref call writes."
+}

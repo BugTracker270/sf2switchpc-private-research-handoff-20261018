@@ -1,0 +1,37 @@
+{
+  "status": "PASS_COMPILED_ANIMATION_DRAW_VS_ORIGINAL_ARM64",
+  "cases": 1024,
+  "checks": 40448,
+  "nodes_updated": 3328,
+  "nodes_skipped": 1280,
+  "fixture_sha256": "37f5e7b4281b54d67b34947f74aa548c8ab46bae2a91716c88a6af6c73bdd7a8",
+  "executed_functions": {
+    "animation_draw": 65388,
+    "vector_copy_ctor": 4096,
+    "object_ctor": 3072,
+    "vector_add": 5376,
+    "vector_ctor": 2048,
+    "list_object_count": 6656,
+    "list_object_item": 49152,
+    "vector_set": 9984,
+    "rotation_angle": 1024,
+    "vector_multiply": 1638,
+    "slow_mode_getter": 903
+  },
+  "calls": {
+    "animation_draw": 1024
+  },
+  "runtime_allocation_model": {
+    "Vector3f": 3072
+  },
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "metadata_initialization_guards": [
+    "0x3b869c4",
+    "0x3b869cd",
+    "0x3b869ce",
+    "0x3b84de2"
+  ],
+  "original_text_sha256": "3cc7a851848ab891400a93c66051f22fe096512da8694d45c9a267fee09233d5",
+  "scope": "Original DrawFrame sample application, prior/current node state, shock exclusion, velocity/acceleration and slow-mode index logic with valid nonempty pre-populated buffers. Initialized synthetic metadata and Vector3f allocation model. Does not execute full Render/SetBufferFrame/events/interrupt scheduling, Unity rendering or gameplay FPS."
+}

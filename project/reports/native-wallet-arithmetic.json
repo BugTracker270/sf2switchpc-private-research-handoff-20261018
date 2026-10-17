@@ -1,0 +1,53 @@
+{
+  "status": "PASS_COMPILED_WALLET_ARITHMETIC_AT_BOUNDARIES",
+  "cases": 2048,
+  "checks": 14336,
+  "fixture_sha256": "2f126984134afbc4a8dea2aa766a2175510715b0522b12b8efe8f9f365727c4e",
+  "executed_functions": {
+    "bonus_set": 31152,
+    "long_to_plain": 9442,
+    "long_internal_decrypt": 79350,
+    "long_from_plain": 64452,
+    "money_post_pow": 8192,
+    "max_long": 748
+  },
+  "calls": {
+    "bonus_set": 2048
+  },
+  "boundary_stubs": {
+    "SaveAttribute_noop_return": 3323,
+    "statistics_allocation_stop": 788
+  },
+  "text_modified": false,
+  "real_save_files_opened": 0,
+  "original_text_sha256": {
+    "long_from_plain": "69df525b3241380b63e5c7d0c69c0d35ac63ff68ffa8280801602296cc0b6d06",
+    "long_to_plain": "ed96767e3ccf0076a13ac3d0b439c75e276da151088dc3c600cdb573250bb198",
+    "long_encrypt_default": "0e11e78046ae8996eba7f8ba251d0aa9a90607ef5ce48093af0f91ad143dea06",
+    "long_encrypt_explicit": "84df25ec3176dd533df7d3122a83854ab7890c6404dd6728d25434cda696fb69",
+    "long_decrypt_default": "7979a17d46a4ee3edd7168b3db81cfc9b0ae5fac0c011875f5ccc0c56749e371",
+    "long_decrypt_explicit": "a751635bd02ef682b7c7b48909139eca8504065839fc7b05429aa1cba5849d74",
+    "long_internal_decrypt": "35147221c62050bb4a4c19beebb8db76a5bf8168f24aab7f2ef5d053d1ec0dc6",
+    "money_get": "c438e7a263c2f34b586392ee6ab417eb52aac04f5e100939dfb1bb5f99b3c08a",
+    "bonus_get": "0b0f1c9dafbea4e4cf25f3de9bb728d090b8298e803cdc25f89cc13a90f8584d",
+    "paid_bonus_get": "91d8f1cea3285d74ba3967ec71e9861182452e7779b9753f57f1ec2417e60775",
+    "money_post_pow": "14a6299dc6172b6ab13605579ecfe5697a3e6fdd078f1d2549318584045d47d7",
+    "bonus_set": "54a7e71a4b78a4d072a8ce67db01daa1cbbc9bb539f6120c593f485821ffb54a",
+    "max_long": "ed18cbf812ac495085d1dda234a26c7c22fcebd5302bdfa6956f4cf55b563a7c"
+  },
+  "metadata_initialization_guards": [
+    "0x3a36692",
+    "0x3a3668a",
+    "0x3a3668b",
+    "0x3a3668d",
+    "0x3a3668c",
+    "0x3a3668e",
+    "0x3a36691",
+    "0x3a36614",
+    "0x3b86769",
+    "0x3b86851",
+    "0x3b86852",
+    "0x3b86853"
+  ],
+  "scope": "Original SetBonus arithmetic through observed SaveAttribute calls; SaveAttribute is a no-op return stub, and increases stop before statistics allocation. Original SetMoney internal post-pow slice to pre-SaveAttribute with supplied compiled-reference pow result. Signed/overflow boundary inputs included. No XML persistence, imported pow, statistics event, whole transaction or gameplay economy parity claim."
+}

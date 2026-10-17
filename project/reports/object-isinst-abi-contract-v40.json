@@ -1,0 +1,477 @@
+{
+  "status": "PASS_EXACT_OBJECT_ISINST_ABI_ONLY_CONTRACT",
+  "checks": 57,
+  "tests": [
+    {
+      "name": "exact reviewed v40 Core",
+      "status": "PASS"
+    },
+    {
+      "name": "original local input hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "exact target and nominal mscorlib Object metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "interior/zero/other runtime helpers reject",
+      "status": "PASS"
+    },
+    {
+      "name": "disabled opt-in rejects after cache populated",
+      "status": "PASS"
+    },
+    {
+      "name": "exact FDE is244bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "helper maps inside derived loaded image",
+      "status": "PASS"
+    },
+    {
+      "name": "derived relocated image identity remains explicit",
+      "status": "PASS"
+    },
+    {
+      "name": "exact image/frame/body guard accepts",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong frame rejects:0",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong frame rejects:240",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong frame rejects:248",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid raw offset rejects:-1",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid raw offset rejects:9223372036854775807",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid raw offset rejects:74363922",
+      "status": "PASS"
+    },
+    {
+      "name": "truncated image rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "copied changed helper byte rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "copied changed nonhelper image byte rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "application image is unmodified",
+      "status": "PASS"
+    },
+    {
+      "name": "four raw ABI operands survive SSA as distinct X0 input/result plus X1class",
+      "status": "PASS"
+    },
+    {
+      "name": "both original source values retained by identity",
+      "status": "PASS"
+    },
+    {
+      "name": "nominal canonical Object result reaches original return",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown then canonical Object seeds without semantic narrowing",
+      "status": "PASS"
+    },
+    {
+      "name": "unused result retains effectful numeric helper call",
+      "status": "PASS"
+    },
+    {
+      "name": "clone preserves immutable carrier and typed ABI",
+      "status": "PASS"
+    },
+    {
+      "name": "real indirect-return clone explicitly carries proof",
+      "status": "PASS"
+    },
+    {
+      "name": "foreign owner rejects carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong address cannot create narrowed call",
+      "status": "PASS"
+    },
+    {
+      "name": "stale target rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "stale opcode rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "stale missing source rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "stale extra source rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "stale carrier rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "stale result type rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "stale result operand rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "conflicting Int32 fails closed during initial SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "conflicting Boolean fails closed during initial SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "noncanonical Object context fails closed during initial SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong result register fails closed during initial SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong object register fails closed during initial SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong class register fails closed during initial SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "shared result/source identity fails closed during initial SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "stale target fails closed during initial SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "single managed alias cannot capture helper",
+      "status": "PASS"
+    },
+    {
+      "name": "ambiguous managed aliases cannot capture helper",
+      "status": "PASS"
+    },
+    {
+      "name": "MethodInfo route cannot capture helper",
+      "status": "PASS"
+    },
+    {
+      "name": "constructor route cannot capture helper",
+      "status": "PASS"
+    },
+    {
+      "name": "literal negative uses real registered slot",
+      "status": "PASS"
+    },
+    {
+      "name": "string-literal route cannot erase helper",
+      "status": "PASS"
+    },
+    {
+      "name": "all28 actual original native calls use narrowed ABI before alias selection",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter retains exact numeric helper diagnostic",
+      "status": "PASS"
+    },
+    {
+      "name": "emitter introduces no semantic isinst/array-store/null/constant result",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter rejects stale target carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter rejects stale opcode carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter rejects stale shape carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter rejects stale result carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "input files still match original hashes",
+      "status": "PASS"
+    }
+  ],
+  "fatal": null,
+  "core_sha256": "14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6",
+  "source_sha256": "fa4020f841e4fc2a0067e6a615c8c4c9084fd2c68a678dcbc48e35cae88e1963",
+  "helper_source_sha256": "ea443616ca0d0f146936f873fda98415766626e1611b8709b0d4057501f950e0",
+  "original_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "original_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "native_source_report_sha256": "f09fc4e1ea389e237952657294e359002d909766750f0f869d26434436098d74",
+  "native_wrapper_oracle_sha256": "b819a3069e7bda1dfa6850f3782977f0b76cd8bde37392a1d1a2961a030a133b",
+  "target": "0xB5B390",
+  "native_bytes": 244,
+  "native_sha256": "1b265abeee0dfb0991ffe2b237b6cf3f817a9a5071eb8787a2dc28b87d9cbec6",
+  "original_object_ssa_version": 1,
+  "original_class_ssa_version": 1,
+  "result_ssa_version": 2,
+  "raw_original_profile_sites": [
+    {
+      "index": 63,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 91,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 138,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 172,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 215,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 258,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 301,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 344,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 387,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 430,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 473,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 516,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 559,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 602,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 653,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 689,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 732,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 777,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 839,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 888,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 940,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 990,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 1040,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 1092,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 1144,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 1191,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 1239,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    },
+    {
+      "index": 1289,
+      "operand_count": 4,
+      "original_object_register": "X0",
+      "original_class_register": "X1",
+      "nominal_result_register": "X0"
+    }
+  ],
+  "emitted_diagnostic_fixtures": [
+    {
+      "name": "OriginalHelperDiagnosticRetained",
+      "numeric_diagnostic_retained": true,
+      "semantic_helper_executed": false,
+      "instructions": [
+        {
+          "opcode": "ldstr",
+          "operand": "Method not found @B5B390"
+        },
+        {
+          "opcode": "call",
+          "operand": "System.Void System.Console::WriteLine(System.String)"
+        },
+        {
+          "opcode": "br",
+          "operand": "IL_000F"
+        },
+        {
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    }
+  ],
+  "semantic_isinst_recovered": false,
+  "class_provenance_recovered": false,
+  "original_game_methods_invoked": 0,
+  "native_helpers_executed_by_this_probe": 0,
+  "original_outputs_modified": false,
+  "scope": "Exact signature shield only: original X0 object plus X1 class inputs and distinct canonical nominal Object result. Initial SSA register/type identity guards, alias exclusions, raw28-call captures, carrier clone and stale emitter checks are independent fixtures. Final emission checks owner/target/Call4shape/Object result; arbitrary post-SSA source mutation is not prohibited or promoted to provenance proof. The numeric diagnostic remains; no semantic IsInst, assignability, CLR type test, array-store fusion, object/default return or COM/error recovery is implemented or executed. Supplied pointer-shaped operands test ABI/alias exclusion only and never execute game/native code. Native wrapper oracle is a separate supplied-assignability boundary."
+}

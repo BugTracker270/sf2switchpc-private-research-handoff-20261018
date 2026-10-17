@@ -1,0 +1,147 @@
+{
+  "status": "PASS_RECOVERED_SCALARS_VS_ORIGINAL_NATIVE_FIXTURES",
+  "recovery_run": "nso-allocation-identity-v13",
+  "isolated_accessors": true,
+  "isolation_self_checks": 3,
+  "method_headers": [
+    {
+      "method": "get_Production",
+      "max_stack": 2,
+      "locals": [
+        "System.Int32[]",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "set_Production",
+      "max_stack": 3,
+      "locals": [
+        "System.Int32[]",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "get_Major",
+      "max_stack": 2,
+      "locals": [
+        "System.Int32[]",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "set_Major",
+      "max_stack": 3,
+      "locals": [
+        "System.Int32[]",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "get_Minor",
+      "max_stack": 2,
+      "locals": [
+        "System.Int32[]",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "set_Minor",
+      "max_stack": 3,
+      "locals": [
+        "System.Int32[]",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "get_DataVersion",
+      "max_stack": 2,
+      "locals": [
+        "System.Int32[]",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "set_DataVersion",
+      "max_stack": 3,
+      "locals": [
+        "System.Int32[]",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    }
+  ],
+  "cases": 768,
+  "checks": 1760,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": null,
+  "separate_static_identity_witness": {
+    "expected": "VersionContainer",
+    "actual": null,
+    "error": null,
+    "tested": false,
+    "matches": false
+  },
+  "assembly_sha256": "0b69ebafc53a7bc08813ae1008e1ce7b12018b10b840b9218c50b4cbb4b36b95",
+  "fixture_sha256": "7cf2a4e8e3b47f01ab3de94c8d3a6c5b1aa87b900071ae26689d6fa50d814209",
+  "scope": "Recovered accessor CIL isolated in DynamicMethods: the sole _versionSource field load becomes a same-size NOP span, and an int[] argument supplies that field directly; metadata tokens are remapped to their same runtime targets. All other instruction/branch bytes and local types are retained. Class initialization and constructors are deliberately outside this experiment. This is a bounded CIL comparison, not executable recovered whole-game source."
+}

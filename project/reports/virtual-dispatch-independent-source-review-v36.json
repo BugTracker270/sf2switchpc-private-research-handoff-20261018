@@ -1,0 +1,65 @@
+{
+  "status": "SOURCE_REVIEW_NO_ADDITIONAL_BLOCKER_FULL_RECOVERY_GATES_PENDING",
+  "source_review_only": true,
+  "reviewed_sources": [
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\Instruction.cs",
+      "sha256": "48465c1e560ebf2cdb963bfbee7c0bdef2ee658859ecf5148780a2ecd9129be1"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\MetadataResolver.cs",
+      "sha256": "f478e416fc3bcb7542cdb1d12c5b47a9cea2f5288a0271055114f0e812ea558b"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\CopyCoalescer.cs",
+      "sha256": "e1b12c77485bae9903b94f5439d29aa49b060bd4e80d399681f9bb168daeb857"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64VirtualDispatch.cs",
+      "sha256": "35bda67f8d6a9422daa691c3c1f86e00ed7e234b5b60ea2763cdff58311aedb8"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64IndirectReturns.cs",
+      "sha256": "baf029f29a2afe233a699b6e5e1d233e7c0f13d53ec569d2edc3ec720dd173fd"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\IlGenerator.cs",
+      "sha256": "26d820b2c81b00d374f57f099cc326f4c2bc9032deb9d2a8759ae4034af08266"
+    }
+  ],
+  "findings_resolved": [
+    {
+      "issue": "FP and void return ABI were outside BLR X0 result contract",
+      "resolution": "Narrowed target acceptance; independent negative fixtures pass"
+    },
+    {
+      "issue": "Owner/target/slot did not bind emitted receiver identity",
+      "resolution": "Immutable original parameter root and final bounded unique-copy proof; mutated same-type receivers reject"
+    },
+    {
+      "issue": "Null fault could move past intervening observable effects",
+      "resolution": "Same-block pure class/function/companion load window; semantic stores/calls reject"
+    },
+    {
+      "issue": "Later unrelated duplicate CFG edges blocked valid prefix proof",
+      "resolution": "Union ancestor cone includes one-sided incoming edges; reciprocal cone validation and bounded reachability dominance"
+    },
+    {
+      "issue": "SSA destruction could merge proof parameter roots",
+      "resolution": "Root-specific CopyCoalescer exclusion and exact proof copying in indirect-return clone"
+    }
+  ],
+  "stable_tested_core_sha256": "23b43f3a1d07dca7483ec0fac031380d934a16f2fc8c34bc5922f52af0ac6044",
+  "required_production_checks": [
+    "Final emitter-input root validation",
+    "Fresh actual CIL callvirt at both sites",
+    "All scoped regressions and complete-source compiler outcomes"
+  ],
+  "limits": [
+    "Integer load width is erased from IR; original64-bit Stream load windows have separate native evidence.",
+    "Other malformed later CFG edges remain unresolved.",
+    "Actual prefix MethodInfo fallback still blocks runtime execution.",
+    "No EH handlers or full clean source recovered by this change."
+  ],
+  "full_clean_decompile_ready": false
+}

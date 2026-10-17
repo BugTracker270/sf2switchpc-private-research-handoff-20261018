@@ -1,0 +1,70 @@
+{
+  "status": "PASS_ORIGINAL_CLASS_GUARD_BRANCHES_AT_RUNTIME_BOUNDARY",
+  "cases": 336,
+  "checks": 1008,
+  "supplied_runtime_calls": 48,
+  "macros": [
+    {
+      "start_rva": 2237180,
+      "skip_rva": 2237200,
+      "original_text_sha256": "35d1e642a4365eea40bfefd87192d00dd003e0b2bbe389657187f5ceea8c308a"
+    },
+    {
+      "start_rva": 2237328,
+      "skip_rva": 2237348,
+      "original_text_sha256": "c1c8712f6297bc2d7d2d4953934ad15bbfdaf2a1640f6ddc81070940bd1a22ec"
+    },
+    {
+      "start_rva": 2237376,
+      "skip_rva": 2237396,
+      "original_text_sha256": "f6f09b2caceadd6bb0a55db7a61de50ae3e786de82daf161a9e3b83bee629b7c"
+    },
+    {
+      "start_rva": 2237444,
+      "skip_rva": 2237464,
+      "original_text_sha256": "e1778d3f2b1d32c644e92e4fa08d37ff9a55a7a80e4e5257c937a9f3f39fceb2"
+    },
+    {
+      "start_rva": 2237508,
+      "skip_rva": 2237528,
+      "original_text_sha256": "4a17e1061ea0e771fcea623ddadb2b5f4c3d67c24cdf1d8b0327e3b625551f0b"
+    },
+    {
+      "start_rva": 2237592,
+      "skip_rva": 2237612,
+      "original_text_sha256": "98c06b5749fd777be07dd4faca6e5fecaf9e6c8a794df730504fd4559d39e556"
+    },
+    {
+      "start_rva": 4883436,
+      "skip_rva": 4883460,
+      "original_text_sha256": "98738ad3c8ee656318f16de7a6451a381fd8985f99eeded29e517b5276103987"
+    },
+    {
+      "start_rva": 4883672,
+      "skip_rva": 4883696,
+      "original_text_sha256": "780625f3f2ae24fc5555329443bc28302c340beeab247a2ed94cee5e8f70562e"
+    },
+    {
+      "start_rva": 4883824,
+      "skip_rva": 4883848,
+      "original_text_sha256": "6f9b99d11e5f3454e3fc9d096d7898e0bedc889fd7580d8ceeecb5b6aa6470bb"
+    },
+    {
+      "start_rva": 4883964,
+      "skip_rva": 4883984,
+      "original_text_sha256": "c38f63ef67454c628c922bb362f136a40d9ce8d8c8b28f138fa4c0aee00f9da7"
+    },
+    {
+      "start_rva": 4884000,
+      "skip_rva": 4884020,
+      "original_text_sha256": "47d387d3906f28f623ef271c51d98f52c4691b61ac2c71b47e531a52cd77e03d"
+    },
+    {
+      "start_rva": 4884044,
+      "skip_rva": 4884068,
+      "original_text_sha256": "c49c670db66968b013ca4c2169f6bbf535f98332cc6d21c156b1ab8ccbb48ea3"
+    }
+  ],
+  "text_modified": false,
+  "scope": "Original native flag tests, branches and optional class reloads only. Synthetic class/slot memory; runtime initializer is an explicit supplied boundary which marks completion and clobbers X0. This validates macro recognition, not the initializer implementation, managed initialization ordering, exceptions, threading or whole-method/source correctness."
+}

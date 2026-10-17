@@ -1,0 +1,724 @@
+{
+  "status": "READ_ONLY_RAW_CLASS_INIT_STAGE_OBSERVATIONS",
+  "known_helper": "0xB2E720",
+  "managed_aliases_at_helper": [],
+  "methods": [
+    {
+      "method": "BinaryReaderNekki::ReadBoolean",
+      "rva": "0xF0D390",
+      "raw_native_class_init_calls": 1,
+      "before_metadata": [
+        {
+          "index": 22,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v19",
+            "register": "X0",
+            "version": 1,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "MemoryOperand"
+            }
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_metadata": [
+        {
+          "index": 22,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v19",
+            "register": "X0",
+            "version": 1,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "System.BitConverter"
+            }
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_type_fixpoint": [
+        {
+          "index": 22,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "MethodAnalysisContext",
+          "target": "System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor",
+          "argument_origin": {
+            "kind": "type_operand",
+            "type": "System.BitConverter"
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "TypeAnalysisContext"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "resolved_field_operands": [
+        {
+          "index": 18,
+          "opcode": "Move",
+          "field": "_bytes",
+          "owner": "BinaryReaderNekki",
+          "offset": 24
+        },
+        {
+          "index": 21,
+          "opcode": "Move",
+          "field": "\u003CPosition\u003Ek__BackingField",
+          "owner": "BinaryReaderNekki",
+          "offset": 20
+        },
+        {
+          "index": 37,
+          "opcode": "Move",
+          "field": "\u003CPosition\u003Ek__BackingField",
+          "owner": "BinaryReaderNekki",
+          "offset": 20
+        },
+        {
+          "index": 39,
+          "opcode": "Move",
+          "field": "\u003CPosition\u003Ek__BackingField",
+          "owner": "BinaryReaderNekki",
+          "offset": 20
+        }
+      ],
+      "remaining_runtime_class_memory_operands": []
+    },
+    {
+      "method": "BundlesUtil::UnloadDependencies",
+      "rva": "0x4A83A0",
+      "raw_native_class_init_calls": 2,
+      "before_metadata": [
+        {
+          "index": 22,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v18",
+            "register": "X0",
+            "version": 1,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "MemoryOperand"
+            }
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0"
+          ],
+          "method_info_arguments": []
+        },
+        {
+          "index": 126,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v65",
+            "register": "X0",
+            "version": 9,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "MemoryOperand"
+            }
+          },
+          "return_local": "v82",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_metadata": [
+        {
+          "index": 22,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v18",
+            "register": "X0",
+            "version": 1,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "BundlesUtil"
+            }
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0"
+          ],
+          "method_info_arguments": []
+        },
+        {
+          "index": 126,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v65",
+            "register": "X0",
+            "version": 9,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "BundlesUtil"
+            }
+          },
+          "return_local": "v82",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_type_fixpoint": [
+        {
+          "index": 22,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "MethodAnalysisContext",
+          "target": "System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor",
+          "argument_origin": {
+            "kind": "type_operand",
+            "type": "BundlesUtil"
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "TypeAnalysisContext"
+          ],
+          "method_info_arguments": []
+        },
+        {
+          "index": 126,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "MethodAnalysisContext",
+          "target": "System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor",
+          "argument_origin": {
+            "kind": "type_operand",
+            "type": "BundlesUtil"
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "TypeAnalysisContext"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "resolved_field_operands": [
+        {
+          "index": 34,
+          "opcode": "Move",
+          "field": "bundlesDependencies",
+          "owner": "BundlesUtil",
+          "offset": 8
+        },
+        {
+          "index": 129,
+          "opcode": "Move",
+          "field": "bundlesDependencies",
+          "owner": "BundlesUtil",
+          "offset": 8
+        }
+      ],
+      "remaining_runtime_class_memory_operands": [
+        {
+          "index": 33,
+          "addend": 184
+        },
+        {
+          "index": 63,
+          "addend": 290
+        },
+        {
+          "index": 122,
+          "addend": 212
+        },
+        {
+          "index": 128,
+          "addend": 184
+        }
+      ]
+    },
+    {
+      "method": "BundlesUtil::GetAssetBundleSafe",
+      "rva": "0x4A8920",
+      "raw_native_class_init_calls": 3,
+      "before_metadata": [
+        {
+          "index": 75,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v20",
+            "register": "X0",
+            "version": 1,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "MemoryOperand"
+            }
+          },
+          "return_local": "v31",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        },
+        {
+          "index": 40,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v46",
+            "register": "X0",
+            "version": 5,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Phi",
+            "source": null
+          },
+          "return_local": "v78",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        },
+        {
+          "index": 60,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v107",
+            "register": "X0",
+            "version": 11,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "MemoryOperand"
+            }
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_metadata": [
+        {
+          "index": 75,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v20",
+            "register": "X0",
+            "version": 1,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "BundlesUtil"
+            }
+          },
+          "return_local": "v31",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        },
+        {
+          "index": 40,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v46",
+            "register": "X0",
+            "version": 5,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Phi",
+            "source": null
+          },
+          "return_local": "v78",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        },
+        {
+          "index": 60,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v107",
+            "register": "X0",
+            "version": 11,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "BundlesUtil"
+            }
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_type_fixpoint": [
+        {
+          "index": 75,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "MethodAnalysisContext",
+          "target": "System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor",
+          "argument_origin": {
+            "kind": "type_operand",
+            "type": "BundlesUtil"
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "TypeAnalysisContext"
+          ],
+          "method_info_arguments": []
+        },
+        {
+          "index": 40,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "MethodAnalysisContext",
+          "target": "System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor",
+          "argument_origin": {
+            "kind": "type_operand",
+            "type": "BundlesUtil"
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "TypeAnalysisContext"
+          ],
+          "method_info_arguments": []
+        },
+        {
+          "index": 60,
+          "opcode": "CallVoid",
+          "operand_count": 2,
+          "target_kind": "MethodAnalysisContext",
+          "target": "System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor",
+          "argument_origin": {
+            "kind": "type_operand",
+            "type": "BundlesUtil"
+          },
+          "return_local": null,
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_deep_operand_reads": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "TypeAnalysisContext"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "resolved_field_operands": [
+        {
+          "index": 29,
+          "opcode": "Move",
+          "field": "currentConfig",
+          "owner": "BundlesUtil",
+          "offset": 16
+        },
+        {
+          "index": 78,
+          "opcode": "Move",
+          "field": "currentConfig",
+          "owner": "BundlesUtil",
+          "offset": 16
+        },
+        {
+          "index": 43,
+          "opcode": "Move",
+          "field": "currentConfig",
+          "owner": "BundlesUtil",
+          "offset": 16
+        },
+        {
+          "index": 59,
+          "opcode": "Move",
+          "field": "BundleName",
+          "owner": "AssetsData",
+          "offset": 24
+        },
+        {
+          "index": 72,
+          "opcode": "Move",
+          "field": "Path",
+          "owner": "AssetsData",
+          "offset": 16
+        }
+      ],
+      "remaining_runtime_class_memory_operands": [
+        {
+          "index": 21,
+          "addend": 290
+        },
+        {
+          "index": 25,
+          "addend": 212
+        },
+        {
+          "index": 28,
+          "addend": 184
+        },
+        {
+          "index": 77,
+          "addend": 184
+        },
+        {
+          "index": 32,
+          "addend": 290
+        },
+        {
+          "index": 36,
+          "addend": 212
+        },
+        {
+          "index": 42,
+          "addend": 184
+        }
+      ]
+    }
+  ],
+  "core_sha256": "eb14e6f7fe579f6553eefc2493b9513a0caa047fc448251ae208d86289439baa",
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "survey_edits_core_source": false,
+  "scope": "Selected actual methods are analyzed only through the production type/field fixpoint with stage snapshots. Native helper identities, SSA result-use counts and class-metadata origins are observations; no rewrite, default, runtime parity or portable-source claim is made. The --after mode observes the explicitly approved recovery implementation; this survey itself edits no Core source."
+}

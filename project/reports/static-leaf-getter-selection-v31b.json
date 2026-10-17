@@ -1,0 +1,31 @@
+{
+  "status": "PASS_STATIC_GETTER_NATIVE_METADATA_AND_NEGATIVE_GUARDS",
+  "checks": 29,
+  "owner": "CodeStage.AntiCheat.Detectors.ObscuredCheatingDetector",
+  "field": "\u003CInstance\u003Ek__BackingField",
+  "field_offset": 8,
+  "field_visibility": "Private",
+  "field_type": "CodeStage.AntiCheat.Detectors.ObscuredCheatingDetector",
+  "owner_cctor": false,
+  "getter": "CodeStage.AntiCheat.Detectors.ObscuredCheatingDetector::get_Instance",
+  "getter_rva": "0x78C270",
+  "getter_fde_bytes": 84,
+  "getter_native_sha256": "1c2adeb47a4e000ab9a444c3c66c6d2a3a53db2fe59560b006394bc56602eaef",
+  "metadata_initializer": "0xB12650",
+  "type_got": "0x39BD740",
+  "type_metadata_slot": "0x3B34FE8",
+  "static_storage_offset": 184,
+  "rejected_patterns": [
+    "extra effect",
+    "missing metadata guard",
+    "wrong static-field offset",
+    "wrong class-storage offset",
+    "unbalanced register restore",
+    "missing return"
+  ],
+  "input_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "input_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "core_sha256": "6fa3bae49f3fd93cff826dcaa181ec99d24fecdfb005e0aeb536b0b51be42f7e",
+  "original_files_modified": false,
+  "scope": "Exact registered getter FDE, same-owner type-global identity, public static property metadata and full reachable instruction shape are proven. Only method-metadata assurance precedes the private static field read; owners with any .cctor are rejected. The original field remains private. This selection probe does not execute the native getter, recovered CIL or active detector/callback paths."
+}

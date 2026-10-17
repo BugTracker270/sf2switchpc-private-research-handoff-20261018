@@ -1,0 +1,130 @@
+{
+  "status": "PASS_SCOPED_METADATA_GENERIC_FP_FIELD_PATHS",
+  "checks": 22,
+  "tests": [
+    {
+      "offset": "0x10C",
+      "size": 4,
+      "expected": "startValue.value.x",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x110",
+      "size": 4,
+      "expected": "startValue.value.y",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x114",
+      "size": 4,
+      "expected": "startValue.value.z",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x118",
+      "size": 4,
+      "expected": "endValue.value.x",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x11C",
+      "size": 4,
+      "expected": "endValue.value.y",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x120",
+      "size": 4,
+      "expected": "endValue.value.z",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x124",
+      "size": 4,
+      "expected": "changeValue.value.x",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x10A",
+      "size": 4,
+      "expected": null,
+      "status": "PASS"
+    },
+    {
+      "offset": "0x119",
+      "size": 4,
+      "expected": null,
+      "status": "PASS"
+    },
+    {
+      "offset": "0x118",
+      "size": 8,
+      "expected": null,
+      "status": "PASS"
+    },
+    {
+      "offset": "0x10",
+      "size": 4,
+      "expected": null,
+      "status": "PASS"
+    },
+    {
+      "offset": "0x134",
+      "size": 4,
+      "expected": null,
+      "status": "PASS"
+    },
+    {
+      "offset": "0x118",
+      "size": 16,
+      "expected": null,
+      "status": "PASS"
+    },
+    {
+      "name": "nested Vector3 wrapper",
+      "status": "PASS",
+      "expected": [
+        "value.x:0",
+        "value.y:4",
+        "value.z:8"
+      ]
+    },
+    {
+      "name": "flat vector",
+      "status": "PASS",
+      "expected": [
+        "x:0",
+        "y:4",
+        "z:8"
+      ]
+    },
+    {
+      "name": "mixed enum and bool rejected",
+      "status": "PASS",
+      "expected": null
+    },
+    {
+      "name": "scalar float is not an aggregate",
+      "status": "PASS",
+      "expected": null
+    },
+    {
+      "name": "generic reference owner is not an HFA",
+      "status": "PASS",
+      "expected": null
+    },
+    {
+      "name": "flat padding rejected",
+      "status": "PASS",
+      "expected": null
+    },
+    {
+      "name": "nested padding rejected",
+      "status": "PASS",
+      "expected": null
+    }
+  ],
+  "actual_caller_reads": 6,
+  "actual_caller_writes": 3,
+  "scope": "Metadata layout and selected actual recovered caller ISIL only. Requires separate recovered-CIL execution against original ARM64 fixtures; no complete source claim."
+}

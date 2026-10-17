@@ -1,0 +1,48 @@
+{
+  "status": "PASS_COMPILED_SAVE_SCHEDULER_VS_ORIGINAL_ARM64",
+  "cases": 1024,
+  "checks": 5120,
+  "fixture_sha256": "1754aeb90440db94e366724bf9fe110d51cee9d4023c412589a96bdd8c7a0b33",
+  "executed_functions": {
+    "timer_tick": 49368,
+    "list_object_count": 1024,
+    "save_request": 2838,
+    "get_enumerator": 945,
+    "enum_ctor": 945,
+    "enum_next": 47628,
+    "class_layout_init": 21222,
+    "enum_verify": 28296,
+    "enum_current": 6129,
+    "base_save": 6990,
+    "enum_dispose": 945
+  },
+  "calls": {
+    "timer_tick": 1024,
+    "save_request": 1419
+  },
+  "supplied_external_clock": {
+    "rva": "0x15D6B80",
+    "calls": "One or two fixture-supplied Unity unscaledTime reads per timer tick"
+  },
+  "original_text_sha256": {
+    "save_request": "41a2dc3d45344bc567a4a8a46c70b29151eacd6e6ddb62718c093c534db86c49",
+    "base_save": "5188a7888c966910e8d6c9e7e727a3aff506726c5872ee8c3748ca41eb5c8ed8",
+    "timer_tick": "4765ccfcd5be71f53038ee1b7eb44ef25b387379a0acddc8a2c3dd9727149738",
+    "get_enumerator": "43694a140756dab00d417fb317762c8d7e917bea857ba9368f482b6e80c7235a",
+    "enum_ctor": "93f97aee4056e153eb26e662e2518b5597090fb7491333fa0a160c01ed376afe",
+    "enum_dispose": "66985e94d68bb55c9dd2238b467227dbc2502f5538f829a06da0d91e7e591729",
+    "enum_next": "42f3ffc98ccc98070ef1b29a58bb98f3190ed7e48553e8312fae8d85246cbc78",
+    "enum_current": "dfb556a413c8bda5332942d0202e8d5f1e52f45158aec3676294cf11ad5909cb",
+    "enum_verify": "5626968d882163a83eec2be0c8bdde001c164ff55a3beae0343d52dd8e2adb32",
+    "class_layout_init": "16314f8396501200adcba482521357b30cf07bc7e95f3c26ae6c206873088b81"
+  },
+  "metadata_initialization_guards": [
+    "0x3b86809",
+    "0x3b8689a",
+    "0x3b87856"
+  ],
+  "text_modified": false,
+  "game_function_mocks": 0,
+  "real_save_files_opened": 0,
+  "scope": "Original Save flag/force dispatch, complete OnTimerTick, native reference-list iteration and original base SaveToFile side effects. Virtual writers deliberately bind the original base method, not Roster.SaveToFile. Unity clock is a documented supplied boundary. Strict greater-than-60 reset, four-request budget, list order, force bypass and int32 counter edges tested. Does not execute XML/Nintendo IO, subclass failure behavior, actual Unity clock, startup listener registration or durable saves."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ORIGINAL_FP_SCHEDULED_CLASS_GUARD_HFA_CALLER",
+  "cases": 256,
+  "checks": 1024,
+  "caller_rva": "0xA6A1F0",
+  "fp_load_rva": "0xA6A240",
+  "class_macro_rva": "0xA6A244",
+  "caller_sha256": "e0230943b6c3767067ee367a6c318f9c707997f2790287560a4fe042419d0467",
+  "fixture_sha256": "a90434a7d325d6761703a46412a5e30e7585b90179a80568c3c74ca673330c6f",
+  "scope": "Original complete DOTween caller plus original Vector3 addition. Synthetic tween fields, metadata guard pre-set, and explicit runtime initializer boundary that marks completion and clobbers X0 while preserving ABI FP registers. Three stored component bits and initializer-call count checked per case. No game-method mocks, recovered-caller CIL certification, initializer contents, threading or complete-game/source proof."
+}

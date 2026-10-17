@@ -1,0 +1,12 @@
+{
+  "status": "RECOVERED_FACTORY_CONSTRUCTOR_LIMITATION",
+  "recovery_run": "nso-generic-ctor-v27",
+  "cases": 0,
+  "checks": 0,
+  "selected_constructors": 0,
+  "fatal": "System.Exception: Expected seven recovered factory constructors; observed 0",
+  "original_caller_il_sha256": "82a3cf62ecb861832bed561a3642ccbba954a0e69f30ae6abff36612c83b1819",
+  "slices": [],
+  "assembly_sha256": "2af0782a048ab201b0b20b523ef5d9fb7df2b0aab12e23057eaba7ff298260db",
+  "scope": "Seven actual recovered parameterless ArrayTypeMismatchException newobj instructions in AuthenticationSample.Start, each isolated with ret appended and exact constructor token rebound to the host CLR contract. Checks exact type, constructor HResult/Message, null InnerException/StackTrace and fresh identity. No source edits, gameplay/Unity code or original ARM64 constructor bodies execute; no assertion of original exception-message localization, GC or full caller parity. A source error disappearing alone does not pass this probe."
+}

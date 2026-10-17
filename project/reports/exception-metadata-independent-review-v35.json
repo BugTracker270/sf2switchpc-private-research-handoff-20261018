@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_BOUNDED_EXCEPTION_METADATA_INFRASTRUCTURE_REVIEW",
+  "checks": 9,
+  "tests": [
+    {
+      "name": "two-node signed action backlink cycle rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "indirect type entry remains explicit and is never implicitly dereferenced",
+      "status": "PASS"
+    },
+    {
+      "name": "unsupported CFI restore does not invent an initial register rule",
+      "status": "PASS"
+    },
+    {
+      "name": "CFI advance crossing exact function end rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "CFI saved offset multiplication obeys configured budget",
+      "status": "PASS"
+    },
+    {
+      "name": "same-PC CFI state changes remain ordered observations",
+      "status": "PASS"
+    },
+    {
+      "name": "CFI operation budget rejects repeated zero-progress instructions",
+      "status": "PASS"
+    },
+    {
+      "name": "LEB overflow in action displacement rejects before any outside read",
+      "status": "PASS"
+    },
+    {
+      "name": "malformed host-side initial saved-rule container rejects with MetadataError",
+      "status": "PASS"
+    }
+  ],
+  "parser_sha256": "96540cbea573f9b34b4cc6dab7ae8bdf2643a49cb8195563da1e4771fba9cd95",
+  "owner_tests_sha256": "43338f15e91be03ab3865d12efe30df030da6eeb3a8bef52ef120d52c173900a",
+  "adapter_sha256": "830d8cab4a565190418e4fd5d8ccbf6ccc400b4038527402668ed2fbed38f0e6",
+  "review_probe_sha256": "5db422d84807ef305db22a20260f34b49ceb445eefe8f5ce8cdf7b8dc8f7034a",
+  "findings": [],
+  "resolved_review_findings": [
+    {
+      "issue": "Malformed host-side CfiState saved=None previously raised TypeError rather than MetadataError",
+      "severity": "minor API robustness",
+      "original_native_path_affected": false,
+      "original_trace": "logs/exception-metadata-malformed-initial-review-v35.log",
+      "resolution": "Parser owner added strict initial saved-rule container validation; independent ninth check requires MetadataError"
+    }
+  ],
+  "source_edited": false,
+  "core_built": false,
+  "proprietary_inputs_read": false,
+  "guest_execution_performed": false,
+  "scope": "Independent static review and synthetic boundary checks only. LSDA action displacement is based at the displacement operand; cycles, record/type overlap and configured limits fail closed. Fixed-width type-table pointers retain explicit indirection for a separate checked resolver. Supported CFI opcodes produce ordered instruction/state observations, including intermediate states at the same PC, rather than complete PC-range unwind rows. Unsupported restore/state-stack/expression operations reject. This does not validate actual unwinding, landing-pad execution, exception matching or managed EH recovery."
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_RECOVERED_BOOLEAN_DECISIONS_VS_ORIGINAL_NATIVE",
+  "recovery_run": "nso-nested-hfa-v24",
+  "cases": 4,
+  "checks": 12,
+  "isolation_reference_cases": 4,
+  "failures": [],
+  "fatal": null,
+  "assembly_sha256": "19dcd6d9c9edc87e961e327ae24d2cd286b21087bd99c4dbca143ed385e65150",
+  "fixture_sha256": "2f5f22d9afbf62d51148ff4dbe1e787cf6a0624ae110640deaad68fc2e6684dc",
+  "scope": "Executes recovered getter/setter CIL in DynamicMethods. Exact field tokens map to a same-type boolean test field and the sole Init callback maps to an observable counter. All other instruction and branch bytes/local types remain. No game DLL modification; class initialization, Init contents and complete-game parity are outside scope."
+}

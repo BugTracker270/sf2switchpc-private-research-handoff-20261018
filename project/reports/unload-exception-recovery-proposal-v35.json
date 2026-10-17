@@ -1,0 +1,333 @@
+{
+  "status": "READ_ONLY_BOUNDED_EXCEPTION_CONTRACT_IDENTIFIED_IMPLEMENTATION_NOT_STARTED",
+  "checks": 21,
+  "failures": 0,
+  "tests": [
+    {
+      "name": "original image hash",
+      "passed": true
+    },
+    {
+      "name": "exact original frame",
+      "passed": true
+    },
+    {
+      "name": "MoveNext exact protected call/landing",
+      "passed": true
+    },
+    {
+      "name": "Current exact protected call/landing",
+      "passed": true
+    },
+    {
+      "name": "AssetBundle.Unload exact protected call/landing",
+      "passed": true
+    },
+    {
+      "name": "typed-wrapper then cleanup action chain",
+      "passed": true
+    },
+    {
+      "name": "original RTTI name identifies C++ wrapper",
+      "passed": true
+    },
+    {
+      "name": "handler RTTI equals original managed-exception raiser RTTI",
+      "passed": true
+    },
+    {
+      "name": "original PLT identity __cxa_begin_catch",
+      "passed": true
+    },
+    {
+      "name": "original PLT identity __cxa_end_catch",
+      "passed": true
+    },
+    {
+      "name": "original PLT identity _Unwind_Resume",
+      "passed": true
+    },
+    {
+      "name": "original personality identity",
+      "passed": true
+    },
+    {
+      "name": "original CFI/CFA and saved-register locations",
+      "passed": true
+    },
+    {
+      "name": "all three pads require selector one",
+      "passed": true
+    },
+    {
+      "name": "acquisition, both Dispose calls and Clear are outside protected intervals",
+      "passed": true
+    },
+    {
+      "name": "current ISIL has no region/leave/finally/rethrow opcode",
+      "passed": true
+    },
+    {
+      "name": "current Core has no exception-handler table writer",
+      "passed": true
+    },
+    {
+      "name": "existing measured v33 output has no EH regions",
+      "passed": true
+    },
+    {
+      "name": "pinned output library already exposes exception table API",
+      "passed": true
+    },
+    {
+      "name": "existing bounded original raiser witness is retained separately",
+      "passed": true
+    },
+    {
+      "name": "reusable bounded metadata parser synthetic and original-input gates",
+      "passed": true
+    }
+  ],
+  "native_evidence": "analysis\\reconstruction\\unload-exception-contract-v35\\native-evidence.json",
+  "native_evidence_sha256": "0bcda0c13a7529e763841579116e71ee52c236b3f2c66f6a69bf61b8e93e9dc4",
+  "exact_method": "BundlesUtil.UnloadDependencies",
+  "exact_fde_bytes": 384,
+  "protected_calls": [
+    {
+      "start": "0x4a8434",
+      "end_exclusive": "0x4a843c",
+      "landing": "0x4a8498",
+      "call": "0x4a8438",
+      "callee": "0x11dd3e0",
+      "semantic_role": "MoveNext",
+      "action_entry": 3
+    },
+    {
+      "start": "0x4a8444",
+      "end_exclusive": "0x4a844c",
+      "landing": "0x4a848c",
+      "call": "0x4a8448",
+      "callee": "0x11dd540",
+      "semantic_role": "Current",
+      "action_entry": 3
+    },
+    {
+      "start": "0x4a844c",
+      "end_exclusive": "0x4a8458",
+      "landing": "0x4a8480",
+      "call": "0x4a8454",
+      "callee": "0xb0a8a0",
+      "semantic_role": "AssetBundle.Unload",
+      "action_entry": 3
+    }
+  ],
+  "original_action_filters": [
+    1,
+    0
+  ],
+  "original_cpp_rtti_name": "22Il2CppExceptionWrapper",
+  "managed_catch_type_invented": false,
+  "entry_contract": {
+    "exception_data": "X0 opaque unwind exception token; fresh entry definition",
+    "selector": "W1 runtime selector, not prior MethodInfo",
+    "cfa": "X29+16; prologue X29=SP+64 implies CFA=SP+80",
+    "enum_region": "SP+8..SP+31 = CFA-72..CFA-49",
+    "saved_register_cfa_offsets": {
+      "X30": -8,
+      "X29": -16,
+      "X19": -24,
+      "X20": -32,
+      "X21": -48
+    },
+    "installed_context_execution_verified": false
+  },
+  "smallest_valid_future_slice": [
+    "First complete an immutable descriptor/proof fixture for only this original 384-byte method: whole-body/FDE/LSDA/action/RTTI/import/CFI hashes, typed field and five List/AssetBundle APIs, exact normal and cleanup orders. Unsupported actions/layouts/aliases/entry states reject atomically.",
+    "Run unchanged original landing fragments from each of the three entries with explicit unwind-token/selector/frame and C++ runtime boundaries. Prove selector1 with a non-null managed payload performs begin-catch, end-catch, Dispose once and the same-pointer raise; selectors0/other must reach the original resume boundary without Dispose. This is not yet actual unwinding.",
+    "Then validate a disjoint managed region fixture with one Finally clause: acquisition outside try; MoveNext/Current/Unload protected; Dispose only in finally; the second initialization request and Clear only after normal completion. Finally has no catch type. Compare event traces and exception identity under normal/throwing boundaries before production recovery.",
+    "If those gates pass, the smallest production candidate is an exact complete-method native-equivalence descriptor/emitter at FillMethodBody, analogous in placement only to the existing exact aggregate-leaf hook. It would emit one structured Finally using original typed members, without routing exceptional control through ordinary CFG/SSA. This is proposed, not implemented or accepted, and must carry explicit inferred-equivalence provenance.",
+    "A general EH pipeline is a later larger change: method region sidecars, typed exceptional transfers/entry states, EH-aware reachability, dataflow/alias lifetime, structured CIL layout and verification. Do not broaden normal successors to approximate it."
+  ],
+  "missing_contracts": [
+    {
+      "area": "Native region provenance",
+      "gap": "No method-level LSDA/actions/types/CFI region descriptor survives conversion. Preserve exact native interval boundaries and original landing roots before reachability pruning."
+    },
+    {
+      "area": "Exception-entry state",
+      "gap": "Define opaque unwind-token X0 and selector W1 at each landing entry; they are not normal call results/MethodInfo values. Seed frame/CFA and preserved values from the unwind contract; volatile registers become unknown. Do not insert exception edges as ordinary successors."
+    },
+    {
+      "area": "Reachability and SSA",
+      "gap": "Handler roots require separate reachability. Exceptional state is from the throwing instruction, before any normal return destination, with conservative byref/memory effects. Ordinary phi-edge copy insertion cannot model that transfer. Address-taken Enumerator storage must retain one correct live identity across protected calls and cleanup."
+    },
+    {
+      "area": "Managed region semantics",
+      "gap": "Represent typed region membership, normal leave, finally entry/exit and propagation. A handler condition is native C++ wrapper RTTI/selector, not an invented System.Exception catch type. A managed finally is a bridge-domain equivalence requiring proof."
+    },
+    {
+      "area": "CIL layout/emission",
+      "gap": "AsmResolver supports CilExceptionHandler with Finally, inclusive starts/exclusive ends and labels, but current generator never fills the table and always emits ordinary br bridges. Emit leave for normal protected exits, endfinally for handler completion, no br/ret into/out of protected regions, and an empty finally evaluation stack."
+    },
+    {
+      "area": "Validation",
+      "gap": "Assert serialized EH table/type/bounds and legal transfers, not just MaxStack. Execute original native landing fragments at stated runtime boundaries and then actual emitted recovered CIL; verify side-effect order, exception identity/trace, cleanup once and Clear suppression."
+    }
+  ],
+  "unresolved": [
+    "Actual SDK personality/unwinder installation has not executed. X0/W1 and CFI facts are supported by original pad code, relocations and ABI references; preservation of the installed frame/register state still needs an execution witness.",
+    "The three protected callees, exact BundlesUtil static-field binding, all MethodInfo identities and frame-buffer live interval need a complete typed metadata descriptor. The separate SRET survey already proves the GetEnumerator family; it is not a full Unload descriptor.",
+    "Selector1 carries the original C++ Il2CppExceptionWrapper. The code extracts a managed pointer, ends catch, disposes, then invokes the original managed raiser when non-null. Other selectors resume without this Dispose; translating them as a catch-all managed finally would exceed the proof.",
+    "The native null managed-payload branch reaches the common Clear path. A managed-finally equivalence needs an explicit non-null managed-exception invariant or must preserve/reject this state; the proposal does not silently discard it.",
+    "The prior raiser witness covers an existing non-null trace and supplied C++ allocation/throw boundaries. Stack-trace behavior for absent traces, actual C++ unwinding, foreign exceptions, forced unwind and destructor/termination cases remains unproved.",
+    "Exact ordinary entry state, the 24-byte Enumerator return/storage identity, post-constructor field reloads and both class-initialization requests must be preserved. Existing v33 Unload CIL is not an execution oracle because EH and its SRET identity are incomplete."
+  ],
+  "proposed_test_groups": [
+    {
+      "group": "Native descriptor negatives",
+      "state": "PROPOSED_NOT_RUN",
+      "cases": [
+        "Truncated/overlapping call-site ranges",
+        "Changed landing or action offset/cycle",
+        "Different RTTI/relocation/personality",
+        "Unresolved/foreign action type",
+        "Changed CFI/frame/selector register",
+        "Changed cleanup/raise/resume/normal Clear order"
+      ]
+    },
+    {
+      "group": "Storage/member negatives",
+      "state": "PROPOSED_NOT_RUN",
+      "cases": [
+        "Different enum slot or partial/overlapping/escaping region",
+        "Value/open T or non-unique registered MethodInfo",
+        "Wrong static field/AssetBundle bool API",
+        "GetEnumerator inside protected range",
+        "Dispose or Clear spuriously protected",
+        "Class-init or field reload reordered"
+      ]
+    },
+    {
+      "group": "Native landing witness",
+      "state": "PROPOSED_NOT_RUN",
+      "cases": [
+        "All3 original entries with selector1/non-null distinct exception identities",
+        "Selector0 and unmatched selector resume unchanged",
+        "Null managed payload explicitly remains unsupported or tested as its original separate branch"
+      ]
+    },
+    {
+      "group": "CIL region behavior",
+      "state": "PROPOSED_NOT_RUN",
+      "cases": [
+        "Empty and1/3/8 element normal iteration",
+        "Acquisition throws: no Dispose/Clear",
+        "MoveNext/Current/Unload throw: Dispose once, Clear absent, same exception",
+        "Dispose throws: replacement exception propagates, Clear absent",
+        "Post-finally initializer/Clear throws: no duplicate Dispose",
+        "Forbidden branch into handler, missing endfinally or invalid EH bounds rejected"
+      ]
+    }
+  ],
+  "upstream_code_locations": {
+    "opcode_model": {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/ISIL/OpCode.cs",
+      "line": 8,
+      "sha256": "09bceffeccc66d524c2dc39427abebcfce15a51c7d28c2d1eadeece4b4442aae"
+    },
+    "ordinary_block_edges": {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Graphs/Block.cs",
+      "line": 12,
+      "sha256": "30ab97e71818a16e90be50cf918252b439b98528bd2b73fc1ff8ac126cd3f8e5"
+    },
+    "entry_only_instruction_enumeration": {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Graphs/ISILControlFlowGraph.cs",
+      "line": 15,
+      "sha256": "78a6b98f8d2e5926be744c86d2acdb3a439771e356ff4888310f8790e0818791"
+    },
+    "entry_only_reachability": {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Graphs/ISILControlFlowGraph.cs",
+      "line": 87,
+      "sha256": "78a6b98f8d2e5926be744c86d2acdb3a439771e356ff4888310f8790e0818791"
+    },
+    "normal_call_fallthrough": {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Graphs/ISILControlFlowGraph.cs",
+      "line": 376,
+      "sha256": "78a6b98f8d2e5926be744c86d2acdb3a439771e356ff4888310f8790e0818791"
+    },
+    "analysis_pipeline": {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Model/Contexts/MethodAnalysisContext.cs",
+      "line": 370,
+      "sha256": "3630c47dbb88e1ef06fb1e9fe41a4ab491243ac4bb03c7c1d0ea6f58d5fe8c37"
+    },
+    "stack_handler_pruning": {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/StackAnalyzer.cs",
+      "line": 33,
+      "sha256": "708c6e5bd464bff4b6b20be18563a21a934b10871ad8704a544fb56ae000c8c0"
+    },
+    "ssa_entry_contract": {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/SsaForm.cs",
+      "line": 31,
+      "sha256": "036b41f0259c6f02fec2a8a0f122137dd6c12a6b1a21f415b1b1bb34fe9ac6cc"
+    },
+    "emitter_new_body": {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/IlGenerator.cs",
+      "line": 62,
+      "sha256": "12e9b48b895b8792203a740f5899a0e1e414944aa0942af9164bd2e7d2d79f32"
+    },
+    "ordinary_branch_bridge": {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/IlGenerator.cs",
+      "line": 160,
+      "sha256": "12e9b48b895b8792203a740f5899a0e1e414944aa0942af9164bd2e7d2d79f32"
+    },
+    "existing_direct_leaf_integration": {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/OutputFormats/AsmResolverDllOutputFormatIlRecovery.cs",
+      "line": 68,
+      "sha256": "c47656e44d7a7bfccf4396bc643c36febf990f3ba727a9dfe2e190a79404cd4c"
+    }
+  },
+  "current_isil_represents_exception_regions": false,
+  "current_generator_emits_eh_tables": false,
+  "output_library_can_emit_eh_tables": true,
+  "asmresolver_api_xml_sha256": "64de4482705a7687d128572b60d11193578bbe73a07d80d2584e05d64b90071c",
+  "existing_v33_eh_inventory_sha256": "465c35e38c48e7510c34cab74adcebb23865e07000ee129c1550015dcaef6984",
+  "existing_v33_bodies_without_eh": 60744,
+  "exception_raiser_witness_sha256": "af9d7c20970b5c23e0c00fdf92f0a2fa31b33344df58e4156a36d81a107840eb",
+  "completed_parser_foundation": {
+    "path": "reports\\exception-metadata-parser-v35.json",
+    "sha256": "c412fce738c53644fa905d7737ab74484945884b107cade717239fe1243030d2",
+    "synthetic_tests": 38,
+    "original_evidence_checks": 15,
+    "cfi_is_per_instruction_observation": true,
+    "finalized_unwind_rows_implemented": false,
+    "production_region_descriptor_or_emitter_implemented": false
+  },
+  "primary_references": [
+    {
+      "url": "https://github.com/llvm/llvm-project/blob/llvmorg-18.1.8/libcxxabi/src/cxa_personality.cpp",
+      "supports": "Action offsets, type indices and runtime landing parameters; reference model, not a claim that the supplied SDK is this revision."
+    },
+    {
+      "url": "https://github.com/llvm/llvm-project/blob/llvmorg-18.1.8/llvm/lib/Target/AArch64/AArch64ISelLowering.h",
+      "supports": "AArch64 exception-data register convention corroborates original X0/W1 pad use."
+    },
+    {
+      "url": "https://itanium-cxx-abi.github.io/cxx-abi/abi-eh.html",
+      "supports": "Personality/landing-pad and resume distinction."
+    },
+    {
+      "url": "https://ecma-international.org/wp-content/uploads/ECMA-335_6th_edition_june_2012.pdf",
+      "supports": "Managed finally, leave, endfinally and region/stack constraints."
+    },
+    {
+      "url": "https://docs.washi.dev/asmresolver/guides/dotnet/managed-method-bodies.html",
+      "supports": "Output-library handler table and label APIs; installed6.0.1 XML separately inspected."
+    }
+  ],
+  "core_edited": false,
+  "production_eh_implemented": false,
+  "original_source_recovered": false,
+  "full_clean_decompile_ready": false,
+  "probe_source_sha256": "cac799a6b717a893d2a94b18a3ee9ca502bf08ff7d5c31dcaaad17ed059d6922",
+  "scope": "Original native exception metadata/action/RTTI/CFI and current upstream pipeline inspection only. No exception edges were added, no catch type guessed, no game/native unwind/managed body executed and no production recovery built. A managed finally remains a conditional native-equivalence proposal in the managed-wrapper/non-null exception domain until typed storage, entry-state and behavior fixtures pass."
+}

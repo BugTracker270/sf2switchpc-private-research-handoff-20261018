@@ -1,0 +1,18 @@
+{
+  "elapsed_seconds": 254.8495547,
+  "output": "F:\\SF2SwitchPC\\analysis\\il2cpp\\rust-source-v4-mapping",
+  "scope": "Independent ARM64 pipeline with explicit source/hash gates; optional isolated NSO mapping correction is recorded. Requested type filters did not restrict the upstream CIL generation path in v3. Tool grading is not an independent native comparison or source-build/portability proof.",
+  "sha256": {
+    "unpacked\\effective\\romfs\\Data\\Managed\\Metadata\\global-metadata.dat": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+    "analysis\\nso\\main-uncompressed.nso": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+    "analysis\\il2cpp\\rust-source-v4-mapping\\probe-config.json": "e2fdb71e26d09661ac5c6406dd774ca8d8ed0d18424f2ce8cba0944852dc392f",
+    "refs\\il2cpp-dumper-rs\\target\\release\\il2cpp_dumper.exe": "cf3e4882f179e7c2119fb4147a6ed92eb18fe743af7343ffb4d1732065483950"
+  },
+  "upstream": "https://github.com/rodroidmods/il2cpp-dumper-rs",
+  "status": "OUTPUT_GENERATED_NOT_VALIDATED",
+  "experimental_nso_mapping": true,
+  "commit": "145a751023258a35f133c4f111785a8df0580985",
+  "log": "F:\\SF2SwitchPC\\logs\\rust-source-v4-mapping.log",
+  "verified_uncompressed_input": true,
+  "exit_code": 0
+}

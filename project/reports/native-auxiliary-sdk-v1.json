@@ -1,0 +1,14 @@
+{
+  "scope": "Independent module range pseudocode/disassembly exports only. No main index mutation or complete clean source claim.",
+  "module": "sdk",
+  "exit_code": 0,
+  "status": "AUXILIARY_IMPORT_EXPORT_NEEDS_REVIEW",
+  "project": "SF2-aux-sdk-v1",
+  "progress": {
+    "total_targets": 24032,
+    "completed_records": 24000,
+    "new_pseudocode_exports": 1999,
+    "failed_records": 1
+  },
+  "console": "F:\\SF2SwitchPC\\logs\\auxiliary-sdk-20261017-013230-console.log"
+}

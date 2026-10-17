@@ -1,0 +1,156 @@
+{
+  "status": "HASH_VERIFIED_CANONICAL_COMPILER_DELTA",
+  "before": "nso-class-guard-load-v33",
+  "after": "nso-class-origin-phi-v34",
+  "source_modified": false,
+  "whole_game_source_ready": false,
+  "assemblies": {
+    "Assembly-CSharp-firstpass": {
+      "old_unique": 19219,
+      "new_unique": 19103,
+      "delta": -116,
+      "source_integrity": {
+        "nso-class-guard-load-v33": {
+          "manifest_sha256": "69dba3f5bb6b3187122556c5095883a8234da7a7e06d4ee0c7672941032fde69",
+          "diagnostic_source_files_hash_verified": 629
+        },
+        "nso-class-origin-phi-v34": {
+          "manifest_sha256": "cf8516fbb39892fcd0f2a09c3a76cd52e216c6c05548c4a9d70bfe47c451afe8",
+          "diagnostic_source_files_hash_verified": 629
+        }
+      },
+      "error_code_delta": {
+        "CS0030": -84,
+        "CS0037": -30,
+        "CS0103": -1,
+        "CS0122": -1,
+        "CS0177": 1,
+        "CS0269": -1
+      },
+      "operand_categories": {
+        "nso-class-guard-load-v33": {
+          "int_zero_cast_to_enumerator": 34,
+          "int_zero_cast_to_other_nonprimitive": 278,
+          "value_cast_to_pointer_of_same_type": 393
+        },
+        "nso-class-origin-phi-v34": {
+          "int_zero_cast_to_enumerator": 34,
+          "int_zero_cast_to_other_nonprimitive": 237,
+          "value_cast_to_pointer_of_same_type": 393
+        }
+      },
+      "semantic_added_occurrences": 6,
+      "semantic_removed_occurrences": 122,
+      "most_added_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'int[]'",
+          "count": 3
+        },
+        {
+          "code": "CS0122",
+          "message": "'PreciseLocale.PreciseLocaleSwitch' is inaccessible due to its protection level",
+          "count": 1
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '>=' cannot be applied to operands of type 'Base.State' and 'object'",
+          "count": 1
+        },
+        {
+          "code": "CS0177",
+          "message": "The out parameter 'idx' must be assigned to before control leaves the current method",
+          "count": 1
+        }
+      ],
+      "most_added_files": [
+        {
+          "file": "BestHTTP/Decompression/Zlib/InflateCodes.cs",
+          "count": 3
+        },
+        {
+          "file": "PreciseLocaleText.cs",
+          "count": 1
+        },
+        {
+          "file": "SevenZip/Compression/LZMA/Encoder.cs",
+          "count": 1
+        },
+        {
+          "file": "BestHTTP/Cookies/CookieJar.cs",
+          "count": 1
+        }
+      ]
+    },
+    "Assembly-CSharp": {
+      "old_unique": 30061,
+      "new_unique": 29900,
+      "delta": -161,
+      "source_integrity": {
+        "nso-class-guard-load-v33": {
+          "manifest_sha256": "69dba3f5bb6b3187122556c5095883a8234da7a7e06d4ee0c7672941032fde69",
+          "diagnostic_source_files_hash_verified": 1219
+        },
+        "nso-class-origin-phi-v34": {
+          "manifest_sha256": "cf8516fbb39892fcd0f2a09c3a76cd52e216c6c05548c4a9d70bfe47c451afe8",
+          "diagnostic_source_files_hash_verified": 1219
+        }
+      },
+      "error_code_delta": {
+        "CS0019": -1,
+        "CS0030": -101,
+        "CS0037": -45,
+        "CS0122": -12,
+        "CS0234": -1,
+        "CS1061": -1
+      },
+      "operand_categories": {
+        "nso-class-guard-load-v33": {
+          "int_zero_cast_to_other_nonprimitive": 698,
+          "int_zero_cast_to_enumerator": 492,
+          "value_cast_to_pointer_of_same_type": 246
+        },
+        "nso-class-origin-phi-v34": {
+          "int_zero_cast_to_other_nonprimitive": 665,
+          "int_zero_cast_to_enumerator": 492,
+          "value_cast_to_pointer_of_same_type": 246
+        }
+      },
+      "semantic_added_occurrences": 8,
+      "semantic_removed_occurrences": 169,
+      "most_added_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'float*' to 'UnityEngine.Object'",
+          "count": 5
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'UnityEngine.Object' to 'float*'",
+          "count": 1
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'string' to 'float*'",
+          "count": 1
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'nint' to 'System.Action<UnityEngine.RectTransform, string>'",
+          "count": 1
+        }
+      ],
+      "most_added_files": [
+        {
+          "file": "Nekki/SF2/GUI/TextPic.cs",
+          "count": 7
+        },
+        {
+          "file": "Nekki/SF2/GUI/Dialogs/Raids/Clans/MembersClanTable.cs",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "limits": "Diagnostic lines include cascades and are not independent bug counts or completion percentages. Semantic multisets ignore line movement but local-variable spelling can still change a message. Every diagnostic-bearing source file is hash/size checked against its original export manifest. This report measures changes without certifying whether any change preserves behavior."
+}

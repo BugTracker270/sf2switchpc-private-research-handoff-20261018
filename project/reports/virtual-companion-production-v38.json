@@ -1,0 +1,282 @@
+{
+  "status": "PASS_ORIGINAL_COMPANION_COPY_THROUGH_PRODUCTION_WITH_SCOPE_REJECTIONS",
+  "checks": 27,
+  "tests": [
+    {
+      "name": "original native and metadata input hashes",
+      "passed": true
+    },
+    {
+      "name": "exact original76-byte TryGetAttribute native witness",
+      "passed": true
+    },
+    {
+      "name": "current unchanged native source bound",
+      "passed": true
+    },
+    {
+      "name": "original paired188/190 load and X8 to X1 copy",
+      "passed": true
+    },
+    {
+      "name": "original slot6 reference target signature",
+      "passed": true
+    },
+    {
+      "name": "actual raw13 has original18operand ABI with X1 copy12",
+      "passed": true
+    },
+    {
+      "name": "actual companion copy reaches unique X8 paired memory load10",
+      "passed": true
+    },
+    {
+      "name": "actual copy and terminal load are in dispatch block and ordered",
+      "passed": true
+    },
+    {
+      "name": "after-type original copied-companion virtual call accepted",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa original copied-companion virtual call accepted",
+      "passed": true
+    },
+    {
+      "name": "emitter-input original copied-companion virtual call accepted",
+      "passed": true
+    },
+    {
+      "name": "after-type prior two parameter-root getters accepted but producer-root Count stays indirect",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa prior two parameter-root getters accepted but producer-root Count stays indirect",
+      "passed": true
+    },
+    {
+      "name": "emitter-input prior two parameter-root getters accepted but producer-root Count stays indirect",
+      "passed": true
+    },
+    {
+      "name": "after-type void plus explicit argument stays rejected",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa void plus explicit argument stays rejected",
+      "passed": true
+    },
+    {
+      "name": "emitter-input void plus explicit argument stays rejected",
+      "passed": true
+    },
+    {
+      "name": "after-type both original Stream virtual identities retained",
+      "passed": true
+    },
+    {
+      "name": "after-type all four numeric layout diagnostics retain Boolean results and sole argument",
+      "passed": true
+    },
+    {
+      "name": "after-type numeric overflow diagnostic and exact following throw retained",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa both original Stream virtual identities retained",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa all four numeric layout diagnostics retain Boolean results and sole argument",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa numeric overflow diagnostic and exact following throw retained",
+      "passed": true
+    },
+    {
+      "name": "emitter-input both original Stream virtual identities retained",
+      "passed": true
+    },
+    {
+      "name": "emitter-input all four numeric layout diagnostics retain Boolean results and sole argument",
+      "passed": true
+    },
+    {
+      "name": "emitter-input numeric overflow diagnostic and exact following throw retained",
+      "passed": true
+    },
+    {
+      "name": "Stream final emission validation preserves both helper contracts and dead companion",
+      "passed": true
+    }
+  ],
+  "methods": [
+    {
+      "label": "TryGetAttribute",
+      "registered_rva": "0x15CA080",
+      "stages": [
+        {
+          "stage": "after-type",
+          "proven_virtual_indices": [
+            13
+          ],
+          "indirect_indices": [],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-TryGetAttribute-after-type-v38.txt",
+          "private_graph_sha256": "dbc432b1b791e5279af033024a36e025304285fe54a15f461dc26a3dc6a5e844"
+        },
+        {
+          "stage": "simplified-ssa",
+          "proven_virtual_indices": [
+            13
+          ],
+          "indirect_indices": [],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-TryGetAttribute-simplified-ssa-v38.txt",
+          "private_graph_sha256": "17650f69502e654cc2f9faf9954b94aee824120b244230b91b5a5bc950c505a7"
+        },
+        {
+          "stage": "emitter-input",
+          "proven_virtual_indices": [
+            13
+          ],
+          "indirect_indices": [],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-TryGetAttribute-emitter-input-v38.txt",
+          "private_graph_sha256": "df24c2dc7024afb1c83eeab7debbe4163232fb497371855bc82cadb6527b23fe"
+        }
+      ]
+    },
+    {
+      "label": "FirstAttribute",
+      "registered_rva": "0x15CA570",
+      "stages": [
+        {
+          "stage": "after-type",
+          "proven_virtual_indices": [
+            12,
+            33
+          ],
+          "indirect_indices": [
+            16
+          ],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-FirstAttribute-after-type-v38.txt",
+          "private_graph_sha256": "a04722786936397c4491bfe2a98119948b6ccb9f97cb22f00d2b4a5f3c180f4a"
+        },
+        {
+          "stage": "simplified-ssa",
+          "proven_virtual_indices": [
+            12,
+            33
+          ],
+          "indirect_indices": [
+            16
+          ],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-FirstAttribute-simplified-ssa-v38.txt",
+          "private_graph_sha256": "4e483693ba78ab36f5d83ff8d33e5f0ad5736a0184ea4d01776288b4ed1f27f1"
+        },
+        {
+          "stage": "emitter-input",
+          "proven_virtual_indices": [
+            12,
+            33
+          ],
+          "indirect_indices": [
+            16
+          ],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-FirstAttribute-emitter-input-v38.txt",
+          "private_graph_sha256": "5001b0c4597c29bddd0d9f2cad4a29b644be1458bf892c1152bf90f4c1090dd6"
+        }
+      ]
+    },
+    {
+      "label": "YamlWrite",
+      "registered_rva": "0xCB000",
+      "stages": [
+        {
+          "stage": "after-type",
+          "proven_virtual_indices": [],
+          "indirect_indices": [
+            10
+          ],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-YamlWrite-after-type-v38.txt",
+          "private_graph_sha256": "fdbaaa551b98b47ef0d646699b555d156a67af878f2129c98058788d880c0db2"
+        },
+        {
+          "stage": "simplified-ssa",
+          "proven_virtual_indices": [],
+          "indirect_indices": [
+            10
+          ],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-YamlWrite-simplified-ssa-v38.txt",
+          "private_graph_sha256": "71b7b90f06d1916eca4352b7b2349518bbf111cf36ab28d65d38598448e1f0c8"
+        },
+        {
+          "stage": "emitter-input",
+          "proven_virtual_indices": [],
+          "indirect_indices": [
+            10
+          ],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-YamlWrite-emitter-input-v38.txt",
+          "private_graph_sha256": "3c5b029b1442237e55142c80813af695601e66a9b76f2730fdb21049f529732c"
+        }
+      ]
+    },
+    {
+      "label": "StreamRead",
+      "registered_rva": "0x4A0D70",
+      "stages": [
+        {
+          "stage": "after-type",
+          "proven_virtual_indices": [
+            26,
+            36
+          ],
+          "indirect_indices": [
+            195,
+            231
+          ],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-StreamRead-after-type-v38.txt",
+          "private_graph_sha256": "273cfb96ee3049901a3ac9221ca69b34b7a1710db3718de27beb6e20949a2421"
+        },
+        {
+          "stage": "simplified-ssa",
+          "proven_virtual_indices": [
+            26,
+            36
+          ],
+          "indirect_indices": [
+            195,
+            231
+          ],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-StreamRead-simplified-ssa-v38.txt",
+          "private_graph_sha256": "124b47cac517fefe24ec318edb45ee387e9d28dd80109e8d69bc2e414a696c31"
+        },
+        {
+          "stage": "emitter-input",
+          "proven_virtual_indices": [
+            26,
+            36
+          ],
+          "indirect_indices": [
+            195,
+            231
+          ],
+          "private_graph": "analysis\\il2cpp\\virtual-companion-StreamRead-emitter-input-v38.txt",
+          "private_graph_sha256": "7def85bfbd10edad508646648749a979379cf4ab4c974070f20efdd3d6575230"
+        }
+      ]
+    }
+  ],
+  "fatal": null,
+  "core_sha256": "197403735d374bdde681ad203cdb3eb18e8cd9eef01897908a8c4f9e786ad99a",
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "helper_source_sha256": "fb9144842f246d3b8359444e58b8c072701f3e4169c3b8c8b477c68e79dfb1d2",
+  "probe_source_sha256": "30acee7b56cda86580e49149279a7135ffc1e6206aca18bfbc18900d16fc6d15",
+  "private_native_inventory_sha256": "566ae3b3ab196881471d6fe33c702e02b23e2276e61833d12bef46254bf34c66",
+  "core_modified_by_probe": false,
+  "game_methods_executed": 0,
+  "native_code_executed": false,
+  "recovered_cil_edited": false,
+  "full_clean_decompile_ready": false,
+  "scope": "Independent original four-method production pipeline survey. The exact76-byte native witness pins class/paired-slot/X8-to-X1/BLR flow. Actual TryGetAttribute rawSSA copy chain, proven same-parameter receiver identity and carrier survive to emitter input; the producer-root Count and void/argument Yaml call remain indirect. Existing Stream virtual sites and both numeric helper ABIs/explicit throw remain. Native override execution and actual recovered TryGetAttribute callvirt require separate evidence."
+}

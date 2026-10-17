@@ -1,0 +1,17 @@
+{
+  "status": "PASS_ORIGINAL_INTERNAL_REFERENCE_LEAF_GETTER",
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "native_code_sha256": "f289023bfc90be5c90aa1a98a40c5b356af639e69af0399f5914b2202364955c",
+  "native_rva": "0x1E6850",
+  "native_bytes": 8,
+  "exact_fde_size": 8,
+  "field_offset": "0x20",
+  "cases": 128,
+  "checks": 384,
+  "null_receiver_original_load_fault": true,
+  "guest_function_replacements": 0,
+  "native_code_unmodified": true,
+  "managed_methods_invoked": 0,
+  "source_tool_sha256": "ac511eb969514edc041864b93ca951b5b575e8849d7a9adf650fcba8ca96ef94",
+  "scope": "Only original two-instruction internal JsonSerializerInternalBase.Serializer getter executes against valid supplied receiver bytes. Reference payloads are opaque bit patterns; X1 is varied and unused. Receiver bytes remain unchanged. Null receiver faults at original LDR. No GC, constructor, owner initialization, caller accessibility, emitted call, full method or whole-game parity is claimed."
+}

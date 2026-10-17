@@ -1,0 +1,56 @@
+{
+  "status": "PASS_BOUNDED_ORIGINAL_ARM64_EXECUTION",
+  "checks": 13104,
+  "failures": [],
+  "sampled_original_intervals": 256,
+  "candidate_selection_cases": 666,
+  "calls": {
+    "hit_damage_get": 7,
+    "hit_damage_set": 7,
+    "frame_index": 120,
+    "distance_within": 5153,
+    "interframe": 5153,
+    "eligible_animations": 666
+  },
+  "executed_support_functions": {
+    "hit_damage_get": 7,
+    "hit_damage_set": 7,
+    "frame_index": 360,
+    "list_object_count": 4594,
+    "distance_within": 39298,
+    "list_float_count": 18290,
+    "interframe": 131538,
+    "list_float_item": 167700,
+    "list_int_item": 16704,
+    "eligible_animations": 23759,
+    "list_object_item": 18024,
+    "list_object_add": 2094
+  },
+  "original_text_sha256": {
+    "hit_damage_get": "e506b0bca2a5826af13852debb9f75b332002ec0cfab486b1ef018b245f484f4",
+    "hit_damage_set": "0e7d6896adc47cf1b6cf69345698abcd462544086684a596d8f6a85ea9374adb",
+    "distance_within": "a8e480536d088d01c65feadb45e952b8496f7feecb0ebb814bb5e1750c3a695b",
+    "interframe": "1f130a93a475876960c54278ee68c295ecccf9dd43741c9e9101b2b6a9a07818",
+    "frame_index": "811c445cd0d68d009349dc10d5c3b6acced8667473747558cbf350c8768ff6ac",
+    "eligible_animations": "84db610b9faa0c82e1f6f1e86226ed7aa163fa543f2a0ffe9038fdfa55296293",
+    "list_float_count": "50abf56e70bf4ffd353b0c6ed3c4e4880c6169bcd84263b80a4680f2ca7fb9ab",
+    "list_float_item": "a999e83392f4cb510320dee9be79d52f521b9935e97e0c4a757320d325eecae7",
+    "list_int_item": "bddeb8e1846af6c3c03f5c6ca1ecdd87e8cba91bdfb67a0415a1d09d7ba5c579",
+    "list_object_count": "50abf56e70bf4ffd353b0c6ed3c4e4880c6169bcd84263b80a4680f2ca7fb9ab",
+    "list_object_item": "0d2ac921d5cb9147010fc4d0a81103dc369ec66fd6ce0ccd17622fb8e585cead",
+    "list_object_add": "27891adc8d379a2f10395cc32b7ae6c88eb879b7cc1beddb0139536d8de48e57"
+  },
+  "metadata_initialization_guard_rvas": [
+    "0x3b86bdc",
+    "0x3b86bdd",
+    "0x3b89762",
+    "0x3b89703",
+    "0x3b86be4",
+    "0x3b86b59",
+    "0x3b89729"
+  ],
+  "text_modified": false,
+  "game_function_mocks": 0,
+  "seconds": 2.797000000005937,
+  "scope": "Original position-independent ARM64 mapped at RVA zero. Valid synthetic managed containers; initialization guards pre-set. No Nintendo OS or complete game execution, no runtime parity or FPS claim."
+}

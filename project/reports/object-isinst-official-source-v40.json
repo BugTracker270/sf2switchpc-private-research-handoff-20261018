@@ -1,0 +1,26 @@
+{
+  "status": "PASS_PINNED_OFFICIAL_OBJECT_ISINST_SOURCE_READ_ONLY",
+  "release": "2018.1.9f1",
+  "revision": "24bbd83e8b9e",
+  "archive_sha256": "ce666b2de60716cb5564b53317b56f0b82eddbea7afb3462ef51d5e121833c96",
+  "source_files": [
+    {
+      "archive_member": "Editor\\Data\\il2cpp\\libil2cpp\\vm\\Object.cpp",
+      "private_path": "analysis\\reconstruction\\compiler-family-v38\\official-runtime\\Object.cpp",
+      "sha256": "91991f55dd7da9d147e35072054cf3d692ef2bc77cdc248d80d2fc7bd67cea03",
+      "bytes": 11418
+    },
+    {
+      "archive_member": "Editor\\Data\\il2cpp\\libil2cpp\\vm\\Object.h",
+      "private_path": "analysis\\reconstruction\\compiler-family-v38\\official-runtime\\Object.h",
+      "sha256": "a4e13100c58619d29d109478f44594916869a0b5bcc9fefa47742f23cab6d913",
+      "bytes": 1782
+    }
+  ],
+  "source_sha256": "b5b978fa8791f19a415b09e17f301ac77876fd7ac1e86f4ceb0ac2c2c64b31e2",
+  "installer_executed": false,
+  "source_uploaded": false,
+  "core_modified": false,
+  "game_or_native_methods_executed": 0,
+  "scope": "Selected official vm/Object.cpp and vm/Object.h read through7-Zip stdout from the already local verified Unity2018.1.9f1 archive. Installer never executed. Full selected source retained under ignored analysis; native mapping and ABI certification remain separate."
+}

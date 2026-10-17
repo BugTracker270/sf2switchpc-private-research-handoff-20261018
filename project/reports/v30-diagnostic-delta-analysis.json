@@ -1,0 +1,2419 @@
+{
+  "status": "READ_ONLY_CANONICAL_COMPILER_DELTA",
+  "source_modified": false,
+  "assemblies": {
+    "Assembly-CSharp-firstpass": {
+      "old_unique": 18066,
+      "new_unique": 18762,
+      "delta": 696,
+      "counts_match_authoritative_summary": true,
+      "error_code_delta": {
+        "CS0019": 71,
+        "CS0023": -1,
+        "CS0030": 616,
+        "CS0122": 130,
+        "CS0177": -1,
+        "CS0234": -151,
+        "CS0269": 1,
+        "CS1061": 25,
+        "CS1510": 5,
+        "CS8174": 1
+      },
+      "semantic_added_occurrences": 950,
+      "semantic_removed_occurrences": 254,
+      "source_integrity": {
+        "nso-native-leaves-v29": {
+          "manifest_sha256": "8ac63c3e582fefb4d53a0e99e62a47ce1a68e7bf00474997d91cd474838cf53b",
+          "diagnostic_source_files_hash_verified": 620
+        },
+        "nso-value-this-box-v30": {
+          "manifest_sha256": "0353b29916e4883ef7b346c58e95542dc0713c70ef388106013809f875a91de6",
+          "diagnostic_source_files_hash_verified": 610
+        }
+      },
+      "source_operand_categories": {
+        "nso-native-leaves-v29": {
+          "int_zero_cast_to_other_nonprimitive": 216,
+          "value_cast_to_pointer_of_same_type": 131,
+          "int_zero_cast_to_enumerator": 7
+        },
+        "nso-value-this-box-v30": {
+          "int_zero_cast_to_enumerator": 34,
+          "int_zero_cast_to_other_nonprimitive": 237,
+          "value_cast_to_pointer_of_same_type": 393
+        }
+      },
+      "top_added_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'object[]' to 'nint'",
+          "count": 131
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 80
+        },
+        {
+          "code": "CS0122",
+          "message": "'ObscuredCheatingDetector.Instance__BackingField' is inaccessible due to its protection level",
+          "count": 48
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'SevenZip.Compression.RangeCoder.BitEncoder' to 'SevenZip.Compression.RangeCoder.BitEncoder*'",
+          "count": 44
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'SevenZip.Compression.RangeCoder.BitTreeEncoder' to 'SevenZip.Compression.RangeCoder.BitTreeEncoder*'",
+          "count": 33
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'SevenZip.Compression.RangeCoder.BitEncoder'",
+          "count": 30
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3*'",
+          "count": 28
+        },
+        {
+          "code": "CS0234",
+          "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+          "count": 21
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '+' cannot be applied to operands of type 'BitEncoder[]' and 'int'",
+          "count": 18
+        },
+        {
+          "code": "CS0122",
+          "message": "'ActDetectorBase.isRunning' is inaccessible due to its protection level",
+          "count": 17
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'SevenZip.Compression.RangeCoder.BitTreeEncoder'",
+          "count": 17
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '-' cannot be applied to operands of type 'object' and 'int'",
+          "count": 16
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat*'",
+          "count": 14
+        },
+        {
+          "code": "CS1061",
+          "message": "'int' does not contain a definition for 'm_value' and no accessible extension method 'm_value' accepting a first argument of type 'int' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 13
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredDouble' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredDouble*'",
+          "count": 11
+        }
+      ],
+      "top_growing_files": [
+        {
+          "file": "SevenZip/Compression/LZMA/Encoder.cs",
+          "old": 779,
+          "new": 903,
+          "delta": 124,
+          "old_source": {
+            "sha256": "bb01230c754c4f78fa910431964b0681da22120372e583ded054e8067264aa72",
+            "bytes": 334168,
+            "lines": 9215
+          },
+          "new_source": {
+            "sha256": "baf697383ce17970044b31c19cdaf1370fda1af4e2443a15dc5dd83ca74434f7",
+            "bytes": 348751,
+            "lines": 9546
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'BitEncoder[]' and 'int'",
+              "count": 16
+            },
+            {
+              "code": "CS8174",
+              "message": "A declaration of a by-reference variable must have an initializer",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'Encoder.LiteralEncoder.Encoder2[]' and 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'uint'",
+              "count": 10
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'SevenZip.Compression.RangeCoder.BitEncoder'",
+              "count": 27
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'SevenZip.Compression.RangeCoder.BitEncoder' to 'SevenZip.Compression.RangeCoder.BitEncoder*'",
+              "count": 41
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'SevenZip.Compression.RangeCoder.BitTreeEncoder'",
+              "count": 17
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'BitTreeEncoder' and 'uint'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'SevenZip.Compression.LZMA.Encoder.LiteralEncoder.Encoder2'",
+              "count": 6
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'byte' to 'System.IO.Stream'",
+              "count": 2
+            },
+            {
+              "code": "CS0269",
+              "message": "Use of unassigned out parameter 'outSize'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'SevenZip.Compression.RangeCoder.BitTreeEncoder' to 'SevenZip.Compression.RangeCoder.BitTreeEncoder*'",
+              "count": 33
+            }
+          ]
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredDecimal.cs",
+          "old": 58,
+          "new": 104,
+          "delta": 46,
+          "old_source": {
+            "sha256": "0da9b9aeb3bb42b9c73757c5e22803db375a15276266808937e1959e555a634e",
+            "bytes": 22645,
+            "lines": 723
+          },
+          "new_source": {
+            "sha256": "35bf13347ccf2dd408acab619ad7a52e03e50823cdaaee821a31c7fca298692d",
+            "bytes": 47440,
+            "lines": 1498
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredDecimal' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredDecimal*'",
+              "count": 11
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '>>' cannot be applied to operands of type 'decimal' and 'int'",
+              "count": 7
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredCheatingDetector.Instance__BackingField' is inaccessible due to its protection level",
+              "count": 5
+            },
+            {
+              "code": "CS0122",
+              "message": "'ActDetectorBase.isRunning' is inaccessible due to its protection level",
+              "count": 2
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'object' and 'int'",
+              "count": 15
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '|' cannot be applied to operands of type 'object' and 'object'",
+              "count": 3
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '|' cannot be applied to operands of type 'object' and 'int'",
+              "count": 2
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '^' cannot be applied to operands of type 'object' and 'long'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '^' cannot be applied to operands of type 'long' and 'object'",
+              "count": 1
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredFloat.InternalDecrypt()' is inaccessible due to its protection level",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredVector3.cs",
+          "old": 77,
+          "new": 120,
+          "delta": 43,
+          "old_source": {
+            "sha256": "e1df905901f16a59ec34cb61958ac5e5b255ea6de577e6ab1bba5222379cf116",
+            "bytes": 29893,
+            "lines": 917
+          },
+          "new_source": {
+            "sha256": "fe18d652ef715d6f481ce5c26bbf97293bf8312a0112735dae9505b0f1a0e7de",
+            "bytes": 41650,
+            "lines": 1210
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 12
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3.RawEncryptedVector3' to 'int'",
+              "count": 3
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+              "count": 4
+            },
+            {
+              "code": "CS1510",
+              "message": "A ref or out value must be an assignable variable",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3.RawEncryptedVector3'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3*'",
+              "count": 27
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'UnityEngine.Vector3' to 'float'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "SevenZip/Compression/LZMA/Decoder.cs",
+          "old": 311,
+          "new": 345,
+          "delta": 34,
+          "old_source": {
+            "sha256": "9d54245e9093f3725332b6f140b3a47a3bbe1d60f89556b0af9428e608f3bc32",
+            "bytes": 105045,
+            "lines": 2905
+          },
+          "new_source": {
+            "sha256": "686e3b118c9f3be0fe18d9fb62d7c95657e327c811ebe7ac928fad6075208166",
+            "bytes": 110768,
+            "lines": 3095
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS1061",
+              "message": "'int' does not contain a definition for 'm_value' and no accessible extension method 'm_value' accepting a first argument of type 'int' could be found (are you missing a using directive or an assembly reference?)",
+              "count": 13
+            },
+            {
+              "code": "CS0122",
+              "message": "'Decoder.LiteralDecoder.Decoder2' is inaccessible due to its protection level",
+              "count": 9
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'SevenZip.Compression.LZMA.Decoder.LiteralDecoder.Decoder2'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'SevenZip.Compression.LZMA.Decoder.LiteralDecoder.Decoder2' to 'SevenZip.Compression.LZMA.Decoder.LiteralDecoder.Decoder2*'",
+              "count": 2
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'BitDecoder[]' and 'byte'",
+              "count": 2
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'BitDecoder[]' and 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'SevenZip.Compression.RangeCoder.BitTreeDecoder'",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'SevenZip.Compression.RangeCoder.BitTreeDecoder' to 'SevenZip.Compression.RangeCoder.BitTreeDecoder*'",
+              "count": 4
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'uint' and 'object'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'byte' to 'SevenZip.Compression.LZMA.Decoder'",
+              "count": 5
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.IO.Stream' to 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'SevenZip.Compression.RangeCoder.Decoder'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "nn/hid/GestureState.cs",
+          "old": 2,
+          "new": 29,
+          "delta": 27,
+          "old_source": {
+            "sha256": "b2d4967ddb7b33d8dbaf1926834a181d660cbe101153da40efb94fa69e2ade74",
+            "bytes": 1420,
+            "lines": 66
+          },
+          "new_source": {
+            "sha256": "970ad04e10b8a4195bbe028c0b50b9d59c8f4988800ecd7872b5a339b94d9216",
+            "bytes": 16805,
+            "lines": 586
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object*' to 'object'",
+              "count": 1
+            },
+            {
+              "code": "CS0234",
+              "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+              "count": 9
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object[]' to 'nint'",
+              "count": 17
+            }
+          ]
+        },
+        {
+          "file": "CodeStage/AntiCheat/Examples/ObscuredPerformanceTests.cs",
+          "old": 50,
+          "new": 77,
+          "delta": 27,
+          "old_source": {
+            "sha256": "e1d6c0517e5a286963b27e6a40eedf60c45eeefe059b61214f2d26e7ad5f4925",
+            "bytes": 39555,
+            "lines": 1192
+          },
+          "new_source": {
+            "sha256": "e09c35b9762c6d8d34343dc16e1d09523bdae9d181a45228747634685bdf28af",
+            "bytes": 40433,
+            "lines": 1248
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0122",
+              "message": "'ObscuredBool.InternalDecrypt()' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'long' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredBool'",
+              "count": 1
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredByte.InternalDecrypt()' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredShort.InternalDecrypt()' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredUShort.InternalDecrypt()' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredDouble.InternalDecrypt()' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredFloat.InternalDecrypt()' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredInt.InternalDecrypt()' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredLong.InternalDecrypt()' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredUInt.InternalDecrypt()' is inaccessible due to its protection level",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredVector2.cs",
+          "old": 44,
+          "new": 70,
+          "delta": 26,
+          "old_source": {
+            "sha256": "49db6295f8f91c06e3cf471eef1b8226a0b4417cdd710768331ab1b325937317",
+            "bytes": 13161,
+            "lines": 399
+          },
+          "new_source": {
+            "sha256": "858e3ec961667f0274859adf288dba8ccf8f1200bf7c20b86945d20ea025cc5d",
+            "bytes": 23078,
+            "lines": 661
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 14
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2.RawEncryptedVector2' to 'int'",
+              "count": 3
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+              "count": 3
+            },
+            {
+              "code": "CS1510",
+              "message": "A ref or out value must be an assignable variable",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2.RawEncryptedVector2'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2*'",
+              "count": 7
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object*' to 'object'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'UnityEngine.Vector2' to 'float'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "SevenZip/Compression/RangeCoder/BitTreeDecoder.cs",
+          "old": 22,
+          "new": 45,
+          "delta": 23,
+          "old_source": {
+            "sha256": "d5168dbc2e1388e0c899370aadcc3f9c56bf49926c0d02f5de89539444bceadc",
+            "bytes": 6294,
+            "lines": 182
+          },
+          "new_source": {
+            "sha256": "202a1b348b2fcedde222ec3e05940cc57ca69d75f2962b92af4b032851c54657",
+            "bytes": 12808,
+            "lines": 364
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0023",
+              "message": "Operator '++' cannot be applied to operand of type 'object'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'object'",
+              "count": 4
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'int'",
+              "count": 2
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '*' cannot be applied to operands of type 'object' and 'int'",
+              "count": 2
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'int' and 'object'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'SevenZip.Compression.RangeCoder.BitTreeDecoder'",
+              "count": 4
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'SevenZip.Compression.RangeCoder.BitTreeDecoder' to 'int'",
+              "count": 4
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'object' and 'object'",
+              "count": 2
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '<<' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '|' cannot be applied to operands of type 'object' and 'uint'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "nn/hid/SixAxisSensorState.cs",
+          "old": 12,
+          "new": 28,
+          "delta": 16,
+          "old_source": {
+            "sha256": "55c0f2d4082eacf952ba0ae4cd8a261f632fc1ce76df2658b8f7dca37e1af766",
+            "bytes": 2330,
+            "lines": 60
+          },
+          "new_source": {
+            "sha256": "2ccbb6296f0bd8f86f7c3a509be08000efdfb0be31f61072baa9e53e6e7d6fce",
+            "bytes": 8427,
+            "lines": 260
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object*' to 'object'",
+              "count": 1
+            },
+            {
+              "code": "CS0234",
+              "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object[]' to 'nint'",
+              "count": 7
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object' to 'float*'",
+              "count": 4
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'nn.hid.SixAxisSensorState' to 'nn.hid.SixAxisSensorState*'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "nn/hid/ControllerSupportArg.cs",
+          "old": 2,
+          "new": 18,
+          "delta": 16,
+          "old_source": {
+            "sha256": "2cfd8d24e1eee93d4c2b819479bbed31da1bfb05c171c9017c59d25194fe3882",
+            "bytes": 1330,
+            "lines": 54
+          },
+          "new_source": {
+            "sha256": "78096a3f27dd6027c86805a6e8fb32fd71a24b8afc9d5a0f46e454190ae87b46",
+            "bytes": 12225,
+            "lines": 429
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object*' to 'object'",
+              "count": 1
+            },
+            {
+              "code": "CS0234",
+              "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object[]' to 'nint'",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredFloat.cs",
+          "old": 60,
+          "new": 76,
+          "delta": 16,
+          "old_source": {
+            "sha256": "061abdec3cae725f74ca24078fee48a5a5ebbf0a902d5bfe6b86e9e0151bf131",
+            "bytes": 17341,
+            "lines": 514
+          },
+          "new_source": {
+            "sha256": "a6a3d57885f31be4218b4433f641a3992bff8a661d0682f4423bf3a2fe08861b",
+            "bytes": 24094,
+            "lines": 742
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat*'",
+              "count": 11
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredCheatingDetector.Instance__BackingField' is inaccessible due to its protection level",
+              "count": 5
+            },
+            {
+              "code": "CS0122",
+              "message": "'ActDetectorBase.isRunning' is inaccessible due to its protection level",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredQuaternion.cs",
+          "old": 47,
+          "new": 62,
+          "delta": 15,
+          "old_source": {
+            "sha256": "3c166b10674fde037fa19595fd74a3b24fc7f162082107299921ad3d291769d8",
+            "bytes": 16726,
+            "lines": 475
+          },
+          "new_source": {
+            "sha256": "d1462f6b1eb7c24d8393032784a438ccdf13fa5c4dd1674895bc3ec838fb748e",
+            "bytes": 23758,
+            "lines": 622
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 6
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '^' cannot be applied to operands of type 'int' and 'ObscuredQuaternion.RawEncryptedQuaternion'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredQuaternion' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredQuaternion*'",
+              "count": 6
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredCheatingDetector.Instance__BackingField' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ActDetectorBase.isRunning' is inaccessible due to its protection level",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'UnityEngine.Quaternion' to 'float'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'UnityEngine.Quaternion' to 'UnityEngine.Quaternion*'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "nn/account/UserSelectionSettings.cs",
+          "old": 2,
+          "new": 17,
+          "delta": 15,
+          "old_source": {
+            "sha256": "46af3e9f5ab535bee969692fa6a5ee4681281ac928778153ccf3bec0dc309e51",
+            "bytes": 1567,
+            "lines": 61
+          },
+          "new_source": {
+            "sha256": "49d943de4986bbb36fdb9c747442843aff7e156bbda54316028cf67d52ca2799",
+            "bytes": 7777,
+            "lines": 256
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object[]' to 'nint'",
+              "count": 4
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'object'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'nint' to 'nn.account.Uid'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'nn.account.Uid'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'nn.account.Uid' to 'nn.account.Uid*'",
+              "count": 1
+            },
+            {
+              "code": "CS0023",
+              "message": "Operator '++' cannot be applied to operand of type 'object'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+=' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0234",
+              "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredDouble.cs",
+          "old": 50,
+          "new": 65,
+          "delta": 15,
+          "old_source": {
+            "sha256": "81ff252726faf3e9eabcd403d643d9b8cad1f728fd51a73fbd887bca9475d586",
+            "bytes": 18148,
+            "lines": 568
+          },
+          "new_source": {
+            "sha256": "1ee5305072cfc9d5d562f9f4b6127a4decc501014dc8687f8ab012ab7359aa5e",
+            "bytes": 29584,
+            "lines": 965
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredDouble' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredDouble*'",
+              "count": 11
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredCheatingDetector.Instance__BackingField' is inaccessible due to its protection level",
+              "count": 5
+            },
+            {
+              "code": "CS0122",
+              "message": "'ActDetectorBase.isRunning' is inaccessible due to its protection level",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredULong.cs",
+          "old": 59,
+          "new": 71,
+          "delta": 12,
+          "old_source": {
+            "sha256": "2efc80c8f25f4783cc857d594853f22bb51f11d28b733da0db874f55dd3db5aa",
+            "bytes": 20263,
+            "lines": 611
+          },
+          "new_source": {
+            "sha256": "1d01c21842936d3764d3b3c8fc1c70f5ece62a1a949fc69a29cc94cf81fe27bf",
+            "bytes": 26383,
+            "lines": 843
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 6
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredULong' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredULong*'",
+              "count": 10
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredCheatingDetector.Instance__BackingField' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ActDetectorBase.isRunning' is inaccessible due to its protection level",
+              "count": 1
+            },
+            {
+              "code": "CS0165",
+              "message": "Use of unassigned local variable 'num4'",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredLong.cs",
+          "old": 56,
+          "new": 68,
+          "delta": 12,
+          "old_source": {
+            "sha256": "f875efa44fafb8471768c1b6a7d812f61dc2d8ae947be4ba2bdf79c7ea07c5af",
+            "bytes": 20078,
+            "lines": 611
+          },
+          "new_source": {
+            "sha256": "c5df967686e6275cea6d902e3cb0bedf27b0ce6139b7db34f384c2d192b275bf",
+            "bytes": 26105,
+            "lines": 844
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 6
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredLong' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredLong*'",
+              "count": 10
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredCheatingDetector.Instance__BackingField' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ActDetectorBase.isRunning' is inaccessible due to its protection level",
+              "count": 1
+            },
+            {
+              "code": "CS0165",
+              "message": "Use of unassigned local variable 'num4'",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredInt.cs",
+          "old": 59,
+          "new": 71,
+          "delta": 12,
+          "old_source": {
+            "sha256": "4ce6b8ef256415aedf94ec7f036758c3ff9772b63b6ca82d4fb92d166d6a265b",
+            "bytes": 18678,
+            "lines": 566
+          },
+          "new_source": {
+            "sha256": "972d61e068a6f5922daa0fd980f61ba61782e4f7811b4275b047e99e0f4dd3c7",
+            "bytes": 26036,
+            "lines": 839
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 4
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt*'",
+              "count": 8
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredCheatingDetector.Instance__BackingField' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ActDetectorBase.isRunning' is inaccessible due to its protection level",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'int' and 'object'",
+              "count": 2
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '^' cannot be applied to operands of type 'ObscuredInt' and 'object'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredUInt.cs",
+          "old": 59,
+          "new": 71,
+          "delta": 12,
+          "old_source": {
+            "sha256": "0a843021a467b3689a4fde4088942106a8bb55ddb169ece4078851310459947c",
+            "bytes": 18386,
+            "lines": 552
+          },
+          "new_source": {
+            "sha256": "6c1b9aa50091fd64b8589c4366e8118d94c583e536f9fb804314d7dadf01bd12",
+            "bytes": 25786,
+            "lines": 821
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 4
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredUInt' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredUInt*'",
+              "count": 8
+            },
+            {
+              "code": "CS0122",
+              "message": "'ObscuredCheatingDetector.Instance__BackingField' is inaccessible due to its protection level",
+              "count": 3
+            },
+            {
+              "code": "CS0122",
+              "message": "'ActDetectorBase.isRunning' is inaccessible due to its protection level",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'uint' and 'object'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '^' cannot be applied to operands of type 'ObscuredUInt' and 'object'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'int' and 'object'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "nn/hid/VibrationFileInfo.cs",
+          "old": 2,
+          "new": 12,
+          "delta": 10,
+          "old_source": {
+            "sha256": "662359009056d7c184d9d2c4e9a2295db1da02aa282c0905c93da88859f5b9cf",
+            "bytes": 828,
+            "lines": 36
+          },
+          "new_source": {
+            "sha256": "31244c79da45a68346fef1818be64761f02e9004e5ea13b2c7566b261438d91f",
+            "bytes": 7595,
+            "lines": 277
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object*' to 'object'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object[]' to 'nint'",
+              "count": 9
+            }
+          ]
+        },
+        {
+          "file": "SevenZip/Compression/RangeCoder/BitTreeEncoder.cs",
+          "old": 20,
+          "new": 30,
+          "delta": 10,
+          "old_source": {
+            "sha256": "31bfabf63006a0fb7c6db1e79f0bc4979dbe41aec5d22b647912100ec2b3b89c",
+            "bytes": 9533,
+            "lines": 277
+          },
+          "new_source": {
+            "sha256": "18b28fb5b87d7b472c05697e2ba006fe871212ae3852736015584b6bf9f15587",
+            "bytes": 13658,
+            "lines": 411
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'SevenZip.Compression.RangeCoder.BitEncoder'",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'SevenZip.Compression.RangeCoder.BitEncoder' to 'SevenZip.Compression.RangeCoder.BitEncoder*'",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 2
+            },
+            {
+              "code": "CS0122",
+              "message": "'BitEncoder.ProbPrices' is inaccessible due to its protection level",
+              "count": 2
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'BitEncoder[]' and 'int'",
+              "count": 2
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'uint[]' and 'int'",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "added_codes": {
+        "CS0019": 122,
+        "CS0023": 2,
+        "CS0029": 0,
+        "CS0030": 634,
+        "CS0037": 0,
+        "CS0079": 0,
+        "CS0103": 0,
+        "CS0117": 0,
+        "CS0122": 130,
+        "CS0149": 0,
+        "CS0152": 0,
+        "CS0165": 4,
+        "CS0177": 0,
+        "CS0191": 0,
+        "CS0221": 0,
+        "CS0234": 21,
+        "CS0246": 0,
+        "CS0250": 0,
+        "CS0266": 0,
+        "CS0269": 1,
+        "CS1061": 30,
+        "CS1503": 0,
+        "CS1510": 5,
+        "CS1540": 0,
+        "CS1729": 0,
+        "CS7003": 0,
+        "CS7036": 0,
+        "CS8172": 0,
+        "CS8174": 1
+      },
+      "removed_codes": {
+        "CS0019": 51,
+        "CS0023": 3,
+        "CS0029": 0,
+        "CS0030": 18,
+        "CS0037": 0,
+        "CS0079": 0,
+        "CS0103": 0,
+        "CS0117": 0,
+        "CS0122": 0,
+        "CS0149": 0,
+        "CS0152": 0,
+        "CS0165": 4,
+        "CS0177": 1,
+        "CS0191": 0,
+        "CS0221": 0,
+        "CS0234": 172,
+        "CS0246": 0,
+        "CS0250": 0,
+        "CS0266": 0,
+        "CS0269": 0,
+        "CS1061": 5,
+        "CS1503": 0,
+        "CS1510": 0,
+        "CS1540": 0,
+        "CS1729": 0,
+        "CS7003": 0,
+        "CS7036": 0,
+        "CS8172": 0,
+        "CS8174": 0
+      }
+    },
+    "Assembly-CSharp": {
+      "old_unique": 28290,
+      "new_unique": 28906,
+      "delta": 616,
+      "counts_match_authoritative_summary": true,
+      "error_code_delta": {
+        "CS0019": 23,
+        "CS0023": 2,
+        "CS0030": 555,
+        "CS0117": 7,
+        "CS0122": 43,
+        "CS0165": -1,
+        "CS0234": -14,
+        "CS1061": 1
+      },
+      "semantic_added_occurrences": 656,
+      "semantic_removed_occurrences": 40,
+      "source_integrity": {
+        "nso-native-leaves-v29": {
+          "manifest_sha256": "8ac63c3e582fefb4d53a0e99e62a47ce1a68e7bf00474997d91cd474838cf53b",
+          "diagnostic_source_files_hash_verified": 1183
+        },
+        "nso-value-this-box-v30": {
+          "manifest_sha256": "0353b29916e4883ef7b346c58e95542dc0713c70ef388106013809f875a91de6",
+          "diagnostic_source_files_hash_verified": 1186
+        }
+      },
+      "source_operand_categories": {
+        "nso-native-leaves-v29": {
+          "int_zero_cast_to_other_nonprimitive": 652,
+          "value_cast_to_pointer_of_same_type": 193,
+          "int_zero_cast_to_enumerator": 18
+        },
+        "nso-value-this-box-v30": {
+          "int_zero_cast_to_other_nonprimitive": 659,
+          "int_zero_cast_to_enumerator": 490,
+          "value_cast_to_pointer_of_same_type": 246
+        }
+      },
+      "top_added_messages": [
+        {
+          "code": "CS0122",
+          "message": "'Rect.m_XMin' is inaccessible due to its protection level",
+          "count": 30
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredLong' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredLong*'",
+          "count": 30
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<string>.Enumerator'",
+          "count": 22
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Model>.Enumerator'",
+          "count": 21
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Zones.FightList>.Enumerator'",
+          "count": 17
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.UserItem>.Enumerator'",
+          "count": 14
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode>.Enumerator'",
+          "count": 13
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.API.Items.ItemInfo>.Enumerator'",
+          "count": 12
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.Perks.PerkInfoItem>.Enumerator'",
+          "count": 11
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.Rule>.Enumerator'",
+          "count": 10
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt*'",
+          "count": 10
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 9
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.GUI.BaseScrollItem>.Enumerator'",
+          "count": 9
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'object[]' to 'nint'",
+          "count": 8
+        },
+        {
+          "code": "CS0122",
+          "message": "'Bounds.m_Center' is inaccessible due to its protection level",
+          "count": 8
+        }
+      ],
+      "top_growing_files": [
+        {
+          "file": "Nekki/SF2/Core/API/ListSF.cs",
+          "old": 620,
+          "new": 641,
+          "delta": 21,
+          "old_source": {
+            "sha256": "bd71bbf9234366b2c435ab31a2a58d31188d0c97aea0eb6e100d9ecb680c4442",
+            "bytes": 414108,
+            "lines": 12459
+          },
+          "new_source": {
+            "sha256": "52a9d1da649e42cfe1fd4bc7c5871e6cf4042c6bbb0627a68949482dd198bbf3",
+            "bytes": 416969,
+            "lines": 12512
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Zones.Zone>.Enumerator'",
+              "count": 4
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.API.Items.ItemInfo>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.UserItem>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Zones.FightList>.Enumerator'",
+              "count": 4
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<string, BattleType>>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<string>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.WarriorAttribute>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Zones.BattleReplayable>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0165",
+              "message": "Use of unassigned local variable 'obj15'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.API.ListSF.TemplateUser>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.API.ListSF.GroupsUser>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'List<Battle>.Enumerator' and 'int'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/API/Roster.cs",
+          "old": 274,
+          "new": 295,
+          "delta": 21,
+          "old_source": {
+            "sha256": "33922a2fce4a1e69ac21980113b96c7dc6cdfb63ed4b7b6619b441a5c5fd546c",
+            "bytes": 162588,
+            "lines": 5526
+          },
+          "new_source": {
+            "sha256": "259d53377d437d21e65d094e7161c4b0d38ee2688ff3706c97bee95aaae90834",
+            "bytes": 164403,
+            "lines": 5561
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.UserItem>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.API.RosterBattle>.Enumerator'",
+              "count": 5
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.API.RosterQuest>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.API.RosterFight>.Enumerator'",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<string>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.CurrencyStruct>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Pair<int, uint>>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredLong' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredLong*'",
+              "count": 4
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredUInt' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredUInt*'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt*'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Fight.cs",
+          "old": 386,
+          "new": 404,
+          "delta": 18,
+          "old_source": {
+            "sha256": "8549bf0e1da88640dc7fd925f40344471774475f77227d30dfec8e9000a7df99",
+            "bytes": 289847,
+            "lines": 8936
+          },
+          "new_source": {
+            "sha256": "2cde3726c845bc3d8835fbb2f9c4e2db658fa6e3c42e7713da39ebe0a5aa1880",
+            "bytes": 292366,
+            "lines": 8984
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Model>.Enumerator'",
+              "count": 14
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Pair<string, float>>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.Perks.PerkInfoItem>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Support.ModelParameters>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<string>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Rules/RulesInspector.cs",
+          "old": 199,
+          "new": 215,
+          "delta": 16,
+          "old_source": {
+            "sha256": "aa9500dc37512386d3c85cc345fb6f04b5ac73d4470a622e25ec9ba88724d7c9",
+            "bytes": 74343,
+            "lines": 2266
+          },
+          "new_source": {
+            "sha256": "e8b4de6f7d6113a26564532c6b957c87da6a76edce5c2808bb00836ae47e117f",
+            "bytes": 76094,
+            "lines": 2300
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0122",
+              "message": "'Rule._type' is inaccessible due to its protection level",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'List<InFightRule>.Enumerator' and 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0122",
+              "message": "'InFightRule._playerApply' is inaccessible due to its protection level",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.InFightRule>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.RandomRule>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.NoAnimationRule>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.AvatarRule>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.NameRule>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.NoButtonRule>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.ItemRule>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.Rule>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/GameUtils.cs",
+          "old": 311,
+          "new": 326,
+          "delta": 15,
+          "old_source": {
+            "sha256": "24bb66e08d2a4899cd362e86e7d5c3e79f74e461e759e2b12500434bee178788",
+            "bytes": 228263,
+            "lines": 6953
+          },
+          "new_source": {
+            "sha256": "eaa97e9e27f5b790520c75cec7ea496cb24b67a3cb923ce962ae831e7cc9f0a7",
+            "bytes": 230367,
+            "lines": 6994
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.GameUtils.HitEffect>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.Dictionary<string, int>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.GameUtils.Support>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Collections.Generic.List<Nekki.SF2.Core.API.RewardStruct>.Enumerator*' to 'string'",
+              "count": 1
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'List<RewardStruct>.Enumerator' and 'int'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.GameCurrency>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.Dictionary<string, Nekki.SF2.Core.API.Counters.Counter>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.AchievCounter>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Pair<string, string>>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.Dictionary<string, Nekki.SF2.Core.API.Counters.Counter>.ValueCollection.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.Aspect>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.Achievement>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/GUI/Dialogs/Raids/RaidViewCell.cs",
+          "old": 27,
+          "new": 41,
+          "delta": 14,
+          "old_source": {
+            "sha256": "4ee6a4d8e394b09c3799474fa8f32cc3caf92b5dc4d00aaf855d731caeacc767",
+            "bytes": 20691,
+            "lines": 693
+          },
+          "new_source": {
+            "sha256": "e3c78e2e181042d70a74b2b13ec570a83801230c9c03471793d22f53a11d92e7",
+            "bytes": 22412,
+            "lines": 734
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0019",
+              "message": "Operator '>>' cannot be applied to operands of type 'float' and 'int'",
+              "count": 8
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'object'",
+              "count": 4
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '*' cannot be applied to operands of type 'object' and 'int'",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/GUI/TextDebugger.cs",
+          "old": 53,
+          "new": 67,
+          "delta": 14,
+          "old_source": {
+            "sha256": "4375bd443808e7ac8abc4c5a2e580924e68890b3974f1b3caffd645fd199a6a8",
+            "bytes": 33925,
+            "lines": 1109
+          },
+          "new_source": {
+            "sha256": "e00faa0bab03c8407859f178ae6e27ae4ecffa0fb0d1b6805e35ab035582ce4e",
+            "bytes": 35827,
+            "lines": 1145
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0122",
+              "message": "'Bounds.m_Center' is inaccessible due to its protection level",
+              "count": 7
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.GUI.TextDebugger.QuadBox>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'UnityEngine.Vector3'",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'UnityEngine.Bounds' to 'UnityEngine.Bounds*'",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/API/Items/ItemInfo.cs",
+          "old": 242,
+          "new": 256,
+          "delta": 14,
+          "old_source": {
+            "sha256": "a6d6e5dc1432c5f374a141988971281f8ac7e7f3c2c8ccba1a991030d70ef463",
+            "bytes": 145366,
+            "lines": 4343
+          },
+          "new_source": {
+            "sha256": "d17e3c997516dc65dc4949cc8e1f2d29ceb7d355cde387375a033312722292e9",
+            "bytes": 146872,
+            "lines": 4375
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt*'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredLong' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredLong*'",
+              "count": 9
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.Dictionary<int, Nekki.SF2.Core.Utils.DiscountInfo>.ValueCollection.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.API.Items.UpgradeData>.Enumerator'",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/Zones/FightList.cs",
+          "old": 141,
+          "new": 154,
+          "delta": 13,
+          "old_source": {
+            "sha256": "9918a1d8b2006bc1c184552892689e27a2830f62a08e67f3d5eea027445469ce",
+            "bytes": 72901,
+            "lines": 2284
+          },
+          "new_source": {
+            "sha256": "b1835fa40fa92d47d853bea748c2626323c2558da0442907c6c6bca277ebda47",
+            "bytes": 74086,
+            "lines": 2308
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt*'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredLong' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredLong*'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredUInt' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredUInt*'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.ItemRule>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.CurrencyCostRule>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.RandomRule>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Support.ModelParameters>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Rules.Rule>.Enumerator'",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Model.cs",
+          "old": 607,
+          "new": 618,
+          "delta": 11,
+          "old_source": {
+            "sha256": "2b788973387ae56c5289e80825a2bf8946de1720bdfd415f5c388dc62826b85f",
+            "bytes": 292507,
+            "lines": 10123
+          },
+          "new_source": {
+            "sha256": "e6d1d3b60716f8a8098e1904d7589e426309a64f750e7a25d52876a95c253113",
+            "bytes": 293794,
+            "lines": 10153
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Components.Edges.ModelEdge>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Model>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.WeaponModel>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.WeaponModel>>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Pair<string, int>>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Animation.Moves.Actions.ActionAnimation>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Animation.Moves.Triggers.Trigger>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/AI/ModelAi.cs",
+          "old": 222,
+          "new": 233,
+          "delta": 11,
+          "old_source": {
+            "sha256": "3765e155f2d29d222a767fb5d4534882aee8833aa8fd16827a1ec9b0af00fc5f",
+            "bytes": 155090,
+            "lines": 4966
+          },
+          "new_source": {
+            "sha256": "59476f8135c1b26cba4b7d4041e45d47e8343fed918492ff8ecc13c72429eaa2",
+            "bytes": 157323,
+            "lines": 5022
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Animation.Moves.TemplateAnimation>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<string>.Enumerator'",
+              "count": 4
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Pair<string, float>>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.AI.ModelAi.Decision>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Collections.Generic.List<Pair<System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.AI.Data.GroupTables>, string>>.Enumerator' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.AI.Data.GroupTables>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Collections.Generic.List<Pair<System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.AI.Data.GroupTables>, string>>.Enumerator' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.AI.Data.IntervalNew>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/GUI/SimpleScroll.cs",
+          "old": 158,
+          "new": 169,
+          "delta": 11,
+          "old_source": {
+            "sha256": "9884d221210178607ed2c7c21bcae0f8d83c110e128116066f1f86676f0fd8f4",
+            "bytes": 111660,
+            "lines": 3769
+          },
+          "new_source": {
+            "sha256": "3e5cae6c08be106a63433fb31bab54e56dc1c2ac3eebfd5ab5537534bd7deaca",
+            "bytes": 113402,
+            "lines": 3823
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0122",
+              "message": "'Rect.m_XMin' is inaccessible due to its protection level",
+              "count": 8
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.GUI.BaseScrollItem>.Enumerator'",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/API/UserItems.cs",
+          "old": 37,
+          "new": 47,
+          "delta": 10,
+          "old_source": {
+            "sha256": "f771bb9eb04d2577e4eced3dc8b72e7f82c8c0cac032172aa75f4d5f2942fb5c",
+            "bytes": 29061,
+            "lines": 1017
+          },
+          "new_source": {
+            "sha256": "6657e2d49cdb331687d3a488206fd616777be5255b7d0cee16e924ad25f524a3",
+            "bytes": 29787,
+            "lines": 1031
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.UserItem>.Enumerator'",
+              "count": 7
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.Perks.PerkInfoItem>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.API.Items.ItemInfo>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.API.Items.UpgradeData>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Support/ModelParameters.cs",
+          "old": 156,
+          "new": 166,
+          "delta": 10,
+          "old_source": {
+            "sha256": "26f8529344a3f0f56d61059b4689952306d118a67618fdb4d4a404d8ab6d02dc",
+            "bytes": 93674,
+            "lines": 3175
+          },
+          "new_source": {
+            "sha256": "aab772a25452420b6b1b141641e6c2de4dace53c1bd814d4f0b31bb34e48b71f",
+            "bytes": 95341,
+            "lines": 3212
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt' to 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt*'",
+              "count": 4
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Support.AttributesAlign>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<string>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.Perks.PerkInfoItem>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.API.Items.ItemInfo>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Collections.Generic.List<Pair<string, float>>.Enumerator' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Support.Evaluation>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/Forge/Recipe.cs",
+          "old": 28,
+          "new": 38,
+          "delta": 10,
+          "old_source": {
+            "sha256": "9a97e2d3f77cb32a71ef04e27d9f5fa24480d4dcfdd5754e71c7f0010d5733f0",
+            "bytes": 26422,
+            "lines": 866
+          },
+          "new_source": {
+            "sha256": "acc3c8193181c2450f3588ac07d2de1cee0fbb85e9d2ed71c5e49f07b6e4a3bc",
+            "bytes": 27330,
+            "lines": 884
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Forge.RecipeItem>.Enumerator'",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Forge.RecipePrices>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Forge.Variation>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.CurrencyStruct>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.Perks.PerkStruct>.Enumerator'",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Utils.Perks.PerkInfoItem>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Animation/Moves/InfoAnimation.cs",
+          "old": 212,
+          "new": 221,
+          "delta": 9,
+          "old_source": {
+            "sha256": "6c072a678e2060b41530f3aa96ff7f26c8b1492c49ac070e746a335e3aa84927",
+            "bytes": 116367,
+            "lines": 3701
+          },
+          "new_source": {
+            "sha256": "cf9bc90c6f24b0b370a5cc4950e3ce4bf04ac3c491c25082433d92c1120185bb",
+            "bytes": 117822,
+            "lines": 3731
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Animation.Moves.Events.EventAnimation>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Animation.Moves.Actions.ActionAnimation>.Enumerator'",
+              "count": 2
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'List<ActionAnimation>.Enumerator' and 'int'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Animation.Moves.Intervals.IntervalAnimation>.Enumerator'",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<string>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation.AnimationContainerStruct>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/ModelObject.cs",
+          "old": 74,
+          "new": 83,
+          "delta": 9,
+          "old_source": {
+            "sha256": "0ea95f79c881a8423e3a285ff3b2dbecfb50618607bb29574d7899e2b418bea8",
+            "bytes": 29252,
+            "lines": 1105
+          },
+          "new_source": {
+            "sha256": "088e995dabef8f650d7a24ac30cec8658503b60d1908872714900227d7506b87",
+            "bytes": 30036,
+            "lines": 1120
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode>.Enumerator'",
+              "count": 8
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.Model.Components.Edges.ModelEdge>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/CountersFight.cs",
+          "old": 38,
+          "new": 46,
+          "delta": 8,
+          "old_source": {
+            "sha256": "9e72404037cc476e44be09dba9f56f7bf170d6a8e243ac9d2ff8a0ed0f8f385f",
+            "bytes": 31390,
+            "lines": 1001
+          },
+          "new_source": {
+            "sha256": "46e45c8c14b1ca8cfa4f28f14b9a127eb766185bcb9259c8dccc1bcbb848d965",
+            "bytes": 32707,
+            "lines": 1030
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Fights.CountersFight.CurrentCounter>.Enumerator'",
+              "count": 4
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.Dictionary<string, Nekki.SF2.Core.Fights.CountersFight.CurrentCounter>.Enumerator'",
+              "count": 3
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.Dictionary<string, Nekki.SF2.Core.API.Counters.Counter>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/GUI/Map/MapPanel.cs",
+          "old": 48,
+          "new": 55,
+          "delta": 7,
+          "old_source": {
+            "sha256": "31c75c131b0fe7d6e716d146fb5459605f2229dde666ac21ed8a48e95231d504",
+            "bytes": 25361,
+            "lines": 884
+          },
+          "new_source": {
+            "sha256": "88d1615e7e91e8300dea27a8f4c9e22035aba4ca07d293ccf1a099088ccb8ff9",
+            "bytes": 25844,
+            "lines": 893
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.GUI.Map.ZoneScrollItem>.Enumerator'",
+              "count": 5
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.GUI.BaseScrollItem>.Enumerator'",
+              "count": 1
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'System.Collections.Generic.List<Nekki.SF2.Core.Zones.Zone>.Enumerator'",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "file": "Nekki/SF2/GUI/Common/BottomPanel.cs",
+          "old": 129,
+          "new": 136,
+          "delta": 7,
+          "old_source": {
+            "sha256": "f21f2228f945a8e72a7a98365e65ec9d75763c0ef9ecc3dce8c3ccb5c65c8c9a",
+            "bytes": 76074,
+            "lines": 1842
+          },
+          "new_source": {
+            "sha256": "d2cd835d3c2523c49b949627d5f2648f2f126a140e841425fb2d5db5c7a93b3f",
+            "bytes": 76709,
+            "lines": 1854
+          },
+          "new_diagnostic_categories": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 7
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'nint*' to 'System.Collections.Generic.HashSet<Nekki.SF2.GUI.Common.SectionButton>'",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "added_codes": {
+        "CS0019": 37,
+        "CS0020": 0,
+        "CS0023": 2,
+        "CS0029": 0,
+        "CS0030": 562,
+        "CS0037": 0,
+        "CS0079": 0,
+        "CS0103": 0,
+        "CS0117": 7,
+        "CS0120": 0,
+        "CS0122": 43,
+        "CS0149": 0,
+        "CS0165": 4,
+        "CS0177": 0,
+        "CS0191": 0,
+        "CS0234": 0,
+        "CS0246": 0,
+        "CS0250": 0,
+        "CS0266": 0,
+        "CS0269": 0,
+        "CS0272": 0,
+        "CS1061": 1,
+        "CS1501": 0,
+        "CS1503": 0,
+        "CS1510": 0,
+        "CS1540": 0,
+        "CS1729": 0,
+        "CS7036": 0,
+        "CS8174": 0
+      },
+      "removed_codes": {
+        "CS0019": 14,
+        "CS0020": 0,
+        "CS0023": 0,
+        "CS0029": 0,
+        "CS0030": 7,
+        "CS0037": 0,
+        "CS0079": 0,
+        "CS0103": 0,
+        "CS0117": 0,
+        "CS0120": 0,
+        "CS0122": 0,
+        "CS0149": 0,
+        "CS0165": 5,
+        "CS0177": 0,
+        "CS0191": 0,
+        "CS0234": 14,
+        "CS0246": 0,
+        "CS0250": 0,
+        "CS0266": 0,
+        "CS0269": 0,
+        "CS0272": 0,
+        "CS1061": 0,
+        "CS1501": 0,
+        "CS1503": 0,
+        "CS1510": 0,
+        "CS1540": 0,
+        "CS1729": 0,
+        "CS7036": 0,
+        "CS8174": 0
+      }
+    }
+  },
+  "methodology": "Canonical identities include stripped casefolded absolute path, line, column, CS code and stripped message. Semantic changes additionally compare multisets of relative file, code and message to avoid line-shift inflation; local-name changes can still alter messages. Source operand-category counts inspect actual diagnostic lines independently in each run. Every diagnostic-bearing source file is hash/size checked against the unchanged export manifest.",
+  "interpretation": {
+    "whole_game_source_ready": false,
+    "dominant_growth": "CS0030 grows by 616 firstpass and 555 main. Newly retained integer-zero initializers for aggregate storage and newly resolved value-this bodies/calls expose invalid typed operands. More diagnostics do not prove improved semantics.",
+    "aggregate_storage": {
+      "representative": "Nekki.SF2.Core.Fights.Fight.SetStage(StageType.Stage)",
+      "new_source_initializer_line": 2386,
+      "new_source_get_enumerator_line": 2426,
+      "new_source_move_next_line": 2429,
+      "observation": "v30 explicitly casts integer zero to List<Model>.Enumerator, stores GetEnumerator into another local, then calls MoveNext/Current/Dispose on the zero-backed local. v29 already used a separate default local instead of the GetEnumerator result. The preserved initializer is newly invalid code; the aggregate return/storage-alias defect predates v30. Native/CIL fixture validation is delegated and is not claimed by this source-only observation.",
+      "classification": "NEWLY_EXPOSED_INVALID_INITIALIZER_WITH_PRE_EXISTING_UNRESOLVED_AGGREGATE_ABI"
+    },
+    "new_body": {
+      "representative": "nn.hid.GestureState.ToString",
+      "old_diagnostics": 2,
+      "new_diagnostics": 29,
+      "registered_thunk": "0x78BB0",
+      "exact_unboxed_body": "0x782D0",
+      "exact_fde_bytes": 2268,
+      "observation": "v29 exports a short unresolved-call wrapper. v30 exports the real large body containing array/boxing/class-init/native-pointer limitations; these new body diagnostics must remain failures. Accepted route is documented by value-this-thunks-v30.json (287 accepted bodies).",
+      "classification": "NEW_BODY_EXPOSURE_WITH_UNRESOLVED_OPERAND_TYPES"
+    },
+    "resolved_call_regression_risk": {
+      "representative": "CodeStage.AntiCheat.ObscuredTypes.ObscuredDecimal.RandomizeCryptoKey",
+      "observation": "The previously unresolved adjusted value-this call now resolves to InternalDecrypt, while the caller source retains a plus-16 address adjustment and a value-to-pointer conversion. This is an invalid call/receiver sequence requiring correction. It is not certified as benign expansion merely because the old helper call was also unresolved.",
+      "classification": "NEWLY_RESOLVED_CALL_EXPOSES_INVALID_VALUE_THIS_RECEIVER"
+    },
+    "limits": "No Core code changed or built in this audit. No gameplay/runtime parity, complete classification of all diagnostics, or compile-success claim. Native/actual CIL proof of the selected aggregate fixture is handled separately; source observations alone do not establish the required fix."
+  }
+}

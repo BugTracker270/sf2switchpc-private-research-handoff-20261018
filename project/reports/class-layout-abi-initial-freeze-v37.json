@@ -1,0 +1,118 @@
+{
+  "status": "PASS_IMMUTABLE_INITIAL_CLASS_LAYOUT_ABI_CONTRACT_CAPTURE",
+  "core_sha256": "014d9b9698ae1448e9a14a41c132fae3ed7efc7023fef4932dae2da8196c9a49",
+  "original_contract_sha256": "c497c5732c4d10cbeef6998a82b69bfdd22c003d90ac4bb2b50a1a722a355b91",
+  "initial_report": "reports\\class-layout-abi-contract-v37-initial-core014d.json",
+  "initial_report_sha256": "c497c5732c4d10cbeef6998a82b69bfdd22c003d90ac4bb2b50a1a722a355b91",
+  "files": [
+    {
+      "source": "reports\\class-layout-abi-contract-v37.json",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\report.json",
+      "sha256": "c497c5732c4d10cbeef6998a82b69bfdd22c003d90ac4bb2b50a1a722a355b91"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\Program.cs",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\Program.cs",
+      "sha256": "ec70ade559247ff5fc2184e4b1a680526c32f59de6ee540c14d53a3a15e3f905"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\ClassLayoutAbiContractProbe.csproj",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\ClassLayoutAbiContractProbe.csproj",
+      "sha256": "41e3efd4e475a8eee5bfd81ec1e3aafc6227fe5be800b4f9cfbe98c935303ad7"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\AsmResolver.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\AsmResolver.dll",
+      "sha256": "84aea06f4e5046453544e61869ee032ec6a138a1fc262477b3670204b64e66f6"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\AsmResolver.DotNet.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\AsmResolver.DotNet.dll",
+      "sha256": "487a39bd2155981547f2ea32e0d4271312438ebd8860021487a5583ca6e2acef"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\AsmResolver.PE.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\AsmResolver.PE.dll",
+      "sha256": "9cf8dbe4b67cac1a16f42459da5961927dc6e2df0878340dcf1070dcb2d9fff0"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\AsmResolver.PE.File.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\AsmResolver.PE.File.dll",
+      "sha256": "ace634279fd8d878118473918cef1b20db5bbcda4ab2b8270afe31cabb89d323"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\AssetRipper.CIL.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\AssetRipper.CIL.dll",
+      "sha256": "c748eb259657188ef5ca57db9b26f9c42765d451e7943822d829fbc4dd99e1d7"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\AssetRipper.Primitives.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\AssetRipper.Primitives.dll",
+      "sha256": "9e431f3cb8a17a258ee0dbccef11a766052435c5bbfce377bf6e0585676833ab"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\ClassLayoutAbiContractProbe.deps.json",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\ClassLayoutAbiContractProbe.deps.json",
+      "sha256": "7e978d4b76774a529442aa499a938dca7ff9d9e5c0784aaf676420223155bba2"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\ClassLayoutAbiContractProbe.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\ClassLayoutAbiContractProbe.dll",
+      "sha256": "ad03ca809b8a9be0a2575f809789a8d0d69587035cddc3dc05935ec1cf3fc9a4"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\ClassLayoutAbiContractProbe.exe",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\ClassLayoutAbiContractProbe.exe",
+      "sha256": "5243753baa180438d65dc155c68210b8fb4dbf38792b633ab8967d50eb12b3aa"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\ClassLayoutAbiContractProbe.pdb",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\ClassLayoutAbiContractProbe.pdb",
+      "sha256": "a67b5e9c9bc3bfa4b26429eb225d779d93565455dc879ff94b66971c0e89e42e"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\ClassLayoutAbiContractProbe.runtimeconfig.json",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\ClassLayoutAbiContractProbe.runtimeconfig.json",
+      "sha256": "c230a317a54dd960bcbeb5f347f52e18dc665a26f7efda2159fced9a5ac7e097"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\Cpp2IL.Core.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\Cpp2IL.Core.dll",
+      "sha256": "014d9b9698ae1448e9a14a41c132fae3ed7efc7023fef4932dae2da8196c9a49"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\Disarm.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\Disarm.dll",
+      "sha256": "dd3e07f28f05f6db38a18a5e34ff87efc829a6c2ed9fc046aae4a702ef8ecb48"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\Gee.External.Capstone.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\Gee.External.Capstone.dll",
+      "sha256": "41aef753408c59a28a7e01ec9ca0957d67d5cbea432ee2a36e5ea1c1cdbcd8a3"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\Iced.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\Iced.dll",
+      "sha256": "f058c01321b4cdfc9b9151879e88e59571c8d0ba176fbcf95bc936a8f3d073ed"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\LibCpp2IL.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\LibCpp2IL.dll",
+      "sha256": "c15339ded4039f7aaf827c80db38788a02ac3e86a016e24bcdefc9ef515d52df"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\StableNameDotNet.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\StableNameDotNet.dll",
+      "sha256": "6e1703e8acbd1fd8f4325ccd5ea351949cebeafac248de96a9fcec13930fc9d2"
+    },
+    {
+      "source": "src\\re\\ClassLayoutAbiContractProbe\\bin\\Release\\net10.0\\WasmDisassembler.dll",
+      "snapshot": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\bin\\WasmDisassembler.dll",
+      "sha256": "10b51dca9bfdb8d10c911cf2e57bed983ae76bf99df92ad9fb7d882a932016dd"
+    }
+  ],
+  "native_or_game_methods_executed": 0,
+  "current_production_abi_or_semantics_promoted": false,
+  "manifest": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\manifest.json",
+  "manifest_sha256": "8ac74cff47c6bd2e3662aa3cea7536b2a52c2590ba437fc8bcb6aed01e794864"
+}

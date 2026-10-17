@@ -1,0 +1,160 @@
+{
+  "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovery_run": "nso-plain-frame-cfg-v35",
+  "native_evidence_bound": true,
+  "native_fixture_cases": 802,
+  "native_virtual_calls": 1604,
+  "native_eof_returns": 276,
+  "structural_checks": [
+    {
+      "Name": "all802 original native cases and both byte domains bound without guest replacements",
+      "Status": "PASS"
+    },
+    {
+      "Name": "actual original instance Read(Stream) metadata",
+      "Status": "PASS"
+    },
+    {
+      "Name": "all bounded actual entry paths preserve2 calls and4 original header stores in order",
+      "Status": "PASS"
+    },
+    {
+      "Name": "both actual slot19 member references have exact Stream.ReadByte identity",
+      "Status": "PASS"
+    },
+    {
+      "Name": "both actual native-virtual sites retain CIL callvirt",
+      "Status": "FAIL"
+    },
+    {
+      "Name": "actual prefix has no unresolved diagnostic/helper-zero substitutions",
+      "Status": "FAIL"
+    },
+    {
+      "Name": "actual prefix has no object-to-native-int residue",
+      "Status": "FAIL"
+    },
+    {
+      "Name": "read-only inspection preserves actual original method body",
+      "Status": "PASS"
+    }
+  ],
+  "actual_native_virtual_identity_preserved": false,
+  "actual_callvirt_sites": 0,
+  "actual_direct_readbyte_sites": 2,
+  "actual_prefix_cfg_shape_proven": true,
+  "prefix_fence_paths": 1,
+  "calls": [
+    {
+      "offset": 1191,
+      "opcode": "call",
+      "metadata_token": "0x0A0001AF",
+      "declaring_type": "System.IO.Stream",
+      "Name": "ReadByte",
+      "return_type": "System.Int32",
+      "IsVirtual": true
+    },
+    {
+      "offset": 1290,
+      "opcode": "call",
+      "metadata_token": "0x0A0001AF",
+      "declaring_type": "System.IO.Stream",
+      "Name": "ReadByte",
+      "return_type": "System.Int32",
+      "IsVirtual": true
+    }
+  ],
+  "unresolved_prefix_calls": [
+    {
+      "offset": 1275,
+      "opcode": "call",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "Name": "NoteDecompilerIssue"
+    }
+  ],
+  "helper_zero_placeholders": [
+    {
+      "diagnostic_offset": 1270,
+      "helper_offset": 1275,
+      "zero_offset": 1280,
+      "conversion_offset": 1281,
+      "store_offset": 1282,
+      "local": 27,
+      "local_type": "System.Byte[]",
+      "diagnostic_sha256": "d54f0423fddabb28835a2f23d663e33e4f0ac6595499c5c431818d18dfdb2d49",
+      "paired_method_info_offset_0x260": true
+    }
+  ],
+  "evidence": {
+    "actual_method_token": "0x0600067E",
+    "actual_body_bytes": 1873,
+    "actual_init_locals": true,
+    "actual_eh_clauses": 0,
+    "prefix_instruction_count": 54,
+    "prefix_cfg_visits": 54,
+    "prefix_fence_paths": [
+      {
+        "End": 1376,
+        "Stores": 15,
+        "CallOffsets": [
+          1191,
+          1290
+        ],
+        "StoreOrder": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "prefix_fence_original_field": "\u003CLength\u003Ek__BackingField",
+    "original_header_field_tokens": [
+      {
+        "Name": "\u003CIsFinal\u003Ek__BackingField",
+        "metadata_token": "0x0400037D",
+        "type": "System.Boolean"
+      },
+      {
+        "Name": "\u003CType\u003Ek__BackingField",
+        "metadata_token": "0x0400037E",
+        "type": "BestHTTP.WebSocket.Frames.WebSocketFrameTypes"
+      },
+      {
+        "Name": "\u003CHasMask\u003Ek__BackingField",
+        "metadata_token": "0x0400037F",
+        "type": "System.Boolean"
+      },
+      {
+        "Name": "\u003CLength\u003Ek__BackingField",
+        "metadata_token": "0x04000380",
+        "type": "System.UInt64"
+      }
+    ],
+    "native_prefix_end": "0x4A0E00",
+    "private_actual_cil_path": "analysis\\reconstruction\\virtual-stream-dispatch-v36\\actual-nso-plain-frame-cfg-v35\\actual-cil.json"
+  },
+  "runtime_eligible": false,
+  "runtime_performed": false,
+  "runtime_cases": 0,
+  "actual_game_methods_invoked": 0,
+  "execution_limitations": [
+    "Actual prefix contains a diagnostic-to-native-int-zero placeholder; it is not recovered native null",
+    "Actual prefix contains an unresolved diagnostic/helper or unexpected call",
+    "Actual prefix still converts an object/pointer through native-int storage",
+    "Ordinary CIL call does not preserve observed native override dispatch"
+  ],
+  "fatal": null,
+  "assembly_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90",
+  "actual_body_il_sha256": "75e28e20dbe1fddb576dee591a754a05f7b0e91efbeb57e470dd1f96130ea72f",
+  "native_report_sha256": "d4e4a1ccacde74234377028dbbdd6e7213d9157674bbd3ba76428902dadba6b4",
+  "fixture_sha256": "5e99153391701ec6d1070799ab3e89a441e99afc80273686fd7c3910ed6003eb",
+  "private_cil_evidence_sha256": "9fcdccdea47b2d2cc9485cf07ec5758fb397a41903245d9c2bb507bc139b7db3",
+  "probe_source_sha256": "9e0f1194f6dfa97235c56b7fbfc90d8aa348c93c77cb3639506a578f50cb0a8c",
+  "cil_or_source_modified": false,
+  "call_opcodes_rewritten": 0,
+  "member_substitutions": 0,
+  "tokens_remapped": 0,
+  "dynamic_clones": 0,
+  "scope": "Read-only inspection of the unchanged actual recovered Read(Stream) CIL. Bounded CFG entry paths stop at the first original header Length field store, preserving actual call opcodes and member/field identities. Slot19 native dispatch and all802 original native cases are independently hash-bound. Diagnostics, native-int placeholder zeros and missing callvirt are explicit execution blockers; none are rewritten, removed, retargeted or executed. No runtime cases, cloned fragments, game/static constructors or helper substitutions are counted as recovery. Native constructor/vtable input boundaries, complete frame parsing, exception paths and full clean source remain separate."
+}

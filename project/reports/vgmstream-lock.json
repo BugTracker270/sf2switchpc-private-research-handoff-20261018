@@ -1,0 +1,9 @@
+{
+  "upstream_digest": "sha256:6c4a8a3813864fefed081bbd337dbc0ad93bf88e0b92f5db98d7ab258b22dc6c",
+  "zip": "F:\\SF2SwitchPC\\tools\\vgmstream-r2117-win64.zip",
+  "sha256": "6c4a8a3813864fefed081bbd337dbc0ad93bf88e0b92f5db98d7ab258b22dc6c",
+  "status": "MATCHED_PUBLISHED_DIGEST",
+  "version": "r2117",
+  "license_file": "reports/upstream/vgmstream-COPYING",
+  "source": "https://github.com/vgmstream/vgmstream/releases/tag/r2117"
+}

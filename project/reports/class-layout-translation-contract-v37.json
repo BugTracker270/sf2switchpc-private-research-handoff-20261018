@@ -1,0 +1,108 @@
+{
+  "status": "PASS_BOUNDED_CLASS_LAYOUT_TRANSLATION_CONTRACT_EVIDENCE",
+  "checks": 10,
+  "failures": 0,
+  "tests": [
+    {
+      "name": "exact one-argument Boolean metadata helper proof remains valid",
+      "passed": true
+    },
+    {
+      "name": "CLR witness passes and binds exact source report",
+      "passed": true
+    },
+    {
+      "name": "forty measured pre-control observations leave both constructors untouched",
+      "passed": true
+    },
+    {
+      "name": "explicit controls prove counted and throwing constructor canaries",
+      "passed": true
+    },
+    {
+      "name": "all CLR observations are retained separately from native execution",
+      "passed": true
+    },
+    {
+      "name": "original Byte element metadata has no managed constructor",
+      "passed": true
+    },
+    {
+      "name": "common array factory uses zeroed class storage and array identity",
+      "passed": true
+    },
+    {
+      "name": "metadata allocation zeroing is backed by shipped implementation",
+      "passed": true
+    },
+    {
+      "name": "actual frozen caller has typed Byte-array class candidates",
+      "passed": true
+    },
+    {
+      "name": "all implementation/promotion flags remain false",
+      "passed": true
+    }
+  ],
+  "first_candidate_type": "System.Byte[]",
+  "candidate_origin": "INFERRED_HOST_RUNTIME_ADAPTATION_NOT_IMPLEMENTED",
+  "proposed_eligibility_and_operation": [
+    "Initially admit only the exact resolved System.Byte[] SZARRAY type from original metadata at the reviewed B04F60 calls; resolve actual assembly/type identity, rank and element identity rather than FullName alone.",
+    "Require the exact original helper/FDE/hash/source identity and one klass input; preserve its Boolean result and ordering. Incoming X1 and other raw ABI registers are not extra managed parameters.",
+    "Require a valid non-null exact known class/type representation, original Byte metadata without .cctor and a host Byte[] type with no array/element initializer. Reject open/generic/custom/reference-element/multidimensional/bounded arrays and other classes in this first candidate.",
+    "A possible host operation is obtaining the exact runtime type handle/type metadata, then returning true only on normal completion. The witness measures TypeHandle/GetTypeFromHandle and metadata reflection; it does not implement a replacement helper or authorize eliminating the metadata-readiness effect.",
+    "Do not invoke RuntimeHelpers.RunClassConstructor, instantiate an element or use managed .cctor as a substitute. Keep the separate native Runtime::ClassInit semantic request separate and ordered.",
+    "Validate actual emitted CIL/callsite state and constructor-counter negatives before promotion; preserve diagnostics for unsupported types/failure states instead of producing a default result or silently swallowing exceptions."
+  ],
+  "unresolved": [
+    "The proposed operation is an inferred host-runtime adaptation, not a recovered original C# method. No production translation exists, and no exact native cold initialization-to-CLR equivalence is claimed.",
+    "Native null assertion/termination, metadata allocation failure, recursive setup failure, locking and cleanup/unwind are not mapped to CLR failures. Do not assume unconditional success from the observed normal true return.",
+    "The common array factory/source zero-initialization model is source evidence; the actual target runtime array-class factory and a concrete cold Byte[] heap initialization were not executed in this witness.",
+    "The four frozen typed raw-call candidates are static inventory only. Actual future callsite/provenance/registered alias and result/side-effect ordering gates remain unimplemented.",
+    "The host CLR metadata probe deliberately invokes counted/throwing .cctor only in separate positive controls after forty metadata observations. This does not permit .cctor execution in a translated layout operation.",
+    "Other primitive arrays, Boolean/Char with original constructor metadata, custom classes, reference-element arrays, generics and unknown metadata require separate eligibility/equivalence evidence."
+  ],
+  "source_report_sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594",
+  "clr_witness_sha256": "85bbcadc96656968a34cb04d64501267274101c5a02de051990d4a1148766863",
+  "original_byte_metadata_sha256": "96676225f7bd96469e5a905be40aea0ba01b392142410375289db7c3f410b0f7",
+  "frozen_typed_stage_sha256": "0151ac8581e0653c9341bd5ca6384a0afbe618ccb01aed62c76bbf96f1fd746f",
+  "typed_raw_call_candidates": [
+    {
+      "call_index": 67,
+      "helper": "0xb04f60",
+      "typed_class": "System.Byte[]"
+    },
+    {
+      "call_index": 123,
+      "helper": "0xb04f60",
+      "typed_class": "System.Byte[]"
+    },
+    {
+      "call_index": 182,
+      "helper": "0xb04f60",
+      "typed_class": "System.Byte[]"
+    },
+    {
+      "call_index": 213,
+      "helper": "0xb04f60",
+      "typed_class": "System.Byte[]"
+    }
+  ],
+  "candidate_count": 4,
+  "candidate_count_is_runtime_coverage": false,
+  "additional_common_source_hashes": {
+    "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\metadata\\ArrayMetadata.cpp": "b5e2f044aaf547ec2588252540744e8798d5c19bd65489cecead2736e5a68575",
+    "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\MetadataAlloc.cpp": "54978827b8584cc699b2a4afb3264e78ec12d0d981d198356da8d646778f7d55",
+    "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\utils\\MemoryPool.cpp": "13dea4c14ef3d162f59db7d505bc4778ad1e6cb8aec43a3b028eee3b9431ac46"
+  },
+  "probe_source_sha256": "be15abd1e4a40987dc89906e3555412d7e2e3409b5901453744316666ce3dbd0",
+  "core_edited": false,
+  "core_built": false,
+  "helper_suppressed": false,
+  "managed_translation_implemented": false,
+  "eligibility_implemented": false,
+  "actual_native_cold_class_executed": false,
+  "original_game_method_executed": false,
+  "production_ready": false,
+  "full_clean_decompile_ready": false
+}

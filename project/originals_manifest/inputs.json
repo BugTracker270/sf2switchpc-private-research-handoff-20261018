@@ -1,0 +1,30 @@
+[
+  {
+    "kind": "base",
+    "archive": "F:\\Reverse engineering shadow fight 2\\SHDWFGHT2-NSwTcH-[BASE]-NSP-ES-Ziperto.rar",
+    "archive_bytes": 1490310800,
+    "archive_sha256": "39be12a9056f2528e8b02ce5e7c14b44a7e305f24721d1918042a48eb7ee317d",
+    "archive_last_write_utc": "2026-10-16T16:42:32.0000000Z",
+    "nsp": "F:\\SF2SwitchPC\\input\\base\\Shadow Fight 2 [0100AB000ABFE000][v0][Base].nsp",
+    "nsp_bytes": 1486581050,
+    "nsp_sha256": "98d2d44f224321a174ce672826c5ece77d4f98350da336a21ffefc247e36cba5",
+    "nsp_last_write_utc": "2026-09-07T10:56:56.0000000Z",
+    "version_status": "filename claim only; CNMT not yet parsed",
+    "extraction": "7-Zip exact NSP member only; bundled URL not extracted",
+    "original_policy": "read-only"
+  },
+  {
+    "kind": "update",
+    "archive": "F:\\Reverse engineering shadow fight 2\\SHDWFGHT2-NSwTcH-NSP-Update110-Ziperto.rar",
+    "archive_bytes": 268293806,
+    "archive_sha256": "c35eb6965f49fcbad490f4ded55b6deb68f48800ab3f660ff0765f60c20638ef",
+    "archive_last_write_utc": "2026-10-16T16:41:22.0000000Z",
+    "nsp": "F:\\SF2SwitchPC\\input\\update\\Shadow Fight 2 [0100AB000ABFE800][v131072][Up v1.1.0].nsp",
+    "nsp_bytes": 267680537,
+    "nsp_sha256": "21831c39c058b815d838a7543678685ef89e1e95778753e71091ae3b8415b8f8",
+    "nsp_last_write_utc": "2026-09-07T10:56:58.0000000Z",
+    "version_status": "filename claim only; CNMT not yet parsed",
+    "extraction": "7-Zip exact NSP member only; bundled URL not extracted",
+    "original_policy": "read-only"
+  }
+]

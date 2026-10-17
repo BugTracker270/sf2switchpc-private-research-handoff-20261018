@@ -1,0 +1,45 @@
+{
+  "status": "PASS_COMPILED_REFERENCE_VS_ORIGINAL_ARM64",
+  "cases": 1024,
+  "steps": 8704,
+  "bit_exact_float_checks": 53248,
+  "seconds": 1.312000000005355,
+  "fixture_sha256": "e1d872e67fdcdfab2a9d65ed7eb1a4aadb28d39b7eaa5fca9535e22c065e2119",
+  "original_text_sha256": {
+    "node_step": "c2fdffc74306117cbe232e1ee6ba731f0821e71ee4535f1e6175151a8ece204d",
+    "vector_set": "b83c57167df366a5c8a1be952c4a35e67ec65827b12877770a12c28a446dd307",
+    "vector_subtract": "b6d482fa9e4ed1c026e1257bcaf2901d19905c4c9fb180a0a551a295d6c27a3f",
+    "vector_multiply": "fcc0223c419dd06c7dbb66840d1162c170a311748f0f61fee0e591c99267b04d",
+    "vector_add": "d2d7745b917dce657e906e21a36af8cc9d8a2027bf654643183eb399cc5276b6",
+    "vector_get_y": "cc8c8168c044ad4b0d7d0e4336b9f2d3cf4df64810b42912b0a28fbe479117db",
+    "vector_set_y": "b175d0394acc53d42d87f72f761b14381418597219c800023c5d1c1498f4e729",
+    "gravity_step": "19caf465e4d834a23b7eca6f6485eba839aec78d14eb0a12ec8c75af2d6bebd6",
+    "gravity_getter": "6760d755d3a8a7d517608daadc5fe9b5263dc67909c20ab94a822ca035e4976d",
+    "slow_mode_getter": "48743c2f04df0a67bfb504c4b27f0f218503b549e8ed9040a4f19195dfc83bee"
+  },
+  "calls": {
+    "gravity_step": 1024,
+    "node_step": 8704
+  },
+  "executed_functions": {
+    "gravity_step": 7168,
+    "gravity_getter": 3072,
+    "slow_mode_getter": 6144,
+    "node_step": 103936,
+    "vector_set": 26112,
+    "vector_subtract": 8704,
+    "vector_multiply": 4096,
+    "vector_add": 8704,
+    "vector_get_y": 8704,
+    "vector_set_y": 8704
+  },
+  "metadata_initialization_guards": [
+    "0x3b868bb",
+    "0x3b85bde",
+    "0x3b84da8",
+    "0x3b84de2"
+  ],
+  "text_modified": false,
+  "game_function_mocks": 0,
+  "scope": "Per-node integration only. Original ARM64 and real vector helper bytes, synthetic initialized objects. Includes gravity for both node flags and conditional attenuation. No constraints/collision/combat or FPS certification."
+}

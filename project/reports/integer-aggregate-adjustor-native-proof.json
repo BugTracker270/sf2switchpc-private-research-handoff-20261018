@@ -1,0 +1,31 @@
+{
+  "status": "PASS_ORIGINAL_BOXED_ADJUSTOR_VS_UNBOXED_CODEC_AND_FIXTURES",
+  "cases": 1024,
+  "checks": 10240,
+  "boxed_entry": "0x7A9200",
+  "unboxed_entry": "0x7A8F20",
+  "receiver_adjustment": 16,
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "initialization_guards": [
+    "0x3a36686",
+    "0x3a3667f",
+    "0x3a36680",
+    "0x3a3667d",
+    "0x3a36614",
+    "0x3a36681",
+    "0x3a36682",
+    "0x3a36685",
+    "0x3b84ea5"
+  ],
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "calls": {
+    "boxed_int_internal_decrypt": 1024,
+    "unboxed_int_internal_decrypt": 1024
+  },
+  "executed_functions": {
+    "boxed_int_internal_decrypt": 1024,
+    "unboxed_int_internal_decrypt": 26644
+  },
+  "scope": "Both original entry paths execute against the same existing native-verified codec fixtures and match result/post-call value words while preserving the supplied 16-byte header and following sentinel. Synthetic initialized metadata and absent/inactive/active-consistent detector states; no mismatch callback, real boxed object allocation, GC, class initialization, general ABI, recovered CIL or full source claim."
+}

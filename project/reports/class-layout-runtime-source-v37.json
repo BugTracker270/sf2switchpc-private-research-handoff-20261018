@@ -1,0 +1,170 @@
+{
+  "status": "PASS_EXACT_COMMON_RUNTIME_CLASS_INIT_BOOL_ABI_AND_EFFECTS",
+  "checks": 15,
+  "failures": 0,
+  "tests": [
+    {
+      "name": "exact official release/revision and published MD5",
+      "passed": true
+    },
+    {
+      "name": "archive size discrepancy is explicit and digest unchanged",
+      "passed": true
+    },
+    {
+      "name": "selected common source/license extraction verified",
+      "passed": true
+    },
+    {
+      "name": "official declaration is one class argument and Boolean return",
+      "passed": true
+    },
+    {
+      "name": "normal source return is true, including initialized case",
+      "passed": true
+    },
+    {
+      "name": "complete original wrapper is the exact 140-byte exception frame",
+      "passed": true
+    },
+    {
+      "name": "original returns true in W0",
+      "passed": true
+    },
+    {
+      "name": "second InitLocked argument is constructed local lock address",
+      "passed": true
+    },
+    {
+      "name": "exact null assertion maps to official source line/function",
+      "passed": true
+    },
+    {
+      "name": "initialized native oracle is unchanged and has no function replacements",
+      "passed": true
+    },
+    {
+      "name": "metadata InitLocked effects are retained",
+      "passed": true
+    },
+    {
+      "name": "managed constructor invocation is a distinct runtime function",
+      "passed": true
+    },
+    {
+      "name": "mutex/RAII source and original unwind cleanup retained",
+      "passed": true
+    },
+    {
+      "name": "prior 112-byte oracle is explicitly narrower",
+      "passed": true
+    },
+    {
+      "name": "source bit order agrees with native initialized-bit observation",
+      "passed": true
+    }
+  ],
+  "source_release": "2018.1.9f1",
+  "source_revision": "24bbd83e8b9e",
+  "archive_sha256": "ce666b2de60716cb5564b53317b56f0b82eddbea7afb3462ef51d5e121833c96",
+  "archive_provenance_sha256": "e051daf19ad9e19cc8992cd0fd61317f5d07de495bc37e52f4964d62bbd6f72e",
+  "source_locations": [
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Class.h",
+      "line": 132,
+      "sha256": "56445b4bd81164a66e69dbb6bddb781704efa2c21d844ab01bd2be1e354d07b8"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Class.cpp",
+      "line": 1441,
+      "sha256": "2801e2fdfd3dd7db4b14238f70df9335460e777b6a40fe48cb0eb9241ceb7a1d"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Class.cpp",
+      "line": 1373,
+      "sha256": "2801e2fdfd3dd7db4b14238f70df9335460e777b6a40fe48cb0eb9241ceb7a1d"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Runtime.cpp",
+      "line": 742,
+      "sha256": "53d8b6c2b0fb191af9085d574b6f6fcda5d4503cb597c12dfc016b984db3b13e"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\os\\Mutex.h",
+      "line": 71,
+      "sha256": "5114fe037ce472db26320bac2eb78b8b82254d9ec18e11ba25bdeab047cfc650"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\il2cpp-class-internals.h",
+      "line": 622,
+      "sha256": "ebafce9983456b0abeeff64cc34e69ca6f87e05676241e2dd0e972d991b31ecc"
+    }
+  ],
+  "all_common_source_file_hashes": {
+    "il2cpp-api-functions.h": "f1e0f91dee1ee0c7632eb233962402c5c71ed748cc36bcbe06ff1528e6854ace",
+    "il2cpp-api.cpp": "02daed4d22066ff968babf140ce045f40e6bba501193cd6315de052ff77b0800",
+    "il2cpp-api.h": "7bd71f7739f0c923bcc312d4e98e6b8e0c35c670d65574b691d544f882534408",
+    "il2cpp-class-internals.h": "ebafce9983456b0abeeff64cc34e69ca6f87e05676241e2dd0e972d991b31ecc",
+    "il2cpp-config.h": "f9a8ca8d2707516b1c6b02cb5a9a44c72c91907ce04f36a5fd72470b3352dec0",
+    "il2cpp-object-internals.h": "bfcad08e51f50fad3a0bc26fc6e5e7fcae34d0ac92f52922e08353e7fcf59a3e",
+    "il2cpp-metadata.h": "8e4e288f87a1c05785164d9eea31ce986a8807b187e51d70b17b2b3beca4a48a",
+    "il2cpp-runtime-metadata.h": "368884869ab71d95da9c08ec6bb74b4c77f9c572f6cefec9a5ac145e4b377e3a",
+    "il2cpp-tabledefs.h": "1cb7220aef5c87b1ba0e4916a167de5e823c1eb550551eba429c34c3c42add3a",
+    "os/Mutex.cpp": "85888d8a3768184ed348fea8fab6835169fc6f8c0ed893938bf85acf0ca5c739",
+    "os/Mutex.h": "5114fe037ce472db26320bac2eb78b8b82254d9ec18e11ba25bdeab047cfc650",
+    "vm/Class.cpp": "2801e2fdfd3dd7db4b14238f70df9335460e777b6a40fe48cb0eb9241ceb7a1d",
+    "vm/Class.h": "56445b4bd81164a66e69dbb6bddb781704efa2c21d844ab01bd2be1e354d07b8",
+    "vm/MetadataLock.h": "2c195c745fcf79115a845eb16bfa3411608485cf86980cf053214e1c218488ab",
+    "vm/Runtime.cpp": "53d8b6c2b0fb191af9085d574b6f6fcda5d4503cb597c12dfc016b984db3b13e",
+    "vm/Runtime.h": "b07402d3c594de6c124bf056a12de39b82a4dd55b8b17af7f1c16d779b260db2",
+    "vm/MetadataAlloc.cpp": "54978827b8584cc699b2a4afb3264e78ec12d0d981d198356da8d646778f7d55",
+    "vm/MetadataAlloc.h": "ffbae3c23d9a183fe705d36c3707d74fb36928667b3f4ef220ade9e31043261e",
+    "metadata/ArrayMetadata.cpp": "b5e2f044aaf547ec2588252540744e8798d5c19bd65489cecead2736e5a68575",
+    "metadata/ArrayMetadata.h": "35cb0ffd84a399a8d75d2c1d7e252be63bf95e18759e359f44c656c293ce0e16",
+    "utils/MemoryPool.cpp": "13dea4c14ef3d162f59db7d505bc4778ad1e6cb8aec43a3b028eee3b9431ac46",
+    "utils/MemoryPool.h": "0e8a2776f719b52a077152916efd6ebc6e0119b2f6719e6ce0aef819a157a5fc"
+  },
+  "supplemental_headers_extraction_log_sha256": "2a4634c87eb20a01e7416fb96b34440afbc13c7e51e2cc162257e4d4d59118d1",
+  "original_native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "exact_wrapper_rva": "0xb04f60",
+  "exact_wrapper_bytes": 140,
+  "exact_wrapper_sha256": "496575374643a8ca7a9f1181d685de0fa4ac68574a3cc50c315d52d74a4d7dd3",
+  "exact_init_locked_rva": "0xb06570",
+  "exact_init_locked_bytes": 688,
+  "exact_init_locked_sha256": "113e682ffc6c24fbff2e31ee837c3ad77b86a317aa56df1fa21e3394e13db537",
+  "distinct_managed_cctor_rva": "0xb2e720",
+  "abi": {
+    "explicit_arguments": 1,
+    "argument": "Il2CppClass* klass in X0",
+    "return_type": "bool",
+    "normal_result": true,
+    "incoming_x1_is_argument": false,
+    "void_return_supported": false,
+    "second_internal_argument": "InitLocked receives the locally constructed lock address in X1"
+  },
+  "effect_contract": [
+    "Assert a non-null class pointer; initialized classes return true without metadata writes on the measured path.",
+    "For an uninitialized class, acquire the metadata mutex and run InitLocked with RAII unlock on normal/exceptional paths.",
+    "InitLocked recursively prepares generic/array-element/parent metadata, methods, interfaces/vtable, hierarchy, fields, events/properties/nested types, GC descriptors and generic context as applicable; it changes initialization state and statistics.",
+    "Managed .cctor execution belongs to the distinct Runtime::ClassInit path with constructor-state guards and Runtime::Invoke; Class::Init must not be translated as RunClassConstructor."
+  ],
+  "failures_and_limits": [
+    "Normal return is true; null input reaches a native assertion boundary, not a measured false return or managed NullReferenceException.",
+    "Uninitialized setup may allocate and call other runtime metadata helpers. Their complete failure behavior is not executed here. The original wrapper has real cleanup/unwind instructions; those effects are not removable.",
+    "The shipped common source is from the exact official Windows editor release. Platform-specific SDK/compiler implementation equivalence is not assumed; original native instructions independently anchor the wrapper signature, source assertion line and behavior.",
+    "The 512-case native witness executes only the already-initialized path. One null case stops before the imported assertion; actual assertion termination, locks, InitLocked, unwinding and managed .cctor are outside that execution witness.",
+    "ABI correction can reject phantom incoming X1 arguments without erasing the helper. A managed metadata-readiness translation still requires a separate contract and .cctor-negative CLR evidence; none is implemented."
+  ],
+  "prior_witness_correction": "Earlier 112-byte fixtures were bounded initialized-path witnesses; exact FDE is 140 bytes, including cleanup. The initial new null guard expected a qualified function name; actual native assertion stores Init. Both failed logs are preserved and the final check uses that exact captured name.",
+  "native_initialized_witness_sha256": "4cde7bdd4c52d92cd7c41c2f5295e4cd8fc4bb83f9934ac5058ead97d9ac3258",
+  "private_comparison_sha256": "a0e935e9e9f1529ee01f84105df9328ee6cd7b8e2769e5310fa1ddf17740d15b",
+  "probe_source_sha256": "b6b29ebbb61a8078c476df21f513cfadc17d7d9a3b469b610f6dd51fd01603b9",
+  "public_unity_source_copied": false,
+  "proprietary_sources_uploaded": false,
+  "installer_executed": false,
+  "core_edited": false,
+  "core_built": false,
+  "helper_suppressed": false,
+  "managed_translation_implemented": false,
+  "full_clean_decompile_ready": false
+}

@@ -1,0 +1,29 @@
+{
+  "backend": "IL2CPP",
+  "scope": "API assembly identity evidence; no claim that Mono is the runtime or that a future port must use this framework.",
+  "assemblies": [
+    {
+      "version": "2.0.0.0",
+      "file": "mscorlib.dll",
+      "shell_sha256": "ddf833e54f717b06c366b49b164587c5f459f7ca09d893b75678e4ac555e88e4"
+    },
+    {
+      "version": "2.0.0.0",
+      "file": "System.dll",
+      "shell_sha256": "b35794a95cdf1164a18971ed5f5f0f3d94ec518664a0682739cea932f63a4d86"
+    },
+    {
+      "version": "3.5.0.0",
+      "file": "System.Core.dll",
+      "shell_sha256": "a809868e1a016d7da8f3a83c4a79d55015934e2aff1cc91655d3ddbacc6de156"
+    },
+    {
+      "version": "0.0.1.0",
+      "file": "Assembly-CSharp-firstpass.dll",
+      "shell_sha256": "24258fb22b0915c533b88ecd5bfbfe2e90f1e701e3646af5bf266419f4db7390"
+    }
+  ],
+  "source": "Actual supplied metadata through pinned Il2CppDumper DummyAssemblyGenerator, which copies aname.major/minor/build/revision (source line 65). Shells are not recovered method bodies.",
+  "observed_api_family": "legacy .NET 2.0/3.5",
+  "status": "PASS_METADATA_API_ASSEMBLY_IDENTITY_OBSERVATION"
+}

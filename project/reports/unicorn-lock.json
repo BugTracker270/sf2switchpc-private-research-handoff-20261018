@@ -1,0 +1,11 @@
+{
+  "filename": "unicorn-2.1.4-cp37-abi3-win_amd64.whl",
+  "purpose": "Bounded ARM64 function research, not a game runtime or port dependency",
+  "license": "GPL-2.0 core; bindings BSD; retain distributed license files",
+  "version": "2.1.4",
+  "sha256": "d7107500c64ce5c168fbff6bef9485b5db1350050036f4cea568650cf8bdbdf5",
+  "package": "https://pypi.org/project/unicorn/2.1.4/",
+  "name": "Unicorn",
+  "integrity": "MATCHED_PYPI_PUBLISHED_DIGEST",
+  "source": "https://github.com/unicorn-engine/unicorn/releases/tag/2.1.4"
+}

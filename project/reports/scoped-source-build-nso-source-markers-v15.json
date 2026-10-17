@@ -1,0 +1,31 @@
+{
+  "status": "PASS_TWO_TYPE_SOURCE_COMPILATION_ONLY",
+  "scope": "Compiles the actual ILSpy exports of Credentials and AuthenticationTypes without source edits, external packages, recovered DLL references or replacement method bodies. This is a two-type source recovery/compiler experiment, not whole-game source, executable gameplay or semantic parity.",
+  "build_exit_code": 0,
+  "sources": [
+    {
+      "recovery_helper_calls": 0,
+      "operand_warning_comments": 0,
+      "path": "F:\\SF2SwitchPC\\analysis\\il2cpp\\scoped-source-build-nso-source-markers-v15\\BestHTTP.Authentication.AuthenticationTypes\\BestHTTP.Authentication.AuthenticationTypes.decompiled.cs",
+      "sha256": "0d59ef484034d0ed9435007ef537470f1bca7380d06c83599bdfd2d8fd89253b"
+    },
+    {
+      "recovery_helper_calls": 0,
+      "operand_warning_comments": 0,
+      "path": "F:\\SF2SwitchPC\\analysis\\il2cpp\\scoped-source-build-nso-source-markers-v15\\BestHTTP.Authentication.Credentials\\BestHTTP.Authentication.Credentials.decompiled.cs",
+      "sha256": "5510a60409272003815146b5f8cdfb67b42758d8409ad032b60a1d68dc2cf54e"
+    }
+  ],
+  "restore_exit_code": 0,
+  "recovery_run": "nso-source-markers-v15",
+  "exports": [
+    {
+      "type": "BestHTTP.Authentication.AuthenticationTypes",
+      "exit_code": 0
+    },
+    {
+      "type": "BestHTTP.Authentication.Credentials",
+      "exit_code": 0
+    }
+  ]
+}

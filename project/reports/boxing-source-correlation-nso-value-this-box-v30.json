@@ -1,0 +1,56 @@
+{
+  "status": "PASS_SCOPED_INT32_BOX_SOURCE_AND_RUNTIME_CORRELATION",
+  "recovery_run": "nso-value-this-box-v30",
+  "caller": "FyberPlugin.User::SetAge(System.Int32)",
+  "caller_rva": "0xF230F0",
+  "boxing_call_rva": "0xF23144",
+  "before": {
+    "recovery_run": "nso-native-leaves-v29",
+    "source_manifest_sha256": "8ac63c3e582fefb4d53a0e99e62a47ce1a68e7bf00474997d91cd474838cf53b",
+    "selected_source_sha256": "789b3006c9d448eb18837dcaaa0a7964facac586db3b2124b824720c00913e74",
+    "selected_method_sha256": "b2bb1f46f0608708fe9d1f4fd4267e3f947f4aad58831859ef92264803eeed33",
+    "legacy_box_diagnostic_strings": 1,
+    "actual_age_identifier_uses": 0,
+    "selected_remaining_diagnostic_calls": 2,
+    "source_export_project_compile_exit_code": 1
+  },
+  "after": {
+    "recovery_run": "nso-value-this-box-v30",
+    "source_manifest_sha256": "0353b29916e4883ef7b346c58e95542dc0713c70ef388106013809f875a91de6",
+    "selected_source_sha256": "6a8bcb66449584292bb31e3a8303be5d2255d56cf16e67f820c9914df01ecbee",
+    "selected_method_sha256": "634bef09400e9442d0e80d9e8f4517bbb567bd859afeaadcaf491671f3b09b97",
+    "legacy_box_diagnostic_strings": 0,
+    "actual_age_identifier_uses": 1,
+    "selected_remaining_diagnostic_calls": 1,
+    "source_export_project_compile_exit_code": 1
+  },
+  "proof_gates": {
+    "metadata_and_native_argument_provenance": {
+      "status": "PASS_SCOPED_NATIVE_BOX_ARGUMENT_TYPE_PROVENANCE",
+      "report_sha256": "27bfddfd4448a7fbe8236696372b44ef6d1186f3beecb00da488b649b1933411",
+      "cases": null,
+      "checks": null
+    },
+    "lowering_and_ir": {
+      "status": "PASS_TYPED_SCALAR_BOX_DISCOVERY_AND_CALLER_IR",
+      "report_sha256": "cacb4fa1c543d15a1f754792ab4de1e5e7929ede8cf6f5283eb0264b294d87e7",
+      "cases": null,
+      "checks": 28
+    },
+    "native_runtime_at_explicit_boundaries": {
+      "status": "PASS_ORIGINAL_NON_NULLABLE_SCALAR_BOX_PAYLOADS_AT_GC_COPY_BOUNDARIES",
+      "report_sha256": "0dd3f11d855a4b5d6a8fb626396b8cbe59db1825321efbca6b5eb2de65565e8c",
+      "cases": 2560,
+      "checks": 17920
+    },
+    "actual_recovered_expression": {
+      "status": "PASS_RECOVERED_INT32_BOX_EXPRESSION_AT_TYPED_VALUE_BOUNDARY",
+      "report_sha256": "6304c6546c671b48749917276e46a1d7f49bdd3b85b6ac4909961ed3c7810a98",
+      "cases": 80,
+      "checks": 240
+    }
+  },
+  "source_text_edited": false,
+  "whole_game_source_ready": false,
+  "scope": "Only the selected actual SetAge source method is compared: its exact complete-export manifest/source hashes are checked, the unresolved boxing diagnostic disappears and the real age argument use returns. Actual recovered Int32 expression tests, metadata/typed-argument provenance, guarded lowering and the separately bounded original native boxing oracle must pass. These scopes are complementary rather than paired full-caller inputs. Other game source effects, remaining method diagnostics, complete native allocation/GC/class initialization and Switch feature availability are not certified."
+}

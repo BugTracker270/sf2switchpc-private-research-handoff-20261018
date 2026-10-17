@@ -1,0 +1,22 @@
+{
+  "status": "PASS_SCOPED_LITERAL_TYPE_HANDLE_CIL_AND_SOURCE_CORRELATION",
+  "recovery_run": "nso-type-handle-v26",
+  "assemblies": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "before": 306,
+      "after": 0
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "before": 192,
+      "after": 0
+    }
+  ],
+  "corrected_clr_contract_checks": 2,
+  "selected_source_sha256": "4d903bce088131add26c666729c4aadb3abb9252d226451be1da8995e95cb72f",
+  "source_edits": false,
+  "complete_getter_validated": false,
+  "whole_game_source_ready": false,
+  "scope": "Count only the exact invalid RuntimeTypeHandle cast applied to typeof expressions in unchanged complete per-type decompiler exports. The isolated literal expression passes its CLR contract; neither original ARM64 execution nor the full unresolved getter is certified. Both complete assemblies still fail compilation; counts are not a readiness percentage."
+}

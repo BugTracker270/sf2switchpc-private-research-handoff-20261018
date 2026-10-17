@@ -1,0 +1,59 @@
+{
+  "status": "SOURCE_REVIEW_NO_ADDITIONAL_BLOCKER_FULL_RECOVERY_GATES_PENDING",
+  "stable_tested_core_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+  "reviewed_sources": [
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/ISIL/Instruction.cs",
+      "sha256": "22592040093b3b950b24c7db62878082d457dc0f9f7e34cf6c479b641091be93"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/MetadataResolver.cs",
+      "sha256": "f43a3c22253d039f61e46fcf11e362d96cda4c49d15b78ea4247bb809f74fb98"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64IndirectReturns.cs",
+      "sha256": "3eef62ee57c21363a961b487d1eb7ca886b3cfcbed4c24ae7f054dc058ff1341"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs",
+      "sha256": "dcd50974ed956dea971c165cc59c7611e4a3b9c8d81cc2a169dcd9b51c9b91ac"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Model/Contexts/MethodAnalysisContext.cs",
+      "sha256": "8f551d9b1d49ef594fdebb7375daadc7a7a88d1690fb7ddf8853ae4799f4068d"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/IlGenerator.cs",
+      "sha256": "00f82a270fc70fa643390ff01d9684fa6de12c64997ebf1dea2e49d896b14dda"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64ClassLayoutAbi.cs",
+      "sha256": "9e4daa163c2677d940ef1696e92b42cdb90d4c896fb5b680db5e43e8d23d8d99"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64OverflowExceptionAbi.cs",
+      "sha256": "cf78e506b535b0aab18160a8e9586e4d9c563060d4dd4e69d13f5cfd008e8998"
+    }
+  ],
+  "observations": [
+    "Exact original helper FDE/body hashes and separately named derived loaded image pin; original input hashes remain wrapper/probe evidence",
+    "Prealias lowering keeps numeric target and original X0 input/result; incoming X1 and other raw captures are not semantic parameters",
+    "Boolean and canonical original mscorlib System.Exception result seeds precede type propagation",
+    "All five metadata/managed alias routes exclude each proved native call",
+    "Separate owner/target carriers survive explicit clone; stale carrier/shape/type rejects at emitter",
+    "No new helper implementation, constant result, CallVoid, managed cctor or constructor translation; original throw/result relationship retained"
+  ],
+  "limitations": [
+    "Full helper effects/cold initialization/factory conversion/allocation/cleanup/native unwind remain unresolved diagnostics",
+    "ABI witnesses do not prove arbitrary class or message pointer validity",
+    "Actual fresh recovered CIL/prefix execution and complete source compilation remain pending",
+    "Generic virtual/EH/general ARM64 ABI remain incomplete"
+  ],
+  "evidence": [
+    "reports/class-layout-runtime-source-v37.json",
+    "reports/exception-factory-abi-proposal-v37.json",
+    "reports/class-layout-overflow-abi-production-ir-v37.json"
+  ],
+  "core_modified_by_review": false,
+  "full_clean_decompile_ready": false
+}

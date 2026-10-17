@@ -1,0 +1,13 @@
+{
+  "status": "PASS_RECOVERED_VECTOR3_VS_ORIGINAL_FP_ABI",
+  "recovery_run": "nso-runtime-helper-abi-v37",
+  "cases": 64,
+  "checks": 192,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": null,
+  "body_il_sha256": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+  "assembly_sha256": "66fd3951df45974018abd9aa9c451ba8b61bffba4999a98e1890543d3c3a9965",
+  "fixture_sha256": "a90434a7d325d6761703a46412a5e30e7585b90179a80568c3c74ca673330c6f",
+  "scope": "Recovered addition CIL in a DynamicMethod with the same-size three-float struct substituted only for the Unity value type and exact x/y/z field/type tokens. Arithmetic, control-flow bytes and scalar locals remain. Avoids Unity class initialization; no game DLL edits, runtime method mocks or whole-game/other-ABI certification."
+}

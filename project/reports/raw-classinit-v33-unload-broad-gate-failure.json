@@ -1,0 +1,15 @@
+{
+  "status": "FAIL_BROAD_UNLOAD_GUARD_REMOVAL_ASSERTION_WITH_RECORDED_CFG_LIMIT",
+  "log": "logs/raw-classinit-native-correlation-v33.log",
+  "core_sha256": "08f55a8f59aa06ebc5bb899806b297b750b275b09d58255ebd966cbfbc8eba1e",
+  "reader_gate_passed": true,
+  "failed_assertion": "All UnloadDependencies raw class flag memory operands disappear after matching both sequential native guard windows.",
+  "actual_remaining_operands": [
+    {"instruction_index": 63, "offset": "0x122"},
+    {"instruction_index": 122, "offset": "0xD4"}
+  ],
+  "native_explanation": "The normal-path flag at4A8474 uses TBNZ4A8478 to jump directly to4A84E0, the finished check inside the separate cold sequential guard starting4A84D8. Original decoded normal CFG does not enter that guard at its sequential start. Exact native byte-window recognition of2/2 helper sites does not certify removal of every reachable flag load.",
+  "correct_scoped_result": "ReadBoolean original scheduled _bytes and Position reads survive; its two raw class flags disappear and the exact class request lowers to RunClassConstructor. UnloadDependencies still preserves2 class requests as managed calls, but its normal alternate-entry cold flag path remains explicit and unresolved.",
+  "core_or_recovered_output_edited_to_address_failure": false,
+  "scope": "The failed broad assertion and log remain recorded. The separate bounded scheduling report asserts ReadBoolean only and explicitly reports remaining UnloadDependencies flags. No broader CFG fix, emitted source success or runtime behavior is claimed."
+}

@@ -1,0 +1,207 @@
+{
+  "magic": "PFS0",
+  "file_count": 11,
+  "header_size": 704,
+  "entries": [
+    {
+      "name": "0100ab000abfe8000000000000000005.cert",
+      "offset": 32768,
+      "relative_offset": 32064,
+      "size": 1792,
+      "sha256": "06c7dab4888ba1883dbc45ebdf5ca6ac5bc24e5c789000c4350810b7c19e1aa4"
+    },
+    {
+      "name": "0100ab000abfe8000000000000000005.tik",
+      "offset": 34560,
+      "relative_offset": 33856,
+      "size": 704,
+      "sha256": "8db0db86c10fe6dc70240a85b48d74cb235f636f6e728c4f38200efc6baeccc0"
+    },
+    {
+      "name": "9e558c3678550db627afa0fe00857d1d.nca",
+      "offset": 35264,
+      "relative_offset": 34560,
+      "size": 132531712,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "9e558c3678550db627afa0fe00857d1df185f009120924fab3f947fd1010e71c",
+      "content_id_matches_sha256_prefix": true
+    },
+    {
+      "name": "a34266502d2e83c263c531479e295cc8.nca",
+      "offset": 132566976,
+      "relative_offset": 132566272,
+      "size": 191488,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "a34266502d2e83c263c531479e295cc89653e5e287eb4350e3142a26ed074598",
+      "content_id_matches_sha256_prefix": true
+    },
+    {
+      "name": "fcdea96c88bc705ff053fc856379696f.nca",
+      "offset": 132758464,
+      "relative_offset": 132757760,
+      "size": 132612096,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "fcdea96c88bc705ff053fc856379696f9c9fd86f1677ba49b2946342244b49e8",
+      "content_id_matches_sha256_prefix": true
+    },
+    {
+      "name": "ba3c9ac7eb1bfa91d5eac431c152eb85.nca",
+      "offset": 265370560,
+      "relative_offset": 265369856,
+      "size": 1032192,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "ba3c9ac7eb1bfa91d5eac431c152eb85cec017ba51ddd53b4dd63bc6320479f7",
+      "content_id_matches_sha256_prefix": true
+    },
+    {
+      "name": "7b00e159826a73ec6f3007875ca49678.nca",
+      "offset": 266402752,
+      "relative_offset": 266402048,
+      "size": 229376,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "7b00e159826a73ec6f3007875ca49678485ad11528c935fea90835df86e6084a",
+      "content_id_matches_sha256_prefix": true
+    },
+    {
+      "name": "33d1346cac8b3c2a2b14076ec877083f.nca",
+      "offset": 266632128,
+      "relative_offset": 266631424,
+      "size": 49152,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "33d1346cac8b3c2a2b14076ec877083ffc2d931aca463d707237b7f36755b250",
+      "content_id_matches_sha256_prefix": true
+    },
+    {
+      "name": "0ce5b75790645ca6389cb583a3d9a0fd.cnmt.nca",
+      "offset": 266681280,
+      "relative_offset": 266680576,
+      "size": 4608,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "0ce5b75790645ca6389cb583a3d9a0fd181c9ee3ea8dd42272cb8d5870dcf71f",
+      "content_id_matches_sha256_prefix": true
+    },
+    {
+      "name": "0ce5b75790645ca6389cb583a3d9a0fd.cnmt.xml",
+      "offset": 266685888,
+      "relative_offset": 266685184,
+      "size": 2393,
+      "sha256": "53d78211c5531c89687bd6c85719f2de0f9cf66c162e50a2a86e4c9e9a4de166"
+    },
+    {
+      "name": "fb9494b9de70bffd0d1797987f0ec51c.nca",
+      "offset": 266688281,
+      "relative_offset": 266687577,
+      "size": 992256,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "fb9494b9de70bffd0d1797987f0ec51cfe06a24c72e01d2da522dde04a798c52",
+      "content_id_matches_sha256_prefix": true
+    }
+  ],
+  "source": "F:\\SF2SwitchPC\\input\\update\\Shadow Fight 2 [0100AB000ABFE800][v131072][Up v1.1.0].nsp",
+  "kind": "update",
+  "source_sha256": "21831c39c058b815d838a7543678685ef89e1e95778753e71091ae3b8415b8f8",
+  "supplied_cnmt_xml": {
+    "source": "0ce5b75790645ca6389cb583a3d9a0fd.cnmt.xml",
+    "status": "untrusted package sidecar; not decrypted/signed CNMT",
+    "fields": {
+      "Type": "Patch",
+      "Id": "0x0100ab000abfe800",
+      "Version": "131072",
+      "RequiredDownloadSystemVersion": "0",
+      "Digest": "16af341128658086e90e18afeab24fbef9b6fffd5b87cf07668546100d99ffd7",
+      "KeyGenerationMin": "5",
+      "RequiredSystemVersion": "3694075576320",
+      "OriginalId": "0x0100ab000abfe000"
+    },
+    "contents": [
+      {
+        "Type": "Program",
+        "Id": "9e558c3678550db627afa0fe00857d1d",
+        "Size": "132531712",
+        "Hash": "9e558c3678550db627afa0fe00857d1df185f009120924fab3f947fd1010e71c",
+        "KeyGeneration": "5"
+      },
+      {
+        "Type": "Control",
+        "Id": "fb9494b9de70bffd0d1797987f0ec51c",
+        "Size": "992256",
+        "Hash": "fb9494b9de70bffd0d1797987f0ec51cfe06a24c72e01d2da522dde04a798c52",
+        "KeyGeneration": "5"
+      },
+      {
+        "Type": "LegalInformation",
+        "Id": "a34266502d2e83c263c531479e295cc8",
+        "Size": "191488",
+        "Hash": "a34266502d2e83c263c531479e295cc89653e5e287eb4350e3142a26ed074598",
+        "KeyGeneration": "5"
+      },
+      {
+        "Type": "DeltaFragment",
+        "Id": "fcdea96c88bc705ff053fc856379696f",
+        "Size": "132612096",
+        "Hash": "fcdea96c88bc705ff053fc856379696f9c9fd86f1677ba49b2946342244b49e8",
+        "KeyGeneration": "5"
+      },
+      {
+        "Type": "DeltaFragment",
+        "Id": "ba3c9ac7eb1bfa91d5eac431c152eb85",
+        "Size": "1032192",
+        "Hash": "ba3c9ac7eb1bfa91d5eac431c152eb85cec017ba51ddd53b4dd63bc6320479f7",
+        "KeyGeneration": "5"
+      },
+      {
+        "Type": "DeltaFragment",
+        "Id": "7b00e159826a73ec6f3007875ca49678",
+        "Size": "229376",
+        "Hash": "7b00e159826a73ec6f3007875ca49678485ad11528c935fea90835df86e6084a",
+        "KeyGeneration": "5"
+      },
+      {
+        "Type": "DeltaFragment",
+        "Id": "33d1346cac8b3c2a2b14076ec877083f",
+        "Size": "49152",
+        "Hash": "33d1346cac8b3c2a2b14076ec877083ffc2d931aca463d707237b7f36755b250",
+        "KeyGeneration": "5"
+      },
+      {
+        "Type": "Meta",
+        "Id": "0ce5b75790645ca6389cb583a3d9a0fd",
+        "Size": "4608",
+        "Hash": "0ce5b75790645ca6389cb583a3d9a0fd181c9ee3ea8dd42272cb8d5870dcf71f",
+        "KeyGeneration": "5"
+      }
+    ]
+  }
+}

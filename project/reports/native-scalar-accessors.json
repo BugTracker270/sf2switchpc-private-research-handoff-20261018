@@ -1,0 +1,43 @@
+{
+  "status": "PASS_NATIVE_SCALAR_ACCESSORS",
+  "cases": 768,
+  "checks": 1760,
+  "executed_functions": {
+    "get_Production": 208,
+    "index_exception_factory": 1600,
+    "corlib_getter": 320,
+    "class_lookup_thunk": 320,
+    "object_initialization_thunk": 320,
+    "set_Production": 208,
+    "get_Major": 224,
+    "set_Major": 224,
+    "get_Minor": 240,
+    "set_Minor": 240,
+    "get_DataVersion": 256,
+    "set_DataVersion": 256
+  },
+  "runtime_boundaries": {
+    "supplied_class_lookup": 320,
+    "supplied_opaque_exception_allocation": 320,
+    "supplied_object_initialization": 320,
+    "exception_raiser_stop": 320
+  },
+  "fixtures": "analysis\\il2cpp\\scalar-native-fixtures-v1.jsonl",
+  "fixtures_sha256": "7cf2a4e8e3b47f01ab3de94c8d3a6c5b1aa87b900071ae26689d6fa50d814209",
+  "original_text_sha256": {
+    "index_exception_factory": "4e61e3e023553e3cab19d9f65c79da55c56a0db266d361a7a13788be17411d58",
+    "corlib_getter": "963ae7b0935b32a1dee79fb9b805e3e6b0c088e405a85003c97f7dcaa2641500",
+    "class_lookup_thunk": "b509280e2eafa48d7a429df58cd4acc6659624c308833a987b34db5aa611a406",
+    "object_initialization_thunk": "acac22dd522bbc3fabdece4cc419be8580df7b7a4e73b1be82f78c292348d587",
+    "get_Production": "a6c34d87927e69a4f4634ffb3634f9f4e20884492d3e7f583a37f2b9db3949e6",
+    "set_Production": "166bd3cb5bdf556cca1fe09e17039996a64f16e9776dfb96ec946cbcbabcefa4",
+    "get_Major": "1e1ad819026fff46c274fcde5032b61f5f7aed595e3d4afe4e207d5b34bd943b",
+    "set_Major": "5fafe4bd0a52438b3c7c15ccd84ab49ec7e05a42d51df4fce36035bbbc1b9524",
+    "get_Minor": "e21f61e108b682c69a0d4a02973f1ee7e603c902e354dc3ee55b7be2cef99200",
+    "set_Minor": "d866d407d5b3c1ed9c98db0720f52d524b93e1cfeeda5540bb41c2f754ae30b3",
+    "get_DataVersion": "0018f8446e3659853eea85046ccb5ec0a14aa158d16147afb8ac8eccf3ec2bb3",
+    "set_DataVersion": "c631e265faceb620477fbc8d76e801efd8248152e96d37cca90992b39d6b1ed9"
+  },
+  "text_modified": false,
+  "scope": "Eight original VersionContainer int-array accessors with synthetic lengths 0..5 and int32 boundary/random values. Bounds errors execute the original IndexOutOfRangeException factory, corlib getter and two thunks; class lookup, opaque exception allocation and object initialization are explicit supplied runtime boundaries. The original raiser is a stop boundary. The factory retains allocation identity even when the initialization boundary clobbers X0. No field/default-constructor internals, string parsing, static initialization, unwinding or whole-game parity is claimed."
+}

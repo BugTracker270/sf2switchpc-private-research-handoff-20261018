@@ -1,0 +1,53 @@
+{
+  "status": "PASS_ORIGINAL_ORDINARY_EXACT_CLASS_SUBPATH_NO_REPLACEMENTS",
+  "cases": 40,
+  "checks": 320,
+  "failures": 0,
+  "ordinary_wrapper_cases": 28,
+  "null_object_cases": 6,
+  "direct_assignability_cases": 6,
+  "rejected_controls": [
+    {
+      "kind": "distinct_classes",
+      "stopped_before": "0xb04f60",
+      "runtime_result_supplied": false,
+      "completed": false
+    },
+    {
+      "kind": "import_flag_set",
+      "stopped_before": "0xb05b80",
+      "runtime_result_supplied": false,
+      "completed": false
+    }
+  ],
+  "runtime_replacement_calls": 0,
+  "native_original_assignability_executed": true,
+  "metadata_init_executed": false,
+  "com_winrt_executed": false,
+  "original_body_sha256": {
+    "object_isinst": "1b265abeee0dfb0991ffe2b237b6cf3f817a9a5071eb8787a2dc28b87d9cbec6",
+    "class_assignable": "3cb95ce5d103a953c4db8d1a01c03eb5e0ca56c7162b58853ce0cc133d655d2e"
+  },
+  "original_image_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "exact_frame_ranges": {
+    "object_isinst": [
+      "0xb5b390",
+      "0xb5b484"
+    ],
+    "class_assignable": [
+      "0xb05920",
+      "0xb05b7c"
+    ]
+  },
+  "original_code_unmodified": true,
+  "original_input_unmodified": true,
+  "private_cases": "analysis\\reconstruction\\object-isinst-exact-class\\native-cases.json",
+  "private_cases_sha256": "d362a245178f2bbbff6d97eb97f84a53e97a887e2e8f9aac18c8577ea9537bab",
+  "source_sha256": "c7c332dec0a975a847736570301f95cdcd3d13c5f3d3fc1a4f0ae5b8903cb9a0",
+  "core_modified": false,
+  "caller_class_identity_proved": false,
+  "semantic_lowering_implemented": false,
+  "general_assignability_recovered": false,
+  "full_clean_decompile_ready": false,
+  "scope": "The original ordinary Object::IsInst wrapper calls original Class::IsAssignableFrom with identical synthetic class pointers. The wrapper reads the object class and its ordinary/import flag; exact-class assignability itself reads no class storage and skips Class::Init. Exact nonstack reads and absence of nonstack writes are observed. Null objects and direct equal-pointer assignability are separate cases. Mismatched classes and import-flag fixtures stop before unreviewed runtime boundaries. No function or return replacement, general assignability, COM behavior, caller proof, recovered CIL execution or production semantic lowering. The shared guest loader presets seven unrelated initialization guard bytes; read tracing proves none is read by these subpaths."
+}

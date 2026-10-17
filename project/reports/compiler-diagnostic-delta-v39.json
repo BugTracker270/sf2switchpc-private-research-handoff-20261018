@@ -1,0 +1,493 @@
+{
+  "status": "PASS_CANONICAL_COMPLETE_SOURCE_COMPILER_COMPARISON",
+  "before_run": "nso-virtual-companion-copy-v38",
+  "after_run": "nso-assembly-leaf-getter-v39",
+  "before": "nso-virtual-companion-copy-v38",
+  "after": "nso-assembly-leaf-getter-v39",
+  "source_modified": false,
+  "core_modified": false,
+  "assemblies": {
+    "Assembly-CSharp-firstpass": {
+      "before_unique": 20728,
+      "after_unique": 20534,
+      "old_unique": 20728,
+      "new_unique": 20534,
+      "delta": -194,
+      "before_error_codes": {
+        "CS0117": 211,
+        "CS1061": 1555,
+        "CS0103": 104,
+        "CS0030": 8306,
+        "CS7036": 98,
+        "CS0122": 2713,
+        "CS0019": 5074,
+        "CS0023": 349,
+        "CS0266": 458,
+        "CS0234": 1092,
+        "CS1729": 25,
+        "CS0037": 341,
+        "CS1510": 9,
+        "CS0149": 22,
+        "CS0029": 6,
+        "CS0177": 159,
+        "CS0165": 36,
+        "CS8174": 37,
+        "CS0269": 62,
+        "CS0250": 11,
+        "CS0191": 16,
+        "CS8172": 1,
+        "CS0221": 3,
+        "CS0079": 32,
+        "CS1540": 1,
+        "CS8373": 2,
+        "CS0246": 3,
+        "CS0152": 2
+      },
+      "after_error_codes": {
+        "CS0117": 211,
+        "CS0122": 2528,
+        "CS1061": 1540,
+        "CS0030": 8308,
+        "CS0234": 1092,
+        "CS7036": 98,
+        "CS0019": 5078,
+        "CS0023": 349,
+        "CS0103": 104,
+        "CS0037": 341,
+        "CS0266": 458,
+        "CS1729": 25,
+        "CS0149": 22,
+        "CS1510": 9,
+        "CS0029": 6,
+        "CS0177": 159,
+        "CS8174": 37,
+        "CS0269": 62,
+        "CS0165": 36,
+        "CS0250": 11,
+        "CS0191": 16,
+        "CS8172": 1,
+        "CS0079": 32,
+        "CS0221": 3,
+        "CS8373": 2,
+        "CS1540": 1,
+        "CS0152": 2,
+        "CS0246": 3
+      },
+      "error_code_delta": {
+        "CS0019": 4,
+        "CS0030": 2,
+        "CS0122": -185,
+        "CS1061": -15
+      },
+      "semantic_added_occurrences": 6,
+      "semantic_removed_occurrences": 200,
+      "top_added_messages": [
+        {
+          "code": "CS0019",
+          "message": "Operator '+' cannot be applied to operands of type 'byte[]' and 'int'",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'BestHTTP.HTTPProxy' to 'BestHTTP.HTTPConnectionStates'",
+          "count": 1
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 1
+        }
+      ],
+      "most_added_messages": [
+        {
+          "code": "CS0019",
+          "message": "Operator '+' cannot be applied to operands of type 'byte[]' and 'int'",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'BestHTTP.HTTPProxy' to 'BestHTTP.HTTPConnectionStates'",
+          "count": 1
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 1
+        }
+      ],
+      "most_added_files": [
+        {
+          "file": "Unity/IO/Compression/CopyEncoder.cs",
+          "count": 4
+        },
+        {
+          "file": "BestHTTP/HTTPManager.cs",
+          "count": 1
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/JsonSerializerInternalReader.cs",
+          "count": 1
+        }
+      ],
+      "top_removed_messages": [
+        {
+          "code": "CS0122",
+          "message": "'JsonSerializerInternalBase.Serializer__BackingField' is inaccessible due to its protection level",
+          "count": 99
+        },
+        {
+          "code": "CS0122",
+          "message": "'OutputBuffer.pos' is inaccessible due to its protection level",
+          "count": 27
+        },
+        {
+          "code": "CS0122",
+          "message": "'DeflateInput.count' is inaccessible due to its protection level",
+          "count": 14
+        },
+        {
+          "code": "CS0122",
+          "message": "'DeflateInput.startIndex' is inaccessible due to its protection level",
+          "count": 9
+        },
+        {
+          "code": "CS1061",
+          "message": "'JsonContract' does not contain a definition for 'InternalConverter__BackingField' and no accessible extension method 'InternalConverter__BackingField' accepting a first argument of type 'JsonContract' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 8
+        },
+        {
+          "code": "CS0122",
+          "message": "'JsonArrayContract.CollectionItemType__BackingField' is inaccessible due to its protection level",
+          "count": 8
+        },
+        {
+          "code": "CS0122",
+          "message": "'HTTPCacheFileInfo.MappedNameIDX__BackingField' is inaccessible due to its protection level",
+          "count": 7
+        },
+        {
+          "code": "CS1061",
+          "message": "'HTTPCacheFileInfo' does not contain a definition for 'Uri__BackingField' and no accessible extension method 'Uri__BackingField' accepting a first argument of type 'HTTPCacheFileInfo' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 6
+        },
+        {
+          "code": "CS0122",
+          "message": "'HTTPCacheFileInfo.BodyLength__BackingField' is inaccessible due to its protection level",
+          "count": 6
+        },
+        {
+          "code": "CS0122",
+          "message": "'JsonDictionaryContract.DictionaryValueType__BackingField' is inaccessible due to its protection level",
+          "count": 5
+        },
+        {
+          "code": "CS0122",
+          "message": "'Match.symbol' is inaccessible due to its protection level",
+          "count": 2
+        },
+        {
+          "code": "CS0122",
+          "message": "'HTTPConnection.Proxy__BackingField' is inaccessible due to its protection level",
+          "count": 2
+        }
+      ],
+      "top_changed_files": [
+        {
+          "file": "Newtonsoft/Json/Serialization/JsonSerializerInternalWriter.cs",
+          "before": 280,
+          "after": 222,
+          "delta": -58,
+          "before_source": {
+            "bytes": 99954,
+            "sha256": "acb5bf645463c22cfcbd0ff24249330d840f9fdd482cc14cd14b19c1a05975fb"
+          },
+          "after_source": {
+            "bytes": 98963,
+            "sha256": "ff26501cdbac7ececd945ec403b7f217f1212e71b2ac101ee7ed8f156d619fea"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/JsonSerializerInternalReader.cs",
+          "before": 385,
+          "after": 328,
+          "delta": -57,
+          "before_source": {
+            "bytes": 164187,
+            "sha256": "c68411be49f2627a05dd95f5192878e27c6221bd7633c5a513f9c56cd440dc44"
+          },
+          "after_source": {
+            "bytes": 162865,
+            "sha256": "bccb6599541e1beee487ea0b858eb5527a842d6863e71c700b6a0eaf703ed466"
+          }
+        },
+        {
+          "file": "Unity/IO/Compression/FastEncoder.cs",
+          "before": 97,
+          "after": 67,
+          "delta": -30,
+          "before_source": {
+            "bytes": 16566,
+            "sha256": "7a7faab3e2bc643548764502d909679d3c28a0eb5b764ab524cbd0e6765df190"
+          },
+          "after_source": {
+            "bytes": 16734,
+            "sha256": "bc1f9ec340a01945d3c8b31304f4b292d576207bff2b91daaa32c6d85c2232cc"
+          }
+        },
+        {
+          "file": "BestHTTP/Caching/HTTPCacheService.cs",
+          "before": 169,
+          "after": 150,
+          "delta": -19,
+          "before_source": {
+            "bytes": 95038,
+            "sha256": "bc0b1041d27a90388495b124b066e10ab1e7199e8c3aa01246d44d7166eb3601"
+          },
+          "after_source": {
+            "bytes": 94816,
+            "sha256": "65d4301c1b80f191efc51026e70e766431571a2f61827a6931ad9e1de64ccc53"
+          }
+        },
+        {
+          "file": "Unity/IO/Compression/CopyEncoder.cs",
+          "before": 45,
+          "after": 28,
+          "delta": -17,
+          "before_source": {
+            "bytes": 4507,
+            "sha256": "7e123bb27f14f26164ed9a2c9e68c72bed01b82c15dfb33cd8f4569732296bd2"
+          },
+          "after_source": {
+            "bytes": 4642,
+            "sha256": "cccf78b7372fc205ba582c22ea1857a3d641a2dbcb2275c3e183498b2db0d846"
+          }
+        },
+        {
+          "file": "BestHTTP/HTTPManager.cs",
+          "before": 144,
+          "after": 139,
+          "delta": -5,
+          "before_source": {
+            "bytes": 69837,
+            "sha256": "8467b584739c50cc866a82d6d782eaacd2c4bbe484a8367cbe03fd4d2d4d399c"
+          },
+          "after_source": {
+            "bytes": 69753,
+            "sha256": "76f26d0c26b1a91bd283ec7b439d8df51e3d54b4f92583fdc74e3b84239b123b"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Schema/JsonSchemaGenerator.cs",
+          "before": 68,
+          "after": 65,
+          "delta": -3,
+          "before_source": {
+            "bytes": 45177,
+            "sha256": "3ea4b3b4e5cbd866eb877ae641e20a52a68d917f860463814723a85f4dc14771"
+          },
+          "after_source": {
+            "bytes": 45249,
+            "sha256": "62bd8c28d64f99cecc42d6584b8d665c389ee56a293d7f564f15918e59277539"
+          }
+        },
+        {
+          "file": "Unity/IO/Compression/DeflaterManaged.cs",
+          "before": 20,
+          "after": 17,
+          "delta": -3,
+          "before_source": {
+            "bytes": 5330,
+            "sha256": "8f74ac65e9fc163d271205e90bf038bc9c0f81f368323b3ece846b192943b716"
+          },
+          "after_source": {
+            "bytes": 5375,
+            "sha256": "f91caf94af50ac6452dc05da1f4a065f143dcc73f9d7c619e14c70c7e03cacb0"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/JsonSerializerProxy.cs",
+          "before": 2,
+          "after": 0,
+          "delta": -2,
+          "before_source": {
+            "bytes": 26148,
+            "sha256": "2d7edcc81cf232589ea8bbc96c804717ca575b9776b6c56e6919b0c40d8cd360"
+          },
+          "after_source": null
+        }
+      ],
+      "source_integrity": {
+        "nso-virtual-companion-copy-v38": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-virtual-companion-copy-v38.json",
+            "sha256": "bcbfb8c77a30988f85a2d430731607e09caa627eafdd8c50ac68c51fa55b1255"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-virtual-companion-copy-v38.json",
+            "sha256": "bbfd840553ccb148ac806879ba732d34a26db03d368287e6d2d190cf904c7f73"
+          },
+          "manifest_sha256": "bbfd840553ccb148ac806879ba732d34a26db03d368287e6d2d190cf904c7f73",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-virtual-companion-copy-v38-Assembly-CSharp-firstpass.log",
+            "sha256": "6136b6c1e0213904a903d0914f2fbabca5fdbdeaec5e7fde46edb554ce13848e"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1342,
+          "diagnostic_source_files_hash_verified": 631,
+          "matching_reference_source_manifest_unchanged": true
+        },
+        "nso-assembly-leaf-getter-v39": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-assembly-leaf-getter-v39.json",
+            "sha256": "8391d00183aa426b50ae567c5b7939d11e174860863caa0da127409c25e8e2f1"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-assembly-leaf-getter-v39.json",
+            "sha256": "2b5a3f2e0ca35805c94e904ae3acd4d5172ddef42f729a6592696eaded8555bc"
+          },
+          "manifest_sha256": "2b5a3f2e0ca35805c94e904ae3acd4d5172ddef42f729a6592696eaded8555bc",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-assembly-leaf-getter-v39-Assembly-CSharp-firstpass.log",
+            "sha256": "61cfca9db8636584e304b9eebf939cf07f865b2d888647f40664b3c19f3bec58"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1342,
+          "diagnostic_source_files_hash_verified": 630,
+          "matching_reference_source_manifest_unchanged": true
+        }
+      }
+    },
+    "Assembly-CSharp": {
+      "before_unique": 32710,
+      "after_unique": 32710,
+      "old_unique": 32710,
+      "new_unique": 32710,
+      "delta": 0,
+      "before_error_codes": {
+        "CS0122": 4225,
+        "CS0019": 4981,
+        "CS0030": 15759,
+        "CS1061": 3139,
+        "CS0117": 576,
+        "CS0234": 1057,
+        "CS0103": 738,
+        "CS0023": 211,
+        "CS8174": 2,
+        "CS0266": 1021,
+        "CS0165": 24,
+        "CS0037": 514,
+        "CS0177": 24,
+        "CS8172": 1,
+        "CS1510": 14,
+        "CS0029": 30,
+        "CS0191": 107,
+        "CS1540": 20,
+        "CS7036": 103,
+        "CS0250": 1,
+        "CS0149": 71,
+        "CS0020": 1,
+        "CS1729": 10,
+        "CS0272": 3,
+        "CS0246": 1,
+        "CS1503": 38,
+        "CS0079": 30,
+        "CS0120": 2,
+        "CS1501": 3,
+        "CS0269": 4
+      },
+      "after_error_codes": {
+        "CS0122": 4225,
+        "CS1061": 3139,
+        "CS0117": 576,
+        "CS0030": 15759,
+        "CS0103": 738,
+        "CS0019": 4981,
+        "CS0023": 211,
+        "CS0234": 1057,
+        "CS0266": 1021,
+        "CS0165": 24,
+        "CS8174": 2,
+        "CS0037": 514,
+        "CS0029": 30,
+        "CS8172": 1,
+        "CS1510": 14,
+        "CS0177": 24,
+        "CS0191": 107,
+        "CS1540": 20,
+        "CS7036": 103,
+        "CS0149": 71,
+        "CS0272": 3,
+        "CS1729": 10,
+        "CS1503": 38,
+        "CS0246": 1,
+        "CS0079": 30,
+        "CS0250": 1,
+        "CS0020": 1,
+        "CS0120": 2,
+        "CS0269": 4,
+        "CS1501": 3
+      },
+      "error_code_delta": {},
+      "semantic_added_occurrences": 0,
+      "semantic_removed_occurrences": 0,
+      "top_added_messages": [],
+      "most_added_messages": [],
+      "most_added_files": [],
+      "top_removed_messages": [],
+      "top_changed_files": [],
+      "source_integrity": {
+        "nso-virtual-companion-copy-v38": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-virtual-companion-copy-v38.json",
+            "sha256": "bcbfb8c77a30988f85a2d430731607e09caa627eafdd8c50ac68c51fa55b1255"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-virtual-companion-copy-v38.json",
+            "sha256": "bbfd840553ccb148ac806879ba732d34a26db03d368287e6d2d190cf904c7f73"
+          },
+          "manifest_sha256": "bbfd840553ccb148ac806879ba732d34a26db03d368287e6d2d190cf904c7f73",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-virtual-companion-copy-v38-Assembly-CSharp.log",
+            "sha256": "8144cc7ec3d501795a23dadcca083339d4513806a64058c6aeb63ac278ebf635"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1637,
+          "diagnostic_source_files_hash_verified": 1242,
+          "matching_reference_source_manifest_unchanged": true
+        },
+        "nso-assembly-leaf-getter-v39": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-assembly-leaf-getter-v39.json",
+            "sha256": "8391d00183aa426b50ae567c5b7939d11e174860863caa0da127409c25e8e2f1"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-assembly-leaf-getter-v39.json",
+            "sha256": "2b5a3f2e0ca35805c94e904ae3acd4d5172ddef42f729a6592696eaded8555bc"
+          },
+          "manifest_sha256": "2b5a3f2e0ca35805c94e904ae3acd4d5172ddef42f729a6592696eaded8555bc",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-assembly-leaf-getter-v39-Assembly-CSharp.log",
+            "sha256": "3578ccfd7d3380acca427669152083bc45a6818aedab9fb39b7131e17305c608"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1637,
+          "diagnostic_source_files_hash_verified": 1242,
+          "matching_reference_source_manifest_unchanged": true
+        }
+      }
+    }
+  },
+  "compiler_diagnostic_delta": {
+    "Assembly-CSharp-firstpass": -194,
+    "Assembly-CSharp": 0
+  },
+  "whole_game_source_ready": false,
+  "full_clean_decompile_ready": false,
+  "portable_game_ready": false,
+  "methodology": "Each complete matching-reference log is streamed. Canonical lines remove build-worker prefixes, surrounding whitespace and duplicate build-summary occurrences, and must exactly match the authoritative summary total and error-code counts. Multisets of relative source path, code and message additionally reduce line-shift inflation; local-name or decompiler presentation changes can still alter messages. Every diagnostic-bearing file is checked against the byte-identical export/matching-reference source manifest. Reports contain no source excerpts.",
+  "limits": "Diagnostic lines include compiler cascades and are not independent bugs, recovered-method counts or completion percentages. This read-only comparison neither executes recovered game methods nor establishes that added or removed diagnostics correspond to correct semantics. Complete source compilation, original-runtime/gameplay parity and portability remain separate requirements."
+}

@@ -1,0 +1,57 @@
+
+7-Zip 26.02 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-06-25
+
+Scanning the drive for archives:
+1 file, 1490310800 bytes (1422 MiB)
+
+Listing archive: F:\Reverse engineering shadow fight 2\SHDWFGHT2-NSwTcH-[BASE]-NSP-ES-Ziperto.rar
+
+--
+Path = F:\Reverse engineering shadow fight 2\SHDWFGHT2-NSwTcH-[BASE]-NSP-ES-Ziperto.rar
+Type = Rar
+Physical Size = 1490310800
+Characteristics = Solid
+Solid = +
+Blocks = 1
+Multivolume = -
+Volumes = 1
+
+----------
+Path = Shadow Fight 2 [0100AB000ABFE000][v0][Base].nsp
+Folder = -
+Size = 1486581050
+Packed Size = 1490310085
+Modified = 2026-09-07 13:56:55.0540267
+Created = 
+Accessed = 
+Attributes = A
+Encrypted = -
+Solid = -
+Commented = -
+Split Before = -
+Split After = -
+CRC = 65382E77
+Host OS = Win32
+Method = m2:22
+Version = 29
+Volume Index = 
+
+Path = Ziperto - A Digital Park for Gamers.URL
+Folder = -
+Size = 192
+Packed Size = 162
+Modified = 2022-05-07 14:00:44.4321068
+Created = 
+Accessed = 
+Attributes = A
+Encrypted = -
+Solid = +
+Commented = -
+Split Before = -
+Split After = -
+CRC = CA90E803
+Host OS = Win32
+Method = m2:22
+Version = 29
+Volume Index = 
+

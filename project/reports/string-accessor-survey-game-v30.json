@@ -1,0 +1,79 @@
+{
+  "status": "BOUNDED_LITERAL_ACCESSOR_PRE_RESOLUTION_OBSERVATIONS_ONLY",
+  "selected_types": [],
+  "selected_methods": 29618,
+  "processed_methods": 29618,
+  "exhausted_selection": true,
+  "analyzed_methods": 29603,
+  "inspected_returning_calls": 133616,
+  "rewrite_candidates": 0,
+  "candidates": [],
+  "errors": [
+    {
+      "caller": "EZCameraShake.CameraShaker::ShakeOnce",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "EZCameraShake.CameraShaker::StartShake",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "Nekki.Vector2D::getIntersectOfCapsulesPoint2D",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "Nekki.Vector2D::getIntersectPoint2D",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "Nekki.SF2.GUI.Shop.InfoPanelContent::ShowRaidButton",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "Nekki.SF2.GUI.Shop.InfoPanelContent::UpdatePrice",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "Nekki.SF2.GUI.TextPicNestedClasses\u002BGlyphParams::.ctor",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "Nekki.SF2.GUI.UITextGeometryUtils::GenerateFrame4Lines",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "Nekki.SF2.GUI.UITextGeometryUtils::GenerateLine",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "UIFigures.UIArc::OnPopulateMesh",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "UIFigures.UIArcBorder::OnPopulateMesh",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "UIFigures.UICircle::OnPopulateMesh",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "UIFigures.UICircleBorder::OnPopulateMesh",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "UIFigures.Utils.DrawFunctions::DrawArc",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    },
+    {
+      "caller": "UIFigures.Utils.DrawFunctions::DrawCone",
+      "error": "Cpp2IL.Core.DecompilerException: Decompilation failed: HFA stack spill requires explicit aggregate stack recovery"
+    }
+  ],
+  "tool_core_sha256": "d150eb2c28e49af6b59ea71105d82bf4fe37b0c387d37e1be4cd1e74fbc9808a",
+  "source_resolver_sha256": "efb01f42335e6cc7468711c6629338fe0bdcbf298f1ddefe1863365319fe43a2",
+  "game_code_executed": false,
+  "core_source_edited": false,
+  "whole_game_source_ready": false,
+  "scope": "Reproduce pre-MetadataResolver SSA stages for a bounded actual-method selection and apply only the current private literal-slot-address recognition predicate. Record targets and inferred argument positions of actual candidate whole-call rewrites. This is observation only: no candidate is certified as a literal accessor and no counterexample is claimed until native callees/argument roles are independently inspected."
+}

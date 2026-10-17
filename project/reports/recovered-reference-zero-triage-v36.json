@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ACTUAL_ARRAY_ZERO_DIAGNOSTIC_FALLBACK_CORRELATION",
+  "recovery_run": "nso-plain-frame-cfg-v35",
+  "checks": 4,
+  "assembly_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90",
+  "cil_sha256": "75e28e20dbe1fddb576dee591a754a05f7b0e91efbeb57e470dd1f96130ea72f",
+  "method": "BestHTTP.WebSocket.Frames.WebSocketFrameReader::Read",
+  "method_token": "0x0600067E",
+  "witnesses": [
+    {
+      "diagnostic_offset": 1270,
+      "helper_call_offset": 1275,
+      "zero_offset": 1280,
+      "native_int_conversion_offset": 1281,
+      "store_offset": 1282,
+      "local_index": 27,
+      "local_type": "System.Byte[]",
+      "source_is_unmanaged_load_fallback": true,
+      "original_native_zero_proven": false,
+      "original_slot_0x260": true
+    }
+  ],
+  "game_methods_invoked": 0,
+  "cil_or_source_modified": false,
+  "tokens_remapped": 0,
+  "full_clean_decompile_ready": false,
+  "scope": "Read-only inspection of unchanged actual recovered CIL. A byte[] local receives ldc.i4.0/conv.i immediately after the exact Cpp2IL unmanaged-load diagnostic helper. This zero is a recovery placeholder, not proof of an original native null. No game method, fixture substitute or class initializer is executed. Native original slot reads and emitter expected-type handling are separate evidence; replacing these diagnostic fallbacks with ldnull would not recover their missing load semantics."
+}

@@ -1,0 +1,173 @@
+{
+  "results": [
+    {
+      "checks": 13104,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-ai-execution.json",
+      "elapsed_seconds": 3.8711552,
+      "script_sha256": "38c92568470558db0f5d21c0e59588959789fbbb45d9584d7d9e1697dcab9763",
+      "name": "ai_leaves"
+    },
+    {
+      "checks": 53248,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-node-integration.json",
+      "elapsed_seconds": 2.1375639,
+      "script_sha256": "ebddd8adf370f50f00ec0b73260752589e47307ff5ce4327deef9541dee7039c",
+      "name": "node_step"
+    },
+    {
+      "checks": 16,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-save-gate-execution.json",
+      "elapsed_seconds": 0.8300149,
+      "script_sha256": "cf0dbfe0d154d86679c059875c01968e091c3a43f72d50d04ea2d0923b131173",
+      "name": "save_gate"
+    },
+    {
+      "checks": 28917,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-contact-geometry.json",
+      "elapsed_seconds": 1.7995144,
+      "script_sha256": "c99c0ba46753dae02494800d9b89f7bb7702895d9e43be4517d37c2ddf35c153",
+      "name": "contact_geometry"
+    },
+    {
+      "checks": 29302,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-capsule-geometry.json",
+      "elapsed_seconds": 2.0194933,
+      "script_sha256": "a3e69e25414c11fb652ffb7361494800442af397de4d0744e87a2422f0077e57",
+      "name": "capsules"
+    },
+    {
+      "checks": 4653,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-strike-selection.json",
+      "elapsed_seconds": 1.1474619,
+      "script_sha256": "9a80230d8e91f74ade6284f228d3ca3c511bdc5fb9c8144524a009b15042924d",
+      "name": "strike_selection"
+    },
+    {
+      "checks": 4096,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-damage-combination.json",
+      "elapsed_seconds": 2.0356354,
+      "script_sha256": "d90b0054e4db39f8ee0fe0748488006ee34a7eda31681ba551d9f7ff97007617",
+      "name": "damage_combination"
+    },
+    {
+      "checks": 256,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-empty-animation-gate.json",
+      "elapsed_seconds": 0.9632706,
+      "script_sha256": "9e272632ccb3bf23e327a1ccc9ab3413c0dc7d9b7514b14d96e858a4add69a2f",
+      "name": "empty_animation_gate"
+    },
+    {
+      "checks": 54336,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-animation-bezier.json",
+      "elapsed_seconds": 4.1244425,
+      "script_sha256": "75c93c321bb72abcac512f47cf64812dcaf87805b9618bd7df6d105a595fc03b",
+      "name": "bezier"
+    },
+    {
+      "checks": 40448,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-animation-step.json",
+      "elapsed_seconds": 1.9879063,
+      "script_sha256": "5327654232f5ee737c37d59ac16704b1fce71ac9f409426e235d85cdb8122de9",
+      "name": "animation_step"
+    },
+    {
+      "checks": 1019,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-quest-lookup.json",
+      "elapsed_seconds": 18.5268956,
+      "script_sha256": "6d673d9b5ff4bacada06ff4fe1cd66d5613366e600ca333bb5a6397e34909c43",
+      "name": "quest_lookup"
+    },
+    {
+      "checks": 15360,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-currency-codec.json",
+      "elapsed_seconds": 2.2310367,
+      "script_sha256": "141206499ba6fd18f2fcdeec51fa9109e5d297beefceaf9ef0d6d6a04c44d71a",
+      "name": "currency_codec"
+    },
+    {
+      "checks": 20480,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-currency-long.json",
+      "elapsed_seconds": 2.0318878,
+      "script_sha256": "071496c1e60cc14c4936b77d301d8c9ac6222396e03887911f1af5bb9960dde4",
+      "name": "currency_long"
+    },
+    {
+      "checks": 14336,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-wallet-arithmetic.json",
+      "elapsed_seconds": 2.5880885,
+      "script_sha256": "1c631c66a59560529a5272ff564d6f6a2fc2bea9c627682cc9011a5483f7c891",
+      "name": "wallet"
+    },
+    {
+      "checks": 5120,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-save-scheduler.json",
+      "elapsed_seconds": 1.9885161,
+      "script_sha256": "fdd3f138767d4a97bb5d9c100f4a1aeb302830075a43574da70301671f42f6ef",
+      "name": "save_scheduler"
+    },
+    {
+      "checks": 224,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-exception-boundary.json",
+      "elapsed_seconds": 0.9259803,
+      "script_sha256": "5c014d2e4063d9424224366c19a2661b9e975e4a5a23de077fe31c0721a1ba85",
+      "name": "exception_boundary"
+    },
+    {
+      "checks": 3468,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-array-boundary.json",
+      "elapsed_seconds": 1.0964355,
+      "script_sha256": "a02701b9520b3a5c3ac7fce1e529cdf9ce9dbf3f2949d7330df2dda87623ebc8",
+      "name": "array_boundary"
+    },
+    {
+      "checks": 1760,
+      "passed": true,
+      "exit_code": 0,
+      "report": "native-scalar-accessors.json",
+      "elapsed_seconds": 1.0394577,
+      "script_sha256": "3e86d44647ce70cb416935f5fd9b4187b17120cd61d270c99f8ebc537762208f",
+      "name": "scalar_accessors"
+    }
+  ],
+  "checks": 290143.0,
+  "scope": "Original ARM64 function/slice checks with documented synthetic objects, initialization, allocator models and explicit supplied runtime/persistence boundaries where stated. Elapsed values are research harness durations, never gameplay FPS or whole-runtime parity.",
+  "expected_scopes": 18,
+  "passed_scopes": 18,
+  "log_directory": "F:\\SF2SwitchPC\\logs\\native-regression-scalar-stack-v13",
+  "status": "PASS_BOUNDED_NATIVE_REGRESSION",
+  "utc": "2026-10-16T23:34:30.9912084Z"
+}

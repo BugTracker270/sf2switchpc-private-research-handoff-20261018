@@ -1,0 +1,44 @@
+diff --git a/Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs b/Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs
+index d77fff8..918a364 100644
+--- a/Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs
++++ b/Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs
+@@ -40,11 +40,16 @@ public class Arm64CallingConventionResolver : BaseCallingConventionResolver
+ 
+     protected override bool HiddenBufferConsumesArgumentSlot => false;
+ 
++    // IL2CPP metadata <=24 retains a dummy object argument for static methods.
++    // It occupies X0, but is not a managed parameter. Keep FP registers independent.
++    protected override bool HasStaticDummyObjectArgument(MethodAnalysisContext ctx)
++        => ctx.IsStatic && ctx.AppContext.MetadataVersion <= 24;
++
+     public override IOperand[] ResolveForManaged(MethodAnalysisContext ctx)
+     {
+         var args = new List<IOperand>();
+ 
+-        var integer = 0;
++        var integer = HasStaticDummyObjectArgument(ctx) ? 1 : 0;
+         var floating = 0;
+         var stack = 0;
+ 
+diff --git a/Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs b/Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs
+index 73a1df1..ccbe89e 100644
+--- a/Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs
++++ b/Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs
+@@ -28,6 +28,8 @@ public abstract class BaseCallingConventionResolver
+     // false when the return buffer pointer lives outside the argument registers (e.g. arm64 uses x8)
+     protected virtual bool HiddenBufferConsumesArgumentSlot => true;
+ 
++    protected virtual bool HasStaticDummyObjectArgument(MethodAnalysisContext ctx) => false;
++
+     public IOperand[] ResolveForUnmanaged(ApplicationAnalysisContext app, ulong target)
+     {
+         // We don't know the callee's signature, so preserve every argument register.
+@@ -69,6 +71,8 @@ public abstract class BaseCallingConventionResolver
+         var slots = new List<(bool IsFloat, bool Emit)>();
+         if (ReturnsViaHiddenBuffer(resolved) && HiddenBufferConsumesArgumentSlot)
+             slots.Add((false, false));
++        if (HasStaticDummyObjectArgument(resolved))
++            slots.Add((false, false));
+         if (!resolved.IsStatic)
+             slots.Add((false, true));
+         foreach (var parameter in resolved.Parameters)

@@ -1,0 +1,282 @@
+{
+  "status": "PASS_ORIGINAL_ISINST_ABI_ONLY_PRODUCTION_DATAFLOW_AND_DIAGNOSTICS",
+  "checks": 41,
+  "tests": [
+    {
+      "name": "exact stable40 Core",
+      "passed": true
+    },
+    {
+      "name": "original input identities",
+      "passed": true
+    },
+    {
+      "name": "immutable38 baseline28calls all raw18 and discovery0",
+      "passed": true
+    },
+    {
+      "name": "reviewed helper recognized before generic alias selection",
+      "passed": true
+    },
+    {
+      "name": "old discovery remains0 and original target has no managed aliases",
+      "passed": true
+    },
+    {
+      "name": "all28 raw native calls capture exact target/result/X0/X1 only",
+      "passed": true
+    },
+    {
+      "name": "all28 SSA results seeded canonicalObject with distinct original X0 input",
+      "passed": true
+    },
+    {
+      "name": "after-type all28 calls retain numeric target/original index/fouroperand ABI/Object results",
+      "passed": true
+    },
+    {
+      "name": "after-type all28 real runtime-array klass/element-class chains preserved",
+      "passed": true
+    },
+    {
+      "name": "after-type first original string object source and result remain distinct",
+      "passed": true
+    },
+    {
+      "name": "after-type returned Object/null check immediately follows original helper",
+      "passed": true
+    },
+    {
+      "name": "after-type same original runtime array feeds element-class, preserved bounds and original element store",
+      "passed": true
+    },
+    {
+      "name": "after-type original null comparison is exact result==0 and true edge still reaches ArrayTypeMismatch throw",
+      "passed": true
+    },
+    {
+      "name": "after-type original type-test block falls through to bounds only after its failure edge",
+      "passed": true
+    },
+    {
+      "name": "after-type original first store keeps exact index0 and OS X value along all local/Phi definitions",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa all28 calls retain numeric target/original index/fouroperand ABI/Object results",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa all28 real runtime-array klass/element-class chains preserved",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa first original string object source and result remain distinct",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa returned Object/null check immediately follows original helper",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa same original runtime array feeds element-class, preserved bounds and original element store",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa original null comparison is exact result==0 and true edge still reaches ArrayTypeMismatch throw",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa original type-test block falls through to bounds only after its failure edge",
+      "passed": true
+    },
+    {
+      "name": "simplified-ssa original first store keeps exact index0 and OS X value along all local/Phi definitions",
+      "passed": true
+    },
+    {
+      "name": "emitter-input all28 calls retain numeric target/original index/fouroperand ABI/Object results",
+      "passed": true
+    },
+    {
+      "name": "emitter-input all28 real runtime-array klass/element-class chains preserved",
+      "passed": true
+    },
+    {
+      "name": "emitter-input first original string object source and result remain distinct",
+      "passed": true
+    },
+    {
+      "name": "emitter-input returned Object/null check immediately follows original helper",
+      "passed": true
+    },
+    {
+      "name": "emitter-input same original runtime array feeds element-class, preserved bounds and original element store",
+      "passed": true
+    },
+    {
+      "name": "emitter-input original null comparison is exact result==0 and true edge still reaches ArrayTypeMismatch throw",
+      "passed": true
+    },
+    {
+      "name": "emitter-input original type-test block falls through to bounds only after its failure edge",
+      "passed": true
+    },
+    {
+      "name": "emitter-input original first store keeps exact index0 and OS X value along all local/Phi definitions",
+      "passed": true
+    },
+    {
+      "name": "known ArrayRecovery inlines original row67 into row68 ArrayLength without changing its array identity",
+      "passed": true
+    },
+    {
+      "name": "broader original System.Array caller retains exact numeric ABI: get_swapper",
+      "passed": true
+    },
+    {
+      "name": "broader original System.Array caller retains exact numeric ABI: int_swapper",
+      "passed": true
+    },
+    {
+      "name": "broader original System.Array caller retains exact numeric ABI: obj_swapper",
+      "passed": true
+    },
+    {
+      "name": "broader original System.Array caller retains exact numeric ABI: double_swapper",
+      "passed": true
+    },
+    {
+      "name": "broader original System.Array caller retains exact numeric ABI: compare",
+      "passed": true
+    },
+    {
+      "name": "actual original constructor emission retains all28 unresolved numeric diagnostics",
+      "passed": true
+    },
+    {
+      "name": "actual original constructor introduces no CIL isinst semantic lowering",
+      "passed": true
+    },
+    {
+      "name": "original complete38 CIL already had28 unresolved helper diagnostics and no inline class-input diagnostic",
+      "passed": true
+    },
+    {
+      "name": "ABI-only40 does not claim class-input evaluation restored by numeric diagnostic emission",
+      "passed": true
+    }
+  ],
+  "stages": [
+    {
+      "stage": "after-type",
+      "calls": 28,
+      "operand_counts": [
+        4
+      ],
+      "dynamic_array_class_projections": 28,
+      "untyped_original_class_locals": 28,
+      "private_graph": "analysis/reconstruction/object-isinst-v40/profile-after-type.txt",
+      "private_graph_sha256": "74466fc9ea89dc5276dd8d7c397a1a7dcd474fd0b89843004884a07f8793632f"
+    },
+    {
+      "stage": "simplified-ssa",
+      "calls": 28,
+      "operand_counts": [
+        4
+      ],
+      "dynamic_array_class_projections": 28,
+      "untyped_original_class_locals": 28,
+      "private_graph": "analysis/reconstruction/object-isinst-v40/profile-simplified-ssa.txt",
+      "private_graph_sha256": "68281fdf52e76c2e2b853592794eb0091c02ed3e27dd000f5685af7acfa36092"
+    },
+    {
+      "stage": "emitter-input",
+      "calls": 28,
+      "operand_counts": [
+        4
+      ],
+      "dynamic_array_class_projections": 28,
+      "untyped_original_class_locals": 0,
+      "private_graph": "analysis/reconstruction/object-isinst-v40/profile-emitter-input.txt",
+      "private_graph_sha256": "ea5e1d69e3a599a7c4fd023874548a53eaeed37888ac259267a888700071a481"
+    }
+  ],
+  "other_callers": [
+    {
+      "owner": "System.Array",
+      "method": "get_swapper",
+      "original_rva": "0x6EA510",
+      "numeric_helper_calls": 3,
+      "all_object_results": true,
+      "private_graph": "analysis/reconstruction/object-isinst-v40/Array-get_swapper-emitter-input.txt",
+      "private_graph_sha256": "4eff4727759c3565f5bf03ba2852b65e4b6bea379364dd759d416bf501fd9024"
+    },
+    {
+      "owner": "System.Array",
+      "method": "int_swapper",
+      "original_rva": "0x6EC200",
+      "numeric_helper_calls": 1,
+      "all_object_results": true,
+      "private_graph": "analysis/reconstruction/object-isinst-v40/Array-int_swapper-emitter-input.txt",
+      "private_graph_sha256": "8fe4258626e7a0265b18d5382eca0a79391cc002c3ea780d56286f61ffb36329"
+    },
+    {
+      "owner": "System.Array",
+      "method": "obj_swapper",
+      "original_rva": "0x6EC310",
+      "numeric_helper_calls": 3,
+      "all_object_results": true,
+      "private_graph": "analysis/reconstruction/object-isinst-v40/Array-obj_swapper-emitter-input.txt",
+      "private_graph_sha256": "9cff7a1da805bfa9a992bbe2776fbb71141fb9a5d4bdaac340dfb9e00a6c9e59"
+    },
+    {
+      "owner": "System.Array",
+      "method": "double_swapper",
+      "original_rva": "0x6EC4F0",
+      "numeric_helper_calls": 1,
+      "all_object_results": true,
+      "private_graph": "analysis/reconstruction/object-isinst-v40/Array-double_swapper-emitter-input.txt",
+      "private_graph_sha256": "9665f4fd57ef07ce2803094a877d369f3032d2cfc73a913c89000c2de5baee3f"
+    },
+    {
+      "owner": "System.Array",
+      "method": "compare",
+      "original_rva": "0x6EC650",
+      "numeric_helper_calls": 1,
+      "all_object_results": true,
+      "private_graph": "analysis/reconstruction/object-isinst-v40/Array-compare-emitter-input.txt",
+      "private_graph_sha256": "219814ff78f0b83bea522af57090be9657fa671b98fd9fcfecc3764b70d2a9bb"
+    }
+  ],
+  "class_input_emission": {
+    "baseline_assembly": "analysis/il2cpp/cpp2il-recovery-nso-virtual-companion-copy-v38/Assembly-CSharp.dll",
+    "baseline_assembly_sha256": "b27b575f04159eb61cd50eaf21566e682b882726b5faa216bf1402b55e7ae27c",
+    "original_method_token": "060020AC",
+    "before_helper_diagnostic_count": 28,
+    "before_inline_class_input_diagnostic_count": 0,
+    "after_helper_diagnostic_count": 28,
+    "after_inline_class_input_diagnostic_count": 0,
+    "original_ir_class_projection_retained": true,
+    "emitted_class_input_evaluation_recovered": false,
+    "emitted_helper_return_semantics_recovered": false,
+    "explanation": "Existing unknown numeric-call emitter does not evaluate argument operands. The exact dynamic class\u002B40 operand is retained in IR but inline argument evaluation is omitted in emitted diagnostic CIL, as it was in complete38 output. Numeric diagnostics and nominal Object typing provide no executable helper/class-effect semantics."
+  },
+  "fatal": null,
+  "core_sha256": "14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6",
+  "source_sha256": "c404c9b3382fd37edd59ad730d7b7fa51e9544575f0a574bbf5db7ba464167bd",
+  "helper_source_sha256": "ea443616ca0d0f146936f873fda98415766626e1611b8709b0d4057501f950e0",
+  "baseline_report_sha256": "274b369979701ef20297abda7fc7d527da27c7a715c79c899b36817ca79045f0",
+  "native_source_proposal_sha256": "d6f058357a164cbcd8e47d3456b06097df12ea5d3720ba003c5380135814f181",
+  "original_constructor_rva": "0x11A4CC0",
+  "before_calls": 28,
+  "before_raw_operand_count": 18,
+  "expected_after_calls": 28,
+  "expected_after_operand_count": 4,
+  "original_game_methods_invoked": 0,
+  "native_functions_executed": 0,
+  "semantic_isinst_recovered": false,
+  "production_outputs_written": false,
+  "full_clean_decompile_ready": false,
+  "scope": "Original constructor native/metadata analysis through existing production SSA/type/simplification/emitter stages, then real IlGenerator in-memory only. Exact numeric ABI capture shrinks28x18 to28x4; real X1 runtime array klass\u002B40 inputs and returned-object/null checks before original same-array bounds/index0/OS X store remain in IR. All28 unresolved helper diagnostics persist. Five original System.Array callers preserve the same exact ABI. Existing numeric-call CIL omits argument evaluation, so class-input/helper-return semantics remain explicitly unresolved just as in baseline38. No game constructor execution, managed isinst, array-store translation or restored class-effect claim is made."
+}

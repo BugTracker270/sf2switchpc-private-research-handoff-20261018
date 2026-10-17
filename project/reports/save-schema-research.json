@@ -1,0 +1,115 @@
+{
+  "status": "PASS_DEFAULT_XML_AND_NATIVE_PATH_IDENTITIES",
+  "defaults": [
+    {
+      "source": "analysis\\assets\\unity-export\\ExportedProject\\Assets\\Resources\\gamedata\\usersDefault.bytes",
+      "sha256": "674749070db8cfa99c4bd0f550719d0b3d44110e2891142c8a96c88c8962b2bf",
+      "root": "Root",
+      "elements": 11,
+      "top_level_tags": [
+        "CurrentUser",
+        "Warriors",
+        "Versions"
+      ],
+      "tag_counts": {
+        "Root": 1,
+        "CurrentUser": 1,
+        "Sounds": 1,
+        "Sound": 1,
+        "Music": 1,
+        "WatchedVideos": 1,
+        "Video": 1,
+        "Warriors": 1,
+        "Versions": 1,
+        "Version": 1,
+        "DataVersion": 1
+      },
+      "root_attribute_names": []
+    },
+    {
+      "source": "analysis\\assets\\unity-export\\ExportedProject\\Assets\\Resources\\gamedata\\usersDefaultWarrior.bytes",
+      "sha256": "be50538b6860b0ede98d79ceb11a867f8dab693275559543ad9e5da5475413a2",
+      "root": "Warrior",
+      "elements": 17,
+      "top_level_tags": [
+        "Items",
+        "Battles",
+        "Currencies",
+        "Resistances"
+      ],
+      "tag_counts": {
+        "Warrior": 1,
+        "Items": 1,
+        "Item": 6,
+        "Battles": 1,
+        "Battle": 6,
+        "Currencies": 1,
+        "Resistances": 1
+      },
+      "root_attribute_names": [
+        "ArenaRank",
+        "ArenaRating",
+        "Armor",
+        "Avatar",
+        "Bonus",
+        "CurrentZone",
+        "Difficulty",
+        "Experience",
+        "FirstName",
+        "Helm",
+        "ID",
+        "LastLotteryEnterTime",
+        "LastLotteryPlayTime",
+        "Level",
+        "LotteryDays",
+        "LotteryDaysMax",
+        "Magic",
+        "Money",
+        "Power",
+        "PowerSyncTime",
+        "Ranged",
+        "RateTime",
+        "SaveSlot",
+        "ShowUpgrades",
+        "Skeleton",
+        "Stamina",
+        "Strength",
+        "Tactic",
+        "Tutorial",
+        "Voice",
+        "Weapon"
+      ]
+    }
+  ],
+  "menu_slot_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "paths": {
+    "storage": "data:/userdata",
+    "primary": "data:/userdata/users.xml",
+    "backup": "data:/userdata/users_backup.xml"
+  },
+  "native_string_slots": {
+    "0x3b76f60": "data:",
+    "0x3b811a8": "/userdata",
+    "0x3b79ca8": "users.xml",
+    "0x3b7b128": "users_backup.xml",
+    "0x3b770f8": "{0}/{1}",
+    "0x3b6e938": "Root",
+    "0x3b7b590": "Warriors",
+    "0x3b7adc8": "SaveSlot"
+  },
+  "evidence": {
+    "storage_init": "0xE22E30",
+    "storage_getter": "0xE1E2C0",
+    "users_path": "0xD0F750",
+    "backup_path": "0xD0F800",
+    "warrior_lookup": "0xD26760",
+    "delete_slot": "0xD25B50",
+    "slot_load_coroutine": "0xE6F310"
+  },
+  "scope": "Default documents and native-observed path composition/slot lookup identities. Logical slots are Warrior records, with shared CurrentUser settings. Not a complete runtime schema, existing-user save export, Windows path, migration or corruption/failure parity claim."
+}

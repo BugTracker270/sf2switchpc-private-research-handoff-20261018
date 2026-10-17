@@ -1,0 +1,12 @@
+{
+  "status": "RECOVERED_BOOLEAN_BEHAVIOR_MISMATCH",
+  "recovery_run": "rust-source-v4-mapping",
+  "cases": 0,
+  "checks": 0,
+  "isolation_reference_cases": 4,
+  "failures": [],
+  "fatal": "System.TypeLoadException: Could not load type \u0027AdvLog\u0027 from assembly \u0027Assembly-CSharp-firstpass, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null\u0027 because the parent does not exist.",
+  "assembly_sha256": "eb28772a67be3c0f622bf2990c7c99e296876b2df88790139ce5d03631288953",
+  "fixture_sha256": "2f5f22d9afbf62d51148ff4dbe1e787cf6a0624ae110640deaad68fc2e6684dc",
+  "scope": "Executes recovered getter/setter CIL in DynamicMethods. Exact field tokens map to a same-type boolean test field and the sole Init callback maps to an observable counter. All other instruction and branch bytes/local types remain. No game DLL modification; class initialization, Init contents and complete-game parity are outside scope."
+}

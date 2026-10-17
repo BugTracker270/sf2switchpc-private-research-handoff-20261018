@@ -1,0 +1,5 @@
+{
+  "reason": "Empty CFG constructor also retained a normal empty block with stale predecessor links. Removed the entire unused initial normal block and added reciprocal edge validation to each input fixture. Prior invocation accepted no result.",
+  "before_sha256": "3b626b416ef2f2927f7534c803fb137b31264e7bd830a9c8acfe27bc7e34ea50",
+  "after_sha256": "c03ab8e6e2462d264e0e886822198a4534bf50f7a0ef0197dec8390a9eaf7517"
+}

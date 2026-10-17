@@ -1,0 +1,34 @@
+{
+  "mod0_rva": 8,
+  "header_start": 50874640,
+  "header_end": 52097884,
+  "frame_start": 52097888,
+  "declared_entries": 152904,
+  "status": "PASS_FRAME_RANGE_INVENTORY",
+  "validated_records": 152904,
+  "errors": 0,
+  "unique_range_starts": 152904,
+  "cies": 2,
+  "metadata_unique_addresses": 83673,
+  "metadata_at_range_start": 83673,
+  "metadata_inside_other_ranges": 0,
+  "metadata_not_covered": 0,
+  "indexed_pseudocode_addresses": 83808,
+  "range_starts_with_pseudocode": 83798,
+  "range_starts_without_pseudocode": 69106,
+  "overlapping_ranges": 0,
+  "covered_text_bytes": 36292460,
+  "text_bytes": 37181704,
+  "source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "cie_augmentation_counts": {
+    "zR": 1,
+    "zPLR": 1
+  },
+  "references": [
+    "https://refspecs.linuxfoundation.org/LSB_4.0.0/LSB-Core-generic/LSB-Core-generic.html",
+    "https://refspecs.linuxfoundation.org/LSB_4.0.0/LSB-Core-generic/LSB-Core-generic/dwarfext.html",
+    "https://github.com/llvm/llvm-project/blob/llvmorg-18.1.8/libunwind/src/DwarfParser.hpp"
+  ],
+  "scope": "Original MOD0 and exception-header table, every selected FDE/CIE record, pointer encodings, independent start agreement, record extents and aligned text ranges. CFI instruction programs, LSDA landing pads, personalities, actual stack unwinding and function semantics are not executed or certified. Ranges may include fragments and are not a semantic function-completion denominator. Coverage is the corpus snapshot when this report was generated.",
+  "frames_file_sha256": "aa464d27b080531baa5dfbd5591c63ba331fbded3091ff8eca6f054d87369abf"
+}

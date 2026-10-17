@@ -1,0 +1,53 @@
+{
+  "status": "PASS_COMPILED_STRIKE_SELECTION_VS_ORIGINAL_ARM64",
+  "cases": 517,
+  "checks": 4653,
+  "contacts": 255,
+  "fixture_sha256": "d502a18770f43f44c4a86a52e6bff661f0e73b20b8bae6eab5659bdd2cdac231",
+  "calls": {
+    "cross_model": 517
+  },
+  "executed_functions": {
+    "cross_model": 9232,
+    "vector_ctor": 2068,
+    "object_ctor": 1182,
+    "get_enumerator": 517,
+    "enum_ctor": 517,
+    "enum_next": 6273,
+    "class_layout_init": 2913,
+    "enum_verify": 3884,
+    "enum_dispose": 517,
+    "enum_current": 709,
+    "capsules": 10728,
+    "vector_set": 510,
+    "distance_contact": 1601
+  },
+  "runtime_allocation_model": {
+    "Vector3f": 1182
+  },
+  "allocation_hook_rva": "0xB5B110",
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "original_text_sha256": {
+    "cross_model": "5202a0708499bade4f722c36558ceadb85eac37e6e38de7fbb03975aa09f55c2",
+    "get_enumerator": "43694a140756dab00d417fb317762c8d7e917bea857ba9368f482b6e80c7235a",
+    "enum_ctor": "93f97aee4056e153eb26e662e2518b5597090fb7491333fa0a160c01ed376afe",
+    "enum_dispose": "66985e94d68bb55c9dd2238b467227dbc2502f5538f829a06da0d91e7e591729",
+    "enum_next": "42f3ffc98ccc98070ef1b29a58bb98f3190ed7e48553e8312fae8d85246cbc78",
+    "enum_current": "dfb556a413c8bda5332942d0202e8d5f1e52f45158aec3676294cf11ad5909cb",
+    "enum_verify": "5626968d882163a83eec2be0c8bdde001c164ff55a3beae0343d52dd8e2adb32",
+    "class_layout_init": "16314f8396501200adcba482521357b30cf07bc7e95f3c26ae6c206873088b81"
+  },
+  "metadata_initialization_guards": [
+    "0x3b898fd",
+    "0x3b898f9",
+    "0x3b898f8",
+    "0x3b89901",
+    "0x3b898ad",
+    "0x3b898fb",
+    "0x3b898fc",
+    "0x3b8696d",
+    "0x3b87856"
+  ],
+  "scope": "Original strike selection, list iteration, class-initialization fast path and capsule/contact math. Synthetic initialized MethodInfo/RGCTX, valid lists and edges; only Vector3f/EquationLine allocation modeled. No whole-fight or GC parity claim."
+}

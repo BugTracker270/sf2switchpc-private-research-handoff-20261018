@@ -1,0 +1,17 @@
+{
+  "status": "PASS_ACTUAL_GETTER_PRIVATE_CALLER_LOAD_STILL_UNRESOLVED",
+  "recovery_run": "nso-cfg-init-v31",
+  "cases": 9,
+  "checks": 24,
+  "caller_private_static_loads": 3,
+  "caller_public_getter_calls": 0,
+  "caller_accessor_integrated": false,
+  "getter_cil_sha256": "e2fc24869b8d39bb20cf308dda7ffe9c838bfb5cca2ea6af9a92b3d391c8c0fb",
+  "caller_cil_sha256": "10f23f449ef751b98ddc4f93f02ef65692185e13046ac4f3321dc4eee540c2ab",
+  "assembly_sha256": "1c03dc559015e0001a0a4b0258f036fb80b5a63784fa1d38168614e701ee7d51",
+  "source_or_cil_edited": false,
+  "tokens_remapped": 0,
+  "field_visibility_changed": false,
+  "owner_cctor": false,
+  "scope": "Actual unchanged recovered public getter executes directly with null and eight constructor-free allocated instances as explicit static-field fixtures. It returns the exact original field reference and leaves storage unchanged; owner has no .cctor. Original caller is inspected only for exact private-field/getter tokens. Full caller runtime/active detector behavior, constructors, native metadata assurance and whole-game source are not certified."
+}

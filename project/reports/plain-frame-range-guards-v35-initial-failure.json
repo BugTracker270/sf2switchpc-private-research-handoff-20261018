@@ -1,0 +1,2531 @@
+{
+  "status": "PLAIN_FRAME_PROBE_EXPECTATION_FAILED",
+  "checks": 26,
+  "tests": [
+    {
+      "name": "original selected mappings remain287 unique bodies",
+      "status": "PASS"
+    },
+    {
+      "name": "selected ranges agree with original unwind inventory",
+      "status": "PASS"
+    },
+    {
+      "name": "both additive plain-range APIs present",
+      "status": "PASS"
+    },
+    {
+      "name": "plain static method wrapper returns original256byte range",
+      "status": "PASS"
+    },
+    {
+      "name": "explicit plain address agrees",
+      "status": "PASS"
+    },
+    {
+      "name": "exception-bearing zPLR address rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "exception-bearing method wrapper rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "general bounds still support exception-bearing384bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "interior frame address rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "zero address rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "method wrapper checks registered8byte adjustor",
+      "status": "PASS"
+    },
+    {
+      "name": "explicit selected address checks actual520byte body",
+      "status": "PASS"
+    },
+    {
+      "name": "selected analysis alias/pointer remain unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh private parser fixture preserves plain256byte range",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown synthetic CIE tag rejects both ranges",
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic nonempty zR FDE augmentation preserves general bounds but rejects new scope",
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic oversized FDE augmentation fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic unsupported CIE pointer encoding fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "native source file unchanged after in-memory parser fixtures",
+      "status": "PASS"
+    },
+    {
+      "name": "ordinary decoder uses exact original registered256byte body",
+      "status": "PASS"
+    },
+    {
+      "name": "actual ordinary analysis preserves three constructor requests",
+      "status": "PASS"
+    },
+    {
+      "name": "actual ordinary analysis preserves all three config reloads",
+      "status": "FAIL"
+    },
+    {
+      "name": "unsupported cold/Phi reload guards remain explicit",
+      "status": "PASS"
+    },
+    {
+      "name": "parallel plain and rejected range-cache queries",
+      "status": "PASS"
+    },
+    {
+      "name": "plain-address API remains opt-in",
+      "status": "PASS"
+    },
+    {
+      "name": "plain-method wrapper remains opt-in",
+      "status": "PASS"
+    }
+  ],
+  "selected_bodies": 287,
+  "cie_groups": [
+    {
+      "augmentation": "zR",
+      "bodies": 275
+    },
+    {
+      "augmentation": "zPLR",
+      "bodies": 12
+    }
+  ],
+  "ordinary_analysis_error": null,
+  "ordinary_production_observation": {
+    "method": "BundlesUtil::GetAssetBundleSafe",
+    "managed_class_requests": 3,
+    "original_current_config_reads": 5,
+    "remaining_unsupported_class_flag_loads": 4,
+    "guest_execution_performed": false
+  },
+  "existing_selected_exception_bearing_bodies": [
+    {
+      "method": "System.RuntimeFieldHandle::.ctor",
+      "registered_address": "0x3A7FC0",
+      "analysis_address": "0x3A7D90",
+      "exact_fde_bytes": 532,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.RuntimeFieldHandle::GetObjectData",
+      "registered_address": "0x3A81F0",
+      "analysis_address": "0x3A7FE0",
+      "exact_fde_bytes": 520,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.RuntimeTypeHandle::.ctor",
+      "registered_address": "0x3A8AA0",
+      "analysis_address": "0x3A8870",
+      "exact_fde_bytes": 532,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.DateTime::GetDateTimeFormats",
+      "registered_address": "0x73E870",
+      "analysis_address": "0x73E460",
+      "exact_fde_bytes": 548,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.DateTime::GetDateTimeFormats",
+      "registered_address": "0x73EA90",
+      "analysis_address": "0x73E6A0",
+      "exact_fde_bytes": 464,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.DateTimeOffset::ToString",
+      "registered_address": "0x749D50",
+      "analysis_address": "0x748BC0",
+      "exact_fde_bytes": 788,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.RuntimeMethodHandle::.ctor",
+      "registered_address": "0x3A8540",
+      "analysis_address": "0x3A8310",
+      "exact_fde_bytes": 532,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.RuntimeMethodHandle::GetObjectData",
+      "registered_address": "0x3A8770",
+      "analysis_address": "0x3A8560",
+      "exact_fde_bytes": 520,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.TimeSpan::Add",
+      "registered_address": "0x901210",
+      "analysis_address": "0x9010A0",
+      "exact_fde_bytes": 356,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.TimeSpan::Subtract",
+      "registered_address": "0x902520",
+      "analysis_address": "0x9023C0",
+      "exact_fde_bytes": 352,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "UnityEngine.SliderHandler::SliderState",
+      "registered_address": "0xA1EE00",
+      "analysis_address": "0xA1E2E0",
+      "exact_fde_bytes": 428,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "ProtoBuf.Serializers.EnumSerializer\u002BEnumPair::.ctor",
+      "registered_address": "0xA74FD0",
+      "analysis_address": "0xA74E90",
+      "exact_fde_bytes": 312,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    }
+  ],
+  "selected_mapping_inventory": [
+    {
+      "method": "System.Int32::System.IConvertible.ToType",
+      "registered_address": "0x82CFA0",
+      "analysis_address": "0x82CEA0",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Int32::CompareTo",
+      "registered_address": "0x82D200",
+      "analysis_address": "0x82D100",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Int64::System.IConvertible.ToType",
+      "registered_address": "0x82F8D0",
+      "analysis_address": "0x82F7D0",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Int64::CompareTo",
+      "registered_address": "0x82FB30",
+      "analysis_address": "0x82FA30",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.UInt32::System.IConvertible.ToType",
+      "registered_address": "0xAD6B60",
+      "analysis_address": "0xAD6A60",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.UInt32::CompareTo",
+      "registered_address": "0xAD6D60",
+      "analysis_address": "0xAD6C60",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.UInt64::System.IConvertible.ToType",
+      "registered_address": "0xAD88C0",
+      "analysis_address": "0xAD87C0",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.UInt64::CompareTo",
+      "registered_address": "0xAD8AC0",
+      "analysis_address": "0xAD89C0",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Byte::System.IConvertible.ToType",
+      "registered_address": "0x89FE60",
+      "analysis_address": "0x89FD60",
+      "exact_fde_bytes": 244,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Byte::System.IConvertible.ToDecimal",
+      "registered_address": "0x8A0140",
+      "analysis_address": "0x8A0000",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Byte::System.IConvertible.ToSByte",
+      "registered_address": "0x8A0500",
+      "analysis_address": "0x8A0350",
+      "exact_fde_bytes": 256,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Byte::CompareTo",
+      "registered_address": "0x8A0810",
+      "analysis_address": "0x8A0710",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.SByte::System.IConvertible.ToType",
+      "registered_address": "0x3A92C0",
+      "analysis_address": "0x3A91C0",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.SByte::CompareTo",
+      "registered_address": "0x3A9530",
+      "analysis_address": "0x3A9420",
+      "exact_fde_bytes": 264,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Int16::System.IConvertible.ToType",
+      "registered_address": "0x82BB00",
+      "analysis_address": "0x82BA00",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Int16::CompareTo",
+      "registered_address": "0x82BD70",
+      "analysis_address": "0x82BC60",
+      "exact_fde_bytes": 264,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.UInt16::System.IConvertible.ToType",
+      "registered_address": "0xAD5AE0",
+      "analysis_address": "0xAD59E0",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.UInt16::CompareTo",
+      "registered_address": "0xAD5CD0",
+      "analysis_address": "0xAD5BE0",
+      "exact_fde_bytes": 232,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Char::System.IConvertible.ToType",
+      "registered_address": "0x8A16F0",
+      "analysis_address": "0x8A15F0",
+      "exact_fde_bytes": 244,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Char::System.IConvertible.ToByte",
+      "registered_address": "0x8A1950",
+      "analysis_address": "0x8A1780",
+      "exact_fde_bytes": 260,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Char::System.IConvertible.ToInt16",
+      "registered_address": "0x8A1CA0",
+      "analysis_address": "0x8A1AF0",
+      "exact_fde_bytes": 256,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Char::System.IConvertible.ToSByte",
+      "registered_address": "0x8A1F80",
+      "analysis_address": "0x8A1DB0",
+      "exact_fde_bytes": 260,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Char::CompareTo",
+      "registered_address": "0x8A2290",
+      "analysis_address": "0x8A2190",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Single::System.IConvertible.ToType",
+      "registered_address": "0x3F3990",
+      "analysis_address": "0x3F3890",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Single::CompareTo",
+      "registered_address": "0x3F3D30",
+      "analysis_address": "0x3F3AF0",
+      "exact_fde_bytes": 432,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Double::System.IConvertible.ToType",
+      "registered_address": "0x753670",
+      "analysis_address": "0x753570",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Double::CompareTo",
+      "registered_address": "0x753E70",
+      "analysis_address": "0x753CC0",
+      "exact_fde_bytes": 428,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Decimal::.ctor",
+      "registered_address": "0x74B640",
+      "analysis_address": "0x74B230",
+      "exact_fde_bytes": 692,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Decimal::.ctor",
+      "registered_address": "0x74BA70",
+      "analysis_address": "0x74B650",
+      "exact_fde_bytes": 784,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Decimal::System.IConvertible.ToType",
+      "registered_address": "0x74BC50",
+      "analysis_address": "0x74BB40",
+      "exact_fde_bytes": 260,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Decimal::CompareTo",
+      "registered_address": "0x74D0E0",
+      "analysis_address": "0x74CF80",
+      "exact_fde_bytes": 344,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Decimal::CompareTo",
+      "registered_address": "0x74D1D0",
+      "analysis_address": "0x74D0F0",
+      "exact_fde_bytes": 212,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Boolean::System.IConvertible.ToType",
+      "registered_address": "0x89E8C0",
+      "analysis_address": "0x89DCC0",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Boolean::System.IConvertible.ToDecimal",
+      "registered_address": "0x89EBB0",
+      "analysis_address": "0x89EA60",
+      "exact_fde_bytes": 204,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Boolean::CompareTo",
+      "registered_address": "0x89F180",
+      "analysis_address": "0x89F080",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.RuntimeFieldHandle::.ctor",
+      "registered_address": "0x3A7FC0",
+      "analysis_address": "0x3A7D90",
+      "exact_fde_bytes": 532,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.RuntimeFieldHandle::GetObjectData",
+      "registered_address": "0x3A81F0",
+      "analysis_address": "0x3A7FE0",
+      "exact_fde_bytes": 520,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.RuntimeFieldHandle::Equals",
+      "registered_address": "0x3A82D0",
+      "analysis_address": "0x3A8200",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.RuntimeTypeHandle::.ctor",
+      "registered_address": "0x3A8AA0",
+      "analysis_address": "0x3A8870",
+      "exact_fde_bytes": 532,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.RuntimeTypeHandle::GetObjectData",
+      "registered_address": "0x3A8C50",
+      "analysis_address": "0x3A8AC0",
+      "exact_fde_bytes": 400,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.RuntimeTypeHandle::Equals",
+      "registered_address": "0x3A8D30",
+      "analysis_address": "0x3A8C60",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.TypedReference::GetHashCode",
+      "registered_address": "0xAD4E50",
+      "analysis_address": "0xAD4DA0",
+      "exact_fde_bytes": 176,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::.ctor",
+      "registered_address": "0x739C80",
+      "analysis_address": "0x738FF0",
+      "exact_fde_bytes": 812,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::.ctor",
+      "registered_address": "0x73A350",
+      "analysis_address": "0x739CC0",
+      "exact_fde_bytes": 412,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::.ctor",
+      "registered_address": "0x73A6F0",
+      "analysis_address": "0x73A630",
+      "exact_fde_bytes": 188,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::System.IConvertible.ToType",
+      "registered_address": "0x73C880",
+      "analysis_address": "0x73C690",
+      "exact_fde_bytes": 468,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::FromTicks",
+      "registered_address": "0x73CD20",
+      "analysis_address": "0x73CAF0",
+      "exact_fde_bytes": 556,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::AddTicks",
+      "registered_address": "0x73D600",
+      "analysis_address": "0x73D4C0",
+      "exact_fde_bytes": 240,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::AddMilliseconds",
+      "registered_address": "0x73D740",
+      "analysis_address": "0x73D610",
+      "exact_fde_bytes": 292,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::CompareTo",
+      "registered_address": "0x73D960",
+      "analysis_address": "0x73D840",
+      "exact_fde_bytes": 280,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::ToBinary",
+      "registered_address": "0x73DE10",
+      "analysis_address": "0x73DCB0",
+      "exact_fde_bytes": 212,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::GetDateTimeFormats",
+      "registered_address": "0x73E690",
+      "analysis_address": "0x73E320",
+      "exact_fde_bytes": 204,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::GetDateTimeFormats",
+      "registered_address": "0x73E870",
+      "analysis_address": "0x73E460",
+      "exact_fde_bytes": 548,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.DateTime::GetDateTimeFormats",
+      "registered_address": "0x73EA90",
+      "analysis_address": "0x73E6A0",
+      "exact_fde_bytes": 464,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.DateTime::Subtract",
+      "registered_address": "0x7446D0",
+      "analysis_address": "0x744600",
+      "exact_fde_bytes": 200,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::ToFileTime",
+      "registered_address": "0x744810",
+      "analysis_address": "0x7446E0",
+      "exact_fde_bytes": 304,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::ToFileTimeUtc",
+      "registered_address": "0x7448E0",
+      "analysis_address": "0x744820",
+      "exact_fde_bytes": 192,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTime::ToString",
+      "registered_address": "0x744E80",
+      "analysis_address": "0x744BD0",
+      "exact_fde_bytes": 532,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTimeOffset::.ctor",
+      "registered_address": "0x7454C0",
+      "analysis_address": "0x743660",
+      "exact_fde_bytes": 576,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTimeOffset::.ctor",
+      "registered_address": "0x7454D0",
+      "analysis_address": "0x7438A0",
+      "exact_fde_bytes": 1116,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTimeOffset::.ctor",
+      "registered_address": "0x7456E0",
+      "analysis_address": "0x745580",
+      "exact_fde_bytes": 340,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTimeOffset::System.IComparable.CompareTo",
+      "registered_address": "0x7459C0",
+      "analysis_address": "0x745820",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTimeOffset::System.Runtime.Serialization.ISerializable.GetObjectData",
+      "registered_address": "0x745AE0",
+      "analysis_address": "0x7459D0",
+      "exact_fde_bytes": 268,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTimeOffset::Equals",
+      "registered_address": "0x745E90",
+      "analysis_address": "0x745D50",
+      "exact_fde_bytes": 312,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTimeOffset::ToLocalTime",
+      "registered_address": "0x748BA0",
+      "analysis_address": "0x748A00",
+      "exact_fde_bytes": 416,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTimeOffset::ToString",
+      "registered_address": "0x749D50",
+      "analysis_address": "0x748BC0",
+      "exact_fde_bytes": 788,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.DateTimeOffset::get_Date",
+      "registered_address": "0x74A090",
+      "analysis_address": "0x749F70",
+      "exact_fde_bytes": 284,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTimeOffset::get_DateTime",
+      "registered_address": "0x74A0A0",
+      "analysis_address": "0x749C90",
+      "exact_fde_bytes": 192,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.DateTimeOffset::get_UtcDateTime",
+      "registered_address": "0x74A3D0",
+      "analysis_address": "0x745370",
+      "exact_fde_bytes": 324,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Guid::.ctor",
+      "registered_address": "0x828310",
+      "analysis_address": "0x828030",
+      "exact_fde_bytes": 480,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Guid::.ctor",
+      "registered_address": "0x828700",
+      "analysis_address": "0x828320",
+      "exact_fde_bytes": 328,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Guid::.ctor",
+      "registered_address": "0x8288D0",
+      "analysis_address": "0x828710",
+      "exact_fde_bytes": 436,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Guid::CompareTo",
+      "registered_address": "0x828EF0",
+      "analysis_address": "0x828B00",
+      "exact_fde_bytes": 256,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Guid::CompareTo",
+      "registered_address": "0x829020",
+      "analysis_address": "0x828C00",
+      "exact_fde_bytes": 740,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Guid::ToByteArray",
+      "registered_address": "0x8299B0",
+      "analysis_address": "0x8295E0",
+      "exact_fde_bytes": 972,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.RuntimeMethodHandle::.ctor",
+      "registered_address": "0x3A8540",
+      "analysis_address": "0x3A8310",
+      "exact_fde_bytes": 532,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.RuntimeMethodHandle::GetObjectData",
+      "registered_address": "0x3A8770",
+      "analysis_address": "0x3A8560",
+      "exact_fde_bytes": 520,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.RuntimeMethodHandle::Equals",
+      "registered_address": "0x3A8850",
+      "analysis_address": "0x3A8780",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.TimeSpan::Add",
+      "registered_address": "0x901210",
+      "analysis_address": "0x9010A0",
+      "exact_fde_bytes": 356,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.TimeSpan::CompareTo",
+      "registered_address": "0x901360",
+      "analysis_address": "0x901240",
+      "exact_fde_bytes": 288,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.TimeSpan::Negate",
+      "registered_address": "0x901D70",
+      "analysis_address": "0x901C90",
+      "exact_fde_bytes": 224,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.TimeSpan::Subtract",
+      "registered_address": "0x902520",
+      "analysis_address": "0x9023C0",
+      "exact_fde_bytes": 352,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "System.TimeSpan::ToString",
+      "registered_address": "0x902980",
+      "analysis_address": "0x902530",
+      "exact_fde_bytes": 1092,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Reflection.CustomAttributeNamedArgument::Equals",
+      "registered_address": "0x67CD90",
+      "analysis_address": "0x67C8A0",
+      "exact_fde_bytes": 292,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Reflection.CustomAttributeTypedArgument::ToString",
+      "registered_address": "0x67CE80",
+      "analysis_address": "0x67C0F0",
+      "exact_fde_bytes": 568,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Reflection.Emit.ILExceptionInfo::AddFinally",
+      "registered_address": "0x5980D0",
+      "analysis_address": "0x597EB0",
+      "exact_fde_bytes": 240,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Reflection.Emit.ILExceptionInfo::add_block",
+      "registered_address": "0x598210",
+      "analysis_address": "0x597FA0",
+      "exact_fde_bytes": 304,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Runtime.InteropServices.GCHandle::get_Target",
+      "registered_address": "0x40A520",
+      "analysis_address": "0x40A460",
+      "exact_fde_bytes": 172,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Runtime.InteropServices.GCHandle::AddrOfPinnedObject",
+      "registered_address": "0x40A670",
+      "analysis_address": "0x40A530",
+      "exact_fde_bytes": 296,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Security.SecurityFrame::InitFromRuntimeFrame",
+      "registered_address": "0x3F11D0",
+      "analysis_address": "0x3F0D20",
+      "exact_fde_bytes": 284,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Security.SecurityFrame::ToString",
+      "registered_address": "0x3F13E0",
+      "analysis_address": "0x3F1220",
+      "exact_fde_bytes": 440,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Security.Permissions.StrongNameIdentityPermission\u002BSNIP::IsNameSubsetOf",
+      "registered_address": "0x7860B0",
+      "analysis_address": "0x785F00",
+      "exact_fde_bytes": 304,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Xml.Schema.QNameValueType::Equals",
+      "registered_address": "0x2BE5D0",
+      "analysis_address": "0x2BE470",
+      "exact_fde_bytes": 224,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Xml.Schema.StringValueType::Equals",
+      "registered_address": "0x2BE960",
+      "analysis_address": "0x2BE800",
+      "exact_fde_bytes": 224,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Collections.Generic.RBTree\u002BNodeEnumerator::System.Collections.IEnumerator.get_Current",
+      "registered_address": "0x31CBE0",
+      "analysis_address": "0x31CA00",
+      "exact_fde_bytes": 220,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Collections.Generic.RBTree\u002BNodeEnumerator::MoveNext",
+      "registered_address": "0x31CEC0",
+      "analysis_address": "0x31CDA0",
+      "exact_fde_bytes": 288,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Collections.Generic.RBTree\u002BNodeEnumerator::check_version",
+      "registered_address": "0x31CEF0",
+      "analysis_address": "0x31CC20",
+      "exact_fde_bytes": 236,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Text.RegularExpressions.Interpreter\u002BIntStack::Push",
+      "registered_address": "0x86FB10",
+      "analysis_address": "0x86F9A0",
+      "exact_fde_bytes": 368,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.Text.RegularExpressions.RxInterpreter\u002BIntStack::Push",
+      "registered_address": "0x885530",
+      "analysis_address": "0x885120",
+      "exact_fde_bytes": 368,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.TimeZoneInfo\u002BTimeType::ToString",
+      "registered_address": "0xA9F950",
+      "analysis_address": "0xA9F660",
+      "exact_fde_bytes": 752,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.TimeZoneInfo\u002BTransitionTime::.ctor",
+      "registered_address": "0xA9FCD0",
+      "analysis_address": "0xA9F9D0",
+      "exact_fde_bytes": 532,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "System.TimeZoneInfo\u002BTransitionTime::Equals",
+      "registered_address": "0xA9FF50",
+      "analysis_address": "0xA9FDB0",
+      "exact_fde_bytes": 416,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SceneManagement.Scene::GetRootGameObjects",
+      "registered_address": "0x123EA40",
+      "analysis_address": "0x123E5D0",
+      "exact_fde_bytes": 216,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SceneManagement.Scene::GetRootGameObjects",
+      "registered_address": "0x123EAD0",
+      "analysis_address": "0x123E6B0",
+      "exact_fde_bytes": 912,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Bounds::Equals",
+      "registered_address": "0x1219FB0",
+      "analysis_address": "0x1219E90",
+      "exact_fde_bytes": 284,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Bounds::SetMinMax",
+      "registered_address": "0x121A7C0",
+      "analysis_address": "0x121A6C0",
+      "exact_fde_bytes": 256,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Bounds::Encapsulate",
+      "registered_address": "0x121A9B0",
+      "analysis_address": "0x121A7D0",
+      "exact_fde_bytes": 480,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Bounds::ToString",
+      "registered_address": "0x121AC60",
+      "analysis_address": "0x121AAE0",
+      "exact_fde_bytes": 384,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Color::ToString",
+      "registered_address": "0x121CF60",
+      "analysis_address": "0x121CD10",
+      "exact_fde_bytes": 592,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Color::Equals",
+      "registered_address": "0x121D130",
+      "analysis_address": "0x121D040",
+      "exact_fde_bytes": 232,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Color::get_linear",
+      "registered_address": "0x121D7F0",
+      "analysis_address": "0x121D600",
+      "exact_fde_bytes": 364,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Color::get_gamma",
+      "registered_address": "0x121D9F0",
+      "analysis_address": "0x121D800",
+      "exact_fde_bytes": 364,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Color32::ToString",
+      "registered_address": "0x121DF90",
+      "analysis_address": "0x121DD40",
+      "exact_fde_bytes": 592,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Resolution::ToString",
+      "registered_address": "0x123DDE0",
+      "analysis_address": "0x123DC00",
+      "exact_fde_bytes": 480,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Matrix4x4::set_Item",
+      "registered_address": "0x122BD20",
+      "analysis_address": "0x122BBC0",
+      "exact_fde_bytes": 328,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Matrix4x4::GetHashCode",
+      "registered_address": "0x122C010",
+      "analysis_address": "0x122BD30",
+      "exact_fde_bytes": 436,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Matrix4x4::Equals",
+      "registered_address": "0x122C400",
+      "analysis_address": "0x122C020",
+      "exact_fde_bytes": 988,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Matrix4x4::GetColumn",
+      "registered_address": "0x122C680",
+      "analysis_address": "0x122BEF0",
+      "exact_fde_bytes": 276,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Matrix4x4::ToString",
+      "registered_address": "0x122D110",
+      "analysis_address": "0x122C980",
+      "exact_fde_bytes": 1936,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Vector3::ToString",
+      "registered_address": "0x15DE1A0",
+      "analysis_address": "0x15DDFC0",
+      "exact_fde_bytes": 480,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Vector3::ToString",
+      "registered_address": "0x15DE380",
+      "analysis_address": "0x15DE1B0",
+      "exact_fde_bytes": 452,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Quaternion::get_eulerAngles",
+      "registered_address": "0x1237290",
+      "analysis_address": "0x1237130",
+      "exact_fde_bytes": 352,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Quaternion::Equals",
+      "registered_address": "0x1237640",
+      "analysis_address": "0x1237550",
+      "exact_fde_bytes": 232,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Quaternion::ToString",
+      "registered_address": "0x12378A0",
+      "analysis_address": "0x1237650",
+      "exact_fde_bytes": 592,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Quaternion::ToString",
+      "registered_address": "0x1237AE0",
+      "analysis_address": "0x12378B0",
+      "exact_fde_bytes": 560,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Plane::ToString",
+      "registered_address": "0x1234580",
+      "analysis_address": "0x1234330",
+      "exact_fde_bytes": 592,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Ray::GetPoint",
+      "registered_address": "0x1237FC0",
+      "analysis_address": "0x1237EF0",
+      "exact_fde_bytes": 204,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Ray::ToString",
+      "registered_address": "0x1238150",
+      "analysis_address": "0x1237FD0",
+      "exact_fde_bytes": 384,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Rect::Equals",
+      "registered_address": "0x1238C20",
+      "analysis_address": "0x1238B10",
+      "exact_fde_bytes": 264,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Rect::ToString",
+      "registered_address": "0x1238E80",
+      "analysis_address": "0x1238C30",
+      "exact_fde_bytes": 592,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Vector2::Normalize",
+      "registered_address": "0x15DBDA0",
+      "analysis_address": "0x15DBB20",
+      "exact_fde_bytes": 352,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Vector2::ToString",
+      "registered_address": "0x15DBF80",
+      "analysis_address": "0x15DBE10",
+      "exact_fde_bytes": 368,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Vector2::ToString",
+      "registered_address": "0x15DC0F0",
+      "analysis_address": "0x15DBF90",
+      "exact_fde_bytes": 344,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Vector3Int::ToString",
+      "registered_address": "0x15DE820",
+      "analysis_address": "0x15DE640",
+      "exact_fde_bytes": 480,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Vector4::Equals",
+      "registered_address": "0x15DEE70",
+      "analysis_address": "0x15DED80",
+      "exact_fde_bytes": 232,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Vector4::ToString",
+      "registered_address": "0x15DF760",
+      "analysis_address": "0x15DF510",
+      "exact_fde_bytes": 592,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::Handle",
+      "registered_address": "0xA1E1F0",
+      "analysis_address": "0xA054B0",
+      "exact_fde_bytes": 328,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::OnMouseDown",
+      "registered_address": "0xA1E7D0",
+      "analysis_address": "0xA1D160",
+      "exact_fde_bytes": 1340,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::OnMouseDrag",
+      "registered_address": "0xA1EAA0",
+      "analysis_address": "0xA1D6A0",
+      "exact_fde_bytes": 516,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::OnMouseUp",
+      "registered_address": "0xA1EAB0",
+      "analysis_address": "0xA1D8B0",
+      "exact_fde_bytes": 480,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::OnRepaint",
+      "registered_address": "0xA1EAC0",
+      "analysis_address": "0xA1DA90",
+      "exact_fde_bytes": 1880,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::CurrentScrollTroughSide",
+      "registered_address": "0xA1EB80",
+      "analysis_address": "0xA1E490",
+      "exact_fde_bytes": 308,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::SupportsPageMovements",
+      "registered_address": "0xA1EBA0",
+      "analysis_address": "0xA1E200",
+      "exact_fde_bytes": 212,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::PageUpMovementBound",
+      "registered_address": "0xA1ED10",
+      "analysis_address": "0xA1EBB0",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::ValueForCurrentMousePosition",
+      "registered_address": "0xA1ED70",
+      "analysis_address": "0xA1E5D0",
+      "exact_fde_bytes": 184,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::Clamp",
+      "registered_address": "0xA1ED80",
+      "analysis_address": "0xA1E690",
+      "exact_fde_bytes": 320,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::SliderState",
+      "registered_address": "0xA1EE00",
+      "analysis_address": "0xA1E2E0",
+      "exact_fde_bytes": 428,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "UnityEngine.SliderHandler::VerticalThumbRect",
+      "registered_address": "0xA1F910",
+      "analysis_address": "0xA1F1E0",
+      "exact_fde_bytes": 1196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::HorizontalThumbRect",
+      "registered_address": "0xA1F920",
+      "analysis_address": "0xA1EE10",
+      "exact_fde_bytes": 968,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::MousePosition",
+      "registered_address": "0xA1F940",
+      "analysis_address": "0xA1E7E0",
+      "exact_fde_bytes": 276,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::ValuesPerPixel",
+      "registered_address": "0xA1F950",
+      "analysis_address": "0xA1E900",
+      "exact_fde_bytes": 404,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.SliderHandler::ThumbSize",
+      "registered_address": "0xA1F960",
+      "analysis_address": "0xA1F6B0",
+      "exact_fde_bytes": 596,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.ContactFilter2D::CheckConsistency",
+      "registered_address": "0xAFE7C0",
+      "analysis_address": "0xAFE610",
+      "exact_fde_bytes": 424,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.RaycastHit2D::get_rigidbody",
+      "registered_address": "0xB00500",
+      "analysis_address": "0xB002F0",
+      "exact_fde_bytes": 524,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.RaycastHit2D::get_transform",
+      "registered_address": "0xB00720",
+      "analysis_address": "0xB00510",
+      "exact_fde_bytes": 516,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Animations.AnimationLayerMixerPlayable::.ctor",
+      "registered_address": "0xAFA5D0",
+      "analysis_address": "0xAFA510",
+      "exact_fde_bytes": 192,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Animations.AnimationOffsetPlayable::.ctor",
+      "registered_address": "0xAFA7C0",
+      "analysis_address": "0xAFA700",
+      "exact_fde_bytes": 192,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.Animations.AnimatorControllerPlayable::SetHandle",
+      "registered_address": "0xAFAAC0",
+      "analysis_address": "0xAFA940",
+      "exact_fde_bytes": 276,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.EventSystems.RaycastResult::get_isValid",
+      "registered_address": "0x103E10",
+      "analysis_address": "0x103D40",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.EventSystems.RaycastResult::Clear",
+      "registered_address": "0x103EF0",
+      "analysis_address": "0x103E20",
+      "exact_fde_bytes": 208,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.EventSystems.RaycastResult::ToString",
+      "registered_address": "0x103F00",
+      "analysis_address": "0x1016D0",
+      "exact_fde_bytes": 2592,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "UnityEngine.UI.CoroutineTween.ColorTween::TweenValue",
+      "registered_address": "0x10CB60",
+      "analysis_address": "0x10CA80",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "ProtoBuf.Serializers.EnumSerializer\u002BEnumPair::.ctor",
+      "registered_address": "0xA74FD0",
+      "analysis_address": "0xA74E90",
+      "exact_fde_bytes": 312,
+      "cie_augmentation": "zPLR",
+      "plain_cie": false
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredBool::ApplyNewCryptoKey",
+      "registered_address": "0x7A27C0",
+      "analysis_address": "0x7A24D0",
+      "exact_fde_bytes": 300,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredBool::RandomizeCryptoKey",
+      "registered_address": "0x7A28E0",
+      "analysis_address": "0x7A27D0",
+      "exact_fde_bytes": 272,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredBool::InternalDecrypt",
+      "registered_address": "0x7A29B0",
+      "analysis_address": "0x7A2600",
+      "exact_fde_bytes": 436,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredByte::ApplyNewCryptoKey",
+      "registered_address": "0x7A32C0",
+      "analysis_address": "0x7A2F90",
+      "exact_fde_bytes": 284,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredByte::RandomizeCryptoKey",
+      "registered_address": "0x7A33D0",
+      "analysis_address": "0x7A32D0",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredByte::InternalDecrypt",
+      "registered_address": "0x7A34A0",
+      "analysis_address": "0x7A30B0",
+      "exact_fde_bytes": 520,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredChar::ApplyNewCryptoKey",
+      "registered_address": "0x7A40C0",
+      "analysis_address": "0x7A3D90",
+      "exact_fde_bytes": 284,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredChar::RandomizeCryptoKey",
+      "registered_address": "0x7A41D0",
+      "analysis_address": "0x7A40D0",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredChar::InternalDecrypt",
+      "registered_address": "0x7A42A0",
+      "analysis_address": "0x7A3EB0",
+      "exact_fde_bytes": 524,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredChar::Equals",
+      "registered_address": "0x7A4900",
+      "analysis_address": "0x7A4700",
+      "exact_fde_bytes": 356,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredDecimal::ApplyNewCryptoKey",
+      "registered_address": "0x7A5860",
+      "analysis_address": "0x7A5240",
+      "exact_fde_bytes": 212,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredDecimal::GetEncrypted",
+      "registered_address": "0x7A5C60",
+      "analysis_address": "0x7A5930",
+      "exact_fde_bytes": 812,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredDecimal::SetEncrypted",
+      "registered_address": "0x7A5F90",
+      "analysis_address": "0x7A5C70",
+      "exact_fde_bytes": 796,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredDecimal::InternalDecrypt",
+      "registered_address": "0x7A5FA0",
+      "analysis_address": "0x7A5320",
+      "exact_fde_bytes": 1344,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredDouble::ApplyNewCryptoKey",
+      "registered_address": "0x7A72D0",
+      "analysis_address": "0x7A6F00",
+      "exact_fde_bytes": 212,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredDouble::GetEncrypted",
+      "registered_address": "0x7A7530",
+      "analysis_address": "0x7A7390",
+      "exact_fde_bytes": 404,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredDouble::SetEncrypted",
+      "registered_address": "0x7A7740",
+      "analysis_address": "0x7A7540",
+      "exact_fde_bytes": 500,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredDouble::InternalDecrypt",
+      "registered_address": "0x7A7750",
+      "analysis_address": "0x7A6FE0",
+      "exact_fde_bytes": 748,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat::ApplyNewCryptoKey",
+      "registered_address": "0x7A8530",
+      "analysis_address": "0x7A8220",
+      "exact_fde_bytes": 212,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat::GetEncrypted",
+      "registered_address": "0x7A85F0",
+      "analysis_address": "0x794B90",
+      "exact_fde_bytes": 216,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat::SetEncrypted",
+      "registered_address": "0x7A8770",
+      "analysis_address": "0x7A8600",
+      "exact_fde_bytes": 356,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat::InternalDecrypt",
+      "registered_address": "0x7A8780",
+      "analysis_address": "0x7A8300",
+      "exact_fde_bytes": 548,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt::ApplyNewCryptoKey",
+      "registered_address": "0x7A9130",
+      "analysis_address": "0x7A8E00",
+      "exact_fde_bytes": 284,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt::RandomizeCryptoKey",
+      "registered_address": "0x7A9140",
+      "analysis_address": "0x794440",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt::InternalDecrypt",
+      "registered_address": "0x7A9200",
+      "analysis_address": "0x7A8F20",
+      "exact_fde_bytes": 520,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt::Equals",
+      "registered_address": "0x7A9570",
+      "analysis_address": "0x7A9390",
+      "exact_fde_bytes": 332,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredLong::ApplyNewCryptoKey",
+      "registered_address": "0x7A9E90",
+      "analysis_address": "0x7A9B50",
+      "exact_fde_bytes": 280,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredLong::RandomizeCryptoKey",
+      "registered_address": "0x7A9FA0",
+      "analysis_address": "0x7A9EA0",
+      "exact_fde_bytes": 248,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredLong::InternalDecrypt",
+      "registered_address": "0x7AA060",
+      "analysis_address": "0x7A9C70",
+      "exact_fde_bytes": 532,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredQuaternion::ApplyNewCryptoKey",
+      "registered_address": "0x7B06A0",
+      "analysis_address": "0x7B0310",
+      "exact_fde_bytes": 248,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredQuaternion::RandomizeCryptoKey",
+      "registered_address": "0x7B0780",
+      "analysis_address": "0x7B06B0",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredQuaternion::InternalDecrypt",
+      "registered_address": "0x7B0850",
+      "analysis_address": "0x7B0410",
+      "exact_fde_bytes": 656,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredSByte::ApplyNewCryptoKey",
+      "registered_address": "0x7B1240",
+      "analysis_address": "0x7B0F10",
+      "exact_fde_bytes": 284,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredSByte::RandomizeCryptoKey",
+      "registered_address": "0x7B1350",
+      "analysis_address": "0x7B1250",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredSByte::InternalDecrypt",
+      "registered_address": "0x7B1420",
+      "analysis_address": "0x7B1030",
+      "exact_fde_bytes": 520,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredShort::ApplyNewCryptoKey",
+      "registered_address": "0x7B2210",
+      "analysis_address": "0x7B1EE0",
+      "exact_fde_bytes": 284,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredShort::RandomizeCryptoKey",
+      "registered_address": "0x7B2320",
+      "analysis_address": "0x7B2220",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredShort::InternalDecrypt",
+      "registered_address": "0x7B23F0",
+      "analysis_address": "0x7B2000",
+      "exact_fde_bytes": 524,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredShort::Equals",
+      "registered_address": "0x7B28E0",
+      "analysis_address": "0x7B26E0",
+      "exact_fde_bytes": 356,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredUInt::ApplyNewCryptoKey",
+      "registered_address": "0x7B4160",
+      "analysis_address": "0x7B3E30",
+      "exact_fde_bytes": 284,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredUInt::RandomizeCryptoKey",
+      "registered_address": "0x7B4270",
+      "analysis_address": "0x7B4170",
+      "exact_fde_bytes": 248,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredUInt::InternalDecrypt",
+      "registered_address": "0x7B4330",
+      "analysis_address": "0x7B3F50",
+      "exact_fde_bytes": 520,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredUInt::Equals",
+      "registered_address": "0x7B4890",
+      "analysis_address": "0x7B46B0",
+      "exact_fde_bytes": 332,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredULong::ApplyNewCryptoKey",
+      "registered_address": "0x7B51B0",
+      "analysis_address": "0x7B4E70",
+      "exact_fde_bytes": 280,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredULong::RandomizeCryptoKey",
+      "registered_address": "0x7B52C0",
+      "analysis_address": "0x7B51C0",
+      "exact_fde_bytes": 248,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredULong::InternalDecrypt",
+      "registered_address": "0x7B5380",
+      "analysis_address": "0x7B4F90",
+      "exact_fde_bytes": 532,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredUShort::ApplyNewCryptoKey",
+      "registered_address": "0x7B61F0",
+      "analysis_address": "0x7B5EC0",
+      "exact_fde_bytes": 284,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredUShort::RandomizeCryptoKey",
+      "registered_address": "0x7B6300",
+      "analysis_address": "0x7B6200",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredUShort::InternalDecrypt",
+      "registered_address": "0x7B63D0",
+      "analysis_address": "0x7B5FE0",
+      "exact_fde_bytes": 524,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredUShort::Equals",
+      "registered_address": "0x7B6860",
+      "analysis_address": "0x7B6660",
+      "exact_fde_bytes": 356,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2::get_x",
+      "registered_address": "0xCEA90",
+      "analysis_address": "0xCE910",
+      "exact_fde_bytes": 384,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2::set_x",
+      "registered_address": "0xCEB70",
+      "analysis_address": "0xCEAA0",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2::get_y",
+      "registered_address": "0xCED00",
+      "analysis_address": "0xCEB80",
+      "exact_fde_bytes": 384,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2::set_y",
+      "registered_address": "0xCEDE0",
+      "analysis_address": "0xCED10",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2::get_Item",
+      "registered_address": "0xCEEB0",
+      "analysis_address": "0xCEDF0",
+      "exact_fde_bytes": 180,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2::set_Item",
+      "registered_address": "0xCEFA0",
+      "analysis_address": "0xCEEC0",
+      "exact_fde_bytes": 220,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2::ApplyNewCryptoKey",
+      "registered_address": "0xCF5E0",
+      "analysis_address": "0xCF2D0",
+      "exact_fde_bytes": 220,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2::RandomizeCryptoKey",
+      "registered_address": "0xCF6A0",
+      "analysis_address": "0xCF5F0",
+      "exact_fde_bytes": 168,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector2::InternalDecrypt",
+      "registered_address": "0xCF730",
+      "analysis_address": "0xCF3B0",
+      "exact_fde_bytes": 548,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3::get_x",
+      "registered_address": "0xCFEE0",
+      "analysis_address": "0xCFD50",
+      "exact_fde_bytes": 392,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3::set_x",
+      "registered_address": "0xCFFC0",
+      "analysis_address": "0xCFEF0",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3::get_y",
+      "registered_address": "0xD0160",
+      "analysis_address": "0xCFFD0",
+      "exact_fde_bytes": 392,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3::set_y",
+      "registered_address": "0xD0240",
+      "analysis_address": "0xD0170",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3::get_z",
+      "registered_address": "0xD03E0",
+      "analysis_address": "0xD0250",
+      "exact_fde_bytes": 392,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3::set_z",
+      "registered_address": "0xD04C0",
+      "analysis_address": "0xD03F0",
+      "exact_fde_bytes": 196,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3::get_Item",
+      "registered_address": "0xD05A0",
+      "analysis_address": "0xD04D0",
+      "exact_fde_bytes": 208,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3::set_Item",
+      "registered_address": "0xD06B0",
+      "analysis_address": "0xD05B0",
+      "exact_fde_bytes": 256,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3::ApplyNewCryptoKey",
+      "registered_address": "0xD0D70",
+      "analysis_address": "0xD0A50",
+      "exact_fde_bytes": 240,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3::RandomizeCryptoKey",
+      "registered_address": "0xD0E40",
+      "analysis_address": "0xD0D80",
+      "exact_fde_bytes": 188,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "CodeStage.AntiCheat.ObscuredTypes.ObscuredVector3::InternalDecrypt",
+      "registered_address": "0xD0F00",
+      "analysis_address": "0xD0B40",
+      "exact_fde_bytes": 556,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "Newtonsoft.Json.Serialization.DefaultSerializationBinder\u002BTypeNameKey::Equals",
+      "registered_address": "0x1E4120",
+      "analysis_address": "0x1E3FB0",
+      "exact_fde_bytes": 216,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "GlobalPaths\u002BPath::.ctor",
+      "registered_address": "0xF1750",
+      "analysis_address": "0xF0F70",
+      "exact_fde_bytes": 1088,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "GlobalPaths\u002BPath::AddFolder",
+      "registered_address": "0xF18E0",
+      "analysis_address": "0xF1790",
+      "exact_fde_bytes": 332,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "SevenZip.Compression.LZMA.Decoder\u002BLiteralDecoder\u002BDecoder2::DecodeNormal",
+      "registered_address": "0x1192550",
+      "analysis_address": "0x1192030",
+      "exact_fde_bytes": 324,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "SevenZip.Compression.LZMA.Decoder\u002BLiteralDecoder\u002BDecoder2::DecodeWithMatchByte",
+      "registered_address": "0x1192560",
+      "analysis_address": "0x1192180",
+      "exact_fde_bytes": 644,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "SevenZip.Compression.LZMA.Encoder\u002BLiteralEncoder\u002BEncoder2::Encode",
+      "registered_address": "0x119C8D0",
+      "analysis_address": "0x1199600",
+      "exact_fde_bytes": 520,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "SevenZip.Compression.LZMA.Encoder\u002BLiteralEncoder\u002BEncoder2::EncodeMatched",
+      "registered_address": "0x119C8E0",
+      "analysis_address": "0x1199810",
+      "exact_fde_bytes": 808,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "SevenZip.Compression.RangeCoder.BitEncoder::Encode",
+      "registered_address": "0x119CFE0",
+      "analysis_address": "0x1198350",
+      "exact_fde_bytes": 260,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "SevenZip.Compression.RangeCoder.BitTreeEncoder::GetPrice",
+      "registered_address": "0x119D6A0",
+      "analysis_address": "0x119AB10",
+      "exact_fde_bytes": 332,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "SevenZip.Compression.RangeCoder.BitTreeEncoder::ReverseGetPrice",
+      "registered_address": "0x119D6B0",
+      "analysis_address": "0x119AC60",
+      "exact_fde_bytes": 324,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "SevenZip.Compression.RangeCoder.BitTreeDecoder::Decode",
+      "registered_address": "0x119D390",
+      "analysis_address": "0x1191780",
+      "exact_fde_bytes": 348,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "SevenZip.Compression.RangeCoder.BitTreeDecoder::ReverseDecode",
+      "registered_address": "0x119D3A0",
+      "analysis_address": "0x1191B10",
+      "exact_fde_bytes": 352,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.account.UserSelectionSettings::ToString",
+      "registered_address": "0x74CA0",
+      "analysis_address": "0x74890",
+      "exact_fde_bytes": 1040,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.account.Uid::ToString",
+      "registered_address": "0x742B0",
+      "analysis_address": "0x741E0",
+      "exact_fde_bytes": 200,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.account.UserHandle::ToString",
+      "registered_address": "0x74700",
+      "analysis_address": "0x74610",
+      "exact_fde_bytes": 228,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.err.ErrorCode::ToString",
+      "registered_address": "0x75190",
+      "analysis_address": "0x750D0",
+      "exact_fde_bytes": 192,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.fs.DirectoryEntry::ToString",
+      "registered_address": "0x757F0",
+      "analysis_address": "0x756F0",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.AnalogStickState::ToString",
+      "registered_address": "0x765C0",
+      "analysis_address": "0x76500",
+      "exact_fde_bytes": 192,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.ControllerSupportArg::ToString",
+      "registered_address": "0x77850",
+      "analysis_address": "0x771C0",
+      "exact_fde_bytes": 1668,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.ControllerSupportResultInfo::ToString",
+      "registered_address": "0x77930",
+      "analysis_address": "0x77860",
+      "exact_fde_bytes": 200,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.DebugPadState::ToString",
+      "registered_address": "0x77C70",
+      "analysis_address": "0x77970",
+      "exact_fde_bytes": 760,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.GesturePoint::ToString",
+      "registered_address": "0x78130",
+      "analysis_address": "0x78070",
+      "exact_fde_bytes": 192,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.GestureState::ToString",
+      "registered_address": "0x78BB0",
+      "analysis_address": "0x782D0",
+      "exact_fde_bytes": 2268,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.NpadControllerColor::ToString",
+      "registered_address": "0x79A30",
+      "analysis_address": "0x79970",
+      "exact_fde_bytes": 192,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.NpadState::ToString",
+      "registered_address": "0x7B580",
+      "analysis_address": "0x7B280",
+      "exact_fde_bytes": 760,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.NpadStateArrayItem::ToString",
+      "registered_address": "0x7B890",
+      "analysis_address": "0x7B590",
+      "exact_fde_bytes": 760,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.NpadFullKeyState::ToString",
+      "registered_address": "0x79E90",
+      "analysis_address": "0x79B90",
+      "exact_fde_bytes": 760,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.NpadHandheldState::ToString",
+      "registered_address": "0x7A2F0",
+      "analysis_address": "0x79FF0",
+      "exact_fde_bytes": 760,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.NpadJoyDualState::ToString",
+      "registered_address": "0x7A910",
+      "analysis_address": "0x7A610",
+      "exact_fde_bytes": 760,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.NpadJoyLeftState::ToString",
+      "registered_address": "0x7AD70",
+      "analysis_address": "0x7AA70",
+      "exact_fde_bytes": 760,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.NpadJoyRightState::ToString",
+      "registered_address": "0x7B1D0",
+      "analysis_address": "0x7AED0",
+      "exact_fde_bytes": 760,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.DirectionState::ToString",
+      "registered_address": "0x77D80",
+      "analysis_address": "0x77C80",
+      "exact_fde_bytes": 252,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.SixAxisSensorState::ToString",
+      "registered_address": "0x7BED0",
+      "analysis_address": "0x7BAD0",
+      "exact_fde_bytes": 1016,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.SixAxisSensorState::GetQuaternion",
+      "registered_address": "0x7BF00",
+      "analysis_address": "0x23725F0",
+      "exact_fde_bytes": 96,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.TouchState::ToString",
+      "registered_address": "0x82D80",
+      "analysis_address": "0x82940",
+      "exact_fde_bytes": 1088,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.VibrationDeviceInfo::ToString",
+      "registered_address": "0x82EE0",
+      "analysis_address": "0x82E10",
+      "exact_fde_bytes": 200,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.VibrationFileInfo::ToString",
+      "registered_address": "0x83900",
+      "analysis_address": "0x83440",
+      "exact_fde_bytes": 1208,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.hid.VibrationValue::ToString",
+      "registered_address": "0x83C00",
+      "analysis_address": "0x83990",
+      "exact_fde_bytes": 624,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.irsensor.ClusteringProcessorConfig::ToString",
+      "registered_address": "0x84FD0",
+      "analysis_address": "0x84A00",
+      "exact_fde_bytes": 832,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.irsensor.ClusteringData::ToString",
+      "registered_address": "0x841A0",
+      "analysis_address": "0x83C10",
+      "exact_fde_bytes": 600,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.irsensor.ClusteringProcessorState::ToString",
+      "registered_address": "0x853A0",
+      "analysis_address": "0x85050",
+      "exact_fde_bytes": 848,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.irsensor.Rect::ToString",
+      "registered_address": "0x85640",
+      "analysis_address": "0x83F30",
+      "exact_fde_bytes": 624,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.irsensor.IrCameraConfig::ToString",
+      "registered_address": "0x85610",
+      "analysis_address": "0x84D40",
+      "exact_fde_bytes": 648,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.Result::ToString",
+      "registered_address": "0x86650",
+      "analysis_address": "0x864F0",
+      "exact_fde_bytes": 244,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.util.Color4u8::ToString",
+      "registered_address": "0x86B60",
+      "analysis_address": "0x868F0",
+      "exact_fde_bytes": 624,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.util.Float2::ToString",
+      "registered_address": "0x86B90",
+      "analysis_address": "0x83E70",
+      "exact_fde_bytes": 192,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.util.Float3::ToString",
+      "registered_address": "0x86CB0",
+      "analysis_address": "0x86BC0",
+      "exact_fde_bytes": 228,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "nn.util.Float4::ToString",
+      "registered_address": "0x86F70",
+      "analysis_address": "0x86D00",
+      "exact_fde_bytes": 624,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "Steamworks.CGameID::IsValid",
+      "registered_address": "0x35510",
+      "analysis_address": "0x35350",
+      "exact_fde_bytes": 444,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "GooglePlayGames.BasicApi.Nearby.ConnectionRequest::.ctor",
+      "registered_address": "0xF252C0",
+      "analysis_address": "0xF25070",
+      "exact_fde_bytes": 312,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "GooglePlayGames.BasicApi.SavedGame.SavedGameMetadataUpdate\u002BBuilder::WithUpdatedPlayedTime",
+      "registered_address": "0xF26C90",
+      "analysis_address": "0xF26BA0",
+      "exact_fde_bytes": 232,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "VibrationParameters::ToString",
+      "registered_address": "0x15C7FF0",
+      "analysis_address": "0x15C7F00",
+      "exact_fde_bytes": 228,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "InControl.VersionInfo::ToString",
+      "registered_address": "0x11C2480",
+      "analysis_address": "0x11C2170",
+      "exact_fde_bytes": 784,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    },
+    {
+      "method": "InControl.VersionInfo::ToShortString",
+      "registered_address": "0x11C27A0",
+      "analysis_address": "0x11C2490",
+      "exact_fde_bytes": 784,
+      "cie_augmentation": "zR",
+      "plain_cie": true
+    }
+  ],
+  "loaded_core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+  "source_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "source_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "frames_sha256": "aa464d27b080531baa5dfbd5591c63ba331fbded3091ff8eca6f054d87369abf",
+  "cies_sha256": "36612164cd3fc84a23cfb5cd88121706fc5f0f4276166a958017082ff7e2f1c5",
+  "scope": "Original current Cpp2IL accepted mapping/CIE inventory, additive bounds eligibility and actual GetAssetBundleSafe analysis observations. Synthetic parser cases use fresh in-memory NSO copies; original files remain unchanged. Existing selected exception-bearing bodies are disclosed; their previous scope is not silently changed. Plain-frame API eligibility rejects exception metadata without interpreting it. Analysis checks retain the original constructor requests/config reloads and unsupported flag loads. No original guest code, initializer, stack unwinding or recovered CIL is executed, and no full-source or whole-game readiness claim is made."
+}

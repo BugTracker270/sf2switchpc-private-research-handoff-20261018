@@ -1,0 +1,25 @@
+{
+  "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovery_run": "nso-native-leaves-v29",
+  "cases": 0,
+  "checks": 0,
+  "lazy_initialization_cases": 0,
+  "already_initialized_cases": 0,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": "System.IO.InvalidDataException: Reachable unresolved helper/unsafe address operation; actual body was not executed",
+  "blocked_calls": [
+    {
+      "offset": 16,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers"
+    }
+  ],
+  "unreachable_helper_calls": 0,
+  "cil_sha256": "d5c8cfad5ae956ebe7b4034a33dec48605a803417c3ae8619580da830be370e4",
+  "assembly_sha256": "a831f9ca45b1d0981077c5f35bb3c727895bcd09b1210e131e6ae5bcbc7a5fd0",
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+}

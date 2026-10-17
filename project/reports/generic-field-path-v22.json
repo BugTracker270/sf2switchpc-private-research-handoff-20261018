@@ -1,0 +1,87 @@
+{
+  "status": "PASS_SCOPED_METADATA_GENERIC_FP_FIELD_PATHS",
+  "checks": 15,
+  "tests": [
+    {
+      "offset": "0x10C",
+      "size": 4,
+      "expected": "startValue.value.x",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x110",
+      "size": 4,
+      "expected": "startValue.value.y",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x114",
+      "size": 4,
+      "expected": "startValue.value.z",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x118",
+      "size": 4,
+      "expected": "endValue.value.x",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x11C",
+      "size": 4,
+      "expected": "endValue.value.y",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x120",
+      "size": 4,
+      "expected": "endValue.value.z",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x124",
+      "size": 4,
+      "expected": "changeValue.value.x",
+      "status": "PASS"
+    },
+    {
+      "offset": "0x10A",
+      "size": 4,
+      "expected": null,
+      "status": "PASS"
+    },
+    {
+      "offset": "0x119",
+      "size": 4,
+      "expected": null,
+      "status": "PASS"
+    },
+    {
+      "offset": "0x118",
+      "size": 8,
+      "expected": null,
+      "status": "PASS"
+    },
+    {
+      "offset": "0x10",
+      "size": 4,
+      "expected": null,
+      "status": "PASS"
+    },
+    {
+      "offset": "0x134",
+      "size": 4,
+      "expected": null,
+      "status": "PASS"
+    },
+    {
+      "offset": "0x118",
+      "size": 16,
+      "expected": null,
+      "status": "PASS"
+    }
+  ],
+  "actual_caller_reads": 6,
+  "actual_caller_writes": 3,
+  "scope": "Metadata layout and selected actual recovered caller ISIL only. Requires separate recovered-CIL execution against original ARM64 fixtures; no complete source claim."
+}

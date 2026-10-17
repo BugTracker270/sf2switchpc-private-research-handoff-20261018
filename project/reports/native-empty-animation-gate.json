@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ORIGINAL_ARM64_EMPTY_ANIMATION_FILE_GATE",
+  "checks": 256,
+  "original_text_sha256": {
+    "animation_read_binary": "70b8c4f426322c2c80bebecebf0d48ed7c551fbbf521e66ed9c51dab01692b75",
+    "string_null_or_empty": "295b247649b67b5d0b1785cc050a292a8be2286b152a3eef6889613cfc5d1ddf"
+  },
+  "executed_functions": {
+    "animation_read_binary": 1280,
+    "string_null_or_empty": 512
+  },
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "resource_io_calls": 0,
+  "scope": "Null and zero-length filename paths with synthetic initialized String metadata and varied animation storage. Original loader immediately returns without loading a file or changing animation fields. Does not validate physics/event behavior of the no-file moves."
+}

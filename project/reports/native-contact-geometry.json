@@ -1,0 +1,26 @@
+{
+  "status": "PASS_COMPILED_CONTACT_REFERENCE_VS_ORIGINAL_ARM64",
+  "cases": 4131,
+  "checks": 28917,
+  "contacts": 1305,
+  "fixture_sha256": "01b49849baacc8d7d2267dab03d11cb7b2a7156e787e89eea430735fd1c04f44",
+  "calls": {
+    "equation_line": 4131,
+    "distance_contact": 4131
+  },
+  "executed_functions": {
+    "equation_line": 16524,
+    "distance_contact": 25307
+  },
+  "original_text_sha256": {
+    "equation_line": "c295d0acf631daecf18e77a5de597139081ace1de031a98673f9bd479f7d31a9",
+    "distance_contact": "7a77ca1cbb25a5781336f4b0df596b42cba91dcf7808d1fc81defec2ce40d12e"
+  },
+  "metadata_initialization_guards": [
+    "0x3b898fb",
+    "0x3b898ad"
+  ],
+  "text_modified": false,
+  "game_function_mocks": 0,
+  "scope": "Finite nondegenerate lines, endpoint projection and contact inclusion/mutation. Original bytes with synthetic initialized objects. Full capsule/collision and hit ordering are not certified."
+}

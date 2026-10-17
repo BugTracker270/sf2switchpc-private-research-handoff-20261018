@@ -1,0 +1,1538 @@
+{
+  "status": "PASS_BOUNDED_COMPANION_COPY_AND_EXISTING_VIRTUAL_CONTRACT",
+  "baseline_selection_fixtures": 43,
+  "baseline_contract_checks": 218,
+  "added_contract_checks": 58,
+  "maximum_companion_definitions": 32,
+  "checks": 276,
+  "cases": 99,
+  "tests": [
+    {
+      "name": "original input hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "original Stream ReadByte slot/signature",
+      "status": "PASS"
+    },
+    {
+      "name": "exact paired slot19 and same original receiver",
+      "status": "PASS"
+    },
+    {
+      "name": "exact paired slot19 and same original receiver proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "compatible reference return in X0",
+      "status": "PASS"
+    },
+    {
+      "name": "compatible reference return in X0 proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "same receiver preserved through extra bounded copy",
+      "status": "PASS"
+    },
+    {
+      "name": "same receiver preserved through extra bounded copy proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "field store before class dereference keeps its original timing",
+      "status": "PASS"
+    },
+    {
+      "name": "field store before class dereference keeps its original timing proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "semantic call after dispatch is outside the null-fault window",
+      "status": "PASS"
+    },
+    {
+      "name": "semantic call after dispatch is outside the null-fault window proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "missing raw argument",
+      "status": "PASS"
+    },
+    {
+      "name": "missing raw argument proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong raw companion register",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong raw companion register proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "slot declaration mismatch",
+      "status": "PASS"
+    },
+    {
+      "name": "slot declaration mismatch proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "negative slot",
+      "status": "PASS"
+    },
+    {
+      "name": "negative slot proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "large slot",
+      "status": "PASS"
+    },
+    {
+      "name": "large slot proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong function offset",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong function offset proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong companion offset",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong companion offset proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "indexed function-slot load",
+      "status": "PASS"
+    },
+    {
+      "name": "indexed function-slot load proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong companion class identity",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong companion class identity proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong function class identity",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong function class identity proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "receiver from a different same-typed parameter",
+      "status": "PASS"
+    },
+    {
+      "name": "receiver from a different same-typed parameter proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong object class-header offset",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong object class-header offset proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate class definition",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate class definition proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "late class definition",
+      "status": "PASS"
+    },
+    {
+      "name": "late class definition proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "copy-origin cycle",
+      "status": "PASS"
+    },
+    {
+      "name": "copy-origin cycle proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "receiver Phi origin",
+      "status": "PASS"
+    },
+    {
+      "name": "receiver Phi origin proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "root parameter address escape",
+      "status": "PASS"
+    },
+    {
+      "name": "root parameter address escape proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "class address escape after call",
+      "status": "PASS"
+    },
+    {
+      "name": "class address escape after call proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "field store in null-fault timing window",
+      "status": "PASS"
+    },
+    {
+      "name": "field store in null-fault timing window proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "additional field read in null-fault timing window",
+      "status": "PASS"
+    },
+    {
+      "name": "additional field read in null-fault timing window proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "semantic call in null-fault timing window",
+      "status": "PASS"
+    },
+    {
+      "name": "semantic call in null-fault timing window proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "non-dominating original receiver copy",
+      "status": "PASS"
+    },
+    {
+      "name": "non-dominating original receiver copy proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate graph block",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate graph block proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "asymmetric predecessor",
+      "status": "PASS"
+    },
+    {
+      "name": "asymmetric predecessor proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "off-cone one-sided incoming successor edge",
+      "status": "PASS"
+    },
+    {
+      "name": "off-cone one-sided incoming successor edge proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "off-cone one-sided incoming predecessor edge",
+      "status": "PASS"
+    },
+    {
+      "name": "off-cone one-sided incoming predecessor edge proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "genuinely later unrelated malformed subgraph does not certify whole-method topology",
+      "status": "PASS"
+    },
+    {
+      "name": "genuinely later unrelated malformed subgraph does not certify whole-method topology proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "later malformed subgraph returning into the call cone rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "later malformed subgraph returning into the call cone rejects proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "value-type represented receiver",
+      "status": "PASS"
+    },
+    {
+      "name": "value-type represented receiver proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "interface represented receiver",
+      "status": "PASS"
+    },
+    {
+      "name": "interface represented receiver proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "static target",
+      "status": "PASS"
+    },
+    {
+      "name": "static target proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "nonvirtual target",
+      "status": "PASS"
+    },
+    {
+      "name": "nonvirtual target proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "generic method target",
+      "status": "PASS"
+    },
+    {
+      "name": "generic method target proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "unproved return ABI System.Single",
+      "status": "PASS"
+    },
+    {
+      "name": "unproved return ABI System.Single proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "unproved return ABI System.Double",
+      "status": "PASS"
+    },
+    {
+      "name": "unproved return ABI System.Double proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "unproved return ABI System.Void",
+      "status": "PASS"
+    },
+    {
+      "name": "unproved return ABI System.Void proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "unproved return ABI System.Int32\u0026",
+      "status": "PASS"
+    },
+    {
+      "name": "unproved return ABI System.Int32\u0026 proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "opt-in disabled",
+      "status": "PASS"
+    },
+    {
+      "name": "opt-in disabled proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "all original43 selection fixtures retained",
+      "status": "PASS"
+    },
+    {
+      "name": "zero companion copies preserves direct-load baseline",
+      "status": "PASS"
+    },
+    {
+      "name": "zero companion copies preserves direct-load baseline proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "one companion copy accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "one companion copy accepted proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "31copies plus memory leaf meets32definition bound",
+      "status": "PASS"
+    },
+    {
+      "name": "31copies plus memory leaf meets32definition bound proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "32copies plus memory leaf exceeds32definition bound",
+      "status": "PASS"
+    },
+    {
+      "name": "32copies plus memory leaf exceeds32definition bound proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "companion copy cycle rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "companion copy cycle rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate intermediate copy definition rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate intermediate copy definition rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate companion leaf definition rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate companion leaf definition rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "last copy after call rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "last copy after call rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "per-link late intermediate definition rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "per-link late intermediate definition rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "leaf load after its copy rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "leaf load after its copy rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "intermediate copy outside call block rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "intermediate copy outside call block rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "leaf load outside call block rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "leaf load outside call block rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "companion Phi source rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "companion Phi source rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "companion arithmetic source rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "companion arithmetic source rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "undefined companion source rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "undefined companion source rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "companion memory reload rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "companion memory reload rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "copied companion wrong slot rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "copied companion wrong slot rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "copied companion wrong class identity rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "copied companion wrong class identity rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "copied companion indexed load rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "copied companion indexed load rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "copied companion raw X2 register rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "copied companion raw X2 register rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "intermediate companion address escape after call rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "intermediate companion address escape after call rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "leaf companion address escape after call rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "leaf companion address escape after call rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "semantic call between companion load and copy rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "semantic call between companion load and copy rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "field store between companion load and copy rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "field store between companion load and copy rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "extra faulting load between companion load and copy rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "extra faulting load between companion load and copy rejected proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "inline memory companion remains outside original witness",
+      "status": "PASS"
+    },
+    {
+      "name": "inline memory companion remains outside original witness proof is read-only",
+      "status": "PASS"
+    },
+    {
+      "name": "copied companion produces immutable parameter-root carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "copied-companion proof remains valid after native metadata operands are discarded",
+      "status": "PASS"
+    },
+    {
+      "name": "copied-companion carrier survives exact call clone",
+      "status": "PASS"
+    },
+    {
+      "name": "copied-companion carrier rejects changed same-typed receiver",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "proven Call emission accepts exact original root",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh instruction clone retains exact immutable proof/root",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "stale target rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "same-type second-parameter receiver substitution rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "redefined original root rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "forged default-null proof root rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "stale opcode rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "foreign owner rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "legitimate same-root forwarding remains valid",
+      "status": "PASS"
+    },
+    {
+      "name": "CopyCoalescer preserves exact protected proof root",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "CallVoid with proven nonvoid target keeps dispatch identity",
+      "status": "PASS"
+    },
+    {
+      "name": "virtual exact emitted target and opcode",
+      "status": "PASS"
+    },
+    {
+      "name": "direct-base exact emitted target and opcode",
+      "status": "PASS"
+    },
+    {
+      "name": "virtual-discard exact emitted target and opcode",
+      "status": "PASS"
+    },
+    {
+      "name": "discard emits a real result pop",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter refuses stale receiver instead of falling back to ordinary call",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh semantic fixture proof",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter refuses stale target before importing an unrelated descriptor",
+      "status": "PASS"
+    },
+    {
+      "name": "existing temporary-graph clone source explicitly preserves the carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 0",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 0",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 0",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 1",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 1",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 1",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 2",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 2",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 2",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 3",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 3",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 3",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 4",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 4",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 4",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 5",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 5",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 5",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 6",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 6",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 6",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 7",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 7",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 7",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 8",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 8",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 8",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 9",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 9",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 9",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 10",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 10",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 10",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 11",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 11",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 11",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 12",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 12",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 12",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 13",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 13",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 13",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 14",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 14",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 14",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 15",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 15",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 15",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 16",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 16",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 16",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 17",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 17",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 17",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 18",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 18",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 18",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 19",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 19",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 19",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 20",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 20",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 20",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 21",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 21",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 21",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 22",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 22",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 22",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 23",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 23",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 23",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 24",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 24",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 24",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 25",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 25",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 25",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 26",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 26",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 26",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 27",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 27",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 27",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 28",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 28",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 28",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 29",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 29",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 29",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 30",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 30",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 30",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR virtual override result/effect 31",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR deliberate base call retains direct result/effect 31",
+      "status": "PASS"
+    },
+    {
+      "name": "CLR CallVoid discard preserves override effect 31",
+      "status": "PASS"
+    },
+    {
+      "name": "virtual-null rejects before any base/override effect",
+      "status": "PASS"
+    },
+    {
+      "name": "discard-null rejects before any base/override effect",
+      "status": "PASS"
+    },
+    {
+      "name": "direct base control may run a body that does not dereference null this",
+      "status": "PASS"
+    },
+    {
+      "name": "original218 contract checks and99hostCLR cases retained",
+      "status": "PASS"
+    }
+  ],
+  "selections": [
+    {
+      "name": "exact paired slot19 and same original receiver",
+      "expected": true,
+      "accepted": true
+    },
+    {
+      "name": "compatible reference return in X0",
+      "expected": true,
+      "accepted": true
+    },
+    {
+      "name": "same receiver preserved through extra bounded copy",
+      "expected": true,
+      "accepted": true
+    },
+    {
+      "name": "field store before class dereference keeps its original timing",
+      "expected": true,
+      "accepted": true
+    },
+    {
+      "name": "semantic call after dispatch is outside the null-fault window",
+      "expected": true,
+      "accepted": true
+    },
+    {
+      "name": "missing raw argument",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "wrong raw companion register",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "slot declaration mismatch",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "negative slot",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "large slot",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "wrong function offset",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "wrong companion offset",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "indexed function-slot load",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "wrong companion class identity",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "wrong function class identity",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "receiver from a different same-typed parameter",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "wrong object class-header offset",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "duplicate class definition",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "late class definition",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "copy-origin cycle",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "receiver Phi origin",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "root parameter address escape",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "class address escape after call",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "field store in null-fault timing window",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "additional field read in null-fault timing window",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "semantic call in null-fault timing window",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "non-dominating original receiver copy",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "duplicate graph block",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "asymmetric predecessor",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "off-cone one-sided incoming successor edge",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "off-cone one-sided incoming predecessor edge",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "genuinely later unrelated malformed subgraph does not certify whole-method topology",
+      "expected": true,
+      "accepted": true
+    },
+    {
+      "name": "later malformed subgraph returning into the call cone rejects",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "value-type represented receiver",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "interface represented receiver",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "static target",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "nonvirtual target",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "generic method target",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "unproved return ABI System.Single",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "unproved return ABI System.Double",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "unproved return ABI System.Void",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "unproved return ABI System.Int32\u0026",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "opt-in disabled",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "zero companion copies preserves direct-load baseline",
+      "expected": true,
+      "accepted": true
+    },
+    {
+      "name": "one companion copy accepted",
+      "expected": true,
+      "accepted": true
+    },
+    {
+      "name": "31copies plus memory leaf meets32definition bound",
+      "expected": true,
+      "accepted": true
+    },
+    {
+      "name": "32copies plus memory leaf exceeds32definition bound",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "companion copy cycle rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "duplicate intermediate copy definition rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "duplicate companion leaf definition rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "last copy after call rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "per-link late intermediate definition rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "leaf load after its copy rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "intermediate copy outside call block rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "leaf load outside call block rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "companion Phi source rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "companion arithmetic source rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "undefined companion source rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "companion memory reload rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "copied companion wrong slot rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "copied companion wrong class identity rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "copied companion indexed load rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "copied companion raw X2 register rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "intermediate companion address escape after call rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "leaf companion address escape after call rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "semantic call between companion load and copy rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "field store between companion load and copy rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "extra faulting load between companion load and copy rejected",
+      "expected": false,
+      "accepted": false
+    },
+    {
+      "name": "inline memory companion remains outside original witness",
+      "expected": false,
+      "accepted": false
+    }
+  ],
+  "emissions": [
+    {
+      "name": "virtual",
+      "opcodes": [
+        "ldarg",
+        "callvirt",
+        "stloc",
+        "br",
+        "ldloc",
+        "ret"
+      ],
+      "exact_target_identity_retained": true
+    },
+    {
+      "name": "direct-base",
+      "opcodes": [
+        "ldarg",
+        "call",
+        "stloc",
+        "br",
+        "ldloc",
+        "ret"
+      ],
+      "exact_target_identity_retained": true
+    },
+    {
+      "name": "virtual-discard",
+      "opcodes": [
+        "ldarg",
+        "callvirt",
+        "pop",
+        "br",
+        "ret"
+      ],
+      "exact_target_identity_retained": true
+    }
+  ],
+  "runtime_controls": [
+    {
+      "name": "virtual-null",
+      "exception": "System.NullReferenceException",
+      "base_effects": 0,
+      "override_effects": 0
+    },
+    {
+      "name": "discard-null",
+      "exception": "System.NullReferenceException",
+      "base_effects": 0,
+      "override_effects": 0
+    },
+    {
+      "name": "direct-null-control",
+      "result": 17,
+      "base_effects": 1,
+      "override_effects": 0
+    }
+  ],
+  "fatal": null,
+  "core_sha256": "197403735d374bdde681ad203cdb3eb18e8cd9eef01897908a8c4f9e786ad99a",
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "helper_source_sha256": "fb9144842f246d3b8359444e58b8c072701f3e4169c3b8c8b477c68e79dfb1d2",
+  "emitter_source_sha256": "00f82a270fc70fa643390ff01d9684fa6de12c64997ebf1dea2e49d896b14dda",
+  "instruction_source_sha256": "22592040093b3b950b24c7db62878082d457dc0f9f7e34cf6c479b641091be93",
+  "probe_source_sha256": "431e20e5dc070233c7f55b8e2945c17c51677cc13e23221291400cacd2ae0571",
+  "core_modified_by_probe": false,
+  "game_methods_executed": 0,
+  "native_code_executed": false,
+  "emitter_tests_are_synthetic": true,
+  "actual_recovered_runtime_performed": false,
+  "emitted_call_opcodes_rewritten_by_probe": 0,
+  "full_clean_decompile_ready": false,
+  "portable_game_ready": false,
+  "host_fixture_member_substitutions": 1,
+  "host_fixture_type_boundary": "Original Stream metadata target is bound to explicitly authored DispatchBase.ReadByte() for CLR opcode-contract tests only",
+  "scope": "Independent synthetic raw-ISIL selection and proof-carrier/emitter tests using exact original Stream.ReadByte metadata. The real production proof and IlGenerator run; emitted call/callvirt and target identity are retained at an explicitly authored host type/member boundary, then executed to distinguish override/direct/null effects. FP/void targets remain unproved native return ABIs; CallVoid tests discard a proven nonvoid target only. This does not execute an original/recovered game caller, repair MethodInfo diagnostic loads, validate native null exceptions or claim full decompilation. Actual recovered-prefix and unchanged-native fixture reports are separate."
+}

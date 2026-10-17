@@ -1,0 +1,18 @@
+{
+  "status": "PASS_FROZEN_V39_THREE_TOOL_ASSEMBLIES_AND_COMPLETE_PATCH",
+  "files": [
+    {
+      "path": "analysis\\il2cpp\\assembly-leaf-getter-v39-tool-binaries\\Cpp2IL.dll",
+      "sha256": "0e14d88950532c34b062b003e66988c300603d6e4bef241fc6acbe2fe736b289"
+    },
+    {
+      "path": "analysis\\il2cpp\\assembly-leaf-getter-v39-tool-binaries\\Cpp2IL.Core.dll",
+      "sha256": "52e9fa40275b71be5ea48e1bab1816e59dc4412ddfc0c627c29345f3086a4929"
+    },
+    {
+      "path": "analysis\\il2cpp\\assembly-leaf-getter-v39-tool-binaries\\LibCpp2IL.dll",
+      "sha256": "c15339ded4039f7aaf827c80db38788a02ac3e86a016e24bcdefc9ef515d52df"
+    }
+  ],
+  "frozen_reverse_check_exit_code": 0
+}

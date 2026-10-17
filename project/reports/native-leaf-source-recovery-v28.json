@@ -1,0 +1,82 @@
+{
+  "status": "IN_PROGRESS",
+  "updated": "2026-10-17T11:29:21.577562+00:00",
+  "recovery_run": "nso-native-leaves-v28",
+  "compiler_before": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 20266
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 33148
+    }
+  ],
+  "compiler_after": [],
+  "evidence": {
+    "accessor_selection": {
+      "report": "reports/private-access-leaf-selection-v28.json",
+      "status": "PASS_NATIVE_LEAF_ACCESSOR_SELECTION_ONLY",
+      "checks": 19,
+      "selected_getters": 1561,
+      "selected_setters": 429,
+      "fields_examined": 20449
+    },
+    "accessor_native": {
+      "report": "reports/private-access-native-store-v28.json",
+      "status": "PASS_ORIGINAL_REFERENCE_FIELD_SETTER",
+      "cases": 64,
+      "checks": 128
+    },
+    "accessor_recovered": {
+      "report": "reports/recovered-leaf-accessor-nso-native-leaves-v28.json",
+      "status": "NOT_STARTED"
+    },
+    "aggregate_selection": {
+      "report": "reports/integer-aggregate-leaf-recognition.json",
+      "status": "PASS_SCOPED_16BYTE_NATIVE_FIELD_COPY_RECOGNITION",
+      "checks": 24,
+      "matched_obscured_int_leaves": 18
+    },
+    "aggregate_native": {
+      "report": "reports/integer-aggregate-leaf-native-fixtures.json",
+      "status": "PASS_ORIGINAL_NATIVE_16BYTE_FIELD_COPY_FIXTURES",
+      "cases": 1024,
+      "checks": 6144
+    },
+    "aggregate_recovered": {
+      "report": "reports/recovered-aggregate-leaves-nso-native-leaves-v28.json",
+      "status": "NOT_STARTED"
+    },
+    "factory_selection": {
+      "report": "reports/compiler-priority-exception-factory.json",
+      "status": "PASS_NATIVE_FACTORY_METADATA_AND_EXACT_CONSTRUCTOR_PAIR",
+      "checks": 26
+    },
+    "factory_native": {
+      "report": "reports/compiler-priority-native-exception-factory.json",
+      "status": "PASS_ORIGINAL_NO_ARGUMENT_FACTORY_TO_MANAGED_INVOKER_BOUNDARY",
+      "cases": 64,
+      "checks": 320
+    },
+    "factory_recovered": {
+      "report": "reports/recovered-exception-factory-nso-native-leaves-v28.json",
+      "status": "NOT_STARTED"
+    }
+  },
+  "stack_status": "NOT_STARTED",
+  "cil_assemblies_audited": 0,
+  "syntax_valid": false,
+  "active_sessions": [
+    "84671"
+  ],
+  "whole_game_source_ready": false,
+  "changes": [
+    "Restore existing public nonvirtual accessors only after an exact native scalar/ref load/store plus return witness, preserving original private field flags.",
+    "Recover complete native two-word integer field-copy leaves as managed whole-field operations before generic argument analysis.",
+    "Recognize the reviewed no-argument returning exception factory and preserve its exact default constructor effect as an adjacent allocation/constructor pair."
+  ],
+  "limits": "Opt-in alternative patch only. The accessor scope excludes nested paths, addresses, generic/value receivers, effectful accessors, readonly writes and unsupported initialization contracts. Aggregate tests compare managed fields and adjacent storage; padding-byte identity, generic aggregate entry/call/return and GC remain outside scope. Exception tests reach an explicit managed invoker boundary; host CLR constructor checks do not execute the Nintendo GC, original constructor implementation, full caller or gameplay. Compiler diagnostic counts include cascades and do not measure completion. Full game source and port readiness remain incomplete."
+}

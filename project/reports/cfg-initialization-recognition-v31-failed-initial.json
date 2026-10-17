@@ -1,0 +1,88 @@
+{
+  "status": "FAIL_SCOPED_CFG_INITIALIZATION_RECOGNITION",
+  "native_start": "0x7A8F20",
+  "native_bytes": 520,
+  "native_sha256": "a809ba86d78a7b73c9938699426f19400aca92d342ef5e3ce61cbef56121b67f",
+  "checks": 17,
+  "tests": [
+    {
+      "name": "seven exact metadata sites",
+      "status": "FAIL"
+    },
+    {
+      "name": "one exact cold class site",
+      "status": "FAIL"
+    },
+    {
+      "name": "metadata identity mismatch rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "class identity mismatch rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "read-only flags rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "unrelated base assignment rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong metadata argument register rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "initializer extra effect rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "semantic EOR remains separate",
+      "status": "FAIL"
+    },
+    {
+      "name": "semantic EOR flag use rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "semantic cold continuation branch mismatch rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "class header mismatch rejected",
+      "status": "FAIL"
+    },
+    {
+      "name": "class load receiver mismatch rejected",
+      "status": "FAIL"
+    },
+    {
+      "name": "class cold helper mismatch rejected",
+      "status": "FAIL"
+    },
+    {
+      "name": "flag semantic use after skip rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "truncated body cannot recover final scheduled guard",
+      "status": "PASS"
+    },
+    {
+      "name": "misaligned body rejected",
+      "status": "PASS"
+    }
+  ],
+  "metadata_guards": [],
+  "class_guards": [
+    {
+      "Start": 8032196,
+      "Skip": 8032216,
+      "Target": 11724576,
+      "ClassLoad": 8032192,
+      "ClassRegister": 0
+    }
+  ],
+  "scope": "Exact 520-byte original FDE body matcher only; no recovered CLR execution or class-constructor equivalence claim."
+}

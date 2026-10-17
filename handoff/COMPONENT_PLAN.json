@@ -1,0 +1,128 @@
+{
+  "status": "PROPOSED_NOT_PACKAGED_NOT_UPLOADED",
+  "repository_source_root": "project",
+  "regular_git_max_file_bytes": 104857600,
+  "planned_release_asset_max_bytes": 1992294400,
+  "target_group_raw_bytes": 1073741824,
+  "parent_cloud_extraction_reserve_bytes": 5368709120,
+  "component_groups": [
+    {
+      "id": "source",
+      "purpose": "Modified tool sources, original scripts/tests, licenses, locks and entry documentation",
+      "selectors": [
+        "src source excluding bin/obj",
+        "tests",
+        "patches",
+        "refs source excluding .git/bin/obj",
+        "root handoff and specification"
+      ],
+      "ordinary_git": true
+    },
+    {
+      "id": "managed-build-closures",
+      "purpose": "Frozen and current probe/runtime dependencies with exact identities",
+      "selectors": [
+        "src/re/*/bin/Release/net10.0",
+        "refs/Cpp2IL/*/bin/Release/net10.0",
+        "tools/microsoft.netframework.referenceassemblies.net35-1.0.3"
+      ],
+      "depends_on": [
+        "source"
+      ]
+    },
+    {
+      "id": "v40-frozen-and-stopped-checkpoints",
+      "purpose": "Immutable v40 sources/output and original stopped v41 evidence",
+      "selectors": [
+        "analysis/il2cpp/object-isinst-abi-v40-*",
+        "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40",
+        "backups",
+        "reports and logs named in the handoff"
+      ],
+      "secret_review": "Includes nested archives/history; do not upload before recursive clearance"
+    },
+    {
+      "id": "effective-native-minimum",
+      "purpose": "Already-extracted main and metadata for bounded native/caller probes",
+      "selectors": [
+        "unpacked/effective/exefs",
+        "unpacked/effective/romfs/Data/Managed/Metadata",
+        "analysis/nso/main-uncompressed.nso",
+        "analysis/nso/unwind-inventory-v1"
+      ],
+      "keys_needed": false
+    },
+    {
+      "id": "native-research",
+      "purpose": "SQLite/JSONL indexes and corpora; Ghidra projects separate natural subgroups",
+      "selectors": [
+        "analysis/nso",
+        "analysis/il2cpp/research.sqlite",
+        "analysis/il2cpp/effective-main"
+      ]
+    },
+    {
+      "id": "historical-recovery-outputs",
+      "purpose": "Run-specific CIL/source/export/compiler evidence and reference views",
+      "selectors": [
+        "remaining analysis/il2cpp",
+        "analysis/reconstruction",
+        "logs"
+      ],
+      "independent_by_run": true
+    },
+    {
+      "id": "assets-and-effective-romfs",
+      "purpose": "Original extracted assets and recovered typed/content/audio catalogs",
+      "selectors": [
+        "analysis/assets",
+        "unpacked/effective/romfs excluding selected metadata"
+      ],
+      "independent_by_natural_directory": true
+    },
+    {
+      "id": "original-inputs",
+      "purpose": "Private provenance inputs within supplied rights; no keys",
+      "selectors": [
+        "input/base",
+        "input/update",
+        "input/reference",
+        "unpacked/base",
+        "unpacked/update",
+        "unpacked/nsp_pfs0"
+      ],
+      "exclude": [
+        "input/keys",
+        "input/hactool-key-profile"
+      ]
+    },
+    {
+      "id": "tools-and-caches",
+      "purpose": "Exact existing tool packages and redirected caches; license and credential review required",
+      "selectors": [
+        "tools",
+        "cache"
+      ],
+      "never_ordinary_git": true
+    },
+    {
+      "id": "git-histories",
+      "purpose": "Original and nested Git databases byte-for-byte after full object/config scan",
+      "selectors": [
+        ".git",
+        "refs/*/.git"
+      ],
+      "never_add_as_gitlinks": true,
+      "quarantine_if_secret_bearing": true
+    }
+  ],
+  "policy": "Every original regular file must map exactly once to repository source, reviewed artifact or explicit exclusion/quarantine. No silent omissions, no repository sharding to evade quotas, no Actions/LFS/Codespaces billing. Staging is excluded from recursion. No inherited workflow is placed in the new root .github/workflows.",
+  "bulk_gate": [
+    "Correct account authenticated",
+    "NEW repository private visibility verified",
+    "Small upload/download SHA256 test passed locally",
+    "Parent verifies actual private binary retrieval",
+    "Recursive secret and Git-object review complete",
+    "Measured archive sizes, upload throughput and capacity acceptable"
+  ]
+}

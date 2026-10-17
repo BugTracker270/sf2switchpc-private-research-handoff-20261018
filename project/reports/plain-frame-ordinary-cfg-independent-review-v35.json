@@ -1,0 +1,40 @@
+{
+  "status": "SOURCE_REVIEW_NO_ADDITIONAL_BLOCKER_PRODUCTION_GATES_PENDING",
+  "source_review_only": true,
+  "core_modified_by_reviewer": false,
+  "shared_core_built_by_reviewer": false,
+  "runtime_tested_by_reviewer": false,
+  "reviewed_sources": [
+    {"path": "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64ValueThisThunks.cs", "sha256": "4a24d9598320b91ec19078882d9c46bd90b399c055301cdd81d61c4e2c9f1ee4"},
+    {"path": "refs/Cpp2IL/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs", "sha256": "b463b461da33a0359254813552777d96b4b718bdf195144f418506cea38f3d8b"},
+    {"path": "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64CfgInitializationPattern.cs", "sha256": "e5e9bc6669d38f5879d79ca4a2cc0a2e7b5924cc405434c2e9eea1dd2cbdfcfa", "same_as_frozen_v34": true}
+  ],
+  "checked_contracts": [
+    "The MethodAnalysisContext plain-range overload intentionally queries the original registered pointer; GetRawBytesForMethod and GetIsilFromMethod explicitly use the app+analysisAddress overload, so a selected8-byte wrapper is not mistaken for its unboxed analysis body.",
+    "Eligibility uses the per-application ConditionalWeakTable state and existing frame-cache lock. It does not change registered pointers, managed identities, selected mappings or alias registration.",
+    "CIE descriptions retain the original supported version/encoding parse and a separate exact-zR property. FDE ranges retain size plus Plain=(exact zR and zero FDE augmentation). zPLR, unknown augmentation and nonempty/truncated FDE augmentation do not become plain.",
+    "The existing general bounds API still returns a valid zPLR range size and still permits valid nonempty augmentation; only the new plain API uses the extra eligibility flag. Shared positive/negative cache state does not replace or poison the general range result.",
+    "Exact lookup retains aligned indexed start, positive aligned length, text-segment/record bounds, exact initial-location agreement, expected0x1B encoding and the next independently indexed function boundary. False plain queries return size0.",
+    "New ordinary raw-byte selection requires a real metadata Definition and excludes attribute generators. It maps the exact analysis address, checks raw-size bounds, and GetIsil requires the exact certified RawBytes length before disassembling that body.",
+    "The existing CFG matcher is byte-for-byte unchanged. Known metadata/class initializer identities remain distinct. Class acceptance keeps X0 receiver loads, rejects W0 flag/finished clobbers, checks direct interior predecessor uniqueness and cold-helper predecessor identity, proves flag liveness and equivalent joins, and rejects unsupported field-reload shapes.",
+    "Accepted class sites still emit an explicit semantic CallVoid(known helper,X0) at the native guard start followed by a jump to the proven join. The class load and scheduled field/arithmetic instructions before that start remain. KFR must separately establish the exact original represented class before emitting RunClassConstructor; unknown class origins do not become no-ops.",
+    "Only the separately proven metadata-assurance flag load becomes a constant; intervening approved scheduled instructions remain and flag death is checked. No original game-field initializer/store/reload is generalized into a compiler flag.",
+    "The pre-existing sequential ordinary path remains for compatibility. For a newly eligible plain ordinary body its general exact-range query necessarily succeeds under the same NSO24 opt-in, so that path retains a semantic constructor request rather than its legacy no-op fallback."
+  ],
+  "compatibility_scope": {
+    "new_ordinary_extension_excludes_eh_bearing_frames": true,
+    "legacy_selected_value_this_scope_changed": false,
+    "legacy_selected_zR_bodies": 275,
+    "legacy_selected_zPLR_bodies": 12,
+    "warning_about_scope": "EH exclusion describes the new ordinary extension. The unchanged selected-value route still includes12 existing zPLR bodies; this review does not recertify their EH semantics or claim a global EH exclusion."
+  },
+  "required_next_gates": [
+    "Compile the reviewed source snapshot through the parent-coordinated serial Core build slot.",
+    "Run the planned plain-range positive and fresh in-memory unknown-CIE/nonempty/truncated-augmentation negatives; prove original zPLR general range still succeeds while plain eligibility rejects.",
+    "Check exact app/analysis-address versus original wrapper selection, missing/interior/unaligned/off-opt-in queries, old mapping/alias/range invariance and parallel cache queries.",
+    "Run unchanged native CFG matcher mutation fixtures including W0, alternate direct interior entries, liveness and unsupported post-cctor reloads. Fresh actual IR/CIL/runtime/source checks must establish the effect of ordinary integration."
+  ],
+  "no_additional_blocking_source_issue_found": true,
+  "full_clean_decompile_ready": false,
+  "scope": "Read-only review of the listed unbuilt source hashes. Bounds/augmentation eligibility is not CFI interpretation or exception recovery. Known direct-CFG witness restrictions and original constructor/field effects remain separate from type identity, emitted CIL and runtime behavior. No whole-method, EH, gameplay, full clean source or portable-game claim is made."
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS_ORIGINAL_NESTED_HFA_IDENTITY_BOUNDARIES",
+  "methods": [
+    {
+      "alias": "convert",
+      "rva": "0xA6A1E0",
+      "sha256": "110f46b5b35c069160560c6ad6786f647dd44e8760a52a46fc22dbbcd7630b91"
+    },
+    {
+      "alias": "unwrap",
+      "rva": "0xA5D9F0",
+      "sha256": "110f46b5b35c069160560c6ad6786f647dd44e8760a52a46fc22dbbcd7630b91"
+    },
+    {
+      "alias": "wrap",
+      "rva": "0xA5DA00",
+      "sha256": "110f46b5b35c069160560c6ad6786f647dd44e8760a52a46fc22dbbcd7630b91"
+    }
+  ],
+  "cases": 240,
+  "checks": 720,
+  "fixture_sha256": "92ebd80f174a7945688f6436c9cd72d20b2f351a3a267f5b0085b2e584c94740",
+  "abi_reference": "https://github.com/ARM-software/abi-aa/blob/2025Q1/aapcs64/aapcs64.rst#5105homogeneous-aggregates",
+  "scope": "Three distinct metadata-linked original one-instruction RET functions. Three input and returned scalar FP registers checked directly, including arbitrary float bit patterns and NaN payloads without arithmetic. No runtime hooks, boxed receiver/constructor, other ABI shape or game parity claim."
+}

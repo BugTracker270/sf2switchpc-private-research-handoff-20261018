@@ -1,0 +1,56 @@
+{
+  "status": "PASS_ORIGINAL_NO_ARGUMENT_FACTORY_TO_MANAGED_INVOKER_BOUNDARY",
+  "cases": 64,
+  "checks": 320,
+  "factory_rva": "0xb4da50",
+  "existing_factory_rva": "0xB4D8F0",
+  "reviewed_functions": {
+    "factory": {
+      "rva": "0xb4da50",
+      "bytes": 40,
+      "sha256": "77e21efcb01708100765982b2ac01e7e2b655dfb76c30c1a3fbfb157ac26ac4b"
+    },
+    "core": {
+      "rva": "0xb4d660",
+      "bytes": 276,
+      "sha256": "9e3411197d487cd2b54a9f187d7c4fc2a56319c1cc0f7277e563af9fe58acc49"
+    },
+    "initialize": {
+      "rva": "0xb2e3c0",
+      "bytes": 8,
+      "sha256": "acac22dd522bbc3fabdece4cc419be8580df7b7a4e73b1be82f78c292348d587"
+    },
+    "dispatch": {
+      "rva": "0xb2e3d0",
+      "bytes": 160,
+      "sha256": "c6256a0890b092660369cf49c667d9dd5b76134232ab68cd61c2acf0655542bc"
+    },
+    "corlib": {
+      "rva": "0xb547a0",
+      "bytes": 16,
+      "sha256": "963ae7b0935b32a1dee79fb9b805e3e6b0c088e405a85003c97f7dcaa2641500"
+    },
+    "existing_factory": {
+      "rva": "0xb4d8f0",
+      "bytes": 64,
+      "sha256": "4e61e3e023553e3cab19d9f65c79da55c56a0db266d361a7a13788be17411d58"
+    }
+  },
+  "executed_blocks": {
+    "factory": 64,
+    "corlib": 64,
+    "core": 256,
+    "initialize": 64,
+    "dispatch": 512,
+    "existing_factory": 160
+  },
+  "supplied_runtime_boundaries": {
+    "0xb07210": 64,
+    "0xb5b110": 64,
+    "0xb05200": 64,
+    "0xb2dc20": 64,
+    "0x10006000": 64
+  },
+  "text_modified": false,
+  "scope": "Original no-argument ArrayTypeMismatchException tail factory, existing 64-byte IndexOutOfRangeException factory, zero-message generic factory path, corlib getter and default-constructor dispatcher. Corlib class lookup, zeroed allocation, .ctor/0 lookup, invocation preparation and managed invoker are supplied boundaries. Constructor bodies, GC, allocation failure, exception unwinding, alternate message paths and whole gameplay are not executed."
+}

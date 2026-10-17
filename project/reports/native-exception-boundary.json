@@ -1,0 +1,20 @@
+{
+  "status": "PASS_NATIVE_EXCEPTION_POINTER_TO_CXX_BOUNDARY",
+  "cases": 32,
+  "checks": 224,
+  "executed_functions": {
+    "raise_to_boundary": 96
+  },
+  "calls": {
+    "raise_to_boundary": 32
+  },
+  "external_runtime_boundaries": {
+    "supplied_cxx_allocate_exception": 32,
+    "supplied_cxx_throw_stop": 32
+  },
+  "original_text_sha256": "3efc344a37be598a77b7f639605c29edd07aa289a5b11aff2b88ea1898105ff6",
+  "supplied_cpp_rtti_got": "0x397B170",
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "scope": "Original exception raiser with a non-null pre-existing System.Exception.trace_ips at +0x10. C++ allocate_exception and throw are explicit supplied boundaries; the payload carries the same exception pointer, RTTI import and null destructor. No stack capture, allocation failure, actual C++ unwinding, managed catch/filter, null exception or full runtime parity claim."
+}

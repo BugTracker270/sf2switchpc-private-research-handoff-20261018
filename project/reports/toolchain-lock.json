@@ -1,0 +1,1940 @@
+{
+  "repositories": [
+    {
+      "repository": "https://github.com/SciresM/hactool",
+      "purpose": "NSP/NCA inspection",
+      "priority": "primary",
+      "acquired_utc": "2026-10-16T16:52:35.076307+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "master",
+      "commit": "1d64a83450e025622f3468c28fc4164dad2c5ef6",
+      "archived": false,
+      "license": "ISC",
+      "upstream_pushed_at": "2023-12-04T13:39:54Z",
+      "clone_url": "https://github.com/SciresM/hactool.git",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\SciresM--hactool-README.md",
+      "readme_sha256": "49362385f4fb0a48f36344151b1477eb0f26d142db159ebfcadb0624db4038bf",
+      "review_note": "1.4.0 official Windows release executes successfully. Source clone pins current master separately. NCA header/body inspection, base-aware patch extraction and NSO decompression used. Key profile is local-only. It can return 0 after invalid headers, so semantic output gates are required."
+    },
+    {
+      "repository": "https://github.com/DarkMatterCore/nxdumptool",
+      "purpose": "Own-console dumping; rewrite branch",
+      "priority": "optional",
+      "acquired_utc": "2026-10-16T16:52:37.487491+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "rewrite",
+      "commit": "ade1a481121498ec649fbc832afe733050790acd",
+      "archived": false,
+      "license": "GPL-3.0",
+      "upstream_pushed_at": "2026-08-04T00:04:03Z",
+      "clone_url": "https://github.com/DarkMatterCore/nxdumptool.git",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\DarkMatterCore--nxdumptool-README.md",
+      "readme_sha256": "3bc608843a625a8dbc93799a0b9343f74801c3f807d61df376750e422943bf10",
+      "review_note": "rewrite branch reviewed as a format reference. Signature/ticket structures corroborated common-ticket parsing, including little-endian signature type. No console program installed; supplied NSPs suffice. No keys or SDK fetched."
+    },
+    {
+      "repository": "https://github.com/Adubbz/Ghidra-Switch-Loader",
+      "purpose": "ARM64 NSO Ghidra import",
+      "priority": "primary",
+      "acquired_utc": "2026-10-16T16:52:40.094782+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "master",
+      "commit": "5d80d195bf284f8ad5f2f9b66c3bdd5c67dd66a6",
+      "archived": false,
+      "license": "ISC",
+      "upstream_pushed_at": "2026-09-21T23:53:47Z",
+      "clone_url": "https://github.com/Adubbz/Ghidra-Switch-Loader.git",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\Adubbz--Ghidra-Switch-Loader-README.md",
+      "readme_sha256": "889acfacb76e2a912d40d2747c4ba8fae1b061ed797228c91a4d8d0568225dab",
+      "review_note": "Official 1.6.1-c600d05 release explicitly built for Ghidra 12.1.2, with published SHA-256 matched. Installed inside portable Ghidra. Real main import succeeded with ARM64 language and correct 0x7100000000 base."
+    },
+    {
+      "repository": "https://github.com/NationalSecurityAgency/ghidra",
+      "purpose": "Native disassembly and pseudocode",
+      "priority": "primary",
+      "acquired_utc": "2026-10-16T16:52:42.555065+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "master",
+      "commit": "9a723ce99952771b8368329503aa589ae233e916",
+      "archived": false,
+      "license": "Apache-2.0",
+      "upstream_pushed_at": "2026-10-16T16:52:06Z",
+      "clone_url": "https://github.com/NationalSecurityAgency/ghidra.git",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\NationalSecurityAgency--ghidra-README.md",
+      "readme_sha256": "8d4cc75b5c6d0d6ce218bbfa45adc36029d4719d6bcabb33499a36d66ccbf3ec",
+      "review_note": "Official Ghidra 12.1.2 release hash matched. Existing JDK 26 satisfies release minimum 21. Headless import, metadata labels and actual pseudocode/disassembly exports verified. Initial automatic analysis timed out at 600 seconds; bounded scripted recovery is used and recorded separately."
+    },
+    {
+      "repository": "https://github.com/Perfare/Il2CppDumper",
+      "purpose": "IL2CPP metadata/type reconstruction",
+      "priority": "conditional",
+      "acquired_utc": "2026-10-16T16:52:44.753916+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "master",
+      "commit": "4741d46ba9cd6159c5d853eb9d6fc48b4bfa2b1a",
+      "archived": false,
+      "license": "MIT",
+      "upstream_pushed_at": "2024-08-18T17:01:30Z",
+      "clone_url": "https://github.com/Perfare/Il2CppDumper.git",
+      "error": "RemoteDisconnected('Remote end closed connection without response')",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\Perfare--Il2CppDumper-README.md",
+      "readme_sha256": "1416c018520dab31a71407b43ab25967b1df29d3f9f78d2d392447c666848dd9",
+      "review_note": "v6.7.46 runs on the actual effective NSO and metadata v24. 90,105 method records, metadata schemas, header and DummyDll generated. DummyDll bodies are stubs. Source confirms the <=24 static dummy-object argument rule used in independent ABI checks."
+    },
+    {
+      "repository": "https://github.com/SamboyCoding/Cpp2IL",
+      "purpose": "Possible ARM64/NSO control-flow reconstruction",
+      "priority": "conditional",
+      "acquired_utc": "2026-10-16T16:52:46.596140+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "development",
+      "commit": "b5ad444b82267cb1e4b88b8b373c008105bdea52",
+      "archived": false,
+      "license": "MIT",
+      "upstream_pushed_at": "2026-09-15T15:05:50Z",
+      "clone_url": "https://github.com/SamboyCoding/Cpp2IL.git",
+      "error": "RemoteDisconnected('Remote end closed connection without response')",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\SamboyCoding--Cpp2IL-README.md",
+      "readme_sha256": "5527e3e0a5d96f2628b047383f5680f5aec27b87a944c44d54c02e9d70909527",
+      "review_note": "Development commit built locally with installed SDK. NSO and ARM64 paths confirmed in source. Recovered CIL contains many diagnostic helper calls despite a 100% tool success message. A local MIT-source patch corrects legacy ARM64 static argument placement, verified on a native-matched sample. Full CIL correctness remains unproven."
+    },
+    {
+      "repository": "https://github.com/NepMods/Cpp2IL-Analysis",
+      "purpose": "Specialized NSO analysis compatibility research",
+      "priority": "optional",
+      "acquired_utc": "2026-10-16T16:52:48.482081+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "development",
+      "commit": "39b570b0859e5971afc3edcd4bfc95d57e6313a9",
+      "archived": false,
+      "license": "MIT",
+      "upstream_pushed_at": "2025-04-22T11:17:55Z",
+      "clone_url": "https://github.com/NepMods/Cpp2IL-Analysis.git",
+      "error": "RemoteDisconnected('Remote end closed connection without response')",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\NepMods--Cpp2IL-Analysis-README.md",
+      "readme_sha256": "cf7c2f5259d6937f30079dc8e1a1b9f0aca8be1dfacac6ccb644dde3c737ce6a",
+      "review_note": "Source metadata and README reviewed. Stale rewrite/new-analysis instructions and inherited old release links do not establish better target support than current upstream. Not executed or imported. Reconsider only for a specific missing opcode after a native comparison."
+    },
+    {
+      "repository": "https://github.com/AssetRipper/AssetRipper",
+      "purpose": "Unity assets if Unity proven",
+      "priority": "conditional",
+      "acquired_utc": "2026-10-16T16:52:50.601107+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "FAILED",
+      "branch": "master",
+      "commit": "beeb50ee1c223e856c860caa338e5309404956a3",
+      "archived": false,
+      "license": "GPL-3.0",
+      "upstream_pushed_at": "2026-10-10T22:41:33Z",
+      "clone_url": "https://github.com/AssetRipper/AssetRipper.git",
+      "error": "RemoteDisconnected('Remote end closed connection without response')",
+      "review_note": "Official 2.0.0 release digest matched; local headless web API bound to 127.0.0.1. Actual 2018.1.9f1 data loaded and exported. Folder-only backend detection is Unknown, so a separate staging copy with metadata-only DLLs aids field decoding. This synthetic Mono detection does not change original IL2CPP evidence."
+    },
+    {
+      "repository": "https://github.com/nesrak1/UABEA",
+      "purpose": "Second-opinion Unity serialized data inspector",
+      "priority": "optional",
+      "acquired_utc": "2026-10-16T16:52:58.440155+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "FAILED",
+      "branch": "master",
+      "commit": "057e2f6ae67ebc94a38faca9f946f8577162fa99",
+      "archived": false,
+      "license": "MIT",
+      "upstream_pushed_at": "2026-05-11T04:31:04Z",
+      "clone_url": "https://github.com/nesrak1/UABEA.git",
+      "error": "RemoteDisconnected('Remote end closed connection without response')",
+      "review_note": "MIT upstream metadata reviewed; raw README fetch had transient transport failures. Deferred second-opinion inspector because primary export passed raw TextAsset equality checks. No unverified binary acquired; suitable only if a concrete serialized-data mismatch requires it."
+    },
+    {
+      "repository": "https://github.com/nesrak1/UABEANext",
+      "purpose": "Second-opinion Unity inspector",
+      "priority": "optional",
+      "acquired_utc": "2026-10-16T16:53:00.233124+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "FAILED",
+      "branch": "master",
+      "commit": "5c5aef52f877f70fe056e76424848d691cca49ae",
+      "archived": false,
+      "license": "MIT",
+      "upstream_pushed_at": "2026-10-07T01:32:09Z",
+      "clone_url": "https://github.com/nesrak1/UABEANext.git",
+      "error": "RemoteDisconnected('Remote end closed connection without response')",
+      "review_note": "MIT upstream identity/commit recorded. Documentation fetch failure preserved. Deferred; no assumption about current NSO or target-version support. Existing source-object manifest and raw files retain evidence for later inspection."
+    },
+    {
+      "repository": "https://github.com/djkaty/Il2CppInspector",
+      "purpose": "Legacy IL2CPP structure reference",
+      "priority": "optional",
+      "acquired_utc": "2026-10-16T16:53:02.180128+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "master",
+      "commit": "116c6355e7ee3656eab85ca753f913d428abc7a3",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "upstream_pushed_at": "2022-05-13T11:13:16Z",
+      "clone_url": "https://github.com/djkaty/Il2CppInspector.git",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\djkaty--Il2CppInspector-README.md",
+      "readme_sha256": "0dc59f2cb54ae133c322f8fad0aa3e34e4f8346b9da1646fedb96b6223f4c56d",
+      "review_note": "AGPL upstream source metadata reviewed as a legacy reference. Not installed because working Dumper/current Cpp2IL/Ghidra paths exist. Do not infer modern ARM64 compatibility from historical capabilities."
+    },
+    {
+      "repository": "https://github.com/morluto/rea",
+      "purpose": "Agent-facing local Ghidra provider",
+      "priority": "primary",
+      "acquired_utc": "2026-10-16T16:53:04.487854+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "main",
+      "commit": "9d940c2f284cc6f75b27900336e52ceeba4aa2af",
+      "archived": false,
+      "license": "MIT",
+      "upstream_pushed_at": "2026-10-16T16:46:41Z",
+      "clone_url": "https://github.com/morluto/rea.git",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\morluto--rea-README.md",
+      "readme_sha256": "6856a965e4b6cc3ca7b4211c7cfa63fc59e6aa638b30bdb38c46a5eb3e4cfdb2",
+      "review_note": "Official rea-agents 6.5.0 installed locally with npm lifecycle scripts disabled. Node 22.23.1 meets declared requirements. Doctor accepts Ghidra/JDK but Windows native self-test refuses removable exFAT TEMP: fixed NTFS is required. Host configuration was not edited; headless Ghidra fallback is functional."
+    },
+    {
+      "repository": "https://github.com/onerdna/sf-2.x-guide",
+      "purpose": "Android engine research; not Switch evidence",
+      "priority": "reference",
+      "acquired_utc": "2026-10-16T16:53:07.326137+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "main",
+      "commit": "243be4a50f7edccf1d15a694daa63cebc08ef687",
+      "archived": true,
+      "license": "UNSPECIFIED",
+      "upstream_pushed_at": "2025-09-02T15:07:13Z",
+      "clone_url": "https://github.com/onerdna/sf-2.x-guide.git",
+      "error": "RemoteDisconnected('Remote end closed connection without response')",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\onerdna--sf-2.x-guide-README.md",
+      "readme_sha256": "5560f186a45c1f5ba4fa706fd26d3922c9b97cbb7785315c47bed4cd786b88a3",
+      "review_note": "Describes transition to Unity/IL2CPP and tool workflow. Fundamental backend advice corroborates independently observed Switch data, but Android paths and later 2.x behavior are not transferred to Switch 1.1.0. No source license declared in metadata; reference-only, no code imported."
+    },
+    {
+      "repository": "https://github.com/moltinginstar/sf2mod",
+      "purpose": "Android save research; never execute mod workflow",
+      "priority": "reference",
+      "acquired_utc": "2026-10-16T16:53:09.289104+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "main",
+      "commit": "ce58a83291e7e43b8bc20657aab72d35adefa2ba",
+      "archived": false,
+      "license": "UNSPECIFIED",
+      "upstream_pushed_at": "2026-08-22T05:54:01Z",
+      "clone_url": "https://github.com/moltinginstar/sf2mod.git",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\moltinginstar--sf2mod-README.md",
+      "readme_sha256": "6eb21b1e4465f7177baf5e0aa58d1aac4be85b76cfbf14ec001d8425fe12bf89",
+      "error": "RemoteDisconnected('Remote end closed connection without response')",
+      "review_note": "Android save/hash and signing-certificate/device-ID workflow is not a Switch save implementation. README reviewed; no mod, re-sign, cheat or device-injection commands run. Reference-only; no permission inferred to copy unspecified-license code or assets."
+    },
+    {
+      "repository": "https://github.com/onerdna/stalker",
+      "purpose": "Android data representation source only",
+      "priority": "reference",
+      "acquired_utc": "2026-10-16T16:53:12.473104+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "master",
+      "commit": "2b0b0bbba14f1e1848d4029b2d88f46a06412c1d",
+      "archived": false,
+      "license": "GPL-3.0",
+      "upstream_pushed_at": "2026-10-06T17:12:36Z",
+      "clone_url": "https://github.com/onerdna/stalker.git",
+      "error": "RemoteDisconnected('Remote end closed connection without response')",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\onerdna--stalker-README.md",
+      "readme_sha256": "50d29e1b33db169ea6296086fe11745dfc950a517318f43a312ccb783a9d50f0",
+      "review_note": "GPL-3.0 source identity reviewed. Save record names can be compared only after matching the supplied Switch schemas. Mobile energy, Forge and signing assumptions are not used. No APK or intrusive Android helper installed."
+    },
+    {
+      "repository": "https://github.com/FlipThoseTitle/Gymnast-Tool-Suite",
+      "purpose": "Animation tooling source; no external game assets",
+      "priority": "reference",
+      "acquired_utc": "2026-10-16T16:53:14.561559+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "main",
+      "commit": "539d6e7833fb22b0e40bd9db1bf37b3407a6a216",
+      "archived": false,
+      "license": "GPL-3.0",
+      "upstream_pushed_at": "2026-10-16T04:40:53Z",
+      "clone_url": "https://github.com/FlipThoseTitle/Gymnast-Tool-Suite.git",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\FlipThoseTitle--Gymnast-Tool-Suite-README.md",
+      "readme_sha256": "0075135055588306302fc8d31af55f1a533897d438557bc240a9c24b433875b7",
+      "review_note": "Only source-only SF2 animation importer was fetched from the pinned GPL-3.0 tree. Its point-frame layout was independently matched to actual Switch animation data; an original bounded decoder was implemented. No bundled scenes or third-party Nekki assets fetched, and no Blender/Cascadeur add-on executed."
+    },
+    {
+      "repository": "https://github.com/NikkaGames/AutoShadow",
+      "purpose": "Android instrumentation source only; never inject",
+      "priority": "reference",
+      "acquired_utc": "2026-10-16T16:53:16.970690+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "main",
+      "commit": "49d459be5818eb5f7afede002870f046fd212465",
+      "archived": false,
+      "license": "NOASSERTION",
+      "upstream_pushed_at": "2025-08-13T21:40:27Z",
+      "clone_url": "https://github.com/NikkaGames/AutoShadow.git",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\NikkaGames--AutoShadow-README.md",
+      "readme_sha256": "dca18e478b6818acfc9d7c5e4c292f0a220c4ec50ca16e320fdcfc97e39bc26a",
+      "review_note": "Source identity/README only. Not a Switch dumper or port framework. No injection, executable mod or APK run; license metadata requires further review before any reuse."
+    },
+    {
+      "repository": "https://github.com/Unity-Technologies/InputSystem",
+      "purpose": "Input API reference; implementation out of scope",
+      "priority": "deferred",
+      "acquired_utc": "2026-10-16T16:53:19.388277+00:00",
+      "execution": "not executed",
+      "platform": "upstream-dependent; see reviewed README",
+      "status": "REVIEWED_DOCS",
+      "branch": "develop",
+      "commit": "05e45ddbaf18a93245b068d787d74b738b90d01c",
+      "archived": false,
+      "license": "NOASSERTION",
+      "upstream_pushed_at": "2026-10-12T14:38:05Z",
+      "clone_url": "https://github.com/Unity-Technologies/InputSystem.git",
+      "readme": "F:\\SF2SwitchPC\\reports\\upstream\\Unity-Technologies--InputSystem-README.md",
+      "readme_sha256": "8b423369bb659adff5708ee64499a4eac579bebe3e38922a16089251f9a91a80",
+      "review_note": "Official package reference only. New current package cannot be assumed compatible with Unity 2018.1.9f1. Input implementation/editor migration is outside current reverse-engineering scope; no package added to a fake Unity project."
+    }
+  ],
+  "releases": [
+    {
+      "name": "hactool 1.4.0",
+      "source": "https://github.com/SciresM/hactool/releases/tag/1.4.0",
+      "local_path": "F:\\SF2SwitchPC\\tools\\hactool-1.4.0-win.zip",
+      "sha256": "36e9a221c8a7949c86ada9388eb703c90663aedfe9f65b6032429614c5e1abe8",
+      "upstream_sha256": null,
+      "integrity": "LOCAL_HASH_ONLY_NO_UPSTREAM_DIGEST",
+      "license": "ISC",
+      "status": "EXECUTED_NCA_EXTRACTION"
+    },
+    {
+      "name": "Ghidra 12.1.2",
+      "source": "https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.1.2_build",
+      "local_path": "F:\\SF2SwitchPC\\tools\\ghidra_12.1.2_PUBLIC_20260605.zip",
+      "sha256": "b62e81a0390618466c019c60d8c2f796ced2509c4c1aea4a37644a77272cf99d",
+      "upstream_sha256": "b62e81a0390618466c019c60d8c2f796ced2509c4c1aea4a37644a77272cf99d",
+      "integrity": "MATCHED_PUBLISHED_DIGEST",
+      "license": "Apache-2.0",
+      "status": "EXECUTED_NATIVE_IMPORT_DECOMPILE"
+    },
+    {
+      "name": "SwitchLoader 1.6.1-c600d05 / 12.1.2",
+      "source": "https://github.com/Adubbz/Ghidra-Switch-Loader/releases/tag/1.6.1-c600d05-Ghidra_12.1.2",
+      "local_path": "F:\\SF2SwitchPC\\tools\\SwitchLoader-1.6.1-c600d05-Ghidra_12.1.2.zip",
+      "sha256": "0bc6374c11cb7a1275a0eda22184b9b2efe5a9a7e415cc29361c334966c1f477",
+      "upstream_sha256": "0bc6374c11cb7a1275a0eda22184b9b2efe5a9a7e415cc29361c334966c1f477",
+      "integrity": "MATCHED_PUBLISHED_DIGEST",
+      "license": "ISC",
+      "status": "REAL_NSO_IMPORT_VERIFIED"
+    },
+    {
+      "name": "Il2CppDumper 6.7.46",
+      "source": "https://github.com/Perfare/Il2CppDumper/releases/tag/v6.7.46",
+      "local_path": "F:\\SF2SwitchPC\\tools\\Il2CppDumper-win-v6.7.46.zip",
+      "sha256": "f5fc60dfc5c034c1ff3fc651514416ebd47658a63493207734537fd25fa2dea2",
+      "upstream_sha256": null,
+      "integrity": "LOCAL_HASH_ONLY_NO_UPSTREAM_DIGEST",
+      "license": "MIT",
+      "status": "EXECUTED_METADATA_RECONSTRUCTION"
+    },
+    {
+      "name": "AssetRipper 2.0.0",
+      "source": "https://github.com/AssetRipper/AssetRipper/releases/tag/2.0.0",
+      "local_path": "F:\\SF2SwitchPC\\tools\\AssetRipper_win_x64-2.0.0.zip",
+      "sha256": "9a7ef0e7c5c3ea5b90b4e6d855e2d98d5f7ec8c3f9e26fccbc194c6a7b01baf7",
+      "upstream_sha256": "9a7ef0e7c5c3ea5b90b4e6d855e2d98d5f7ec8c3f9e26fccbc194c6a7b01baf7",
+      "integrity": "MATCHED_PUBLISHED_DIGEST",
+      "license": "GPL-3.0",
+      "status": "ACTUAL_ASSETS_EXPORTED"
+    }
+  ],
+  "note": "Docs/source only unless release records explicitly confirm acquisition; no game data transmitted.",
+  "updated_at": "2026-10-17T22:13:42.501609+03:00",
+  "rea": {
+    "version": "6.5.0",
+    "status": "BLOCKED_FIXED_NTFS_REQUIRED",
+    "package_lock": "tools/rea-6.5.0/package-lock.json",
+    "host_config_changed": false
+  },
+  "cpp2il": {
+    "commit": "b5ad444b82267cb1e4b88b8b373c008105bdea52",
+    "framework": "net10.0",
+    "patch": "src/re/tool-patches/cpp2il-sf2-recovery-corrections.patch",
+    "patch_sha256": "9054d4bd71e2b9a4ba713cf437ddbfad3573866d57b818b16b9111858f332c30",
+    "corrections_lock": "reports/cpp2il-corrections-lock.json",
+    "status": "PARTIAL_RECOVERY_NATIVE_VALIDATION_REQUIRED",
+    "complete_corrections": {
+      "upstream": "https://github.com/SamboyCoding/Cpp2IL",
+      "commit": "b5ad444b82267cb1e4b88b8b373c008105bdea52",
+      "license": "MIT",
+      "patch": "src\\re\\tool-patches\\cpp2il-sf2-recovery-corrections.patch",
+      "sha256": "9054d4bd71e2b9a4ba713cf437ddbfad3573866d57b818b16b9111858f332c30",
+      "files": [
+        {
+          "path": "Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs",
+          "sha256": "a2639c8df3dee7c8ade5c4143a5f74b18e6af2558918c32cc1e015b825e7c592"
+        },
+        {
+          "path": "Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs",
+          "sha256": "c5489016f9d9368ebf0a92849e099e78ec3e82e2ae71f095ec2dd0eb4be8b715"
+        },
+        {
+          "path": "Cpp2IL.Core/Analysis/MetadataAddressResolver.cs",
+          "sha256": "706e73d8a6d7076de657decb47c701dfe84a7dccb3931e9ffeef54a0ed92e5bb"
+        },
+        {
+          "path": "Cpp2IL.Core/Analysis/MetadataResolver.cs",
+          "sha256": "cc215315bbb2b526082b0c4370ef9bf91797a32e08ff4a66faeef8dd762ee7ed"
+        },
+        {
+          "path": "Cpp2IL.Core/Analysis/InterfaceDispatchRecovery.cs",
+          "sha256": "5c2171a2b2a85a3e0b81943041b1fc2b57a90e8272a8f236109e6591e3f9da06"
+        },
+        {
+          "path": "Cpp2IL.Core/Utils/LegacyArm64AllocationPattern.cs",
+          "sha256": "bcff811b5e745644adac343853a026311d1de1f30c371e41a97a8be62d84f5d8"
+        },
+        {
+          "path": "Cpp2IL.Core/Il2CppApiFunctions/NewArm64KeyFunctionAddresses.cs",
+          "sha256": "093b156b97d49ac057c42985bc1d995e5777463ae9b132664795bb1f764093c9"
+        },
+        {
+          "path": "Cpp2IL.Core/Utils/LegacyArm64InitializationPattern.cs",
+          "sha256": "c9ad1261b7940cce6e7049a2f430c01113017b6a7f37480b52638fbbb5f236da"
+        },
+        {
+          "path": "Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs",
+          "sha256": "a45abe72126f94d03eaeadf48e437c2ae618bc6831638c16ed2fb6600a3842f8"
+        },
+        {
+          "path": "Cpp2IL.Core/Utils/LegacyArm64ExceptionRaiserPattern.cs",
+          "sha256": "cba7320450b2c26e829c680becafd34e52233b98d4def90a3e1242750fc148c1"
+        },
+        {
+          "path": "Cpp2IL.Core/Utils/LegacyArm64ThunkScanner.cs",
+          "sha256": "c7360baab0b79d9a3f229a6d103c93e083c3aef4574d822fbdf3970bec1a4795"
+        },
+        {
+          "path": "Cpp2IL.Core/Analysis/ThrowHelperRecovery.cs",
+          "sha256": "30883cba7839a8f8cae1cfe7e111ff1970ec2b7a2bd86e45b789cd4cfabcd22d"
+        },
+        {
+          "path": "Cpp2IL.Core/Utils/LegacyArm64ArrayAllocationPattern.cs",
+          "sha256": "2e3f7c89011f8baf4d71138759aa0fae8914bfa1cf42e297a9dc21fc2b17db3f"
+        },
+        {
+          "path": "Cpp2IL.Core/Analysis/LocalVariables.cs",
+          "sha256": "262ff6f8ed386dcc0ea2b36965517e9b5e98ab46c73e878e373cd8afb2afbe23"
+        },
+        {
+          "path": "Cpp2IL.Core/Utils/LegacyArm64ExceptionFactoryPattern.cs",
+          "sha256": "d221f48068c2e2dec77fd62da7b921977df8f462a9de3f506f6608d02e06a55f"
+        },
+        {
+          "path": "Cpp2IL.Core/IlGenerator.cs",
+          "sha256": "cfc82035903d749b5e54ba51a5783ab9e63ef7a0929bdb501338cded32fe5b5f"
+        },
+        {
+          "path": "Cpp2IL.Core/UninitializedObjectAllocation.cs",
+          "sha256": "05d1f4e6f6b9d404ffcb35830fb4a9a7b7836c909ee52278afb662da7d65d8fe"
+        },
+        {
+          "path": "Cpp2IL.Core/ProcessingLayers/AttributeInjectorProcessingLayer.cs",
+          "sha256": "177099d399f25c9db4ee7e1d303d4cefa0fe6ccc8d4350f17bead29763295daf"
+        },
+        {
+          "path": "Cpp2IL.Core/Utils/LegacyArm64DefaultMemberPattern.cs",
+          "sha256": "7b3ce477b50846e6d68ac3055957fe4924a0d577057d2df9ad5ac55c06e34397"
+        },
+        {
+          "path": "Cpp2IL.Core/Analysis/LegacyDefaultMemberRecovery.cs",
+          "sha256": "797a14c056f61fea6b6ab2e857fdd5b1129eedfb81893eb1fc376e46cd5b560f"
+        }
+      ],
+      "recovery_run": "nso-bool-fields-v19",
+      "processing_options": [
+        "--use-processor",
+        "attributeinjector",
+        "--processor-config",
+        "attr-injector-original-markers-only=true"
+      ],
+      "harness_passed": 211,
+      "default_member_recovery": {
+        "status": "PASS_NATIVE_ARGUMENT_METADATA_AND_INDEXER_SOURCE_CORRELATION",
+        "recovery_run": "nso-bool-fields-v19",
+        "recovered_attributes": 116,
+        "assemblies": [
+          {
+            "file": "Assembly-CSharp-firstpass.dll",
+            "recovered": 26
+          },
+          {
+            "file": "Assembly-CSharp.dll",
+            "recovered": 1
+          },
+          {
+            "file": "DOTween.dll",
+            "recovered": 0
+          },
+          {
+            "file": "DOTween46.dll",
+            "recovered": 0
+          },
+          {
+            "file": "Facebook.Unity.Settings.dll",
+            "recovered": 0
+          },
+          {
+            "file": "FyberLitJson.dll",
+            "recovered": 1
+          },
+          {
+            "file": "FyberPlugin.dll",
+            "recovered": 0
+          },
+          {
+            "file": "Ionic.Zip.Unity.dll",
+            "recovered": 0
+          },
+          {
+            "file": "Mono.Security.dll",
+            "recovered": 4
+          },
+          {
+            "file": "mscorlib.dll",
+            "recovered": 13
+          },
+          {
+            "file": "protobuf-net.dll",
+            "recovered": 5
+          },
+          {
+            "file": "SmartFox2X.dll",
+            "recovered": 1
+          },
+          {
+            "file": "System.Configuration.dll",
+            "recovered": 7
+          },
+          {
+            "file": "System.Core.dll",
+            "recovered": 0
+          },
+          {
+            "file": "System.dll",
+            "recovered": 30
+          },
+          {
+            "file": "System.Xml.dll",
+            "recovered": 24
+          },
+          {
+            "file": "System.Xml.Linq.dll",
+            "recovered": 0
+          },
+          {
+            "file": "TcpClientImplementation.dll",
+            "recovered": 3
+          },
+          {
+            "file": "UnityEngine.AIModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.AnimationModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.AssetBundleModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.AudioModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.CoreModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.DirectorModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.GameCenterModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.GridModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.ImageConversionModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.IMGUIModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.InputModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.ParticleSystemModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.Physics2DModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.PhysicsModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.SharedInternalsModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.TerrainModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.TextRenderingModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.TilemapModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.UI.dll",
+            "recovered": 1
+          },
+          {
+            "file": "UnityEngine.UIElementsModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.UIModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.UnityWebRequestAssetBundleModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.UnityWebRequestModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.UnityWebRequestWWWModule.dll",
+            "recovered": 0
+          },
+          {
+            "file": "UnityEngine.VRModule.dll",
+            "recovered": 0
+          }
+        ],
+        "native_generator": "0xBD1480",
+        "native_member_name": "Item",
+        "actual_source": "analysis\\il2cpp\\source-profile-project-build-nso-bool-fields-v19\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\Utilities\\ListWrapper.cs",
+        "actual_source_sha256": "2fac20cacd6bcaec568b7e1614bb2c65dde934c1bd671f8944137597dc32c7b6",
+        "attribute_audit": "analysis\\il2cpp\\attribute-contract-audit-nso-bool-fields-v19\\summary.json",
+        "attribute_audit_sha256": "a5dc0a4844f438a3929fc48d6b441957c7249ae0a9fe3d11eb0199ca0922314b",
+        "scope": "Strict single-attribute native generator shape, constructor identity, common UTF8 wrapper consensus and matching real property names. Original native conversion/constructor path independently observed for ListWrapper at explicit allocation/libc boundaries. All emitted arguments decode and match metadata properties; actual source renders an indexer. This does not certify method bodies, all other attributes, or complete clean source."
+      },
+      "class_guard_recovery": {
+        "status": "PASS_SCOPED_NATIVE_CLASS_GUARD_CIL_SOURCE_CORRELATION",
+        "recovery_run": "nso-bool-fields-v19",
+        "baseline": "nso-default-member-v16",
+        "methods": [
+          {
+            "type": "AdvLog",
+            "method": "Init",
+            "before_native_class_reads": 2,
+            "after_native_class_reads": 0,
+            "body_il_sha256": "bfb89ef4c24920acd3a95f5f48028a6bad880314635ea070588e39606d5a3943",
+            "removed_bookkeeping_calls": [
+              "System.Type::GetTypeFromHandle"
+            ],
+            "remaining_diagnostic_messages": [
+              "Method not found @7448F0"
+            ]
+          },
+          {
+            "type": "BundlesUtil",
+            "method": "LoadDependencies",
+            "before_native_class_reads": 1,
+            "after_native_class_reads": 0,
+            "body_il_sha256": "0a1f7dc8a46137ff479f810a43b1b2451b7ba5324d0df62033de89343a599111",
+            "removed_bookkeeping_calls": [
+              "Cpp2ILInjected.Cpp2ILHelpers::NoteDecompilerIssue",
+              "System.Type::GetTypeFromHandle"
+            ],
+            "remaining_diagnostic_messages": []
+          },
+          {
+            "type": "BundlesUtil",
+            "method": "UnloadDependencies",
+            "before_native_class_reads": 2,
+            "after_native_class_reads": 1,
+            "body_il_sha256": "4478e9eb7362819ab446c2444a2898f613ed451808ba5afd9fef45509970c11a",
+            "removed_bookkeeping_calls": [],
+            "remaining_diagnostic_messages": [
+              "Unmanaged memory load: [v65 @ X0_v9 (Il2CppClass<BundlesUtil>)+122]"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "path": "analysis\\il2cpp\\source-profile-project-build-nso-bool-fields-v19\\Assembly-CSharp-firstpass\\AdvLog.cs",
+            "sha256": "eef783037dded2f610b2f45bd6b4ef91414d4246e0e659ff470a9d9026344394",
+            "before_invalid_type_pointer_casts": 6,
+            "after_invalid_type_pointer_casts": 0
+          },
+          {
+            "path": "analysis\\il2cpp\\source-profile-project-build-nso-bool-fields-v19\\Assembly-CSharp-firstpass\\BundlesUtil.cs",
+            "sha256": "565f3e642163fd8796440c1af07ea2fa67f66711a12d908e0cec6fec5686e293",
+            "before_invalid_type_pointer_casts": 12,
+            "after_invalid_type_pointer_casts": 7
+          }
+        ],
+        "native_cases": 336,
+        "native_checks": 1008,
+        "scope": "Three actual method bodies and two unchanged source exports. Native class-byte diagnostic reads decrease without replacing bodies with rejection stubs or losing ordinary managed calls. Cold/noncontiguous guards and other source errors remain. Does not certify initialization ordering, complete methods, ABI or whole-source readiness."
+      },
+      "forwarded_boolean_recovery": {
+        "status": "PASS_RECOVERED_BOOLEAN_DECISIONS_VS_ORIGINAL_NATIVE",
+        "recovery_run": "nso-bool-fields-v19",
+        "cases": 4,
+        "checks": 12,
+        "isolation_reference_cases": 4,
+        "failures": [],
+        "assembly_sha256": "3b68956fcc662f107ff6955b35022cdda1db0597c6b026d41203a94b3d942606",
+        "fixture_sha256": "2f5f22d9afbf62d51148ff4dbe1e787cf6a0624ae110640deaad68fc2e6684dc",
+        "scope": "Executes recovered getter/setter CIL in DynamicMethods. Exact field tokens map to a same-type boolean test field and the sole Init callback maps to an observable counter. All other instruction and branch bytes/local types remain. No game DLL modification; class initialization, Init contents and complete-game parity are outside scope."
+      },
+      "usage": "Apply this complete patch once to the pinned checkout. Supersedes the earlier incremental ABI/metadata patches; do not apply both sets.",
+      "validation": "211 address/slot/runtime-pattern/streaming-thunk/allocation-emission checks, 224 original exception-pointer checks at supplied C++ boundaries, and 3468 original array checks at explicit runtime boundaries. Fresh nso-bool-fields-v19 recovery exits zero; syntax and stack-depth/header audits pass. Separate reference allocation preserves one independently witnessed static-field runtime identity without invoking an extra instance constructor. Empty Object constructor removal requires its native immediate-return witness and applies only outside managed instance constructors. Source marker view is explicitly partial and retains a separate tool-annotated output. Other original attributes, including serialization-relevant attributes, are omitted in this diagnostic view and remain a required recovery task. Stack-invalid or unresolved-allocation bodies remain diagnostic throw stubs. Remaining type/ABI/source-build and initialization limitations, plus earlier failure logs, are retained. Complete clean decompilation remains unproven."
+    },
+    "metadata_patch": "src\\re\\tool-patches\\cpp2il-nso-metadata-addresses.patch",
+    "metadata_patch_sha256": "9dfc7e1336b5a50a9d9ee91e016dc7fb150d99e9f15f079c3fb03bf136f7c580"
+  },
+  "ilspy": {
+    "version": "11.1.0.9782",
+    "source": "https://www.nuget.org/packages/ilspycmd/11.1.0.9782",
+    "license": "MIT",
+    "status": "PARTIAL_CSHARP_EXPORT_ERRORS_PRESERVED"
+  },
+  "additional_tools": [
+    {
+      "upstream_digest": "sha256:6c4a8a3813864fefed081bbd337dbc0ad93bf88e0b92f5db98d7ab258b22dc6c",
+      "zip": "F:\\SF2SwitchPC\\tools\\vgmstream-r2117-win64.zip",
+      "sha256": "6c4a8a3813864fefed081bbd337dbc0ad93bf88e0b92f5db98d7ab258b22dc6c",
+      "status": "MATCHED_PUBLISHED_DIGEST",
+      "version": "r2117",
+      "license_file": "reports/upstream/vgmstream-COPYING",
+      "source": "https://github.com/vgmstream/vgmstream/releases/tag/r2117"
+    },
+    {
+      "filename": "unicorn-2.1.4-cp37-abi3-win_amd64.whl",
+      "purpose": "Bounded ARM64 function research, not a game runtime or port dependency",
+      "license": "GPL-2.0 core; bindings BSD; retain distributed license files",
+      "version": "2.1.4",
+      "sha256": "d7107500c64ce5c168fbff6bef9485b5db1350050036f4cea568650cf8bdbdf5",
+      "package": "https://pypi.org/project/unicorn/2.1.4/",
+      "name": "Unicorn",
+      "integrity": "MATCHED_PYPI_PUBLISHED_DIGEST",
+      "source": "https://github.com/unicorn-engine/unicorn/releases/tag/2.1.4"
+    },
+    {
+      "status": "PASS_OFFICIAL_CATALOG_PACKAGE_SHA512",
+      "package": "microsoft.netframework.referenceassemblies.net35",
+      "version": "1.0.3",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net35/1.0.3/microsoft.netframework.referenceassemblies.net35.1.0.3.nupkg",
+      "registration": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netframework.referenceassemblies.net35/1.0.3.json",
+      "official_catalog": "https://api.nuget.org/v3/catalog0/data/2022.08.19.22.03.13/microsoft.netframework.referenceassemblies.net35.1.0.3.json",
+      "package_sha512_base64": "l0U4pfjnh80q9nnMSy6h9OaaLt9289Qo2lOzYaoNXwz4BBUgx1FeQA/Bbz3hc1+CUvDpziG77O8i1DZ6bXIK+A==",
+      "package_sha256": "b16156111a88670d91a757fbd465fcb4856e034b1a4d523ae2c41a470f3578f9",
+      "bytes": 6852581,
+      "files": [
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Accessibility.dll",
+          "bytes": 20904,
+          "sha256": "0bcc1e406e4e98ac1501dfabec207e7fe97596c28467a9bd0b3c3d2ead395f65"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\AspNetMMCExt.dll",
+          "bytes": 378792,
+          "sha256": "3668a90d13e37f496fda5384416103e3b2bdf9cbaf748ca7c10fc1f2802b6bbe"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\cscompmgd.dll",
+          "bytes": 16296,
+          "sha256": "da4b68d8ae136240ab66c1212ee2313ab466e02e2c6b1a8e0a8ef55e9bcf6b36"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\CustomMarshalers.dll",
+          "bytes": 31152,
+          "sha256": "994eebb72e6f1d328eb6aebd6e3c5f213c3c1334433480ba5ddfbf6e4db4e38a"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\IEExecRemote.dll",
+          "bytes": 16304,
+          "sha256": "6d8d5c5278595ba80b2f6c09bb0b7ce9031493221b786c558ed41407da121d08"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\IEHost.dll",
+          "bytes": 34736,
+          "sha256": "be579003c2ec14137e0747ded1d1a17d0afb7852cad5c628d0111c184f077687"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\IIEHost.dll",
+          "bytes": 16296,
+          "sha256": "9e7eac3acbed9209a1ebd961ef02a50a7fe8bbbb87d3448c63c6e86cddb03cb2"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\ISymWrapper.dll",
+          "bytes": 39336,
+          "sha256": "833d7313566c879faad9eb23eb816000465673964abe45c58741d282d882fbfe"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Conversion.v3.5.dll",
+          "bytes": 38800,
+          "sha256": "c3781b7c8a7b835a5e2f1cc064f80b692e68bcd4724dc4b0bcc19ffd6a1db77a"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Engine.dll",
+          "bytes": 100264,
+          "sha256": "e7163452886d45bb7c85cc49299eed1140cc8a5314658f3d7daf44cf0d5f68b4"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Framework.dll",
+          "bytes": 38824,
+          "sha256": "3d039555559da5c10caafaca1c5f857a4540f332b9323a9b2338bef9bb113b14"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Tasks.dll",
+          "bytes": 219056,
+          "sha256": "4229079be3ecc89be70f5469dda478c386a007d585095006d45b13644f721309"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Utilities.dll",
+          "bytes": 42928,
+          "sha256": "373d8c0a02669f62c4fb1a94b9e04dfc65ed94d65124cf889cb6f405cbdf205a"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Build.Utilities.v3.5.dll",
+          "bytes": 47016,
+          "sha256": "c3486655225a3815111e9acf93d504d8e8831cc8ff8be7532ad2096e0dc71081"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.JScript.dll",
+          "bytes": 128944,
+          "sha256": "db721a8e8806f40fdd80193c9385684afb2cfc84663f991555a2cdeb2227094c"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualBasic.Compatibility.Data.dll",
+          "bytes": 55208,
+          "sha256": "bfa8533fd49dbd8f415c59fd83e6c8eff9dbf17611c32a4e0b08a7903f023e46"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualBasic.Compatibility.dll",
+          "bytes": 173992,
+          "sha256": "e87ae253470790741846320e2da285317756cb747cf4c302137450e2c9e9fa3c"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualBasic.dll",
+          "bytes": 145328,
+          "sha256": "556d16337695d6ee58ccbc53cd1e03c0f8127109c094d3e88a79b12d6362d8a8"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualBasic.Vsa.dll",
+          "bytes": 30632,
+          "sha256": "3ee3bc04f308e611df438704b0823c9e71e7adcdbfd76b5fef57c58cade91e0a"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualC.dll",
+          "bytes": 15784,
+          "sha256": "a6ff13b02c3b97b76f248ba6736e5e4b87ba9b65f0a436f930b7564e56b36cd2"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.VisualC.STLCLR.dll",
+          "bytes": 33704,
+          "sha256": "6fecef7716abd85f819e9c3e12c09ab57c86eba32828984ce1980eb7d2589f75"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Vsa.dll",
+          "bytes": 38832,
+          "sha256": "6662d1c71d10cc705105bf26cd42110c7c93be57551ad6c52a9414631e27c962"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft.Vsa.Vb.CodeDOMProcessor.dll",
+          "bytes": 16808,
+          "sha256": "5b1775e41d50597e65e20889edc58e89761dc09d325b42a95efe11985e6c71fd"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\Microsoft_VsaVb.dll",
+          "bytes": 17320,
+          "sha256": "f11cf52bc50ded075f3ad527a6f675af06715c7ccef140b16a7b3e66374e42e6"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\mscorlib.dll",
+          "bytes": 1800104,
+          "sha256": "881b727119658de055dd21dedce18c0df6c7671b4d56adee0a26b59fd38add79"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationBuildTasks.dll",
+          "bytes": 71568,
+          "sha256": "a6eb5bbf628847e5b110bb863c6fc306cb892bc7479e5d45ca98a15eb109fe35"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationCore.dll",
+          "bytes": 755624,
+          "sha256": "48827a44aefe48fb835c16384b1f933e30797f2e105eda4f8fd1ede79e0142b8"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationFramework.Aero.dll",
+          "bytes": 133032,
+          "sha256": "3005d441784a53eb5b0e9497cae97a88fdbbe70dee6d77683d018b43b47bb7d0"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationFramework.Classic.dll",
+          "bytes": 116648,
+          "sha256": "e6535f37e2731bb7b013e3b45ac7d5ed0696b9867367af56effb7d0d06515880"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationFramework.dll",
+          "bytes": 645032,
+          "sha256": "b56a1de5057260aeba66e5d975045bd197ad9ea15fca6b1ecd836ce917ae37fe"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationFramework.Luna.dll",
+          "bytes": 321456,
+          "sha256": "7f0a31644d2703ec8c021cc004bf828d714dc7c6d6e44787cdde89bfc373dd5f"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\PresentationFramework.Royale.dll",
+          "bytes": 124840,
+          "sha256": "198ebd43c11c5cfdd572808494f2b1a0c701d755198628ae71ac1385928e5b87"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\ReachFramework.dll",
+          "bytes": 83888,
+          "sha256": "68d1b90262842bb716f9eb65898ef8463a93bb9a27d8d5f54539eca1058a522b"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\sysglobl.dll",
+          "bytes": 38824,
+          "sha256": "b88bbc14fc36939a8283fc168aa21f284433fb05da202c0cad3edfcf3752a31f"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.AddIn.Contract.dll",
+          "bytes": 38800,
+          "sha256": "04cbc8dd6f45f90d05e9e5b75316cad3b15ce22cc3aed64335493ed1a49cd776"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.AddIn.dll",
+          "bytes": 46992,
+          "sha256": "705d98588342d2c08fad39102e3ee137d1fa2d7d75d59e3f54337a4e2ba18301"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.ComponentModel.DataAnnotations.dll",
+          "bytes": 38824,
+          "sha256": "2b3abb1427519a687e4b85c8d37069eb2113b552b453fe154e8dd9c247f75c5f"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Configuration.dll",
+          "bytes": 96168,
+          "sha256": "1635ccf4054391056bcb490f9412232799d4b8fc37323e98f3211f907c25372d"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Configuration.Install.dll",
+          "bytes": 47024,
+          "sha256": "b1139f624de1a4d3b000f7788ecd215aff8dcf1c678653acd30268b2bfa66831"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Core.dll",
+          "bytes": 157608,
+          "sha256": "21281280ecd22adbe03966a0f0cc764f41c5d139f4fef41c317865ac0b773dd7"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.DataSetExtensions.dll",
+          "bytes": 30640,
+          "sha256": "2bd2eb39b472817a9309e6abe57be614e0a4fad99b86fd1e18219caafb56f1f4"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.dll",
+          "bytes": 566184,
+          "sha256": "b6ef0492c27da04cf20bc547a6c02a6ee0052a162b2bd2cf793215baf11e9840"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Entity.Design.dll",
+          "bytes": 42920,
+          "sha256": "c3a8d54226aaa8d98f5bb1cda4668db64147fb317cd4df3e0d6e21115549967f"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Entity.dll",
+          "bytes": 608168,
+          "sha256": "99fa2b57ec627114f64eb6a3b954def9788f0aa9e64a925709a39ad1350ec06e"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Linq.dll",
+          "bytes": 87952,
+          "sha256": "50201cfeb763322eec2951627f829c042e8fd09bd6f9df7deeadf9fd858aa251"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.OracleClient.dll",
+          "bytes": 147880,
+          "sha256": "dfcd1e7cfebf551ac897b02f69a20ef070e704001b8b4c0175a06471f20a56a6"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Services.Client.dll",
+          "bytes": 75688,
+          "sha256": "30f93b032538d7544418b3f81f839a1ffa70f3286a53b3ce822693bb865a06aa"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Services.Design.dll",
+          "bytes": 38824,
+          "sha256": "9d925e7996ef989437cb7e3f5a44e8581be766293bb8c01aa75d897ad0739648"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.Services.dll",
+          "bytes": 133032,
+          "sha256": "08e39aa2050a6a86f4356b773282e3a8fe1b837110d7d796fa1da714b0068f03"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Data.SqlXml.dll",
+          "bytes": 71568,
+          "sha256": "ed81a13b429e824a02fcebe2f66d5f99655ecd69767913dad43218cc3e0b7cad"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Deployment.dll",
+          "bytes": 403368,
+          "sha256": "8fa1384426eb0aae4491d90f603e2921ccbeea350b8f8c6e0218dbd5b91c803f"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Design.dll",
+          "bytes": 1357744,
+          "sha256": "5a20326a27df33ecb69994bade7097985e62d55105a54b900ad3ad7c70df1eb2"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.DirectoryServices.AccountManagement.dll",
+          "bytes": 63376,
+          "sha256": "0536843204408eba164f9c404616c1d7fb31f403f64e6cbdaa4aad83c5b1d6a4"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.DirectoryServices.dll",
+          "bytes": 120744,
+          "sha256": "ae9af63bb58944261158043e19a10205f7f7a572cc5d8558e66370f9d60b0c0f"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.DirectoryServices.Protocols.dll",
+          "bytes": 71592,
+          "sha256": "b7b45872f7a58beaa8cd0770dccbe6eb5b8e0f0096d3a329f4d045dca9b45d3e"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.dll",
+          "bytes": 677800,
+          "sha256": "2a45804364af991433b1c2afbf49c515f41dfdb355cc454f5869d83cf476a1c1"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Drawing.Design.dll",
+          "bytes": 38824,
+          "sha256": "47d6803447e98435aa78c24dadee31b93cbc6ad740c4542be76a1bc67d27b9a8"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Drawing.dll",
+          "bytes": 194472,
+          "sha256": "2c62c28c704017ae1d1cf3046854224f182e85e16eb12355697fa747cd1e0f37"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.EnterpriseServices.dll",
+          "bytes": 79784,
+          "sha256": "0b85c211d9ec581529081d10100737491fb7fa9e12ed0d29117271a3d2abb8fe"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.EnterpriseServices.Thunk.dll",
+          "bytes": 58256,
+          "sha256": "f9c2908a904b1ed6127210e6352a697f6eebbf7d7f507f570ff45d61e62b69bf"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.EnterpriseServices.Wrapper.dll",
+          "bytes": 123816,
+          "sha256": "4bbccf3060f6ae274798f7ff101691104337971c633b7c7dd7a5345c3cc7022a"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.IdentityModel.dll",
+          "bytes": 112528,
+          "sha256": "74e6879fdd8bc789be70603774f5aea1762667783f254688435811929ebacad8"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.IdentityModel.Selectors.dll",
+          "bytes": 67496,
+          "sha256": "dd998ba263e8e6cdb719511ed61e7766df87eac77de27145785087b353b49348"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.IO.Log.dll",
+          "bytes": 47024,
+          "sha256": "dd9f6966eaca3d13fc6695af686c52841b36e628207b90f6cbc13713e259ffaa"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Management.dll",
+          "bytes": 67472,
+          "sha256": "eac2a7e0978a458cd0566bde4623d45d7e8f7347dd4909805a0001cf735b7c4d"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Management.Instrumentation.dll",
+          "bytes": 34728,
+          "sha256": "a0019ac88fed791d37fc96d3aaa2867c0e7034dbe34b265053cf8f61dfce3865"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Messaging.dll",
+          "bytes": 128912,
+          "sha256": "320e64f930fd47e1c193626f783372481d17ea334ed6a7437a2dfd1d78bba597"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Net.dll",
+          "bytes": 63376,
+          "sha256": "c01d2ab70b3ce06065235a203c5c1f5eaac38ca26742a506cc7860f1674b7f45"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Printing.dll",
+          "bytes": 92080,
+          "sha256": "730d958ec7d7d278fd42137f278fbb8984c6cc0f22de76770340717cb9300d95"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Runtime.Remoting.dll",
+          "bytes": 59304,
+          "sha256": "a8e3f0fba7fe62b2b06850edbd0985d48605b3dc3fc94c06b7d343bceb463b0c"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Runtime.Serialization.dll",
+          "bytes": 133008,
+          "sha256": "ef962986e3facce8074454d4818e68782d3d1e2afe7bc2c913a0ce8fb0eea4f5"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Runtime.Serialization.Formatters.Soap.dll",
+          "bytes": 34736,
+          "sha256": "dd1da60e8bf86d64e82d615502a68f65ba2d4314a71484579decc33d94881a91"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Security.dll",
+          "bytes": 71568,
+          "sha256": "e31f6afe0a9ff7956064a6cce285287b2e08efa36f39f62319a4ace067d4255f"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.ServiceModel.dll",
+          "bytes": 812968,
+          "sha256": "b556a4a182a4d19a2b3e0c0c9a6575981f649679dfd9d9a8d8db99d1c4e78082"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.ServiceModel.Web.dll",
+          "bytes": 124848,
+          "sha256": "2c1922ba097cf804a4e98f973700bc0380fd6a877a4518c71ebd8bb9dabf169f"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.ServiceProcess.dll",
+          "bytes": 63400,
+          "sha256": "4321f5d5b7e8ef60ecc50bda2e2b1a4fed5645831cfefa69148198961de1f3c1"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Speech.dll",
+          "bytes": 280488,
+          "sha256": "2a8301daaa033319cd4b7deadebf4417aead5b7d72b6112f05cf2dd4c03ae8d6"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Transactions.dll",
+          "bytes": 38824,
+          "sha256": "9db9377486999148420968a71f3cf82dabd0baf77cd94127cc86a151f8024629"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Abstractions.dll",
+          "bytes": 59304,
+          "sha256": "5812d6e1fc459c4c44fdaab3bf8142ffec2b6b9f417ffe536b5a4125ef2a9aae"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.dll",
+          "bytes": 1652656,
+          "sha256": "2f7346ce9a39fb40b7530ae545cb2fcdd4d66f6c7505fd04b74f6ae16d61e124"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.DynamicData.Design.dll",
+          "bytes": 26536,
+          "sha256": "58ce4f6963d35796e3bf816d165232fe7fce47d622b2eb0dfa1a5f3efeb8b729"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.DynamicData.dll",
+          "bytes": 128912,
+          "sha256": "028584fd7e24881f8991620211bb88a61805514bacf2bd61255dcd2a99b6e0d1"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Entity.Design.dll",
+          "bytes": 51088,
+          "sha256": "cc369f2bc7e5f2c38953796e2a10979ec579adacf29ad7179dd589ddcddca38d"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Entity.dll",
+          "bytes": 59312,
+          "sha256": "bb26b6f130e6e822faf5730c2bcb9f2dbbafd6b847c75eee2e86c2e0b97fdceb"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Extensions.Design.dll",
+          "bytes": 87976,
+          "sha256": "178b06a07420bf9ee0ff7baaa1f16eb5db23957def0fa971b068101621790e8f"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Extensions.dll",
+          "bytes": 747432,
+          "sha256": "b843eca664f6c473ba351fc500aed52e784772b5979f0b85b96672a3febf0e55"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Mobile.dll",
+          "bytes": 214952,
+          "sha256": "8f3360d9febee6bff0dbfeee800420ade2cc9b5f8f3b44d09ed9d7f317d8c5e3"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.RegularExpressions.dll",
+          "bytes": 26536,
+          "sha256": "487c84c84d9a933d26ecfec8e6adaefc6bee21214f8da1c598f18bd89a1d7576"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Routing.dll",
+          "bytes": 38832,
+          "sha256": "512ae0481137a48c139ffe5d185c8d3722cf69b11017c6e4e60d1c127475b346"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Web.Services.dll",
+          "bytes": 165800,
+          "sha256": "8435caba795d7758c898246345d959b2b0eadb051cec37c1e15ecf2a1f56fb72"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Windows.Forms.dll",
+          "bytes": 1509296,
+          "sha256": "2ba080ec1ab9546c63055053cb08caedf7927253f3b28e5d28ffb2aaceba701f"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Windows.Presentation.dll",
+          "bytes": 16784,
+          "sha256": "6a4bacd3e3625c67e30c093012742c0ff3259f0a7095e548ae43f3183af43e69"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Workflow.Activities.dll",
+          "bytes": 366504,
+          "sha256": "955697f0a63f51b2b0ea618cb5cd1a7495a55bab8f7ad02272db841f9082c9a5"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Workflow.ComponentModel.dll",
+          "bytes": 513960,
+          "sha256": "28dc8bdf9a184d6c494b7ba6e279c4e02534755ee453a74643d332e41c30120b"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Workflow.Runtime.dll",
+          "bytes": 83880,
+          "sha256": "cdcf75cf187f17a0f619f2b60d98e4613ac3af24db5961222ceda11a5743e41f"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.WorkflowServices.dll",
+          "bytes": 169896,
+          "sha256": "67eaa6d01eed45ef494030b78a69be13d336d3e072998fdc9da425c4abb183be"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Xml.dll",
+          "bytes": 350120,
+          "sha256": "24da685bea441dd5bb05d8fcc2be601fc63eaa069b6385d9cebb0b4a6a12bbd3"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\System.Xml.Linq.dll",
+          "bytes": 47016,
+          "sha256": "c53644463ba7db51ff450583e09663909f782c5aa297c478ba5bf3ddfb86aa15"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\UIAutomationClient.dll",
+          "bytes": 51112,
+          "sha256": "8af527ec21e08dd5d5627e0b28b86eac08f174cef6908a45f24a0eeef465a769"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\UIAutomationClientsideProviders.dll",
+          "bytes": 34728,
+          "sha256": "3029a95e629ee83b4a69a0135989648a0b2b63aa62915e07fe291b36b5867400"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\UIAutomationProvider.dll",
+          "bytes": 34736,
+          "sha256": "f2fb020c9635fb496093606c0ec9fea5b27514de063e52c967e1bfe323e99584"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\UIAutomationTypes.dll",
+          "bytes": 42920,
+          "sha256": "26a5b8bf42d9ef03ccca38f0cbba62601ac8982c9663377073e3dba161d57cec"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\WindowsBase.dll",
+          "bytes": 178088,
+          "sha256": "3eeae33f6263b0ddec313cc1cffd8194116d934b0493cf19b5caf71092ff843b"
+        },
+        {
+          "path": "tools\\microsoft.netframework.referenceassemblies.net35-1.0.3\\extracted\\build\\.NETFramework\\v3.5\\WindowsFormsIntegration.dll",
+          "bytes": 42928,
+          "sha256": "11a77eacd23b3be373f0fa07f5c73caf220b35f353342618f0eea5f80f4745ec"
+        }
+      ],
+      "package_license_url": "https://github.com/Microsoft/dotnet/blob/master/LICENSE",
+      "host_installation": false,
+      "purpose": "Compiler/decompiler reference metadata for the observed legacy mscorlib/System 2.0 and System.Core 3.5 API family. This is an unstripped reference profile, not recovered game logic, a runtime implementation or a selected future port target.",
+      "signature_verification": {
+        "log": "logs/legacy-reference-nuget-signature-v1.log",
+        "exit_code": 0,
+        "status": "PASS_NUGET_PACKAGE_SIGNATURE_AND_TIMESTAMP"
+      }
+    }
+  ],
+  "experimental_tool_evidence": [
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "6217ac6f25457e7a08b26ad78b7ef8df154ac80731fc5e3c80dbeb021326a554"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "6217ac6f25457e7a08b26ad78b7ef8df154ac80731fc5e3c80dbeb021326a554"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "6217ac6f25457e7a08b26ad78b7ef8df154ac80731fc5e3c80dbeb021326a554"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "6217ac6f25457e7a08b26ad78b7ef8df154ac80731fc5e3c80dbeb021326a554"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "a02409895c7823d3b4f86af2149959ab37124c1e004585946adfe28c19b45000"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "53acf772d270d475c6df0da92aef00f11a13c358486e177ca9935db13bc2658d"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "29bfd4392eb885f9a3a241eab4788c283704973db4fe170b4517bc78219e9e50"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "fb9ca64d3350b058afb5b592e8909ff19a014240d44e4745f0d667e919060fbe"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "b886810147217060219372582d33fd8118bb7c5d1577f93cc12e4ddac1eaeb7b"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "45f09036f7ffdc4dcdd53e34b295f5c78d240cc066a857da967a3ff9b2b443f6"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "45f09036f7ffdc4dcdd53e34b295f5c78d240cc066a857da967a3ff9b2b443f6"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "5f1f6a103a1f9a7b8e5306418be39be894b6768d983ed525be7322098f6f3118"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "dde9d88e3d07983a42d0b40d0e80221b06e7679e4d6fe4e28c25ac9a930fb932"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "12cb82e1149b05c9f66a38335a9fa043b1693de55bffd92253a45366ee9eb228"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "4ba0041dd4fc749ad72991368e26262ff49d12fc01a04e39a837dd8ad80cfe1c"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "a26fd1f9754ab24e90a2e44ba93496fed6747fa1851655d94b7a377c8dc383cc"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "a26fd1f9754ab24e90a2e44ba93496fed6747fa1851655d94b7a377c8dc383cc"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "a26fd1f9754ab24e90a2e44ba93496fed6747fa1851655d94b7a377c8dc383cc"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "a26fd1f9754ab24e90a2e44ba93496fed6747fa1851655d94b7a377c8dc383cc"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "a26fd1f9754ab24e90a2e44ba93496fed6747fa1851655d94b7a377c8dc383cc"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "a26fd1f9754ab24e90a2e44ba93496fed6747fa1851655d94b7a377c8dc383cc"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "a26fd1f9754ab24e90a2e44ba93496fed6747fa1851655d94b7a377c8dc383cc"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-source-lock.json",
+      "sha256": "2827d12566e82e6996d39074bd6b6b4c3f753184d79284d42c20f2adb06dba8d"
+    },
+    {
+      "report": "reports/il2cpp-dumper-rs-dependencies-lock.json",
+      "sha256": "16d93af4293493a258214ae0010679890267e2c2652eb8679d6666b9ab80086a"
+    },
+    {
+      "report": "reports/better-source-v1.json",
+      "sha256": "44b65f218dc979b812d9548a0707e6fbc551bf73cf65bc079ed5eefec6a30cb5"
+    },
+    {
+      "report": "reports/cpp2il-hfa-experimental-lock.json",
+      "sha256": "a26fd1f9754ab24e90a2e44ba93496fed6747fa1851655d94b7a377c8dc383cc"
+    },
+    {
+      "report": "reports/rust-nso-mapping-patch-lock.json",
+      "sha256": "43b72404c87af114a2cee1bd94b5c6a9813465d82f7119c95679572b4110c37e"
+    },
+    {
+      "report": "reports/rust-source-v4-mapping.json",
+      "sha256": "246df1d26b00125dfb04926ddc1aefea92fe98344100e07a704d3c34b4b41ef4"
+    },
+    {
+      "report": "reports/rust-source-v4-validation.json",
+      "sha256": "992c9ca21a1d8961b65e4c8aafe2c5fae116d1683cc046d70e9c754d4817fd46"
+    }
+  ]
+}

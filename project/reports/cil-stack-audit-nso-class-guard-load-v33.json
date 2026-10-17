@@ -1,0 +1,320 @@
+{
+  "status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY",
+  "recovery_run": "nso-class-guard-load-v33",
+  "assembly_count": 44,
+  "bodies": 60744,
+  "understated_max_stack": 0,
+  "stack_flow_failures": 0,
+  "helper_types_without_base": 0,
+  "assemblies": [
+    {
+      "file": "Assembly-CSharp-firstpass.dll",
+      "bodies": 10401,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "Assembly-CSharp.dll",
+      "bodies": 17718,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "DOTween.dll",
+      "bodies": 348,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "DOTween46.dll",
+      "bodies": 29,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "Facebook.Unity.Settings.dll",
+      "bodies": 40,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "FyberLitJson.dll",
+      "bodies": 263,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "FyberPlugin.dll",
+      "bodies": 338,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "Ionic.Zip.Unity.dll",
+      "bodies": 729,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "Mono.Security.dll",
+      "bodies": 1011,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "mscorlib.dll",
+      "bodies": 8079,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "protobuf-net.dll",
+      "bodies": 899,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "SmartFox2X.dll",
+      "bodies": 1729,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "System.Configuration.dll",
+      "bodies": 460,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "System.Core.dll",
+      "bodies": 504,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "System.dll",
+      "bodies": 4941,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "System.Xml.dll",
+      "bodies": 4355,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "System.Xml.Linq.dll",
+      "bodies": 240,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "TcpClientImplementation.dll",
+      "bodies": 4491,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.AIModule.dll",
+      "bodies": 2,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.AnimationModule.dll",
+      "bodies": 27,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.AssetBundleModule.dll",
+      "bodies": 24,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.AudioModule.dll",
+      "bodies": 85,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.CoreModule.dll",
+      "bodies": 1498,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.DirectorModule.dll",
+      "bodies": 4,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.dll",
+      "bodies": 1,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.GameCenterModule.dll",
+      "bodies": 2,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.GridModule.dll",
+      "bodies": 1,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.ImageConversionModule.dll",
+      "bodies": 3,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.IMGUIModule.dll",
+      "bodies": 504,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.InputModule.dll",
+      "bodies": 6,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.ParticleSystemModule.dll",
+      "bodies": 6,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.Physics2DModule.dll",
+      "bodies": 40,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.PhysicsModule.dll",
+      "bodies": 44,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.SharedInternalsModule.dll",
+      "bodies": 52,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.TerrainModule.dll",
+      "bodies": 4,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.TextRenderingModule.dll",
+      "bodies": 52,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.TilemapModule.dll",
+      "bodies": 21,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.UI.dll",
+      "bodies": 1553,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.UIElementsModule.dll",
+      "bodies": 6,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.UIModule.dll",
+      "bodies": 76,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "bodies": 4,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.UnityWebRequestModule.dll",
+      "bodies": 121,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "bodies": 27,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    },
+    {
+      "file": "UnityEngine.VRModule.dll",
+      "bodies": 6,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0
+    }
+  ],
+  "scope": "Pinned AsmResolver 6.0.1 stack-depth/control-flow calculation compared with serialized MaxStack headers; injected helper parent presence checked. Loaded assemblies are never executed or rewritten. This does not verify operand types, source correctness, runtime behavior, or whole-game recovery."
+}

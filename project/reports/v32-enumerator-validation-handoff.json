@@ -1,0 +1,53 @@
+{
+  "status": "SCOPED_INDIRECT_RETURN_RECOVERY_VALIDATED_WHOLE_SOURCE_INCOMPLETE",
+  "baseline_run": "nso-static-getter-v31b",
+  "candidate_run": "nso-enumerator-return-v32",
+  "baseline_status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "baseline_successful_cases": 0,
+  "baseline_structural_checks": 12,
+  "baseline_runtime_checks": 28,
+  "baseline_return_slot": 12,
+  "baseline_consumer_slots": {
+    "get_Current": 3,
+    "Dispose": 3,
+    "MoveNext": 3
+  },
+  "baseline_scalar_enum_store_offsets": [
+    465
+  ],
+  "bounds_status": "PASS_ORIGINAL_POINTER_FDE_RANGE_API_AND_CLOSED_ENUMERATOR_EVIDENCE",
+  "bounds_checks": 15,
+  "candidate_dll_exists": true,
+  "probe": "src/re/RecoveredEnumeratorProbe/Program.cs",
+  "probe_sha256": "6faf0ee2d969fce6762fb7abe0ba7a67f4bea6be5c99ddeba568b4378dd626c5",
+  "probe_build": "logs/recovered-enumerator-probe-build-v32-4.log",
+  "probe_ready_scope": "Original GetEnumerator input-field/call/store and MoveNext/Current/Dispose receivers/calls/stores retained. One or two actual Dispose sites are accepted only on the same returned local; each site runs under explicit harness ordering. Five exact member boundaries and all local indices documented. No default/initobj/retarget accepted. Tests empty/1/3/8 inputs plus version mutation.",
+  "core_build_log": "logs/indirect-return-v32-core-build.log",
+  "coordination_blocker": null,
+  "production_source_edited_by_this_agent": "Only parent-approved bounds-only TryGetExactBodyRange app/address overload in LegacyArm64ValueThisThunks.cs; no NewArmV8, SRET helper or source/CIL edits.",
+  "limits": "Actual caller fragments passed at explicit HostFightInput/List<object> member and local boundaries. Whole SetStage, original game initialization, complete source, and all ports remain incomplete.",
+  "historical_core_build_error": "NewArmV8InstructionSet.cs(206,84): CS0165: Use of unassigned local variable 'exactClassBodySize'",
+  "core_build_blocker": null,
+  "resumed_state": "The actual v32 caller fragments passed 5/5 cases. All strict scoped summary gates passed with no active sessions. Both complete game source assemblies still fail compilation.",
+  "actual_candidate_status": "PASS_ACTUAL_RECOVERED_ENUMERATOR_CALLER_FRAGMENTS",
+  "actual_candidate_successful_cases": 5,
+  "actual_candidate_structural_checks": 12,
+  "actual_candidate_runtime_checks": 28,
+  "actual_probe_report_sha256": "307163fe6932669210919b57522d1974cea520d6895b89785e1c5173c413d7ba",
+  "reproduction_command": "dotnet src/re/RecoveredEnumeratorProbe/bin/Release/net10.0/RecoveredEnumeratorProbe.dll F:/SF2SwitchPC nso-enumerator-return-v32",
+  "summary_report": "reports/indirect-return-source-recovery-v32.json",
+  "failed_gates": [],
+  "compiler_after": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 19263
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 30155
+    }
+  ],
+  "full_clean_decompile_ready": false
+}

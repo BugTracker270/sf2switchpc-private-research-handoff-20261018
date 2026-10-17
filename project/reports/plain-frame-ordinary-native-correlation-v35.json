@@ -1,0 +1,87 @@
+{
+  "status": "PASS_PLAIN_FRAME_ORDINARY_NATIVE_AND_PRODUCTION_ISIL_CORRELATION",
+  "checks": 4,
+  "tests": [
+    {
+      "name": "at least one newly matched ordinary plain-frame body traverses actual production analysis",
+      "status": "PASS"
+    },
+    {
+      "name": "Unload exception-bearing frame remains excluded",
+      "status": "PASS"
+    },
+    {
+      "name": "current parser and reload-stage gate passes on the same Core",
+      "status": "PASS"
+    },
+    {
+      "name": "unsupported GetSafe cold/Phi reload shapes remain explicit",
+      "status": "PASS"
+    }
+  ],
+  "examined_plain_registered_frames": 143,
+  "candidate_analysis_attempts": 1,
+  "accepted_ordinary_bodies": 1,
+  "selected": [
+    {
+      "method": "Nekki.SF2.Core.MultiplayerSF.SFRequestSender::get_LOGIN_MAX_ATTEMPTS",
+      "registered_address": "0xE200",
+      "analysis_address": "0xE200",
+      "exact_fde_bytes": 192,
+      "cie_augmentation": "zR",
+      "body_sha256": "b9fe33fb5ab90aa6aec1c62f3729b8d9a9d04028f2f7e1ef20587fa16b4d0aa4",
+      "raw_bytes_equal_original": true,
+      "newly_accepted_cfg_guards": [
+        {
+          "start": "0xE240",
+          "skip": "0xE250",
+          "class_load": "0xE23C"
+        }
+      ],
+      "original_native_constructor_requests": 2,
+      "actual_managed_constructor_requests": 2,
+      "remaining_raw_requests": 0,
+      "remaining_class_flag_loads": 0,
+      "non_scaffolding_raw_effects": 19,
+      "exact_replaced_flag_load_sites": [
+        "0xE214",
+        "0xE240",
+        "0xE250",
+        "0xE274",
+        "0xE2B4"
+      ],
+      "baseline_exclusion_requires_exact_native_witness_and_single_load": true,
+      "raw_effect_sequence_equal": true,
+      "original_semantic_call_sites": 2,
+      "typed_semantic_call_sites_preserved": true,
+      "private_evidence_folder": "analysis\\reconstruction\\class-guard-cfg-v35\\ordinary-e200",
+      "native_snapshot_sha256": "71a1d41d6808241ff2c422314ed445d5998a7a3adf1d52087c750fcc4cec1a7b",
+      "direct_raw_snapshot_sha256": "542a1eb3ec7929ea216146242abdc2e93de288efa798f6f58cd031fcb8d111d4",
+      "production_raw_snapshot_sha256": "87f95e128e87718465b9917e56ce7a97c1e4a5d48ccb6dfabb9f659877a5cfd3",
+      "type_fixpoint_snapshot_sha256": "bd5b6b75186befd4546b41f26758f863c1fc915c2b5337081bad7149751daea0"
+    }
+  ],
+  "candidate_summaries": [
+    {
+      "method": "Nekki.SF2.Core.MultiplayerSF.SFRequestSender::get_LOGIN_MAX_ATTEMPTS",
+      "rva": "0xE200",
+      "bytes": 192,
+      "body_sha256": "b9fe33fb5ab90aa6aec1c62f3729b8d9a9d04028f2f7e1ef20587fa16b4d0aa4",
+      "new_cfg_sites": 1
+    }
+  ],
+  "candidate_rejections": [],
+  "core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+  "plain_parser_report_sha256": "9b0acff9cf0f9a4523e1aa338909f3c377369d766009bcb9a1faa5322b86e3a6",
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "value_this_source_sha256": "4a24d9598320b91ec19078882d9c46bd90b399c055301cdd81d61c4e2c9f1ee4",
+  "instruction_set_source_sha256": "b463b461da33a0359254813552777d96b4b718bdf195144f418506cea38f3d8b",
+  "cfg_matcher_source_sha256": "e5e9bc6669d38f5879d79ca4a2cc0a2e7b5924cc405434c2e9eea1dd2cbdfcfa",
+  "probe_source_sha256": "85b19c3d438c9ea0096dc75d6ee07119954e397adbb7dea19c8b5c42aaefca2b",
+  "core_source_edited_by_probe": false,
+  "ir_rewritten_by_probe": false,
+  "guest_execution_performed": false,
+  "scope": "Original native exact plain-FDE and actual production decoder/type-fixpoint correlation only. Raw loads/stores and non-constructor calls retain the same canonical ordered operands as direct native instruction conversion, except exact metadata/class flag-load instruction addresses proven replaced by matcher witnesses; each exclusion must be one register-from-memory load. No generic offset exclusion is used. Typed constructor and semantic call sites must survive the real pipeline. Complete native/IR snapshots are private ignored evidence. The probe does not execute original or recovered game code, certify all operand types/branch paths/field-read timing, implement exception handling, or claim portable/full source. GetSafe has3 native/type-fixpoint config reads and5 later propagated field operands; those stages are explicitly distinct. Unload zPLR stays excluded."
+}

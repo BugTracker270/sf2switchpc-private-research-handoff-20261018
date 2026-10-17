@@ -1,0 +1,1338 @@
+{
+  "status": "SCOPED_NATIVE_HELPER_ABIS_VALIDATED_HELPER_SEMANTICS_UNRESOLVED",
+  "recovery_run": "nso-runtime-helper-abi-v37",
+  "baseline_run": "nso-virtual-dispatch-v36",
+  "updated": "2026-10-17T16:16:08.396388+00:00",
+  "recovery_core_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+  "evidence": {
+    "invocation": {
+      "report": "logs/cpp2il-nso-runtime-helper-abi-v37-result.json",
+      "report_sha256": "42de2c7fbeb548c3eedcb8bd5805246c1a5a031c408f0df2d8fc4160d8a457ae",
+      "source_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "exit_code": 0,
+      "scope": "Experimental tool recovery; compare diagnostics and native code before accepting semantics",
+      "legacy_hfa_recovery": true,
+      "source_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "utc": "2026-10-17T15:49:35.8142814Z",
+      "output": "F:\\SF2SwitchPC\\analysis\\il2cpp\\cpp2il-recovery-nso-runtime-helper-abi-v37"
+    },
+    "source_snapshot": {
+      "report": "reports/runtime-helper-abi-source-snapshot-v37.json",
+      "report_sha256": "69f97947aed0d908d5a1543adbd6c09b3498a8ce861f118c34ae63e052a8aaf0",
+      "status": "PASS_IMMUTABLE_V37_REVIEWED_SOURCE_CAPTURE",
+      "core_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+      "source_count": 8,
+      "source_review_sha256": "8a193c6b4478e712697cbe9f46d603425c06f53cfd55b7efcbaede0e329ae8e8",
+      "recovery_invocation_sha256": "42de2c7fbeb548c3eedcb8bd5805246c1a5a031c408f0df2d8fc4160d8a457ae",
+      "source_review_snapshot": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\source-review.json",
+      "recovery_invocation_snapshot": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\recovery-invocation.json",
+      "source_mutated": false,
+      "core_built": false,
+      "capture_source_sha256": "aa2b5c3d3e142733005a1a9208aae2962b5bf46874310ef5d993317cb58a6f40",
+      "manifest_path": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\manifest.json",
+      "manifest_sha256": "d8d324f5abaf890c53e248001a2be96667a581ba07f837866cb11a122b4735a2"
+    },
+    "review": {
+      "report": "reports/runtime-helper-abi-independent-source-review-v37.json",
+      "report_sha256": "8a193c6b4478e712697cbe9f46d603425c06f53cfd55b7efcbaede0e329ae8e8",
+      "status": "SOURCE_REVIEW_NO_ADDITIONAL_BLOCKER_FULL_RECOVERY_GATES_PENDING",
+      "stable_tested_core_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+      "core_modified_by_review": false,
+      "full_clean_decompile_ready": false
+    },
+    "initial_contract": {
+      "report": "reports/class-layout-abi-contract-v37-initial-core014d.json",
+      "report_sha256": "c497c5732c4d10cbeef6998a82b69bfdd22c003d90ac4bb2b50a1a722a355b91",
+      "status": "PASS_EXACT_NATIVE_CLASS_LAYOUT_ABI_ONLY_CONTRACT",
+      "checks": 51,
+      "fatal": null,
+      "core_sha256": "014d9b9698ae1448e9a14a41c132fae3ed7efc7023fef4932dae2da8196c9a49",
+      "original_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "probe_source_sha256": "ec70ade559247ff5fc2184e4b1a680526c32f59de6ee540c14d53a3a15e3f905",
+      "helper_source_sha256": "6abf9bd37447dbf1684ccae86afea5f6eaf08ab6caf573c403fa84cbda490fde",
+      "native_source_report_sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594",
+      "native_oracle_report_sha256": "4cde7bdd4c52d92cd7c41c2f5295e4cd8fc4bb83f9934ac5058ead97d9ac3258",
+      "target": "0xB04F60",
+      "helper_bytes": 140,
+      "helper_sha256": "496575374643a8ca7a9f1181d685de0fa4ac68574a3cc50c315d52d74a4d7dd3",
+      "derived_loaded_image_bytes": 74363922,
+      "derived_loaded_image_sha256": "b84d5b3eb4a3a12d3260b06840414445fb2d2deff54d1ba84876e8fa28549449",
+      "ssa_result_version": 2,
+      "ssa_class_source_version": 1,
+      "core_modified": false,
+      "original_inputs_modified": false,
+      "recovered_output_modified": false,
+      "native_code_executed": false,
+      "recovered_game_methods_executed": 0,
+      "cold_layout_effects_implemented": false,
+      "managed_cctor_substituted": false,
+      "scope": "Original input metadata and exact derived-image/frame guards plus independent raw-ISIL/SSA/local/resolver/emitter fixtures. Copied image negatives and temporary synthetic alias dictionaries are in-process only and restored; no game output or inputs are changed. Deliberately invalid native class inputs test resolver exclusion only and are never executed. Four original reader call sites are inspected before analysis to verify production signature capture. The real emitter preserves an unresolved helper diagnostic and is never invoked as executable game behavior. Native initialized-path evidence is bound separately; cold layout setup, locking, assertion termination, exceptions and managed execution remain unproved."
+    },
+    "initial_capture": {
+      "report": "reports/class-layout-abi-initial-freeze-v37.json",
+      "report_sha256": "78536ca5692ff29bfc7256820f39b3fffa195e7935ede4b0a3c93f292c459296",
+      "status": "PASS_IMMUTABLE_INITIAL_CLASS_LAYOUT_ABI_CONTRACT_CAPTURE",
+      "core_sha256": "014d9b9698ae1448e9a14a41c132fae3ed7efc7023fef4932dae2da8196c9a49",
+      "original_contract_sha256": "c497c5732c4d10cbeef6998a82b69bfdd22c003d90ac4bb2b50a1a722a355b91",
+      "initial_report": "reports\\class-layout-abi-contract-v37-initial-core014d.json",
+      "initial_report_sha256": "c497c5732c4d10cbeef6998a82b69bfdd22c003d90ac4bb2b50a1a722a355b91",
+      "native_or_game_methods_executed": 0,
+      "current_production_abi_or_semantics_promoted": false,
+      "manifest": "analysis\\reconstruction\\class-layout-abi-v37\\initial-core014d\\manifest.json",
+      "manifest_sha256": "8ac74cff47c6bd2e3662aa3cea7536b2a52c2590ba437fc8bcb6aed01e794864"
+    },
+    "contract": {
+      "report": "reports/runtime-helper-abi-contract-v37.json",
+      "report_sha256": "725fa9e9c4c693c7eb63b91eafbdc4a3b71098601ccd43f4d1fe3af7235dd883",
+      "status": "PASS_EXACT_NATIVE_RUNTIME_HELPER_ABI_ONLY_CONTRACTS",
+      "checks": 96,
+      "fatal": null,
+      "core_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+      "original_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "probe_source_sha256": "30ab86a61a2755e17f5075471fa589c22d8d9d3548259feef3e9de928eeb53e7",
+      "helper_source_sha256": "9e4daa163c2677d940ef1696e92b42cdb90d4c896fb5b680db5e43e8d23d8d99",
+      "overflow_helper_source_sha256": "cf78e506b535b0aab18160a8e9586e4d9c563060d4dd4e69d13f5cfd008e8998",
+      "overflow_native_source_report_sha256": "5fa664552188753297ff397082c2b36937235b3c49894a8dffb7ab5081c8a728",
+      "native_source_report_sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594",
+      "native_oracle_report_sha256": "4cde7bdd4c52d92cd7c41c2f5295e4cd8fc4bb83f9934ac5058ead97d9ac3258",
+      "target": "0xB04F60",
+      "helper_bytes": 140,
+      "helper_sha256": "496575374643a8ca7a9f1181d685de0fa4ac68574a3cc50c315d52d74a4d7dd3",
+      "derived_loaded_image_bytes": 74363922,
+      "derived_loaded_image_sha256": "b84d5b3eb4a3a12d3260b06840414445fb2d2deff54d1ba84876e8fa28549449",
+      "ssa_result_version": 2,
+      "ssa_class_source_version": 1,
+      "core_modified": false,
+      "original_inputs_modified": false,
+      "recovered_output_modified": false,
+      "native_code_executed": false,
+      "recovered_game_methods_executed": 0,
+      "cold_layout_effects_implemented": false,
+      "managed_cctor_substituted": false,
+      "scope": "Two distinct exact native helper ABI contracts only: Class::Init(Il2CppClass*) returns Boolean; GetOverflowException(const char*) returns canonical base Exception. Original input metadata/image guards and independent raw-ISIL/SSA/local/resolver/emitter fixtures preserve original X0 input/result identities. Copied image negatives and temporary synthetic aliases are in-process and restored. Invalid native-pointer inputs test resolver exclusion only and never execute. Four class-layout sites and one factory site in the original reader are inspected before analysis. Real emission retains both numeric helper diagnostics and a factory-result throw; no helper is implemented, converted to a managed constructor, UTF-8-decoded or executed. Native initialized-layout evidence is separate. Cold layout, factory construction/message storage, locking, unwinding, assertion termination and actual recovered execution remain unproved."
+    },
+    "stages": {
+      "report": "reports/class-layout-overflow-abi-production-ir-v37.json",
+      "report_sha256": "f72f9f67aee5c47762eb193093e2b8d7bcba7838684545b30e0527e8e584bfda",
+      "status": "PASS_SCOPED_NATIVE_HELPER_ABIS_THROUGH_PRODUCTION_EMITTER_INPUT",
+      "checks": 51,
+      "core_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+      "source_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "source_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "uncompressed_original_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+      "derived_loaded_image_sha256": "b84d5b3eb4a3a12d3260b06840414445fb2d2deff54d1ba84876e8fa28549449",
+      "derived_loaded_image_bytes": 74363922,
+      "helper_rva": "0xB04F60",
+      "helper_exact_bytes": 140,
+      "helper_sha256": "496575374643a8ca7a9f1181d685de0fa4ac68574a3cc50c315d52d74a4d7dd3",
+      "overflow_helper_rva": "0xB4D960",
+      "overflow_helper_exact_bytes": 52,
+      "overflow_helper_sha256": "3b5fd1d3de5b03792cd3309198170fba22c09b9434a348fa01330c20d8709f3f",
+      "method": "BestHTTP.WebSocket.Frames.WebSocketFrameReader::Read",
+      "game_methods_invoked": 0,
+      "helper_semantics_recovered": false,
+      "full_clean_decompile_ready": false,
+      "portable_game_ready": false,
+      "limits": "ABI-only corrections retain all four numeric class-layout calls and one numeric overflow factory call, native results, message pointer and following explicit throw. Actual helper effects are not implemented or executed. No source or recovered CIL is edited."
+    },
+    "class_source": {
+      "report": "reports/class-layout-runtime-source-v37.json",
+      "report_sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594",
+      "status": "PASS_EXACT_COMMON_RUNTIME_CLASS_INIT_BOOL_ABI_AND_EFFECTS",
+      "checks": 15,
+      "failures": 0,
+      "source_release": "2018.1.9f1",
+      "source_revision": "24bbd83e8b9e",
+      "archive_sha256": "ce666b2de60716cb5564b53317b56f0b82eddbea7afb3462ef51d5e121833c96",
+      "archive_provenance_sha256": "e051daf19ad9e19cc8992cd0fd61317f5d07de495bc37e52f4964d62bbd6f72e",
+      "supplemental_headers_extraction_log_sha256": "2a4634c87eb20a01e7416fb96b34440afbc13c7e51e2cc162257e4d4d59118d1",
+      "original_native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+      "exact_wrapper_rva": "0xb04f60",
+      "exact_wrapper_bytes": 140,
+      "exact_wrapper_sha256": "496575374643a8ca7a9f1181d685de0fa4ac68574a3cc50c315d52d74a4d7dd3",
+      "exact_init_locked_rva": "0xb06570",
+      "exact_init_locked_bytes": 688,
+      "exact_init_locked_sha256": "113e682ffc6c24fbff2e31ee837c3ad77b86a317aa56df1fa21e3394e13db537",
+      "distinct_managed_cctor_rva": "0xb2e720",
+      "prior_witness_correction": "Earlier 112-byte fixtures were bounded initialized-path witnesses; exact FDE is 140 bytes, including cleanup. The initial new null guard expected a qualified function name; actual native assertion stores Init. Both failed logs are preserved and the final check uses that exact captured name.",
+      "native_initialized_witness_sha256": "4cde7bdd4c52d92cd7c41c2f5295e4cd8fc4bb83f9934ac5058ead97d9ac3258",
+      "private_comparison_sha256": "a0e935e9e9f1529ee01f84105df9328ee6cd7b8e2769e5310fa1ddf17740d15b",
+      "probe_source_sha256": "b6b29ebbb61a8078c476df21f513cfadc17d7d9a3b469b610f6dd51fd01603b9",
+      "public_unity_source_copied": false,
+      "proprietary_sources_uploaded": false,
+      "installer_executed": false,
+      "core_edited": false,
+      "core_built": false,
+      "helper_suppressed": false,
+      "managed_translation_implemented": false,
+      "full_clean_decompile_ready": false
+    },
+    "native_class": {
+      "report": "reports/native-class-layout-bool-v37.json",
+      "report_sha256": "4cde7bdd4c52d92cd7c41c2f5295e4cd8fc4bb83f9934ac5058ead97d9ac3258",
+      "status": "PASS_ORIGINAL_INITIALIZED_LAYOUT_BOOL_AND_NULL_ASSERT_BOUNDARY",
+      "cases": 512,
+      "checks": 3584,
+      "initialized_flag_values": 128,
+      "incoming_x1_values_per_flag": 4,
+      "returned_boolean": true,
+      "null_assert_boundary_cases": 1,
+      "null_assert_source_line": 1443,
+      "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+      "native_code_sha256": "496575374643a8ca7a9f1181d685de0fa4ac68574a3cc50c315d52d74a4d7dd3",
+      "native_code_bytes": 140,
+      "code_unmodified": true,
+      "guest_function_replacements": 0,
+      "imported_assertion_stopped_before_execution": true,
+      "private_assertion_identity_sha256": "ccc6c53b156818b1f679147e0e6fbe2eb95eb15c542425e565f2c667b4187081",
+      "probe_source_sha256": "d0930293649a36daf2dc16e5f026f07f81e689321957db97820b51fa71ad7906",
+      "scope": "Only the original already-initialized Class::Init path executes to return; 128 flag patterns and four incoming X1 values each verify true result, preserved frame/registers and unchanged class bytes. Null input executes unchanged native instructions to the imported assertion entry, where execution stops. Uninitialized metadata setup, real locking/unwinding/assertion termination, managed .cctor and complete callers are not executed."
+    },
+    "factory_source": {
+      "report": "reports/exception-factory-native-source-inventory-v37.json",
+      "report_sha256": "5fa664552188753297ff397082c2b36937235b3c49894a8dffb7ab5081c8a728",
+      "status": "READ_ONLY_EXACT_RUNTIME_FACTORY_AND_OFFICIAL_SOURCE_PAIR",
+      "original_native_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+      "helper_rva": "0xb4d960",
+      "helper_end": "0xb4d994",
+      "helper_bytes": 52,
+      "helper_sha256": "3b5fd1d3de5b03792cd3309198170fba22c09b9434a348fa01330c20d8709f3f",
+      "private_native_path": "analysis\\reconstruction\\exception-factory-v37\\native.json",
+      "private_native_sha256": "fcf53e9e52358e249bbf5272e87049239ab9eeed9f80ea31251ac3909744ce0b",
+      "source_release": "2018.1.9f1",
+      "source_revision": "24bbd83e8b9e",
+      "source_archive_sha256": "ce666b2de60716cb5564b53317b56f0b82eddbea7afb3462ef51d5e121833c96",
+      "installer_executed": false,
+      "core_modified": false,
+      "guest_functions_executed": 0,
+      "source_uploaded": false,
+      "private_dependencies_path": "analysis\\reconstruction\\exception-factory-v37\\dependencies-and-caller.json",
+      "private_dependencies_sha256": "0432c62cc8c52a0a2dc195a26975d69de818feb5a1369a00ea9cf2736535c8da",
+      "reader_call_rva": "0x4a0fd4"
+    },
+    "host_metadata": {
+      "report": "reports/clr-type-metadata-boundary-v37.json",
+      "report_sha256": "85bbcadc96656968a34cb04d64501267274101c5a02de051990d4a1148766863",
+      "status": "PASS_HOST_METADATA_OBSERVATION_WITH_CCTOR_CANARIES",
+      "checks": 60,
+      "failures": 0,
+      "metadata_observation_count": 44,
+      "pre_control_metadata_observations": 40,
+      "candidate_first_type": "System.Byte[]",
+      "candidate_translation_implemented": false,
+      "original_il2cpp_source_report_sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594",
+      "actual_runtime": ".NET 10.0.11",
+      "corelib_sha256": "ed80a1a5dd066c0407ad59686f9af90a4f3e55dbf3e4c973b53cc8c9d0706f82",
+      "probe_source_sha256": "c76037bea9b7a10701747e1ceae0cd12fefb5996b679ff09956d0bbd2b337ee6",
+      "core_built": false,
+      "core_edited": false,
+      "original_game_code_executed": false,
+      "scope": "BCL-only host CLR observations of typeof/TypeHandle/GetTypeFromHandle and reflection member metadata. Forty observations precede deliberate .cctor positive controls, including reference-element arrays and a throwing constructor. These APIs leave both canaries untouched; explicit RunClassConstructor is tested separately to prove the canaries. No native cold initialization, metadata helper replacement, production lowering, type-loader failure equivalence or game invocation is implemented."
+    },
+    "native_prefix": {
+      "report": "reports/native-virtual-stream-prefix-v36.json",
+      "report_sha256": "d4e4a1ccacde74234377028dbbdd6e7213d9157674bbd3ba76428902dadba6b4",
+      "status": "PASS_UNCHANGED_NATIVE_STREAM_OVERRIDE_AND_VIRTUAL_READER_PREFIX",
+      "cases": 802,
+      "checks": 9624,
+      "failures": 0,
+      "original_native_virtual_calls": 1604,
+      "original_native_override_entries": 1604,
+      "eof_returns": 276,
+      "all_256_values_as_first_and_second_bytes": true,
+      "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+      "reader_rva": "0x4a0d70",
+      "reader_exact_fde_bytes": 956,
+      "reader_code_sha256": "cfec6671b5b9a8788367f6b7a7b36378b9ea88bdeea69a33ab38bc3ed2a7a9b5",
+      "prefix_stop": "0x4a0e00",
+      "override_rva": "0x843e80",
+      "override_exact_fde_bytes": 224,
+      "override_code_sha256": "57b7b4efa4bb42ea002c751dc402dfadb2d17eeb1ca786f29c7a3b4ac8d7acad",
+      "vtable_base": "0x128",
+      "virtual_slot": 19,
+      "function_offset": "0x258",
+      "method_info_offset": "0x260",
+      "observed_receiver_register": "X0",
+      "observed_method_info_register": "X1",
+      "returned_integer_register": "W0",
+      "metadata_signature": "System.Int32 System.IO.Stream::ReadByte() instance virtual; System.IO.MemoryStream override",
+      "fixture_path": "analysis\\reconstruction\\virtual-stream-dispatch-v36\\prefix-fixtures.jsonl",
+      "fixture_sha256": "5e99153391701ec6d1070799ab3e89a441e99afc80273686fd7c3910ed6003eb",
+      "native_inventory_sha256": "8f437a9a2fe0bbe8091160279a7a6e71a84bdd7df4af9e236392a4c04cdc827f",
+      "probe_source_sha256": "8e4c13d928534b3d72e98e347b4cd46228618d1118f2f2adea61e14f41113354",
+      "original_instructions_unmodified": true,
+      "native_guest_functions_replaced": 0,
+      "hooks_observe_only": true,
+      "core_modified": false,
+      "managed_recovered_code_executed": false,
+      "scope": "Executes the original reader entry through both native virtual calls and header-field stores, stopping before the extended-length branch at0x4A0E00. Both complete original MemoryStream.ReadByte return paths run, including EOF. Exact slot loads, receiver/MethodInfo arguments, return bits, post-position, ordered heap writes, other object/array/class storage and original code hashes are checked. This is bounded native evidence; it does not validate recovered CIL dispatch, entire frame parsing, dynamic class/metadata initialization, null/closed/error paths, concurrency or full source portability."
+    },
+    "actual_prefix": {
+      "report": "reports/recovered-virtual-stream-prefix-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "aed4c2e88439e96cd07727f319340fc2d8a0faf88584829cf06788ec674a553d",
+      "status": "ACTUAL_VIRTUAL_PREFIX_CORRELATED_EXECUTION_LIMITATIONS",
+      "recovery_run": "nso-runtime-helper-abi-v37",
+      "native_evidence_bound": true,
+      "native_fixture_cases": 802,
+      "native_virtual_calls": 1604,
+      "native_eof_returns": 276,
+      "actual_native_virtual_identity_preserved": true,
+      "actual_callvirt_sites": 2,
+      "actual_direct_readbyte_sites": 0,
+      "actual_prefix_cfg_shape_proven": true,
+      "prefix_fence_paths": 1,
+      "runtime_eligible": true,
+      "runtime_performed": false,
+      "runtime_cases": 0,
+      "actual_game_methods_invoked": 0,
+      "fatal": null,
+      "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c",
+      "actual_body_il_sha256": "c6c68dce34f0d23792145aee33254a1d7cc01ddfa3f19dfa7bc75c12b98f5048",
+      "native_report_sha256": "d4e4a1ccacde74234377028dbbdd6e7213d9157674bbd3ba76428902dadba6b4",
+      "fixture_sha256": "5e99153391701ec6d1070799ab3e89a441e99afc80273686fd7c3910ed6003eb",
+      "private_cil_evidence_sha256": "b9087e345417a6f22a94675b164cfe1f66a48920ded258609952352c41107454",
+      "probe_source_sha256": "9e0f1194f6dfa97235c56b7fbfc90d8aa348c93c77cb3639506a578f50cb0a8c",
+      "cil_or_source_modified": false,
+      "call_opcodes_rewritten": 0,
+      "member_substitutions": 0,
+      "tokens_remapped": 0,
+      "dynamic_clones": 0,
+      "scope": "Read-only inspection of the unchanged actual recovered Read(Stream) CIL. Bounded CFG entry paths stop at the first original header Length field store, preserving actual call opcodes and member/field identities. Slot19 native dispatch and all802 original native cases are independently hash-bound. Diagnostics, native-int placeholder zeros and missing callvirt are explicit execution blockers; none are rewritten, removed, retargeted or executed. No runtime cases, cloned fragments, game/static constructors or helper substitutions are counted as recovery. Native constructor/vtable input boundaries, complete frame parsing, exception paths and full clean source remain separate."
+    },
+    "actual_prefix_baseline": {
+      "report": "reports/recovered-virtual-stream-prefix-nso-virtual-dispatch-v36.json",
+      "report_sha256": "c4c7f332f4e78dc4afaf868775919f596d7c47e4dce1ca7d0af75e29bbfa261d",
+      "status": "ACTUAL_VIRTUAL_PREFIX_CORRELATED_EXECUTION_LIMITATIONS",
+      "recovery_run": "nso-virtual-dispatch-v36",
+      "native_evidence_bound": true,
+      "native_fixture_cases": 802,
+      "native_virtual_calls": 1604,
+      "native_eof_returns": 276,
+      "actual_native_virtual_identity_preserved": true,
+      "actual_callvirt_sites": 2,
+      "actual_direct_readbyte_sites": 0,
+      "actual_prefix_cfg_shape_proven": true,
+      "prefix_fence_paths": 1,
+      "runtime_eligible": false,
+      "runtime_performed": false,
+      "runtime_cases": 0,
+      "actual_game_methods_invoked": 0,
+      "fatal": null,
+      "assembly_sha256": "224877d85a8b3dcde0a6f3f1d766ee3eafd7b02f00281b142d95b37ba0a64031",
+      "actual_body_il_sha256": "1af4642e48108b7c96d9956adba54007c8c72419bcd10865d057ecd0e7929e57",
+      "native_report_sha256": "d4e4a1ccacde74234377028dbbdd6e7213d9157674bbd3ba76428902dadba6b4",
+      "fixture_sha256": "5e99153391701ec6d1070799ab3e89a441e99afc80273686fd7c3910ed6003eb",
+      "private_cil_evidence_sha256": "5540830ffd7e1094ca0e059d6299aee9663b8fbe3ef3a5a689f51f05d2a8f7ed",
+      "probe_source_sha256": "9e0f1194f6dfa97235c56b7fbfc90d8aa348c93c77cb3639506a578f50cb0a8c",
+      "cil_or_source_modified": false,
+      "call_opcodes_rewritten": 0,
+      "member_substitutions": 0,
+      "tokens_remapped": 0,
+      "dynamic_clones": 0,
+      "scope": "Read-only inspection of the unchanged actual recovered Read(Stream) CIL. Bounded CFG entry paths stop at the first original header Length field store, preserving actual call opcodes and member/field identities. Slot19 native dispatch and all802 original native cases are independently hash-bound. Diagnostics, native-int placeholder zeros and missing callvirt are explicit execution blockers; none are rewritten, removed, retargeted or executed. No runtime cases, cloned fragments, game/static constructors or helper substitutions are counted as recovery. Native constructor/vtable input boundaries, complete frame parsing, exception paths and full clean source remain separate."
+    },
+    "prefix_fragment_runtime": {
+      "report": "reports/recovered-virtual-stream-prefix-runtime-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "6058b3980bb49d0b90502e1cf543ff877aeb08cc7f7902a670b19eca68de9cf2",
+      "status": "PASS_ACTUAL_RECOVERED_PREFIX_FRAGMENT_VS_ORIGINAL_NATIVE",
+      "recovery_run": "nso-runtime-helper-abi-v37",
+      "review_only": false,
+      "runtime_eligible": true,
+      "runtime_performed": true,
+      "fragment_invocations_attempted": 802,
+      "runtime_cases": 802,
+      "comparisons": 7218,
+      "failure_count": 0,
+      "fatal": null,
+      "observed_virtual_override_calls": 1604,
+      "observed_eof_returns": 276,
+      "original_body_il_sha256": "c6c68dce34f0d23792145aee33254a1d7cc01ddfa3f19dfa7bc75c12b98f5048",
+      "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c",
+      "correlation_report_sha256": "aed4c2e88439e96cd07727f319340fc2d8a0faf88584829cf06788ec674a553d",
+      "native_report_sha256": "d4e4a1ccacde74234377028dbbdd6e7213d9157674bbd3ba76428902dadba6b4",
+      "fixture_sha256": "5e99153391701ec6d1070799ab3e89a441e99afc80273686fd7c3910ed6003eb",
+      "probe_source_sha256": "d5503c9e8ee5e686aceed2c584553c59027ee655b4f7a9fbdcebf5a0fbd7e5e5",
+      "original_prefix_instructions": 47,
+      "original_declared_locals_retained": 95,
+      "receiver_is_original_value_type": false,
+      "original_dll_unchanged": true,
+      "recovered_fragment_dynamic_clones": 1,
+      "member_token_remap_sites": 6,
+      "local_signature_reencoded": true,
+      "branch_offsets_relocated": 1,
+      "inserted_return_fences": 1,
+      "source_opcode_changes": 0,
+      "original_member_substitutions": 0,
+      "helper_substitutions": 0,
+      "private_fragment_plan_sha256": "aefac61b17516974888b4b51d91baf90263b1103c4c871c8acb03851a6e92565",
+      "access_bypass": "DynamicMethod uses the original method Module and skipVisibility=true solely to access the original private fields",
+      "actual_whole_read_invocations": 0,
+      "game_instance_constructors_invoked": 0,
+      "host_boundary": "Real host ObservedMemoryStream overrides ReadByte, records original virtual-call results and delegates to host MemoryStream.ReadByte. Actual game receiver type, enum and four field identities are retained; original Stream.ReadByte MethodInfo is unchanged. All locals/branch/store order are retained in one isolated cloned prefix ending at an inserted return after the original first Length store.",
+      "scope": "Fragment comparison only, not direct invocation of the entire recovered Read. Member metadata tokens and branch offsets are remapped to their exact original identities in an isolated host method; no diagnostic, call opcode, field type, helper, getter or member is replaced. Original ARM64 native fixtures provide the separate reference. Game/runtime initialization, native object layout/GC/padding, extended lengths, payload, masks, null/closed/error paths, concurrency, helpers, EH and full source portability remain outside this boundary."
+    },
+    "prefix_field_boundary": {
+      "report": "reports/virtual-stream-prefix-field-boundary-v37.json",
+      "report_sha256": "a258d8605ad200596f549d90bcc723f5131bbc551dbf7c4ff43a506bd7a648fd",
+      "status": "PASS_OTHER_FIELDS_ARE_TWO_NULL_BYTE_ARRAY_REFERENCES",
+      "recovery_run": "nso-runtime-helper-abi-v37",
+      "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c",
+      "other_field_count": 2,
+      "other_fields_initially_null": true,
+      "game_equals_invoked": false,
+      "game_instance_constructor_invoked": false,
+      "whole_read_invoked": false
+    },
+    "raw_guards": {
+      "report": "reports/raw-classinit-lowering-guards-v37.json",
+      "report_sha256": "9ce46e2e67fe3ef57cd19b2b98a64808b57a4c4f7f5cc96da5f32beda9035277",
+      "status": "PASS_RAW_CLASS_INIT_ABI_UNUSED_RESULT_AND_DEEP_USE_GUARDS",
+      "checks": 31,
+      "raw_operands": 18,
+      "raw_registers": "X0-X7,V0-V7",
+      "unused_result_register": "X0",
+      "preserved_existing_void_one_arg_contract": true,
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "core_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+      "scope": "Independent ISIL fixtures use the actual known native class-init identity, real managed API metadata and existing exact class-metadata origin proof. Only a proven raw ABI capture and unused unique X0 result are removed. Deep operand/source/store-address/throw/indirect-target uses, malformed layouts, ambiguous class origins and disabled opt-in remain unresolved. No original caller, native class initializer or game .cctor executes here; existing emitted CLR contract and actual caller-stage probes provide separate evidence."
+    },
+    "phi_guards": {
+      "report": "reports/class-metadata-phi-production-v37.json",
+      "report_sha256": "6d784496925d516e64c9672d49422996e5875a52b28ed9a1d3a1077f902c6672",
+      "status": "PASS_PRODUCTION_EDGE_AWARE_CLASS_METADATA_PHI_LOWERING",
+      "checks": 73,
+      "actual_method": "BundlesUtil::GetAssetBundleSafe",
+      "actual_raw_call_index": 40,
+      "actual_phi_block": 7,
+      "actual_phi_destination": "v46",
+      "actual_proposed_identity_proof": true,
+      "actual_call_stays_unresolved": false,
+      "production_lowering": true,
+      "proposal_checker_left_graph_unchanged": true,
+      "remaining_runtime_class_flag_loads": 4,
+      "proposed_production_location": "KeyFunctionRecovery.HasExactClassMetadataOrigin only; retain existing target/ABI/unused-result/closed-type/API-overload gates.",
+      "core_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+      "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "scope": "The actual production type fixpoint lowers the previously unresolved original Phi helper to the exact existing managed void class-constructor contract. Original post-cctor class/static-storage/currentConfig reload instructions remain unchanged; no CFG branch is edited. Production lowering is also tested on independent positive/negative ISIL fixtures, with an independent edge-aware identity checker. No emitted recovered DLL/CIL execution, original class-constructor parity, whole-caller execution, source compilation or full-decompilation claim is made here."
+    },
+    "constructor_contract": {
+      "report": "reports/legacy-class-init-lowering-v37-regression.json",
+      "report_sha256": "68cbe2dac43bbcebf3150f06749bf17be94d41ee11dfd4c5b028a4e310b287f1",
+      "status": "PASS_LEGACY_CLASS_INIT_TYPED_LOWERING_AND_CLR_CONTRACT",
+      "cases": 80,
+      "checks": 120,
+      "known_native_target": "0xB2E720",
+      "native_target_discovery": "Three agreeing corlib families in existing NewArm64KeyFunctionAddresses recovery",
+      "exact_managed_target": "System.Void System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor(System.RuntimeTypeHandle type)",
+      "unproven_initializer_preserved": true,
+      "type_seeding_fixpoint_before_ssa": true,
+      "fixture_effect_calls": 32,
+      "fixture_throw_calls": 32,
+      "fixture_concurrent_calls": 16,
+      "fixture_effect_count": 1,
+      "fixture_throw_effect_count": 1,
+      "fixture_concurrent_effect_count": 1,
+      "core_assembly_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+      "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "scope": "Actual metadata and the real ISIL/emitter prove the exact RuntimeTypeHandle-taking API and unchanged class-init effect. Host-fixture type/API token rebinding executes the emitted ldtoken/call/forward-branch/ret contract with independently authored .cctors, proving observable nondefault effects, once-only execution, concurrent once semantics and persistent throwing behavior. The forward branch is checked to target the sole ret and retained. It does not execute original game .cctor bodies, the native runtime initializer, or a whole recovered caller; it cannot certify gameplay or full decompilation."
+    },
+    "virtual_contract": {
+      "report": "reports/virtual-dispatch-contract-v37-final.json",
+      "report_sha256": "b2e3b7a39bc7a256e585802fc504e2f7ea1da2f3229633744043024ac1afaf95",
+      "status": "PASS_NATIVE_VIRTUAL_WITNESS_AND_REAL_EMITTER_CLR_CONTRACT",
+      "checks": 218,
+      "cases": 99,
+      "fatal": null,
+      "core_sha256": "36d9e25cb26d4b51881a29cb23dfb613de4e14582a6abe6e184b7b8c415026eb",
+      "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "helper_source_sha256": "35bda67f8d6a9422daa691c3c1f86e00ed7e234b5b60ea2763cdff58311aedb8",
+      "emitter_source_sha256": "00f82a270fc70fa643390ff01d9684fa6de12c64997ebf1dea2e49d896b14dda",
+      "instruction_source_sha256": "22592040093b3b950b24c7db62878082d457dc0f9f7e34cf6c479b641091be93",
+      "probe_source_sha256": "5b0c7476cefcf9c7e573c2bbfffc3026f8fe1d53807e22ef9428a72a70fa3fbd",
+      "core_modified_by_probe": false,
+      "game_methods_executed": 0,
+      "native_code_executed": false,
+      "emitter_tests_are_synthetic": true,
+      "actual_recovered_runtime_performed": false,
+      "emitted_call_opcodes_rewritten_by_probe": 0,
+      "host_fixture_member_substitutions": 1,
+      "host_fixture_type_boundary": "Original Stream metadata target is bound to explicitly authored DispatchBase.ReadByte() for CLR opcode-contract tests only",
+      "scope": "Independent synthetic raw-ISIL selection and proof-carrier/emitter tests using exact original Stream.ReadByte metadata. The real production proof and IlGenerator run; emitted call/callvirt and target identity are retained at an explicitly authored host type/member boundary, then executed to distinguish override/direct/null effects. FP/void targets remain unproved native return ABIs; CallVoid tests discard a proven nonvoid target only. This does not execute an original/recovered game caller, repair MethodInfo diagnostic loads, validate native null exceptions or claim full decompilation. Actual recovered-prefix and unchanged-native fixture reports are separate."
+    },
+    "batch": {
+      "report": "reports/recovery-regression-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "2abe1c7d527011f357adc21ac51b1edfdb47ed541a61adcd28879dcd273d0d98",
+      "scope": "Independent bounded production-CIL probes; individual reports retain exact input, token and native-code boundaries.",
+      "include_enumerator": true,
+      "status": "PASS_SCOPED_RECOVERY_REGRESSIONS",
+      "include_boolean_reader": true,
+      "recovery_run": "nso-runtime-helper-abi-v37",
+      "whole_game_source_ready": false
+    },
+    "codec_initial_failure": {
+      "report": "reports/recovered-value-this-nso-runtime-helper-abi-v37-initial-failure.json",
+      "report_sha256": "8d5e4c216b1efee85043bd3a0a7c3b5548d1821555b0a57fab19786697e9e623",
+      "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+      "recovery_run": "nso-runtime-helper-abi-v37",
+      "cases": 0,
+      "checks": 0,
+      "lazy_initialization_cases": 0,
+      "already_initialized_cases": 0,
+      "failure_count": 0,
+      "fatal": "System.IO.InvalidDataException: Unresolved helper has no exact verified absent-detector exclusion or negative control failed",
+      "unreachable_helper_calls": 0,
+      "cil_sha256": "032fd9be8c7af8ecbde49509edd95e66549b4fc3436af8e36e99936e3ae391aa",
+      "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c",
+      "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+      "cil_or_source_edited": false,
+      "tokens_remapped": 0,
+      "probe_source_sha256": "9039f5bb867001443d7a3f081fda0f0905b74d3864b3e30a294db1279d525cf8",
+      "getter_cil_sha256": "e2fc24869b8d39bb20cf308dda7ffe9c838bfb5cca2ea6af9a92b3d391c8c0fb",
+      "exact_null_getter_boundary_proved": false,
+      "null_boundary_checks": 0,
+      "analysis_only_forced_null_branch": null,
+      "active_detector_callback_recovered": false,
+      "active_detector_callback_executed": false,
+      "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+    },
+    "batch_initial_failure": {
+      "report": "reports/recovery-regression-nso-runtime-helper-abi-v37-initial-failure.json",
+      "report_sha256": "17940bfd0b4217c5c71027e5c2ea5f94c2086848d06552bb348cbb65f3ecdd53",
+      "scope": "Independent bounded production-CIL probes; individual reports retain exact input, token and native-code boundaries.",
+      "include_enumerator": true,
+      "status": "FAIL_SCOPED_RECOVERY_REGRESSIONS",
+      "include_boolean_reader": true,
+      "recovery_run": "nso-runtime-helper-abi-v37",
+      "whole_game_source_ready": false
+    },
+    "codec_token_equivalence": {
+      "report": "reports/value-this-token-relocation-v37.json",
+      "report_sha256": "f19c62ff70032eceb89378495353799fc85e088bbe6dca4cace56c4cae1cdcff",
+      "status": "PASS_PINNED_CODEC_LOGIC_IDENTICAL_EXCEPT_RESOLVED_USERSTRING_TOKEN",
+      "compared_cil_rows": 106,
+      "changed_rows": 1,
+      "changed_offset": 195,
+      "changed_operand_bytes": 4,
+      "only_changed_field": "LDSTR user-string token; resolved text identical",
+      "before_body_sha256": "a5205a5ff8db842dd1364036451ba57e703964274a9b2a2c0ee9ae92217d0b0b",
+      "after_body_sha256": "032fd9be8c7af8ecbde49509edd95e66549b4fc3436af8e36e99936e3ae391aa",
+      "reference_assembly_sha256": "224877d85a8b3dcde0a6f3f1d766ee3eafd7b02f00281b142d95b37ba0a64031",
+      "after_assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c",
+      "actual_codec_cases": 342,
+      "actual_codec_checks": 2052,
+      "local_signature_and_header_identical": true,
+      "game_cil_or_source_modified": false,
+      "runtime_tokens_remapped": 0,
+      "active_callback_recovered": false,
+      "source_sha256": "277c7647ca7546d48adfe34d80dfeb1a5f127ae420d147bc445cf6a3b61ef18d",
+      "scope": "Metadata-token relocation proof and original unchanged-CIL absent-detector fixtures only. The source verifier permits one same-text diagnostic token relocation and pins all other body bytes, local types/pinning/InitLocals/maxstack/getter/branch to the immutable v36 reference. It does not recover or execute the active callback."
+    },
+    "candidate_lock": {
+      "report": "reports/cpp2il-hfa-experimental-lock-runtime-helper-abi-v37-complete.json",
+      "report_sha256": "bef675161f779db63c07ed8c8c28735c4fbb851dfbe2c54ad703196828f2cb8c",
+      "status": "EXPERIMENTAL_SAVED_NOT_PROMOTED",
+      "upstream": "https://github.com/SamboyCoding/Cpp2IL",
+      "commit": "b5ad444b82267cb1e4b88b8b373c008105bdea52",
+      "license": "MIT",
+      "patch": "src\\re\\tool-patches\\cpp2il-sf2-hfa-experimental-runtime-helper-abi-v37-complete.patch",
+      "sha256": "b1464e78b1050c413a0be732bf35db5ef4d72ad79e776853a7cc7fbe08e9136c",
+      "enable": "Invoke-Cpp2IlMetadataRecovery.ps1 -RecoverHfa (records process-scoped CPP2IL_LEGACY_HFA=1)",
+      "usage": "Complete alternative patch against the pinned upstream, not an incremental patch to combine with the canonical one.",
+      "scope": "Experimental metadata-validated flat/nested HFA entry/call/result packing and value-type field addressing. The class-macro recognizer additionally preserves scheduled scalar FP loads; the bounded class-load witness also admits independent unsigned-offset 32-bit loads and rejects flag/finished W0 clobbers. see native-fp-class-guard-caller and recovered-fp-class-guard reports. Closed-generic layouts and nested scalar FP field paths preserve observed base-field offsets and tail-padding reuse; unsupported layouts stay diagnostic. Analysis-warning tails terminate by throwing so even unreachable tails cannot fall off a CIL method. Surviving parameters bind to original signature positions even when earlier arguments are unused. Type literal operands keep RuntimeTypeHandle when required by the exact expected parameter type, instead of materializing System.Type before the native managed call. Adjacent reference-type constructor fusion recognizes equivalent closed generic owner contexts by canonical metadata definition/arguments, preserving receiver/block/order guards. Existing public nonvirtual scalar/ref accessors restore foreign private field access only after exact native leaf proof. Exact complete two-word field-copy leaves recover managed whole-value assignment/return before generic ABI analysis. Reviewed returning exception factories preserve their exact default constructor effect. Exact value-this adjustors select independently bounded unboxed bodies and unique aliases while registered addresses stay intact. Reviewed primitive boxing retains only proven initialized typed storage; address-taken and array liveness preserve original stores. Exact FDE-bounded CFG witnesses recover cached metadata flags and cold initialization paths while preserving scheduled arithmetic; the additive ordinary-method route requires an exact zR frame with empty FDE augmentation and retains the unchanged bounded matcher. Unknown/exception-bearing frames are excluded from that new route; the pre-existing selected route still includes twelve zPLR bodies with unverified exception semantics. typed legacy class initialization lowers to the existing CLR class-constructor contract rather than a no-op. Reviewed raw class-init ABI captures require an unused result and exact metadata origin; known runtime helpers cannot acquire stale managed MethodInfo identities. Class metadata Phi inputs require exact original type identity and edge-end definition availability, with topology, escape, cycle, 32-local and 256-visit bounds; constructor and reload order stay intact. A pinned native caller/callee/constructor descriptor binds one reviewed indirect Enumerator return to its original stack buffer before SSA; broader generic structure sizing and exception cleanup remain unresolved. Native virtual dispatch carries an explicit receiver/target/slot proof through IR and emission; unsupported native virtual candidates remain indirect, while original direct/base calls retain their dispatch. This narrow reference-receiver, parameterless integer/reference-return witness does not recover general ABI widths, generic/interface/value-type dispatch or EH. Exact image/FDE/body-pinned native Class::Init and overflow-factory ABI witnesses keep their original X0 input/result and numeric diagnostics while removing false raw register inputs. Boolean and base Exception result typing does not implement either native helper or its failure/cleanup behavior. Canonical patch stays separate. Stack-spilled HFAs are explicit recovery failures; integer multiword aggregates and general generic/indirect call recovery remain outside this experiment. No clean-source or whole-ABI claim. The missing MethodAnalysisContext integration is restored from frozen v37 source; no later live v38 virtual-dispatch edit is included.",
+      "source_inventory_coverage_verified": true,
+      "changed_or_new_tool_paths": 40,
+      "repaired_missing_file": "Cpp2IL.Core/Model/Contexts/MethodAnalysisContext.cs",
+      "original_incomplete_patch_sha256": "73b65ce66f91bc1234dd7990c11d04e6c6b9e0544d34dac58239d0091bcbfe43",
+      "repair_source_snapshot": "analysis\\il2cpp\\runtime-helper-abi-v37-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Model\\Contexts\\MethodAnalysisContext.cs",
+      "reverse_check_exit": 0,
+      "negative_control_exit": 1,
+      "restored_reverse_check_exit": 0,
+      "core_built_by_repair": false
+    },
+    "syntax": {
+      "report": "analysis/il2cpp/cil-audit-nso-runtime-helper-abi-v37/summary.json",
+      "report_sha256": "c3079c0a40bbfa5dc619349a0cafd5ee51dd449c3e4dab9a2e7e4f7ba4970dcd",
+      "source_directory": "F:\\SF2SwitchPC\\analysis\\il2cpp\\cpp2il-recovery-nso-runtime-helper-abi-v37",
+      "warning": "Syntactic IL audit only. Recovery helpers/diagnostics invalidate blanket recovery success; simple bodies may be legitimate or stubs. No semantic parity is implied."
+    },
+    "stack": {
+      "report": "reports/cil-stack-audit-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "7635019ccd7b98e9cfbcbdcd15aaafb73a6467604b3bfc96b2fb90ee798f1f13",
+      "status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY",
+      "recovery_run": "nso-runtime-helper-abi-v37",
+      "assembly_count": 44,
+      "bodies": 60744,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0,
+      "scope": "Pinned AsmResolver 6.0.1 stack-depth/control-flow calculation compared with serialized MaxStack headers; injected helper parent presence checked. Loaded assemblies are never executed or rewritten. This does not verify operand types, source correctness, runtime behavior, or whole-game recovery."
+    },
+    "compiler_before": {
+      "report": "reports/recovered-source-profile-legacy-reference-check-nso-virtual-dispatch-v36.json",
+      "report_sha256": "9f433ee52f8ced9ee90cbaae2815b6bd3b5ac6a17aec0c20a7f0aabb11d9a28d",
+      "status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "recovery_run": "nso-virtual-dispatch-v36",
+      "experiment": "source-profile-legacy-reference-check",
+      "whole_game_source_ready": false,
+      "scope": "Diagnostic compiler check of unchanged project-export source, with standard-library/framework injection disabled and every explicit reference recorded. Optional official unstripped .NET 3.5 references replace matching supplied framework assembly names. The compiler runs on .NET 10, but its ordinary reference pack is excluded. This does not certify portable runtime implementation, clean helper-free bodies, full attributes or gameplay. Compiler diagnostic lines are deduplicated across repeated build summaries; counts are not independent root causes or a completeness percentage. Successful compilation alone would not clear helper/placeholder/ABI/behavior gates."
+    },
+    "compiler_after": {
+      "report": "reports/recovered-source-profile-legacy-reference-check-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "7f2c56bf344f90615965cfabde9196d998d65dad3e5e2220e8bfab931a955115",
+      "status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "recovery_run": "nso-runtime-helper-abi-v37",
+      "experiment": "source-profile-legacy-reference-check",
+      "whole_game_source_ready": false,
+      "scope": "Diagnostic compiler check of unchanged project-export source, with standard-library/framework injection disabled and every explicit reference recorded. Optional official unstripped .NET 3.5 references replace matching supplied framework assembly names. The compiler runs on .NET 10, but its ordinary reference pack is excluded. This does not certify portable runtime implementation, clean helper-free bodies, full attributes or gameplay. Compiler diagnostic lines are deduplicated across repeated build summaries; counts are not independent root causes or a completeness percentage. Successful compilation alone would not clear helper/placeholder/ABI/behavior gates."
+    },
+    "project_compiler": {
+      "report": "reports/recovered-source-profile-project-build-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "e058b596182cb4f771229dc396cea15bfef61c3d47d7a1626755393803257866",
+      "status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "recovery_run": "nso-runtime-helper-abi-v37",
+      "experiment": "source-profile-project-build",
+      "whole_game_source_ready": false,
+      "scope": "Diagnostic .NET 10 compiler check of complete game-assembly C# exports against recovered dependency metadata. Only the original infrastructure-generated RecoveredSource.csproj is executed; the decompiler-generated project is retained as evidence. This is not a Unity build, portable game, original-runtime validation or semantic completeness proof. Compiler diagnostic lines are deduplicated across repeated build summaries; counts are not independent root causes or a completeness percentage. Successful compilation alone would not clear helper/placeholder/ABI/behavior gates."
+    },
+    "diagnostic_delta": {
+      "report": "reports/compiler-diagnostic-delta-v37.json",
+      "report_sha256": "d8d9309f0003a7d02b978ec11a1e95c30a230462d07f379abf2fadccdc87ea6b",
+      "status": "PASS_CANONICAL_COMPLETE_SOURCE_COMPILER_COMPARISON",
+      "before_run": "nso-virtual-dispatch-v36",
+      "after_run": "nso-runtime-helper-abi-v37",
+      "before": "nso-virtual-dispatch-v36",
+      "after": "nso-runtime-helper-abi-v37",
+      "source_modified": false,
+      "core_modified": false,
+      "whole_game_source_ready": false,
+      "full_clean_decompile_ready": false,
+      "portable_game_ready": false,
+      "methodology": "Each complete matching-reference log is streamed. Canonical lines remove build-worker prefixes, surrounding whitespace and duplicate build-summary occurrences, and must exactly match the authoritative summary total and error-code counts. Multisets of relative source path, code and message additionally reduce line-shift inflation; local-name or decompiler presentation changes can still alter messages. Every diagnostic-bearing file is checked against the byte-identical export/matching-reference source manifest. Reports contain no source excerpts.",
+      "limits": "Diagnostic lines include compiler cascades and are not independent bugs, recovered-method counts or completion percentages. This read-only comparison neither executes recovered game methods nor establishes that added or removed diagnostics correspond to correct semantics. Complete source compilation, original-runtime/gameplay parity and portability remain separate requirements."
+    }
+  },
+  "gates": [
+    {
+      "name": "immutable_invocation_and_eight_source_provenance",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Frozen invocation, original eight reviewed source bytes and Core identity remain verifiable after later tool edits/builds."
+    },
+    {
+      "name": "independent_source_review_scope",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Read-only review certifies neither helper semantics nor complete recovered behavior."
+    },
+    {
+      "name": "separate_initial_014d_51_check_contract_preserved",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Historical class-only Core/report/source/runnable binaries are separate from final dual-helper evidence and are never represented as final-Core tests."
+    },
+    {
+      "name": "final_dual_helper_96_signature_contract_checks",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Independent exact image/frame, signature, original X0 SSA input/result, managed-alias exclusion, clone and real-emitter diagnostic checks. Both native helper effects remain unresolved."
+    },
+    {
+      "name": "actual_production_signature_liveness_through_emitter_input",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Four Boolean layout calls and one base-Exception factory call preserve their original instruction/result/throw identity. Companion loads can die without suppressing either numeric helper diagnostic."
+    },
+    {
+      "name": "official_source_exact_helper_and_bounded_original_native_evidence",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Official runtime source distinguishes layout initialization from managed .cctor. Native512 initialized-layout cases exclude cold effects; factory identification is source/disassembly evidence, not execution."
+    },
+    {
+      "name": "host_metadata_observation_cctor_boundary_retained",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Separate authored host metadata/.cctor canaries are contract research; no helper lowering or original caller execution follows from them."
+    },
+    {
+      "name": "raw_guards",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current final Core regression in its independently documented synthetic/native/CLR boundary."
+    },
+    {
+      "name": "phi_guards",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current final Core regression in its independently documented synthetic/native/CLR boundary."
+    },
+    {
+      "name": "constructor_contract",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current final Core regression in its independently documented synthetic/native/CLR boundary."
+    },
+    {
+      "name": "virtual_contract",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current final Core regression in its independently documented synthetic/native/CLR boundary."
+    },
+    {
+      "name": "unchanged_baseline_prefix_execution_blocker_preserved",
+      "passed": true,
+      "state": "PASS",
+      "scope": "The unchanged v36 DLL retained a live companion-load diagnostic/placeholder. Comparing it with v37 does not retroactively certify baseline execution."
+    },
+    {
+      "name": "unchanged_native_prefix_fixture_802_cases_9624_checks",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Historical unchanged native prefix/override inputs are hash-bound; their supplied object/vtable/initialized-metadata boundary does not execute recovered helpers."
+    },
+    {
+      "name": "actual_current_dll_prefix_correlation",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Read-only current original CIL keeps two exact Stream.ReadByte callvirt sites and original header-field identities; helper-free entry correlation alone is not execution."
+    },
+    {
+      "name": "unchanged_complete_reader_cil_provenance",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Complete actual CIL evidence binds the unchanged DLL/body. Its ldstr operands are metadata tokens, not resolved string text; this gate makes no text-count claim from that encoding."
+    },
+    {
+      "name": "complete_reader_unresolved_helper_emitter_input_boundaries",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Actual full production analysis retains four numeric layout calls and one numeric factory call at emitter input. Independent real-emitter fixtures preserve their diagnostics; neither helper effect is implemented or executed."
+    },
+    {
+      "name": "isolated_actual_prefix_fragment_802_cases_7218_comparisons",
+      "passed": true,
+      "state": "PASS",
+      "scope": "An isolated clone retains47 original instructions/95 locals/exact members, remaps6 member sites and one entry branch, and inserts one return at the original Length-store fence. Real host observed MemoryStream inputs compare802 original native cases. This is not whole Read or helper execution."
+    },
+    {
+      "name": "prefix_other_fields_null_reference_boundary",
+      "passed": true,
+      "state": "PASS",
+      "scope": "The fragment comparison of other receiver fields cannot invoke a custom game Equals; the only other fields are two supplied null byte-array references."
+    },
+    {
+      "name": "inspection_fragment_and_whole_reader_execution_are_distinct",
+      "passed": true,
+      "state": "LIMITATION",
+      "scope": "LIMITATION: the read-only inspection keeps zero cases; the separate47-instruction fragment executor has802. The complete reader and unresolved layout/factory helpers have not executed."
+    },
+    {
+      "name": "recovered_aggregate-leaves",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_boolean-setter",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_constructor",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_currency-scalars",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_exception-factory",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_leaf-accessor",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_nested-tween",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_primitive-box",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_scalars-isolated",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_static-getter",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_type-handle-token",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_value-this",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_vector3",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_scalars",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_enumerator",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "recovered_boolean-reader",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Current-run unchanged recovered CIL within the original independent member/native/fixture boundaries; DLL hashes are explicit."
+    },
+    {
+      "name": "initial_codec_and_batch_failures_retained",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Initial strict-byte token rejection is retained. The corrected fixture proves one relocated ldstr token resolves to identical text with every other byte/local/branch/getter unchanged; it does not rewrite runtime tokens or execute the active callback."
+    },
+    {
+      "name": "codec_historical_reference_and_one_same_text_token_relocation",
+      "passed": true,
+      "state": "PASS",
+      "scope": "A historical v36 assembly is a pinned reference, not a current-run output. All106 rows match except one same-text diagnostic ldstr token; unchanged current CIL executes342 original absent-detector fixtures and active callback recovery remains false."
+    },
+    {
+      "name": "all_18_established_regression_invocations",
+      "passed": true,
+      "state": "PASS",
+      "scope": "All established bounded probes must actually complete; prefix inspection is separate and no helper semantic execution is included."
+    },
+    {
+      "name": "syntax_44",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Encoding syntax only; unresolved helpers and source/type errors can remain."
+    },
+    {
+      "name": "stack_44",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Stack/header consistency only, without operand type, helper semantics or game startup equivalence."
+    },
+    {
+      "name": "compiler_before_complete_profiles",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Both complete exported assembly source builds retain exact original compiler failures."
+    },
+    {
+      "name": "compiler_before_complete_source_hashes",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Every complete source file was independently hash-verified in this invocation or the exact cited completed audit; current full source-manifest report bytes must match. This tool never rewrites exported source."
+    },
+    {
+      "name": "compiler_after_complete_profiles",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Both complete exported assembly source builds retain exact original compiler failures."
+    },
+    {
+      "name": "compiler_after_complete_source_hashes",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Every complete source file was independently hash-verified in this invocation or the exact cited completed audit; current full source-manifest report bytes must match. This tool never rewrites exported source."
+    },
+    {
+      "name": "project_compiler_complete_profiles",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Both complete exported assembly source builds retain exact original compiler failures."
+    },
+    {
+      "name": "project_compiler_complete_source_hashes",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Every complete source file was independently hash-verified in this invocation or the exact cited completed audit; current full source-manifest report bytes must match. This tool never rewrites exported source."
+    },
+    {
+      "name": "both_current_compiler_profiles_use_identical_source",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Both compiler reference profiles use the same complete source-file/hash inventory."
+    },
+    {
+      "name": "canonical_complete_compiler_delta",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Canonical complete-source compiler counts include cascades and are not percentages or independent missing-method counts."
+    },
+    {
+      "name": "separate_complete_40_file_unpromoted_candidate_identity",
+      "passed": true,
+      "state": "PASS",
+      "scope": "Separate candidate patch bytes and eight reviewed source identities are pinned independently of later live tool edits. The patch remains experimental and does not establish full recovered portability."
+    }
+  ],
+  "failed_gates": [],
+  "limitation_gates": [
+    "inspection_fragment_and_whole_reader_execution_are_distinct"
+  ],
+  "missing_reports": [],
+  "assembly_hashes": {
+    "Assembly-CSharp-firstpass.dll": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c",
+    "Assembly-CSharp.dll": "20f79804cb7f0462e4e4e6d7badd991e9b6e8ecc725e12eb0b40dda82a07f372",
+    "DOTween.dll": "7a7c35c7662193c2186902693af4d7c3698eda80ceaa980c34377156fb2e71bd",
+    "DOTween46.dll": "41a4e9177abc12b5b62466b2a37f8e1872e37e99f83d5bab6753555be5cc3be9",
+    "Facebook.Unity.Settings.dll": "536d86b039806e738747c3dd81760a1d94abdef39c938d59598541b6cbda116e",
+    "FyberLitJson.dll": "a78929d92da990a6f75aa112a8421a798f56d59a3590303c2dd57c2d5b6723e4",
+    "FyberPlugin.dll": "587e4fccf5be75462b4ad9c8e681264200918add52b74d05085e3c9d9602b2b8",
+    "Ionic.Zip.Unity.dll": "d8df35f2dd50aa4f670b35d21a940788eae1a42a83bf50cbde33eb22d79bc8ad",
+    "Mono.Security.dll": "75af0015b2159638e9e66824ce318754fe83674e45ee577dc9447ffde581a4fa",
+    "mscorlib.dll": "5cf78b59b86ee995b5be87d44f84286a3b2e1f5d8a201f1183c4f4b2e6f13c5a",
+    "protobuf-net.dll": "36e88692cdda14515df1ab460c57e8a423ed6de6dee8e9e87a5bb0ea23585d76",
+    "SmartFox2X.dll": "a25b3bdfaae33d65a141e1f12c225410f5d364f233f108b5a5c0711b7d4fcacc",
+    "System.Configuration.dll": "8f19f8e293603fc4dcda4290d34ed349612e3fd09ff874fb704fcb3e2b56fe19",
+    "System.Core.dll": "c55eebe8dae8230f25cc4a49642584c828f7674d35574662fd6fadefbb77ea81",
+    "System.dll": "e1914db59b675ad1b206748b5b1357d291e41a64febecda183629ad1844eff2e",
+    "System.Xml.dll": "2da2a4ccc4663b99c82141ba3bb7266694b3b5d4ed6ca6ec0d9558a3e396a0b9",
+    "System.Xml.Linq.dll": "de7f8de5477f57c4783b257b37a0e3e12310c9403206f937b477023ce190dd0f",
+    "TcpClientImplementation.dll": "6b791626b3f9aa88926d8f8a2af9a1e303e778dbf708bdb74f807a4798f849e5",
+    "UnityEngine.AIModule.dll": "209d06678b81ec551a75fe7bf5dfde86bda11d83c6c48309ad228bac6301ee31",
+    "UnityEngine.AnimationModule.dll": "a2305ef31882fb1316690e434cb062bad50084a3e825229c7de31bdd6921550a",
+    "UnityEngine.AssetBundleModule.dll": "7c68845ee75e6e95c3c73998702f273a9c56d9c6d77ad47e1da6f7bac41629b1",
+    "UnityEngine.AudioModule.dll": "312e94693681ec27d5b15e6675e32c8af96cd585298f4eb229a3e80a91eddf68",
+    "UnityEngine.CoreModule.dll": "66fd3951df45974018abd9aa9c451ba8b61bffba4999a98e1890543d3c3a9965",
+    "UnityEngine.DirectorModule.dll": "8426b2d57a66aef4aeb910f157260fa827a93a7d97a740169e7e2c3c38f493c8",
+    "UnityEngine.dll": "b41660227a1ff79c8bd5666a4e0c138157d076b4112d7190799691962b87e8c7",
+    "UnityEngine.GameCenterModule.dll": "dfe33edbad43483845bee834bbe5fa2fcec8f1c7c9249acdec3dc98bb4fd3d6a",
+    "UnityEngine.GridModule.dll": "d97925e437c37e812711f6ace73967c48c97520887139313454327a4e1f20602",
+    "UnityEngine.ImageConversionModule.dll": "4c05a056bc60af414767040cd930bb2155c5decf94f2b2421f9295a529177d6d",
+    "UnityEngine.IMGUIModule.dll": "f0b5ab36a22b0bdebcd3251c3fe9798d70dcfc1330ed2d125b8fb6a4f18826d6",
+    "UnityEngine.InputModule.dll": "f7f77f0138345692268cdcac255771dfc8da9b2da9dc9a666a389887c5e3c2a2",
+    "UnityEngine.ParticleSystemModule.dll": "7a9adcfc77345f581db15f7fa0550d477b5e2e104d7c6eba249548ff46a6e118",
+    "UnityEngine.Physics2DModule.dll": "dd44f2bd1d05091b45ac3f444958033f4f3fb41e30d470c73dc4d839b6ad6971",
+    "UnityEngine.PhysicsModule.dll": "006f37724c28374af58f3fc90996819a3320a9e7c05e13645bd97fc97b9971af",
+    "UnityEngine.SharedInternalsModule.dll": "c83a0bb1ef91a4f3ebd8c04a06d332487a96351021bb66f4682efe4ecf9aed8a",
+    "UnityEngine.TerrainModule.dll": "9cf515b5322d509055a1a7a4ea5469eb46f00783b88142a24ba4adac65d3838d",
+    "UnityEngine.TextRenderingModule.dll": "3145060f7f3d2facea2420e0b9cc2fdbcabc701160c5394ad335d8a6f6931b6b",
+    "UnityEngine.TilemapModule.dll": "ddd1363abbb58a4718e46366b8aea55bb1d8b4a38e9d53d74754b95ba5f67991",
+    "UnityEngine.UI.dll": "4bbd4b3fad5a821b596c4476997d27494d7d38a565b48df9d72737379f78aac2",
+    "UnityEngine.UIElementsModule.dll": "cbab29a3fdb19af58d286f7d4006b3f59c065e485da08ee82a240b5cec3b1946",
+    "UnityEngine.UIModule.dll": "9ef2542f2e415f728efe659503e41199a96486e0fba3f2c928f86415c85adcbc",
+    "UnityEngine.UnityWebRequestAssetBundleModule.dll": "c204ab66cba12fd800ae34390ad909e2f65442f93f11d83744f1c25541c648d9",
+    "UnityEngine.UnityWebRequestModule.dll": "06573acbf3a41bb5a94eeb9f84bf526b6290fa59b9cbb2b4d61965345620c532",
+    "UnityEngine.UnityWebRequestWWWModule.dll": "462e70b5cc601a79c3276cf5730839a7908b4d99a1ad4496f0302447d4a07729",
+    "UnityEngine.VRModule.dll": "132933ca1979a40b5611dc93f0b7efb9bb4dac2b09c57b3177a663174d7bb9c2"
+  },
+  "recovered_regressions": {
+    "aggregate-leaves": {
+      "report": "reports/recovered-aggregate-leaves-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "55936f17ea1894351654cab3207a981ab6871d4ba445b7c3783043390b4fbaaa",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "20f79804cb7f0462e4e4e6d7badd991e9b6e8ecc725e12eb0b40dda82a07f372",
+        "firstpass_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_RECOVERED_16BYTE_FIELD_COPIES_VS_ORIGINAL_NATIVE",
+      "cases": 1024,
+      "checks": 10240,
+      "scope": "Retains actual complete recovered getter/setter CIL instruction bytes, changing only the sole field metadata token in each body to isolated storage with the same four declared value fields. Matches original ARM64 field values; native tail padding identity is expressly excluded. Helpers, calls, branches, locals and other instructions are rejected. No original runtime, class initialization, GC, null receiver, generic aggregate entry/call/return, codec, or complete source claim."
+    },
+    "boolean-setter": {
+      "report": "reports/recovered-boolean-setter-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "0ef871ffb8d574daa0936862f241ceabfd2fb4b4d337c67833aefa8bfcde7c63",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_RECOVERED_BOOLEAN_DECISIONS_VS_ORIGINAL_NATIVE",
+      "cases": 4,
+      "checks": 12,
+      "scope": "Executes recovered getter/setter CIL in DynamicMethods. Exact field tokens map to a same-type boolean test field and the sole Init callback maps to an observable counter. All other instruction and branch bytes/local types remain. No game DLL modification; class initialization, Init contents and complete-game parity are outside scope."
+    },
+    "constructor": {
+      "report": "reports/recovered-constructor-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "293477242620c841872b510e41cef4b254fc3288851fb9c671a1e882733dfe08",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "20f79804cb7f0462e4e4e6d7badd991e9b6e8ecc725e12eb0b40dda82a07f372"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_RECOVERED_CONSTRUCTION_AT_CLR_LIST_BOUNDARY",
+      "cases": 32,
+      "checks": 128,
+      "scope": "Actual recovered allocation/constructor/field-store expression only, retaining its operations and local assignments; ret appended before the Unity base-constructor boundary. The receiver/one field map to isolated dynamic storage with the exact original closed List<BackKeyController> CLR type retained. No Game/Unity function is executed. List constructor and reflection allocation use the host CLR standard contracts, with exactly one constructor instruction required. Checks field non-null/exact type/empty Count/empty Capacity across 32 fresh storage objects. Original ARM64, Nintendo allocation/GC, Unity base initialization, exceptions and complete constructor/source correctness remain unverified."
+    },
+    "currency-scalars": {
+      "report": "reports/recovered-currency-scalars-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "125b5481a6caea7775f95cf92774039ed1d4a021908bdb676191132d30824f32",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_ACTUAL_RECOVERED_SCALAR_CURRENCY_CODEC_VS_ORIGINAL_NATIVE",
+      "cases": 1024,
+      "checks": 3072,
+      "scope": "Calls the actual recovered static Encrypt(int,int)/Decrypt(int,int) CIL directly in .NET, with no source/IL edits, clones or helper substitutions. Exact original-owner ldtoken/RunClassConstructor(RuntimeTypeHandle) pairs execute normally; no arbitrary token or call is admitted. Uses exact original ARM64 fixture values and an explicit initialized cryptoKey input set through the original field; CLR type initialization may run before that input is set. Native initialization order is outside the arithmetic comparison. Checks zero-key fallback, explicit-key XOR and unchanged static key. No default-key overload, aggregate conversion, detector callback, whole currency/economy, original runtime or full source claim."
+    },
+    "exception-factory": {
+      "report": "reports/recovered-exception-factory-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "87413ddceaa2ca80ea5786351b390a73f82a45f364da36626c52f3f925817648",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_ACTUAL_RECOVERED_FACTORY_CONSTRUCTORS_AT_CLR_BOUNDARY",
+      "cases": 224,
+      "checks": 1344,
+      "scope": "Seven actual recovered parameterless ArrayTypeMismatchException newobj instructions in AuthenticationSample.Start, each isolated with ret appended and exact constructor token rebound to the host CLR contract. Checks exact type, constructor HResult/Message, null InnerException/StackTrace and fresh identity. No source edits, gameplay/Unity code or original ARM64 constructor bodies execute; no assertion of original exception-message localization, GC or full caller parity. A source error disappearing alone does not pass this probe."
+    },
+    "leaf-accessor": {
+      "report": "reports/recovered-leaf-accessor-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "80fb21c915219640bca66c7ba684a5acb43f4e54137292eccb496df57d3116bc",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "20f79804cb7f0462e4e4e6d7badd991e9b6e8ecc725e12eb0b40dda82a07f372"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_RECOVERED_LEAF_ACCESSOR_AT_ISOLATED_STORAGE_BOUNDARY",
+      "cases": 128,
+      "checks": 256,
+      "scope": "Execute actual recovered public setter CIL and one actual rewritten literal/receiver call expression from GoogleNexusPlayerRemoteProfile constructor. Only receiver type/field tokens and call-to-that-exact-recovered-setter token map to isolated CLR storage; source instructions and literal are retained, with one receiver local supplied and a return appended. Arbitrary/null strings and unrelated storage are checked. Native setter execution is recorded separately; original class initialization, profile constructor remainder, GC and whole-game/source parity remain unvalidated."
+    },
+    "nested-tween": {
+      "report": "reports/recovered-nested-tween-nso-runtime-helper-abi-v37-with-identities.json",
+      "report_sha256": "b072de43e16317410d12045caaaa807b635c1b94a854e9271431bbab7c5fc4e4",
+      "recorded_dll_hashes": {
+        "vector_assembly_sha256": "66fd3951df45974018abd9aa9c451ba8b61bffba4999a98e1890543d3c3a9965",
+        "tween_assembly_sha256": "7a7c35c7662193c2186902693af4d7c3698eda80ceaa980c34377156fb2e71bd"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_RECOVERED_NESTED_HFA_AND_CALLER_NATIVE_COMPARISON",
+      "cases": 64,
+      "checks": 576,
+      "scope": "Actual recovered caller and addition CIL, with exact vector/wrapper/closed-generic field tokens replaced by isolated equivalent storage types. Scalar instructions, local layout, branches and stores retained; managed addition call target replaced by the actual recovered addition DynamicMethod. The exact original UnityEngine.Vector3 ldtoken/RuntimeHelpers.RunClassConstructor pair is retained; only its handle token maps to disclosed host initialization fixtures. Nondefault once-only effects and persistent constructor failure before all tween writes are measured. This is an explicit initializer-content boundary, not execution/parity of original Unity/game .cctor contents or original global initialization ordering. Appended analysis-warning calls are allowed only after full reachability proves them unreachable and map to a throwing trap without removing bytes. Three resulting component bits and six unchanged start/change bits per native math case. Every reachable diagnostic/helper or unreviewed substitution is rejected. No whole assembly, complete SetStage or portable-game claim. Original caller/initializer-request evidence: reports/native-fp-class-guard-caller.json. Also executes three actual recovered nested-wrapper argument/return methods against all 240 original-code identity fixtures (720 checks); no game-method call substitutions in those identities."
+    },
+    "primitive-box": {
+      "report": "reports/recovered-primitive-box-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "d4138207eea8bb26d1b305fa0907f1f0ea96f631bc175265ab150e40ebb1ae0c",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "20f79804cb7f0462e4e4e6d7badd991e9b6e8ecc725e12eb0b40dda82a07f372"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_RECOVERED_INT32_BOX_EXPRESSION_AT_TYPED_VALUE_BOUNDARY",
+      "cases": 80,
+      "checks": 240,
+      "scope": "Execute only the actual recovered Int32 box expression from the chosen present native caller. Require exact original native argument-copy/stack/type-slot/call witnesses, actual method argument signature, exact host CLR Int32 box type token and a unique typed copy chain whose stores dominate their original uses when a local supplies the value. Reject escaping addresses or modified input arguments. The original expression instructions are retained; only exact Int32 type tokens map to the same CLR type, one proven Int32 local may be supplied at its declared value boundary, and a return is appended. Check signed/raw-bit payload, boxed type identity and fresh object identity. Original native boxing runtime allocation/GC, metadata initialization, the remainder of SetAge, other primitive/nullable/ref/enum/custom types and Switch feature availability are outside this scope."
+    },
+    "scalars-isolated": {
+      "report": "reports/recovered-scalars-isolated-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "99e7243f665d63a257307d9b3e0479d589bcdf8d20f0e11abdd8cf1279626a97",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_RECOVERED_SCALARS_VS_ORIGINAL_NATIVE_FIXTURES",
+      "cases": 768,
+      "checks": 1760,
+      "scope": "Recovered accessor CIL isolated in DynamicMethods: the sole _versionSource field load becomes a same-size NOP span, and an int[] argument supplies that field directly; metadata tokens are remapped to their same runtime targets. All other instruction/branch bytes and local types are retained. Class initialization and constructors are deliberately outside this experiment. This is a bounded CIL comparison, not executable recovered whole-game source."
+    },
+    "static-getter": {
+      "report": "reports/recovered-static-getter-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "75ed995bb89ab87720b8311cff8a81f384cf401631cab5062b473bb71527d102",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_ACTUAL_STATIC_GETTER_AND_CALLER_ACCESSOR_CORRELATION",
+      "cases": 9,
+      "checks": 24,
+      "scope": "Actual unchanged recovered public getter executes directly with null and eight constructor-free allocated instances as explicit static-field fixtures. It returns the exact original field reference and leaves storage unchanged; owner has no .cctor. Original caller is inspected only for exact private-field/getter tokens. Full caller runtime/active detector behavior, constructors, native metadata assurance and whole-game source are not certified."
+    },
+    "type-handle-token": {
+      "report": "reports/recovered-type-handle-token-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "2396d9bcbd3a4724d877658d04668ec74fb79669930f10082d1020014e467525",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "20f79804cb7f0462e4e4e6d7badd991e9b6e8ecc725e12eb0b40dda82a07f372"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_RECOVERED_TYPE_HANDLE_TOKEN_CONTRACT",
+      "cases": null,
+      "checks": 2,
+      "scope": "Execute only the actual recovered independent literal-type expression from its sole ldtoken through its final Type.GetTypeFromHandle call, with a ret appended. Original expression instructions and locals retained. Every local read must follow an assignment inside this straight-line slice; arguments, branches, field operations and other calls/tokens are rejected. Original enum token maps to that exact recovered enum; only the verified System.Type API token maps to the host BCL implementation of the same handle contract. Earlier control flow and the remaining unresolved getter are never executed. This is a CLR token/stack contract check, not original ARM64 execution, full getter validation or full source compilation."
+    },
+    "value-this": {
+      "report": "reports/recovered-value-this-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "f02dfe500047ec86119e8023832aeefca05cb9fc87a5af67b143f8dce851efe7",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c"
+      },
+      "historical_reference_assembly_sha256": "224877d85a8b3dcde0a6f3f1d766ee3eafd7b02f00281b142d95b37ba0a64031",
+      "status": "PASS_ACTUAL_RECOVERED_VALUE_THIS_CODEC_VS_ORIGINAL_NATIVE",
+      "cases": 342,
+      "checks": 2052,
+      "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+    },
+    "vector3": {
+      "report": "reports/recovered-vector3-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "303dce20af1690b2bc4213ffe7fb992d7f64078a21dcf65fd634ac6befbb75be",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "66fd3951df45974018abd9aa9c451ba8b61bffba4999a98e1890543d3c3a9965"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_RECOVERED_VECTOR3_VS_ORIGINAL_FP_ABI",
+      "cases": 64,
+      "checks": 192,
+      "scope": "Recovered addition CIL in a DynamicMethod with the same-size three-float struct substituted only for the Unity value type and exact x/y/z field/type tokens. Arithmetic, control-flow bytes and scalar locals remain. Avoids Unity class initialization; no game DLL edits, runtime method mocks or whole-game/other-ABI certification."
+    },
+    "scalars": {
+      "report": "reports/recovered-scalars-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "58acf2339d76ec24ac8a808b0356b7233ae6b1cfa6c83c34312ad93638ec3fdc",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_RECOVERED_SCALARS_VS_ORIGINAL_NATIVE_FIXTURES",
+      "cases": 768,
+      "checks": 1760,
+      "scope": "Executes recovered CIL accessors directly in the installed .NET runtime against original ARM64 fixtures. Constructor bypass via uninitialized object and private field injection is explicit; class initialization can still block execution. No Windows game, original-runtime parity, constructor/static-initialization, UI or combat claim."
+    },
+    "enumerator": {
+      "report": "reports/recovered-enumerator-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "2d30f1f45b551736a4350a1c296a8c9496a4184dce61e46d58d3dbccff6fabd5",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "20f79804cb7f0462e4e4e6d7badd991e9b6e8ecc725e12eb0b40dda82a07f372"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_ACTUAL_RECOVERED_ENUMERATOR_CALLER_FRAGMENTS",
+      "cases": 5,
+      "checks": null,
+      "scope": "Runs actual GetEnumerator input field load/call/store and actual MoveNext/Current/Dispose receiver/call/result-store byte fragments with original local indices. Exactly five member tokens map explicit Fight.Models/List<Model>/Model boundaries to HostFightInput.Models/List<object>/object; enum locals map to host enum, Current output to object, unused locals are opaque. One or two actual Dispose sites are admitted only with the same enum receiver; the explicit harness executes both sites when present, or repeats the one site. Harness loop/order/recording is explicit; not whole SetStage control flow, game effects, or native MoveNext parity. Original InitLocals retained; no injected initobj/default or retargeted stores can pass. Original native unchanged24-byte SRET witness is independently checked. Exhausted Current null is observed BCL behavior, not an injected substitute."
+    },
+    "boolean-reader": {
+      "report": "reports/recovered-boolean-reader-nso-runtime-helper-abi-v37.json",
+      "report_sha256": "9df264672c20f97cef6203f157899628b505f023ca630ee8962c0bdcc510ec61",
+      "recorded_dll_hashes": {
+        "assembly_sha256": "20f79804cb7f0462e4e4e6d7badd991e9b6e8ecc725e12eb0b40dda82a07f372"
+      },
+      "historical_reference_assembly_sha256": null,
+      "status": "PASS_ACTUAL_RECOVERED_BOOLEAN_READER_VS_ORIGINAL_NATIVE",
+      "cases": 811,
+      "checks": 3244,
+      "scope": "Direct execution of the unchanged recovered BinaryReaderNekki.ReadBoolean method on its actual recovered type. Explicit caller boundary allocates the type without invoking its instance constructor and supplies its two original input fields. Real CLR BitConverter.ToBoolean and exact RunClassConstructor(BitConverter) calls remain; no original static constructor is stubbed or suppressed. All 811 native return cases, position changes, unchanged array bytes and array identity must agree. Native/runtime initialization boundaries and exceptional cases retain the native report's separate limits. No whole-reader constructor, serialization system, startup, complete source or portable game claim."
+    }
+  },
+  "complete_source_integrity": {
+    "compiler_before": {
+      "verified_files": 2979,
+      "failures": [],
+      "verification_deferred_for_active_work": false,
+      "completed_audit_reference": {
+        "path": "analysis\\reconstruction\\runtime-helper-abi-v37-audit\\first-final-summary.json",
+        "sha256": "06f0ba19f1f841b46715d66c6f4a7823248692026c382efb0d3b02b52f45cc23",
+        "verified_at": "2026-10-17T16:06:10.876133+00:00",
+        "new_source_file_reads": false,
+        "scope": "Reuse of the exact completed hash audit while only reports, probe logic and the candidate package changed; exported source was not modified."
+      }
+    },
+    "compiler_after": {
+      "verified_files": 2979,
+      "failures": [],
+      "verification_deferred_for_active_work": false,
+      "completed_audit_reference": {
+        "path": "analysis\\reconstruction\\runtime-helper-abi-v37-audit\\first-final-summary.json",
+        "sha256": "06f0ba19f1f841b46715d66c6f4a7823248692026c382efb0d3b02b52f45cc23",
+        "verified_at": "2026-10-17T16:06:10.876133+00:00",
+        "new_source_file_reads": false,
+        "scope": "Reuse of the exact completed hash audit while only reports, probe logic and the candidate package changed; exported source was not modified."
+      }
+    },
+    "project_compiler": {
+      "verified_files": 2979,
+      "failures": [],
+      "verification_deferred_for_active_work": false,
+      "completed_audit_reference": {
+        "path": "analysis\\reconstruction\\runtime-helper-abi-v37-audit\\first-final-summary.json",
+        "sha256": "06f0ba19f1f841b46715d66c6f4a7823248692026c382efb0d3b02b52f45cc23",
+        "verified_at": "2026-10-17T16:06:10.876133+00:00",
+        "new_source_file_reads": false,
+        "scope": "Reuse of the exact completed hash audit while only reports, probe logic and the candidate package changed; exported source was not modified."
+      }
+    }
+  },
+  "compiler_before": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 20843
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 32879
+    }
+  ],
+  "compiler_after": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 20733
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 32724
+    }
+  ],
+  "compiler_diagnostic_line_delta": {
+    "Assembly-CSharp-firstpass": -110,
+    "Assembly-CSharp": -155
+  },
+  "source_compiler_results": {
+    "compiler_before": [
+      {
+        "assembly": "Assembly-CSharp-firstpass",
+        "export_exit_code": 0,
+        "restore_exit_code": 0,
+        "build_exit_code": 1,
+        "unique_compiler_diagnostic_lines": 20843
+      },
+      {
+        "assembly": "Assembly-CSharp",
+        "export_exit_code": 0,
+        "restore_exit_code": 0,
+        "build_exit_code": 1,
+        "unique_compiler_diagnostic_lines": 32879
+      }
+    ],
+    "compiler_after": [
+      {
+        "assembly": "Assembly-CSharp-firstpass",
+        "export_exit_code": 0,
+        "restore_exit_code": 0,
+        "build_exit_code": 1,
+        "unique_compiler_diagnostic_lines": 20733
+      },
+      {
+        "assembly": "Assembly-CSharp",
+        "export_exit_code": 0,
+        "restore_exit_code": 0,
+        "build_exit_code": 1,
+        "unique_compiler_diagnostic_lines": 32724
+      }
+    ],
+    "project_compiler": [
+      {
+        "assembly": "Assembly-CSharp-firstpass",
+        "export_exit_code": 0,
+        "restore_exit_code": 0,
+        "build_exit_code": 1,
+        "unique_compiler_diagnostic_lines": 1
+      },
+      {
+        "assembly": "Assembly-CSharp",
+        "export_exit_code": 0,
+        "restore_exit_code": 0,
+        "build_exit_code": 1,
+        "unique_compiler_diagnostic_lines": 10
+      }
+    ]
+  },
+  "prefix_before": {
+    "callvirt": 2,
+    "placeholders": 1,
+    "runtime_performed": false
+  },
+  "prefix_after": {
+    "callvirt": 2,
+    "direct": 0,
+    "runtime_eligible": true,
+    "runtime_performed": false,
+    "runtime_cases": 0,
+    "placeholders": [],
+    "unresolved_calls": [],
+    "limitations": [
+      "Clean prefix correlation found; isolated execution still requires a separately reviewed boundary executor"
+    ],
+    "scope": "Read-only inspection of the unchanged actual recovered Read(Stream) CIL. Bounded CFG entry paths stop at the first original header Length field store, preserving actual call opcodes and member/field identities. Slot19 native dispatch and all802 original native cases are independently hash-bound. Diagnostics, native-int placeholder zeros and missing callvirt are explicit execution blockers; none are rewritten, removed, retargeted or executed. No runtime cases, cloned fragments, game/static constructors or helper substitutions are counted as recovery. Native constructor/vtable input boundaries, complete frame parsing, exception paths and full clean source remain separate."
+  },
+  "isolated_prefix_fragment": {
+    "runtime_performed": true,
+    "cases": 802,
+    "comparisons": 7218,
+    "dynamic_clones": 1,
+    "member_token_remap_sites": 6,
+    "branch_offsets_relocated": 1,
+    "inserted_return_fences": 1,
+    "original_members_substituted": 0,
+    "whole_read_invocations": 0,
+    "host_boundary": "Real host ObservedMemoryStream overrides ReadByte, records original virtual-call results and delegates to host MemoryStream.ReadByte. Actual game receiver type, enum and four field identities are retained; original Stream.ReadByte MethodInfo is unchanged. All locals/branch/store order are retained in one isolated cloned prefix ending at an inserted return after the original first Length store.",
+    "access_bypass": "DynamicMethod uses the original method Module and skipVisibility=true solely to access the original private fields",
+    "scope": "Fragment comparison only, not direct invocation of the entire recovered Read. Member metadata tokens and branch offsets are remapped to their exact original identities in an isolated host method; no diagnostic, call opcode, field type, helper, getter or member is replaced. Original ARM64 native fixtures provide the separate reference. Game/runtime initialization, native object layout/GC/padding, extended lengths, payload, masks, null/closed/error paths, concurrency, helpers, EH and full source portability remain outside this boundary."
+  },
+  "unpromoted_candidate": {
+    "patch": "src\\re\\tool-patches\\cpp2il-sf2-hfa-experimental-runtime-helper-abi-v37-complete.patch",
+    "sha256": "b1464e78b1050c413a0be732bf35db5ef4d72ad79e776853a7cc7fbe08e9136c",
+    "files": 40,
+    "promoted": false
+  },
+  "complete_reader_unresolved_emitter_input_helpers": {
+    "B04F60": 4,
+    "B4D960": 1
+  },
+  "active_sessions": [],
+  "summary_tool_sha256": "436a7bebdbd5b739ac9380ded84f5a2917bd53dadb8ce334523f37076d0334cb",
+  "full_clean_decompile_ready": false,
+  "completed_source_audit_reuse": {
+    "path": "analysis\\reconstruction\\runtime-helper-abi-v37-audit\\first-final-summary.json",
+    "sha256": "06f0ba19f1f841b46715d66c6f4a7823248692026c382efb0d3b02b52f45cc23",
+    "verified_at": "2026-10-17T16:06:10.876133+00:00",
+    "new_source_file_reads": false,
+    "scope": "Reuse of the exact completed hash audit while only reports, probe logic and the candidate package changed; exported source was not modified."
+  },
+  "whole_game_source_ready": false,
+  "portable_game_ready": false,
+  "class_layout_semantics_recovered": false,
+  "exception_factory_semantics_recovered": false,
+  "managed_helper_translation_executed": false,
+  "native_layout_initialized_path_cases": 512,
+  "limits": "Only signatures/liveness and original input/result identities are recovered for these two helpers. Numeric diagnostics, factory result/throw, cold metadata setup, native message conversion/construction, locks, cleanup and unwind remain unresolved. Prefix inspection, native initialized-path fixtures, authored emitter/host contracts and established recovered-code probes are separate scopes. No complete reader/game execution or full clean source is claimed."
+}

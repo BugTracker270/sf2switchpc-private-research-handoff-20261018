@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ORIGINAL_INITIALIZED_LAYOUT_BOOL_AND_NULL_ASSERT_BOUNDARY",
+  "cases": 512,
+  "checks": 3584,
+  "initialized_flag_values": 128,
+  "incoming_x1_values_per_flag": 4,
+  "returned_boolean": true,
+  "null_assert_boundary_cases": 1,
+  "null_assert_source_line": 1443,
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "native_code_sha256": "496575374643a8ca7a9f1181d685de0fa4ac68574a3cc50c315d52d74a4d7dd3",
+  "native_code_bytes": 140,
+  "code_unmodified": true,
+  "guest_function_replacements": 0,
+  "imported_assertion_stopped_before_execution": true,
+  "private_assertion_identity_sha256": "ccc6c53b156818b1f679147e0e6fbe2eb95eb15c542425e565f2c667b4187081",
+  "probe_source_sha256": "d0930293649a36daf2dc16e5f026f07f81e689321957db97820b51fa71ad7906",
+  "scope": "Only the original already-initialized Class::Init path executes to return; 128 flag patterns and four incoming X1 values each verify true result, preserved frame/registers and unchanged class bytes. Null input executes unchanged native instructions to the imported assertion entry, where execution stops. Uninitialized metadata setup, real locking/unwinding/assertion termination, managed .cctor and complete callers are not executed."
+}

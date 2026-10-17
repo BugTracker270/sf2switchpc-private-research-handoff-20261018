@@ -1,0 +1,308 @@
+{
+  "status": "SCALAR_BOXING_METADATA_OBSERVATIONS_ONLY",
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "primitives": [
+    {
+      "type": "System.Boolean",
+      "value_type": true,
+      "instance_size": 17,
+      "native_size": 4,
+      "has_static_constructor": true,
+      "methods": [
+        {
+          "name": "System.Boolean::System.IConvertible.ToType",
+          "underlying_pointer": "0x89E8C0",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "System.Char",
+      "value_type": true,
+      "instance_size": 18,
+      "native_size": 1,
+      "has_static_constructor": true,
+      "methods": [
+        {
+          "name": "System.Char::System.IConvertible.ToType",
+          "underlying_pointer": "0x8A16F0",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "System.SByte",
+      "value_type": true,
+      "instance_size": 17,
+      "native_size": 1,
+      "has_static_constructor": false,
+      "methods": [
+        {
+          "name": "System.SByte::System.IConvertible.ToType",
+          "underlying_pointer": "0x3A92C0",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "System.Byte",
+      "value_type": true,
+      "instance_size": 17,
+      "native_size": 1,
+      "has_static_constructor": false,
+      "methods": [
+        {
+          "name": "System.Byte::System.IConvertible.ToType",
+          "underlying_pointer": "0x89FE60",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "System.Int16",
+      "value_type": true,
+      "instance_size": 18,
+      "native_size": 2,
+      "has_static_constructor": false,
+      "methods": [
+        {
+          "name": "System.Int16::System.IConvertible.ToType",
+          "underlying_pointer": "0x82BB00",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "System.UInt16",
+      "value_type": true,
+      "instance_size": 18,
+      "native_size": 2,
+      "has_static_constructor": false,
+      "methods": [
+        {
+          "name": "System.UInt16::System.IConvertible.ToType",
+          "underlying_pointer": "0xAD5AE0",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "System.Int32",
+      "value_type": true,
+      "instance_size": 20,
+      "native_size": 4,
+      "has_static_constructor": false,
+      "methods": [
+        {
+          "name": "System.Int32::System.IConvertible.ToType",
+          "underlying_pointer": "0x82CFA0",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "System.UInt32",
+      "value_type": true,
+      "instance_size": 20,
+      "native_size": 4,
+      "has_static_constructor": false,
+      "methods": [
+        {
+          "name": "System.UInt32::System.IConvertible.ToType",
+          "underlying_pointer": "0xAD6B60",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "System.Int64",
+      "value_type": true,
+      "instance_size": 24,
+      "native_size": 8,
+      "has_static_constructor": false,
+      "methods": [
+        {
+          "name": "System.Int64::System.IConvertible.ToType",
+          "underlying_pointer": "0x82F8D0",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "System.UInt64",
+      "value_type": true,
+      "instance_size": 24,
+      "native_size": 8,
+      "has_static_constructor": false,
+      "methods": [
+        {
+          "name": "System.UInt64::System.IConvertible.ToType",
+          "underlying_pointer": "0xAD88C0",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "System.Single",
+      "value_type": true,
+      "instance_size": 20,
+      "native_size": 4,
+      "has_static_constructor": false,
+      "methods": [
+        {
+          "name": "System.Single::System.IConvertible.ToType",
+          "underlying_pointer": "0x3F3990",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "System.Double",
+      "value_type": true,
+      "instance_size": 24,
+      "native_size": 8,
+      "has_static_constructor": false,
+      "methods": [
+        {
+          "name": "System.Double::System.IConvertible.ToType",
+          "underlying_pointer": "0x753670",
+          "parameters": [
+            "System.Type",
+            "System.IFormatProvider"
+          ]
+        }
+      ]
+    }
+  ],
+  "key_functions": {
+    "value_box": "0x0",
+    "vm_object_box": "0x0",
+    "object_new": "0xB5B110"
+  },
+  "selected_caller": {
+    "type": "FyberPlugin.User",
+    "name": "SetAge",
+    "underlying_pointer": "0xF230F0",
+    "unresolved_box_calls": [
+      {
+        "arguments": [
+          {
+            "kind": "TypeAnalysisContext",
+            "type": "System.Int32",
+            "address_of_type": null
+          },
+          {
+            "kind": "AddressOf",
+            "type": null,
+            "address_of_type": "System.Int32"
+          },
+          {
+            "kind": "LocalVariable",
+            "type": "Il2CppMethodInfo",
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          },
+          {
+            "kind": "LocalVariable",
+            "type": null,
+            "address_of_type": null
+          }
+        ]
+      }
+    ]
+  },
+  "scope": "Actual Cpp2IL method context addresses and primitive class layout/cctor observations. No native boxing or recovered CIL execution is implied."
+}

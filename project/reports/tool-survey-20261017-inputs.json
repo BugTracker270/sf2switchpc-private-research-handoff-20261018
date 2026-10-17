@@ -1,0 +1,63 @@
+[
+  {
+    "repo": "rodroidmods/il2cpp-dumper-rs",
+    "branch": "master",
+    "commit": "145a751023258a35f133c4f111785a8df0580985",
+    "size_kb": 1467,
+    "license": "GPL-3.0",
+    "date": "2026-10-13T17:56:11Z"
+  },
+  {
+    "repo": "IIIImmmyyy/UREngine",
+    "branch": "master",
+    "commit": "8272f44abfae1344606e7427aa498cad7f4391ad",
+    "size_kb": 1360,
+    "license": null,
+    "date": "2026-10-16T10:20:00Z",
+    "LICENSE_error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "smartfish67png/BetterCpp2IL",
+    "branch": "master",
+    "commit": "43850f644a1584a8ca700cab2f71f4b2462eb255",
+    "size_kb": 115562,
+    "license": "MIT",
+    "date": "2026-10-12T21:08:55Z",
+    "README.md_error": "Remote end closed connection without response"
+  },
+  {
+    "repo": "LukeFZ/Il2CppInspectorRedux",
+    "branch": "master",
+    "commit": "335c3797b102b8151f6ad92e5e1dc2f31e582a70",
+    "size_kb": 460780,
+    "license": "AGPL-3.0",
+    "date": "2026-08-25T13:44:15Z",
+    "LICENSE_error": "Remote end closed connection without response"
+  },
+  {
+    "repo": "Superoldman96/cpp2il",
+    "branch": "development",
+    "commit": "b5ad444b82267cb1e4b88b8b373c008105bdea52",
+    "size_kb": 113485,
+    "license": "MIT",
+    "date": "2026-09-12T12:37:10Z",
+    "LICENSE_error": "Remote end closed connection without response"
+  },
+  {
+    "repo": "BadRyuner/dnspy.Cpp2IL",
+    "branch": "master",
+    "commit": "b3f0a95c74da39ded6a1e007b1ebf7322d93dfde",
+    "size_kb": 759,
+    "license": null,
+    "date": "2024-12-30T16:10:21Z",
+    "LICENSE_error": "Remote end closed connection without response"
+  },
+  {
+    "repo": "SamboyCoding/Cpp2IL",
+    "branch": "development",
+    "commit": "b5ad444b82267cb1e4b88b8b373c008105bdea52",
+    "size_kb": 113666,
+    "license": "MIT",
+    "date": "2026-09-12T12:37:10Z"
+  }
+]

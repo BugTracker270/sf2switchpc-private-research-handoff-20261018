@@ -1,0 +1,196 @@
+{
+  "status": "PASS_ACTUAL_COPIED_COMPANION_CALLVIRT_AND_UNCHANGED_SCOPE_CORRELATION",
+  "recovery_run": "nso-virtual-companion-copy-v38",
+  "baseline_run": "nso-runtime-helper-abi-v37",
+  "checks": 19,
+  "tests": [
+    {
+      "name": "original native witness current/hash-bound",
+      "passed": true
+    },
+    {
+      "name": "nso-runtime-helper-abi-v37 actual TryGetAttribute metadata signature",
+      "passed": true
+    },
+    {
+      "name": "nso-virtual-companion-copy-v38 actual TryGetAttribute metadata signature",
+      "passed": true
+    },
+    {
+      "name": "current original call set is only exact virtual getter and exact direct indexer",
+      "passed": true
+    },
+    {
+      "name": "no pointer casts, helper placeholders, field writes or address operations in actual helper",
+      "passed": true
+    },
+    {
+      "name": "actual helper uses only bounded control/local/member instructions",
+      "passed": true
+    },
+    {
+      "name": "null receiver path returns null without getter/indexer",
+      "passed": true
+    },
+    {
+      "name": "non-null path retains original getter-result/name tail dataflow",
+      "passed": true
+    },
+    {
+      "name": "frozen baseline retains copied-companion diagnostic and no virtual getter",
+      "passed": true
+    },
+    {
+      "name": "tail target and direct opcode retained in both recovered versions",
+      "passed": true
+    },
+    {
+      "name": "other original getter sites and deferred producer-root stay unchanged",
+      "passed": true
+    },
+    {
+      "name": "both original Stream virtual sites retained",
+      "passed": true
+    },
+    {
+      "name": "Stream.Read exact method/local/pinning/InitLocals/maxstack/EH identities",
+      "passed": true
+    },
+    {
+      "name": "Stream.Read same byte length and instruction boundaries",
+      "passed": true
+    },
+    {
+      "name": "Stream.Read exact all non-token opcode/operand bytes and matched metadata identities",
+      "passed": true
+    },
+    {
+      "name": "deferred Yaml void-argument site retained",
+      "passed": true
+    },
+    {
+      "name": "Emitter.Write exact method/local/pinning/InitLocals/maxstack/EH identities",
+      "passed": true
+    },
+    {
+      "name": "Emitter.Write same byte length and instruction boundaries",
+      "passed": true
+    },
+    {
+      "name": "Emitter.Write exact all non-token opcode/operand bytes and matched metadata identities",
+      "passed": true
+    }
+  ],
+  "baseline": {
+    "Recovery": "nso-runtime-helper-abi-v37",
+    "AssemblyHash": "20f79804cb7f0462e4e4e6d7badd991e9b6e8ecc725e12eb0b40dda82a07f372",
+    "BodyHash": "bbca26eeb31f96e66d60de80ab9784dadf1b9fb73e465b9fd4ccd3f455107865",
+    "Instructions": 19,
+    "GetterVirtual": 0,
+    "GetterDirect": 0,
+    "TailCount": 1,
+    "TailDirect": true,
+    "Issues": 1,
+    "Has188Diagnostic": true,
+    "PointerConversions": 0,
+    "FirstGetterVirtual": 2,
+    "First178": 1,
+    "StreamVirtual": 2,
+    "StreamHash": "c6c68dce34f0d23792145aee33254a1d7cc01ddfa3f19dfa7bc75c12b98f5048",
+    "StreamSemanticHash": "b7caf63eb036537254d0d307ed1da2771c7dd7b514b6118a7af5d2e89df33139",
+    "YamlHash": "81bca34f32b049b0d9d701c4fef76557ec2d222f7ec9907f358af8d839152f09",
+    "YamlSemanticHash": "1f42db2cbb901e519b7037c6f48bd020fa38ba105ebc293c853cc51671fa9b29",
+    "YamlIssue": 1,
+    "PrivatePath": "analysis\\reconstruction\\virtual-companion-cil\\nso-runtime-helper-abi-v37.json",
+    "PrivateHash": "6f4eaef8146be3b2239377748f49cb94b818eb6a1620cc20861e3d2129ae5533",
+    "Calls": [
+      {
+        "offset": 42,
+        "opcode": "call",
+        "exact_member_key": "Cpp2ILInjected.Cpp2ILHelpers::NoteDecompilerIssue(System.String)-\u003ESystem.Void",
+        "original_metadata_token": "0x060040E1"
+      },
+      {
+        "offset": 55,
+        "opcode": "call",
+        "exact_member_key": "System.Xml.XmlAttributeCollection::get_ItemOf(System.String)-\u003ESystem.Xml.XmlAttribute",
+        "original_metadata_token": "0x0A00005F"
+      }
+    ]
+  },
+  "actual": {
+    "Recovery": "nso-virtual-companion-copy-v38",
+    "AssemblyHash": "b27b575f04159eb61cd50eaf21566e682b882726b5faa216bf1402b55e7ae27c",
+    "BodyHash": "8f4bd15d3a389843ed61de4163d0f30d12ccf2256c3ed1a696221af9f7dcda90",
+    "Instructions": 19,
+    "GetterVirtual": 1,
+    "GetterDirect": 0,
+    "TailCount": 1,
+    "TailDirect": true,
+    "Issues": 0,
+    "Has188Diagnostic": false,
+    "PointerConversions": 0,
+    "FirstGetterVirtual": 2,
+    "First178": 1,
+    "StreamVirtual": 2,
+    "StreamHash": "ce0a87c57a012fd9e7a885125a2565f03d4a638ebd27c269bb844b5e4059ee92",
+    "StreamSemanticHash": "b7caf63eb036537254d0d307ed1da2771c7dd7b514b6118a7af5d2e89df33139",
+    "YamlHash": "225093e23ee867346211bdf7be92d0f2e7b67c31dd326b77f17dc21f469b2e07",
+    "YamlSemanticHash": "1f42db2cbb901e519b7037c6f48bd020fa38ba105ebc293c853cc51671fa9b29",
+    "YamlIssue": 1,
+    "PrivatePath": "analysis\\reconstruction\\virtual-companion-cil\\nso-virtual-companion-copy-v38.json",
+    "PrivateHash": "67c7b6ccfd74d5cf339aedd38d5fb3e4c13cf7c07173be26daa2aacb523736ab",
+    "Calls": [
+      {
+        "offset": 34,
+        "opcode": "callvirt",
+        "exact_member_key": "System.Xml.XmlNode::get_Attributes()-\u003ESystem.Xml.XmlAttributeCollection",
+        "original_metadata_token": "0x0A00005E"
+      },
+      {
+        "offset": 51,
+        "opcode": "call",
+        "exact_member_key": "System.Xml.XmlAttributeCollection::get_ItemOf(System.String)-\u003ESystem.Xml.XmlAttribute",
+        "original_metadata_token": "0x0A00005F"
+      }
+    ]
+  },
+  "token_only_comparisons": [
+    {
+      "method": "Stream.Read",
+      "instructions": 473,
+      "raw_before_sha256": "c6c68dce34f0d23792145aee33254a1d7cc01ddfa3f19dfa7bc75c12b98f5048",
+      "raw_after_sha256": "ce0a87c57a012fd9e7a885125a2565f03d4a638ebd27c269bb844b5e4059ee92",
+      "normalized_sha256": "1172dddad2d71f77c0f5037d6798d54f2366a2a937793cd26eda85e217346057",
+      "matched_metadata_operands": 71,
+      "changed_metadata_tokens": 6,
+      "all_non_token_bytes_equal": true,
+      "original_cil_rewritten": false
+    },
+    {
+      "method": "Emitter.Write",
+      "instructions": 16,
+      "raw_before_sha256": "81bca34f32b049b0d9d701c4fef76557ec2d222f7ec9907f358af8d839152f09",
+      "raw_after_sha256": "225093e23ee867346211bdf7be92d0f2e7b67c31dd326b77f17dc21f469b2e07",
+      "normalized_sha256": "354e829b5348a2a4b83f9dfe5556bb89c50094acd038a790d7f1ac65b29f8ba3",
+      "matched_metadata_operands": 5,
+      "changed_metadata_tokens": 1,
+      "all_non_token_bytes_equal": true,
+      "original_cil_rewritten": false
+    }
+  ],
+  "fatal": null,
+  "probe_source_sha256": "9dc5527376522e12bf725980bca9b10fa08efec98b222a35baf36995b74b7855",
+  "native_inventory_sha256": "566ae3b3ab196881471d6fe33c702e02b23e2276e61833d12bef46254bf34c66",
+  "game_methods_invoked": 0,
+  "runtime_cases": 0,
+  "cil_modified": false,
+  "call_opcodes_rewritten": 0,
+  "member_substitutions": 0,
+  "dynamic_clones": 0,
+  "tokens_remapped": 0,
+  "full_clean_decompile_ready": false,
+  "raw_cil_hashes_retained": true,
+  "unaffected_methods_comparison": "Exact opcodes, offsets, all immediate/string operands, resolved member identities, branch destinations, local types/pinning, InitLocals, MaxStack and EH clauses. Original raw hashes are retained separately because emitted metadata token numbering can change across full outputs.",
+  "scope": "Read-only actual recovered CIL comparison in isolated collectible assembly contexts. Exact original virtual XmlNode.Attributes getter and direct XmlAttributeCollection indexer identities/opcodes, null branch and saved name/getter-result dataflow are analyzed without invoking either method. Null-getter results, real XML parsing, exceptions, constructor/runtime effects and whole-game behavior remain unexecuted; the original76-byte native witness provides separate register/copy/control evidence."
+}

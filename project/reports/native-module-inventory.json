@@ -1,0 +1,220 @@
+{
+  "status": "PASS_SUPPLIED_MODULE_IMAGES_AND_SEGMENT_HASHES",
+  "modules": {
+    "main": {
+      "source_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "uncompressed_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+      "build_id": "e15fc665ec42684aa6edd1ae03624d9600000000000000000000000000000000",
+      "segments": [
+        {
+          "segment": "text",
+          "rva": 0,
+          "bytes": 37181704,
+          "hash_enabled": true,
+          "sha256": "7d00701424e677fdd2eeb58d3ebc9f3af59bcc67df04eaa1db7d12fe9f20a3fb",
+          "header_hash_match": true
+        },
+        {
+          "segment": "rodata",
+          "rva": 37183488,
+          "bytes": 19911396,
+          "hash_enabled": true,
+          "sha256": "d5b9a5fa208b5d706da3e5ec5eef6fc252865ae1a13237aa3d1ef31c043b0163",
+          "header_hash_match": true
+        },
+        {
+          "segment": "data",
+          "rva": 57098240,
+          "bytes": 3921208,
+          "hash_enabled": true,
+          "sha256": "9ea52de43c024b6707d5718bb425f09ad69fd2de99a73d9a936ebf605cc5ebe6",
+          "header_hash_match": true
+        }
+      ],
+      "dynamic_symbols": 700,
+      "symbol_roles": {
+        "IMPORT": 670,
+        "EXPORT": 30
+      },
+      "defined_function_symbols": 18,
+      "unique_defined_function_addresses": 18,
+      "symbol_name_family_counts": {
+        "FMOD": 2,
+        "nvn": 1,
+        "nn": 471,
+        "opus": 0,
+        "vorbis": 0,
+        "avcodec": 0,
+        "malloc": 1
+      },
+      "unwind": {
+        "status": "PASS_FRAME_RANGE_INVENTORY",
+        "validated_ranges": 152904,
+        "errors": 0,
+        "source": "reports/native-unwind-inventory.json"
+      }
+    },
+    "rtld": {
+      "source_sha256": "6f7b8c19515b35331054288e30ff59543132a799b208f716bc30b6578b5f0f48",
+      "uncompressed_sha256": "bcc202f26065d0db0e6d6e4a05de7c846e1e716643d9f1a90b8167c7a0c9d249",
+      "build_id": "6574c7e3a1069ff7c8f9a2523cd3566bf6336a93000000000000000000000000",
+      "segments": [
+        {
+          "segment": "text",
+          "rva": 0,
+          "bytes": 6560,
+          "hash_enabled": true,
+          "sha256": "b26e3d6aebb185901dbd842685941d0b2f3f166111df2e71c830d3b647a74314",
+          "header_hash_match": true
+        },
+        {
+          "segment": "rodata",
+          "rva": 8192,
+          "bytes": 3324,
+          "hash_enabled": true,
+          "sha256": "7a04f2f7579df72d05dfcbdf68f45e0fdf5b9281abfa254e4bbce05450f69f35",
+          "header_hash_match": true
+        },
+        {
+          "segment": "data",
+          "rva": 12288,
+          "bytes": 664,
+          "hash_enabled": true,
+          "sha256": "ac5e418b5f6b74e5a3cceb0b0e7566f9457472d21e82d9dbcb7f96feb632a67e",
+          "header_hash_match": true
+        }
+      ],
+      "dynamic_symbols": 19,
+      "symbol_roles": {
+        "IMPORT": 19
+      },
+      "defined_function_symbols": 0,
+      "unique_defined_function_addresses": 0,
+      "symbol_name_family_counts": {
+        "FMOD": 0,
+        "nvn": 0,
+        "nn": 3,
+        "opus": 0,
+        "vorbis": 0,
+        "avcodec": 0,
+        "malloc": 0
+      },
+      "unwind": {
+        "status": "PASS_FRAME_RANGE_INVENTORY",
+        "declared_entries": 23,
+        "validated_ranges": 23,
+        "errors": 0,
+        "cies": 1
+      }
+    },
+    "sdk": {
+      "source_sha256": "bf968c761811fe5b9463fdb6b0ae2619a9556a52c6a7886b4051184bf5c35a4a",
+      "uncompressed_sha256": "5119d48ae893e7585dca3e2f01c2319f046699a294d8c579f49e9329052e618d",
+      "build_id": "26ffb122262ca25e4c016c0af2f92a29483c64a2000000000000000000000000",
+      "segments": [
+        {
+          "segment": "text",
+          "rva": 0,
+          "bytes": 5142880,
+          "hash_enabled": true,
+          "sha256": "70fd875b7238dd8d9cc2451065ee583048c4a9dcffb2318f6e9b805cbfad33f5",
+          "header_hash_match": true
+        },
+        {
+          "segment": "rodata",
+          "rva": 5144576,
+          "bytes": 6082664,
+          "hash_enabled": true,
+          "sha256": "7ba5148e062c43eda449e24f53e61e3c43f2e3b4c07d33fb34381c7dc889a69a",
+          "header_hash_match": true
+        },
+        {
+          "segment": "data",
+          "rva": 11231232,
+          "bytes": 390528,
+          "hash_enabled": true,
+          "sha256": "e8c846277370c5c565df268e629059c23e0944f0313cb39e86fb223848d3a806",
+          "header_hash_match": true
+        }
+      ],
+      "dynamic_symbols": 22773,
+      "symbol_roles": {
+        "IMPORT": 13,
+        "EXPORT": 22760
+      },
+      "defined_function_symbols": 19198,
+      "unique_defined_function_addresses": 18326,
+      "symbol_name_family_counts": {
+        "FMOD": 5,
+        "nvn": 4,
+        "nn": 16845,
+        "opus": 248,
+        "vorbis": 0,
+        "avcodec": 0,
+        "malloc": 10
+      },
+      "unwind": {
+        "status": "PASS_FRAME_RANGE_INVENTORY",
+        "declared_entries": 24032,
+        "validated_ranges": 24032,
+        "errors": 0,
+        "cies": 67
+      }
+    },
+    "subsdk0": {
+      "source_sha256": "64e9b3457c91097fd71458d73a7457f47f51fcc9f385fbd3ec4affb8e47d52a4",
+      "uncompressed_sha256": "c0597ef18697761d097859b66e76202f34921512f579d4ac97aad793d1a74908",
+      "build_id": "41097c438a36afd2e879fa6f5e0f08502f90a941000000000000000000000000",
+      "segments": [
+        {
+          "segment": "text",
+          "rva": 0,
+          "bytes": 3414216,
+          "hash_enabled": true,
+          "sha256": "c96e8a35b391bf69d08b48733f08372fdf9eff2176fbe711f1c9a3ddcbbccc7b",
+          "header_hash_match": true
+        },
+        {
+          "segment": "rodata",
+          "rva": 3416064,
+          "bytes": 2503032,
+          "hash_enabled": true,
+          "sha256": "5e0064399d04f8f0a12e333bda987d1ffb4538bfd02ccf9dbd93e810e60aa6c4",
+          "header_hash_match": true
+        },
+        {
+          "segment": "data",
+          "rva": 5922816,
+          "bytes": 226824,
+          "hash_enabled": true,
+          "sha256": "205dd347814e2279cb12931e7ba4ca4c7b2bcbf628fa7098e255a34bf0502831",
+          "header_hash_match": true
+        }
+      ],
+      "dynamic_symbols": 11247,
+      "symbol_roles": {
+        "IMPORT": 642,
+        "EXPORT": 10605
+      },
+      "defined_function_symbols": 8583,
+      "unique_defined_function_addresses": 8097,
+      "symbol_name_family_counts": {
+        "FMOD": 1,
+        "nvn": 28,
+        "nn": 889,
+        "opus": 2,
+        "vorbis": 82,
+        "avcodec": 0,
+        "malloc": 9
+      },
+      "unwind": {
+        "status": "PASS_FRAME_RANGE_INVENTORY",
+        "declared_entries": 9774,
+        "validated_ranges": 9774,
+        "errors": 0,
+        "cies": 2
+      }
+    }
+  },
+  "scope": "Original supplied main/rtld/sdk/subsdk0 NSOs only. Enabled segment hashes are compared with original compressed-module headers; symbol-name families are string observations, not runtime reachability. Additional module FDE decoding is reported independently and can be absent/unsupported. No SDK download, native library implementation parity, OS emulation or whole-NSP semantic completion claim."
+}

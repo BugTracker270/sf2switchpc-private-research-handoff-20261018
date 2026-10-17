@@ -1,0 +1,109 @@
+{
+  "status": "NOT_COMPLETE",
+  "user_requirement": "A full clean decompile usable as the source foundation for a complete port to another OS; reverse engineering is supporting work.",
+  "future_targets_mentioned_by_user": [
+    "Windows 10",
+    "PS5 homebrew"
+  ],
+  "current_phase_excludes_platform_port_implementation": true,
+  "completion_gates": [
+    {
+      "gate": "Archive and effective build provenance",
+      "status": "PASS",
+      "evidence": "reports/extract-manifest.json"
+    },
+    {
+      "gate": "Complete native executable/module inventory and bounded decompilation",
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "reports/native-module-inventory.json",
+        "reports/native-unwind-recovery.json",
+        "reports/native-auxiliary-sdk-resolved-v1.json",
+        "reports/native-auxiliary-subsdk0-resolved-v1.json",
+        "reports/native-auxiliary-rtld-v1.json",
+        "reports/native-pseudocode-quality.json",
+        "reports/native-text-partition.json"
+      ]
+    },
+    {
+      "gate": "Recovered game logic has no unresolved diagnostic or placeholder bodies",
+      "status": "FAIL",
+      "evidence": [
+        "reports/decompilation-quality.json",
+        "reports/diagnostic-scaffolds-nso-object-isinst-abi-v40.json",
+        "reports/recovered-object-isinst-abi-nso-object-isinst-abi-v40.json"
+      ],
+      "limitation": "Actual44 injected NoteDecompilerIssue helpers are bare returns, with61,133 call sites across10,834 game methods. They do not log or trap; sampled unassigned helper results can read as implicit InitLocals null. Five sampled Array bodies remain unchanged default stubs. Diagnostic-free/minimal bodies are still semantically unclassified."
+    },
+    {
+      "gate": "Operand types, allocations, call ABI, control flow and exception semantics validated",
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "reports/scoped-csharp-type-audit.json",
+        "reports/arm64-currency-abi-gap.json",
+        "reports/virtual-dispatch-source-recovery-v36.json",
+        "reports/class-layout-runtime-source-v37.json",
+        "reports/class-layout-translation-contract-v37.json",
+        "reports/runtime-helper-abi-source-recovery-v37.json",
+        "reports/recovered-virtual-stream-prefix-runtime-nso-runtime-helper-abi-v37.json",
+        "reports/virtual-companion-source-recovery-v38.json",
+        "reports/recovered-xml-attribute-runtime-nso-virtual-companion-copy-v38.json",
+        "reports/assembly-leaf-getter-source-recovery-v39.json",
+        "reports/object-isinst-abi-source-recovery-v40.json"
+      ],
+      "limitation": "Exact native helper signatures are recovered while their numeric diagnostics/effects remain unresolved. The separate cloned reader prefix passes 802 cases / 7,218 comparisons with explicit token/branch remapping and private access bypass; complete Read execution is zero. General virtual ABI and EH remain incomplete. Same-assembly getter recovery preserves private flags and validates exact native leaves, but broader member access and runtime semantics remain incomplete."
+    },
+    {
+      "gate": "Managed exception handlers and cleanup semantics recovered",
+      "status": "FAIL",
+      "evidence": [
+        "reports/class-guard-eh-eligibility-inventory-v35.json",
+        "reports/exception-metadata-parser-v35.json",
+        "reports/exception-metadata-independent-review-v35.json",
+        "reports/exception-region-design-v36.json",
+        "reports/exception-region-independent-review-v36.json"
+      ],
+      "limitation": "All 44 inspected v33 DLLs have zero CIL exception regions, while the original UnloadDependencies LSDA has three landing entries. The bounded metadata parser does not emit handlers or execute unwinding. Its CFI observations are not finalized unwind rows. Ordinary CFG reachability does not account for original exception edges. The v36 standalone region validator is synthetic structural evidence only; production handlers, exception-entry SSA and unwind translation remain absent."
+    },
+    {
+      "gate": "Complete source export builds reproducibly and passes relevant native comparisons",
+      "status": "FAIL",
+      "evidence": [
+        "reports/recovered-source-profile-legacy-reference-check-nso-bool-fields-v19.json",
+        "reports/recovered-source-profile-legacy-reference-check-nso-hfa-v20d.json",
+        "reports/better-source-v1-compile.json",
+        "reports/recovered-source-profile-legacy-reference-check-nso-class-origin-phi-v34.json",
+        "reports/recovered-source-profile-legacy-reference-check-nso-plain-frame-cfg-v35.json",
+        "reports/recovered-source-profile-legacy-reference-check-nso-virtual-dispatch-v36.json",
+        "reports/virtual-dispatch-source-recovery-v36.json",
+        "reports/recovered-source-profile-legacy-reference-check-nso-runtime-helper-abi-v37.json",
+        "reports/runtime-helper-abi-source-recovery-v37.json",
+        "reports/virtual-companion-source-recovery-v38.json",
+        "reports/recovered-source-profile-legacy-reference-check-nso-virtual-companion-copy-v38.json",
+        "reports/assembly-leaf-getter-source-recovery-v39.json",
+        "reports/compiler-diagnostic-delta-v39.json",
+        "reports/assembly-leaf-added-diagnostics-attribution-v39.json",
+        "reports/object-isinst-abi-source-recovery-v40.json",
+        "reports/compiler-diagnostic-delta-v40.json"
+      ],
+      "limitation": "Both complete unchanged v40 source builds fail: firstpass20,393 / main32,399 diagnostic lines (452 fewer than39). Eight added occurrences require explicit attribution. Passing18 bounded regressions and precise native ABI checks do not recover executable helper returns, dynamic class effects or complete source."
+    },
+    {
+      "gate": "Original serialization and other behavior-relevant custom attributes recovered",
+      "status": "IN_PROGRESS",
+      "limitation": "The marker-only source view is diagnostic and intentionally omits other original attributes; annotated metadata remains preserved separately."
+    },
+    {
+      "gate": "Platform imports/runtime contracts explicitly separated from portable game logic",
+      "status": "IN_PROGRESS",
+      "evidence": "reports/platform-dependency-matrix.csv"
+    },
+    {
+      "gate": "Original Switch content and serialized dependencies fully accounted for",
+      "status": "IN_PROGRESS",
+      "evidence": "reports/asset-integrity.md"
+    }
+  ],
+  "interpretation": "This requires usable recovered implementations, not restoration of original comments/formatting lost by compilation. Native pseudocode coverage and bounded tests cannot substitute for the source build and completeness gates. Future target SDK/toolchain compatibility remains a later porting task.",
+  "alternative_tool_review": "reports/tool-survey-20261017.md"
+}

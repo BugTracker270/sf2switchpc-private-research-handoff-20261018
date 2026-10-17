@@ -1,0 +1,34 @@
+{
+  "status": "SOURCE_REVIEW_CONCERN_FIXED_PRODUCTION_GATES_PENDING",
+  "reviewed_file": "refs/Cpp2IL/Cpp2IL.Core/Analysis/KeyFunctionRecovery.cs",
+  "source_sha256": "9064474aed01a88a959be70f338e7597ed46b69c6dea487a58ae13a3e9d3a5f0",
+  "independent_review_only": true,
+  "shared_core_built_by_reviewer": false,
+  "production_runtime_tested_by_reviewer": false,
+  "proposal_report": "reports/class-metadata-phi-proposal-v34.json",
+  "finding": {
+    "issue": "A distinct-local bound alone does not bound repeated recursive traversal of a shared acyclic Phi DAG.",
+    "example": "Each successive merge Phi refers to the previous merge local on both predecessor edges. Each visit repeats the complete prior proof. With n Phi nodes and one root Move, visits grow as 2^(n+1)-1 while distinct locals grow as n+1.",
+    "required_fix": "Fail closed after 256 total ProveAt visits per proof, retaining per-use availability checks.",
+    "current_source_contains_fix": true,
+    "current_source_guard": "if (++_visits > 256) return false;",
+    "production_fixture_expectation": "Short shared Phi DAG accepted; larger valid shared DAG rejected at the total visit budget."
+  },
+  "checked_contracts": [
+    "SsaForm inserts Phi sources in the exact positional order of Block.Predecessors; the proof uses that same order and checks definition availability at each predecessor end.",
+    "Exact predecessor arity, leading Phi/Nop prefix, unique SSA definition, same-block instruction ordering and fresh cross-block dominance are checked.",
+    "Unique reachable reciprocal topology is validated before dominance construction; unreachable non-exit blocks and dangling, asymmetric or duplicate edges reject.",
+    "Each traversed local must retain the exact represented TypeAnalysisContext identity through Move roots; propagated names or RuntimeClass typing alone do not suffice.",
+    "Active dependency cycles reject; acyclic metadata values reused on loop paths may pass only when their definitions are available on every edge.",
+    "Taking a traversed class local address anywhere conservatively rejects that origin. Address wrappers nested through supported memory and index operands are inspected.",
+    "The non-Phi Move path retains unique-definition and availability checks and receives conservative whole-graph topology and address-escape checks.",
+    "The proof changes class identity eligibility only; existing helper ABI, unused-result, closed-type and exact RuntimeHelpers overload gates remain."
+  ],
+  "no_additional_blocking_issue_found": true,
+  "remaining": [
+    "Compile the current shared Core snapshot only through the parent-coordinated build slot.",
+    "Run the production helper fixture gate including bounded shared DAG cases.",
+    "Run fresh output, native correlation, recovered CIL/runtime and whole-source checks before making production recovery claims."
+  ],
+  "full_clean_decompile_ready": false
+}

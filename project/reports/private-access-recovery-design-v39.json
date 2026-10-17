@@ -1,0 +1,116 @@
+{
+  "status": "READ_ONLY_PRIVATE_ACCESS_MECHANISMS_SEPARATED_SCOPED_ASSEMBLY_GETTER_CONTRACT_IN_PROGRESS",
+  "census_run": "nso-runtime-helper-abi-v37",
+  "census_sha256": "8f22509eb127b97c0f2031bbab6b8b75ca46bc99ff4c8c5579ba7a145e41df86",
+  "diagnostics": {
+    "firstpass_cs0122": 2713,
+    "main_cs0122": 4225,
+    "rect_private_float_fields_firstpass": 219,
+    "rect_private_float_fields_main": 508,
+    "serializer_backing_field_read_or_address_shapes": 99,
+    "serializer_backing_field_simple_stores": 2,
+    "dialogs_singleton": 170,
+    "protected_modelnode_current": 113
+  },
+  "original_native_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "native_leaves": [
+    {
+      "rva": "0x1E6850",
+      "bytes": 8,
+      "sha256": "f289023bfc90be5c90aa1a98a40c5b356af639e69af0399f5914b2202364955c"
+    },
+    {
+      "rva": "0x1E6840",
+      "bytes": 8,
+      "sha256": "e2049e634203975b3ab577fcedd5fcebf7eb16547f254b69f38a7efd4d28f8c7"
+    },
+    {
+      "rva": "0x1238500",
+      "bytes": 8,
+      "sha256": "0108b04079759d744f2a765f2891f8a9005c61d7a18a94d0391a40b6ae5a9aab"
+    },
+    {
+      "rva": "0x12384F0",
+      "bytes": 8,
+      "sha256": "5bff9917caeca09f013d36310c3e1f074b7ddba3a56e67e3fee27062ecd7090e"
+    },
+    {
+      "rva": "0x1238540",
+      "bytes": 8,
+      "sha256": "e506b0bca2a5826af13852debb9f75b332002ec0cfab486b1ef018b245f484f4"
+    },
+    {
+      "rva": "0x1238530",
+      "bytes": 8,
+      "sha256": "e694e5657330128c42aa967249ff7cb60e20be4801f533e609d0dc49f7683d1a"
+    }
+  ],
+  "private_native_detail_sha256": "3eff5f57ef97b12f0103c9fadbde125ab8015c9e114c177d28c071a237e131f2",
+  "visibility_provenance": [
+    "LibCpp2IL/Metadata/Il2CppTypeDefinition.cs FieldAttributes reads native Il2CppType.Attrs.",
+    "Il2CppFieldReflectionData.Attributes feeds FieldAnalysisContext.DefaultAttributes; original private/Family/Assembly flags remain evidence.",
+    "AsmResolverAssemblyPopulator.CopyFieldsInType copies context Attributes into FieldDefinition; types/methods have separate original flags.",
+    "The compiler errors arise after native inlining or unresolved receiver/body recovery produces direct nonpublic accesses in other managed callers. They do not justify public visibility overrides."
+  ],
+  "mechanisms": [
+    {
+      "kind": "same_assembly_exact_instance_getter",
+      "candidate": "JsonSerializerInternalBase.Serializer",
+      "original_field": "private reference at 0x20",
+      "original_getter": "Assembly nonvirtual instance",
+      "normal_source_form": "Existing accessible internal property getter",
+      "excluded": "Two private-setter/base-constructor stores",
+      "next_step": "Unique exact native getter selection plus uncached actual attached output assembly/type/method/field identity checks per caller; no original flags change. Bind every selected existing recovered getter to one exact field load/return with local copies only, then real emitter tests and fresh production/source correlation."
+    },
+    {
+      "kind": "value_type_receiver_and_entry_identity",
+      "candidate": "UnityEngine.Rect",
+      "original_layout": "Four private Single fields at unboxed offsets 0/4/8/12; registered boxed get_width/get_height read +24/+28; separate unregistered unboxed leaves read +8/+12.",
+      "observed_caller": "ChangingSprite.SetAnimation supplies stack Rect storage, calls unregistered scalar leaves, and consumes S0; current source retains unresolved calls and erroneous m_XMin read shapes.",
+      "next_step": "Prove receiver-adjusted native leaf identity, call ABI and stack storage before any value-type accessor reconstruction. Private-property substitution alone would conceal a deeper body/receiver error.",
+      "implemented": false
+    },
+    {
+      "kind": "effectful_singleton_inlining",
+      "candidate": "DialogsManager.Instance",
+      "original_native_bytes": 128,
+      "effects": [
+        "method metadata assurance",
+        "null branch",
+        "allocation",
+        "constructor",
+        "static field store"
+      ],
+      "next_step": "Whole-region ordered effect/allocation/branch proof; single field loads must not be mapped to this effectful getter.",
+      "implemented": false
+    },
+    {
+      "kind": "protected_instance_getter_initialization",
+      "candidate": "ModelNode.CurrentPosition",
+      "prior_audit": "reports/private-access-protected-analysis-v29.json",
+      "reason_deferred": "Original Family field, owner BeforeFieldInit and .cctor; native leaf alone does not prove managed initialization timing.",
+      "implemented": false
+    },
+    {
+      "kind": "inlined_constructor_private_stores",
+      "examples": [
+        "Token.start/end",
+        "Serializer private setter/base constructor"
+      ],
+      "next_step": "Recover original constructor/call region with exact parameters, ordered guards/effects, initialized storage and allocation identity; do not call a private setter from an unrelated type.",
+      "implemented": false
+    }
+  ],
+  "prior_validated_private_access": {
+    "run": "nso-native-leaves-v29",
+    "source_report": "reports/private-access-source-nso-native-leaves-v29.json",
+    "input_handle_stores_recovered_as_existing_public_setter": 673,
+    "original_private_flags_preserved": true,
+    "effectful_fallback_getter_rejected": true
+  },
+  "source_edited": false,
+  "visibility_widened": false,
+  "game_methods_executed_by_assessment": 0,
+  "whole_game_source_ready": false,
+  "limits": "Counts include compiler cascades and source expression classifications, not unique defects or runtime coverage. This report separates recovery mechanisms; the new Core experiment and its gates are separate artifacts, not a claim that existing compiler failures are fixed."
+}

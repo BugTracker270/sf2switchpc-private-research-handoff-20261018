@@ -1,0 +1,69 @@
+{
+  "status": "PASS_CURRENT_CORE_CFG_BOUNDARY_PROBE",
+  "checks": 13,
+  "failures": 0,
+  "tests": [
+    {
+      "name": "loaded Core matches frozen v35 recovery provenance",
+      "passed": true
+    },
+    {
+      "name": "CFG construction rewrites shared branch operand to a Block",
+      "passed": true
+    },
+    {
+      "name": "shallow list copy preserves shared mutable Instruction instances",
+      "passed": true
+    },
+    {
+      "name": "branch rewrite resolves original normal-return instruction identity",
+      "passed": true
+    },
+    {
+      "name": "handler-shaped instructions physically exist before pruning",
+      "passed": true
+    },
+    {
+      "name": "entry-only instruction enumeration omits handler-shaped instructions",
+      "passed": true
+    },
+    {
+      "name": "normal reachability pruning removes all handler-shaped blocks",
+      "passed": true
+    },
+    {
+      "name": "pruning keeps the normal return",
+      "passed": true
+    },
+    {
+      "name": "branch clone maps targets to cloned identity before CFG construction",
+      "passed": true
+    },
+    {
+      "name": "cloned CFG rewrites only the cloned branch",
+      "passed": true
+    },
+    {
+      "name": "all original fixture instructions remain unmodified by cloned CFG",
+      "passed": true
+    },
+    {
+      "name": "duplicate identity rejects before temporary CFG construction",
+      "passed": true
+    },
+    {
+      "name": "outside branch target rejects without mutating source",
+      "passed": true
+    }
+  ],
+  "loaded_core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+  "core_source_sha256": "78a6b98f8d2e5926be744c86d2acdb3a439771e356ff4888310f8790e0818791",
+  "instruction_source_sha256": "3feeb3e4e4433afc5e87ad45281e3c56c094e92a5f0172891aa22f5ee27f7a10",
+  "probe_source_sha256": "d69169a39f330648ef4eda096d8c4a7334891d5d58573d89fbad4c9b8e27632e",
+  "core_built": false,
+  "core_edited": false,
+  "original_game_inputs_read": false,
+  "game_code_executed": false,
+  "production_eh_ready": false,
+  "scope": "Actual existing Core CFG construction and pruning on original synthetic ISIL only. Handler-shaped blocks have no EH descriptor in current Core and are omitted/pruned by normal reachability. A shallow list copy shares mutable instructions; a branch-remapped fixture clone preserves the source. No general mutable-operand clone, SSA exception semantics, native unwinding or CIL EH emission is tested."
+}

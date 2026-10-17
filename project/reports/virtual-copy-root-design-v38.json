@@ -1,0 +1,72 @@
+{
+  "status": "DESIGN_ONLY_BOUNDED_VIRTUAL_COMPANION_COPY_AND_STABLE_CALL_RESULT_ROOT",
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "existing_core_snapshot_sha256": "23b43f3a1d07dca7483ec0fac031380d934a16f2fc8c34bc5922f52af0ac6044",
+  "existing_triage_report": "reports/virtual-receiver-root-triage-v37.json",
+  "existing_triage_sha256": "d7f780fab7606c3c7a35f4f0d965b9341fe0f7dcb430e24879484aec3ecc44f0",
+  "private_native_path": "analysis/reconstruction/virtual-copy-root-v38/native-inventory.json",
+  "private_native_sha256": "566ae3b3ab196881471d6fe33c702e02b23e2276e61833d12bef46254bf34c66",
+  "original_methods": [
+    {
+      "name": "XmlExtensions.TryGetAttribute",
+      "start": 22847616,
+      "end": 22847692,
+      "bytes": 76,
+      "sha256": "31624d0e92a6f3d234085049e27d6d43d93a464f4c6d4f51856901ec77d48c00"
+    },
+    {
+      "name": "XmlExtensions.FirstAttribute",
+      "start": 22848880,
+      "end": 22848988,
+      "bytes": 108,
+      "sha256": "f821c50fecebb7edfeb7c42c5611624b1495d4c2266ff7895fcd7c8347d99909"
+    }
+  ],
+  "companion_copy_window": {
+    "class_load": "0x15CA094",
+    "paired_slot6_load": "0x15CA098",
+    "receiver_copy": "0x15CA09C",
+    "companion_copy": "0x15CA0A0",
+    "dispatch": "0x15CA0A4",
+    "function_offset": "0x188",
+    "companion_offset": "0x190"
+  },
+  "stable_call_result_window": {
+    "producer_dispatch": "0x15CA590",
+    "returned_receiver_class_load": "0x15CA594",
+    "paired_slot5_load": "0x15CA598",
+    "consumer_dispatch": "0x15CA59C",
+    "function_offset": "0x178",
+    "companion_offset": "0x180"
+  },
+  "proposed_companion_rule": "Trace only raw X1 companion through at most32 unique available local Move copies to its exact original paired memory load, with same-class identity, slot+8, no index and same-block pure timing window. Preserve all load/copy instructions and all other consumers; do not synthesize values or delete a live companion definition.",
+  "proposed_receiver_rule": "Separate subsequent extension: allow the exact unique available typed reference result of a prior already-proven managed Call as a root. Carry immutable producer-instruction and result-local identity, prove fresh cone dominance/no escape and identical receiver at class load/call, and protect/revalidate both at SSA removal, cloning, coalescing and emission. Do not re-invoke its producer or assume equal-type values are identical.",
+  "negative_fixture_matrix": [
+    "Companion root loads the wrong slot or a different class value.",
+    "Raw MethodInfo argument is not X1, or an explicit native argument would occupy X1.",
+    "Copy chain has a cycle, duplicate definition, late definition, non-dominating definition or exceeds32 steps.",
+    "A copy source is Phi, address-taken, redefined, memory-reloaded or arbitrarily converted.",
+    "Terminal companion load or any intermediate copy is outside the original pure same-block dispatch window.",
+    "A field read/store, semantic call or other fault/effect is introduced between class dereference and dispatch.",
+    "Non-parameter receiver root has no unique typed reference-producing definition.",
+    "Producer return is value type, byref, pointer, generic/open, floating point or otherwise outside the proven X0 ABI.",
+    "Producer is an unresolved raw call or has an invalid existing virtual carrier.",
+    "Class-load receiver and invocation receiver trace to different same-typed producer results.",
+    "Original producer does not dominate both class dereference and invocation, or root escapes by address.",
+    "Emitter sees a changed producer identity, root destination, receiver, target, owner or call opcode.",
+    "Clone or CopyCoalescer loses the exact producer/root proof identity.",
+    "Malformed incoming cone edge or later cycle hides a receiver definition.",
+    "Void targets, explicit managed arguments and the Yaml field-root case remain rejected under this proposal."
+  ],
+  "existing_contract_fixtures_to_preserve": 43,
+  "existing_contract_checks_to_preserve": 218,
+  "existing_host_clr_cases_to_preserve": 99,
+  "core_modified": false,
+  "recovery_performed": false,
+  "accepted_new_production_calls": 0,
+  "game_functions_executed": 0,
+  "void_targets_in_scope": false,
+  "explicit_arguments_in_scope": false,
+  "arbitrary_field_roots_in_scope": false,
+  "full_clean_decompile_ready": false
+}

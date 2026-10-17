@@ -1,0 +1,118 @@
+{
+  "status": "RECOVERED_VECTOR3_ABI_LIMITATION",
+  "recovery_run": "nso-hfa-v20c",
+  "cases": 64,
+  "checks": 192,
+  "failure_count": 64,
+  "first_failures": [
+    {
+      "index": 0,
+      "got": [
+        0,
+        0,
+        0
+      ],
+      "want": [
+        0,
+        1065353216,
+        1068149419
+      ]
+    },
+    {
+      "index": 1,
+      "got": [
+        0,
+        0,
+        0
+      ],
+      "want": [
+        0,
+        3212836864,
+        2139095039
+      ]
+    },
+    {
+      "index": 2,
+      "got": [
+        0,
+        0,
+        0
+      ],
+      "want": [
+        1065353216,
+        1051372203,
+        1065353216
+      ]
+    },
+    {
+      "index": 3,
+      "got": [
+        0,
+        0,
+        0
+      ],
+      "want": [
+        3212836864,
+        2139095039,
+        1065353216
+      ]
+    },
+    {
+      "index": 4,
+      "got": [
+        0,
+        0,
+        0
+      ],
+      "want": [
+        1051372203,
+        8388608,
+        1065353216
+      ]
+    },
+    {
+      "index": 5,
+      "got": [
+        0,
+        0,
+        0
+      ],
+      "want": [
+        2139095039,
+        2155872256,
+        1065353216
+      ]
+    },
+    {
+      "index": 6,
+      "got": [
+        0,
+        0,
+        0
+      ],
+      "want": [
+        8388608,
+        0,
+        1073741824
+      ]
+    },
+    {
+      "index": 7,
+      "got": [
+        0,
+        0,
+        0
+      ],
+      "want": [
+        2155872256,
+        2147483648,
+        0
+      ]
+    }
+  ],
+  "fatal": null,
+  "body_il_sha256": "a91f002471ac1dae47e73c7306915fa55e23caa92d86fece0fd6e47daf505dab",
+  "assembly_sha256": "cbcefce0e0da5023e8bbd654cccb9786b599a27a917156068e07e58f937c0d74",
+  "fixture_sha256": "a90434a7d325d6761703a46412a5e30e7585b90179a80568c3c74ca673330c6f",
+  "scope": "Recovered addition CIL in a DynamicMethod with the same-size three-float struct substituted only for the Unity value type and exact x/y/z field/type tokens. Arithmetic, control-flow bytes and scalar locals remain. Avoids Unity class initialization; no game DLL edits, runtime method mocks or whole-game/other-ABI certification."
+}

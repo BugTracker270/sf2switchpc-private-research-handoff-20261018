@@ -1,0 +1,136 @@
+{
+  "probes": [
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-syntax.log",
+      "exit_code": 0,
+      "suffix": "syntax",
+      "probe_sha256": "d0903b388e0a07ebcf091d4c13860a253bcacd1e856e543724b31a096652eb75",
+      "probe": "ManagedAudit"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-stack.log",
+      "exit_code": 0,
+      "suffix": "stack",
+      "probe_sha256": "ef6916b45678e43efa813a5ca83a90c8436f82bb5bf56857376c722be4b72fb8",
+      "probe": "CilStackAudit"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-scalar-direct.log",
+      "exit_code": 0,
+      "suffix": "scalar-direct",
+      "probe_sha256": "8e34335927e640db405d5a0a97dd2958714a3fb145062055bcc9731a4d5da815",
+      "probe": "RecoveredScalarProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-scalar-isolated.log",
+      "exit_code": 0,
+      "suffix": "scalar-isolated",
+      "probe_sha256": "8e34335927e640db405d5a0a97dd2958714a3fb145062055bcc9731a4d5da815",
+      "probe": "RecoveredScalarProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-vector.log",
+      "exit_code": 0,
+      "suffix": "vector",
+      "probe_sha256": "d01c8db256fcf6581e37de114ab6e29b71445d028aca23d151633c8decc82258",
+      "probe": "RecoveredVectorProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-boolean.log",
+      "exit_code": 0,
+      "suffix": "boolean",
+      "probe_sha256": "c188962855f7236ff3893ef23a806b5b3001b62687c4a7872a27176210db9e00",
+      "probe": "RecoveredBooleanProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-nested-tween.log",
+      "exit_code": 0,
+      "suffix": "nested-tween",
+      "probe_sha256": "df7a0d7e4f0b712533a4ee12a8662af8bdbfa3279ccd829a140ae3ae1ccf8412",
+      "probe": "RecoveredTweenProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-type-token.log",
+      "exit_code": 0,
+      "suffix": "type-token",
+      "probe_sha256": "71ea3ad0db409fe25f64b5745aa7130ea5095cd53e21345cf3ed51039a935114",
+      "probe": "RecoveredTypeTokenProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-constructor.log",
+      "exit_code": 0,
+      "suffix": "constructor",
+      "probe_sha256": "aa6e7f2d613c9701a787ed1b8190d31f46a5bc0ca2052722fb4853ffc2960fa9",
+      "probe": "RecoveredConstructorProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-currency-scalars.log",
+      "exit_code": 0,
+      "suffix": "currency-scalars",
+      "probe_sha256": "10097dc71810a4ee79e1a3650b95ef88ca440e91ce5a6b76936113e736cc7452",
+      "probe": "RecoveredCurrencyScalarProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-aggregate-leaves.log",
+      "exit_code": 0,
+      "suffix": "aggregate-leaves",
+      "probe_sha256": "68e4560116aa9cf637b81c4ca6cc342ed146d841e8cf798325e09d4e736fb1a9",
+      "probe": "RecoveredAggregateLeafProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-leaf-accessor.log",
+      "exit_code": 0,
+      "suffix": "leaf-accessor",
+      "probe_sha256": "6a60241997e09d8415b7a041febac1f28c6fe3783d9caf6594edf132f780fed2",
+      "probe": "RecoveredLeafAccessorProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-static-getter.log",
+      "exit_code": 0,
+      "suffix": "static-getter",
+      "probe_sha256": "d676f7c1b9b9335b96f9a9692f1e73568103bd53fc2b70e3569bc325fcae0a37",
+      "probe": "RecoveredStaticGetterProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-exception-factory.log",
+      "exit_code": 0,
+      "suffix": "exception-factory",
+      "probe_sha256": "f0e4fdc84a0a7e9163ddced55b5a6d8e70fbe6dea8227affa6b60e96c4539ccd",
+      "probe": "RecoveredExceptionProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-primitive-box.log",
+      "exit_code": 0,
+      "suffix": "primitive-box",
+      "probe_sha256": "6db066f7a74ce973f80c2051f588bb49f81f8776e4185e4ced05e4bc95a25853",
+      "probe": "RecoveredBoxProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-value-this-codec.log",
+      "exit_code": 0,
+      "suffix": "value-this-codec",
+      "probe_sha256": "54f3968a1770f3732dbea32ed6a4c16a555c7a4bec492251a4d05f078f55fa7e",
+      "probe": "RecoveredValueThisProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-indirect-enumerator.log",
+      "exit_code": 0,
+      "suffix": "indirect-enumerator",
+      "probe_sha256": "e48feacffdebe5a94860261a210f42ac0ee9c268556972f38d3245a0a39a3352",
+      "probe": "RecoveredEnumeratorProbe"
+    },
+    {
+      "log": "logs/regression-nso-object-isinst-abi-v40-boolean-reader.log",
+      "exit_code": 0,
+      "suffix": "boolean-reader",
+      "probe_sha256": "fbbe23646cb888a680e83619ef2440ea92a67a7a182de84cfb01e26230fcdcf1",
+      "probe": "RecoveredBooleanReaderProbe"
+    }
+  ],
+  "status": "PASS_SCOPED_RECOVERY_REGRESSIONS",
+  "whole_game_source_ready": false,
+  "recovery_run": "nso-object-isinst-abi-v40",
+  "scope": "Independent bounded production-CIL probes; individual reports retain exact input, token and native-code boundaries.",
+  "include_boolean_reader": true,
+  "include_enumerator": true
+}

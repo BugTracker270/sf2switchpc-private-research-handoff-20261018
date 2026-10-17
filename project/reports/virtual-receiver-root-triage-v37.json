@@ -1,0 +1,842 @@
+{
+  "status": "READ_ONLY_ACTUAL_VIRTUAL_RECEIVER_ROOT_AND_TARGET_SCOPE_TRIAGE",
+  "core_sha256": "23b43f3a1d07dca7483ec0fac031380d934a16f2fc8c34bc5922f52af0ac6044",
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "loaded_binary_sha256": "b84d5b3eb4a3a12d3260b06840414445fb2d2deff54d1ba84876e8fa28549449",
+  "loaded_binary_bytes": 74363922,
+  "methods": [
+    {
+      "method": "XmlExtensions::TryGetAttribute",
+      "rva": "0x15CA080",
+      "calls": [
+        {
+          "index": 13,
+          "accepted": false,
+          "target": "System.Xml.XmlNode::get_Attributes",
+          "return_type": "System.Xml.XmlAttributeCollection",
+          "parameters": 0,
+          "is_void": false,
+          "target_scope_accepts": true,
+          "slot": 6,
+          "raw_count": 18,
+          "function": {
+            "kind": "memory",
+            "Addend": 392,
+            "base_local": "v12",
+            "base_type": "Il2CppClass\u003CSystem.Xml.XmlNode\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "companion": null,
+          "klass": {
+            "kind": "local",
+            "Name": "v12",
+            "type": "Il2CppClass\u003CSystem.Xml.XmlNode\u003E",
+            "register": "X8",
+            "version": 1,
+            "IsThis": false,
+            "parameter_member": false,
+            "IsMethodInfo": false
+          },
+          "classload": {
+            "kind": "memory",
+            "Addend": 0,
+            "base_local": "node",
+            "base_type": "System.Xml.XmlNode",
+            "indexed": false,
+            "Scale": 0
+          },
+          "receiver_chain": [
+            {
+              "local": {
+                "kind": "local",
+                "Name": "v15",
+                "type": "System.Xml.XmlNode",
+                "register": "X0",
+                "version": 2,
+                "IsThis": false,
+                "parameter_member": false,
+                "IsMethodInfo": false
+              },
+              "definition_count": 1,
+              "definitions": [
+                {
+                  "Index": 11,
+                  "opcode": "Move",
+                  "sources": [
+                    {
+                      "kind": "local",
+                      "Name": "node",
+                      "type": "System.Xml.XmlNode",
+                      "register": "X1",
+                      "version": -1,
+                      "IsThis": false,
+                      "parameter_member": true,
+                      "IsMethodInfo": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "local": {
+                "kind": "local",
+                "Name": "node",
+                "type": "System.Xml.XmlNode",
+                "register": "X1",
+                "version": -1,
+                "IsThis": false,
+                "parameter_member": true,
+                "IsMethodInfo": false
+              },
+              "definition_count": 0
+            }
+          ],
+          "class_source_chain": [
+            {
+              "local": {
+                "kind": "local",
+                "Name": "node",
+                "type": "System.Xml.XmlNode",
+                "register": "X1",
+                "version": -1,
+                "IsThis": false,
+                "parameter_member": true,
+                "IsMethodInfo": false
+              },
+              "definition_count": 0
+            }
+          ],
+          "preceding_window": [
+            {
+              "Index": 8,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v12",
+                  "type": "Il2CppClass\u003CSystem.Xml.XmlNode\u003E",
+                  "register": "X8",
+                  "version": 1,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 0,
+                  "base_local": "node",
+                  "base_type": "System.Xml.XmlNode",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            },
+            {
+              "Index": 9,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v13",
+                  "type": null,
+                  "register": "X9",
+                  "version": 1,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 392,
+                  "base_local": "v12",
+                  "base_type": "Il2CppClass\u003CSystem.Xml.XmlNode\u003E",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            },
+            {
+              "Index": 10,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v14",
+                  "type": null,
+                  "register": "X8",
+                  "version": 2,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 400,
+                  "base_local": "v12",
+                  "base_type": "Il2CppClass\u003CSystem.Xml.XmlNode\u003E",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            },
+            {
+              "Index": 11,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v15",
+                  "type": "System.Xml.XmlNode",
+                  "register": "X0",
+                  "version": 2,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "local",
+                  "Name": "node",
+                  "type": "System.Xml.XmlNode",
+                  "register": "X1",
+                  "version": -1,
+                  "IsThis": false,
+                  "parameter_member": true,
+                  "IsMethodInfo": false
+                }
+              ]
+            },
+            {
+              "Index": 12,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v16",
+                  "type": null,
+                  "register": "X1",
+                  "version": 1,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "local",
+                  "Name": "v14",
+                  "type": null,
+                  "register": "X8",
+                  "version": 2,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "private_graph": "analysis/il2cpp/virtual-root-triage-v37-TryGetAttribute-15CA080.txt"
+    },
+    {
+      "method": "XmlExtensions::FirstAttribute",
+      "rva": "0x15CA570",
+      "calls": [
+        {
+          "index": 12,
+          "accepted": true,
+          "target": "System.Xml.XmlNode::get_Attributes"
+        },
+        {
+          "index": 16,
+          "accepted": false,
+          "target": "System.Xml.XmlNamedNodeMap::get_Count",
+          "return_type": "System.Int32",
+          "parameters": 0,
+          "is_void": false,
+          "target_scope_accepts": true,
+          "slot": 5,
+          "raw_count": 18,
+          "function": {
+            "kind": "memory",
+            "Addend": 376,
+            "base_local": "v30",
+            "base_type": "Il2CppClass\u003CSystem.Xml.XmlAttributeCollection\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "companion": {
+            "kind": "memory",
+            "Addend": 384,
+            "base_local": "v30",
+            "base_type": "Il2CppClass\u003CSystem.Xml.XmlAttributeCollection\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "klass": {
+            "kind": "local",
+            "Name": "v30",
+            "type": "Il2CppClass\u003CSystem.Xml.XmlAttributeCollection\u003E",
+            "register": "X8",
+            "version": 3,
+            "IsThis": false,
+            "parameter_member": false,
+            "IsMethodInfo": false
+          },
+          "classload": {
+            "kind": "memory",
+            "Addend": 0,
+            "base_local": "v15",
+            "base_type": "System.Xml.XmlAttributeCollection",
+            "indexed": false,
+            "Scale": 0
+          },
+          "receiver_chain": [
+            {
+              "local": {
+                "kind": "local",
+                "Name": "v15",
+                "type": "System.Xml.XmlAttributeCollection",
+                "register": "X0",
+                "version": 4,
+                "IsThis": false,
+                "parameter_member": false,
+                "IsMethodInfo": false
+              },
+              "definition_count": 1,
+              "definitions": [
+                {
+                  "Index": 12,
+                  "opcode": "Call",
+                  "sources": [
+                    {
+                      "kind": "local",
+                      "Name": "v15",
+                      "type": "System.Xml.XmlAttributeCollection",
+                      "register": "X0",
+                      "version": 4,
+                      "IsThis": false,
+                      "parameter_member": false,
+                      "IsMethodInfo": false
+                    },
+                    {
+                      "kind": "local",
+                      "Name": "v14",
+                      "type": "System.Xml.XmlNode",
+                      "register": "X0",
+                      "version": 3,
+                      "IsThis": false,
+                      "parameter_member": false,
+                      "IsMethodInfo": false
+                    },
+                    {
+                      "kind": "RuntimeMethodInfoAnalysisContext",
+                      "description": "Type: Il2CppMethodInfo"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "class_source_chain": [
+            {
+              "local": {
+                "kind": "local",
+                "Name": "v15",
+                "type": "System.Xml.XmlAttributeCollection",
+                "register": "X0",
+                "version": 4,
+                "IsThis": false,
+                "parameter_member": false,
+                "IsMethodInfo": false
+              },
+              "definition_count": 1,
+              "definitions": [
+                {
+                  "Index": 12,
+                  "opcode": "Call",
+                  "sources": [
+                    {
+                      "kind": "local",
+                      "Name": "v15",
+                      "type": "System.Xml.XmlAttributeCollection",
+                      "register": "X0",
+                      "version": 4,
+                      "IsThis": false,
+                      "parameter_member": false,
+                      "IsMethodInfo": false
+                    },
+                    {
+                      "kind": "local",
+                      "Name": "v14",
+                      "type": "System.Xml.XmlNode",
+                      "register": "X0",
+                      "version": 3,
+                      "IsThis": false,
+                      "parameter_member": false,
+                      "IsMethodInfo": false
+                    },
+                    {
+                      "kind": "RuntimeMethodInfoAnalysisContext",
+                      "description": "Type: Il2CppMethodInfo"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "preceding_window": [
+            {
+              "Index": 8,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v11",
+                  "type": "Il2CppClass\u003CSystem.Xml.XmlNode\u003E",
+                  "register": "X8",
+                  "version": 2,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 0,
+                  "base_local": "v8",
+                  "base_type": "System.Xml.XmlNode",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            },
+            {
+              "Index": 9,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v12",
+                  "type": null,
+                  "register": "X9",
+                  "version": 2,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 392,
+                  "base_local": "v11",
+                  "base_type": "Il2CppClass\u003CSystem.Xml.XmlNode\u003E",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            },
+            {
+              "Index": 10,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v13",
+                  "type": null,
+                  "register": "X1",
+                  "version": 2,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 400,
+                  "base_local": "v11",
+                  "base_type": "Il2CppClass\u003CSystem.Xml.XmlNode\u003E",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            },
+            {
+              "Index": 11,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v14",
+                  "type": "System.Xml.XmlNode",
+                  "register": "X0",
+                  "version": 3,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "local",
+                  "Name": "v8",
+                  "type": "System.Xml.XmlNode",
+                  "register": "X19",
+                  "version": 1,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                }
+              ]
+            },
+            {
+              "Index": 12,
+              "opcode": "Call",
+              "operands": [
+                {
+                  "kind": "method",
+                  "FullName": "System.Xml.XmlNode::get_Attributes"
+                },
+                {
+                  "kind": "local",
+                  "Name": "v15",
+                  "type": "System.Xml.XmlAttributeCollection",
+                  "register": "X0",
+                  "version": 4,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "local",
+                  "Name": "v14",
+                  "type": "System.Xml.XmlNode",
+                  "register": "X0",
+                  "version": 3,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "RuntimeMethodInfoAnalysisContext",
+                  "description": "Type: Il2CppMethodInfo"
+                }
+              ]
+            },
+            {
+              "Index": 13,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v30",
+                  "type": "Il2CppClass\u003CSystem.Xml.XmlAttributeCollection\u003E",
+                  "register": "X8",
+                  "version": 3,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 0,
+                  "base_local": "v15",
+                  "base_type": "System.Xml.XmlAttributeCollection",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            },
+            {
+              "Index": 14,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v31",
+                  "type": null,
+                  "register": "X9",
+                  "version": 3,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 376,
+                  "base_local": "v30",
+                  "base_type": "Il2CppClass\u003CSystem.Xml.XmlAttributeCollection\u003E",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            },
+            {
+              "Index": 15,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v32",
+                  "type": null,
+                  "register": "X1",
+                  "version": 3,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 384,
+                  "base_local": "v30",
+                  "base_type": "Il2CppClass\u003CSystem.Xml.XmlAttributeCollection\u003E",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 33,
+          "accepted": true,
+          "target": "System.Xml.XmlNode::get_Attributes"
+        }
+      ],
+      "private_graph": "analysis/il2cpp/virtual-root-triage-v37-FirstAttribute-15CA570.txt"
+    },
+    {
+      "method": "YamlDotNet.Core.Emitter::Write",
+      "rva": "0xCB000",
+      "calls": [
+        {
+          "index": 10,
+          "accepted": false,
+          "target": "System.IO.TextWriter::Write",
+          "return_type": "System.Void",
+          "parameters": 1,
+          "is_void": true,
+          "target_scope_accepts": false,
+          "slot": 12,
+          "raw_count": 18,
+          "function": {
+            "kind": "memory",
+            "Addend": 488,
+            "base_local": "v11",
+            "base_type": "Il2CppClass\u003CSystem.IO.TextWriter\u003E",
+            "indexed": false,
+            "Scale": 0
+          },
+          "companion": null,
+          "klass": {
+            "kind": "local",
+            "Name": "v11",
+            "type": "Il2CppClass\u003CSystem.IO.TextWriter\u003E",
+            "register": "X8",
+            "version": 1,
+            "IsThis": false,
+            "parameter_member": false,
+            "IsMethodInfo": false
+          },
+          "classload": {
+            "kind": "memory",
+            "Addend": 0,
+            "base_local": "v10",
+            "base_type": "System.IO.TextWriter",
+            "indexed": false,
+            "Scale": 0
+          },
+          "receiver_chain": [
+            {
+              "local": {
+                "kind": "local",
+                "Name": "v10",
+                "type": "System.IO.TextWriter",
+                "register": "X0",
+                "version": 1,
+                "IsThis": false,
+                "parameter_member": false,
+                "IsMethodInfo": false
+              },
+              "definition_count": 1,
+              "definitions": [
+                {
+                  "Index": 6,
+                  "opcode": "Move",
+                  "sources": [
+                    {
+                      "kind": "field",
+                      "description": "v8.output (System.IO.TextWriter)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "class_source_chain": [
+            {
+              "local": {
+                "kind": "local",
+                "Name": "v10",
+                "type": "System.IO.TextWriter",
+                "register": "X0",
+                "version": 1,
+                "IsThis": false,
+                "parameter_member": false,
+                "IsMethodInfo": false
+              },
+              "definition_count": 1,
+              "definitions": [
+                {
+                  "Index": 6,
+                  "opcode": "Move",
+                  "sources": [
+                    {
+                      "kind": "field",
+                      "description": "v8.output (System.IO.TextWriter)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "preceding_window": [
+            {
+              "Index": 2,
+              "opcode": "Nop",
+              "operands": []
+            },
+            {
+              "Index": 3,
+              "opcode": "Nop",
+              "operands": []
+            },
+            {
+              "Index": 4,
+              "opcode": "Nop",
+              "operands": []
+            },
+            {
+              "Index": 5,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v8",
+                  "type": "YamlDotNet.Core.Emitter",
+                  "register": "X19",
+                  "version": 1,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "local",
+                  "Name": "this",
+                  "type": "YamlDotNet.Core.Emitter",
+                  "register": "X0",
+                  "version": -1,
+                  "IsThis": true,
+                  "parameter_member": true,
+                  "IsMethodInfo": false
+                }
+              ]
+            },
+            {
+              "Index": 6,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v10",
+                  "type": "System.IO.TextWriter",
+                  "register": "X0",
+                  "version": 1,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "field",
+                  "description": "v8.output (System.IO.TextWriter)"
+                }
+              ]
+            },
+            {
+              "Index": 7,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v11",
+                  "type": "Il2CppClass\u003CSystem.IO.TextWriter\u003E",
+                  "register": "X8",
+                  "version": 1,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 0,
+                  "base_local": "v10",
+                  "base_type": "System.IO.TextWriter",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            },
+            {
+              "Index": 8,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v12",
+                  "type": null,
+                  "register": "X9",
+                  "version": 1,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 488,
+                  "base_local": "v11",
+                  "base_type": "Il2CppClass\u003CSystem.IO.TextWriter\u003E",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            },
+            {
+              "Index": 9,
+              "opcode": "Move",
+              "operands": [
+                {
+                  "kind": "local",
+                  "Name": "v13",
+                  "type": null,
+                  "register": "X2",
+                  "version": 1,
+                  "IsThis": false,
+                  "parameter_member": false,
+                  "IsMethodInfo": false
+                },
+                {
+                  "kind": "memory",
+                  "Addend": 496,
+                  "base_local": "v11",
+                  "base_type": "Il2CppClass\u003CSystem.IO.TextWriter\u003E",
+                  "indexed": false,
+                  "Scale": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "private_graph": "analysis/il2cpp/virtual-root-triage-v37-Write-CB000.txt"
+    }
+  ],
+  "core_modified": false,
+  "game_methods_invoked": 0,
+  "full_clean_decompile_ready": false,
+  "limits": "Three unchanged production SSA/type graphs only. Alternative witness rules are not implemented or claimed safe; original method execution and arbitrary native load width remain unproved."
+}

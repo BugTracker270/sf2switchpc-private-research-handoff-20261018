@@ -1,0 +1,394 @@
+{
+  "status": "PASS_UNCHANGED_RECOVERED_XML_ATTRIBUTE_WHOLE_HELPER_AT_HOST_XML_BOUNDARY",
+  "recovery_run": "nso-virtual-companion-copy-v38",
+  "execute_requested": true,
+  "checks": 12,
+  "tests": [
+    {
+      "name": "only reviewed v38 run accepted",
+      "passed": true
+    },
+    {
+      "name": "completed read-only original CIL correlation required",
+      "passed": true
+    },
+    {
+      "name": "inspection performed no original method execution or rewriting",
+      "passed": true
+    },
+    {
+      "name": "actual unchanged assembly matches completed inspection",
+      "passed": true
+    },
+    {
+      "name": "original declaring type has no type initializer",
+      "passed": true
+    },
+    {
+      "name": "exact reviewed complete body hash and static closed signature",
+      "passed": true
+    },
+    {
+      "name": "no original EH clauses",
+      "passed": true
+    },
+    {
+      "name": "entire original helper has exactly19 reviewed instructions",
+      "passed": true
+    },
+    {
+      "name": "complete original call allowlist is exact host XmlNode virtual getter and direct collection indexer",
+      "passed": true
+    },
+    {
+      "name": "authored host fixture matrix exactly26",
+      "passed": true
+    },
+    {
+      "name": "all original unchanged whole-helper host cases pass",
+      "passed": true
+    },
+    {
+      "name": "original assembly remains byte-exact after execution",
+      "passed": true
+    }
+  ],
+  "attempts": 26,
+  "cases": 26,
+  "comparisons": 104,
+  "failures": 0,
+  "actual_virtual_override_calls": 5,
+  "original_method_invocations": 26,
+  "method_metadata_token": "0x060027CD",
+  "assembly_sha256": "b27b575f04159eb61cd50eaf21566e682b882726b5faa216bf1402b55e7ae27c",
+  "complete_original_cil_sha256": "8f4bd15d3a389843ed61de4163d0f30d12ccf2256c3ed1a696221af9f7dcda90",
+  "original_instructions": 19,
+  "source_sha256": "66d0b87b49015c13661e51539848571719e14a6f7477269d0d68a800fd956ca7",
+  "inspection_report_sha256": "cf699c28c1923b060bb40585045ad92f9fa6d2984f36ba0e89207e4bf42cd0fd",
+  "results": [
+    {
+      "name": "element/present",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "element/empty",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "element/missing",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "element/p:flag",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "element/flag",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "element/",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "element/\u003Cnull\u003E",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "null/present",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "null/\u003Cnull\u003E",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "document/present",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.NullReferenceException",
+      "expected_exception_type": "System.NullReferenceException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "document/\u003Cnull\u003E",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.NullReferenceException",
+      "expected_exception_type": "System.NullReferenceException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "text/present",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.NullReferenceException",
+      "expected_exception_type": "System.NullReferenceException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "text/\u003Cnull\u003E",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.NullReferenceException",
+      "expected_exception_type": "System.NullReferenceException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "comment/present",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.NullReferenceException",
+      "expected_exception_type": "System.NullReferenceException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "comment/\u003Cnull\u003E",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.NullReferenceException",
+      "expected_exception_type": "System.NullReferenceException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "attribute/present",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.NullReferenceException",
+      "expected_exception_type": "System.NullReferenceException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "attribute/\u003Cnull\u003E",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.NullReferenceException",
+      "expected_exception_type": "System.NullReferenceException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "fragment/present",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.NullReferenceException",
+      "expected_exception_type": "System.NullReferenceException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "fragment/\u003Cnull\u003E",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.NullReferenceException",
+      "expected_exception_type": "System.NullReferenceException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "child/present",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "child/missing",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 0,
+      "actual_getter_calls": 0,
+      "getter_calls_match": true
+    },
+    {
+      "name": "observing/present",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 1,
+      "actual_getter_calls": 1,
+      "getter_calls_match": true
+    },
+    {
+      "name": "observing/missing",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 1,
+      "actual_getter_calls": 1,
+      "getter_calls_match": true
+    },
+    {
+      "name": "observing/null-name",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": null,
+      "expected_exception_type": null,
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 1,
+      "actual_getter_calls": 1,
+      "getter_calls_match": true
+    },
+    {
+      "name": "observing/null-collection",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.NullReferenceException",
+      "expected_exception_type": "System.NullReferenceException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 1,
+      "actual_getter_calls": 1,
+      "getter_calls_match": true
+    },
+    {
+      "name": "observing/throw",
+      "passed": true,
+      "return_identity": true,
+      "exception_type": "System.InvalidOperationException",
+      "expected_exception_type": "System.InvalidOperationException",
+      "exception_type_matches": true,
+      "exception_message_matches": true,
+      "expected_getter_calls": 1,
+      "actual_getter_calls": 1,
+      "getter_calls_match": true
+    }
+  ],
+  "fatal": null,
+  "cil_modified": false,
+  "dynamic_clones": 0,
+  "tokens_remapped": 0,
+  "call_opcode_rewrites": 0,
+  "member_substitutions": 0,
+  "access_bypasses": 0,
+  "recovered_constructors_invoked": 0,
+  "recovered_type_initializer_absent_required": true,
+  "native_parity_proved": false,
+  "full_clean_decompile_ready": false,
+  "scope": "Unchanged complete original static XmlExtensions.TryGetAttribute invoked only when --execute is explicitly supplied, in an isolated collectible ALC. Original recovered type has no .cctor. Host System.Xml types and original exact virtual Attributes getter/direct collection indexer MethodInfos are framework-unified without replacements. Authored .NET XML inputs, nullable names, null Attributes and observing/throwing host getter overrides are compared with host node.Attributes[name] under the original null-node rule. Return object identity, exception type/message and observed getter counts are checked; no recovered constructor, whole game or native XML implementation is executed or claimed."
+}

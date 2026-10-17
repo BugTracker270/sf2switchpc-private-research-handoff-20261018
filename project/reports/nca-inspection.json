@@ -1,0 +1,250 @@
+{
+  "keys": {
+    "prod.keys": {
+      "entries": 231,
+      "contents": "REDACTED"
+    },
+    "title.keys": {
+      "entries": 19,
+      "contents": "REDACTED"
+    },
+    "package_ticket_sources": [
+      {
+        "kind": "base",
+        "package_ticket": "0100ab000abfe0000000000000000005.tik",
+        "type": "common encrypted ticket titlekey; value never logged"
+      },
+      {
+        "kind": "update",
+        "package_ticket": "0100ab000abfe8000000000000000005.tik",
+        "type": "common encrypted ticket titlekey; value never logged"
+      }
+    ],
+    "hactool_profile": {
+      "accepted_direct_or_derivation_entries": 117,
+      "excluded_entries": 114,
+      "originals": "preserved"
+    }
+  },
+  "entries": [
+    {
+      "kind": "base",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x00005888c000",
+        "Title ID": "0100ab000abfe000",
+        "SDK Version": "5.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Program",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Titlekey crypto",
+        "Rights ID": "0100AB000ABFE0000000000000000005"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-base-b5028f4e100d63d35e0e9ff223c7ffcd.nca.log"
+    },
+    {
+      "kind": "base",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\fce770151cf290990b26b69f4bcb94ed.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x00000002ec00",
+        "Title ID": "0100ab000abfe000",
+        "SDK Version": "5.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Manual",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Standard crypto"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-base-fce770151cf290990b26b69f4bcb94ed.nca.log"
+    },
+    {
+      "kind": "base",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\07b0aa77e9f96147892003b507ed56ae.cnmt.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x000000000e00",
+        "Title ID": "0100ab000abfe000",
+        "SDK Version": "6.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Meta",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Standard crypto"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-base-07b0aa77e9f96147892003b507ed56ae.cnmt.nca.log"
+    },
+    {
+      "kind": "base",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x0000000f2400",
+        "Title ID": "0100ab000abfe000",
+        "SDK Version": "5.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Control",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Standard crypto"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-base-0d8f90c6c7ee98750ff3071a050e9947.nca.log"
+    },
+    {
+      "kind": "update",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x000007e64600",
+        "Title ID": "0100ab000abfe000",
+        "SDK Version": "5.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Program",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Titlekey crypto",
+        "Rights ID": "0100AB000ABFE8000000000000000005"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-update-9e558c3678550db627afa0fe00857d1d.nca.log"
+    },
+    {
+      "kind": "update",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\a34266502d2e83c263c531479e295cc8.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x00000002ec00",
+        "Title ID": "0100ab000abfe000",
+        "SDK Version": "5.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Manual",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Standard crypto"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-update-a34266502d2e83c263c531479e295cc8.nca.log"
+    },
+    {
+      "kind": "update",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fcdea96c88bc705ff053fc856379696f.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x000007e78000",
+        "Title ID": "0100ab000abfe800",
+        "SDK Version": "6.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Data",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Standard crypto"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-update-fcdea96c88bc705ff053fc856379696f.nca.log"
+    },
+    {
+      "kind": "update",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\ba3c9ac7eb1bfa91d5eac431c152eb85.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x0000000fc000",
+        "Title ID": "0100ab000abfe800",
+        "SDK Version": "6.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Data",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Standard crypto"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-update-ba3c9ac7eb1bfa91d5eac431c152eb85.nca.log"
+    },
+    {
+      "kind": "update",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\7b00e159826a73ec6f3007875ca49678.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x000000038000",
+        "Title ID": "0100ab000abfe800",
+        "SDK Version": "6.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Data",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Standard crypto"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-update-7b00e159826a73ec6f3007875ca49678.nca.log"
+    },
+    {
+      "kind": "update",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\33d1346cac8b3c2a2b14076ec877083f.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x00000000c000",
+        "Title ID": "0100ab000abfe800",
+        "SDK Version": "6.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Data",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Standard crypto"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-update-33d1346cac8b3c2a2b14076ec877083f.nca.log"
+    },
+    {
+      "kind": "update",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\0ce5b75790645ca6389cb583a3d9a0fd.cnmt.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x000000001200",
+        "Title ID": "0100ab000abfe800",
+        "SDK Version": "6.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Meta",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Standard crypto"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-update-0ce5b75790645ca6389cb583a3d9a0fd.cnmt.nca.log"
+    },
+    {
+      "kind": "update",
+      "file": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+      "metadata": {
+        "Magic": "NCA3",
+        "Content Size": "0x0000000f2400",
+        "Title ID": "0100ab000abfe000",
+        "SDK Version": "5.4.0.0",
+        "Distribution type": "Download",
+        "Content Type": "Control",
+        "Master Key Revision": "0x4 (5.0.0-5.1.0)",
+        "Encryption Type": "Standard crypto"
+      },
+      "errors": [],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "F:\\SF2SwitchPC\\logs\\hactool-update-fb9494b9de70bffd0d1797987f0ec51c.nca.log"
+    }
+  ],
+  "note": "Raw local logs are confidential. Console contains allowlisted metadata only."
+}

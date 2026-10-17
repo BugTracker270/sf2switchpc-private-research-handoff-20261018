@@ -1,0 +1,288 @@
+{
+  "status": "PASS_EXACT_NATIVE_CLASS_LAYOUT_ABI_ONLY_CONTRACT",
+  "checks": 51,
+  "fatal": null,
+  "tests": [
+    {
+      "name": "original input hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "exact reviewed target accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "distinct cctor helper rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "interior address rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "zero target rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "disabled opt-in rejected after cache populated",
+      "status": "PASS"
+    },
+    {
+      "name": "reenabled exact target accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "exact original frame is 140 bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "native helper maps to original loaded image",
+      "status": "PASS"
+    },
+    {
+      "name": "derived relocated image identity is explicit",
+      "status": "PASS"
+    },
+    {
+      "name": "actual immutable image/frame guard accepts",
+      "status": "PASS"
+    },
+    {
+      "name": "old incomplete 112-byte frame rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "larger frame rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "negative raw offset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "overflow raw offset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "out-of-range raw offset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "truncated loaded image rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "changed native helper byte rejected on copied image",
+      "status": "PASS"
+    },
+    {
+      "name": "changed non-helper image byte rejected on copied image",
+      "status": "PASS"
+    },
+    {
+      "name": "probe did not modify application image",
+      "status": "PASS"
+    },
+    {
+      "name": "SSA class and result remain separate original X0 versions",
+      "status": "PASS"
+    },
+    {
+      "name": "original class source provenance retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Boolean seed is canonical and original result reaches return",
+      "status": "PASS"
+    },
+    {
+      "name": "only the one real class operand remains a source",
+      "status": "PASS"
+    },
+    {
+      "name": "unused-effect DCE cannot remove the helper call",
+      "status": "PASS"
+    },
+    {
+      "name": "valid typed ABI is emission eligible only as unresolved call",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong target never constructs a narrowed call",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh identity clone preserves immutable ABI carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "production indirect-return clone explicitly preserves carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "foreign owner rejects same carrier",
+      "status": "PASS"
+    },
+    {
+      "name": "stale target rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "stale void opcode rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "missing class argument rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "extra stale X1 input rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "missing carrier rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "conflicting result type rejects emission",
+      "status": "PASS"
+    },
+    {
+      "name": "conflicting preexisting type fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong result register fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong class input register fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "stale target before seeding fails closed at SSA seed",
+      "status": "PASS"
+    },
+    {
+      "name": "single managed alias cannot capture reviewed helper",
+      "status": "PASS"
+    },
+    {
+      "name": "interchangeable managed aliases cannot capture helper",
+      "status": "PASS"
+    },
+    {
+      "name": "stale MethodInfo does not resolve helper to unrelated method",
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic allocation context cannot reinterpret helper as ctor",
+      "status": "PASS"
+    },
+    {
+      "name": "string-accessor negative uses real registered literal slot",
+      "status": "PASS"
+    },
+    {
+      "name": "literal slot argument cannot erase helper call",
+      "status": "PASS"
+    },
+    {
+      "name": "actual original reader has all four narrowed helper sites before alias selection",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter preserves exact unresolved helper diagnostic",
+      "status": "PASS"
+    },
+    {
+      "name": "emitter does not replace helper with Boolean true or managed cctor",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter refuses stale carrier target",
+      "status": "PASS"
+    },
+    {
+      "name": "original input file hashes remain unchanged",
+      "status": "PASS"
+    }
+  ],
+  "core_sha256": "014d9b9698ae1448e9a14a41c132fae3ed7efc7023fef4932dae2da8196c9a49",
+  "original_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "probe_source_sha256": "ec70ade559247ff5fc2184e4b1a680526c32f59de6ee540c14d53a3a15e3f905",
+  "helper_source_sha256": "6abf9bd37447dbf1684ccae86afea5f6eaf08ab6caf573c403fa84cbda490fde",
+  "native_source_report_sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594",
+  "native_oracle_report_sha256": "4cde7bdd4c52d92cd7c41c2f5295e4cd8fc4bb83f9934ac5058ead97d9ac3258",
+  "target": "0xB04F60",
+  "helper_bytes": 140,
+  "helper_sha256": "496575374643a8ca7a9f1181d685de0fa4ac68574a3cc50c315d52d74a4d7dd3",
+  "derived_loaded_image_bytes": 74363922,
+  "derived_loaded_image_sha256": "b84d5b3eb4a3a12d3260b06840414445fb2d2deff54d1ba84876e8fa28549449",
+  "ssa_result_version": 2,
+  "ssa_class_source_version": 1,
+  "original_reader_raw_sites": [
+    {
+      "index": 67,
+      "operands": 3,
+      "input_register": "X0",
+      "result_register": "X0",
+      "managed_alias_bypassed": true
+    },
+    {
+      "index": 123,
+      "operands": 3,
+      "input_register": "X0",
+      "result_register": "X0",
+      "managed_alias_bypassed": true
+    },
+    {
+      "index": 182,
+      "operands": 3,
+      "input_register": "X0",
+      "result_register": "X0",
+      "managed_alias_bypassed": true
+    },
+    {
+      "index": 213,
+      "operands": 3,
+      "input_register": "X0",
+      "result_register": "X0",
+      "managed_alias_bypassed": true
+    }
+  ],
+  "emitted_diagnostic_fixtures": [
+    {
+      "name": "OriginalNativeHelperDiagnostic",
+      "diagnostic_preserved": true,
+      "executed": false,
+      "instructions": [
+        {
+          "opcode": "ldstr",
+          "operand": "Method not found @B04F60"
+        },
+        {
+          "opcode": "call",
+          "operand": "System.Void System.Console::WriteLine(System.String)"
+        },
+        {
+          "opcode": "br",
+          "operand": "IL_000F"
+        },
+        {
+          "opcode": "ret",
+          "operand": null
+        }
+      ]
+    }
+  ],
+  "core_modified": false,
+  "original_inputs_modified": false,
+  "recovered_output_modified": false,
+  "native_code_executed": false,
+  "recovered_game_methods_executed": 0,
+  "cold_layout_effects_implemented": false,
+  "managed_cctor_substituted": false,
+  "scope": "Original input metadata and exact derived-image/frame guards plus independent raw-ISIL/SSA/local/resolver/emitter fixtures. Copied image negatives and temporary synthetic alias dictionaries are in-process only and restored; no game output or inputs are changed. Deliberately invalid native class inputs test resolver exclusion only and are never executed. Four original reader call sites are inspected before analysis to verify production signature capture. The real emitter preserves an unresolved helper diagnostic and is never invoked as executable game behavior. Native initialized-path evidence is bound separately; cold layout setup, locking, assertion termination, exceptions and managed execution remain unproved."
+}

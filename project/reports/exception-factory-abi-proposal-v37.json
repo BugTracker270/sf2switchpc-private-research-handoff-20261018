@@ -1,0 +1,83 @@
+{
+  "status": "PASS_NATIVE_AND_OFFICIAL_SOURCE_OVERFLOW_FACTORY_ABI_PROPOSAL",
+  "checks": 13,
+  "tests": {
+    "exact_original_helper_frame52_and_hash": true,
+    "exact_official_release_revision_archive": true,
+    "source_pair_hashes_retained": true,
+    "official_one_char_pointer_exception_return_declaration": true,
+    "official_overload_forwards_message_to_named_factory": true,
+    "original_namespace_and_exception_name_match": true,
+    "incoming_message_x0_saved_and_forwarded_to_x3": true,
+    "incoming_x1_never_read_before_internal_definition": true,
+    "corlib_getter_is_exact_read_only16byte_leaf": true,
+    "tail_target_is_exact324byte_exception_factory": true,
+    "native_tail_has_allocation_initialization_message_store_and_cleanup": true,
+    "official_effects_include_object_init_and_optional_message": true,
+    "original_reader_call_has_one_original_message_pointer": true
+  },
+  "helper_rva": "0xb4d960",
+  "helper_end": "0xb4d994",
+  "helper_bytes": 52,
+  "helper_sha256": "3b5fd1d3de5b03792cd3309198170fba22c09b9434a348fa01330c20d8709f3f",
+  "inventory_report": "reports/exception-factory-native-source-inventory-v37.json",
+  "inventory_report_sha256": "5fa664552188753297ff397082c2b36937235b3c49894a8dffb7ab5081c8a728",
+  "source_files": [
+    {
+      "path": "tools\\unity-2018.1.9f1\\exception-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Exception.cpp",
+      "bytes": 18699,
+      "sha256": "490df8fbd7d1f67ef55d0ea1cbda3cae697e3ec418167cec4f05a25c2114d973"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\exception-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Exception.h",
+      "bytes": 5290,
+      "sha256": "d39704528d77644fd285f672417c490e3918158edd0f712ebefa2aeab61a14e1"
+    }
+  ],
+  "source_locations": [
+    {
+      "path": "tools\\unity-2018.1.9f1\\exception-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Exception.h",
+      "line": 59
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\exception-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Exception.cpp",
+      "line": 375
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\exception-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Exception.cpp",
+      "line": 244
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\exception-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Exception.cpp",
+      "line": 254
+    }
+  ],
+  "abi": {
+    "explicit_arguments": 1,
+    "incoming_x0": "const char* optional UTF-8 message pointer",
+    "return_x0": "Il2CppException*",
+    "incoming_x1_is_argument": false,
+    "incoming_x2_x7_are_arguments": false,
+    "native_call_returns": true
+  },
+  "semantic_effects": [
+    "Look up the named exception class in corlib.",
+    "Convert a non-null UTF-8 message to UTF-16.",
+    "Allocate the exception and run its managed object initializer.",
+    "Create/store the nonempty message using the original managed-reference operation.",
+    "Retain allocation/constructor/conversion failure and cleanup/unwind paths. The wrapper returns an exception; the caller performs the separate throw."
+  ],
+  "bounded_implementation_proposal": "Image/FDE/full52byte hash gate the exact numeric helper before alias lookup; retain a Call with its X0 reference result and sole original X0 pointer argument. Remove only unconsumed incoming phantom register arguments. Keep numeric unresolved helper diagnostics and the later actual Throw; do not replace with new OverflowException, erase effects, fold conditions or claim runtime semantics.",
+  "expected_reader_consequence": "The current emitter-input raw call202 consumes stale X1v145 through this phantom ABI argument. Correcting this exact signature may let ordinary dead-code analysis remove that use and the +260 companion load; it is a prediction until a fresh unchanged production-stage/recovered-CIL report proves it.",
+  "native_helper_executed": false,
+  "core_edited": false,
+  "managed_factory_translation_implemented": false,
+  "runtime_parity_proven": false,
+  "full_clean_decompile_ready": false,
+  "limits": [
+    "The official source is the exact common Windows-editor release; platform/compiler equivalence is not assumed. Original ARM64 wrapper constants and register flow independently anchor this signature.",
+    "Existing native-array tests supplied this factory as an explicit boundary and do not prove original factory execution.",
+    "The pointer must remain a native message pointer at the ABI layer. No System.String conversion is invented.",
+    "Factory construction, managed initializer effects, GC, allocation failures and unwinding remain unexecuted and unrecovered."
+  ]
+}

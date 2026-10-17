@@ -1,0 +1,142 @@
+{
+  "status": "SOURCE_ONLY_NATIVE_READ_CARRIER_AND_CHECKED_REBIND_PENDING_BUILD_CONTRACT",
+  "baseline_run": "nso-object-isinst-abi-v40",
+  "baseline_core_sha256": "14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6",
+  "sources": [
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/ISIL/MemoryOperand.cs",
+      "sha256": "92c58a3d0f2841f48ae54a51efb689daf31332732efbf66e2a5388714b6acfdf",
+      "baseline_source": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/ISIL/MemoryOperand.cs",
+      "baseline_sha256": "cb8be9b16ffb5b190186fd2956d4423a504f2f08c5fcfebe7e46df53034ef644"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs",
+      "sha256": "2c3db294f3a7c0cdcd5444d4979a5c6d07d44b4bc655cdb0d46a60ed73d0383b",
+      "baseline_source": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs",
+      "baseline_sha256": "d895be7ed6d860d41fa651c974987963d5707665dc4e28584d55c82bfac30f8b"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/SsaForm.cs",
+      "sha256": "052dd3c07f0d8d3a3463da7ed6ac34f9419e7c3133db6d1777bfbe75895afbcf",
+      "baseline_source": "refs/Cpp2IL Git HEAD:Cpp2IL.Core/Analysis/SsaForm.cs",
+      "baseline_sha256": "dedf2597a7e3453f96190fba198ec0ce964f28cdb6c7dff000838a620b7514f4"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/LocalVariables.cs",
+      "sha256": "3bdaa2bb30c1f29640d59efcc45f87f5ed61d63598ea2330509ab1be6fb8b3d9",
+      "baseline_source": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/LocalVariables.cs",
+      "baseline_sha256": "19a5e9330da015c80b0891f772ce9d6949f9010c0dfde3d895aac44da59791af"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/SsaSimplifier.cs",
+      "sha256": "b474b43c5f3d4ad2807fa468072b1f737ca0f97b5822b1c33345d29565a651a1",
+      "baseline_source": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/SsaSimplifier.cs",
+      "baseline_sha256": "d7d70df888bf6eceb782ad155803b4b2ff871a7dc00e8e0ae983c536b4473c3f"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/CopyCoalescer.cs",
+      "sha256": "3188b99170b7b7e82aa775dbac30e0500a53ce2c9ff8905cf04b6d477e9f1e23",
+      "baseline_source": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/CopyCoalescer.cs",
+      "baseline_sha256": "e1b12c77485bae9903b94f5439d29aa49b060bd4e80d399681f9bb168daeb857"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/Simplifier.cs",
+      "sha256": "5f205e29be60c8faf2710c4ba81ec39d0eba7d4ccaa4efd5fddbfd2fc87a60ba",
+      "baseline_source": "refs/Cpp2IL Git HEAD:Cpp2IL.Core/Analysis/Simplifier.cs",
+      "baseline_sha256": "1fb05b4750ef75a842900ee849f27bce55b417041c1d163b28ecf38639fe904d"
+    }
+  ],
+  "patch_path": "patches/experimental-native-read-proof-v41.patch",
+  "patch_sha256": "834693154ec49d6e32d38bcb3a2b45e948de703fdda5f452acfe005ba8feaf04",
+  "source_api": {
+    "carrier": "MemoryOperand.NativeReadProof",
+    "field": "MemoryOperand.NativeRead",
+    "factory": "NativeReadProof.TryCreate(owner, nativeAddress, source)",
+    "validation": "proof.ValidFor(owner, currentMemory)",
+    "internal_rebind": "memory.RebindBaseForProvenCopy(replacement)",
+    "immutable_original_facts": [
+      "exact MethodAnalysisContext owner",
+      "native virtual address",
+      "native instruction word",
+      "unsigned read width 8",
+      "original native base/destination register names",
+      "unsigned offset"
+    ],
+    "derived_fact": "immutable BoundBase: Register value identity through SSA; LocalVariable reference identity after local creation",
+    "original_base_name_is_not_final_ssa_name": true
+  },
+  "original_load_width_examples": [
+    {
+      "address": "0x11a4d80",
+      "access_width_bytes": 8,
+      "byte_sha256": "14d3c69453c22f513c5ceb99992420b5eae53222e65935f5ba0911af8bcf6f37",
+      "accepted_unsigned_pointer_shape": true
+    },
+    {
+      "address": "0x11a4d84",
+      "access_width_bytes": 8,
+      "byte_sha256": "85e14d1e7d53a678e9a421e1b4984c68021353b3c9479374b9301d84d7f673df",
+      "accepted_unsigned_pointer_shape": true
+    },
+    {
+      "address": "0x11a4d94",
+      "access_width_bytes": 4,
+      "byte_sha256": "d04f468b90a0c6ee8c332a0181575dba30c507d101c5fdbdf77e4873d020f17d",
+      "accepted_unsigned_pointer_shape": false
+    }
+  ],
+  "transformation_sites": [
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/SsaForm.cs",
+      "original_base_writes_replaced": 1
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/LocalVariables.cs",
+      "original_base_writes_replaced": 1
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/SsaSimplifier.cs",
+      "original_base_writes_replaced": 1
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/CopyCoalescer.cs",
+      "original_base_writes_replaced": 1
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/Simplifier.cs",
+      "original_base_writes_replaced": 1
+    }
+  ],
+  "validation_contract": [
+    "Existing opt-in NSO24 pointer-size8 and cached exact reviewed image/helper gate; owner-selected exact FDE bounds.",
+    "Native address alignment and current native word re-read; only unsigned-offset64-bit LDR X with non-SP base/non-ZR destination.",
+    "Original seed requires an unversioned native Register matching raw base; NewArm separately matches decoded raw destination.",
+    "Current memory must attach this carrier and match exact immutable BoundBase, addend, absent index/scale and absent scalar-FP tag.",
+    "Only five existing proven renaming/copy sites derive a fresh immutable binding after validating the old attached carrier and old base.",
+    "Direct untracked base mutation stays stale and cannot be blessed by subsequent rebinding; no-proof behavior remains the original base replacement.",
+    "Copying or inlining the complete MemoryOperand preserves the carrier reference; it does not prove safe memory-effect motion.",
+    "Fresh-array ownership/availability/escape/type/control semantics require the separate bounded origin proof; width evidence supplies none of those claims."
+  ],
+  "negative_contract_required": [
+    "wrong owner",
+    "wrong address/alignment/FDE",
+    "changed native word/image",
+    "32-bit/byte/halfword/signed/FP/vector/pair/literal/indexed/writeback load",
+    "SP base or ZR destination",
+    "changed addend/index/scale/FP tag",
+    "stale direct Base mutation",
+    "same-register different SSA version",
+    "same-type different LocalVariable reference",
+    "stale proof rebound after a direct mutation",
+    "attempt to seed from a pretyped LocalVariable",
+    "whole-memory-copy retention",
+    "all five checked-renaming paths"
+  ],
+  "core_built": false,
+  "contracts_run": false,
+  "full_recovery_run": false,
+  "recovered_game_or_native_functions_executed": 0,
+  "original_cil_modified": false,
+  "managed_semantic_lowering": false,
+  "production_ready": false
+}

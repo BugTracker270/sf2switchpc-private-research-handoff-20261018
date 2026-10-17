@@ -1,0 +1,61 @@
+{
+  "status": "PASS_COMPILED_CURRENCY_INT_CODEC_VS_ORIGINAL_ARM64",
+  "cases": 1024,
+  "checks": 15360,
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "executed_functions": {
+    "int_from_plain": 26622,
+    "int_to_plain": 2048,
+    "int_internal_decrypt": 24195,
+    "int_encrypt_default": 6144,
+    "int_decrypt_default": 5120,
+    "int_encrypt_explicit": 3328,
+    "int_decrypt_explicit": 3328,
+    "currency_ctor": 5120,
+    "object_ctor": 1024,
+    "currency_get_kind": 1024,
+    "currency_get_count": 2048,
+    "currency_set_count": 1024
+  },
+  "calls": {
+    "int_from_plain": 1024,
+    "int_to_plain": 1024,
+    "int_encrypt_default": 1024,
+    "int_decrypt_default": 1024,
+    "int_encrypt_explicit": 1024,
+    "int_decrypt_explicit": 1024,
+    "int_internal_decrypt": 1024,
+    "currency_ctor": 1024,
+    "currency_get_kind": 1024,
+    "currency_get_count": 2048,
+    "currency_set_count": 1024
+  },
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "allocation_calls": {},
+  "metadata_initialization_guards": [
+    "0x3a36686",
+    "0x3a3667f",
+    "0x3a36680",
+    "0x3a3667d",
+    "0x3a36614",
+    "0x3a36681",
+    "0x3a36682",
+    "0x3a36685",
+    "0x3b84ea5"
+  ],
+  "original_text_sha256": {
+    "int_from_plain": "a8235d69761afa86bdef86012afd95640d48c65a4b7d6499a9fd65082410ab76",
+    "int_to_plain": "53a8a638ed29c62add2bf0e50b6b9ac3d4ed7b87231041827750aa3be6288a4f",
+    "int_encrypt_default": "9427141241f9aaae73ad50b5de86c5caa078391c7c8956f8e0761a850a7fe9c7",
+    "int_encrypt_explicit": "85bd61f58f859b3940f643af9fac37a352f85728c9e8983fe0e783f1d3ec1395",
+    "int_decrypt_default": "9c209fb25a4eda517fb4948f7d2ace0dcc737e28b19215ae3495b4b98817d935",
+    "int_decrypt_explicit": "28b4b695fae574e3cccc1e8007ef1227acd869893bb68b38abb34c411df78d68",
+    "int_internal_decrypt": "a809ba86d78a7b73c9938699426f19400aca92d342ef5e3ce61cbef56121b67f",
+    "currency_ctor": "b39bb9415633e9e33e9f19e822726bdfd421755fc48b06f5d87ba95340638e4e",
+    "currency_set_count": "7a2dd33fdedf154abcdb5d6dfe32dc5d1dd95eee18191544eace83cb6bdcbc46",
+    "currency_get_kind": "dfb556a413c8bda5332942d0202e8d5f1e52f45158aec3676294cf11ad5909cb",
+    "currency_get_count": "031b293e06b6ca3615ac38e75047a4ee1254b023e65c4248cda2bca812f13342"
+  },
+  "scope": "Generic currency int representation, CurrencyStruct constructor/get/set and aggregate calling convention: default/explicit XOR, zero-key fallback, by-value decode and lazy initialization. Synthetic initialized metadata and absent/inactive/active-consistent detector states. No mismatch callback, roster wallet mutation, real save, complete reward/economy or 64-bit money/bonus parity claim."
+}

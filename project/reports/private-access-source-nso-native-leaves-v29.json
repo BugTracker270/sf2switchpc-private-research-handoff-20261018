@@ -1,0 +1,30 @@
+{
+  "status": "PASS_SCOPED_PRIVATE_FIELD_TO_NATIVE_PROVEN_PUBLIC_SETTER_SOURCE_CORRELATION",
+  "recovery_run": "nso-native-leaves-v29",
+  "source_files": 34,
+  "before_field_stores": 673,
+  "after_field_stores": 0,
+  "before_property_stores": 0,
+  "after_property_stores": 673,
+  "proof_gates": {
+    "selection": {
+      "status": "PASS_NATIVE_LEAF_ACCESSOR_SELECTION_ONLY",
+      "checks": 19
+    },
+    "native": {
+      "status": "PASS_ORIGINAL_REFERENCE_FIELD_SETTER",
+      "checks": 128
+    },
+    "recovered": {
+      "status": "PASS_RECOVERED_LEAF_ACCESSOR_AT_ISOLATED_STORAGE_BOUNDARY",
+      "checks": 256
+    }
+  },
+  "before_selected_source_sha256": "8254ac0caed5af170f4e4929f3701a08490e603663bac57cf9720fe32bdc641a",
+  "after_selected_source_sha256": "4a0a29349cc53d4ef3f5d79c2bad32e1878a052703f6cc49e5587a4ff988a188",
+  "source_text_edited": false,
+  "original_field_privacy_preserved": true,
+  "new_game_metadata_added": false,
+  "whole_game_source_ready": false,
+  "scope": "All 673 prior inaccessible InputControlMapping.handle stores in the same exported source files become existing public Handle setter expressions. Actual recovered setter/caller expressions execute at isolated CLR storage boundaries; the exact original native setter separately passes pointer-store tests. The effectful getter is not used for arbitrary loads. Remaining assemblies, profile constructors and Unity/class-initialization/GC behavior are not validated by this count."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS_RECOVERED_LEAF_ACCESSOR_AT_ISOLATED_STORAGE_BOUNDARY",
+  "recovery_run": "nso-value-this-box-v30",
+  "cases": 128,
+  "checks": 256,
+  "call_sites": 6,
+  "accessor_calls": 1,
+  "recovered_setter_field_stores": 1,
+  "fatal": null,
+  "setter_il_sha256": "b24d97d82db143dc59de4f75dab5a0ca7dcbb12dccd9f13ef46e2a9d6833538c",
+  "caller_il_sha256": "9fdec1668397d8b9e142dd2340d512f627fcd1f9c89549be92df9c57cea95bcf",
+  "selected_slice_sha256": "c79bc969c4fc57f73b836e049c6ac5ac05fa7b7ac811b54778b8cec74a826d45",
+  "selected_expression_il_offset": 3052,
+  "selected_literal_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+  "original_field_private": true,
+  "output_metadata_added": false,
+  "original_native_executed": false,
+  "scope": "Execute actual recovered public setter CIL and one actual rewritten literal/receiver call expression from GoogleNexusPlayerRemoteProfile constructor. Only receiver type/field tokens and call-to-that-exact-recovered-setter token map to isolated CLR storage; source instructions and literal are retained, with one receiver local supplied and a return appended. Arbitrary/null strings and unrelated storage are checked. Native setter execution is recorded separately; original class initialization, profile constructor remainder, GC and whole-game/source parity remain unvalidated.",
+  "whole_game_source_ready": false
+}

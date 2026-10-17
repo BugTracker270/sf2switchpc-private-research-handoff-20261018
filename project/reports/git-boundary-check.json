@@ -1,0 +1,6 @@
+{
+  "staged_files": 56,
+  "errors": [],
+  "status": "PASS",
+  "scope": "Local checkpoint text/binary boundary and key-line pattern checks; not a general secret scanner. No remote/upload performed."
+}

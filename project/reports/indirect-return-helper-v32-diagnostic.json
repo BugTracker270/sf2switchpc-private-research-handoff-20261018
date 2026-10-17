@@ -1,0 +1,132 @@
+{
+  "descriptor_present": true,
+  "caller_exact": true,
+  "selected_pointer": "0x1585F60",
+  "target_exact": true,
+  "constructor_exact": true,
+  "constructor_hash": true,
+  "caller_default_name": "SetStage",
+  "caller_default_type": "Nekki.SF2.Core.Fights.Fight",
+  "concrete_base_type": "System.Collections.Generic.List\u00601",
+  "enum_base_type": "System.Collections.Generic.List\u00601\u002BEnumerator",
+  "known_element": true,
+  "layouts_rejected": 0,
+  "first_rejected_layouts": [],
+  "storage_uses": true,
+  "storage_rows": [
+    {
+      "site": "0xC9F440",
+      "op": "Move",
+      "operands": [
+        {
+          "kind": "StackOffset",
+          "text": "stack[10]"
+        },
+        {
+          "kind": "Immediate",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "site": "0xC9F440",
+      "op": "Move",
+      "operands": [
+        {
+          "kind": "StackOffset",
+          "text": "stack[18]"
+        },
+        {
+          "kind": "Immediate",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "site": "0xC9F444",
+      "op": "Move",
+      "operands": [
+        {
+          "kind": "StackOffset",
+          "text": "stack[8]"
+        },
+        {
+          "kind": "Immediate",
+          "text": "0"
+        }
+      ]
+    },
+    {
+      "site": "0xC9F4D8",
+      "op": "Move",
+      "operands": [
+        {
+          "kind": "Register",
+          "text": "X8"
+        },
+        {
+          "kind": "AddressOf",
+          "text": "\u0026stack[8]"
+        }
+      ]
+    },
+    {
+      "site": "0xC9F4FC",
+      "op": "Move",
+      "operands": [
+        {
+          "kind": "Register",
+          "text": "X0"
+        },
+        {
+          "kind": "AddressOf",
+          "text": "\u0026stack[8]"
+        }
+      ]
+    },
+    {
+      "site": "0xC9F50C",
+      "op": "Move",
+      "operands": [
+        {
+          "kind": "Register",
+          "text": "X0"
+        },
+        {
+          "kind": "AddressOf",
+          "text": "\u0026stack[8]"
+        }
+      ]
+    },
+    {
+      "site": "0xC9F594",
+      "op": "Move",
+      "operands": [
+        {
+          "kind": "Register",
+          "text": "X0"
+        },
+        {
+          "kind": "AddressOf",
+          "text": "\u0026stack[8]"
+        }
+      ]
+    },
+    {
+      "site": "0xC9F5DC",
+      "op": "Move",
+      "operands": [
+        {
+          "kind": "Register",
+          "text": "X0"
+        },
+        {
+          "kind": "AddressOf",
+          "text": "\u0026stack[8]"
+        }
+      ]
+    }
+  ],
+  "native_address_count": 186,
+  "converted_count": 186
+}

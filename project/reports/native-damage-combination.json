@@ -1,0 +1,33 @@
+{
+  "status": "PASS_COMPILED_DAMAGE_SLICE_VS_ORIGINAL_ARM64",
+  "cases": 4096,
+  "checks": 4096,
+  "zero_results": 423,
+  "fists_cases": 1638,
+  "fixture_sha256": "c5fb4d9bbc1684ce4813843644512cf482ae558f89f87214059320f8ab629638",
+  "executed_functions": {
+    "damage_combination": 16384,
+    "max_float": 4096,
+    "weapon_modifier": 39315,
+    "interval_factors": 4096,
+    "list_object_count": 4914,
+    "list_object_item": 13104,
+    "string_equal_operator": 9828,
+    "string_equal": 16380
+  },
+  "original_text_sha256": {
+    "damage_combination": "124e815d09234095f9f5d64f770307e7f014fa3cc4cfcfe1d9cb3a74896bd6ba",
+    "max_float": "734bedc06bf5330a8f8e081bb8fb84ee998b05ce2931653d4ae3a31398b3ff63",
+    "weapon_modifier": "889565ca32cffbd15e27b7ab4cbe4d24f3a5177c8b457c34ae53c29a509521cb",
+    "interval_factors": "afd82266db0e139bd0822cdce5459a8e85efc3e00aa8031a4b773a6098a24ecb",
+    "string_equal_operator": "783729ccf2221535ce7ba05e88b2aa612cb02fea75aa30f9c7deb15299478052",
+    "string_equal": "99d1c487f067890bccb739edf3ddb167cd95ede3fdac08426e6a28fdd645d93e"
+  },
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "metadata_initialization_guards": [
+    "0x3b85c28",
+    "0x3A34CB3"
+  ],
+  "scope": "Internal GetTotalDamage slice 0xFFBE40..0xFFBEBC with register inputs for earlier calculations. Original Max, weapon modifier, string equality, list helpers and interval-factor selection executed. This does not validate upstream attribute differences, exponentiation, raid-charge exception, hit eligibility or whole combat."
+}

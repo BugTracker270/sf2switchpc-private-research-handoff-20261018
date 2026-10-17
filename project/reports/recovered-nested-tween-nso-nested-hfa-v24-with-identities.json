@@ -1,0 +1,26 @@
+{
+  "status": "RECOVERED_NESTED_GENERIC_CALLER_LIMITATION",
+  "recovery_run": "nso-nested-hfa-v24",
+  "cases": 64,
+  "checks": 576,
+  "nested_field_address_instructions": 20,
+  "caller_nested_field_addresses": 18,
+  "identity_cases": 0,
+  "identity_checks": 0,
+  "total_checks": 576,
+  "failure_count": 0,
+  "statically_unreachable_analysis_warning_calls": 1,
+  "diagnostic_tail_termination_experiment": false,
+  "first_failures": [],
+  "fatal": "System.Exception: Unexpected token/call; diagnostic helpers are forbidden: ldstr",
+  "body_il_sha256": {
+    "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+    "RecoveredNestedTweenCaller": "0d1555571396a2890b74ed5957e21e8d82406756d6b8f98bf65b49761a59fdf1",
+    "RecoveredWrapperConvert": "4b82aba740efe6b1396161b225247b50672a19b0182a5c7399cc3ebdbb262ad4"
+  },
+  "vector_assembly_sha256": "6dd4f80fc7d666288a31742091a274841291047fa3d5b6e2fc83241505effa09",
+  "tween_assembly_sha256": "a16ecd6ccbda8fd02e4491952ce8e782d9374881db2b4462cebd0414f5961bb3",
+  "fixture_sha256": "a90434a7d325d6761703a46412a5e30e7585b90179a80568c3c74ca673330c6f",
+  "identity_fixture_sha256": null,
+  "scope": "Actual recovered caller and addition CIL, with exact vector/wrapper/closed-generic field tokens replaced by isolated equivalent storage types. Scalar instructions, local layout, branches and stores retained; managed addition call target replaced by the actual recovered addition DynamicMethod. Appended analysis-warning calls are allowed only after a full intraprocedural reachability check proves they are unreachable, and map to a throwing trap without removing bytes. Three resulting component bits and six unchanged start/change component bits per case. Every reachable diagnostic/helper or other substitution is rejected. Explicitly bypasses Unity/plugin initialization and original class-initializer ordering; no other caller, whole assembly or portable-game claim. Original complete caller evidence: reports/native-fp-class-guard-caller.json. Also executes three actual recovered nested-wrapper argument/return methods against all 240 original-code identity fixtures (720 checks); no game-method call substitutions in those identities."
+}

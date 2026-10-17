@@ -1,0 +1,543 @@
+{
+  "status": "READ_ONLY_RAW_CLASS_INIT_STAGE_OBSERVATIONS",
+  "known_helper": "0xB2E720",
+  "managed_aliases_at_helper": [],
+  "methods": [
+    {
+      "method": "BinaryReaderNekki::ReadBoolean",
+      "rva": "0xF0D390",
+      "raw_native_class_init_calls": 1,
+      "before_metadata": [
+        {
+          "index": 30,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v19",
+            "register": "X0",
+            "version": 1,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "MemoryOperand"
+            }
+          },
+          "return_local": "v28",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_metadata": [
+        {
+          "index": 30,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v19",
+            "register": "X0",
+            "version": 1,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "System.BitConverter"
+            }
+          },
+          "return_local": "v28",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_type_fixpoint": [
+        {
+          "index": 30,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v19",
+            "register": "X0",
+            "version": 1,
+            "type": "Il2CppClass\u003CSystem.BitConverter\u003E",
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "System.BitConverter"
+            }
+          },
+          "return_local": "v28",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": [
+            "BinaryReaderNekki::ReadBoolean"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "BundlesUtil::UnloadDependencies",
+      "rva": "0x4A83A0",
+      "raw_native_class_init_calls": 1,
+      "before_metadata": [
+        {
+          "index": 124,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v65",
+            "register": "X0",
+            "version": 9,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "MemoryOperand"
+            }
+          },
+          "return_local": "v82",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_metadata": [
+        {
+          "index": 124,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v65",
+            "register": "X0",
+            "version": 9,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "BundlesUtil"
+            }
+          },
+          "return_local": "v82",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_type_fixpoint": [
+        {
+          "index": 124,
+          "opcode": "Call",
+          "operand_count": 4,
+          "target_kind": "ConcreteGenericMethodAnalysisContext",
+          "target": "System.Collections.Generic.List\u00601\u003CUnityEngine.AssetBundle\u003E\u002BEnumerator\u003CUnityEngine.AssetBundle\u003E::Dispose",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v65",
+            "register": "X0",
+            "version": 9,
+            "type": "Il2CppClass\u003CBundlesUtil\u003E",
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "BundlesUtil"
+            }
+          },
+          "return_local": "v82",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1"
+          ],
+          "method_info_arguments": [
+            "System.Collections.Generic.List\u00601\u003CUnityEngine.AssetBundle\u003E\u002BEnumerator\u003CUnityEngine.AssetBundle\u003E::Dispose"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "BundlesUtil::GetAssetBundleSafe",
+      "rva": "0x4A8920",
+      "raw_native_class_init_calls": 2,
+      "before_metadata": [
+        {
+          "index": 74,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v20",
+            "register": "X0",
+            "version": 1,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "MemoryOperand"
+            }
+          },
+          "return_local": "v31",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        },
+        {
+          "index": 40,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v46",
+            "register": "X0",
+            "version": 5,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Phi",
+            "source": null
+          },
+          "return_local": "v78",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_metadata": [
+        {
+          "index": 74,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v20",
+            "register": "X0",
+            "version": 1,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "BundlesUtil"
+            }
+          },
+          "return_local": "v31",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        },
+        {
+          "index": 40,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v46",
+            "register": "X0",
+            "version": 5,
+            "type": null,
+            "definitions": 1,
+            "definition_opcode": "Phi",
+            "source": null
+          },
+          "return_local": "v78",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": []
+        }
+      ],
+      "after_type_fixpoint": [
+        {
+          "index": 74,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v20",
+            "register": "X0",
+            "version": 1,
+            "type": "Il2CppClass\u003CBundlesUtil\u003E",
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "BundlesUtil"
+            }
+          },
+          "return_local": "v31",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": [
+            "BundlesUtil::GetAssetBundleSafe"
+          ]
+        },
+        {
+          "index": 40,
+          "opcode": "Call",
+          "operand_count": 18,
+          "target_kind": "Immediate",
+          "target": "11724576",
+          "argument_origin": {
+            "kind": "local",
+            "Name": "v46",
+            "register": "X0",
+            "version": 5,
+            "type": "Il2CppClass\u003CBundlesUtil\u003E",
+            "definitions": 1,
+            "definition_opcode": "Phi",
+            "source": null
+          },
+          "return_local": "v78",
+          "return_type": null,
+          "return_source_uses": 0,
+          "return_use_opcodes": [],
+          "raw_argument_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "method_info_arguments": [
+            "BundlesUtil::GetAssetBundleSafe"
+          ]
+        }
+      ]
+    }
+  ],
+  "core_sha256": "6fa3bae49f3fd93cff826dcaa181ec99d24fecdfb005e0aeb536b0b51be42f7e",
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "core_source_edited": false,
+  "scope": "Selected actual methods are analyzed only through the production type/field fixpoint with stage snapshots. Native helper identities, SSA result-use counts and class-metadata origins are observations; no rewrite, default, runtime parity or portable-source claim is made."
+}

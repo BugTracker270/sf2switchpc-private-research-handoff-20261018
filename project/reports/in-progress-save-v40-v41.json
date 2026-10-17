@@ -1,0 +1,9 @@
+{
+  "status": "PASS_IN_PROGRESS_BYTE_EXACT_SAVE",
+  "archive": "backups\\in-progress-v40-v41-20261017T191744Z.zip",
+  "sha256": "4b2765b6b97ddd780f5b59dbbe0ad0140062f1d7f6ee98c5e2234a19efca4e5e",
+  "files": 199,
+  "v40_full_clean_decompile_ready": false,
+  "v41_unbuilt_and_unvalidated": true,
+  "scope": "Preserves current uncommitted infrastructure/reports and modified upstream sources plus frozen v40 sources/tool binaries. Existing original inputs, game outputs and logs remain in their USB locations. No work discarded, source readiness claimed or new full pass started."
+}

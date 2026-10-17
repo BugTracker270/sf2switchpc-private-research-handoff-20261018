@@ -1,0 +1,90 @@
+{
+  "status": "PASS_SELECTED_OFFICIAL_COMMON_RUNTIME_SOURCE_EXTRACTED",
+  "release": "2018.1.9f1",
+  "revision": "24bbd83e8b9e",
+  "source_archive_sha256": "ce666b2de60716cb5564b53317b56f0b82eddbea7afb3462ef51d5e121833c96",
+  "archive_provenance_sha256": "e051daf19ad9e19cc8992cd0fd61317f5d07de495bc37e52f4964d62bbd6f72e",
+  "archive_listing_sha256": "ea51e994ec6f63ab7163a790465c6d21f10b551611394bddff04d18d55dcf33b",
+  "selection_sha256": "135ae728402d5e9de785cdbadfdf8011f9d3c000281acfc5071cbeb3a4b39850",
+  "extraction_exit_code": 0,
+  "seven_zip_sha256": "83967f1b02b43c4efeda302795722c809e0e81b8307de73558d10484d5676a7d",
+  "files": [
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Class.cpp",
+      "bytes": 75483,
+      "sha256": "2801e2fdfd3dd7db4b14238f70df9335460e777b6a40fe48cb0eb9241ceb7a1d"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Class.h",
+      "bytes": 11286,
+      "sha256": "56445b4bd81164a66e69dbb6bddb781704efa2c21d844ab01bd2be1e354d07b8"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Runtime.cpp",
+      "bytes": 35674,
+      "sha256": "53d8b6c2b0fb191af9085d574b6f6fcda5d4503cb597c12dfc016b984db3b13e"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Runtime.h",
+      "bytes": 3519,
+      "sha256": "b07402d3c594de6c124bf056a12de39b82a4dd55b8b17af7f1c16d779b260db2"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\MetadataLock.h",
+      "bytes": 187,
+      "sha256": "2c195c745fcf79115a845eb16bfa3411608485cf86980cf053214e1c218488ab"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\os\\Mutex.cpp",
+      "bytes": 1183,
+      "sha256": "85888d8a3768184ed348fea8fab6835169fc6f8c0ed893938bf85acf0ca5c739"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\os\\Mutex.h",
+      "bytes": 2417,
+      "sha256": "5114fe037ce472db26320bac2eb78b8b82254d9ec18e11ba25bdeab047cfc650"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\il2cpp-class-internals.h",
+      "bytes": 25154,
+      "sha256": "ebafce9983456b0abeeff64cc34e69ca6f87e05676241e2dd0e972d991b31ecc"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\il2cpp-object-internals.h",
+      "bytes": 43492,
+      "sha256": "bfcad08e51f50fad3a0bc26fc6e5e7fcae34d0ac92f52922e08353e7fcf59a3e"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\il2cpp-config.h",
+      "bytes": 16515,
+      "sha256": "f9a8ca8d2707516b1c6b02cb5a9a44c72c91907ce04f36a5fd72470b3352dec0"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\il2cpp-api.cpp",
+      "bytes": 28707,
+      "sha256": "02daed4d22066ff968babf140ce045f40e6bba501193cd6315de052ff77b0800"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\il2cpp-api.h",
+      "bytes": 637,
+      "sha256": "7bd71f7739f0c923bcc312d4e98e6b8e0c35c670d65574b691d544f882534408"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\il2cpp-api-functions.h",
+      "bytes": 15203,
+      "sha256": "f1e0f91dee1ee0c7632eb233962402c5c71ed748cc36bcbe06ff1528e6854ace"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\common-runtime-source\\$PLUGINSDIR\\License.rtf",
+      "bytes": 348474,
+      "sha256": "e6a85e2cd21fa58532674a00bafd2a9f9f89bcf7cb4c8df83fd5196b387b70ec"
+    }
+  ],
+  "file_count": 14,
+  "extraction_log_sha256": "2fc12904011206905a36c3c7e48b442f6df6019008f68919d6ad59ac3c21f9a7",
+  "installer_executed": false,
+  "editor_installed": false,
+  "platform_sdk_fetched": false,
+  "source_private_local_only": true,
+  "probe_source_sha256": "498a2c6d65066247d1d47934e3a0623a49cad3412527cdb961c8e42a94b94b5f"
+}

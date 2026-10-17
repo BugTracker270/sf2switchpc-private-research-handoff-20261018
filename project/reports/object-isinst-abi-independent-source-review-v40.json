@@ -1,0 +1,46 @@
+{
+  "status": "ACCEPTED_EXACT_ABI_ONLY_WITH_EXPLICIT_UNRECOVERED_EMITTED_SEMANTICS",
+  "core_sha256": "14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6",
+  "reviewed_sources": [
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\Instruction.cs",
+      "sha256": "212543654aede90f3fc6b9b2f19d9474578ff4afb9e2dae32f80095d53a50663"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64IndirectReturns.cs",
+      "sha256": "e46aecc8b2e21731a53acdaf8f9b69ad685722af0abc83df9c9b904d023e2852"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\InstructionSets\\NewArmV8InstructionSet.cs",
+      "sha256": "d895be7ed6d860d41fa651c974987963d5707665dc4e28584d55c82bfac30f8b"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Model\\Contexts\\MethodAnalysisContext.cs",
+      "sha256": "21e3f26b49e87d85da69cdaeada0a6e75c0927baa30bd4f330af9c5ec878cd40"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\MetadataResolver.cs",
+      "sha256": "2fc7e84ed5829caad7b0186ad00d09790ead92925c59ecab98d131cdf2277af7"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\IlGenerator.cs",
+      "sha256": "d12568671706c093078e881db2b4db42f8794a5c88ed16600c8a541f080e24e9"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ObjectIsInstAbi.cs",
+      "sha256": "ea443616ca0d0f146936f873fda98415766626e1611b8709b0d4057501f950e0"
+    }
+  ],
+  "source_review_only": true,
+  "scope": "Exact image/FDE/body-pinned native ABI only. Original X0/X1 capture and canonical Object result typing retain original IR dataflow. Post-SSA source identity is owned by ordinary dataflow, not this carrier. Actual emitted numeric diagnostics invoke a bare-ret helper and leave sampled results as implicit InitLocals null. Class-input evaluation, assignability, metadata, COM and error effects remain unimplemented. No managed isinst, array-store fusion or executable helper recovery.",
+  "native_oracle_accepted": {
+    "cases": 1034,
+    "checks": 8272,
+    "supplied_assignability_boundaries": 1024,
+    "actual_assignability_or_com_executed": false
+  },
+  "full_clean_decompile_ready": false,
+  "accepted_contract_report_sha256": "18612897d497465269d79bc60460fe3faa423488ff4466ae71e8bedcd82362c2",
+  "accepted_production_report_sha256": "59fc6915edc66ec5a0795d282984ffc9b91280ef605b8649508554201fbc0952",
+  "accepted_fresh_output_report_sha256": "f148376d01c1ce5c9537842052e3924a66640ba954b90af3c54048a25e8aa2cc"
+}

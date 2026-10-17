@@ -1,0 +1,8 @@
+{
+  "scope": "Same original ARM64 fixtures and strict recovered-CIL isolation as the existing pipeline. Audit success alone is syntax, not native equivalence.",
+  "syntax_audit_exit": 0,
+  "status": "SCOPED_VALIDATION_COMPLETE_NOT_SOURCE_ACCEPTANCE",
+  "boolean_exit": -532462766,
+  "vector_exit": 2,
+  "run": "rust-source-v3-uncompressed"
+}

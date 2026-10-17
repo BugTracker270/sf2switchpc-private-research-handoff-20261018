@@ -1,0 +1,1189 @@
+{
+  "operations": [
+    {
+      "status": "PASS",
+      "exit_code": 0,
+      "errors": [],
+      "signature_failure_count": 0,
+      "command": [
+        "F:\\SF2SwitchPC\\tools\\hactool-1.4.0\\hactool.exe",
+        "--suppresskeys",
+        "--disablekeywarns",
+        "-k",
+        "F:\\SF2SwitchPC\\input\\hactool-key-profile\\switch\\prod.keys",
+        "-t",
+        "nca",
+        "-x",
+        "-i",
+        "-y",
+        "--romfsdir=F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs",
+        "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca"
+      ],
+      "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+      "base_nca": null,
+      "output": "F:\\SF2SwitchPC\\unpacked\\base\\control",
+      "file_count": 11,
+      "total_bytes": 905974,
+      "elapsed_seconds": 0.40700000000651926,
+      "log": "F:\\SF2SwitchPC\\logs\\extract-base-control.log",
+      "files": [
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs\\control.nacp",
+          "relative_path": "romfs\\control.nacp",
+          "size": 16384,
+          "sha256": "4df5818aa9ba3d0f46af6e9975d702e9fc9d5be9460be42ad0876ed120c3a3a9",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs\\icon_AmericanEnglish.dat",
+          "relative_path": "romfs\\icon_AmericanEnglish.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs\\icon_French.dat",
+          "relative_path": "romfs\\icon_French.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs\\icon_German.dat",
+          "relative_path": "romfs\\icon_German.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs\\icon_Italian.dat",
+          "relative_path": "romfs\\icon_Italian.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs\\icon_Japanese.dat",
+          "relative_path": "romfs\\icon_Japanese.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs\\icon_Korean.dat",
+          "relative_path": "romfs\\icon_Korean.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs\\icon_Portuguese.dat",
+          "relative_path": "romfs\\icon_Portuguese.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs\\icon_Russian.dat",
+          "relative_path": "romfs\\icon_Russian.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs\\icon_SimplifiedChinese.dat",
+          "relative_path": "romfs\\icon_SimplifiedChinese.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\control\\romfs\\icon_Spanish.dat",
+          "relative_path": "romfs\\icon_Spanish.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\0d8f90c6c7ee98750ff3071a050e9947.nca",
+          "base_nca": null,
+          "origin": "base"
+        }
+      ]
+    },
+    {
+      "status": "PASS",
+      "exit_code": 0,
+      "errors": [],
+      "signature_failure_count": 0,
+      "command": [
+        "F:\\SF2SwitchPC\\tools\\hactool-1.4.0\\hactool.exe",
+        "--suppresskeys",
+        "--disablekeywarns",
+        "-k",
+        "F:\\SF2SwitchPC\\input\\hactool-key-profile\\switch\\prod.keys",
+        "-t",
+        "nca",
+        "-x",
+        "-i",
+        "-y",
+        "--section0dir=F:\\SF2SwitchPC\\unpacked\\base\\meta\\meta",
+        "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\07b0aa77e9f96147892003b507ed56ae.cnmt.nca"
+      ],
+      "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\07b0aa77e9f96147892003b507ed56ae.cnmt.nca",
+      "base_nca": null,
+      "output": "F:\\SF2SwitchPC\\unpacked\\base\\meta",
+      "file_count": 1,
+      "total_bytes": 248,
+      "elapsed_seconds": 0.0629999999946449,
+      "log": "F:\\SF2SwitchPC\\logs\\extract-base-meta.log",
+      "files": [
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\meta\\meta\\Application_0100ab000abfe000.cnmt",
+          "relative_path": "meta\\Application_0100ab000abfe000.cnmt",
+          "size": 248,
+          "sha256": "c4a348f4a9e275b83af2da4c0167871d5d193c7a3fb6dea4a9f00b22a69e1f23",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\07b0aa77e9f96147892003b507ed56ae.cnmt.nca",
+          "base_nca": null,
+          "origin": "base"
+        }
+      ]
+    },
+    {
+      "status": "PASS",
+      "exit_code": 0,
+      "errors": [],
+      "signature_failure_count": 0,
+      "command": [
+        "F:\\SF2SwitchPC\\tools\\hactool-1.4.0\\hactool.exe",
+        "--suppresskeys",
+        "--disablekeywarns",
+        "-k",
+        "F:\\SF2SwitchPC\\input\\hactool-key-profile\\switch\\prod.keys",
+        "-t",
+        "nca",
+        "-x",
+        "-i",
+        "-y",
+        "--romfsdir=F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs",
+        "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca"
+      ],
+      "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+      "base_nca": null,
+      "output": "F:\\SF2SwitchPC\\unpacked\\update\\control",
+      "file_count": 11,
+      "total_bytes": 905974,
+      "elapsed_seconds": 0.26600000000325963,
+      "log": "F:\\SF2SwitchPC\\logs\\extract-update-control.log",
+      "files": [
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs\\control.nacp",
+          "relative_path": "romfs\\control.nacp",
+          "size": 16384,
+          "sha256": "cd2e1b7f61d9235bb2f52e7cacd2f1a7a920fd91ec4cc66df93a43ec254ead34",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+          "base_nca": null,
+          "origin": "update"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs\\icon_AmericanEnglish.dat",
+          "relative_path": "romfs\\icon_AmericanEnglish.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+          "base_nca": null,
+          "origin": "update"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs\\icon_French.dat",
+          "relative_path": "romfs\\icon_French.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+          "base_nca": null,
+          "origin": "update"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs\\icon_German.dat",
+          "relative_path": "romfs\\icon_German.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+          "base_nca": null,
+          "origin": "update"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs\\icon_Italian.dat",
+          "relative_path": "romfs\\icon_Italian.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+          "base_nca": null,
+          "origin": "update"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs\\icon_Japanese.dat",
+          "relative_path": "romfs\\icon_Japanese.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+          "base_nca": null,
+          "origin": "update"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs\\icon_Korean.dat",
+          "relative_path": "romfs\\icon_Korean.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+          "base_nca": null,
+          "origin": "update"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs\\icon_Portuguese.dat",
+          "relative_path": "romfs\\icon_Portuguese.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+          "base_nca": null,
+          "origin": "update"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs\\icon_Russian.dat",
+          "relative_path": "romfs\\icon_Russian.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+          "base_nca": null,
+          "origin": "update"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs\\icon_SimplifiedChinese.dat",
+          "relative_path": "romfs\\icon_SimplifiedChinese.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+          "base_nca": null,
+          "origin": "update"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\control\\romfs\\icon_Spanish.dat",
+          "relative_path": "romfs\\icon_Spanish.dat",
+          "size": 88959,
+          "sha256": "f508aa3619355a445f4fba04708b9a977793fd4fd95eebd57100557b6839c719",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\fb9494b9de70bffd0d1797987f0ec51c.nca",
+          "base_nca": null,
+          "origin": "update"
+        }
+      ]
+    },
+    {
+      "status": "PASS",
+      "exit_code": 0,
+      "errors": [],
+      "signature_failure_count": 0,
+      "command": [
+        "F:\\SF2SwitchPC\\tools\\hactool-1.4.0\\hactool.exe",
+        "--suppresskeys",
+        "--disablekeywarns",
+        "-k",
+        "F:\\SF2SwitchPC\\input\\hactool-key-profile\\switch\\prod.keys",
+        "-t",
+        "nca",
+        "-x",
+        "-i",
+        "-y",
+        "--section0dir=F:\\SF2SwitchPC\\unpacked\\update\\meta\\meta",
+        "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\0ce5b75790645ca6389cb583a3d9a0fd.cnmt.nca"
+      ],
+      "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\0ce5b75790645ca6389cb583a3d9a0fd.cnmt.nca",
+      "base_nca": null,
+      "output": "F:\\SF2SwitchPC\\unpacked\\update\\meta",
+      "file_count": 1,
+      "total_bytes": 1340,
+      "elapsed_seconds": 0.07799999999406282,
+      "log": "F:\\SF2SwitchPC\\logs\\extract-update-meta.log",
+      "files": [
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\update\\meta\\meta\\Patch_0100ab000abfe800.cnmt",
+          "relative_path": "meta\\Patch_0100ab000abfe800.cnmt",
+          "size": 1340,
+          "sha256": "c9da0df457ffb9ab54ecf0b367702e13900580d3fa5cc67c1f5786b8506afb65",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\0ce5b75790645ca6389cb583a3d9a0fd.cnmt.nca",
+          "base_nca": null,
+          "origin": "update"
+        }
+      ]
+    },
+    {
+      "status": "PASS",
+      "exit_code": 0,
+      "errors": [],
+      "signature_failure_count": 0,
+      "command": [
+        "F:\\SF2SwitchPC\\tools\\hactool-1.4.0\\hactool.exe",
+        "--suppresskeys",
+        "--disablekeywarns",
+        "-k",
+        "F:\\SF2SwitchPC\\input\\hactool-key-profile\\switch\\prod.keys",
+        "-t",
+        "nca",
+        "-x",
+        "-i",
+        "-y",
+        "--exefsdir=F:\\SF2SwitchPC\\unpacked\\base\\program\\exefs",
+        "--romfsdir=F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs",
+        "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca"
+      ],
+      "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+      "base_nca": null,
+      "output": "F:\\SF2SwitchPC\\unpacked\\base\\program",
+      "file_count": 44,
+      "total_bytes": 1482299498,
+      "elapsed_seconds": 46.84399999999732,
+      "log": "F:\\SF2SwitchPC\\logs\\extract-base-program.log",
+      "files": [
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\exefs\\main",
+          "relative_path": "exefs\\main",
+          "size": 28796517,
+          "sha256": "957161ea722c84077e5dc795cb6833b58b4382c38cd452bded7b4a13340d4ae3",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\exefs\\main.npdm",
+          "relative_path": "exefs\\main.npdm",
+          "size": 1508,
+          "sha256": "beeac76cce733b3dd200806621d63ff9979d964b34e7f10ed4a789dc4a2b9f09",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\exefs\\rtld",
+          "relative_path": "exefs\\rtld",
+          "size": 7353,
+          "sha256": "6f7b8c19515b35331054288e30ff59543132a799b208f716bc30b6578b5f0f48",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\exefs\\sdk",
+          "relative_path": "exefs\\sdk",
+          "size": 5103963,
+          "sha256": "bf968c761811fe5b9463fdb6b0ae2619a9556a52c6a7886b4051184bf5c35a4a",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\exefs\\subsdk0",
+          "relative_path": "exefs\\subsdk0",
+          "size": 3344797,
+          "sha256": "64e9b3457c91097fd71458d73a7457f47f51fcc9f385fbd3ec4affb8e47d52a4",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\boot.config",
+          "relative_path": "romfs\\Data\\boot.config",
+          "size": 55,
+          "sha256": "c026ef0fc85281d72847c53f254df5e55e1933db61842ee038c0df44701ca867",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\globalgamemanagers",
+          "relative_path": "romfs\\Data\\globalgamemanagers",
+          "size": 1242584,
+          "sha256": "47b0e26241bb6c2c59bd4430a84b293d7604a4c33eb5bfb2a4b5efdf579f8842",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\globalgamemanagers.assets",
+          "relative_path": "romfs\\Data\\globalgamemanagers.assets",
+          "size": 370188,
+          "sha256": "d5530387461f8cdbf0229c1191fd037c1db165fba0c89847896fc29025ae4480",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\level0",
+          "relative_path": "romfs\\Data\\level0",
+          "size": 8360,
+          "sha256": "6f3ecb56e48eaf4fc880c51fa62987d773ec8686d859b737c85fb2d13dd897ef",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\level1",
+          "relative_path": "romfs\\Data\\level1",
+          "size": 5324,
+          "sha256": "1467350ec8e5b82ea46caa376a46e2f9b4a1490465336f908893483129b20d13",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\level2",
+          "relative_path": "romfs\\Data\\level2",
+          "size": 6900,
+          "sha256": "c0d1a83b6c279be63147d45fc1f64041528332221c19587b33ce5bb48bcb73a4",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\level3",
+          "relative_path": "romfs\\Data\\level3",
+          "size": 51540,
+          "sha256": "64459f991458dce476a1e9a842d63ffe8c3a4990b2351bd67a6f519b6a692316",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\level4",
+          "relative_path": "romfs\\Data\\level4",
+          "size": 7184,
+          "sha256": "15637092aa5884ed8afac0ab1f7202fb5f594c212b54ead02e299a5fdcbf1be7",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\level5",
+          "relative_path": "romfs\\Data\\level5",
+          "size": 6908,
+          "sha256": "471ea03f9b177af98dabb3e4d4dcf542a2703cf9c0902c1a854fccad48c81bb6",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\level6",
+          "relative_path": "romfs\\Data\\level6",
+          "size": 49280,
+          "sha256": "bf5fff3b7aeef404461f102d9e5ec2d623efee1b7f33493879f733bb917cd6a2",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\level7",
+          "relative_path": "romfs\\Data\\level7",
+          "size": 129444,
+          "sha256": "d1ae28566365307b58e40c5c390ba0ac1ae08b8a48083148582b90e3ca3046c7",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\level8",
+          "relative_path": "romfs\\Data\\level8",
+          "size": 8020,
+          "sha256": "94b61307beea283446e132c8db83cee66d9bfdd200a016aebcb4591fb2f6260a",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\level9",
+          "relative_path": "romfs\\Data\\level9",
+          "size": 5724,
+          "sha256": "8862c4811f87b3429ac7c01ac9f2a55d999ba172747ee68620059a53c34a2eb1",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\Managed\\Metadata\\global-metadata.dat",
+          "relative_path": "romfs\\Data\\Managed\\Metadata\\global-metadata.dat",
+          "size": 11178784,
+          "sha256": "7b9f80edf8dfb0fba378cac3de6c0d13010ecbe188b891d6e7673b2c86845c8f",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\Managed\\Resources\\mscorlib.dll-resources.dat",
+          "relative_path": "romfs\\Data\\Managed\\Resources\\mscorlib.dll-resources.dat",
+          "size": 337563,
+          "sha256": "c5baa176a5b72cd545266340e42102d393a5e43d38c95796bc828918bb95277f",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\Managed\\Resources\\System.dll-resources.dat",
+          "relative_path": "romfs\\Data\\Managed\\Resources\\System.dll-resources.dat",
+          "size": 54703,
+          "sha256": "0a1ea11a162d65135b767e3ac58989912fdd45019ee091fc3c8398850f392a75",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\rawsettings",
+          "relative_path": "romfs\\Data\\rawsettings",
+          "size": 60,
+          "sha256": "36284ee263b02825870526afe1ee14df7bd4a4c0fe6492176b39f0a150bedbf0",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\Resources\\unity default resources",
+          "relative_path": "romfs\\Data\\Resources\\unity default resources",
+          "size": 3258504,
+          "sha256": "caca24abaaa2f94ca8f06b5669daab27f4a85477554f0a2d589110f4251080b3",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\Resources\\unity_builtin_extra",
+          "relative_path": "romfs\\Data\\Resources\\unity_builtin_extra",
+          "size": 434036,
+          "sha256": "a077375c751e882826c1506481781d4a6c0a643b37560f495c5eaa0b49768cef",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\resources.assets",
+          "relative_path": "romfs\\Data\\resources.assets",
+          "size": 156698064,
+          "sha256": "0b9f62a17ec68850595fbc2048047ff3d7a8f30b96af27efd9bf501539ee76c4",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\resources.assets.resS",
+          "relative_path": "romfs\\Data\\resources.assets.resS",
+          "size": 1198599516,
+          "sha256": "be4242b3e26c39eef6315c21023e3f922af1db7126407cf7629a02ff61fa2410",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\resources.resource",
+          "relative_path": "romfs\\Data\\resources.resource",
+          "size": 28868960,
+          "sha256": "a40840568869e3fb1e94bc78558f918b9770f1c7a8920e1a1fe40ab6328ef799",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\sharedassets0.assets",
+          "relative_path": "romfs\\Data\\sharedassets0.assets",
+          "size": 396988,
+          "sha256": "efacd705969f0e69a0c286a3ceb9cf20b230ee9e9f2c390be7b875991e7156e8",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\sharedassets0.assets.resS",
+          "relative_path": "romfs\\Data\\sharedassets0.assets.resS",
+          "size": 19524672,
+          "sha256": "cfbac3fc149dc970320d7e847ffcb24055dcf7d18e6c482fa948d48c85afe429",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\sharedassets1.assets",
+          "relative_path": "romfs\\Data\\sharedassets1.assets",
+          "size": 7564,
+          "sha256": "c5461066b0500ec87c6d1f39fd163e5c225bfa69d328d20ce3dff138d1c6ec13",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\sharedassets2.assets",
+          "relative_path": "romfs\\Data\\sharedassets2.assets",
+          "size": 19900,
+          "sha256": "2eee2cf82455b2bd079b159e5b86402aab0326451878baff1bd27233fcddf7a9",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\sharedassets3.assets",
+          "relative_path": "romfs\\Data\\sharedassets3.assets",
+          "size": 27688,
+          "sha256": "c15390ba0a17c9781de2b928e670a9910ee4941be52c70692601deddaf3f455d",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\sharedassets4.assets",
+          "relative_path": "romfs\\Data\\sharedassets4.assets",
+          "size": 26188,
+          "sha256": "ca6c86665545a1e6fd889f57608410e9d6779551eeb0b62b437f0f1610b0b890",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\sharedassets5.assets",
+          "relative_path": "romfs\\Data\\sharedassets5.assets",
+          "size": 24568,
+          "sha256": "c4692ea5c238c5e5a10d5d92386680c376aa792143e7285fa2d4c87f8ad11392",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\sharedassets6.assets",
+          "relative_path": "romfs\\Data\\sharedassets6.assets",
+          "size": 21832,
+          "sha256": "1b4deac5e0a6c290f5f2bd46c7d5bfecedf8e2fbfb28886a47049579402e4210",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\sharedassets7.assets",
+          "relative_path": "romfs\\Data\\sharedassets7.assets",
+          "size": 12640,
+          "sha256": "55fb77cb9ee043a8bf9e06a083dbb54a88711865053438fea4e98bfc7d8aee45",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\sharedassets8.assets",
+          "relative_path": "romfs\\Data\\sharedassets8.assets",
+          "size": 13144,
+          "sha256": "e74f57144fdc486a16b6efa1a107503e7a1914c908f22e3f7af22e0c43c0aec6",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\sharedassets9.assets",
+          "relative_path": "romfs\\Data\\sharedassets9.assets",
+          "size": 4168,
+          "sha256": "4cc5cf0842bd6f685797ca62690620e789b7920c866d847e162f6601332ac09f",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\StreamingAssets\\CUDLR\\console.css",
+          "relative_path": "romfs\\Data\\StreamingAssets\\CUDLR\\console.css",
+          "size": 581,
+          "sha256": "ffbd573f211c8723324bc2eca53c9c72b1e4e6fdf72a919c236adac35fc73ebb",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\StreamingAssets\\CUDLR\\favicon.ico",
+          "relative_path": "romfs\\Data\\StreamingAssets\\CUDLR\\favicon.ico",
+          "size": 499,
+          "sha256": "48e6ef753e35bbb8b1471956b0509f71df69d9f9a2ee127d71d5468dbf6ff072",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\StreamingAssets\\CUDLR\\index.html",
+          "relative_path": "romfs\\Data\\StreamingAssets\\CUDLR\\index.html",
+          "size": 3022,
+          "sha256": "41822c78fbc98c96ad5d45d21d8403424458e74085ba34c8ae2cb139d8556749",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\StreamingAssets\\database\\intro.mp4",
+          "relative_path": "romfs\\Data\\StreamingAssets\\database\\intro.mp4",
+          "size": 11141639,
+          "sha256": "3dbb60a924f3c344107b83fe6326d9257f3072cb568088cb62302d84e2f3033f",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\StreamingAssets\\database\\Shadow_fight_ending.mp4",
+          "relative_path": "romfs\\Data\\StreamingAssets\\database\\Shadow_fight_ending.mp4",
+          "size": 6174357,
+          "sha256": "72231af0f148c811a5ee266732c791205fdbea6a94fd11cf004f6ae994dc98c3",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\base\\program\\romfs\\Data\\StreamingAssets\\database\\shadow_gate.mp4",
+          "relative_path": "romfs\\Data\\StreamingAssets\\database\\shadow_gate.mp4",
+          "size": 6324209,
+          "sha256": "6cd337aa6c00a03dd033f50bafdb2c398ec7cd45148e90857617b8caf0f73756",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "base_nca": null,
+          "origin": "base"
+        }
+      ]
+    },
+    {
+      "status": "PASS",
+      "exit_code": 0,
+      "errors": [],
+      "signature_failure_count": 0,
+      "command": [
+        "F:\\SF2SwitchPC\\tools\\hactool-1.4.0\\hactool.exe",
+        "--suppresskeys",
+        "--disablekeywarns",
+        "-k",
+        "F:\\SF2SwitchPC\\input\\hactool-key-profile\\switch\\prod.keys",
+        "-t",
+        "nca",
+        "-x",
+        "-i",
+        "-y",
+        "--exefsdir=F:\\SF2SwitchPC\\unpacked\\effective\\exefs",
+        "--romfsdir=F:\\SF2SwitchPC\\unpacked\\effective\\romfs",
+        "--basenca=F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+        "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca"
+      ],
+      "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+      "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+      "output": "F:\\SF2SwitchPC\\unpacked\\effective",
+      "file_count": 44,
+      "total_bytes": 1494312915,
+      "elapsed_seconds": 40.03200000000652,
+      "log": "F:\\SF2SwitchPC\\logs\\extract-effective.log",
+      "files": [
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\exefs\\main",
+          "relative_path": "exefs\\main",
+          "size": 28839738,
+          "sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\exefs\\main.npdm",
+          "relative_path": "exefs\\main.npdm",
+          "size": 1508,
+          "sha256": "f741622f17fd0a4e4ec3f5598a3258d8c68b52ceaf08a63d9f0469e417449b6f",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\exefs\\rtld",
+          "relative_path": "exefs\\rtld",
+          "size": 7353,
+          "sha256": "6f7b8c19515b35331054288e30ff59543132a799b208f716bc30b6578b5f0f48",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\exefs\\sdk",
+          "relative_path": "exefs\\sdk",
+          "size": 5103963,
+          "sha256": "bf968c761811fe5b9463fdb6b0ae2619a9556a52c6a7886b4051184bf5c35a4a",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\exefs\\subsdk0",
+          "relative_path": "exefs\\subsdk0",
+          "size": 3344797,
+          "sha256": "64e9b3457c91097fd71458d73a7457f47f51fcc9f385fbd3ec4affb8e47d52a4",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\boot.config",
+          "relative_path": "romfs\\Data\\boot.config",
+          "size": 55,
+          "sha256": "c026ef0fc85281d72847c53f254df5e55e1933db61842ee038c0df44701ca867",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\globalgamemanagers",
+          "relative_path": "romfs\\Data\\globalgamemanagers",
+          "size": 1264224,
+          "sha256": "c112a69a2d7baf6bdb8ba5931e6f9c11abc205109731e74503b34d64b2e950df",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\globalgamemanagers.assets",
+          "relative_path": "romfs\\Data\\globalgamemanagers.assets",
+          "size": 371916,
+          "sha256": "bc5d8eb4241ac3a99375198c9cfb818b73f071bf76d6be01d5009a82599670b9",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\level0",
+          "relative_path": "romfs\\Data\\level0",
+          "size": 8360,
+          "sha256": "e297a4f13b3c77d5e9e01421876e68e2266b1e6f524e93661dc31d9a34fe4842",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\level1",
+          "relative_path": "romfs\\Data\\level1",
+          "size": 5324,
+          "sha256": "b37e9773c43d371c73f490700ff63010b4109e88af6e412faa4254d07f7efef3",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\level2",
+          "relative_path": "romfs\\Data\\level2",
+          "size": 6900,
+          "sha256": "4e430b09c935af901fa8b29b01fe8ce6ac47e8cba909f77c62fbae96828cbf51",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\level3",
+          "relative_path": "romfs\\Data\\level3",
+          "size": 51564,
+          "sha256": "2728f413b3c376a44b1750c8c573ad1d22168ac9b3829e71dd59d2dc8792a449",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\level4",
+          "relative_path": "romfs\\Data\\level4",
+          "size": 7184,
+          "sha256": "6b6adf3daf051ca6d1d0fcbb7dad7c1491158595fe27226bc61ef7d06f374658",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\level5",
+          "relative_path": "romfs\\Data\\level5",
+          "size": 6908,
+          "sha256": "3270095d2432c83d85e3634c0ac86179a982dd0c59c6ea330993d8667045e6fb",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\level6",
+          "relative_path": "romfs\\Data\\level6",
+          "size": 49296,
+          "sha256": "ed6dbd29cbcafeb4e8ed94b5ae6f98db329e7d6e0e6f13ee90c51706f4417906",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\level7",
+          "relative_path": "romfs\\Data\\level7",
+          "size": 129476,
+          "sha256": "0d6ae345cb776215420f4e7a3ff5f299473c919d56ff6cf8af2091d420891d72",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\level8",
+          "relative_path": "romfs\\Data\\level8",
+          "size": 8020,
+          "sha256": "33459aa359ca51f436708c290684db31e2f57c9fa82c2251e8fc2e68e617f5c9",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\level9",
+          "relative_path": "romfs\\Data\\level9",
+          "size": 5724,
+          "sha256": "f15ec7d78f37730481132491e1d8473aa867513fc0f420c53223443f54be052f",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\Managed\\Metadata\\global-metadata.dat",
+          "relative_path": "romfs\\Data\\Managed\\Metadata\\global-metadata.dat",
+          "size": 11230672,
+          "sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\Managed\\Resources\\mscorlib.dll-resources.dat",
+          "relative_path": "romfs\\Data\\Managed\\Resources\\mscorlib.dll-resources.dat",
+          "size": 337563,
+          "sha256": "c5baa176a5b72cd545266340e42102d393a5e43d38c95796bc828918bb95277f",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\Managed\\Resources\\System.dll-resources.dat",
+          "relative_path": "romfs\\Data\\Managed\\Resources\\System.dll-resources.dat",
+          "size": 54703,
+          "sha256": "0a1ea11a162d65135b767e3ac58989912fdd45019ee091fc3c8398850f392a75",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\rawsettings",
+          "relative_path": "romfs\\Data\\rawsettings",
+          "size": 60,
+          "sha256": "36284ee263b02825870526afe1ee14df7bd4a4c0fe6492176b39f0a150bedbf0",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\Resources\\unity default resources",
+          "relative_path": "romfs\\Data\\Resources\\unity default resources",
+          "size": 3258504,
+          "sha256": "caca24abaaa2f94ca8f06b5669daab27f4a85477554f0a2d589110f4251080b3",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\Resources\\unity_builtin_extra",
+          "relative_path": "romfs\\Data\\Resources\\unity_builtin_extra",
+          "size": 434036,
+          "sha256": "a077375c751e882826c1506481781d4a6c0a643b37560f495c5eaa0b49768cef",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\resources.assets",
+          "relative_path": "romfs\\Data\\resources.assets",
+          "size": 156816104,
+          "sha256": "797bde3154094b4dce1848b16e26f3a4ef497c1771185a8ef3faaa17beb2341d",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\resources.assets.resS",
+          "relative_path": "romfs\\Data\\resources.assets.resS",
+          "size": 1210084700,
+          "sha256": "eb9ed7af5de2ed19eb4b3cd3aea26a7c22af9b4040277230ce82f51e81c7c4f8",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\resources.resource",
+          "relative_path": "romfs\\Data\\resources.resource",
+          "size": 29155904,
+          "sha256": "53a4b9efdce68b4a2056f49c450ba33de9702cb9137a22a1103370bbade96484",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\sharedassets0.assets",
+          "relative_path": "romfs\\Data\\sharedassets0.assets",
+          "size": 396756,
+          "sha256": "dff8b5e236ebc1b630862c7a8c2051464154340e06ac683ef5cc9af2c9395b84",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\sharedassets0.assets.resS",
+          "relative_path": "romfs\\Data\\sharedassets0.assets.resS",
+          "size": 19524672,
+          "sha256": "7773158180f5b3b15b05c28e95650a559caed2ee65838cbd8300f50ee940f69e",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\sharedassets1.assets",
+          "relative_path": "romfs\\Data\\sharedassets1.assets",
+          "size": 7540,
+          "sha256": "f1f663e4f65fde2da611248464b787c2b000b50c2f5e0ac1a31aa5afc8eb73ff",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\sharedassets2.assets",
+          "relative_path": "romfs\\Data\\sharedassets2.assets",
+          "size": 20008,
+          "sha256": "447e4b972613c3c2ce0743ddf7f078e83a892e530db49811a919d43fb1c686b7",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\sharedassets3.assets",
+          "relative_path": "romfs\\Data\\sharedassets3.assets",
+          "size": 27688,
+          "sha256": "88792d6fb7e1cbf5b6e5130e6889295d8b25d690686b7e6288b191cae5e6ad5e",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\sharedassets4.assets",
+          "relative_path": "romfs\\Data\\sharedassets4.assets",
+          "size": 26188,
+          "sha256": "f5083471780eafb4ef457884835306372cc8d492ed1a26277a0078444334d5d8",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\sharedassets5.assets",
+          "relative_path": "romfs\\Data\\sharedassets5.assets",
+          "size": 24832,
+          "sha256": "631526b4686a4a4417b7a52bc26205067d6fdc5ac6403a4a98af1085fd6f5722",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\sharedassets6.assets",
+          "relative_path": "romfs\\Data\\sharedassets6.assets",
+          "size": 21832,
+          "sha256": "24c250488ee1e36c1202e70d8e00bd3a009f69a06aabf4f3cf704e14bc0d0913",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\sharedassets7.assets",
+          "relative_path": "romfs\\Data\\sharedassets7.assets",
+          "size": 12640,
+          "sha256": "7487a086b2a9afbee334c7bd1c4f1c08cc5321f9f7eb98bda9abff96ccf81c5d",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\sharedassets8.assets",
+          "relative_path": "romfs\\Data\\sharedassets8.assets",
+          "size": 17728,
+          "sha256": "b6bb07fc709206ec0bdac6eaaf7ee9389f30af45c65b1a95faf3f6588199703c",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\sharedassets9.assets",
+          "relative_path": "romfs\\Data\\sharedassets9.assets",
+          "size": 4168,
+          "sha256": "9ec20c40f7d07aac54f36f85df0a797217210a50b988a1e1aa0889862e145961",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\StreamingAssets\\CUDLR\\console.css",
+          "relative_path": "romfs\\Data\\StreamingAssets\\CUDLR\\console.css",
+          "size": 581,
+          "sha256": "ffbd573f211c8723324bc2eca53c9c72b1e4e6fdf72a919c236adac35fc73ebb",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\StreamingAssets\\CUDLR\\favicon.ico",
+          "relative_path": "romfs\\Data\\StreamingAssets\\CUDLR\\favicon.ico",
+          "size": 499,
+          "sha256": "48e6ef753e35bbb8b1471956b0509f71df69d9f9a2ee127d71d5468dbf6ff072",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\StreamingAssets\\CUDLR\\index.html",
+          "relative_path": "romfs\\Data\\StreamingAssets\\CUDLR\\index.html",
+          "size": 3022,
+          "sha256": "41822c78fbc98c96ad5d45d21d8403424458e74085ba34c8ae2cb139d8556749",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\StreamingAssets\\database\\intro.mp4",
+          "relative_path": "romfs\\Data\\StreamingAssets\\database\\intro.mp4",
+          "size": 11141639,
+          "sha256": "3dbb60a924f3c344107b83fe6326d9257f3072cb568088cb62302d84e2f3033f",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\StreamingAssets\\database\\Shadow_fight_ending.mp4",
+          "relative_path": "romfs\\Data\\StreamingAssets\\database\\Shadow_fight_ending.mp4",
+          "size": 6174357,
+          "sha256": "72231af0f148c811a5ee266732c791205fdbea6a94fd11cf004f6ae994dc98c3",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        },
+        {
+          "path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\StreamingAssets\\database\\shadow_gate.mp4",
+          "relative_path": "romfs\\Data\\StreamingAssets\\database\\shadow_gate.mp4",
+          "size": 6324209,
+          "sha256": "6cd337aa6c00a03dd033f50bafdb2c398ec7cd45148e90857617b8caf0f73756",
+          "source_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\update\\9e558c3678550db627afa0fe00857d1d.nca",
+          "base_nca": "F:\\SF2SwitchPC\\unpacked\\nsp_pfs0\\base\\b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+          "origin": "effective_base_plus_patch"
+        }
+      ]
+    }
+  ]
+}

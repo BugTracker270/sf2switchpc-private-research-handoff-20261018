@@ -1,0 +1,376 @@
+{
+  "status": "PASS_ACTUAL_CLASS_INIT_TARGETS_WITHOUT_FALSE_METHODINFO_ALIAS",
+  "survey_sha256": "7466b5911e95624b258acc9c3602dc48a9d24b562efd37ab3e6563ea12e435c1",
+  "original_native_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "methods": [
+    {
+      "method": "BinaryReaderNekki::ReadBoolean",
+      "rva": "0xF0D390",
+      "exact_frame": {
+        "rva": 15782800,
+        "end_rva": 15782948,
+        "fde_rva": 54261232,
+        "fde_end_rva": 54261264,
+        "cie_rva": 52097888,
+        "cfi_start": 54261249,
+        "cfi_bytes": 15
+      },
+      "body_sha256": "a2c22a6bcf2d17e31452dd9f67a08c42b7b246e10cf3db95f8e6cac2a1fef722",
+      "original_native_class_init_calls": 1,
+      "surviving_raw_isil_calls": 1,
+      "original_calls_already_absent_before_metadata_resolution": 0,
+      "native_call_sites": [
+        {
+          "rva": "0xf0d3ec",
+          "target": "0xB2E720",
+          "window_sha256": "0388d4a030d74e2db5f1b220034f71cc8016f3141882fd679593d32b9c0ce0ab",
+          "preceding_opcodes": [
+            "ldr",
+            "ldr",
+            "ldr",
+            "ldr",
+            "ldrb",
+            "tbz",
+            "ldr",
+            "cbnz"
+          ],
+          "following_opcodes": [
+            "mov",
+            "mov",
+            "mov",
+            "mov"
+          ]
+        }
+      ],
+      "captured_raw_calls": [
+        {
+          "index": 30,
+          "raw_opcode": "Call",
+          "raw_operands": 18,
+          "unused_return": true,
+          "first_register": "X0",
+          "all_physical_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "deep_operand_reads": 0,
+          "resolved_origin": {
+            "kind": "type_operand",
+            "type": "System.BitConverter"
+          },
+          "after_fixpoint_target": "System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor",
+          "after_fixpoint_target_kind": "MethodAnalysisContext"
+        }
+      ]
+    },
+    {
+      "method": "BundlesUtil::UnloadDependencies",
+      "rva": "0x4A83A0",
+      "exact_frame": {
+        "rva": 4883360,
+        "end_rva": 4883744,
+        "fde_rva": 56808784,
+        "fde_end_rva": 56808824,
+        "cie_rva": 56727496,
+        "cfi_start": 56808809,
+        "cfi_bytes": 15
+      },
+      "body_sha256": "0fd52a9b449be83e29a7424dab0003da060929dbe574320d54ecfac5121483f2",
+      "original_native_class_init_calls": 2,
+      "surviving_raw_isil_calls": 2,
+      "original_calls_already_absent_before_metadata_resolution": 0,
+      "native_call_sites": [
+        {
+          "rva": "0x4a83fc",
+          "target": "0xB2E720",
+          "window_sha256": "06993bb9b6468d1eacfddc88352b139d2d0d2d134090bae9c43fe9cba606f1b0",
+          "preceding_opcodes": [
+            "adrp",
+            "ldr",
+            "ldr",
+            "str",
+            "ldrb",
+            "tbz",
+            "ldr",
+            "cbnz"
+          ],
+          "following_opcodes": [
+            "ldr",
+            "ldr",
+            "ldr",
+            "adrp"
+          ]
+        },
+        {
+          "rva": "0x4a84e8",
+          "target": "0xB2E720",
+          "window_sha256": "3fe85dddb4b41eb1cbabe9be51ce111c5e0747638bc43da6fccdbe15ad69b850",
+          "preceding_opcodes": [
+            "mov",
+            "mov",
+            "bl",
+            "ldr",
+            "ldrb",
+            "tbz",
+            "ldr",
+            "cbnz"
+          ],
+          "following_opcodes": [
+            "ldr",
+            "ldr",
+            "ldr",
+            "adrp"
+          ]
+        }
+      ],
+      "captured_raw_calls": [
+        {
+          "index": 22,
+          "raw_opcode": "CallVoid",
+          "raw_operands": 2,
+          "unused_return": true,
+          "first_register": "X0",
+          "all_physical_registers": [
+            "X0"
+          ],
+          "deep_operand_reads": 0,
+          "resolved_origin": {
+            "kind": "type_operand",
+            "type": "BundlesUtil"
+          },
+          "after_fixpoint_target": "System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor",
+          "after_fixpoint_target_kind": "MethodAnalysisContext"
+        },
+        {
+          "index": 126,
+          "raw_opcode": "Call",
+          "raw_operands": 18,
+          "unused_return": true,
+          "first_register": "X0",
+          "all_physical_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "deep_operand_reads": 0,
+          "resolved_origin": {
+            "kind": "type_operand",
+            "type": "BundlesUtil"
+          },
+          "after_fixpoint_target": "System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor",
+          "after_fixpoint_target_kind": "MethodAnalysisContext"
+        }
+      ]
+    },
+    {
+      "method": "BundlesUtil::GetAssetBundleSafe",
+      "rva": "0x4A8920",
+      "exact_frame": {
+        "rva": 4884768,
+        "end_rva": 4885024,
+        "fde_rva": 52670024,
+        "fde_end_rva": 52670064,
+        "cie_rva": 52097888,
+        "cfi_start": 52670041,
+        "cfi_bytes": 23
+      },
+      "body_sha256": "07369c1cddf45700ee6c60c559312bc29ed5debc2c953755d9ac7d7c1414991c",
+      "original_native_class_init_calls": 3,
+      "surviving_raw_isil_calls": 3,
+      "original_calls_already_absent_before_metadata_resolution": 0,
+      "native_call_sites": [
+        {
+          "rva": "0x4a8990",
+          "target": "0xB2E720",
+          "window_sha256": "399b8ae1b4b6a094dc213edaa685434604b9d51b4c8438e713600489c2329256",
+          "preceding_opcodes": [
+            "cbz",
+            "ldr",
+            "ldr",
+            "cbz",
+            "ldrb",
+            "tbz",
+            "ldr",
+            "cbnz"
+          ],
+          "following_opcodes": [
+            "ldr",
+            "ldr",
+            "ldr",
+            "ldr"
+          ]
+        },
+        {
+          "rva": "0x4a89e0",
+          "target": "0xB2E720",
+          "window_sha256": "6a28f5b41f56ff313f6a8b7b340357e59f139041a8ada91a49ca6b57c9f3d2a9",
+          "preceding_opcodes": [
+            "cbz",
+            "tbnz",
+            "ldr",
+            "ldr",
+            "ldrb",
+            "tbz",
+            "ldr",
+            "cbnz"
+          ],
+          "following_opcodes": [
+            "mov",
+            "bl",
+            "ldr",
+            "str"
+          ]
+        },
+        {
+          "rva": "0x4a89f8",
+          "target": "0xB2E720",
+          "window_sha256": "a6145ed7a320f1693107ba707c1c6b986e9d5578b636309638fb6a6dc43bd8ef",
+          "preceding_opcodes": [
+            "ldr",
+            "cbnz",
+            "bl",
+            "mov",
+            "bl",
+            "ldr",
+            "str",
+            "b"
+          ],
+          "following_opcodes": [
+            "ldr",
+            "ldr",
+            "ldr",
+            "cbnz"
+          ]
+        }
+      ],
+      "captured_raw_calls": [
+        {
+          "index": 75,
+          "raw_opcode": "Call",
+          "raw_operands": 18,
+          "unused_return": true,
+          "first_register": "X0",
+          "all_physical_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "deep_operand_reads": 0,
+          "resolved_origin": {
+            "kind": "type_operand",
+            "type": "BundlesUtil"
+          },
+          "after_fixpoint_target": "System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor",
+          "after_fixpoint_target_kind": "MethodAnalysisContext"
+        },
+        {
+          "index": 40,
+          "raw_opcode": "Call",
+          "raw_operands": 18,
+          "unused_return": true,
+          "first_register": "X0",
+          "all_physical_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "deep_operand_reads": 0,
+          "resolved_origin": {
+            "kind": "local",
+            "Name": "v46",
+            "register": "X0",
+            "version": 5,
+            "type": "Il2CppClass<BundlesUtil>",
+            "definitions": 1,
+            "definition_opcode": "Phi",
+            "source": null
+          },
+          "after_fixpoint_target": "11724576",
+          "after_fixpoint_target_kind": "Immediate"
+        },
+        {
+          "index": 60,
+          "raw_opcode": "CallVoid",
+          "raw_operands": 2,
+          "unused_return": true,
+          "first_register": "X0",
+          "all_physical_registers": [
+            "X0"
+          ],
+          "deep_operand_reads": 0,
+          "resolved_origin": {
+            "kind": "type_operand",
+            "type": "BundlesUtil"
+          },
+          "after_fixpoint_target": "System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor",
+          "after_fixpoint_target_kind": "MethodAnalysisContext"
+        }
+      ]
+    }
+  ],
+  "concrete_findings": [
+    "After approved implementation: all surviving class-init targets are either the exact managed void RunClassConstructor contract or remain the original raw helper; no stale MethodInfo selects an unrelated method. Detailed source/ABI/origin and native request counts remain observations, not whole-game semantics."
+  ],
+  "core_source_edited": false,
+  "scope": "Read-only native instruction/call-site and production-stage observations. No emitted CIL, source changes, class-initializer execution, compilation success or whole-game behavior is certified by this report.",
+  "implemented_scope": [
+    "The exact known legacy class-init helper is excluded from MethodInfo fallback; an unrelated stale MethodInfo cannot select Dispose or another managed method.",
+    "Only exact Call18 raw X0-X7,V0-V7 captures with one unique unused X0 result may lower through the existing dominating exact class-metadata-origin proof. Raw CallVoid17 is rejected; the previously supported semantic CallVoid(class) path is retained.",
+    "The original native request count is correlated to surviving IR requests in each selected caller. Proven requests lower to the existing void RunClassConstructor(RuntimeTypeHandle) contract; ambiguous Phi origins stay raw diagnostics."
+  ],
+  "recovered_managed_requests": 5,
+  "remaining_raw_requests": 1
+}

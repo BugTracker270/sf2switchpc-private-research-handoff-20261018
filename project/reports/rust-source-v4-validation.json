@@ -1,0 +1,15 @@
+{
+  "scope": "Actual source mapping correction is separate from invalid cross-assembly type placeholders in the upstream DLL generator. No recovered CIL body behavior claim when the type cannot load.",
+  "status": "DECLARATION_LOAD_FAILURES_NOT_PORT_READY",
+  "run": "rust-source-v4-mapping",
+  "boolean_exit": 2,
+  "vector_exit": 2,
+  "logs": [
+    "logs/rust-vector3-v4.log",
+    "logs/rust-boolean-v4.log"
+  ],
+  "mapping_fix": "reports/rust-nso-mapping-patch-lock.json",
+  "structured_boolean_report": "reports/recovered-boolean-setter-rust-source-v4-mapping.json",
+  "structured_boolean_exit": 2,
+  "legacy_boolean_process_exit_preserved": -532462766
+}

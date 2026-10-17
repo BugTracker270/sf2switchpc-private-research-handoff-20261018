@@ -1,0 +1,620 @@
+{
+  "status": "SCOPED_PLAIN_FRAME_RECOVERY_VALIDATED_WHOLE_SOURCE_INCOMPLETE",
+  "recovery_run": "nso-plain-frame-cfg-v35",
+  "updated": "2026-10-17T14:35:49.258741+00:00",
+  "evidence": {
+    "invocation": {
+      "report": "logs/cpp2il-nso-plain-frame-cfg-v35-result.json",
+      "report_sha256": "decc9db743aaa26ca6c773253a5b1d0afe863ab62461fa6ca35d436e712e5dd7",
+      "exit_code": 0,
+      "source_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "utc": "2026-10-17T14:26:31.5001608Z",
+      "legacy_hfa_recovery": true,
+      "output": "F:\\SF2SwitchPC\\analysis\\il2cpp\\cpp2il-recovery-nso-plain-frame-cfg-v35",
+      "scope": "Experimental tool recovery; compare diagnostics and native code before accepting semantics",
+      "source_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238"
+    },
+    "provenance": {
+      "report": "reports/plain-frame-build-provenance-v35.json",
+      "report_sha256": "255c8f1a94a3e19040d667090cb3e45582cd5bbe590f0374cc71d52abd8ce0df",
+      "status": "PASS_RECORDED_REVIEWED_SOURCE_AND_RECOVERY_BUILD_BINDING",
+      "recovery_run": "nso-plain-frame-cfg-v35",
+      "core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+      "invocation_sha256": "decc9db743aaa26ca6c773253a5b1d0afe863ab62461fa6ca35d436e712e5dd7",
+      "review_sha256": "326e588873f57aaa19ba7962800c29c90cb871b25a4f648d079ed109f57204f8"
+    },
+    "review": {
+      "report": "reports/plain-frame-ordinary-cfg-independent-review-v35.json",
+      "report_sha256": "326e588873f57aaa19ba7962800c29c90cb871b25a4f648d079ed109f57204f8",
+      "status": "SOURCE_REVIEW_NO_ADDITIONAL_BLOCKER_PRODUCTION_GATES_PENDING",
+      "source_review_only": true,
+      "core_modified_by_reviewer": false,
+      "shared_core_built_by_reviewer": false,
+      "runtime_tested_by_reviewer": false,
+      "no_additional_blocking_source_issue_found": true,
+      "full_clean_decompile_ready": false,
+      "scope": "Read-only review of the listed unbuilt source hashes. Bounds/augmentation eligibility is not CFI interpretation or exception recovery. Known direct-CFG witness restrictions and original constructor/field effects remain separate from type identity, emitted CIL and runtime behavior. No whole-method, EH, gameplay, full clean source or portable-game claim is made."
+    },
+    "plain_range": {
+      "report": "reports/plain-frame-range-guards-v35.json",
+      "report_sha256": "9b0acff9cf0f9a4523e1aa338909f3c377369d766009bcb9a1faa5322b86e3a6",
+      "status": "PASS_ADDITIVE_PLAIN_FRAME_RANGE_AND_LEGACY_SCOPE_GUARDS",
+      "checks": 26,
+      "selected_bodies": 287,
+      "ordinary_analysis_error": null,
+      "loaded_core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+      "source_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "source_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "frames_sha256": "aa464d27b080531baa5dfbd5591c63ba331fbded3091ff8eca6f054d87369abf",
+      "cies_sha256": "36612164cd3fc84a23cfb5cd88121706fc5f0f4276166a958017082ff7e2f1c5",
+      "scope": "Original current Cpp2IL accepted mapping/CIE inventory, additive bounds eligibility and actual GetAssetBundleSafe analysis observations. Synthetic parser cases use fresh in-memory NSO copies; original files remain unchanged. Existing selected exception-bearing bodies are disclosed; their previous scope is not silently changed. Plain-frame API eligibility rejects exception metadata without interpreting it. Analysis checks retain the original constructor requests/config reloads and unsupported flag loads. No original guest code, initializer, stack unwinding or recovered CIL is executed, and no full-source or whole-game readiness claim is made."
+    },
+    "general_range_regression": {
+      "report": "reports/exact-body-range-and-closed-enumerator-v35.json",
+      "report_sha256": "ac2b24a130e652f96fa1a38027eebef2b2fb6ac488a9d9c8bdd6fc72532b05aa",
+      "status": "PASS_ORIGINAL_POINTER_FDE_RANGE_API_AND_CLOSED_ENUMERATOR_EVIDENCE",
+      "checks": 15,
+      "loaded_core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+      "scope": "Bounds-only API at original registered native pointer; no identity or alias selection. Fourfield sequential ref/int/int/ref computation is corroborative scoped evidence, not a general generic layout classifier. Open, value-type, packing, explicit and unresolved substitutions require independent proof. No game method executed."
+    },
+    "cfg_regression": {
+      "report": "reports/cfg-initialization-recognition-v35.json",
+      "report_sha256": "e1eeeb6876925361c28567a7aad481c83844eb8f4a15382790a8195805bf1e64",
+      "status": "PASS_SCOPED_CFG_INITIALIZATION_RECOGNITION",
+      "native_start": "0x7A8F20",
+      "native_bytes": 520,
+      "native_sha256": "a809ba86d78a7b73c9938699426f19400aca92d342ef5e3ce61cbef56121b67f",
+      "checks": 26,
+      "scope": "Exact 520-byte original FDE body matcher only; no recovered CLR execution or class-constructor equivalence claim."
+    },
+    "ordinary_native_correlation": {
+      "report": "reports/plain-frame-ordinary-native-correlation-v35.json",
+      "report_sha256": "9981410a8d8416bb79f4e1d6496afadc8c4febf7a7c43f60578ab16a4fc3b5ef",
+      "status": "PASS_PLAIN_FRAME_ORDINARY_NATIVE_AND_PRODUCTION_ISIL_CORRELATION",
+      "checks": 4,
+      "examined_plain_registered_frames": 143,
+      "candidate_analysis_attempts": 1,
+      "accepted_ordinary_bodies": 1,
+      "core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+      "plain_parser_report_sha256": "9b0acff9cf0f9a4523e1aa338909f3c377369d766009bcb9a1faa5322b86e3a6",
+      "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+      "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "value_this_source_sha256": "4a24d9598320b91ec19078882d9c46bd90b399c055301cdd81d61c4e2c9f1ee4",
+      "instruction_set_source_sha256": "b463b461da33a0359254813552777d96b4b718bdf195144f418506cea38f3d8b",
+      "cfg_matcher_source_sha256": "e5e9bc6669d38f5879d79ca4a2cc0a2e7b5924cc405434c2e9eea1dd2cbdfcfa",
+      "probe_source_sha256": "85b19c3d438c9ea0096dc75d6ee07119954e397adbb7dea19c8b5c42aaefca2b",
+      "core_source_edited_by_probe": false,
+      "ir_rewritten_by_probe": false,
+      "guest_execution_performed": false,
+      "scope": "Original native exact plain-FDE and actual production decoder/type-fixpoint correlation only. Raw loads/stores and non-constructor calls retain the same canonical ordered operands as direct native instruction conversion, except exact metadata/class flag-load instruction addresses proven replaced by matcher witnesses; each exclusion must be one register-from-memory load. No generic offset exclusion is used. Typed constructor and semantic call sites must survive the real pipeline. Complete native/IR snapshots are private ignored evidence. The probe does not execute original or recovered game code, certify all operand types/branch paths/field-read timing, implement exception handling, or claim portable/full source. GetSafe has3 native/type-fixpoint config reads and5 later propagated field operands; those stages are explicitly distinct. Unload zPLR stays excluded."
+    },
+    "actual_getsafe_cil": {
+      "report": "reports/recovered-class-phi-nso-plain-frame-cfg-v35.json",
+      "report_sha256": "a7833bbea991d959535231d52dc4ad100c8809b65af98e45f5bf61aa34431a0f",
+      "status": "PASS_ACTUAL_GETSAFE_CLASS_INITIALIZER_CIL_CORRELATION",
+      "recovery_run": "nso-plain-frame-cfg-v35",
+      "baseline_run": "nso-class-guard-load-v33",
+      "checks": 13,
+      "assembly_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90",
+      "baseline_assembly_sha256": "829674de6ee1d1a016b03c4c877de948de31b091d2e11793ade46cf8d83c0e83",
+      "cil_sha256": "3dea12205d4a605d4b4f5f00d537dd760638c18a338cfe1ad6bbb997b19ce858",
+      "baseline_cil_sha256": "ca3f353600eaeda061242a0dbe52f9a9a92407e0c89fcefe2a3ce7cc68e73bb8",
+      "recovered_cil_or_source_modified": false,
+      "tokens_remapped": 0,
+      "game_methods_invoked": 0,
+      "class_initializers_invoked": 0,
+      "whole_method_executed": false,
+      "scope": "Inspects unchanged actual recovered GetAssetBundleSafe bodies in separate collectible contexts. Every emitted RunClassConstructor request takes the exact original BundlesUtil ldtoken and real RuntimeTypeHandle API signature. The formerly raw request becomes a third exact pair, with its original currentConfig static-field reload retained before the next branch. Four raw class-flag diagnostics remain; original methods/.cctors are never invoked. This is structural CIL/native-IR correlation, not whole-method execution, complete semantic recovery, source buildability or full decompilation."
+    },
+    "raw_guards": {
+      "report": "reports/raw-classinit-lowering-guards-v35.json",
+      "report_sha256": "85a7d3831aca333e75334e37b4b188cf45f8ede2c821dcbac01e10993188e3c0",
+      "status": "PASS_RAW_CLASS_INIT_ABI_UNUSED_RESULT_AND_DEEP_USE_GUARDS",
+      "checks": 31,
+      "raw_operands": 18,
+      "raw_registers": "X0-X7,V0-V7",
+      "unused_result_register": "X0",
+      "preserved_existing_void_one_arg_contract": true,
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+      "scope": "Independent ISIL fixtures use the actual known native class-init identity, real managed API metadata and existing exact class-metadata origin proof. Only a proven raw ABI capture and unused unique X0 result are removed. Deep operand/source/store-address/throw/indirect-target uses, malformed layouts, ambiguous class origins and disabled opt-in remain unresolved. No original caller, native class initializer or game .cctor executes here; existing emitted CLR contract and actual caller-stage probes provide separate evidence."
+    },
+    "phi_guards": {
+      "report": "reports/class-metadata-phi-production-v35.json",
+      "report_sha256": "129d901402dda7a37d4d8b2f7693a647abc2f0f8c61601f8411dfdc5314d3fa3",
+      "status": "PASS_PRODUCTION_EDGE_AWARE_CLASS_METADATA_PHI_LOWERING",
+      "checks": 73,
+      "actual_method": "BundlesUtil::GetAssetBundleSafe",
+      "actual_raw_call_index": 40,
+      "actual_phi_block": 7,
+      "actual_phi_destination": "v46",
+      "actual_proposed_identity_proof": true,
+      "actual_call_stays_unresolved": false,
+      "production_lowering": true,
+      "proposal_checker_left_graph_unchanged": true,
+      "remaining_runtime_class_flag_loads": 4,
+      "proposed_production_location": "KeyFunctionRecovery.HasExactClassMetadataOrigin only; retain existing target/ABI/unused-result/closed-type/API-overload gates.",
+      "core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+      "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "scope": "The actual production type fixpoint lowers the previously unresolved original Phi helper to the exact existing managed void class-constructor contract. Original post-cctor class/static-storage/currentConfig reload instructions remain unchanged; no CFG branch is edited. Production lowering is also tested on independent positive/negative ISIL fixtures, with an independent edge-aware identity checker. No emitted recovered DLL/CIL execution, original class-constructor parity, whole-caller execution, source compilation or full-decompilation claim is made here."
+    },
+    "constructor_contract": {
+      "report": "reports/legacy-class-init-lowering-v35-regression.json",
+      "report_sha256": "fb8733fddaf5e8f2ccbab9cf94aed90857609ba8a3bf47b1bbe5fdb2e2a3ecc1",
+      "status": "PASS_LEGACY_CLASS_INIT_TYPED_LOWERING_AND_CLR_CONTRACT",
+      "cases": 80,
+      "checks": 120,
+      "known_native_target": "0xB2E720",
+      "native_target_discovery": "Three agreeing corlib families in existing NewArm64KeyFunctionAddresses recovery",
+      "exact_managed_target": "System.Void System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor(System.RuntimeTypeHandle type)",
+      "unproven_initializer_preserved": true,
+      "type_seeding_fixpoint_before_ssa": true,
+      "fixture_effect_calls": 32,
+      "fixture_throw_calls": 32,
+      "fixture_concurrent_calls": 16,
+      "fixture_effect_count": 1,
+      "fixture_throw_effect_count": 1,
+      "fixture_concurrent_effect_count": 1,
+      "core_assembly_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+      "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "scope": "Actual metadata and the real ISIL/emitter prove the exact RuntimeTypeHandle-taking API and unchanged class-init effect. Host-fixture type/API token rebinding executes the emitted ldtoken/call/forward-branch/ret contract with independently authored .cctors, proving observable nondefault effects, once-only execution, concurrent once semantics and persistent throwing behavior. The forward branch is checked to target the sole ret and retained. It does not execute original game .cctor bodies, the native runtime initializer, or a whole recovered caller; it cannot certify gameplay or full decompilation."
+    },
+    "scheduling": {
+      "report": "reports/class-guard-scheduling-v35.json",
+      "report_sha256": "7fca9d041c5a1d2a01e688b597f164bbec9bad521d47182fb7d3f454f2ec9025",
+      "status": "PASS_BOUNDED_32BIT_CLASS_GUARD_SCHEDULING_RECOGNITION",
+      "checks": 58,
+      "source_sha256": "daee4b11808995b6d2333139cd7609b4d32dcfd2f908be39f9adb5943e7ec29c",
+      "scope": "BCL-only fixture compiles the actual matcher source into a disjoint executable, without building shared Core. It verifies exact original FDE/native call correlation, the newly accepted independent unsigned-offset Wn scheduling, unchanged input bytes and strict malformed receiver/writeback/effect/layout/target rejection. Original ReadBoolean scheduled W21 load precedes and remains outside the replaced guard. No emitted CIL, class-initializer execution, source compilation, whole-caller behavior or whole-game claim is made here."
+    },
+    "batch": {
+      "report": "reports/recovery-regression-nso-plain-frame-cfg-v35.json",
+      "report_sha256": "af3b0a3de6e5898dc88fca9f3c9ab9c1d4f72b8bfddee78890298a4f9adbab90",
+      "scope": "Independent bounded production-CIL probes; individual reports retain exact input, token and native-code boundaries.",
+      "include_enumerator": true,
+      "status": "PASS_SCOPED_RECOVERY_REGRESSIONS",
+      "include_boolean_reader": true,
+      "recovery_run": "nso-plain-frame-cfg-v35",
+      "whole_game_source_ready": false
+    },
+    "syntax": {
+      "report": "analysis/il2cpp/cil-audit-nso-plain-frame-cfg-v35/summary.json",
+      "report_sha256": "f34acc92e38d23baefbcc63db01ee632ea8d457726d7a76bc863fda7d9f7c785",
+      "source_directory": "F:\\SF2SwitchPC\\analysis\\il2cpp\\cpp2il-recovery-nso-plain-frame-cfg-v35",
+      "warning": "Syntactic IL audit only. Recovery helpers/diagnostics invalidate blanket recovery success; simple bodies may be legitimate or stubs. No semantic parity is implied."
+    },
+    "stack": {
+      "report": "reports/cil-stack-audit-nso-plain-frame-cfg-v35.json",
+      "report_sha256": "887c5c8652f303f2e86842ce3f41b5973043213494c8bbe84df1ce74f170b174",
+      "status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY",
+      "recovery_run": "nso-plain-frame-cfg-v35",
+      "assembly_count": 44,
+      "bodies": 60744,
+      "understated_max_stack": 0,
+      "stack_flow_failures": 0,
+      "helper_types_without_base": 0,
+      "scope": "Pinned AsmResolver 6.0.1 stack-depth/control-flow calculation compared with serialized MaxStack headers; injected helper parent presence checked. Loaded assemblies are never executed or rewritten. This does not verify operand types, source correctness, runtime behavior, or whole-game recovery."
+    },
+    "compiler_before": {
+      "report": "reports/recovered-source-profile-legacy-reference-check-nso-class-origin-phi-v34.json",
+      "report_sha256": "d2ad0cb28909c1cf8a618a205c0c87431f2136e8577d8b27641344e083e54ed3",
+      "status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "recovery_run": "nso-class-origin-phi-v34",
+      "experiment": "source-profile-legacy-reference-check",
+      "whole_game_source_ready": false,
+      "scope": "Diagnostic compiler check of unchanged project-export source, with standard-library/framework injection disabled and every explicit reference recorded. Optional official unstripped .NET 3.5 references replace matching supplied framework assembly names. The compiler runs on .NET 10, but its ordinary reference pack is excluded. This does not certify portable runtime implementation, clean helper-free bodies, full attributes or gameplay. Compiler diagnostic lines are deduplicated across repeated build summaries; counts are not independent root causes or a completeness percentage. Successful compilation alone would not clear helper/placeholder/ABI/behavior gates."
+    },
+    "compiler_after": {
+      "report": "reports/recovered-source-profile-legacy-reference-check-nso-plain-frame-cfg-v35.json",
+      "report_sha256": "69c3f963e6e4318d96fe73e0ed1694c7b3ebc003d9df5f9e93a4d418f51aa88f",
+      "status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "recovery_run": "nso-plain-frame-cfg-v35",
+      "experiment": "source-profile-legacy-reference-check",
+      "whole_game_source_ready": false,
+      "scope": "Diagnostic compiler check of unchanged project-export source, with standard-library/framework injection disabled and every explicit reference recorded. Optional official unstripped .NET 3.5 references replace matching supplied framework assembly names. The compiler runs on .NET 10, but its ordinary reference pack is excluded. This does not certify portable runtime implementation, clean helper-free bodies, full attributes or gameplay. Compiler diagnostic lines are deduplicated across repeated build summaries; counts are not independent root causes or a completeness percentage. Successful compilation alone would not clear helper/placeholder/ABI/behavior gates."
+    },
+    "project_compiler": {
+      "report": "reports/recovered-source-profile-project-build-nso-plain-frame-cfg-v35.json",
+      "report_sha256": "871a31bc7176b0d55ecfdb3f0aefa0fceb52c5828b0a25868054b48b339d3d1b",
+      "status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "recovery_run": "nso-plain-frame-cfg-v35",
+      "experiment": "source-profile-project-build",
+      "whole_game_source_ready": false,
+      "scope": "Diagnostic .NET 10 compiler check of complete game-assembly C# exports against recovered dependency metadata. Only the original infrastructure-generated RecoveredSource.csproj is executed; the decompiler-generated project is retained as evidence. This is not a Unity build, portable game, original-runtime validation or semantic completeness proof. Compiler diagnostic lines are deduplicated across repeated build summaries; counts are not independent root causes or a completeness percentage. Successful compilation alone would not clear helper/placeholder/ABI/behavior gates."
+    },
+    "diagnostic_delta": {
+      "report": "reports/compiler-diagnostic-delta-v35.json",
+      "report_sha256": "e054350c115909bcf40aefd36a6c2bdb2d625e14ff4380e42d1d8da714b5696b",
+      "status": "PASS_CANONICAL_COMPLETE_SOURCE_COMPILER_COMPARISON",
+      "before_run": "nso-class-origin-phi-v34",
+      "after_run": "nso-plain-frame-cfg-v35",
+      "before": "nso-class-origin-phi-v34",
+      "after": "nso-plain-frame-cfg-v35",
+      "source_modified": false,
+      "core_modified": false,
+      "whole_game_source_ready": false,
+      "full_clean_decompile_ready": false,
+      "portable_game_ready": false,
+      "methodology": "Each complete matching-reference log is streamed. Canonical lines remove build-worker prefixes, surrounding whitespace and duplicate build-summary occurrences, and must exactly match the authoritative summary total and error-code counts. Multisets of relative source path, code and message additionally reduce line-shift inflation; local-name or decompiler presentation changes can still alter messages. Every diagnostic-bearing file is checked against the byte-identical export/matching-reference source manifest. Reports contain no source excerpts.",
+      "limits": "Diagnostic lines include compiler cascades and are not independent bugs, recovered-method counts or completion percentages. This read-only comparison neither executes recovered game methods nor establishes that added or removed diagnostics correspond to correct semantics. Complete source compilation, original-runtime/gameplay parity and portability remain separate requirements."
+    }
+  },
+  "recovery_core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+  "assembly_hashes": {
+    "Assembly-CSharp-firstpass.dll": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90",
+    "Assembly-CSharp.dll": "223fec2665ef8c232f6025325054c4dea179edbd363f0ee109298856befd2bb7",
+    "DOTween.dll": "d8470bed3b60130d15d7c64fbef54340e169570b47bae9dce3c7150a1f440fc5",
+    "DOTween46.dll": "4ba5ff8a40217a096d57b69ebade6abbcdc091328a58a44bcbb66b0fba477371",
+    "Facebook.Unity.Settings.dll": "666c3accc006f926b2d454872e5ace4bdf8694d77c6b249d09a97008683228ff",
+    "FyberLitJson.dll": "9b47e16800d5ed2bf3ca40836b85cfcdcba0eb60b12188263af32decb888f0c0",
+    "FyberPlugin.dll": "8ceed09e5c102c45fd52177c9af0342d79151d305f44a78f86050f8370c71d29",
+    "Ionic.Zip.Unity.dll": "a434a04640b1e6131df2eb86193edf99942b55591543ff7d863bfb31eb9457c5",
+    "Mono.Security.dll": "3509dd4675f8766f020b60aba0e5a69c48a21a34c2b8487dd6feff78b0cf2833",
+    "mscorlib.dll": "94767e6ab5c9c0ce8333295bd9388f748e06d8510204b38ef003b1658d172b76",
+    "protobuf-net.dll": "8423a68c2d00cf766a931c8adff6f5dceb7b3fd89024927fd48b854d2136fe85",
+    "SmartFox2X.dll": "d1f2842b40aa88e6d2707eaa3f5b55c7f538a2f42519ceef495620abff5d3d8f",
+    "System.Configuration.dll": "572c63cc21fb3bceef5a012bf45ea74cd72860e619988e9543d949cdb7cfb3da",
+    "System.Core.dll": "cf2656b866b397c8786461cc57cb30755b85d3623e69222dddb6ed030f5300d2",
+    "System.dll": "a04b0d0f41f9a8186cf250bb15103adb45b8b08c60d131c24174c9e65756713b",
+    "System.Xml.dll": "6ca4a5036a192578933972b22805e00867c7d2c9b01c4b94ddf7d27a0e6f3fc2",
+    "System.Xml.Linq.dll": "08206948eb1a438faf713f99877e3d1628b29f93f443995bcfcb82dab27e0359",
+    "TcpClientImplementation.dll": "2ab8cbbf20520b6a41133e7d28d0e7c403fb4ea9baf7fc7e0515757e2abfd411",
+    "UnityEngine.AIModule.dll": "30a3df5dbdde536bdc6b2b29b3c7e9e5702ddfa27f72d11b32b52852a7e6f637",
+    "UnityEngine.AnimationModule.dll": "88ff5875a97f3ce79dfea44aedc7749bff88b4b93c67d534c4d03856d250f574",
+    "UnityEngine.AssetBundleModule.dll": "f08fab086d995dfc7c93395626c4fa1b5b279fed54b26656a73fb353b15aa04d",
+    "UnityEngine.AudioModule.dll": "5e5af1fd203f5ede2c519e4c52011c6690bfb397a31561e4b1d28d080267cb8b",
+    "UnityEngine.CoreModule.dll": "395405058867a1b26e2a804a4ae7b276fa0c023967d628bcb144ccdd8d5c2bc9",
+    "UnityEngine.DirectorModule.dll": "7428e503e82ed65a9a08261fa4f44782a1e106234d566a79a251770792b515b4",
+    "UnityEngine.dll": "02a972a701da90b5e8d442e788b483726b46258ceb0cc80e77969d57580f261a",
+    "UnityEngine.GameCenterModule.dll": "a8bf6f49cdbcb7be9c981ac5ff484b9d85a17c2cc34b19e7d2364a8c1d1885f7",
+    "UnityEngine.GridModule.dll": "e02fe1cda2bd6966695d48640156cbfd831bb0e07988c1054d15afe46b7b2710",
+    "UnityEngine.ImageConversionModule.dll": "b0bcae5d72fbddfb9613cdb22786aee3e935a295b6ce4f985fc5b13bf1aac6eb",
+    "UnityEngine.IMGUIModule.dll": "c88abc628f735ed888ce5da24337ea79a18a2083694c26a2422da7bc533caf73",
+    "UnityEngine.InputModule.dll": "77bb7362825122d32ca87371d4deae9be8a1f489b920709f6e824ff49d497ba9",
+    "UnityEngine.ParticleSystemModule.dll": "c20d64749ab45190f38b180053af188c3e5fb0bd7de29787f29ba99889510074",
+    "UnityEngine.Physics2DModule.dll": "65011ee4f7f1cc00badca4a77f73582e83f47bf228924529195339ba367fe1ca",
+    "UnityEngine.PhysicsModule.dll": "7c161b3e05f71e28171d41969f42b6c1c10e8896259bf1521f62a8ef1b17080f",
+    "UnityEngine.SharedInternalsModule.dll": "8f62f37811c4704556ce0140ecb3f6372c2f9360ffe725bb14889db06aab66d8",
+    "UnityEngine.TerrainModule.dll": "8a33ad74efbbf56f40e3e8f7155b6bd920b4a5e27e617976bc3df728b113fbae",
+    "UnityEngine.TextRenderingModule.dll": "6a2778f2a2641708c8a8f883a2835f6d1f421e23cd9fe3cbb843836ec66ef51a",
+    "UnityEngine.TilemapModule.dll": "0c041ca88b852989a93e6e40fa6810900d5ccbb48a7a6af30d74e96c7bf1373a",
+    "UnityEngine.UI.dll": "23a50998a83618a75d81dc7edbac1cceb2494c556a3b49ec1ec53613bccf2d1b",
+    "UnityEngine.UIElementsModule.dll": "53f39b6fba044f9d5a7d07b83f99e1b471cd524b18cbcf1af389c5d24e4b7c14",
+    "UnityEngine.UIModule.dll": "bb724675e279ff9fad202e8b96f69ffcc68a25fa02ea8bd9574ed6b4bf714abb",
+    "UnityEngine.UnityWebRequestAssetBundleModule.dll": "5e59188b9d30dee20d2be5535bd3ab7560996f8d8cb567e14980a60220dcf38d",
+    "UnityEngine.UnityWebRequestModule.dll": "eeafff835069a358655c6201ab2e63f9407f6b12a60c5e76afc517e9cb7965a4",
+    "UnityEngine.UnityWebRequestWWWModule.dll": "710fbdb94c69e7efb8c8f52f869ab0efeed07a34c33380d793f76502db044ac3",
+    "UnityEngine.VRModule.dll": "89905e0ba7bcb7f515e5afbc8214a02e646eaecacd7713f11ac80f267696dab0"
+  },
+  "gates": [
+    {
+      "name": "immutable_review_build_binding",
+      "passed": true,
+      "scope": "Reviewed source snapshots and immutable completed invocation, independent of future shared builds."
+    },
+    {
+      "name": "independent_source_review",
+      "passed": true,
+      "scope": "Source inspection only; the older selected route retains twelve unverified exception-bearing bodies."
+    },
+    {
+      "name": "plain_frame_api_and_parser",
+      "passed": true,
+      "scope": "Real exact ranges, malformed in-memory parser fixtures, opt-in, cached negative queries and alias invariance."
+    },
+    {
+      "name": "old_bounds_15",
+      "passed": true,
+      "scope": "Existing exact-range and closed-reference Enumerator evidence, without broadening indirect-return recovery."
+    },
+    {
+      "name": "unchanged_native_cfg_26",
+      "passed": true,
+      "scope": "Unchanged bounded native matcher and mutation negatives; production integration requires its own correlation."
+    },
+    {
+      "name": "raw_guards",
+      "passed": true,
+      "scope": "Current production Core; ABI/provenance and real CLR constructor effects retain their distinct scopes."
+    },
+    {
+      "name": "phi_guards",
+      "passed": true,
+      "scope": "Current production Core; ABI/provenance and real CLR constructor effects retain their distinct scopes."
+    },
+    {
+      "name": "constructor_contract",
+      "passed": true,
+      "scope": "Current production Core; ABI/provenance and real CLR constructor effects retain their distinct scopes."
+    },
+    {
+      "name": "unchanged_scheduling_58",
+      "passed": true,
+      "scope": "Existing bounded scheduling recognizer positive and negative fixtures."
+    },
+    {
+      "name": "new_ordinary_production_correlation",
+      "passed": true,
+      "scope": "New ordinary path must be exercised and correlated with original native requests/effects; unsupported reloads and EH remain explicit."
+    },
+    {
+      "name": "actual_unchanged_getsafe_cil",
+      "passed": true,
+      "scope": "Actual current DLL retains three exact constructor requests and required field reloads; four unsupported flags remain. Inspection only, not whole-method execution."
+    },
+    {
+      "name": "recovered_aggregate-leaves",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_boolean-setter",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_constructor",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_currency-scalars",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_exception-factory",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_leaf-accessor",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_nested-tween",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_primitive-box",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_scalars-isolated",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_static-getter",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_type-handle-token",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_value-this",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_vector3",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_scalars",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_enumerator",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "recovered_boolean-reader",
+      "passed": true,
+      "scope": "Unchanged current-run recovered CIL; original fixture/member/native boundaries remain in force."
+    },
+    {
+      "name": "complete_regression_batch_18",
+      "passed": true,
+      "scope": "All scoped invocations completed; this is not gameplay coverage."
+    },
+    {
+      "name": "syntax_44",
+      "passed": true,
+      "scope": "CIL encoding only; not full type or logic verification."
+    },
+    {
+      "name": "stack_44",
+      "passed": true,
+      "scope": "Stack/header consistency only; native cleanup and runtime type validity are separate."
+    },
+    {
+      "name": "compiler_before_both_assemblies",
+      "passed": true,
+      "scope": "Both complete source builds are recorded, including failure; no methods are stubbed to obtain a build."
+    },
+    {
+      "name": "compiler_after_both_assemblies",
+      "passed": true,
+      "scope": "Both complete source builds are recorded, including failure; no methods are stubbed to obtain a build."
+    },
+    {
+      "name": "project_compiler_both_assemblies",
+      "passed": true,
+      "scope": "Both complete source builds are recorded, including failure; no methods are stubbed to obtain a build."
+    },
+    {
+      "name": "identical_source_both_profiles",
+      "passed": true,
+      "scope": "Matching and host reference checks use exactly the same exported source files."
+    },
+    {
+      "name": "canonical_compiler_delta_and_source_integrity",
+      "passed": true,
+      "scope": "Both authoritative totals and unchanged diagnostic source hashes are independently rechecked; diagnostic deltas include cascades."
+    }
+  ],
+  "failed_gates": [],
+  "missing_reports": [],
+  "regressions": {
+    "aggregate-leaves": {
+      "report": "reports/recovered-aggregate-leaves-nso-plain-frame-cfg-v35.json",
+      "sha256": "ace01b732055466bcbd1be681565e4c86c3c6719bf70a2f651fecce3f9e00f5b",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "223fec2665ef8c232f6025325054c4dea179edbd363f0ee109298856befd2bb7",
+        "firstpass_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90"
+      }
+    },
+    "boolean-setter": {
+      "report": "reports/recovered-boolean-setter-nso-plain-frame-cfg-v35.json",
+      "sha256": "5d02ebfdcde49aa09eb13c3248928117408edc90451a0cc3cfed29535f63c14b",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90"
+      }
+    },
+    "constructor": {
+      "report": "reports/recovered-constructor-nso-plain-frame-cfg-v35.json",
+      "sha256": "75a278b6db44b9e221273a52feeb64d65a86c48b41fc6eb41919fa52629badd5",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "223fec2665ef8c232f6025325054c4dea179edbd363f0ee109298856befd2bb7"
+      }
+    },
+    "currency-scalars": {
+      "report": "reports/recovered-currency-scalars-nso-plain-frame-cfg-v35.json",
+      "sha256": "d4a8fd9bd84872228cc64bf8513fa45a250fcc5004ba832ea55b6b2184b0052d",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90"
+      }
+    },
+    "exception-factory": {
+      "report": "reports/recovered-exception-factory-nso-plain-frame-cfg-v35.json",
+      "sha256": "4cfe4fa9b351462c5973dd4c4adfe51722b0cee3e27f574b807e6933a419aa76",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90"
+      }
+    },
+    "leaf-accessor": {
+      "report": "reports/recovered-leaf-accessor-nso-plain-frame-cfg-v35.json",
+      "sha256": "384354710944602ae7faf68a1eecce51f5b01e84c7f0c2f6b51761afcc417fbe",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "223fec2665ef8c232f6025325054c4dea179edbd363f0ee109298856befd2bb7"
+      }
+    },
+    "nested-tween": {
+      "report": "reports/recovered-nested-tween-nso-plain-frame-cfg-v35-with-identities.json",
+      "sha256": "9ad78bbb29ea3b0abe41ad1b7af2cf19c9e8a583dc2e1dc1d153fdb7a47c7111",
+      "recorded_assembly_hashes": {
+        "vector_assembly_sha256": "395405058867a1b26e2a804a4ae7b276fa0c023967d628bcb144ccdd8d5c2bc9",
+        "tween_assembly_sha256": "d8470bed3b60130d15d7c64fbef54340e169570b47bae9dce3c7150a1f440fc5"
+      }
+    },
+    "primitive-box": {
+      "report": "reports/recovered-primitive-box-nso-plain-frame-cfg-v35.json",
+      "sha256": "178c460a9672d9846feca8f4f04219d589307909974a75746b2c2a90b321307c",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "223fec2665ef8c232f6025325054c4dea179edbd363f0ee109298856befd2bb7"
+      }
+    },
+    "scalars-isolated": {
+      "report": "reports/recovered-scalars-isolated-nso-plain-frame-cfg-v35.json",
+      "sha256": "792b81075055b8d6db2808925b710492eff83600b9eaa59f827b83db2343d67d",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90"
+      }
+    },
+    "static-getter": {
+      "report": "reports/recovered-static-getter-nso-plain-frame-cfg-v35.json",
+      "sha256": "91f61e755f96d355f8ad579b9cb928afb1a989c759ac9b4433a577d4a8f75a67",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90"
+      }
+    },
+    "type-handle-token": {
+      "report": "reports/recovered-type-handle-token-nso-plain-frame-cfg-v35.json",
+      "sha256": "d25e6c4475b3dfa8bd9d0e1fa676572dfb0ac80d35f546deb82a4c4dd7ae9935",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "223fec2665ef8c232f6025325054c4dea179edbd363f0ee109298856befd2bb7"
+      }
+    },
+    "value-this": {
+      "report": "reports/recovered-value-this-nso-plain-frame-cfg-v35.json",
+      "sha256": "a05a4cd11140581022bd870205d15b0d46a330ab9b83ff97ab9b8247b0874f67",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90"
+      }
+    },
+    "vector3": {
+      "report": "reports/recovered-vector3-nso-plain-frame-cfg-v35.json",
+      "sha256": "052f63d0bce4e2f53be45ba1563390258e8841dad1a8da61675c3102c703df64",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "395405058867a1b26e2a804a4ae7b276fa0c023967d628bcb144ccdd8d5c2bc9"
+      }
+    },
+    "scalars": {
+      "report": "reports/recovered-scalars-nso-plain-frame-cfg-v35.json",
+      "sha256": "8c8ac606182f94bf204458a0f4a3d4ae27cc96efd637320ae6f265868b7e34a7",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90"
+      }
+    },
+    "enumerator": {
+      "report": "reports/recovered-enumerator-nso-plain-frame-cfg-v35.json",
+      "sha256": "610fe75845de92e5123da0bad4f18bd3f693afbde970054c06eb6b83aa1b237a",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "223fec2665ef8c232f6025325054c4dea179edbd363f0ee109298856befd2bb7"
+      }
+    },
+    "boolean-reader": {
+      "report": "reports/recovered-boolean-reader-nso-plain-frame-cfg-v35.json",
+      "sha256": "94b151aa5d429185cd2e76dcaa265965761a38d0908d71c3b8e66004e9f765c8",
+      "recorded_assembly_hashes": {
+        "assembly_sha256": "223fec2665ef8c232f6025325054c4dea179edbd363f0ee109298856befd2bb7"
+      }
+    }
+  },
+  "compiler_before": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 19103
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 29900
+    }
+  ],
+  "compiler_after": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 18806
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 29779
+    }
+  ],
+  "compiler_diagnostic_line_delta": {
+    "Assembly-CSharp-firstpass": -297,
+    "Assembly-CSharp": -121
+  },
+  "full_clean_decompile_ready": false,
+  "whole_game_source_ready": false,
+  "portable_game_ready": false,
+  "limits": "Only the new ordinary extension requires an exact plain zR frame with empty FDE augmentation. The older selected route still contains twelve zPLR bodies with unverified exception semantics. Bounds do not recover cleanup, personalities, action tables or exception edges. Unsupported cold/reload shapes remain explicit. Scope-bound parser, constructor, native/IR and runtime evidence are separate; no global method-recovery percentage is inferred. Both complete game source assemblies must compile and undergo behavioral verification before any clean-decompile or portable-game claim."
+}

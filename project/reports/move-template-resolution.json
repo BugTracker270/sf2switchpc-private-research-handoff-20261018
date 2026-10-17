@@ -1,0 +1,51 @@
+{
+  "status": "STATIC_NATIVE_PARSER_SCHEMA_APPLIED",
+  "moves": 932,
+  "templates": 114,
+  "source_sha256": "a8739bc5c2b3a64adaecad469892c2fd3df44501af9e24e9c14447c919971b8d",
+  "original_moves_payload_sha256": "f0c3b4ef49aa8ebddafc3e8f7f13cff093e856040232f27eb922619ff624fff7",
+  "moves_without_explicit_filename": 22,
+  "filename_classifications": {
+    "PHYSICS_WITHOUT_FILE": 11,
+    "NO_ANIMATION_WITHOUT_FILE": 4,
+    "INHERITED_FILE": 7
+  },
+  "missing_template_definitions": [
+    {
+      "owner": "HighKneeUp",
+      "missing": "ShortAttack"
+    },
+    {
+      "owner": "LowKick",
+      "missing": "ShortAttack"
+    },
+    {
+      "owner": "ShortJumpKick",
+      "missing": "ShortAttack"
+    },
+    {
+      "owner": "ShortUpwardElbowStrike",
+      "missing": "ShortAttack"
+    },
+    {
+      "owner": "SuckerKick",
+      "missing": "ShortAttack"
+    },
+    {
+      "owner": "TitanLowKick",
+      "missing": "ShortAttack"
+    }
+  ],
+  "ordered_candidate_counts": {
+    "Events": 1912,
+    "Intervals": 2717
+  },
+  "native_evidence": {
+    "precedence": "0x1022590",
+    "attributes": "0x10228C0",
+    "events": "0x1023AC0",
+    "intervals": "0x1023D00",
+    "empty_filename_gate": "0x1017400"
+  },
+  "limitations": "Static native control-flow interpretation applied to recovered XML. Missing parents are logged and skipped by the original parser; they are not replaced. Raw ordered section candidates are not certified instantiated events/intervals. Does not cover every action, lock, transition, trigger or interval frame rule; no full parser runtime equivalence claim."
+}

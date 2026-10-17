@@ -1,0 +1,190 @@
+{
+  "status": "PASS_NATIVE_ARGUMENT_METADATA_AND_INDEXER_SOURCE_CORRELATION",
+  "recovery_run": "nso-class-guards-v17",
+  "recovered_attributes": 116,
+  "assemblies": [
+    {
+      "file": "Assembly-CSharp-firstpass.dll",
+      "recovered": 26
+    },
+    {
+      "file": "Assembly-CSharp.dll",
+      "recovered": 1
+    },
+    {
+      "file": "DOTween.dll",
+      "recovered": 0
+    },
+    {
+      "file": "DOTween46.dll",
+      "recovered": 0
+    },
+    {
+      "file": "Facebook.Unity.Settings.dll",
+      "recovered": 0
+    },
+    {
+      "file": "FyberLitJson.dll",
+      "recovered": 1
+    },
+    {
+      "file": "FyberPlugin.dll",
+      "recovered": 0
+    },
+    {
+      "file": "Ionic.Zip.Unity.dll",
+      "recovered": 0
+    },
+    {
+      "file": "Mono.Security.dll",
+      "recovered": 4
+    },
+    {
+      "file": "mscorlib.dll",
+      "recovered": 13
+    },
+    {
+      "file": "protobuf-net.dll",
+      "recovered": 5
+    },
+    {
+      "file": "SmartFox2X.dll",
+      "recovered": 1
+    },
+    {
+      "file": "System.Configuration.dll",
+      "recovered": 7
+    },
+    {
+      "file": "System.Core.dll",
+      "recovered": 0
+    },
+    {
+      "file": "System.dll",
+      "recovered": 30
+    },
+    {
+      "file": "System.Xml.dll",
+      "recovered": 24
+    },
+    {
+      "file": "System.Xml.Linq.dll",
+      "recovered": 0
+    },
+    {
+      "file": "TcpClientImplementation.dll",
+      "recovered": 3
+    },
+    {
+      "file": "UnityEngine.AIModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.AnimationModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.AssetBundleModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.AudioModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.CoreModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.DirectorModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.GameCenterModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.GridModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.ImageConversionModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.IMGUIModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.InputModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.ParticleSystemModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.Physics2DModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.PhysicsModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.SharedInternalsModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.TerrainModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.TextRenderingModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.TilemapModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.UI.dll",
+      "recovered": 1
+    },
+    {
+      "file": "UnityEngine.UIElementsModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.UIModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.UnityWebRequestModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "recovered": 0
+    },
+    {
+      "file": "UnityEngine.VRModule.dll",
+      "recovered": 0
+    }
+  ],
+  "native_generator": "0xBD1480",
+  "native_member_name": "Item",
+  "actual_source": "analysis\\il2cpp\\source-profile-project-build-nso-class-guards-v17\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\Utilities\\ListWrapper.cs",
+  "actual_source_sha256": "1ae0553c46713d97ac98a61d7f42b6ceb55a259b7e8fbe6b8e0b3383e2da3d96",
+  "attribute_audit": "analysis\\il2cpp\\attribute-contract-audit-nso-class-guards-v17\\summary.json",
+  "attribute_audit_sha256": "12e73b969ee5c8e5edb7ee4dd973a05ad3b11e3e8c4377fffe7abf1f20e9f471",
+  "scope": "Strict single-attribute native generator shape, constructor identity, common UTF8 wrapper consensus and matching real property names. Original native conversion/constructor path independently observed for ListWrapper at explicit allocation/libc boundaries. All emitted arguments decode and match metadata properties; actual source renders an indexer. This does not certify method bodies, all other attributes, or complete clean source."
+}

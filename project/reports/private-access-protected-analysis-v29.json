@@ -1,0 +1,37 @@
+{
+  "status": "NATIVE_PROTECTED_GETTER_CANDIDATE_CONFIRMED_NOT_ENABLED",
+  "recovery_run": "nso-native-leaves-v29",
+  "metadata_and_cil_report": "reports/private-access-protected-candidate-nso-native-leaves-v29.json",
+  "witnesses": [
+    {
+      "method": "Nekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode$$get_CurrentPosition",
+      "rva": "0xFE9F00",
+      "reachable_instructions": 2,
+      "native_sha256": "f289023bfc90be5c90aa1a98a40c5b356af639e69af0399f5914b2202364955c",
+      "native_calls": 0,
+      "native_init_guards": 0
+    },
+    {
+      "method": "Nekki.SF2.Core.Fights.Model.Components.Edges.ModelEdge$$get_StartPosition",
+      "rva": "0xFEA1D0",
+      "reachable_instructions": 3,
+      "native_sha256": "4f092b72a02dd264bb97a5e7e968dd8160c25e42f187109eaae1978f1336cf2b",
+      "native_calls": 0,
+      "native_init_guards": 0
+    }
+  ],
+  "prior_main_compiler_current_field_diagnostics": 113,
+  "object_to_node_field_offset": "0x48",
+  "node_to_current_field_offset": "0x20",
+  "selected_getter_proven_by_existing_helper": true,
+  "current_private_only_emitter_accepts": false,
+  "owner_before_field_init": true,
+  "owner_has_type_initializer": true,
+  "proposed_narrow_capability": "Single ordinary protected (Family) instance field loads outside their owner may use the same exact public nonvirtual native-proven getter. Keep stores, field addresses, intermediate struct paths and unsupported layouts unchanged. Preserve original field attributes and emit direct call rather than virtual dispatch.",
+  "initialization_requirement": "For a strict no-new-initialization proof, initially admit only owners with no type initializer, or prove an already-initialized owner dominates the access. ModelNode has a BeforeFieldInit initializer, so native leaf proof alone does not certify cross-runtime initialization timing. Do not remove or reorder existing initialization effects.",
+  "next_runtime_witness": "After a separately checkpointed emitter increment, clone actual rewritten ModelEdge.get_StartPosition plus exact recovered ModelNode.get_CurrentPosition at an explicitly initialized isolated receiver/storage boundary; test reference identity, unrelated storage and null node exception ordering. Then compile the same source files and count remaining protected field diagnostics.",
+  "core_source_edited": false,
+  "game_metadata_modified": false,
+  "recovered_cil_executed": false,
+  "whole_game_source_ready": false
+}

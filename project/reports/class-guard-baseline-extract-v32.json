@@ -1,0 +1,11 @@
+{
+  "status": "PASS_FROZEN_V32_MATCHER_SOURCE_EXTRACTED",
+  "checkpoint": "ae41a90e5be3da0106e4dd15aa847be0463f3dcc",
+  "patch_sha256": "effbf13b420f98e3687780b7c0e78b39cfd3420068ca8802c1208be6ab92991a",
+  "original_source_sha256": "619639e8e6f0cd092b1815365c1223f50e261758cb8db5635cbd79dbc1f1691f",
+  "original_source_lines": 135,
+  "generated_source_sha256": "f5000d5ee6c68cfb73e69152f5a3ddd6fd878dc00725c75388f6431c1e5cd215",
+  "generated_source": "analysis\\reference\\class-guard-v32-source\\LegacyArm64AllocationPattern-v32-namespaced.cs",
+  "only_generated_change": "Namespace suffix BaselineV32 permits disjoint source compilation beside the unchanged current matcher.",
+  "scope": "Original complete source is reconstructed byte-for-byte against the frozen local patch and per-file lock. Only a second derived copy changes its namespace. No game source, binary, Core output or frozen patch is modified."
+}

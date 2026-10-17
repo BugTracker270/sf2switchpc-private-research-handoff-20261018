@@ -1,0 +1,18 @@
+{
+  "status": "PASS_OTHER_FIELDS_ARE_TWO_NULL_BYTE_ARRAY_REFERENCES",
+  "recovery_run": "nso-runtime-helper-abi-v37",
+  "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c",
+  "other_field_count": 2,
+  "other_field_types": [
+    "System.Byte[]",
+    "System.Byte[]"
+  ],
+  "other_field_tokens": [
+    "0x04000381",
+    "0x04000382"
+  ],
+  "other_fields_initially_null": true,
+  "game_equals_invoked": false,
+  "game_instance_constructor_invoked": false,
+  "whole_read_invoked": false
+}

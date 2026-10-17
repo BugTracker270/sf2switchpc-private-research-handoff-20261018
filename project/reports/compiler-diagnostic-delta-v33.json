@@ -1,0 +1,79 @@
+{
+  "status": "HASH_VERIFIED_CANONICAL_COMPILER_DELTA",
+  "before": "nso-enumerator-return-v32",
+  "after": "nso-class-guard-load-v33",
+  "source_modified": false,
+  "whole_game_source_ready": false,
+  "assemblies": {
+    "Assembly-CSharp-firstpass": {
+      "old_unique": 19263,
+      "new_unique": 19219,
+      "delta": -44,
+      "source_integrity": {
+        "nso-enumerator-return-v32": {
+          "manifest_sha256": "da22200a41fda5b5e0bb8c520bdb659e90777f4abbb7c9febde5de899f52beab",
+          "diagnostic_source_files_hash_verified": 629
+        },
+        "nso-class-guard-load-v33": {
+          "manifest_sha256": "69dba3f5bb6b3187122556c5095883a8234da7a7e06d4ee0c7672941032fde69",
+          "diagnostic_source_files_hash_verified": 629
+        }
+      },
+      "error_code_delta": {
+        "CS0030": -37,
+        "CS0037": -7
+      },
+      "operand_categories": {
+        "nso-enumerator-return-v32": {
+          "int_zero_cast_to_other_nonprimitive": 278,
+          "int_zero_cast_to_enumerator": 34,
+          "value_cast_to_pointer_of_same_type": 393
+        },
+        "nso-class-guard-load-v33": {
+          "int_zero_cast_to_enumerator": 34,
+          "int_zero_cast_to_other_nonprimitive": 278,
+          "value_cast_to_pointer_of_same_type": 393
+        }
+      },
+      "semantic_added_occurrences": 0,
+      "semantic_removed_occurrences": 44,
+      "most_added_messages": [],
+      "most_added_files": []
+    },
+    "Assembly-CSharp": {
+      "old_unique": 30155,
+      "new_unique": 30061,
+      "delta": -94,
+      "source_integrity": {
+        "nso-enumerator-return-v32": {
+          "manifest_sha256": "da22200a41fda5b5e0bb8c520bdb659e90777f4abbb7c9febde5de899f52beab",
+          "diagnostic_source_files_hash_verified": 1221
+        },
+        "nso-class-guard-load-v33": {
+          "manifest_sha256": "69dba3f5bb6b3187122556c5095883a8234da7a7e06d4ee0c7672941032fde69",
+          "diagnostic_source_files_hash_verified": 1219
+        }
+      },
+      "error_code_delta": {
+        "CS0030": -94
+      },
+      "operand_categories": {
+        "nso-enumerator-return-v32": {
+          "int_zero_cast_to_other_nonprimitive": 698,
+          "int_zero_cast_to_enumerator": 492,
+          "value_cast_to_pointer_of_same_type": 246
+        },
+        "nso-class-guard-load-v33": {
+          "int_zero_cast_to_other_nonprimitive": 698,
+          "int_zero_cast_to_enumerator": 492,
+          "value_cast_to_pointer_of_same_type": 246
+        }
+      },
+      "semantic_added_occurrences": 0,
+      "semantic_removed_occurrences": 94,
+      "most_added_messages": [],
+      "most_added_files": []
+    }
+  },
+  "limits": "Diagnostic lines include cascades and are not independent bug counts or completion percentages. Semantic multisets ignore line movement but local-variable spelling can still change a message. Every diagnostic-bearing source file is hash/size checked against its original export manifest. This report measures changes without certifying whether any change preserves behavior."
+}

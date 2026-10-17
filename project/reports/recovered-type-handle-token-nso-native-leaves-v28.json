@@ -1,0 +1,13 @@
+{
+  "status": "PASS_RECOVERED_TYPE_HANDLE_TOKEN_CONTRACT",
+  "recovery_run": "nso-native-leaves-v28",
+  "type_from_handle_calls": 1,
+  "checks": 2,
+  "fatal": null,
+  "actual_type": "UnityEngine.SpriteDrawMode",
+  "expression_start": 5,
+  "full_body_il_sha256": "c343ee061f2b0d5ce79ef37779868d1add2d636b4a0a57a4345b3b28d29c6cad",
+  "bounded_prefix_il_sha256": "bb32c0ddb22133ef6cf5761d4bbedecdfa546704cadd99b746d38eabfd305d43",
+  "assembly_sha256": "b3e9e65cf4e7add3643662133d93d3fdf9b7cc05a3606860c237999bb082e711",
+  "scope": "Execute only the actual recovered independent literal-type expression from its sole ldtoken through its final Type.GetTypeFromHandle call, with a ret appended. Original expression instructions and locals retained. Every local read must follow an assignment inside this straight-line slice; arguments, branches, field operations and other calls/tokens are rejected. Original enum token maps to that exact recovered enum; only the verified System.Type API token maps to the host BCL implementation of the same handle contract. Earlier control flow and the remaining unresolved getter are never executed. This is a CLR token/stack contract check, not original ARM64 execution, full getter validation or full source compilation."
+}

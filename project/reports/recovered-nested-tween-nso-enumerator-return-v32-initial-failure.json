@@ -1,0 +1,25 @@
+{
+  "status": "RECOVERED_NESTED_GENERIC_CALLER_LIMITATION",
+  "recovery_run": "nso-enumerator-return-v32",
+  "cases": 0,
+  "checks": 0,
+  "nested_field_address_instructions": 18,
+  "caller_nested_field_addresses": 0,
+  "identity_cases": 0,
+  "identity_checks": 0,
+  "total_checks": 0,
+  "failure_count": 0,
+  "statically_unreachable_analysis_warning_calls": 0,
+  "diagnostic_tail_termination_experiment": false,
+  "first_failures": [],
+  "fatal": "System.Exception: Unexpected token/call; diagnostic helpers are forbidden: ldtoken",
+  "body_il_sha256": {
+    "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+    "RecoveredNestedTweenCaller": "afc78499f2faab0dbe3f7701998972958a137599355b34e5d28c184b1ff67a55"
+  },
+  "vector_assembly_sha256": "bec29cd4e557804d266a1058c1a8c16796039fc5b2396d560e5230545626713e",
+  "tween_assembly_sha256": "2766f05703e4a477bc9928ccf4e24f26dfcc383461edc618bc06f2b67be94711",
+  "fixture_sha256": "a90434a7d325d6761703a46412a5e30e7585b90179a80568c3c74ca673330c6f",
+  "identity_fixture_sha256": null,
+  "scope": "Actual recovered caller and addition CIL, with exact vector/wrapper/closed-generic field tokens replaced by isolated equivalent storage types. Scalar instructions, local layout, branches and stores retained; managed addition call target replaced by the actual recovered addition DynamicMethod. Appended analysis-warning calls are allowed only after a full intraprocedural reachability check proves they are unreachable, and map to a throwing trap without removing bytes. Three resulting component bits and six unchanged start/change component bits per case. Every reachable diagnostic/helper or other substitution is rejected. Explicitly bypasses Unity/plugin initialization and original class-initializer ordering; no other caller, whole assembly or portable-game claim. Original complete caller evidence: reports/native-fp-class-guard-caller.json. Also executes three actual recovered nested-wrapper argument/return methods against all 240 original-code identity fixtures (720 checks); no game-method call substitutions in those identities."
+}

@@ -1,0 +1,136 @@
+{
+  "scope": "Independent bounded production-CIL probes; individual reports retain exact input, token and native-code boundaries.",
+  "include_enumerator": true,
+  "status": "PASS_SCOPED_RECOVERY_REGRESSIONS",
+  "include_boolean_reader": true,
+  "recovery_run": "nso-class-origin-phi-v34",
+  "probes": [
+    {
+      "probe_sha256": "d0903b388e0a07ebcf091d4c13860a253bcacd1e856e543724b31a096652eb75",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-syntax.log",
+      "probe": "ManagedAudit",
+      "suffix": "syntax"
+    },
+    {
+      "probe_sha256": "ef6916b45678e43efa813a5ca83a90c8436f82bb5bf56857376c722be4b72fb8",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-stack.log",
+      "probe": "CilStackAudit",
+      "suffix": "stack"
+    },
+    {
+      "probe_sha256": "8e34335927e640db405d5a0a97dd2958714a3fb145062055bcc9731a4d5da815",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-scalar-direct.log",
+      "probe": "RecoveredScalarProbe",
+      "suffix": "scalar-direct"
+    },
+    {
+      "probe_sha256": "8e34335927e640db405d5a0a97dd2958714a3fb145062055bcc9731a4d5da815",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-scalar-isolated.log",
+      "probe": "RecoveredScalarProbe",
+      "suffix": "scalar-isolated"
+    },
+    {
+      "probe_sha256": "d01c8db256fcf6581e37de114ab6e29b71445d028aca23d151633c8decc82258",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-vector.log",
+      "probe": "RecoveredVectorProbe",
+      "suffix": "vector"
+    },
+    {
+      "probe_sha256": "c188962855f7236ff3893ef23a806b5b3001b62687c4a7872a27176210db9e00",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-boolean.log",
+      "probe": "RecoveredBooleanProbe",
+      "suffix": "boolean"
+    },
+    {
+      "probe_sha256": "df7a0d7e4f0b712533a4ee12a8662af8bdbfa3279ccd829a140ae3ae1ccf8412",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-nested-tween.log",
+      "probe": "RecoveredTweenProbe",
+      "suffix": "nested-tween"
+    },
+    {
+      "probe_sha256": "71ea3ad0db409fe25f64b5745aa7130ea5095cd53e21345cf3ed51039a935114",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-type-token.log",
+      "probe": "RecoveredTypeTokenProbe",
+      "suffix": "type-token"
+    },
+    {
+      "probe_sha256": "aa6e7f2d613c9701a787ed1b8190d31f46a5bc0ca2052722fb4853ffc2960fa9",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-constructor.log",
+      "probe": "RecoveredConstructorProbe",
+      "suffix": "constructor"
+    },
+    {
+      "probe_sha256": "10097dc71810a4ee79e1a3650b95ef88ca440e91ce5a6b76936113e736cc7452",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-currency-scalars.log",
+      "probe": "RecoveredCurrencyScalarProbe",
+      "suffix": "currency-scalars"
+    },
+    {
+      "probe_sha256": "68e4560116aa9cf637b81c4ca6cc342ed146d841e8cf798325e09d4e736fb1a9",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-aggregate-leaves.log",
+      "probe": "RecoveredAggregateLeafProbe",
+      "suffix": "aggregate-leaves"
+    },
+    {
+      "probe_sha256": "6860efc11bac3338ea5d390e649e9ecccee8e82e4a9d6d0b440047222f19560e",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-leaf-accessor.log",
+      "probe": "RecoveredLeafAccessorProbe",
+      "suffix": "leaf-accessor"
+    },
+    {
+      "probe_sha256": "d676f7c1b9b9335b96f9a9692f1e73568103bd53fc2b70e3569bc325fcae0a37",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-static-getter.log",
+      "probe": "RecoveredStaticGetterProbe",
+      "suffix": "static-getter"
+    },
+    {
+      "probe_sha256": "f0e4fdc84a0a7e9163ddced55b5a6d8e70fbe6dea8227affa6b60e96c4539ccd",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-exception-factory.log",
+      "probe": "RecoveredExceptionProbe",
+      "suffix": "exception-factory"
+    },
+    {
+      "probe_sha256": "9dfa8e5a0de63195a99784e792f636919f330f8061875127570b92835180d325",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-primitive-box.log",
+      "probe": "RecoveredBoxProbe",
+      "suffix": "primitive-box"
+    },
+    {
+      "probe_sha256": "f330375eef26a4bf05f031befcc0570cb405bb82feb9e9372b582fea91eba452",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-value-this-codec.log",
+      "probe": "RecoveredValueThisProbe",
+      "suffix": "value-this-codec"
+    },
+    {
+      "probe_sha256": "e48feacffdebe5a94860261a210f42ac0ee9c268556972f38d3245a0a39a3352",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-indirect-enumerator.log",
+      "probe": "RecoveredEnumeratorProbe",
+      "suffix": "indirect-enumerator"
+    },
+    {
+      "probe_sha256": "fbbe23646cb888a680e83619ef2440ea92a67a7a182de84cfb01e26230fcdcf1",
+      "exit_code": 0,
+      "log": "logs/regression-nso-class-origin-phi-v34-boolean-reader.log",
+      "probe": "RecoveredBooleanReaderProbe",
+      "suffix": "boolean-reader"
+    }
+  ],
+  "whole_game_source_ready": false
+}

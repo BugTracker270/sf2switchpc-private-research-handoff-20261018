@@ -1,0 +1,18 @@
+{
+  "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovery_run": "nso-enumerator-return-v32",
+  "cases": 0,
+  "checks": 0,
+  "zero_key_cases": 0,
+  "nonzero_key_cases": 0,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": "System.IO.InvalidDataException: Unexpected scalar codec instruction/helper: ldtoken",
+  "methods": [],
+  "assembly_sha256": "ab0236a21932363c72dd20c605ac879bbec7513b5324a0790d9f5a0179b700f9",
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "dynamic_clones": 0,
+  "scope": "Calls the actual recovered static Encrypt(int,int)/Decrypt(int,int) CIL directly in .NET, with no source/IL edits, clones or helper substitutions. Uses exact existing original ARM64 fixture values and an explicit initialized cryptoKey input; native metadata/class initialization macros are outside this comparison. Checks zero-key fallback, explicit-key XOR and unchanged static key. No default-key overload, aggregate conversion, detector callback, whole currency/economy, original runtime or full source claim."
+}

@@ -1,0 +1,68 @@
+{
+  "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovery_run": "nso-value-this-box-v30",
+  "cases": 0,
+  "checks": 0,
+  "lazy_initialization_cases": 0,
+  "already_initialized_cases": 0,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": "System.IO.InvalidDataException: Reachable unresolved helper/unsafe address operation; actual body was not executed",
+  "blocked_calls": [
+    {
+      "offset": 56,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2\u002B70]"
+    },
+    {
+      "offset": 129,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v37 @ X0_v2 (Il2CppClass\u003CCodeStage.AntiCheat.ObscuredTypes.ObscuredInt\u003E)\u002BD4]"
+    },
+    {
+      "offset": 166,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2\u002B72]"
+    },
+    {
+      "offset": 263,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2\u002B4]"
+    },
+    {
+      "offset": 458,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2\u002B72]"
+    },
+    {
+      "offset": 627,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v37 @ X0_v2 (Il2CppClass\u003CCodeStage.AntiCheat.ObscuredTypes.ObscuredInt\u003E)\u002B122]"
+    },
+    {
+      "offset": 689,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2\u002B6F]"
+    },
+    {
+      "offset": 861,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2\u002B4]"
+    }
+  ],
+  "unreachable_helper_calls": 0,
+  "cil_sha256": "9bf691bf8386e8dbaaa991ae7122bb0c0b17cabcd55c5cc5ca8bb071dc86208e",
+  "assembly_sha256": "2970bb34e41eef86d20be1bda76165bf10c9379a8dd35c56487f88559d47c4e6",
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+}

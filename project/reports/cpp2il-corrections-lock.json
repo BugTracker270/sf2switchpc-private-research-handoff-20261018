@@ -1,0 +1,360 @@
+{
+  "upstream": "https://github.com/SamboyCoding/Cpp2IL",
+  "commit": "b5ad444b82267cb1e4b88b8b373c008105bdea52",
+  "license": "MIT",
+  "patch": "src\\re\\tool-patches\\cpp2il-sf2-recovery-corrections.patch",
+  "sha256": "9054d4bd71e2b9a4ba713cf437ddbfad3573866d57b818b16b9111858f332c30",
+  "files": [
+    {
+      "path": "Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs",
+      "sha256": "a2639c8df3dee7c8ade5c4143a5f74b18e6af2558918c32cc1e015b825e7c592"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs",
+      "sha256": "c5489016f9d9368ebf0a92849e099e78ec3e82e2ae71f095ec2dd0eb4be8b715"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/MetadataAddressResolver.cs",
+      "sha256": "706e73d8a6d7076de657decb47c701dfe84a7dccb3931e9ffeef54a0ed92e5bb"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/MetadataResolver.cs",
+      "sha256": "cc215315bbb2b526082b0c4370ef9bf91797a32e08ff4a66faeef8dd762ee7ed"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/InterfaceDispatchRecovery.cs",
+      "sha256": "5c2171a2b2a85a3e0b81943041b1fc2b57a90e8272a8f236109e6591e3f9da06"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64AllocationPattern.cs",
+      "sha256": "bcff811b5e745644adac343853a026311d1de1f30c371e41a97a8be62d84f5d8"
+    },
+    {
+      "path": "Cpp2IL.Core/Il2CppApiFunctions/NewArm64KeyFunctionAddresses.cs",
+      "sha256": "093b156b97d49ac057c42985bc1d995e5777463ae9b132664795bb1f764093c9"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64InitializationPattern.cs",
+      "sha256": "c9ad1261b7940cce6e7049a2f430c01113017b6a7f37480b52638fbbb5f236da"
+    },
+    {
+      "path": "Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs",
+      "sha256": "a45abe72126f94d03eaeadf48e437c2ae618bc6831638c16ed2fb6600a3842f8"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64ExceptionRaiserPattern.cs",
+      "sha256": "cba7320450b2c26e829c680becafd34e52233b98d4def90a3e1242750fc148c1"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64ThunkScanner.cs",
+      "sha256": "c7360baab0b79d9a3f229a6d103c93e083c3aef4574d822fbdf3970bec1a4795"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/ThrowHelperRecovery.cs",
+      "sha256": "30883cba7839a8f8cae1cfe7e111ff1970ec2b7a2bd86e45b789cd4cfabcd22d"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64ArrayAllocationPattern.cs",
+      "sha256": "2e3f7c89011f8baf4d71138759aa0fae8914bfa1cf42e297a9dc21fc2b17db3f"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/LocalVariables.cs",
+      "sha256": "262ff6f8ed386dcc0ea2b36965517e9b5e98ab46c73e878e373cd8afb2afbe23"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64ExceptionFactoryPattern.cs",
+      "sha256": "d221f48068c2e2dec77fd62da7b921977df8f462a9de3f506f6608d02e06a55f"
+    },
+    {
+      "path": "Cpp2IL.Core/IlGenerator.cs",
+      "sha256": "cfc82035903d749b5e54ba51a5783ab9e63ef7a0929bdb501338cded32fe5b5f"
+    },
+    {
+      "path": "Cpp2IL.Core/UninitializedObjectAllocation.cs",
+      "sha256": "05d1f4e6f6b9d404ffcb35830fb4a9a7b7836c909ee52278afb662da7d65d8fe"
+    },
+    {
+      "path": "Cpp2IL.Core/ProcessingLayers/AttributeInjectorProcessingLayer.cs",
+      "sha256": "177099d399f25c9db4ee7e1d303d4cefa0fe6ccc8d4350f17bead29763295daf"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64DefaultMemberPattern.cs",
+      "sha256": "7b3ce477b50846e6d68ac3055957fe4924a0d577057d2df9ad5ac55c06e34397"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/LegacyDefaultMemberRecovery.cs",
+      "sha256": "797a14c056f61fea6b6ab2e857fdd5b1129eedfb81893eb1fc376e46cd5b560f"
+    }
+  ],
+  "recovery_run": "nso-bool-fields-v19",
+  "processing_options": [
+    "--use-processor",
+    "attributeinjector",
+    "--processor-config",
+    "attr-injector-original-markers-only=true"
+  ],
+  "harness_passed": 211,
+  "default_member_recovery": {
+    "status": "PASS_NATIVE_ARGUMENT_METADATA_AND_INDEXER_SOURCE_CORRELATION",
+    "recovery_run": "nso-bool-fields-v19",
+    "recovered_attributes": 116,
+    "assemblies": [
+      {
+        "file": "Assembly-CSharp-firstpass.dll",
+        "recovered": 26
+      },
+      {
+        "file": "Assembly-CSharp.dll",
+        "recovered": 1
+      },
+      {
+        "file": "DOTween.dll",
+        "recovered": 0
+      },
+      {
+        "file": "DOTween46.dll",
+        "recovered": 0
+      },
+      {
+        "file": "Facebook.Unity.Settings.dll",
+        "recovered": 0
+      },
+      {
+        "file": "FyberLitJson.dll",
+        "recovered": 1
+      },
+      {
+        "file": "FyberPlugin.dll",
+        "recovered": 0
+      },
+      {
+        "file": "Ionic.Zip.Unity.dll",
+        "recovered": 0
+      },
+      {
+        "file": "Mono.Security.dll",
+        "recovered": 4
+      },
+      {
+        "file": "mscorlib.dll",
+        "recovered": 13
+      },
+      {
+        "file": "protobuf-net.dll",
+        "recovered": 5
+      },
+      {
+        "file": "SmartFox2X.dll",
+        "recovered": 1
+      },
+      {
+        "file": "System.Configuration.dll",
+        "recovered": 7
+      },
+      {
+        "file": "System.Core.dll",
+        "recovered": 0
+      },
+      {
+        "file": "System.dll",
+        "recovered": 30
+      },
+      {
+        "file": "System.Xml.dll",
+        "recovered": 24
+      },
+      {
+        "file": "System.Xml.Linq.dll",
+        "recovered": 0
+      },
+      {
+        "file": "TcpClientImplementation.dll",
+        "recovered": 3
+      },
+      {
+        "file": "UnityEngine.AIModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.AnimationModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.AssetBundleModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.AudioModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.CoreModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.DirectorModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.GameCenterModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.GridModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.ImageConversionModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.IMGUIModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.InputModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.ParticleSystemModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.Physics2DModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.PhysicsModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.SharedInternalsModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.TerrainModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.TextRenderingModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.TilemapModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.UI.dll",
+        "recovered": 1
+      },
+      {
+        "file": "UnityEngine.UIElementsModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.UIModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.UnityWebRequestAssetBundleModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.UnityWebRequestModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.UnityWebRequestWWWModule.dll",
+        "recovered": 0
+      },
+      {
+        "file": "UnityEngine.VRModule.dll",
+        "recovered": 0
+      }
+    ],
+    "native_generator": "0xBD1480",
+    "native_member_name": "Item",
+    "actual_source": "analysis\\il2cpp\\source-profile-project-build-nso-bool-fields-v19\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\Utilities\\ListWrapper.cs",
+    "actual_source_sha256": "2fac20cacd6bcaec568b7e1614bb2c65dde934c1bd671f8944137597dc32c7b6",
+    "attribute_audit": "analysis\\il2cpp\\attribute-contract-audit-nso-bool-fields-v19\\summary.json",
+    "attribute_audit_sha256": "a5dc0a4844f438a3929fc48d6b441957c7249ae0a9fe3d11eb0199ca0922314b",
+    "scope": "Strict single-attribute native generator shape, constructor identity, common UTF8 wrapper consensus and matching real property names. Original native conversion/constructor path independently observed for ListWrapper at explicit allocation/libc boundaries. All emitted arguments decode and match metadata properties; actual source renders an indexer. This does not certify method bodies, all other attributes, or complete clean source."
+  },
+  "class_guard_recovery": {
+    "status": "PASS_SCOPED_NATIVE_CLASS_GUARD_CIL_SOURCE_CORRELATION",
+    "recovery_run": "nso-bool-fields-v19",
+    "baseline": "nso-default-member-v16",
+    "methods": [
+      {
+        "type": "AdvLog",
+        "method": "Init",
+        "before_native_class_reads": 2,
+        "after_native_class_reads": 0,
+        "body_il_sha256": "bfb89ef4c24920acd3a95f5f48028a6bad880314635ea070588e39606d5a3943",
+        "removed_bookkeeping_calls": [
+          "System.Type::GetTypeFromHandle"
+        ],
+        "remaining_diagnostic_messages": [
+          "Method not found @7448F0"
+        ]
+      },
+      {
+        "type": "BundlesUtil",
+        "method": "LoadDependencies",
+        "before_native_class_reads": 1,
+        "after_native_class_reads": 0,
+        "body_il_sha256": "0a1f7dc8a46137ff479f810a43b1b2451b7ba5324d0df62033de89343a599111",
+        "removed_bookkeeping_calls": [
+          "Cpp2ILInjected.Cpp2ILHelpers::NoteDecompilerIssue",
+          "System.Type::GetTypeFromHandle"
+        ],
+        "remaining_diagnostic_messages": []
+      },
+      {
+        "type": "BundlesUtil",
+        "method": "UnloadDependencies",
+        "before_native_class_reads": 2,
+        "after_native_class_reads": 1,
+        "body_il_sha256": "4478e9eb7362819ab446c2444a2898f613ed451808ba5afd9fef45509970c11a",
+        "removed_bookkeeping_calls": [],
+        "remaining_diagnostic_messages": [
+          "Unmanaged memory load: [v65 @ X0_v9 (Il2CppClass<BundlesUtil>)+122]"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "path": "analysis\\il2cpp\\source-profile-project-build-nso-bool-fields-v19\\Assembly-CSharp-firstpass\\AdvLog.cs",
+        "sha256": "eef783037dded2f610b2f45bd6b4ef91414d4246e0e659ff470a9d9026344394",
+        "before_invalid_type_pointer_casts": 6,
+        "after_invalid_type_pointer_casts": 0
+      },
+      {
+        "path": "analysis\\il2cpp\\source-profile-project-build-nso-bool-fields-v19\\Assembly-CSharp-firstpass\\BundlesUtil.cs",
+        "sha256": "565f3e642163fd8796440c1af07ea2fa67f66711a12d908e0cec6fec5686e293",
+        "before_invalid_type_pointer_casts": 12,
+        "after_invalid_type_pointer_casts": 7
+      }
+    ],
+    "native_cases": 336,
+    "native_checks": 1008,
+    "scope": "Three actual method bodies and two unchanged source exports. Native class-byte diagnostic reads decrease without replacing bodies with rejection stubs or losing ordinary managed calls. Cold/noncontiguous guards and other source errors remain. Does not certify initialization ordering, complete methods, ABI or whole-source readiness."
+  },
+  "forwarded_boolean_recovery": {
+    "status": "PASS_RECOVERED_BOOLEAN_DECISIONS_VS_ORIGINAL_NATIVE",
+    "recovery_run": "nso-bool-fields-v19",
+    "cases": 4,
+    "checks": 12,
+    "isolation_reference_cases": 4,
+    "failures": [],
+    "assembly_sha256": "3b68956fcc662f107ff6955b35022cdda1db0597c6b026d41203a94b3d942606",
+    "fixture_sha256": "2f5f22d9afbf62d51148ff4dbe1e787cf6a0624ae110640deaad68fc2e6684dc",
+    "scope": "Executes recovered getter/setter CIL in DynamicMethods. Exact field tokens map to a same-type boolean test field and the sole Init callback maps to an observable counter. All other instruction and branch bytes/local types remain. No game DLL modification; class initialization, Init contents and complete-game parity are outside scope."
+  },
+  "usage": "Apply this complete patch once to the pinned checkout. Supersedes the earlier incremental ABI/metadata patches; do not apply both sets.",
+  "validation": "211 address/slot/runtime-pattern/streaming-thunk/allocation-emission checks, 224 original exception-pointer checks at supplied C++ boundaries, and 3468 original array checks at explicit runtime boundaries. Fresh nso-bool-fields-v19 recovery exits zero; syntax and stack-depth/header audits pass. Separate reference allocation preserves one independently witnessed static-field runtime identity without invoking an extra instance constructor. Empty Object constructor removal requires its native immediate-return witness and applies only outside managed instance constructors. Source marker view is explicitly partial and retains a separate tool-annotated output. Other original attributes, including serialization-relevant attributes, are omitted in this diagnostic view and remain a required recovery task. Stack-invalid or unresolved-allocation bodies remain diagnostic throw stubs. Remaining type/ABI/source-build and initialization limitations, plus earlier failure logs, are retained. Complete clean decompilation remains unproven."
+}

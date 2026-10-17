@@ -1,0 +1,52 @@
+{
+  "status": "PASS_COMPILED_BEZIER_VS_ORIGINAL_ARM64",
+  "cases": 704,
+  "samples": 16704,
+  "checks": 54336,
+  "fixture_sha256": "928dcd738c671a85a8d712ce5aea1764b5e1902e1fb51a15beb363bd4959d2fe",
+  "executed_functions": {
+    "bezier_ctor": 4928,
+    "vector_ctor": 2816,
+    "object_ctor": 2112,
+    "bezier_curve": 273600,
+    "list_object_count": 704,
+    "get_enumerator": 704,
+    "enum_ctor": 704,
+    "enum_next": 120448,
+    "class_layout_init": 52224,
+    "enum_verify": 69632,
+    "enum_current": 16704,
+    "vector_get_x": 50112,
+    "vector_set_x": 16704,
+    "vector_get_y": 50112,
+    "vector_set_y": 16704,
+    "vector_get_z": 50112,
+    "vector_set_z": 16704,
+    "enum_dispose": 704,
+    "bezier_middle": 1056,
+    "vector_middle": 704
+  },
+  "calls": {
+    "bezier_ctor": 704,
+    "bezier_curve": 352,
+    "bezier_middle": 352
+  },
+  "runtime_allocation_model": {
+    "Vector3f": 1408
+  },
+  "allocation_hook_rva": "0xB5B110",
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "original_text_sha256": {
+    "bezier_ctor": "6cf9ae60d5e6d9a4959bbd8f3955239e28e939ae38176c1928bc6f8e01f30db2",
+    "bezier_curve": "bc79def892b5da9b609356b7fd01f7ab1a07505f19ed14256049e287587908eb",
+    "bezier_middle": "faf5e74b0d8199d0767698e94cdad272fb15546f5add4892fe7e75908b0070bf",
+    "vector_middle": "a9eb53fab83c0b61d7301e48c672c1f0bc370b3dcb06776f1a48efa681fead5c"
+  },
+  "metadata_initialization_guards": [
+    "0x3b84dd9",
+    "0x3b84dda",
+    "0x3b87856"
+  ],
+  "scope": "Original Bezier coefficients, curve recurrence, midpoint helper, vector accessors and list iteration. Finite points; positive sample counts 1..120 from the listed fixture set; pre-sized non-null output vectors. Synthetic initialized generic metadata; only Vector3f allocation modeled. Resize/delegate allocation, full animation scheduling, interrupts and rendering/FPS remain unverified."
+}

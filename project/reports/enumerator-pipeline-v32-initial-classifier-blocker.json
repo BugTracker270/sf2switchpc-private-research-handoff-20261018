@@ -1,0 +1,2540 @@
+{
+  "status": "BLOCKED_EXISTING_RETURN_BUFFER_CLASSIFIER_REJECTS_ACTUAL_CALLEE",
+  "core_edited": false,
+  "copied_ir_mutated": false,
+  "core_sha256": "7ffff037f9a1e2f509950d81dda763ebb804835b1144c53d82b88a74e492a03c",
+  "probe_source_sha256": "43217344f1b4943e74b5165c98b51bacb84e6c677bf6ce9e04bc7dc334731176",
+  "selected_alias": {
+    "method": "System.Collections.Generic.List\u00601::GetEnumerator",
+    "return_type": "System.Collections.Generic.List\u00601\u003CT\u003E\u002BEnumerator\u003CT\u003E",
+    "return_context": "GenericInstanceTypeAnalysisContext",
+    "value_type": true,
+    "metadata_unboxed_size": 0,
+    "hidden_buffer": false,
+    "hfa": false
+  },
+  "aliases": [
+    {
+      "method": "System.Collections.Generic.List\u00601::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CT\u003E\u002BEnumerator\u003CT\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.Object\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.Object\u003E\u002BEnumerator\u003CSystem.Object\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.ComponentModel.IComponent\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.ComponentModel.IComponent\u003E\u002BEnumerator\u003CSystem.ComponentModel.IComponent\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.Net.Cookie\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.Net.Cookie\u003E\u002BEnumerator\u003CSystem.Net.Cookie\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E\u002BEnumerator\u003CSystem.String\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.Configuration.ConfigurationProperty\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.Configuration.ConfigurationProperty\u003E\u002BEnumerator\u003CSystem.Configuration.ConfigurationProperty\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CUnityEngine.Events.PersistentCall\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CUnityEngine.Events.PersistentCall\u003E\u002BEnumerator\u003CUnityEngine.Events.PersistentCall\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CUnityEngine.AudioSpatializerExtensionDefinition\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CUnityEngine.AudioSpatializerExtensionDefinition\u003E\u002BEnumerator\u003CUnityEngine.AudioSpatializerExtensionDefinition\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CUnityEngine.AudioAmbisonicExtensionDefinition\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CUnityEngine.AudioAmbisonicExtensionDefinition\u003E\u002BEnumerator\u003CUnityEngine.AudioAmbisonicExtensionDefinition\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CUnityEngine.GUILayoutEntry\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CUnityEngine.GUILayoutEntry\u003E\u002BEnumerator\u003CUnityEngine.GUILayoutEntry\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CFyberPlugin.MediationBundleInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CFyberPlugin.MediationBundleInfo\u003E\u002BEnumerator\u003CFyberPlugin.MediationBundleInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CIonic.Zlib.WorkItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CIonic.Zlib.WorkItem\u003E\u002BEnumerator\u003CIonic.Zlib.WorkItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSfs2X.Entities.Room\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSfs2X.Entities.Room\u003E\u002BEnumerator\u003CSfs2X.Entities.Room\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSfs2X.Entities.User\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSfs2X.Entities.User\u003E\u002BEnumerator\u003CSfs2X.Entities.User\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSfs2X.Entities.Data.SFSDataWrapper\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSfs2X.Entities.Data.SFSDataWrapper\u003E\u002BEnumerator\u003CSfs2X.Entities.Data.SFSDataWrapper\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSfs2X.Entities.Variables.BuddyVariable\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSfs2X.Entities.Variables.BuddyVariable\u003E\u002BEnumerator\u003CSfs2X.Entities.Variables.BuddyVariable\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSfs2X.Entities.Variables.RoomVariable\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSfs2X.Entities.Variables.RoomVariable\u003E\u002BEnumerator\u003CSfs2X.Entities.Variables.RoomVariable\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSfs2X.FSM.FSMState\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSfs2X.FSM.FSMState\u003E\u002BEnumerator\u003CSfs2X.FSM.FSMState\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CWebSocketSharp.Net.Cookie\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CWebSocketSharp.Net.Cookie\u003E\u002BEnumerator\u003CWebSocketSharp.Net.Cookie\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CBestHTTP.Extensions.KeyValuePair\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CBestHTTP.Extensions.KeyValuePair\u003E\u002BEnumerator\u003CBestHTTP.Extensions.KeyValuePair\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CBestHTTP.Cookies.Cookie\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CBestHTTP.Cookies.Cookie\u003E\u002BEnumerator\u003CBestHTTP.Cookies.Cookie\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CBestHTTP.HTTPConnection\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CBestHTTP.HTTPConnection\u003E\u002BEnumerator\u003CBestHTTP.HTTPConnection\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CUnityEngine.AssetBundle\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CUnityEngine.AssetBundle\u003E\u002BEnumerator\u003CUnityEngine.AssetBundle\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.Functions.ConditionExtension\u002BArgumentFunctions\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.Functions.ConditionExtension\u002BArgumentFunctions\u003E\u002BEnumerator\u003CNekki.Functions.ConditionExtension\u002BArgumentFunctions\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.Functions.FunctionExtension\u002BFunctionObject\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.Functions.FunctionExtension\u002BFunctionObject\u003E\u002BEnumerator\u003CNekki.Functions.FunctionExtension\u002BFunctionObject\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.Functions.FunctionExtension\u002BVariable\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.Functions.FunctionExtension\u002BVariable\u003E\u002BEnumerator\u003CNekki.Functions.FunctionExtension\u002BVariable\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.Yaml.Node\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.Yaml.Node\u003E\u002BEnumerator\u003CNekki.Yaml.Node\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNewtonsoft.Json.Bson.BsonToken\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNewtonsoft.Json.Bson.BsonToken\u003E\u002BEnumerator\u003CNewtonsoft.Json.Bson.BsonToken\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNewtonsoft.Json.Bson.BsonProperty\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNewtonsoft.Json.Bson.BsonProperty\u003E\u002BEnumerator\u003CNewtonsoft.Json.Bson.BsonProperty\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNewtonsoft.Json.Converters.IXmlNode\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNewtonsoft.Json.Converters.IXmlNode\u003E\u002BEnumerator\u003CNewtonsoft.Json.Converters.IXmlNode\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.Reflection.MemberInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.Reflection.MemberInfo\u003E\u002BEnumerator\u003CSystem.Reflection.MemberInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CQiHe.CodeLib.Pair\u00602\u003CSystem.Int32, System.String\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CQiHe.CodeLib.Pair\u00602\u003CSystem.Int32, System.String\u003E\u003E\u002BEnumerator\u003CQiHe.CodeLib.Pair\u00602\u003CSystem.Int32, System.String\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CRpnParser\u002BRpnOperand\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CRpnParser\u002BRpnOperand\u003E\u002BEnumerator\u003CRpnParser\u002BRpnOperand\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSimpleJSON.JSONNode\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSimpleJSON.JSONNode\u003E\u002BEnumerator\u003CSimpleJSON.JSONNode\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CQualityCondition\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CQualityCondition\u003E\u002BEnumerator\u003CQualityCondition\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.Xml.Linq.XElement\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.Xml.Linq.XElement\u003E\u002BEnumerator\u003CSystem.Xml.Linq.XElement\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CUnityEditor_iOS_Xcode.PlistElement\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CUnityEditor_iOS_Xcode.PlistElement\u003E\u002BEnumerator\u003CUnityEditor_iOS_Xcode.PlistElement\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CYamlDotNet.Core.Events.ParsingEvent\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CYamlDotNet.Core.Events.ParsingEvent\u003E\u002BEnumerator\u003CYamlDotNet.Core.Events.ParsingEvent\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CChangingSprite\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CChangingSprite\u003E\u002BEnumerator\u003CChangingSprite\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CDebugSimpleScroll\u002BScrollItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CDebugSimpleScroll\u002BScrollItem\u003E\u002BEnumerator\u003CDebugSimpleScroll\u002BScrollItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.Action\u00601\u003CSystem.Boolean\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.Action\u00601\u003CSystem.Boolean\u003E\u003E\u002BEnumerator\u003CSystem.Action\u00601\u003CSystem.Boolean\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.Hints.HintUI\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.Hints.HintUI\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Common.Hints.HintUI\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CInControl.InputDeviceManager\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CInControl.InputDeviceManager\u003E\u002BEnumerator\u003CInControl.InputDeviceManager\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CInControl.SwitchInputDevice\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CInControl.SwitchInputDevice\u003E\u002BEnumerator\u003CInControl.SwitchInputDevice\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Counters.ConditionCounter\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Counters.ConditionCounter\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.Counters.ConditionCounter\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.WarriorAttribute\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.WarriorAttribute\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.WarriorAttribute\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.UpgradeData\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.UpgradeData\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.Items.UpgradeData\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.ItemInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.ItemInfo\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.Items.ItemInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.UpgradeDataContainer\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.UpgradeDataContainer\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.Items.UpgradeDataContainer\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.ItemSetItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.ItemSetItem\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.Items.ItemSetItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.ItemSet\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.ItemSet\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.Items.ItemSet\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BRaidItemPack\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BRaidItemPack\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BRaidItemPack\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.RaidItemPackItemInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.RaidItemPackItemInfo\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.Items.RaidItemPackItemInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.GroupModel\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.GroupModel\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Support.GroupModel\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.UserItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.UserItem\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.UserItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Zones.Zone\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Zones.Zone\u003E\u002BEnumerator\u003CNekki.SF2.Core.Zones.Zone\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Zones.FightList\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Zones.FightList\u003E\u002BEnumerator\u003CNekki.SF2.Core.Zones.FightList\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Network.PricesData\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Network.PricesData\u003E\u002BEnumerator\u003CNekki.SF2.Core.Network.PricesData\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.CurrencyStruct\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.CurrencyStruct\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.CurrencyStruct\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.ResistanceStruct\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.ResistanceStruct\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.ResistanceStruct\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.FightResult\u002BItemRewardStruct\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.FightResult\u002BItemRewardStruct\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.FightResult\u002BItemRewardStruct\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Zones.BattleReplayable\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Zones.BattleReplayable\u003E\u002BEnumerator\u003CNekki.SF2.Core.Zones.BattleReplayable\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Zones.Battle\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Zones.Battle\u003E\u002BEnumerator\u003CNekki.SF2.Core.Zones.Battle\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.ListSF\u002BTemplateUser\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.ListSF\u002BTemplateUser\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.ListSF\u002BTemplateUser\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkInfoItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkInfoItem\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.PerkInfoItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.AttributesAlign\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.AttributesAlign\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Support.AttributesAlign\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.ListSF\u002BGroupsUser\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.ListSF\u002BGroupsUser\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.ListSF\u002BGroupsUser\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.Rule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.Rule\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.Rule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RosterBattle\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RosterBattle\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RosterBattle\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.RecipeItemInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.Items.RecipeItemInfo\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.Items.RecipeItemInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.PrizeLevel\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.PrizeLevel\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.PrizeLevel\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardChoice\u002BChoiceData\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardChoice\u002BChoiceData\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RewardChoice\u002BChoiceData\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RosterQuest\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RosterQuest\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RosterQuest\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RosterFight\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RosterFight\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RosterFight\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Quests.QuestStage\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Quests.QuestStage\u003E\u002BEnumerator\u003CNekki.SF2.Core.Quests.QuestStage\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.Int32, System.UInt32\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.Int32, System.UInt32\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CSystem.Int32, System.UInt32\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.GameCurrency\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.GameCurrency\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.GameCurrency\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.GameResistance\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.GameResistance\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.GameResistance\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.UserDataWriter\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.UserDataWriter\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.UserDataWriter\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RosterPerk\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RosterPerk\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RosterPerk\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.ModelParameters\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.ModelParameters\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Support.ModelParameters\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.CountersFight\u002BCurrentCounter\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.CountersFight\u002BCurrentCounter\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.CountersFight\u002BCurrentCounter\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Triggers.Trigger\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Triggers.Trigger\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Triggers.Trigger\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, System.Single\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, System.Single\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CSystem.String, System.Single\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.GameUtils\u002BHitEffect\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.GameUtils\u002BHitEffect\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.GameUtils\u002BHitEffect\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CUnityEngine.Canvas, System.Boolean\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CUnityEngine.Canvas, System.Boolean\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CUnityEngine.Canvas, System.Boolean\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CNekki.SF2.Core.Fights.Model.AI.Data.TacticalTableHolder, Pair\u00602\u003CSystem.String, System.String\u003E\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CNekki.SF2.Core.Fights.Model.AI.Data.TacticalTableHolder, Pair\u00602\u003CSystem.String, System.String\u003E\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CNekki.SF2.Core.Fights.Model.AI.Data.TacticalTableHolder, Pair\u00602\u003CSystem.String, System.String\u003E\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, System.Collections.Generic.List\u00601\u003CSystem.String\u003E\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, System.Collections.Generic.List\u00601\u003CSystem.String\u003E\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CSystem.String, System.Collections.Generic.List\u00601\u003CSystem.String\u003E\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.Tactic\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.Tactic\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.AI.Data.Tactic\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.GroupTables\u003E, System.String\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.GroupTables\u003E, System.String\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CSystem.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.GroupTables\u003E, System.String\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, Nekki.SF2.Core.Fights.Model.AI.Data.TacticValue\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, Nekki.SF2.Core.Fights.Model.AI.Data.TacticValue\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CSystem.String, Nekki.SF2.Core.Fights.Model.AI.Data.TacticValue\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.TacticalTableHolder\u002BAnimationTablesForAnimation\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.TacticalTableHolder\u002BAnimationTablesForAnimation\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.AI.Data.TacticalTableHolder\u002BAnimationTablesForAnimation\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.GroupTables\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.GroupTables\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.AI.Data.GroupTables\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.TacticalTable\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.TacticalTable\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.AI.Data.TacticalTable\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.Intervals\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.Intervals\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.AI.Data.Intervals\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.IntervalNew\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.Data.IntervalNew\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.AI.Data.IntervalNew\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation, System.Single\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation, System.Single\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation, System.Single\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.TemplateAnimation\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.TemplateAnimation\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.TemplateAnimation\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.WeaponModel\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.WeaponModel\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.WeaponModel\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.ModelAi\u002BDecision\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.ModelAi\u002BDecision\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.AI.ModelAi\u002BDecision\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Intervals.IntervalAnimation\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Intervals.IntervalAnimation\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Intervals.IntervalAnimation\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.ModelAi\u002BChanceAndFlag\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.AI.ModelAi\u002BChanceAndFlag\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.AI.ModelAi\u002BChanceAndFlag\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Conditions.ConditionKeys\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Conditions.ConditionKeys\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Conditions.ConditionKeys\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Trick\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Trick\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Trick\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Conditions.ConditionAnimation\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Conditions.ConditionAnimation\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Conditions.ConditionAnimation\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Events.EventAnimation\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Events.EventAnimation\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Events.EventAnimation\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Actions.ActionAnimation\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Actions.ActionAnimation\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Actions.ActionAnimation\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation\u002BAnimationContainerStruct\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation\u002BAnimationContainerStruct\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation\u002BAnimationContainerStruct\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Intervals.IntervalAttack\u002BReaction\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Intervals.IntervalAttack\u002BReaction\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.Intervals.IntervalAttack\u002BReaction\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, System.Xml.XmlNode\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, System.Xml.XmlNode\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CSystem.String, System.Xml.XmlNode\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation, System.String\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation, System.String\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.InfoAnimation, System.String\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.EventModelDelayed\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.EventModelDelayed\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.EventModelDelayed\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.SelectAnimation\u002BTriggerStruct\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.SelectAnimation\u002BTriggerStruct\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.SelectAnimation\u002BTriggerStruct\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.SelectAnimation\u002BSelectInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.SelectAnimation\u002BSelectInfo\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.SelectAnimation\u002BSelectInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.TransitionAnimation\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.TransitionAnimation\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Animation.Moves.TransitionAnimation\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.SelectAnimation\u002BSelectInfo\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.SelectAnimation\u002BSelectInfo\u003E\u003E\u002BEnumerator\u003CSystem.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Animation.SelectAnimation\u002BSelectInfo\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Controller.ModelController\u002BKeyInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Controller.ModelController\u002BKeyInfo\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Controller.ModelController\u002BKeyInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Components.Edges.ModelEdge\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Components.Edges.ModelEdge\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Components.Edges.ModelEdge\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, System.Int32\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, System.Int32\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CSystem.String, System.Int32\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.Int32, System.Int32\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.Int32, System.Int32\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CSystem.Int32, System.Int32\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.Evaluation\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.Evaluation\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Support.Evaluation\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.RatingEvaluation\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.RatingEvaluation\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Support.RatingEvaluation\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.Defense\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Support.Defense\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Support.Defense\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.Rating\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.Rating\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.Rating\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.ItemRule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.ItemRule\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.ItemRule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.ModelObject\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.ModelObject\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.ModelObject\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.LocationSelector\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.LocationSelector\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.LocationSelector\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.GameUtils\u002BAlignTargetAttribute\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.GameUtils\u002BAlignTargetAttribute\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.GameUtils\u002BAlignTargetAttribute\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.HotGroundRule\u002BLimitedNode\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.HotGroundRule\u002BLimitedNode\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.HotGroundRule\u002BLimitedNode\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.InFightRule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.InFightRule\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.InFightRule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.NoButtonRule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.NoButtonRule\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.NoButtonRule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.NoAnimationRule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.NoAnimationRule\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.NoAnimationRule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.RandomRule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.RandomRule\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.RandomRule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.NoPerksRule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.NoPerksRule\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.NoPerksRule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.AvatarRule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.AvatarRule\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.AvatarRule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.NameRule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.NameRule\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.NameRule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.ChangeFightRule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.ChangeFightRule\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.ChangeFightRule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.Recipe\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.Recipe\u003E\u002BEnumerator\u003CNekki.SF2.Core.Forge.Recipe\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.Aspect\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.Aspect\u003E\u002BEnumerator\u003CNekki.SF2.Core.Forge.Aspect\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.RecipeItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.RecipeItem\u003E\u002BEnumerator\u003CNekki.SF2.Core.Forge.RecipeItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.RecipePrices\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.RecipePrices\u003E\u002BEnumerator\u003CNekki.SF2.Core.Forge.RecipePrices\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.Variation\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.Variation\u003E\u002BEnumerator\u003CNekki.SF2.Core.Forge.Variation\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkStruct\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkStruct\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.PerkStruct\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.RecipePrice\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.RecipePrice\u003E\u002BEnumerator\u003CNekki.SF2.Core.Forge.RecipePrice\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.VariationCondition\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Forge.VariationCondition\u003E\u002BEnumerator\u003CNekki.SF2.Core.Forge.VariationCondition\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.GameCenter.SocialAchievement\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.GameCenter.SocialAchievement\u003E\u002BEnumerator\u003CNekki.SF2.Core.GameCenter.SocialAchievement\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Localization.LocalizationManager\u002BLanguage\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Localization.LocalizationManager\u002BLanguage\u003E\u002BEnumerator\u003CNekki.SF2.Core.Localization.LocalizationManager\u002BLanguage\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.MessageInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.MessageInfo\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.MessageInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.IMuteListener\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.IMuteListener\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.IMuteListener\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003Csf2.ClanRaid\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003Csf2.ClanRaid\u003E\u002BEnumerator\u003Csf2.ClanRaid\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BClanLevel\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BClanLevel\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BClanLevel\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003Csf2.ClanMember\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003Csf2.ClanMember\u003E\u002BEnumerator\u003Csf2.ClanMember\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003Csf2.CountableItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003Csf2.CountableItem\u003E\u002BEnumerator\u003Csf2.CountableItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003Csf2.ShortPlayer\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003Csf2.ShortPlayer\u003E\u002BEnumerator\u003Csf2.ShortPlayer\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidAnticheatHelper\u002BPerkDumpColumn\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidAnticheatHelper\u002BPerkDumpColumn\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.RaidAnticheatHelper\u002BPerkDumpColumn\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.IConfigLoader\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.IConfigLoader\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.IConfigLoader\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BLocalsPair\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BLocalsPair\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BLocalsPair\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BConsumable\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BConsumable\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BConsumable\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BRaidLootContainer\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BRaidLootContainer\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BRaidLootContainer\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidBaseHandler\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidBaseHandler\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.RaidBaseHandler\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003Csf2.DailyQuest\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003Csf2.DailyQuest\u003E\u002BEnumerator\u003Csf2.DailyQuest\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.RosterAchievement\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.RosterAchievement\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.RosterAchievement\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.BalancerItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.BalancerItem\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.BalancerItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Network.Pack\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Network.Pack\u003E\u002BEnumerator\u003CNekki.SF2.Core.Network.Pack\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.Xml.XmlNode\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.Xml.XmlNode\u003E\u002BEnumerator\u003CSystem.Xml.XmlNode\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Network.GiveItemLogin\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Network.GiveItemLogin\u003E\u002BEnumerator\u003CNekki.SF2.Core.Network.GiveItemLogin\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Network.NewsItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Network.NewsItem\u003E\u002BEnumerator\u003CNekki.SF2.Core.Network.NewsItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Network.NewsButton\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Network.NewsButton\u003E\u002BEnumerator\u003CNekki.SF2.Core.Network.NewsButton\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.BaseDialog\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.BaseDialog\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.BaseDialog\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Quests.QuestCondition\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Quests.QuestCondition\u003E\u002BEnumerator\u003CNekki.SF2.Core.Quests.QuestCondition\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardStruct\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardStruct\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RewardStruct\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Quests.QuestAction\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Quests.QuestAction\u003E\u002BEnumerator\u003CNekki.SF2.Core.Quests.QuestAction\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Quests.QuestEvent\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Quests.QuestEvent\u003E\u002BEnumerator\u003CNekki.SF2.Core.Quests.QuestEvent\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.CurrencyBaseValues\u002BCurrencyBaseValue\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.CurrencyBaseValues\u002BCurrencyBaseValue\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.CurrencyBaseValues\u002BCurrencyBaseValue\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.CharProgLevel\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.CharProgLevel\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.CharProgLevel\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardMoney\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardMoney\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RewardMoney\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardCurrency\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardCurrency\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RewardCurrency\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardResistance\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardResistance\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RewardResistance\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardItem\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RewardItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardChoice\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardChoice\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RewardChoice\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.FightResult\u002BCurrencyRewardStruct\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.FightResult\u002BCurrencyRewardStruct\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.FightResult\u002BCurrencyRewardStruct\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.FightResult\u002BResistanceRewardStruct\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.FightResult\u002BResistanceRewardStruct\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.FightResult\u002BResistanceRewardStruct\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CVector3f\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CVector3f\u003E\u002BEnumerator\u003CVector3f\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, System.String\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CSystem.String, System.String\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CSystem.String, System.String\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Aspect\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Aspect\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Aspect\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Achievement\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Achievement\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Achievement\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.CurrencyCostRule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Rules.CurrencyCostRule\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Rules.CurrencyCostRule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.AchievCounter\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.AchievCounter\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.AchievCounter\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.GameUtils\u002BSupport\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.GameUtils\u002BSupport\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.GameUtils\u002BSupport\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.OutdateLevelItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.OutdateLevelItem\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.OutdateLevelItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerksStage\u002BActionPerk\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerksStage\u002BActionPerk\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.PerksStage\u002BActionPerk\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkTrigger\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkTrigger\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.PerkTrigger\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkCondition\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkCondition\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.PerkCondition\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkHistory\u002BPerk\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkHistory\u002BPerk\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.PerkHistory\u002BPerk\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkEvent\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkEvent\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.PerkEvent\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkData\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkData\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.PerkData\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkModelStruct\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkModelStruct\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.PerkModelStruct\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.InfoPerk\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.InfoPerk\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.InfoPerk\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkAction\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkAction\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.PerkAction\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkTree\u002BPerkBranch\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.PerkTree\u002BPerkBranch\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.PerkTree\u002BPerkBranch\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.RandomTactic\u002BDelayTactic\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.RandomTactic\u002BDelayTactic\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.RandomTactic\u002BDelayTactic\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Zones.BattlePeriodic\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Zones.BattlePeriodic\u003E\u002BEnumerator\u003CNekki.SF2.Core.Zones.BattlePeriodic\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.BaseScrollItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.BaseScrollItem\u003E\u002BEnumerator\u003CNekki.SF2.GUI.BaseScrollItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.ControlsInfo.ControlsInfoCategoryContent\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.ControlsInfo.ControlsInfoCategoryContent\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Common.ControlsInfo.ControlsInfoCategoryContent\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.ControlsInfo.ControlsInfoCategoryTab\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.ControlsInfo.ControlsInfoCategoryTab\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Common.ControlsInfo.ControlsInfoCategoryTab\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.Hints.HintGroup\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.Hints.HintGroup\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Common.Hints.HintGroup\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CInControl.InputDevice\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CInControl.InputDevice\u003E\u002BEnumerator\u003CInControl.InputDevice\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.MenuControls\u002BKeyboardEventData\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.MenuControls\u002BKeyboardEventData\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Common.MenuControls\u002BKeyboardEventData\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.MenuControls\u002BGamePadEventData\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.MenuControls\u002BGamePadEventData\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Common.MenuControls\u002BGamePadEventData\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.SceneSelector\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.SceneSelector\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Common.SceneSelector\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.TextTimer\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.TextTimer\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.TextTimer\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CUnityEngine.UI.Button\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CUnityEngine.UI.Button\u003E\u002BEnumerator\u003CUnityEngine.UI.Button\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CUnityEngine.RectTransform\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CUnityEngine.RectTransform\u003E\u002BEnumerator\u003CUnityEngine.RectTransform\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.MapButton\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.MapButton\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Map.MapButton\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardLotterySlot\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.API.RewardLotterySlot\u003E\u002BEnumerator\u003CNekki.SF2.Core.API.RewardLotterySlot\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.ScrollDialogElement\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.ScrollDialogElement\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.ScrollDialogElement\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.StoryDialogContent\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.StoryDialogContent\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.StoryDialogContent\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CLabelButton\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CLabelButton\u003E\u002BEnumerator\u003CLabelButton\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.ChatSFView\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.ChatSFView\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.Raids.ChatSFView\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.BattleRaidCellInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.BattleRaidCellInfo\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.BattleRaidCellInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.ClanLogoAttribute_CellInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.ClanLogoAttribute_CellInfo\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.ClanLogoAttribute_CellInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.MemberInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.MemberInfo\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.MemberInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.SeparatorInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.SeparatorInfo\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.SeparatorInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.MemberClanInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.MemberClanInfo\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.Raids.Clans.MemberClanInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSFButton\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSFButton\u003E\u002BEnumerator\u003CSFButton\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003Csf2.SeasonLeaderboardRow\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003Csf2.SeasonLeaderboardRow\u003E\u002BEnumerator\u003Csf2.SeasonLeaderboardRow\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.EndFightDialog\u002BExpString\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.EndFightDialog\u002BExpString\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.Raids.EndFightDialog\u002BExpString\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.EndFightDialog\u002BGoldString\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.EndFightDialog\u002BGoldString\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.Raids.EndFightDialog\u002BGoldString\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.RaidLeaguesLeaderboard\u002BPlayerItemInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.RaidLeaguesLeaderboard\u002BPlayerItemInfo\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.Raids.RaidLeaguesLeaderboard\u002BPlayerItemInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.RaidDailyTaskCell\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.RaidDailyTaskCell\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.Raids.RaidDailyTaskCell\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.RaidLeaguesLeaderboard\u002BPlayerItemInfo\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.RaidLeaguesLeaderboard\u002BPlayerItemInfo\u003E\u003E\u002BEnumerator\u003CSystem.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.RaidLeaguesLeaderboard\u002BPlayerItemInfo\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003Csf2.LeaguePlayer\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003Csf2.LeaguePlayer\u003E\u002BEnumerator\u003Csf2.LeaguePlayer\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.RaidViewCellInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Dialogs.Raids.RaidViewCellInfo\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Dialogs.Raids.RaidViewCellInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.Collections.IEnumerator\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.Collections.IEnumerator\u003E\u002BEnumerator\u003CSystem.Collections.IEnumerator\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CDG.Tweening.Sequence\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CDG.Tweening.Sequence\u003E\u002BEnumerator\u003CDG.Tweening.Sequence\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BRaidLeague\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BRaidLeague\u003E\u002BEnumerator\u003CNekki.SF2.Core.MultiplayerSF.RaidConfig\u002BRaidLeague\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CNekki.SF2.GUI.LabelAlias, Nekki.SF2.GUI.LabelAlias\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CNekki.SF2.GUI.LabelAlias, Nekki.SF2.GUI.LabelAlias\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CNekki.SF2.GUI.LabelAlias, Nekki.SF2.GUI.LabelAlias\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Fight.ActivePerkItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Fight.ActivePerkItem\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Fight.ActivePerkItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Fight.ActivePerkItemContainer\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Fight.ActivePerkItemContainer\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Fight.ActivePerkItemContainer\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Fight.ComboModel\u002BComboNode\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Fight.ComboModel\u002BComboNode\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Fight.ComboModel\u002BComboNode\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Fight.Line\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Fight.Line\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Fight.Line\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Fight.DisplayModel\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Fight.DisplayModel\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Fight.DisplayModel\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.GeneralMenu.MenuItemButton\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.GeneralMenu.MenuItemButton\u003E\u002BEnumerator\u003CNekki.SF2.GUI.GeneralMenu.MenuItemButton\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.GeneralMenu.GeneralMenuList\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.GeneralMenu.GeneralMenuList\u003E\u002BEnumerator\u003CNekki.SF2.GUI.GeneralMenu.GeneralMenuList\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.BattlePrizeElement\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.BattlePrizeElement\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Map.BattlePrizeElement\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.ResolutionImage\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.ResolutionImage\u003E\u002BEnumerator\u003CNekki.SF2.GUI.ResolutionImage\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.MapButtonInfo\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.MapButtonInfo\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Map.MapButtonInfo\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.ZoneScrollItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.ZoneScrollItem\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Map.ZoneScrollItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.IndicatorFight\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.IndicatorFight\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Map.IndicatorFight\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.RaidKeyUnit\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.RaidKeyUnit\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Map.RaidKeyUnit\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.BattleButton\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Map.BattleButton\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Map.BattleButton\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Menu.MenuMaterialUI\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Menu.MenuMaterialUI\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Menu.MenuMaterialUI\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.UIModule\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.UIModule\u003E\u002BEnumerator\u003CNekki.SF2.GUI.UIModule\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CNekki.SF2.Core.Utils.Achievement, System.Int32\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPair\u00602\u003CNekki.SF2.Core.Utils.Achievement, System.Int32\u003E\u003E\u002BEnumerator\u003CPair\u00602\u003CNekki.SF2.Core.Utils.Achievement, System.Int32\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Profile.KeyIcon\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Profile.KeyIcon\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Profile.KeyIcon\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.ProfilePerk\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.ProfilePerk\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.ProfilePerk\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.SectionButton\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Common.SectionButton\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Common.SectionButton\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.ProfilePerkContainer\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Utils.Perks.ProfilePerkContainer\u003E\u002BEnumerator\u003CNekki.SF2.Core.Utils.Perks.ProfilePerkContainer\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Pvp.PerkItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Pvp.PerkItem\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Pvp.PerkItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CUnityEngine.GameObject\u003E\u002BEnumerator\u003CUnityEngine.GameObject\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Shop.Forge.MaterialPriceUI\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Shop.Forge.MaterialPriceUI\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Shop.Forge.MaterialPriceUI\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Shop.Forge.RecipePropertyUI\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Shop.Forge.RecipePropertyUI\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Shop.Forge.RecipePropertyUI\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CIconLabelButton\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CIconLabelButton\u003E\u002BEnumerator\u003CIconLabelButton\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Shop.ParameterScrollItem\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Shop.ParameterScrollItem\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Shop.ParameterScrollItem\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Shop.PerkUI\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Shop.PerkUI\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Shop.PerkUI\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.StrikeThroughTextLine\u002BLine\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.StrikeThroughTextLine\u002BLine\u003E\u002BEnumerator\u003CNekki.SF2.GUI.StrikeThroughTextLine\u002BLine\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.UITextParseUtils\u002BStrikeTemplate\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.UITextParseUtils\u002BStrikeTemplate\u003E\u002BEnumerator\u003CNekki.SF2.GUI.UITextParseUtils\u002BStrikeTemplate\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.TextDebugger\u002BQuadBox\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.TextDebugger\u002BQuadBox\u003E\u002BEnumerator\u003CNekki.SF2.GUI.TextDebugger\u002BQuadBox\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.ClassUIVertex\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.ClassUIVertex\u003E\u002BEnumerator\u003CNekki.SF2.GUI.ClassUIVertex\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.IndexRange\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.IndexRange\u003E\u002BEnumerator\u003CNekki.SF2.GUI.IndexRange\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.TextPicNestedClasses\u002BGlyph\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.TextPicNestedClasses\u002BGlyph\u003E\u002BEnumerator\u003CNekki.SF2.GUI.TextPicNestedClasses\u002BGlyph\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Tutorial.TutorialNode\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.Tutorial.TutorialNode\u003E\u002BEnumerator\u003CNekki.SF2.GUI.Tutorial.TutorialNode\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.UITextParseUtils\u002BCommand\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.GUI.UITextParseUtils\u002BCommand\u003E\u002BEnumerator\u003CNekki.SF2.GUI.UITextParseUtils\u002BCommand\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CSystem.Action\u00601\u003CNetwork.core.events.NetworkEvent\u003E\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CSystem.Action\u00601\u003CNetwork.core.events.NetworkEvent\u003E\u003E\u002BEnumerator\u003CSystem.Action\u00601\u003CNetwork.core.events.NetworkEvent\u003E\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CPriorityEvent\u002BEventListener\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CPriorityEvent\u002BEventListener\u003E\u002BEnumerator\u003CPriorityEvent\u002BEventListener\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    },
+    {
+      "method": "System.Collections.Generic.List\u00601\u003CRaidInfoPrize\u002BPrize\u003E::GetEnumerator",
+      "return_type": "System.Collections.Generic.List\u00601\u003CRaidInfoPrize\u002BPrize\u003E\u002BEnumerator\u003CRaidInfoPrize\u002BPrize\u003E",
+      "return_context": "GenericInstanceTypeAnalysisContext",
+      "value_type": true,
+      "metadata_unboxed_size": 0,
+      "hidden_buffer": false,
+      "hfa": false
+    }
+  ],
+  "methodinfo_got_address": "0x39D61A0",
+  "methodinfo_metadata_slot": "0x3B4CE60",
+  "actual_concrete_methodinfo": {
+    "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E::GetEnumerator",
+    "return_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E",
+    "return_context": "GenericInstanceTypeAnalysisContext",
+    "value_type": true,
+    "metadata_unboxed_size": 0,
+    "hidden_buffer": false,
+    "hfa": false
+  }
+}

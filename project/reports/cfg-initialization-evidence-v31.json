@@ -1,0 +1,115 @@
+{
+  "status": "PASS_SCOPED_CFG_INITIALIZATION_WITNESSES_PENDING_ACTUAL_CIL_EXECUTION",
+  "checks": 26,
+  "source_body": {
+    "start": "0x7A8F20",
+    "end": "0x7A9128",
+    "size": 520,
+    "sha256": "a809ba86d78a7b73c9938699426f19400aca92d342ef5e3ce61cbef56121b67f"
+  },
+  "metadata_initializer": "0xB12650",
+  "class_initializer": "0xB2E720",
+  "metadata": [
+    {
+      "Load": "0x7a8f3c",
+      "Branch": "0x7a8f44",
+      "Skip": "0x7a8f60",
+      "Flag": "0x3a36685",
+      "FlagRegister": 8
+    },
+    {
+      "Load": "0x7a8fa0",
+      "Branch": "0x7a8fa4",
+      "Skip": "0x7a8fc0",
+      "Flag": "0x3a3667f",
+      "FlagRegister": 8
+    },
+    {
+      "Load": "0x7a8fd8",
+      "Branch": "0x7a8fdc",
+      "Skip": "0x7a8ff8",
+      "Flag": "0x3a36680",
+      "FlagRegister": 8
+    },
+    {
+      "Load": "0x7a9048",
+      "Branch": "0x7a904c",
+      "Skip": "0x7a9050",
+      "Flag": "0x3a36682",
+      "FlagRegister": 8
+    },
+    {
+      "Load": "0x7a9054",
+      "Branch": "0x7a905c",
+      "Skip": "0x7a9078",
+      "Flag": "0x3a36614",
+      "FlagRegister": 8
+    },
+    {
+      "Load": "0x7a90d0",
+      "Branch": "0x7a90d4",
+      "Skip": "0x7a9050",
+      "Flag": "0x3a36682",
+      "FlagRegister": 8
+    },
+    {
+      "Load": "0x7a9118",
+      "Branch": "0x7a9120",
+      "Skip": "0x7a9124",
+      "Flag": "0x3a36614",
+      "FlagRegister": 8
+    }
+  ],
+  "classes": [
+    {
+      "Start": "0x7a8f7c",
+      "Skip": "0x7a8f94",
+      "Target": "0xb2e720",
+      "ClassLoad": "0x7a8f78",
+      "ClassRegister": 0
+    },
+    {
+      "Start": "0x7a8fc4",
+      "Skip": "0x7a8fd8",
+      "Target": "0xb2e720",
+      "ClassLoad": "0x7a8fc0",
+      "ClassRegister": 0
+    },
+    {
+      "Start": "0x7a8ffc",
+      "Skip": "0x7a9014",
+      "Target": "0xb2e720",
+      "ClassLoad": "0x7a8ff8",
+      "ClassRegister": 0
+    },
+    {
+      "Start": "0x7a9038",
+      "Skip": "0x7a9048",
+      "Target": "0xb2e720",
+      "ClassLoad": "0x7a9030",
+      "ClassRegister": 0
+    },
+    {
+      "Start": "0x7a90f8",
+      "Skip": "0x7a9110",
+      "Target": "0xb2e720",
+      "ClassLoad": "0x7a90f4",
+      "ClassRegister": 0
+    }
+  ],
+  "dataflow": "Definite ADRP/ADD register constants merge across in-FDE CFG edges. Unknown effects destroy facts. Only independently identified runtime helper calls preserve callee-saved constants. Flag loads and tests have no alternative incoming interior edges. Live flag use, MOVK read-modify-write, mismatched cold semantic branch and external tail-call continuations reject suppression.",
+  "metadata_lowering": "Replace only validated flag load with one and flag test with initialized edge. Preserve intervening EOR and the duplicated real W23 CBZ/CBNZ decision. Method metadata references remain bound to original metadata evidence.",
+  "class_lowering": "Emit semantic void call knownClassInit(X0), then jump to validated initialized edge. CLR RunClassConstructor lowering must prove the X0 type comes from original runtime metadata; never delete .cctor effects. Exact immutable same-class-slot reload after native call is ABI scaffolding.",
+  "class_receiver_boundary": "The matcher identifies X0 native class receiver and exact preceding callee-saved-slot load. Strong metadata-origin typed receiver validation is owned by the separate call lowering. This matcher alone does not prove a generic raw pointer is a CLR type handle. Flag and finished load destinations must not be W0; paired native mutations reject a source that destroys the X0 receiver.",
+  "input_contract": "Only exact independently FDE-bounded selected legacy NSO24 bodies with opt-in. The API cannot derive a boundary from an arbitrary byte span and must not be used on guessed next-method slices.",
+  "next_gate": "Fresh v31 actual recovered InternalDecrypt must execute against original absent-detector native currency fixtures. v30 still has eight reachable diagnostics and zero executed cases. Matcher recognition is not a recovered-code execution pass.",
+  "source_files": [
+    "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64CfgInitializationPattern.cs",
+    "src/re/CfgInitializationProbe/Program.cs"
+  ],
+  "source_sha256": {
+    "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64CfgInitializationPattern.cs": "e5e9bc6669d38f5879d79ca4a2cc0a2e7b5924cc405434c2e9eea1dd2cbdfcfa",
+    "src/re/CfgInitializationProbe/Program.cs": "fdd2065e4175d21f3c9486d92bf304d529eb3aeb8fa736c09c1bc762ccc7a08a"
+  },
+  "limits": "No blanket runtime-guard removal, no broad class-layout or ARM64 ABI support, no full game-source compilation or port completion claim."
+}

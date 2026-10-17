@@ -1,0 +1,16 @@
+{
+  "elapsed_seconds": 0.4488924,
+  "commit": "145a751023258a35f133c4f111785a8df0580985",
+  "upstream": "https://github.com/rodroidmods/il2cpp-dumper-rs",
+  "log": "F:\\SF2SwitchPC\\logs\\rust-source-v1.log",
+  "scope": "Unmodified independent ARM64 recovery pipeline on original NSO/metadata. Type filter restricts body recovery. Tool grading is not an independent native comparison or source-build/portability proof.",
+  "sha256": {
+    "refs\\il2cpp-dumper-rs\\target\\release\\il2cpp_dumper.exe": "a4008f0e7177eb0c3b7cf8528f2cc044cad29b70978570b104044769307f2d3e",
+    "analysis\\il2cpp\\rust-source-v1\\probe-config.json": "e2fdb71e26d09661ac5c6406dd774ca8d8ed0d18424f2ce8cba0944852dc392f",
+    "unpacked\\effective\\romfs\\Data\\Managed\\Metadata\\global-metadata.dat": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+    "unpacked\\effective\\exefs\\main": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238"
+  },
+  "status": "PROBE_FAILED",
+  "output": "F:\\SF2SwitchPC\\analysis\\il2cpp\\rust-source-v1",
+  "exit_code": 1
+}

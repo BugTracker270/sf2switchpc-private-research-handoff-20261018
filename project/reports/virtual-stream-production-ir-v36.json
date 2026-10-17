@@ -1,0 +1,41 @@
+{
+  "status": "PASS_SCOPED_NATIVE_VIRTUAL_PROOF_THROUGH_PRODUCTION_EMITTER_INPUT",
+  "checks": 14,
+  "core_sha256": "23b43f3a1d07dca7483ec0fac031380d934a16f2fc8c34bc5922f52af0ac6044",
+  "accepted_original_call_indices": [
+    26,
+    36
+  ],
+  "unresolved_original_indirect_indices": [
+    195,
+    231
+  ],
+  "evidence": {
+    "baseline": {
+      "path": "reports/virtual-stream-stage-survey-v36.json",
+      "sha256": "8e4dc3be6f144f56387369c512f644c151a091af07d4a0e33a2ac0f00f8e90eb"
+    },
+    "production": {
+      "path": "reports/virtual-stream-stage-survey-v36-after3.json",
+      "sha256": "164e27ec3a0ad57d7093de1987a46a3d51c409b4d30cc3b0e1a9e07b150c6477"
+    },
+    "contract": {
+      "path": "reports/virtual-dispatch-contract-v36.json",
+      "sha256": "7c1384b398d53436f7a2c5b55842380efe1f4f0e95dea04af1ce15beb0586b50"
+    },
+    "native": {
+      "path": "reports/native-virtual-stream-prefix-v36.json",
+      "sha256": "d4e4a1ccacde74234377028dbbdd6e7213d9157674bbd3ba76428902dadba6b4"
+    },
+    "review": {
+      "path": "reports/virtual-dispatch-independent-source-review-v36.json",
+      "sha256": "30641868537180ca5739da84255b5f1e419bf39ee4e8de3f0d479742fd5c40c0"
+    }
+  },
+  "recovered_game_methods_invoked": 0,
+  "recovered_cil_or_source_modified": false,
+  "full_clean_decompile_ready": false,
+  "whole_game_source_ready": false,
+  "portable_game_ready": false,
+  "scope": "Two actual ReadByte dispatches retain exact original parameter-root proof through the complete unchanged production analysis pipeline and final emitter validation. Independent synthetic tests exercise real emitter callvirt/CallVoid/direct-base behavior and CLR override/null effects; original native fixtures exercise the reader prefix and MemoryStream override. These scopes do not execute the whole recovered reader. Later duplicate CFG edges, unrelated raw class-layout initialization and the surviving companion-load diagnostic remain separate limitations. IR does not retain integer load width; exact64-bit native Stream-site correlation is separate, not a general width-recovery claim."
+}

@@ -1,0 +1,629 @@
+{
+  "status": "READ_ONLY_PRIVATE_ACCESS_COMPILER_CENSUS",
+  "recovery_run": "nso-runtime-helper-abi-v37",
+  "source_manifest": "reports\\recovered-source-profile-legacy-reference-check-nso-runtime-helper-abi-v37.json",
+  "source_manifest_sha256": "7f2c56bf344f90615965cfabde9196d998d65dad3e5e2220e8bfab931a955115",
+  "assemblies": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "unique_diagnostic_lines": 20733,
+      "error_codes": {
+        "CS0030": 8309,
+        "CS0019": 5076,
+        "CS0122": 2713,
+        "CS1061": 1555,
+        "CS0234": 1092,
+        "CS0266": 458,
+        "CS0023": 349,
+        "CS0037": 341,
+        "CS0117": 211,
+        "CS0177": 159,
+        "CS0103": 104,
+        "CS7036": 98,
+        "CS0269": 62,
+        "CS8174": 37,
+        "CS0165": 36,
+        "CS0079": 32,
+        "CS1729": 25,
+        "CS0149": 22,
+        "CS0191": 16,
+        "CS0250": 11,
+        "CS1510": 9,
+        "CS0029": 6,
+        "CS0221": 3,
+        "CS0246": 3,
+        "CS0152": 2,
+        "CS8373": 2,
+        "CS8172": 1,
+        "CS1540": 1
+      },
+      "private_access_diagnostics": 2713,
+      "top_inaccessible_members": {
+        "JsonSerializerInternalBase.Serializer__BackingField": 101,
+        "Rect.m_XMin": 75,
+        "ActDetectorBase.isRunning": 69,
+        "Token.start": 62,
+        "Token.end": 62,
+        "Scanner.Current__BackingField": 59,
+        "ErrorRange._module": 52,
+        "ErrorRange._descriptionEnd": 52,
+        "Scanner.tokensParsed": 52,
+        "Rect.m_YMin": 50,
+        "YamlException.Start__BackingField": 48,
+        "YamlException.End__BackingField": 48,
+        "Rect.m_Width": 47,
+        "Rect.m_Height": 47,
+        "ParsingEvent.start": 43,
+        "ParsingEvent.end": 43,
+        "JValue._value": 41,
+        "JValue._valueType": 41,
+        "OutputBuffer.pos": 35,
+        "BitEncoder.ProbPrices": 31,
+        "BsonValue._value": 31,
+        "BsonValue._type": 31,
+        "Scanner.tokenAvailable": 30,
+        "Scanner.previous": 26,
+        "WebSocket.webSocket": 23,
+        "JValue.GetValueType(JTokenType?, object)": 22,
+        "InputBuffer.bitBuffer": 21,
+        "FastEncoderWindow.bufEnd": 21,
+        "DeflateInput.count": 20,
+        "OutWindow._pos": 20,
+        "Packet.attachments": 19,
+        "NekkiRandom.myGenerator": 19,
+        "HTTPFormBase.Fields__BackingField": 18,
+        "Packet.TransportEvent__BackingField": 17,
+        "Packet.SocketIOEvent__BackingField": 17,
+        "XmlNodeWrapper._node": 17,
+        "ServerProviderBase.Form._data": 15,
+        "WebSocketResponse.closed": 15,
+        "DeflateInput.startIndex": 15,
+        "JsonReader.token": 15,
+        "JsonReader._currentState": 15,
+        "CameraShakeInstance.sustain": 14,
+        "WebSocketBinaryFrame.Data__BackingField": 14,
+        "WebSocketBinaryFrame.Pos__BackingField": 14,
+        "WebSocketBinaryFrame.Length__BackingField": 14,
+        "WebSocketBinaryFrame.IsFinal__BackingField": 14,
+        "HTTPFieldData.Binary__BackingField": 14,
+        "OutputBuffer.byteBuffer": 13,
+        "Encoder.LenPriceTableEncoder._prices": 13,
+        "Encoder.LiteralEncoder.m_NumPrevBits": 13,
+        "OutWindow._streamPos": 13,
+        "Decoder.LiteralDecoder.Decoder2": 13,
+        "WebSocketFrameReader.Data__BackingField": 12,
+        "InWindow._posLimit": 12,
+        "GUIMessageList.messages": 11,
+        "PreciseLocale.PreciseLocaleSwitch": 11,
+        "Packet.AttachmentCount__BackingField": 11,
+        "HTTPConnection.State__BackingField": 11,
+        "FastEncoderWindow.bufPos": 11,
+        "SimpleKey.cursor": 11
+      },
+      "top_member_source_expression_shapes": {
+        "JsonSerializerInternalBase.Serializer__BackingField": {
+          "read_or_address_other": 99,
+          "simple_store": 2
+        },
+        "Rect.m_XMin": {
+          "simple_store": 38,
+          "read_or_address_other": 37
+        },
+        "ActDetectorBase.isRunning": {
+          "read_or_address_other": 69
+        },
+        "Token.start": {
+          "simple_store": 62
+        },
+        "Token.end": {
+          "simple_store": 62
+        },
+        "Scanner.Current__BackingField": {
+          "simple_store": 30,
+          "read_or_address_other": 29
+        },
+        "ErrorRange._module": {
+          "simple_store": 52
+        },
+        "ErrorRange._descriptionEnd": {
+          "simple_store": 52
+        },
+        "Scanner.tokensParsed": {
+          "read_or_address_other": 26,
+          "simple_store": 26
+        },
+        "Rect.m_YMin": {
+          "simple_store": 38,
+          "read_or_address_other": 12
+        },
+        "YamlException.Start__BackingField": {
+          "simple_store": 48
+        },
+        "YamlException.End__BackingField": {
+          "simple_store": 48
+        },
+        "Rect.m_Width": {
+          "simple_store": 38,
+          "read_or_address_other": 9
+        },
+        "Rect.m_Height": {
+          "simple_store": 38,
+          "read_or_address_other": 9
+        },
+        "ParsingEvent.start": {
+          "simple_store": 43
+        },
+        "ParsingEvent.end": {
+          "simple_store": 43
+        },
+        "JValue._value": {
+          "simple_store": 41
+        },
+        "JValue._valueType": {
+          "simple_store": 41
+        },
+        "OutputBuffer.pos": {
+          "read_or_address_other": 27,
+          "simple_store": 8
+        },
+        "BitEncoder.ProbPrices": {
+          "read_or_address_other": 31
+        },
+        "BsonValue._value": {
+          "simple_store": 31
+        },
+        "BsonValue._type": {
+          "simple_store": 31
+        },
+        "Scanner.tokenAvailable": {
+          "read_or_address_other": 2,
+          "simple_store": 28
+        },
+        "Scanner.previous": {
+          "simple_store": 26
+        },
+        "WebSocket.webSocket": {
+          "read_or_address_other": 23
+        },
+        "JValue.GetValueType(JTokenType?, object)": {
+          "unsupported_or_ambiguous": 22
+        },
+        "InputBuffer.bitBuffer": {
+          "read_or_address_other": 13,
+          "simple_store": 8
+        },
+        "FastEncoderWindow.bufEnd": {
+          "read_or_address_other": 19,
+          "simple_store": 2
+        },
+        "DeflateInput.count": {
+          "simple_store": 6,
+          "read_or_address_other": 14
+        },
+        "OutWindow._pos": {
+          "simple_store": 7,
+          "read_or_address_other": 13
+        },
+        "Packet.attachments": {
+          "read_or_address_other": 17,
+          "simple_store": 2
+        },
+        "NekkiRandom.myGenerator": {
+          "read_or_address_other": 19
+        },
+        "HTTPFormBase.Fields__BackingField": {
+          "simple_store": 1,
+          "read_or_address_other": 17
+        },
+        "Packet.TransportEvent__BackingField": {
+          "simple_store": 9,
+          "read_or_address_other": 8
+        },
+        "Packet.SocketIOEvent__BackingField": {
+          "read_or_address_other": 14,
+          "simple_store": 3
+        },
+        "XmlNodeWrapper._node": {
+          "simple_store": 17
+        },
+        "ServerProviderBase.Form._data": {
+          "read_or_address_other": 15
+        },
+        "WebSocketResponse.closed": {
+          "read_or_address_other": 15
+        },
+        "DeflateInput.startIndex": {
+          "simple_store": 6,
+          "read_or_address_other": 9
+        },
+        "JsonReader.token": {
+          "read_or_address_other": 15
+        },
+        "JsonReader._currentState": {
+          "simple_store": 2,
+          "read_or_address_other": 13
+        },
+        "CameraShakeInstance.sustain": {
+          "read_or_address_other": 4,
+          "simple_store": 10
+        },
+        "WebSocketBinaryFrame.Data__BackingField": {
+          "simple_store": 14
+        },
+        "WebSocketBinaryFrame.Pos__BackingField": {
+          "simple_store": 14
+        },
+        "WebSocketBinaryFrame.Length__BackingField": {
+          "simple_store": 14
+        },
+        "WebSocketBinaryFrame.IsFinal__BackingField": {
+          "simple_store": 14
+        },
+        "HTTPFieldData.Binary__BackingField": {
+          "read_or_address_other": 10,
+          "simple_store": 4
+        },
+        "OutputBuffer.byteBuffer": {
+          "read_or_address_other": 11,
+          "simple_store": 2
+        },
+        "Encoder.LenPriceTableEncoder._prices": {
+          "simple_store": 2,
+          "read_or_address_other": 11
+        },
+        "Encoder.LiteralEncoder.m_NumPrevBits": {
+          "read_or_address_other": 13
+        },
+        "OutWindow._streamPos": {
+          "simple_store": 6,
+          "read_or_address_other": 7
+        },
+        "Decoder.LiteralDecoder.Decoder2": {
+          "read_or_address_other": 13
+        },
+        "WebSocketFrameReader.Data__BackingField": {
+          "read_or_address_other": 12
+        },
+        "InWindow._posLimit": {
+          "read_or_address_other": 10,
+          "simple_store": 2
+        },
+        "GUIMessageList.messages": {
+          "simple_store": 3,
+          "read_or_address_other": 8
+        },
+        "PreciseLocale.PreciseLocaleSwitch": {
+          "read_or_address_other": 11
+        },
+        "Packet.AttachmentCount__BackingField": {
+          "simple_store": 11
+        },
+        "HTTPConnection.State__BackingField": {
+          "simple_store": 3,
+          "read_or_address_other": 8
+        },
+        "FastEncoderWindow.bufPos": {
+          "read_or_address_other": 11
+        },
+        "SimpleKey.cursor": {
+          "read_or_address_other": 8,
+          "simple_store": 3
+        }
+      },
+      "compiler_log_sha256": "c3bdb131eaa47d9f07b42f6ea8e66a8ea91f1558bdadc1cada5749f1f04079f4",
+      "source_text_edited": false
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "unique_diagnostic_lines": 32724,
+      "error_codes": {
+        "CS0030": 15773,
+        "CS0019": 4981,
+        "CS0122": 4225,
+        "CS1061": 3139,
+        "CS0234": 1057,
+        "CS0266": 1021,
+        "CS0103": 738,
+        "CS0117": 576,
+        "CS0037": 514,
+        "CS0023": 211,
+        "CS0191": 107,
+        "CS7036": 103,
+        "CS0149": 71,
+        "CS1503": 38,
+        "CS0029": 30,
+        "CS0079": 30,
+        "CS0165": 24,
+        "CS0177": 24,
+        "CS1540": 20,
+        "CS1510": 14,
+        "CS1729": 10,
+        "CS0269": 4,
+        "CS0272": 3,
+        "CS1501": 3,
+        "CS8174": 2,
+        "CS0120": 2,
+        "CS8172": 1,
+        "CS0250": 1,
+        "CS0246": 1,
+        "CS0020": 1
+      },
+      "private_access_diagnostics": 4225,
+      "top_inaccessible_members": {
+        "Rect.m_XMin": 279,
+        "DialogsManager._instance": 170,
+        "ModelNode._Current": 113,
+        "Rect.m_YMin": 101,
+        "MenuControls._Current": 92,
+        "SFSLocator.Init()": 68,
+        "PerkAction.Type__BackingField": 68,
+        "Rect.m_Height": 67,
+        "Rect.m_Width": 61,
+        "SFRequestSender._instance": 51,
+        "PlayerData._player": 45,
+        "IconAndText.text": 42,
+        "PerkAction.Modificator__BackingField": 38,
+        "DialogsManager.OpenDialogInner(DialogType, object)": 37,
+        "UserDataWriter._NeedSave": 34,
+        "FightList._rosterFight": 33,
+        "ScreenModel._comboModel": 32,
+        "UnityInputDeviceProfile.ButtonMappings__BackingField": 29,
+        "UnityInputDeviceProfile.AnalogMappings__BackingField": 29,
+        "ModelObject.ModelNodes": 29,
+        "ModelObject._Nodes": 29,
+        "LabelAlias._Alias": 28,
+        "SFSLocator.raidConfig": 26,
+        "ActionAnimation._Type": 26,
+        "SFSLocator.playerData": 24,
+        "RaidPlayersRoll.UpdateSliderCtrl._updateSliders": 24,
+        "MoveableMapPanel._tweenMoves": 24,
+        "MapContainer._mapPanel": 23,
+        "UnityAnalogSource.analogId": 22,
+        "UnityAnalogSource.SetupAnalogQueries()": 22,
+        "UnityButtonSource.buttonId": 22,
+        "UnityButtonSource.SetupButtonQueries()": 22,
+        "Rule._type": 22,
+        "InFightRule._fightEvents": 22,
+        "IconAndText.UpdateLayoutElement()": 22,
+        "ModelObject.ModelNodes.All": 22,
+        "PerkAction.Name__BackingField": 22,
+        "PerkAction.NameXML__BackingField": 22,
+        "PerkAction.Namespace__BackingField": 22,
+        "PerkAction.ParentTrigger__BackingField": 22,
+        "PerkAction.Frames__BackingField": 22,
+        "ModelNode._Previous": 21,
+        "Roster._parameters": 19,
+        "PerkEvent.Type__BackingField": 19,
+        "PerkCondition.Type__BackingField": 19,
+        "InputControl.thisState": 18,
+        "RaidBaseHandler._003C_003Ef__am_0024cache0": 18,
+        "KeyFrames._Size": 18,
+        "StyleBar.styleBarStrips": 18,
+        "SFRequestSender.SFRequestSender()": 17,
+        "ModelStatistics.AttackStatistics._hitCountBuffer": 17,
+        "SortedPlayersCollection._players": 17,
+        "MainMenu.Instance__BackingField": 16,
+        "ModelAnimation._AnimationFrameWithinLoop": 16,
+        "ActionAnimation._StartParameters": 16,
+        "BuyConsContainerCell._consumableName": 16,
+        "RewardPanelItem._RectTransform": 15,
+        "RaidEndFightBaseContent._003C_003Ef__am_0024cache0": 15,
+        "RosterPerk._node": 14,
+        "BundleRef._UnityBundle": 14
+      },
+      "top_member_source_expression_shapes": {
+        "Rect.m_XMin": {
+          "read_or_address_other": 261,
+          "simple_store": 18
+        },
+        "DialogsManager._instance": {
+          "read_or_address_other": 127,
+          "simple_store": 43
+        },
+        "ModelNode._Current": {
+          "read_or_address_other": 113
+        },
+        "Rect.m_YMin": {
+          "read_or_address_other": 83,
+          "simple_store": 18
+        },
+        "MenuControls._Current": {
+          "read_or_address_other": 92
+        },
+        "SFSLocator.Init()": {
+          "unsupported_or_ambiguous": 68
+        },
+        "PerkAction.Type__BackingField": {
+          "simple_store": 42,
+          "read_or_address_other": 26
+        },
+        "Rect.m_Height": {
+          "simple_store": 18,
+          "read_or_address_other": 49
+        },
+        "Rect.m_Width": {
+          "simple_store": 18,
+          "read_or_address_other": 43
+        },
+        "SFRequestSender._instance": {
+          "read_or_address_other": 34,
+          "simple_store": 17
+        },
+        "PlayerData._player": {
+          "read_or_address_other": 45
+        },
+        "IconAndText.text": {
+          "read_or_address_other": 42
+        },
+        "PerkAction.Modificator__BackingField": {
+          "simple_store": 38
+        },
+        "DialogsManager.OpenDialogInner(DialogType, object)": {
+          "unsupported_or_ambiguous": 37
+        },
+        "UserDataWriter._NeedSave": {
+          "simple_store": 34
+        },
+        "FightList._rosterFight": {
+          "read_or_address_other": 30,
+          "simple_store": 3
+        },
+        "ScreenModel._comboModel": {
+          "read_or_address_other": 32
+        },
+        "UnityInputDeviceProfile.ButtonMappings__BackingField": {
+          "simple_store": 24,
+          "read_or_address_other": 5
+        },
+        "UnityInputDeviceProfile.AnalogMappings__BackingField": {
+          "simple_store": 24,
+          "read_or_address_other": 5
+        },
+        "ModelObject.ModelNodes": {
+          "read_or_address_other": 29
+        },
+        "ModelObject._Nodes": {
+          "read_or_address_other": 29
+        },
+        "LabelAlias._Alias": {
+          "simple_store": 28
+        },
+        "SFSLocator.raidConfig": {
+          "read_or_address_other": 26
+        },
+        "ActionAnimation._Type": {
+          "read_or_address_other": 10,
+          "simple_store": 16
+        },
+        "SFSLocator.playerData": {
+          "read_or_address_other": 24
+        },
+        "RaidPlayersRoll.UpdateSliderCtrl._updateSliders": {
+          "read_or_address_other": 12,
+          "simple_store": 12
+        },
+        "MoveableMapPanel._tweenMoves": {
+          "read_or_address_other": 22,
+          "simple_store": 2
+        },
+        "MapContainer._mapPanel": {
+          "read_or_address_other": 23
+        },
+        "UnityAnalogSource.analogId": {
+          "simple_store": 22
+        },
+        "UnityAnalogSource.SetupAnalogQueries()": {
+          "unsupported_or_ambiguous": 22
+        },
+        "UnityButtonSource.buttonId": {
+          "simple_store": 22
+        },
+        "UnityButtonSource.SetupButtonQueries()": {
+          "unsupported_or_ambiguous": 22
+        },
+        "Rule._type": {
+          "read_or_address_other": 21,
+          "simple_store": 1
+        },
+        "InFightRule._fightEvents": {
+          "read_or_address_other": 22
+        },
+        "IconAndText.UpdateLayoutElement()": {
+          "unsupported_or_ambiguous": 22
+        },
+        "ModelObject.ModelNodes.All": {
+          "read_or_address_other": 22
+        },
+        "PerkAction.Name__BackingField": {
+          "simple_store": 22
+        },
+        "PerkAction.NameXML__BackingField": {
+          "simple_store": 22
+        },
+        "PerkAction.Namespace__BackingField": {
+          "simple_store": 22
+        },
+        "PerkAction.ParentTrigger__BackingField": {
+          "simple_store": 22
+        },
+        "PerkAction.Frames__BackingField": {
+          "simple_store": 22
+        },
+        "ModelNode._Previous": {
+          "read_or_address_other": 21
+        },
+        "Roster._parameters": {
+          "read_or_address_other": 19
+        },
+        "PerkEvent.Type__BackingField": {
+          "read_or_address_other": 13,
+          "simple_store": 6
+        },
+        "PerkCondition.Type__BackingField": {
+          "simple_store": 19
+        },
+        "InputControl.thisState": {
+          "read_or_address_other": 17,
+          "simple_store": 1
+        },
+        "RaidBaseHandler._003C_003Ef__am_0024cache0": {
+          "read_or_address_other": 12,
+          "simple_store": 6
+        },
+        "KeyFrames._Size": {
+          "simple_store": 9,
+          "read_or_address_other": 9
+        },
+        "StyleBar.styleBarStrips": {
+          "read_or_address_other": 18
+        },
+        "SFRequestSender.SFRequestSender()": {
+          "unsupported_or_ambiguous": 17
+        },
+        "ModelStatistics.AttackStatistics._hitCountBuffer": {
+          "read_or_address_other": 9,
+          "simple_store": 8
+        },
+        "SortedPlayersCollection._players": {
+          "read_or_address_other": 16,
+          "simple_store": 1
+        },
+        "MainMenu.Instance__BackingField": {
+          "read_or_address_other": 16
+        },
+        "ModelAnimation._AnimationFrameWithinLoop": {
+          "read_or_address_other": 16
+        },
+        "ActionAnimation._StartParameters": {
+          "simple_store": 16
+        },
+        "BuyConsContainerCell._consumableName": {
+          "read_or_address_other": 16
+        },
+        "RewardPanelItem._RectTransform": {
+          "read_or_address_other": 10,
+          "simple_store": 5
+        },
+        "RaidEndFightBaseContent._003C_003Ef__am_0024cache0": {
+          "read_or_address_other": 10,
+          "simple_store": 5
+        },
+        "RosterPerk._node": {
+          "read_or_address_other": 14
+        },
+        "BundleRef._UnityBundle": {
+          "read_or_address_other": 10,
+          "simple_store": 4
+        }
+      },
+      "compiler_log_sha256": "17eabac3eee25fb8dc65d9a6e9a2ea156c96e4ca7dd3594f1d27c0424a2aa1da",
+      "source_text_edited": false
+    }
+  ],
+  "private_contexts_sha256": "77de4730203f940f9e022a61fa8301fab016702ae9119286d0195070e45619c9",
+  "source_edited": false,
+  "core_edited": false,
+  "game_methods_executed": 0,
+  "whole_game_source_ready": false,
+  "scope": "Unique compiler diagnostic lines, including cascades; these are not unique recovery defects. Source contexts remain private and are not type or native proof."
+}

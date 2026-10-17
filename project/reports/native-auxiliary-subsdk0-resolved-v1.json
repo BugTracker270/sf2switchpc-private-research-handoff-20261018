@@ -1,0 +1,17 @@
+{
+  "module": "subsdk0",
+  "status": "AUXILIARY_RANGE_EXPORT_COMPLETE",
+  "total_targets": 9774,
+  "ranges_with_pseudocode": 9774,
+  "unresolved_ranges": 0,
+  "historical_failed_records": 0,
+  "layers": [
+    {
+      "path": "analysis\\nso\\auxiliary-subsdk0-v1\\corpus\\functions.jsonl",
+      "records": 9774,
+      "sha256": "0693cc48a15c35f1555c7e236304248ae23d7bfd0f7b35e855da3b699a756fcd"
+    }
+  ],
+  "source_sha256": "c0597ef18697761d097859b66e76202f34921512f579d4ac97aad793d1a74908",
+  "scope": "Independent module range exports with preserved failed attempts and explicit retry overlays. Every original target is accounted for once in the resolved view. No main RVA index mutation, clean-source or semantic-completeness claim."
+}

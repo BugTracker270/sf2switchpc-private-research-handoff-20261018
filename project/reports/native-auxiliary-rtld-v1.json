@@ -1,0 +1,13 @@
+{
+  "module": "rtld",
+  "progress": {
+    "total_targets": 23,
+    "completed_records": 23,
+    "new_pseudocode_exports": 23,
+    "failed_records": 0
+  },
+  "status": "PASS_AUXILIARY_PILOT_EXPORT_ONLY",
+  "exit_code": 0,
+  "scope": "Independent module pseudocode/disassembly pilot only. No main index mutation or complete clean source claim.",
+  "project": "SF2-aux-rtld-v1"
+}

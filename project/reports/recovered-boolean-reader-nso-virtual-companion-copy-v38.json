@@ -1,0 +1,56 @@
+{
+  "status": "PASS_ACTUAL_RECOVERED_BOOLEAN_READER_VS_ORIGINAL_NATIVE",
+  "recovery_run": "nso-virtual-companion-copy-v38",
+  "cases": 811,
+  "checks": 3244,
+  "structural_checks": [
+    {
+      "name": "all 811 unchanged-native return cases, no guest replacements, all byte values and valid positions bound by hashes",
+      "passed": true
+    },
+    {
+      "name": "unchanged recovered method with exact two managed calls and original field effects",
+      "passed": true
+    }
+  ],
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": null,
+  "calls": [
+    {
+      "il_offset": 17,
+      "declaring_type": "System.BitConverter",
+      "Name": "ToBoolean"
+    },
+    {
+      "il_offset": 62,
+      "declaring_type": "System.Runtime.CompilerServices.RuntimeHelpers",
+      "Name": "RunClassConstructor"
+    }
+  ],
+  "original_constructor_calls": 1,
+  "original_conversion_calls": 1,
+  "assembly_sha256": "b27b575f04159eb61cd50eaf21566e682b882726b5faa216bf1402b55e7ae27c",
+  "body_il_sha256": "5d2070afdeeba690b98f3656e6938c749c3d2b317110051c73aeb5327b95a0c6",
+  "fixture_sha256": "cf8b32ede10b3ee006fc93b5efac1d86c0daf4a93ddea15fcc7f2acaf9d71fa4",
+  "native_report_sha256": "8225bc0cd815be377337e15f1a23c385e15ce59c909ef58139e3dcdd6826afe2",
+  "native_case_binding": {
+    "native_cases": 811,
+    "native_failures": 0,
+    "native_guest_function_replacements": 0,
+    "fixture_cases": 811,
+    "native_evidence_bound": true,
+    "fixture_case_binding": true,
+    "actual_executed_cases": 811,
+    "all_native_cases_executed": true,
+    "single_byte_value_count": 256,
+    "valid_position_count": 257,
+    "valid_positions_min": 0,
+    "valid_positions_max": 256
+  },
+  "probe_source_sha256": "9a705d926b5e74191a6d606184d1902cbfc108c93f40509aa07e754b167af053",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "dynamic_clones": 0,
+  "scope": "Direct execution of the unchanged recovered BinaryReaderNekki.ReadBoolean method on its actual recovered type. Explicit caller boundary allocates the type without invoking its instance constructor and supplies its two original input fields. Real CLR BitConverter.ToBoolean and exact RunClassConstructor(BitConverter) calls remain; no original static constructor is stubbed or suppressed. All 811 native return cases, position changes, unchanged array bytes and array identity must agree. Native/runtime initialization boundaries and exceptional cases retain the native report\u0027s separate limits. No whole-reader constructor, serialization system, startup, complete source or portable game claim."
+}

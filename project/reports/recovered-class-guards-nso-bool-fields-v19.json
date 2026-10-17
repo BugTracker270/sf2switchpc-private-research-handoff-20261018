@@ -1,0 +1,60 @@
+{
+  "status": "PASS_SCOPED_NATIVE_CLASS_GUARD_CIL_SOURCE_CORRELATION",
+  "recovery_run": "nso-bool-fields-v19",
+  "baseline": "nso-default-member-v16",
+  "methods": [
+    {
+      "type": "AdvLog",
+      "method": "Init",
+      "before_native_class_reads": 2,
+      "after_native_class_reads": 0,
+      "body_il_sha256": "bfb89ef4c24920acd3a95f5f48028a6bad880314635ea070588e39606d5a3943",
+      "removed_bookkeeping_calls": [
+        "System.Type::GetTypeFromHandle"
+      ],
+      "remaining_diagnostic_messages": [
+        "Method not found @7448F0"
+      ]
+    },
+    {
+      "type": "BundlesUtil",
+      "method": "LoadDependencies",
+      "before_native_class_reads": 1,
+      "after_native_class_reads": 0,
+      "body_il_sha256": "0a1f7dc8a46137ff479f810a43b1b2451b7ba5324d0df62033de89343a599111",
+      "removed_bookkeeping_calls": [
+        "Cpp2ILInjected.Cpp2ILHelpers::NoteDecompilerIssue",
+        "System.Type::GetTypeFromHandle"
+      ],
+      "remaining_diagnostic_messages": []
+    },
+    {
+      "type": "BundlesUtil",
+      "method": "UnloadDependencies",
+      "before_native_class_reads": 2,
+      "after_native_class_reads": 1,
+      "body_il_sha256": "4478e9eb7362819ab446c2444a2898f613ed451808ba5afd9fef45509970c11a",
+      "removed_bookkeeping_calls": [],
+      "remaining_diagnostic_messages": [
+        "Unmanaged memory load: [v65 @ X0_v9 (Il2CppClass<BundlesUtil>)+122]"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-bool-fields-v19\\Assembly-CSharp-firstpass\\AdvLog.cs",
+      "sha256": "eef783037dded2f610b2f45bd6b4ef91414d4246e0e659ff470a9d9026344394",
+      "before_invalid_type_pointer_casts": 6,
+      "after_invalid_type_pointer_casts": 0
+    },
+    {
+      "path": "analysis\\il2cpp\\source-profile-project-build-nso-bool-fields-v19\\Assembly-CSharp-firstpass\\BundlesUtil.cs",
+      "sha256": "565f3e642163fd8796440c1af07ea2fa67f66711a12d908e0cec6fec5686e293",
+      "before_invalid_type_pointer_casts": 12,
+      "after_invalid_type_pointer_casts": 7
+    }
+  ],
+  "native_cases": 336,
+  "native_checks": 1008,
+  "scope": "Three actual method bodies and two unchanged source exports. Native class-byte diagnostic reads decrease without replacing bodies with rejection stubs or losing ordinary managed calls. Cold/noncontiguous guards and other source errors remain. Does not certify initialization ordering, complete methods, ABI or whole-source readiness."
+}

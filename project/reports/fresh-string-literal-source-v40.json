@@ -1,0 +1,45 @@
+{
+  "status": "PASS_SELECTED_OFFICIAL_STRING_SOURCE_AND_ORIGINAL_LITERAL_STATIC_CORRELATION",
+  "release": "2018.1.9f1",
+  "revision": "24bbd83e8b9e",
+  "archive_sha256": "ce666b2de60716cb5564b53317b56f0b82eddbea7afb3462ef51d5e121833c96",
+  "archive_provenance_sha256": "e051daf19ad9e19cc8992cd0fd61317f5d07de495bc37e52f4964d62bbd6f72e",
+  "source_files": [
+    {
+      "archive_member": "Editor\\Data\\il2cpp\\libil2cpp\\vm\\MetadataCache.cpp",
+      "path": "analysis/reference/string-exact-class-v40/runtime-source/MetadataCache.cpp",
+      "bytes": 63141,
+      "sha256": "43bff5ab5986148d6abe3a94d46bd870cea5e7a34799da365cc2b38c010ab1bd"
+    },
+    {
+      "archive_member": "Editor\\Data\\il2cpp\\libil2cpp\\vm\\String.cpp",
+      "path": "analysis/reference/string-exact-class-v40/runtime-source/String.cpp",
+      "bytes": 5401,
+      "sha256": "555740491ef0cb33d190124da5ffba117049a1e88d97584ec0b410d8ef084a13"
+    },
+    {
+      "archive_member": "Editor\\Data\\il2cpp\\libil2cpp\\vm\\String.h",
+      "path": "analysis/reference/string-exact-class-v40/runtime-source/String.h",
+      "bytes": 1048,
+      "sha256": "a6a79ec4e6b9af3efc907af65787b9430ad9f30ef602fcbb767a9d9c4229312d"
+    }
+  ],
+  "original_image_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "original_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "literal_map_sha256": "153c6bf34f7b6eeb7fe91c0dcac0b4be4d4623b063f3cbe4e41e2f4bbef2ae12",
+  "literal_index": 4849,
+  "literal_got_rva": "0x39F3CC8",
+  "literal_slot_rva": "0x3B7A110",
+  "string_array_got_rva": "0x397A410",
+  "string_array_slot_rva": "0x3B2DC88",
+  "canonical_runtime_class_identity_proved": false,
+  "literal_runtime_object_read": false,
+  "native_functions_executed": 0,
+  "game_methods_invoked": 0,
+  "installer_executed": false,
+  "core_modified": false,
+  "semantic_lowering_implemented": false,
+  "full_clean_decompile_ready": false,
+  "scope": "Static original raw GOT words, bounded original metadata literal-index read and independent prior literal-map correlation. Common runtime source is extracted locally for further design inspection. Runtime literal object/header identity and exact canonical String[] element type still require an original-context operand/metadata proof; these addresses or the literal text alone do not authorize semantic lowering.",
+  "tool_sha256": "1e3de6b0e185dbdc60a5118c245a545fdb6699da7e846c8816d67774cffec79f"
+}

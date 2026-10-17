@@ -1,0 +1,39 @@
+{
+  "status": "SOURCE_READY_V32_RAW_CLASS_INIT_TESTS_NOT_RUN",
+  "approved_core_edits": [
+    "Exact known native helper excluded from stale MethodInfo fallback",
+    "Raw ABI Call normalization requires 18 operands, exact physical register layout, a unique deeply unused X0 result and the existing exact metadata-origin proof"
+  ],
+  "source_paths": [
+    "refs/Cpp2IL/Cpp2IL.Core/Analysis/MetadataResolver.cs",
+    "refs/Cpp2IL/Cpp2IL.Core/Analysis/KeyFunctionRecovery.cs",
+    "src/re/RawClassInitProbe/Program.cs",
+    "src/re/RawClassInitProbe/RawClassInitProbe.csproj",
+    "src/re/RawClassInitSurvey/Program.cs",
+    "src/re/RawClassInitSurvey/RawClassInitSurvey.csproj",
+    "src/re/tools/raw_classinit_native_correlation.py"
+  ],
+  "validation_not_yet_run": [
+    "RawClassInitProbe with newly compiled Core",
+    "RawClassInitSurvey --after",
+    "raw_classinit_native_correlation.py --after",
+    "Existing 120-check LegacyClassInitProbe regression",
+    "Fresh v32 recovery, caller and source checks"
+  ],
+  "hold": "Shared Core builds were held pending an independent production SRET gate. Root orchestration then received a platform cybersecurity-risk error. This agent did not take over orchestration, retry around the rejection or launch recovery.",
+  "baseline_evidence": [
+    "reports/raw-classinit-stage-survey-v32.json",
+    "reports/raw-classinit-native-correlation-v32.json"
+  ],
+  "scope": "Preservation snapshot of approved but unbuilt source changes. This is not successful validation or completed decompilation.",
+  "source_sha256": {
+    "refs/Cpp2IL/Cpp2IL.Core/Analysis/MetadataResolver.cs": "25f3f8037cab569e370810fc62e52cd5164ebabb65ea2c95dde12eba8ea59a38",
+    "refs/Cpp2IL/Cpp2IL.Core/Analysis/KeyFunctionRecovery.cs": "521e8eb5f80eb9dbd6299f4a69d47bee84f7410bed9c8775743a1e2f0f13a574",
+    "src/re/RawClassInitProbe/Program.cs": "78c694724ee4b2e483231a6ace923d3bd9a22e4b19bd963faf324d389b76f35a",
+    "src/re/RawClassInitProbe/RawClassInitProbe.csproj": "b14edafbdd3574a9ea040f6dc9371a4a908db63d0928effe0e24892bb6def4fc",
+    "src/re/RawClassInitSurvey/Program.cs": "ee7a7c24283652b18eda208946f1e7af1e7c53a6efa61f81ff772062680f5875",
+    "src/re/RawClassInitSurvey/RawClassInitSurvey.csproj": "9a6a83f975ea8bf1c619c50872e9d72388bcdc1bcdad46c15d679e61c7f02b8c",
+    "src/re/tools/raw_classinit_native_correlation.py": "742c1bfafb2d534886bddaf651ff2e79e0e0428dd11d28e5d1a52ba20536f4d1"
+  },
+  "compiled_core_sha256_at_pause": "84ac829935d8b769829a668ea8bd778413b5ccfd58b4552236af1dc7a83b55b7"
+}

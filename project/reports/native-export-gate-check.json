@@ -1,0 +1,6 @@
+{
+  "process_exit": 1,
+  "scope": "Cached failed export remains retained; new wrapper rejects it without changing the function prototype.",
+  "status": "PASS_EXPECTED_EXPORT_STATUS_REJECTION",
+  "failed_records": 1
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_FROZEN_CANDIDATE_REVERSE_CHECK",
+  "exit_code": 0,
+  "patch_sha256": "2a0844fb02086f0a7a0846f1d27592a4df91b2b691f006a9a84db7a1420d7dd1",
+  "manifest_sha256": "9d4f1247fcb384e9505e9d8eb7c023644947d55bf91fd0626875bef965e27076",
+  "command": [
+    "git",
+    "--git-dir",
+    "F:\\SF2SwitchPC\\refs\\Cpp2IL\\.git",
+    "--work-tree",
+    "F:\\SF2SwitchPC\\analysis\\il2cpp\\object-isinst-abi-v40-source-snapshot\\refs\\Cpp2IL",
+    "apply",
+    "--reverse",
+    "--check",
+    "F:\\SF2SwitchPC\\src\\re\\tool-patches\\cpp2il-sf2-hfa-experimental-object-isinst-abi-v40.patch"
+  ],
+  "cwd": "F:\\SF2SwitchPC\\analysis\\il2cpp\\object-isinst-abi-v40-source-snapshot\\refs\\Cpp2IL",
+  "stdout": "",
+  "stderr": "",
+  "frozen_source_changed": false
+}

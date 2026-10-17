@@ -1,0 +1,216 @@
+{
+  "status": "PASS_IMMUTABLE_COMPLETE_CANDIDATE_SOURCE_CAPTURE",
+  "recovery_run": "nso-assembly-leaf-getter-v39",
+  "core_sha256": "52e9fa40275b71be5ea48e1bab1816e59dc4412ddfc0c627c29345f3086a4929",
+  "sources": [
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\Arm64CallingConventionResolver.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\Arm64CallingConventionResolver.cs",
+      "sha256": "48b91ca27a3bcbb522b84dea44893ca6498c98015082ef7a52762fe9b2e7604c"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\BaseCallingConventionResolver.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\BaseCallingConventionResolver.cs",
+      "sha256": "c5489016f9d9368ebf0a92849e099e78ec3e82e2ae71f095ec2dd0eb4be8b715"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\MetadataAddressResolver.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\MetadataAddressResolver.cs",
+      "sha256": "706e73d8a6d7076de657decb47c701dfe84a7dccb3931e9ffeef54a0ed92e5bb"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\MetadataResolver.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\MetadataResolver.cs",
+      "sha256": "f43a3c22253d039f61e46fcf11e362d96cda4c49d15b78ea4247bb809f74fb98"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\InterfaceDispatchRecovery.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\InterfaceDispatchRecovery.cs",
+      "sha256": "5c2171a2b2a85a3e0b81943041b1fc2b57a90e8272a8f236109e6591e3f9da06"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64AllocationPattern.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64AllocationPattern.cs",
+      "sha256": "daee4b11808995b6d2333139cd7609b4d32dcfd2f908be39f9adb5943e7ec29c"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Il2CppApiFunctions\\NewArm64KeyFunctionAddresses.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Il2CppApiFunctions\\NewArm64KeyFunctionAddresses.cs",
+      "sha256": "14f2f30a34e624120f66fe2b038f4a422c0670d18d0dc10f26f763c286f9f527"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64InitializationPattern.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64InitializationPattern.cs",
+      "sha256": "c9ad1261b7940cce6e7049a2f430c01113017b6a7f37480b52638fbbb5f236da"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\InstructionSets\\NewArmV8InstructionSet.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\InstructionSets\\NewArmV8InstructionSet.cs",
+      "sha256": "dcd50974ed956dea971c165cc59c7611e4a3b9c8d81cc2a169dcd9b51c9b91ac"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ExceptionRaiserPattern.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ExceptionRaiserPattern.cs",
+      "sha256": "cba7320450b2c26e829c680becafd34e52233b98d4def90a3e1242750fc148c1"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ThunkScanner.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ThunkScanner.cs",
+      "sha256": "c7360baab0b79d9a3f229a6d103c93e083c3aef4574d822fbdf3970bec1a4795"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\ThrowHelperRecovery.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\ThrowHelperRecovery.cs",
+      "sha256": "e5d4aedf843ac5107fa3c3805c0e54b90ea52f7dcac2859771e3e3ad6e0373c0"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ArrayAllocationPattern.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ArrayAllocationPattern.cs",
+      "sha256": "2e3f7c89011f8baf4d71138759aa0fae8914bfa1cf42e297a9dc21fc2b17db3f"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\LocalVariables.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\LocalVariables.cs",
+      "sha256": "19a5e9330da015c80b0891f772ce9d6949f9010c0dfde3d895aac44da59791af"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ExceptionFactoryPattern.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ExceptionFactoryPattern.cs",
+      "sha256": "d221f48068c2e2dec77fd62da7b921977df8f462a9de3f506f6608d02e06a55f"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\IlGenerator.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\IlGenerator.cs",
+      "sha256": "97b5eac1262d30123dfb138dbcf98ba4523bf9759081936667b4db1192082a12"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\UninitializedObjectAllocation.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\UninitializedObjectAllocation.cs",
+      "sha256": "05d1f4e6f6b9d404ffcb35830fb4a9a7b7836c909ee52278afb662da7d65d8fe"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\ProcessingLayers\\AttributeInjectorProcessingLayer.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\ProcessingLayers\\AttributeInjectorProcessingLayer.cs",
+      "sha256": "177099d399f25c9db4ee7e1d303d4cefa0fe6ccc8d4350f17bead29763295daf"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64DefaultMemberPattern.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64DefaultMemberPattern.cs",
+      "sha256": "7b3ce477b50846e6d68ac3055957fe4924a0d577057d2df9ad5ac55c06e34397"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\LegacyDefaultMemberRecovery.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\LegacyDefaultMemberRecovery.cs",
+      "sha256": "797a14c056f61fea6b6ab2e857fdd5b1129eedfb81893eb1fc376e46cd5b560f"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64Hfa.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64Hfa.cs",
+      "sha256": "a91380654ecaf181c5a7d712603a5c392585396d5f41f6a32a899ad17dae646f"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\OutputFormats\\AsmResolverDllOutputFormatIlRecovery.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\OutputFormats\\AsmResolverDllOutputFormatIlRecovery.cs",
+      "sha256": "c47656e44d7a7bfccf4396bc643c36febf990f3ba727a9dfe2e190a79404cd4c"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\LegacyArm64FieldPaths.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\LegacyArm64FieldPaths.cs",
+      "sha256": "29fbff63bdfa075ca59e2b3e598c92e55aad813d0c2c0696c52f9622704aac0c"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\MemoryOperand.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\MemoryOperand.cs",
+      "sha256": "cb8be9b16ffb5b190186fd2956d4423a504f2f08c5fcfebe7e46df53034ef644"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\FieldReference.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\FieldReference.cs",
+      "sha256": "32aa29b60690c4c47379a0125683dcd1e68400f4b7230d8520ddad0eee6b54d4"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64LeafAccessors.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64LeafAccessors.cs",
+      "sha256": "c14e11f22f1965890dd864d0b11552c13c0287165802e6438312d517ba3036b9"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64AggregateLeaves.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64AggregateLeaves.cs",
+      "sha256": "e1aa22bee294d0ebe370d12a439c284110870eaaffc4a1de1fd16edcb8ece252"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ValueThisThunks.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ValueThisThunks.cs",
+      "sha256": "4a24d9598320b91ec19078882d9c46bd90b399c055301cdd81d61c4e2c9f1ee4"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Model\\Contexts\\ApplicationAnalysisContext.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Model\\Contexts\\ApplicationAnalysisContext.cs",
+      "sha256": "67eccfb7cd00e9410654b05c36dc21dff8607a7691c33c9af778d2abe9025970"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ScalarBoxing.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ScalarBoxing.cs",
+      "sha256": "7b376ffcd06efbcd5c9831f748dafb2f3ae76fe7f6829155aa97d5dcd7c43457"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\KeyFunctionRecovery.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\KeyFunctionRecovery.cs",
+      "sha256": "9064474aed01a88a959be70f338e7597ed46b69c6dea487a58ae13a3e9d3a5f0"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\SsaSimplifier.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\SsaSimplifier.cs",
+      "sha256": "d7d70df888bf6eceb782ad155803b4b2ff871a7dc00e8e0ae983c536b4473c3f"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64CfgInitializationPattern.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64CfgInitializationPattern.cs",
+      "sha256": "e5e9bc6669d38f5879d79ca4a2cc0a2e7b5924cc405434c2e9eea1dd2cbdfcfa"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64IndirectReturns.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64IndirectReturns.cs",
+      "sha256": "3eef62ee57c21363a961b487d1eb7ca886b3cfcbed4c24ae7f054dc058ff1341"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\Instruction.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\Instruction.cs",
+      "sha256": "22592040093b3b950b24c7db62878082d457dc0f9f7e34cf6c479b641091be93"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\CopyCoalescer.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\CopyCoalescer.cs",
+      "sha256": "e1b12c77485bae9903b94f5439d29aa49b060bd4e80d399681f9bb168daeb857"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64VirtualDispatch.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64VirtualDispatch.cs",
+      "sha256": "fb9144842f246d3b8359444e58b8c072701f3e4169c3b8c8b477c68e79dfb1d2"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ClassLayoutAbi.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64ClassLayoutAbi.cs",
+      "sha256": "9e4daa163c2677d940ef1696e92b42cdb90d4c896fb5b680db5e43e8d23d8d99"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64OverflowExceptionAbi.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Utils\\LegacyArm64OverflowExceptionAbi.cs",
+      "sha256": "cf78e506b535b0aab18160a8e9586e4d9c563060d4dd4e69d13f5cfd008e8998"
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Model\\Contexts\\MethodAnalysisContext.cs",
+      "snapshot_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\refs\\Cpp2IL\\Cpp2IL.Core\\Model\\Contexts\\MethodAnalysisContext.cs",
+      "sha256": "8f551d9b1d49ef594fdebb7375daadc7a7a88d1690fb7ddf8853ae4799f4068d"
+    }
+  ],
+  "source_count": 40,
+  "candidate_lock_sha256": "159ecbd793eb372959cee7c3f30feaafbc12f1185b457c5e0b216c97297bd598",
+  "recovery_invocation_sha256": "3a6c718323193358e4d138940fda87bea1c9196d9c1616f63d71ff10a42f5350",
+  "candidate_patch_sha256": "e0dcd499d3b0bde0c755fa0adef2f2e9a836a1a2999a8d667d180cf9c97f532c",
+  "capture_source_sha256": "cc63361023a179aa97ec5c86b645ccbb0256d234c9c4fbb2bdc01b0bda4bea8c",
+  "source_mutated": false,
+  "core_built": false,
+  "manifest_path": "analysis\\il2cpp\\assembly-leaf-getter-v39-source-snapshot\\manifest.json",
+  "manifest_sha256": "d2600ab9fd556b88a042468e55515c68a466eaada3cd57cb4e19d536cecc6c29"
+}

@@ -1,0 +1,155 @@
+{
+  "status": "SCOPED_RECOVERED_16BYTE_LEAVES_VALIDATED_GENERAL_ABI_REMAINS",
+  "observed_layout": {
+    "type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt",
+    "unboxed_size": 16,
+    "fields": [
+      {
+        "name": "currentCryptoKey",
+        "type": "System.Int32",
+        "offset": 0
+      },
+      {
+        "name": "hiddenValue",
+        "type": "System.Int32",
+        "offset": 4
+      },
+      {
+        "name": "fakeValue",
+        "type": "System.Int32",
+        "offset": 8
+      },
+      {
+        "name": "inited",
+        "type": "System.Boolean",
+        "offset": 12
+      }
+    ],
+    "padding_offsets": [
+      13,
+      14,
+      15
+    ]
+  },
+  "native_witnesses": [
+    {
+      "rva": "0x794890",
+      "role": "by-value conversion entry",
+      "registers": "dummy X0; value X1/X2; MethodInfo follows value, not overlapping X2",
+      "body": "Stores X1/X2 into a 16-byte unboxed stack value before InternalDecrypt"
+    },
+    {
+      "rva": "0xD3D370",
+      "role": "Count setter",
+      "registers": "receiver X0; value X1/X2",
+      "body": "8-byte STP X1,X2,[X0,#0x18]; RET"
+    },
+    {
+      "rva": "0xD3D390",
+      "role": "Count getter",
+      "registers": "receiver X0; result X0/X1",
+      "body": "12-byte LDP X8,X1,[X0,#0x18]; MOV X0,X8; RET"
+    },
+    {
+      "rva": "0x7926A0",
+      "role": "integer-to-value conversion return",
+      "registers": "result X0/X1",
+      "body": "X0 contains currentCryptoKey and hiddenValue; X1 contains fakeValue, inited, and tail padding"
+    }
+  ],
+  "correction": {
+    "helper": "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64AggregateLeaves.cs",
+    "api": "LegacyArm64AggregateLeaves.Describe(MethodAnalysisContext) -> Match(Field, IsSetter)",
+    "recognition_checks": 24,
+    "matched_obscured_int_leaves": 18,
+    "native_cases": 1024,
+    "native_checks": 6144,
+    "nonzero_padding_cases": 1008,
+    "integration": "FillMethodBody emits exact ldarg.0/ldarg.1/stfld/ret or ldarg.0/ldfld/ret after native+metadata recognition. General ISIL argument packing is bypassed only for that whole leaf body.",
+    "boundary": "Entry is exactly an unconditional 8/12-byte pair-copy sequence ending in RET and cannot cross next known function start. Cpp2IL whole-range decoder includes unreachable alignment bytes, which caused the first recognizer run to reject genuine leaves. The failed attempt is preserved.",
+    "negatives": "Opt-in off; wrong receiver, argument word, result word, offset, writeback, missing RET, observable instruction, appended/truncated body, readonly setter, metadata offset mismatch, overlap, unknown/floating component, wrong managed signature, static owner shape, value owner, extra/spilled arguments, undersized value."
+  },
+  "baseline": {
+    "run": "nso-generic-ctor-v27",
+    "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+    "cases": 0,
+    "checks": 0,
+    "fatal": "System.IO.InvalidDataException: Whole-leaf body must have no exception regions or locals"
+  },
+  "full_integer_abi_remaining": [
+    {
+      "component": "Arm64CallingConventionResolver and LegacyArm64Hfa.Resolve",
+      "required": "Keep one managed aggregate operand but reserve and bind both original integer words; MethodInfo must follow both. Current opt-in HFA ordinary path still reserves one integer register."
+    },
+    {
+      "component": "NewArmV8InstructionSet entry/managed AddCall/AddReturn",
+      "required": "Unpack both words at method entry, pack/unpack on each managed call and return. HFA leaves use one FP register each, whereas ObscuredInt packs multiple declared fields into one integer word."
+    },
+    {
+      "component": "MemoryOperand, LocalVariables, SSA and metadata field resolution",
+      "required": "Retain integer native load/store widths and 32-bit zero-extension, expose exact multi-field byte ranges, and prevent a 64-bit half load at an aggregate field start from becoming a load of the whole managed aggregate."
+    },
+    {
+      "component": "Stack storage and by-reference value this",
+      "required": "Support 16-byte stack copies/spills and exact unboxed addresses; current ObscuredInt-to-int wrapper materializes its input on stack. Do not subtract a boxed header blindly."
+    },
+    {
+      "component": "BaseCallingConventionResolver.RemapRawArguments and indirect calls",
+      "required": "Remap all aggregate words into one typed managed argument without dropping words; current raw argument remapper advances one integer register per nonfloating parameter."
+    },
+    {
+      "component": "CIL generation and native verification",
+      "required": "Use typed complete values and proven bit slices, not scalar casts, lost padding, or default stub returns. Validate direct calls, stack paths, tail calls, result packets and negative layouts separately."
+    }
+  ],
+  "limits": "This restores selected whole-field leaf method bodies. Their existing callers and conversion bodies remain subject to the unresolved general integer aggregate ABI. Managed field comparisons exclude native padding identity. No general ABI, currency codec, runtime initialization, GC, whole source or port completion claim.",
+  "source_sha256": {
+    "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64AggregateLeaves.cs": "e1aa22bee294d0ebe370d12a439c284110870eaaffc4a1de1fd16edcb8ece252",
+    "refs/Cpp2IL/Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs": "48b91ca27a3bcbb522b84dea44893ca6498c98015082ef7a52762fe9b2e7604c",
+    "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64Hfa.cs": "a91380654ecaf181c5a7d712603a5c392585396d5f41f6a32a899ad17dae646f",
+    "refs/Cpp2IL/Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs": "c5489016f9d9368ebf0a92849e099e78ec3e82e2ae71f095ec2dd0eb4be8b715",
+    "refs/Cpp2IL/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs": "1a595f3064fb497692bb9e2410837d5e353e0332b79c29387399a795ab7297ed"
+  },
+  "evidence": [
+    "reports/arm64-currency-abi-gap.json",
+    "reports/integer-aggregate-leaf-recognition.json",
+    "reports/integer-aggregate-leaf-native-fixtures.json",
+    "reports/recovered-aggregate-leaves-nso-generic-ctor-v27.json",
+    "logs/aggregate-leaf-probe-build.log",
+    "logs/aggregate-leaf-probe-run-2.log",
+    "logs/aggregate-leaf-probe-build-4.log",
+    "logs/aggregate-leaf-probe-run-3.log",
+    "reports/recovered-aggregate-leaves-nso-native-leaves-v28.json",
+    "logs/recovered-aggregate-leaf-v28.log"
+  ],
+  "recovered_execution": {
+    "recovery_run": "nso-native-leaves-v28",
+    "status": "PASS_RECOVERED_16BYTE_FIELD_COPIES_VS_ORIGINAL_NATIVE",
+    "cases": 1024,
+    "checks": 10240,
+    "fields_remapped": 2,
+    "failure_count": 0,
+    "fatal": null,
+    "bodies": [
+      {
+        "method": "get_Count",
+        "cil_sha256": "114f5981bf996738732f7c4fabbc319d93cc0f728ce3d2d02bd642a9f335b060",
+        "bytes": 7,
+        "max_stack": 8,
+        "locals": 0,
+        "exception_regions": 0
+      },
+      {
+        "method": "set_Count",
+        "cil_sha256": "2d909bf331c9cc6004acb8dfa2a19ea5b0862eb3eb5b97404028177c14c2aa8f",
+        "bytes": 8,
+        "max_stack": 8,
+        "locals": 0,
+        "exception_regions": 0
+      }
+    ],
+    "assembly_sha256": "b3e9e65cf4e7add3643662133d93d3fdf9b7cc05a3606860c237999bb082e711",
+    "fixture_sha256": "b92e8ac01938bfb436bd8805673a791d390c5db8bc7d248a23515d627fdebb57",
+    "scope": "Retains actual complete recovered getter/setter CIL instruction bytes, changing only the sole field metadata token in each body to isolated storage with the same four declared value fields. Matches original ARM64 field values; native tail padding identity is expressly excluded. Helpers, calls, branches, locals and other instructions are rejected. No original runtime, class initialization, GC, null receiver, generic aggregate entry/call/return, codec, or complete source claim."
+  }
+}

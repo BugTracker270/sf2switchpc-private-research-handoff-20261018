@@ -1,0 +1,280 @@
+{
+  "status": "CONFIRMED_FROZEN_V40_COPY_SOURCE_REASSIGNMENT_MISCOMPILATION",
+  "counterexamples": 6,
+  "control_cases_preserved": 9,
+  "cases": [
+    {
+      "mode": "memory-source-overwrite",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 17,
+      "after": 29,
+      "equivalent": false,
+      "expected_counterexample": true,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move source @ source, other @ other",
+        "2 Move result @ result, [copy @ copy\u002B10]",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return [other @ other\u002B10]"
+      ]
+    },
+    {
+      "mode": "memory-source-overwrite",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": -33,
+      "after": 91,
+      "equivalent": false,
+      "expected_counterexample": true,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move source @ source, other @ other",
+        "2 Move result @ result, [copy @ copy\u002B10]",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return [other @ other\u002B10]"
+      ]
+    },
+    {
+      "mode": "memory-source-overwrite",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 0,
+      "after": 987654321,
+      "equivalent": false,
+      "expected_counterexample": true,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move source @ source, other @ other",
+        "2 Move result @ result, [copy @ copy\u002B10]",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return [other @ other\u002B10]"
+      ]
+    },
+    {
+      "mode": "plain-source-overwrite",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 4096,
+      "after": 8192,
+      "equivalent": false,
+      "expected_counterexample": true,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move source @ source, other @ other",
+        "2 Move result @ result, copy @ copy",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return other @ other"
+      ]
+    },
+    {
+      "mode": "plain-source-overwrite",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": 12288,
+      "after": 16384,
+      "equivalent": false,
+      "expected_counterexample": true,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move source @ source, other @ other",
+        "2 Move result @ result, copy @ copy",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return other @ other"
+      ]
+    },
+    {
+      "mode": "plain-source-overwrite",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 20480,
+      "after": 24576,
+      "equivalent": false,
+      "expected_counterexample": true,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move source @ source, other @ other",
+        "2 Move result @ result, copy @ copy",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return other @ other"
+      ]
+    },
+    {
+      "mode": "no-overwrite",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 17,
+      "after": 17,
+      "equivalent": true,
+      "expected_counterexample": false,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move result @ result, [copy @ copy\u002B10]",
+        "2 Return result @ result"
+      ],
+      "transformed": [
+        "2 Return [source @ source\u002B10]"
+      ]
+    },
+    {
+      "mode": "no-overwrite",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": -33,
+      "after": -33,
+      "equivalent": true,
+      "expected_counterexample": false,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move result @ result, [copy @ copy\u002B10]",
+        "2 Return result @ result"
+      ],
+      "transformed": [
+        "2 Return [source @ source\u002B10]"
+      ]
+    },
+    {
+      "mode": "no-overwrite",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 0,
+      "after": 0,
+      "equivalent": true,
+      "expected_counterexample": false,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move result @ result, [copy @ copy\u002B10]",
+        "2 Return result @ result"
+      ],
+      "transformed": [
+        "2 Return [source @ source\u002B10]"
+      ]
+    },
+    {
+      "mode": "source-overwrite-after-read",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 17,
+      "after": 17,
+      "equivalent": true,
+      "expected_counterexample": false,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move result @ result, [copy @ copy\u002B10]",
+        "2 Move source @ source, other @ other",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return [source @ source\u002B10]"
+      ]
+    },
+    {
+      "mode": "source-overwrite-after-read",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": -33,
+      "after": -33,
+      "equivalent": true,
+      "expected_counterexample": false,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move result @ result, [copy @ copy\u002B10]",
+        "2 Move source @ source, other @ other",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return [source @ source\u002B10]"
+      ]
+    },
+    {
+      "mode": "source-overwrite-after-read",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 0,
+      "after": 0,
+      "equivalent": true,
+      "expected_counterexample": false,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move result @ result, [copy @ copy\u002B10]",
+        "2 Move source @ source, other @ other",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return [source @ source\u002B10]"
+      ]
+    },
+    {
+      "mode": "destination-overwrite",
+      "input_source": 4096,
+      "input_other": 8192,
+      "before": 29,
+      "after": 29,
+      "equivalent": true,
+      "expected_counterexample": false,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move copy @ copy, other @ other",
+        "2 Move result @ result, [copy @ copy\u002B10]",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return [other @ other\u002B10]"
+      ]
+    },
+    {
+      "mode": "destination-overwrite",
+      "input_source": 12288,
+      "input_other": 16384,
+      "before": 91,
+      "after": 91,
+      "equivalent": true,
+      "expected_counterexample": false,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move copy @ copy, other @ other",
+        "2 Move result @ result, [copy @ copy\u002B10]",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return [other @ other\u002B10]"
+      ]
+    },
+    {
+      "mode": "destination-overwrite",
+      "input_source": 20480,
+      "input_other": 24576,
+      "before": 987654321,
+      "after": 987654321,
+      "equivalent": true,
+      "expected_counterexample": false,
+      "original": [
+        "0 Move copy @ copy, source @ source",
+        "1 Move copy @ copy, other @ other",
+        "2 Move result @ result, [copy @ copy\u002B10]",
+        "3 Return result @ result"
+      ],
+      "transformed": [
+        "3 Return [other @ other\u002B10]"
+      ]
+    }
+  ],
+  "core_sha256": "14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6",
+  "probe_source_sha256": "8073d631bfdc93091460745d400994e54354daf7a4529885a820257beed05e01",
+  "game_methods_executed": 0,
+  "game_metadata_loaded": false,
+  "current_v41_core_built": false,
+  "scope": "Executes unchanged frozen v40 Simplifier.Simplify on minimal real ISIL/CFG/LocalVariable objects. An uninitialized method context supplies only the actual pass\u0027s Locals/ParameterLocals/CFG fields; the full production pipeline is not invoked. A bounded independent Move/Return/memory-read interpreter compares input and transformed fixture semantics. Confirms optimizer behavior only; not an actual game caller witness or production v41 NativeRead carrier test."
+}

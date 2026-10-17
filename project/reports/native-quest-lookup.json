@@ -1,0 +1,38 @@
+{
+  "status": "PASS_COMPILED_QUEST_LOOKUP_COMPARATOR_VS_ORIGINAL_ARM64",
+  "lookups": 578,
+  "comparisons": 441,
+  "checks": 1019,
+  "catalog_entries": 562,
+  "fixture_sha256": "ecf29efbec9deeeaa7990a6868fa64e9d93768d7be62a6c0f8c28ab8befca390",
+  "executed_functions": {
+    "quest_lookup": 838105,
+    "get_enumerator": 578,
+    "enum_ctor": 578,
+    "enum_next": 1168527,
+    "class_layout_init": 500811,
+    "enum_verify": 667748,
+    "enum_current": 166921,
+    "string_equal_instance": 500763,
+    "string_equal": 876461,
+    "enum_dispose": 578,
+    "quest_compare": 882,
+    "int_compare_unboxed": 588
+  },
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "allocation_calls": {},
+  "metadata_initialization_guards": [
+    "0x3b855e7",
+    "0x3b87856",
+    "0x3a34bde"
+  ],
+  "original_text_sha256": {
+    "quest_lookup": "614d34b2e3e1c1fcece8315c8d0f8dcd4dc46a8e325b7dade8a40b03f1f924b3",
+    "quest_compare": "d03ff6a9623f44b857a4bc7d1bc3bab4e2a9efcdea4bdf438457ad20cbee62e4",
+    "int_compare_unboxed": "e782139b82be26b0415c979b237845ec5ce24fd0ff4a2e28d81f62c3babbe900",
+    "string_equal_instance": "5b063a4ba2f32e5dd34e0e041082d47e26b8549dbb2a9c37363f0698a3cee7f3",
+    "string_equal": "99d1c487f067890bccb739edf3ddb167cd95ede3fdac08426e6a28fdd645d93e"
+  },
+  "scope": "Original first ordinal name lookup over 559 recovered quest definitions plus three synthetic Unicode/empty names, including duplicate-name ordering. Comparator covers native enum states 0/1/2 and full int32 priority boundaries; ACTIONS/ACTIONS returns +1. Initialized synthetic MethodInfo/RGCTX and valid reference lists; no allocation or game-function mocks. Does not prove global queue ordering, action-state reachability, save-state linkage or story completion."
+}

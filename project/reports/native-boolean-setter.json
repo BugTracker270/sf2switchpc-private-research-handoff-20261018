@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ORIGINAL_CANONICAL_BOOLEAN_TRANSITIONS_AT_INIT_BOUNDARY",
+  "cases": 4,
+  "checks": 12,
+  "fixture_sha256": "2f5f22d9afbf62d51148ff4dbe1e787cf6a0624ae110640deaad68fc2e6684dc",
+  "original_text_sha256": {
+    "get": "b7c7f0ed8f1a6b8c9ab4c9a0c8f27313980c4c3b5f67d095a6ab594ef5d38703",
+    "set": "c523e8c3d46dd0dd41986be857c0648fa2483083c48a524673d863813e91edb4"
+  },
+  "text_modified": false,
+  "supplied_init_callback": "0x2222A0",
+  "scope": "Original AdvLog getter/setter with synthetic class/static storage and preset metadata guards. Init is an explicit supplied callback boundary; only the decision to call it is observed. All four canonical 0/1 transitions; initialization contents, noncanonical bytes, threading and whole-game behavior remain outside scope."
+}

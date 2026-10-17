@@ -1,0 +1,602 @@
+{
+  "status": "PASS_ASSEMBLY_LEAF_GETTER_NATIVE_ACCESSIBILITY_AND_EMISSION_CONTRACT",
+  "checks": 78,
+  "tests": [
+    {
+      "name": "original input identities",
+      "status": "PASS"
+    },
+    {
+      "name": "original private field and Assembly getter preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "owner is nonnested nongeneric reference class without cctor",
+      "status": "PASS"
+    },
+    {
+      "name": "original getter exact native field load and return",
+      "status": "PASS"
+    },
+    {
+      "name": "public getter route remains distinct and rejects Assembly getter",
+      "status": "PASS"
+    },
+    {
+      "name": "private setter remains rejected by public route",
+      "status": "PASS"
+    },
+    {
+      "name": "current v38 recovered getter retains original Assembly/private metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "current recovered getter has exact one field read and return with local copies only",
+      "status": "PASS"
+    },
+    {
+      "name": "new APIs exist",
+      "status": "PASS"
+    },
+    {
+      "name": "current recovered getter returns exactly original receiver field through local copies",
+      "status": "PASS"
+    },
+    {
+      "name": "native-only selector returns original unique Assembly getter",
+      "status": "PASS"
+    },
+    {
+      "name": "private setter is not an Assembly getter",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong native field offset rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "any owner cctor rejects even BeforeFieldInit",
+      "status": "PASS"
+    },
+    {
+      "name": "generic owner rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "nested owner rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "distinct exact native getter candidates reject instead of choosing first",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: BestHTTP.Caching.HTTPCacheFileInfo::get_Uri",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: BestHTTP.Caching.HTTPCacheFileInfo::get_BodyLength",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: BestHTTP.Caching.HTTPCacheFileInfo::get_MappedNameIDX",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: BestHTTP.HTTPConnection::get_ServerAddress",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: BestHTTP.HTTPConnection::get_CurrentRequest",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: BestHTTP.HTTPConnection::get_Proxy",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: BestHTTP.HTTPConnection::get_LastProcessedUri",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_NewItems",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_NewStartingIndex",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_OldItems",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs::get_OldStartingIndex",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Newtonsoft.Json.Schema.JsonSchema::get_InternalId",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Newtonsoft.Json.Serialization.JsonArrayContract::get_CollectionItemType",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Newtonsoft.Json.Serialization.JsonContract::get_InternalConverter",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Newtonsoft.Json.Serialization.JsonDictionaryContract::get_DictionaryKeyType",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Newtonsoft.Json.Serialization.JsonDictionaryContract::get_DictionaryValueType",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Newtonsoft.Json.Serialization.JsonSerializerInternalBase::get_Serializer",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Nekki.Audio.AudioUnit::get_Paused",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Unity.IO.Compression.DeflateInput::get_Count",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Unity.IO.Compression.DeflateInput::get_StartIndex",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Unity.IO.Compression.DeflateStreamAsyncResult::get_Result",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Unity.IO.Compression.FastEncoder::get_LastCompressionRatio",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Unity.IO.Compression.Match::get_Position",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Unity.IO.Compression.Match::get_Length",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Unity.IO.Compression.Match::get_Symbol",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: Unity.IO.Compression.OutputBuffer::get_BytesWritten",
+      "status": "PASS"
+    },
+    {
+      "name": "eligible getter retains exact current recovered field semantics: InControl.UnityInputDevice::get_JoystickId",
+      "status": "PASS"
+    },
+    {
+      "name": "all-eligible getter inventory includes original Serializer candidate",
+      "status": "PASS"
+    },
+    {
+      "name": "real output attachment identities are consistent",
+      "status": "PASS"
+    },
+    {
+      "name": "getter dataflow control accepts direct field return",
+      "status": "PASS"
+    },
+    {
+      "name": "getter dataflow rejects returning receiver instead of field",
+      "status": "PASS"
+    },
+    {
+      "name": "getter dataflow rejects uninitialized result",
+      "status": "PASS"
+    },
+    {
+      "name": "getter dataflow rejects another argument as receiver",
+      "status": "PASS"
+    },
+    {
+      "name": "getter dataflow rejects address load",
+      "status": "PASS"
+    },
+    {
+      "name": "real same-assembly original caller is accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "original getter recursion rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "same owner other method remains a field access",
+      "status": "PASS"
+    },
+    {
+      "name": "null caller/field/getter reject",
+      "status": "PASS"
+    },
+    {
+      "name": "detached method rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "same-name distinct assembly object rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "real different output assembly rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "non-Assembly private setter rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "non-Assembly getter rejects: Public",
+      "status": "PASS"
+    },
+    {
+      "name": "non-Assembly getter rejects: Private",
+      "status": "PASS"
+    },
+    {
+      "name": "non-Assembly getter rejects: Family",
+      "status": "PASS"
+    },
+    {
+      "name": "non-Assembly getter rejects: FamORAssem",
+      "status": "PASS"
+    },
+    {
+      "name": "non-Assembly getter rejects: FamANDAssem",
+      "status": "PASS"
+    },
+    {
+      "name": "missing target attachment rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "missing owner attachment rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "missing field attachment rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong same-name owner assembly attachment rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "detached target definition rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "original caller detached from its type rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "output method visibility mismatch rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "output return signature mismatch rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "attached output-only owner cctor rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "positive after negative caller sites is not poisoned by cache",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter replaces eligible private field read with exact direct internal Call",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter leaves private field stores unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "real emitter leaves cross-assembly private field read unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "original output metadata flags remain unchanged",
+      "status": "PASS"
+    }
+  ],
+  "fatal": null,
+  "baseline": false,
+  "core_sha256": "52e9fa40275b71be5ea48e1bab1816e59dc4412ddfc0c627c29345f3086a4929",
+  "probe_source_sha256": "e3c386cbaa71be197ec5285cc54b46cafce16f2a335b6328bf0c3f4365c25783",
+  "native_getter_sha256": "f289023bfc90be5c90aa1a98a40c5b356af639e69af0399f5914b2202364955c",
+  "recovered_getter_run": "nso-virtual-companion-copy-v38",
+  "recovered_getter_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192",
+  "recovered_getter_field_loads": 1,
+  "eligible_getter_inventory": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.Caching.HTTPCacheFileInfo",
+      "field": "\u003CUri\u003Ek__BackingField",
+      "getter": "get_Uri",
+      "native_rva": "0x2294A0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.Caching.HTTPCacheFileInfo",
+      "field": "\u003CBodyLength\u003Ek__BackingField",
+      "getter": "get_BodyLength",
+      "native_rva": "0x2294C0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.Caching.HTTPCacheFileInfo",
+      "field": "\u003CMappedNameIDX\u003Ek__BackingField",
+      "getter": "get_MappedNameIDX",
+      "native_rva": "0x229570",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.HTTPConnection",
+      "field": "\u003CServerAddress\u003Ek__BackingField",
+      "getter": "get_ServerAddress",
+      "native_rva": "0x250CD0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.HTTPConnection",
+      "field": "\u003CCurrentRequest\u003Ek__BackingField",
+      "getter": "get_CurrentRequest",
+      "native_rva": "0x250D30",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.HTTPConnection",
+      "field": "\u003CProxy\u003Ek__BackingField",
+      "getter": "get_Proxy",
+      "native_rva": "0x250F60",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "BestHTTP.HTTPConnection",
+      "field": "\u003CLastProcessedUri\u003Ek__BackingField",
+      "getter": "get_LastProcessedUri",
+      "native_rva": "0x250F90",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs",
+      "field": "\u003CNewItems\u003Ek__BackingField",
+      "getter": "get_NewItems",
+      "native_rva": "0x654B90",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs",
+      "field": "\u003CNewStartingIndex\u003Ek__BackingField",
+      "getter": "get_NewStartingIndex",
+      "native_rva": "0x654BA0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs",
+      "field": "\u003COldItems\u003Ek__BackingField",
+      "getter": "get_OldItems",
+      "native_rva": "0x654BB0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.ObservableSupport.NotifyCollectionChangedEventArgs",
+      "field": "\u003COldStartingIndex\u003Ek__BackingField",
+      "getter": "get_OldStartingIndex",
+      "native_rva": "0x654BC0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Schema.JsonSchema",
+      "field": "_internalId",
+      "getter": "get_InternalId",
+      "native_rva": "0x655F20",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Serialization.JsonArrayContract",
+      "field": "\u003CCollectionItemType\u003Ek__BackingField",
+      "getter": "get_CollectionItemType",
+      "native_rva": "0x1E48A0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Serialization.JsonContract",
+      "field": "\u003CInternalConverter\u003Ek__BackingField",
+      "getter": "get_InternalConverter",
+      "native_rva": "0x1D61D0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Serialization.JsonDictionaryContract",
+      "field": "\u003CDictionaryKeyType\u003Ek__BackingField",
+      "getter": "get_DictionaryKeyType",
+      "native_rva": "0x1E5890",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Serialization.JsonDictionaryContract",
+      "field": "\u003CDictionaryValueType\u003Ek__BackingField",
+      "getter": "get_DictionaryValueType",
+      "native_rva": "0x1E57A0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Newtonsoft.Json.Serialization.JsonSerializerInternalBase",
+      "field": "\u003CSerializer\u003Ek__BackingField",
+      "getter": "get_Serializer",
+      "native_rva": "0x1E6850",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Nekki.Audio.AudioUnit",
+      "field": "\u003CPaused\u003Ek__BackingField",
+      "getter": "get_Paused",
+      "native_rva": "0x10E9D90",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.DeflateInput",
+      "field": "count",
+      "getter": "get_Count",
+      "native_rva": "0xB3B20",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.DeflateInput",
+      "field": "startIndex",
+      "getter": "get_StartIndex",
+      "native_rva": "0xB3E30",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.DeflateStreamAsyncResult",
+      "field": "m_Result",
+      "getter": "get_Result",
+      "native_rva": "0xB65D0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.FastEncoder",
+      "field": "lastCompressionRatio",
+      "getter": "get_LastCompressionRatio",
+      "native_rva": "0xB46D0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.Match",
+      "field": "pos",
+      "getter": "get_Position",
+      "native_rva": "0xB92F0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.Match",
+      "field": "len",
+      "getter": "get_Length",
+      "native_rva": "0xB92E0",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.Match",
+      "field": "symbol",
+      "getter": "get_Symbol",
+      "native_rva": "0xB9220",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "owner": "Unity.IO.Compression.OutputBuffer",
+      "field": "pos",
+      "getter": "get_BytesWritten",
+      "native_rva": "0xB4800",
+      "valid": true,
+      "output_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192"
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "owner": "InControl.UnityInputDevice",
+      "field": "\u003CJoystickId\u003Ek__BackingField",
+      "getter": "get_JoystickId",
+      "native_rva": "0x11B87E0",
+      "valid": true,
+      "output_assembly_sha256": "b27b575f04159eb61cd50eaf21566e682b882726b5faa216bf1402b55e7ae27c"
+    }
+  ],
+  "emitted": [
+    {
+      "name": "AssemblyLeafLoad",
+      "opcodes": [
+        "ldarg",
+        "call",
+        "ret"
+      ]
+    },
+    {
+      "name": "AssemblyLeafStoreUnchanged",
+      "opcodes": [
+        "ldarg",
+        "ldarg",
+        "stfld",
+        "ret"
+      ]
+    },
+    {
+      "name": "ForeignLoadUnchanged",
+      "opcodes": [
+        "ldarg",
+        "ldfld",
+        "ret"
+      ]
+    }
+  ],
+  "original_game_methods_executed": 0,
+  "original_game_metadata_modified": false,
+  "production_outputs_written": false,
+  "scope": "Original input/native/getter metadata and current recovered CIL are read-only. Baseline distinguishes public-only rejection. New API fixtures populate actual production stub/type/member attachment stages in memory, then test caller assembly object identity and real emitter instructions. Temporary in-process metadata-attribute/attachment negatives are restored; no game code is executed, no private flags are widened and no static/setter/aggregate recovery is asserted."
+}

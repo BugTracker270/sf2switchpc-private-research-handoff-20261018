@@ -1,0 +1,173 @@
+{
+  "status": "EVIDENCE_BACKED_EXACT_OBJECT_ISINST_ABI_ONLY_NEXT_CANDIDATE",
+  "recovery_implemented": false,
+  "core_modified": false,
+  "game_or_native_functions_executed": 0,
+  "semantic_lowering_implemented": false,
+  "full_clean_decompile_ready": false,
+  "exact_native": {
+    "start": "0xB5B390",
+    "end": "0xB5B484",
+    "bytes": 244,
+    "sha256": "1b265abeee0dfb0991ffe2b237b6cf3f817a9a5071eb8787a2dc28b87d9cbec6",
+    "original_image_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+    "registered_method_aliases": 0,
+    "dump_registered_pointer_matches": 0
+  },
+  "official_contract": {
+    "release": "2018.1.9f1",
+    "revision": "24bbd83e8b9e",
+    "archive_sha256": "ce666b2de60716cb5564b53317b56f0b82eddbea7afb3462ef51d5e121833c96",
+    "declaration": "Il2CppObject* il2cpp::vm::Object::IsInst(Il2CppObject* obj, Il2CppClass* klass)",
+    "definition_lines": [
+      203,
+      228
+    ],
+    "declaration_line": 23,
+    "source_files": [
+      {
+        "archive_member": "Editor\\Data\\il2cpp\\libil2cpp\\vm\\Object.cpp",
+        "private_path": "analysis\\reconstruction\\compiler-family-v38\\official-runtime\\Object.cpp",
+        "sha256": "91991f55dd7da9d147e35072054cf3d692ef2bc77cdc248d80d2fc7bd67cea03",
+        "bytes": 11418
+      },
+      {
+        "archive_member": "Editor\\Data\\il2cpp\\libil2cpp\\vm\\Object.h",
+        "private_path": "analysis\\reconstruction\\compiler-family-v38\\official-runtime\\Object.h",
+        "sha256": "a4e13100c58619d29d109478f44594916869a0b5bcc9fefa47742f23cab6d913",
+        "bytes": 1782
+      }
+    ]
+  },
+  "existing_discovery": {
+    "field": "BaseKeyFunctionAddresses.il2cpp_vm_object_is_inst",
+    "observed_result": "0x0",
+    "frozen_core_sha256": "197403735d374bdde681ad203cdb3eb18e8cd9eef01897908a8c4f9e786ad99a",
+    "anchor": "System.Type.IsInstanceOfType",
+    "anchor_rva": "0x9056A0",
+    "anchor_bytes": 4,
+    "anchor_sha256": "ddb0d3237ef671c85e0bb3e93a72aa9de210483aaaec08e66bf824b1fea3f02d",
+    "anchor_bl_count": 0,
+    "explanation": "Existing ARM64 finder chooses the final BL in this metadata body; original Switch Type.IsInstanceOfType body has no BL, so the hook yields0. Exact pinned fallback needs independent image/FDE/body validation; do not globally treat this discovery heuristic as identity proof."
+  },
+  "native_abi": {
+    "argument0": "X0: original Il2CppObject* value, possibly null",
+    "argument1": "X1: Il2CppClass* target",
+    "return_value": "X0: same original object pointer or null; not Boolean",
+    "incoming_x2_plus": "No incoming X2-X7/V0-V7 argument dependency in this exact helper. X2 is assigned a local out-pointer on the COM path before use; assert paths set their own values.",
+    "null_contract": "Null input returns null before reading either object class or target class.",
+    "effects": [
+      "Class::IsAssignableFrom for ordinary objects, including metadata Class::Init and generic/interface/array assignability rules",
+      "COM/WinRT class classification and interface QueryInterface",
+      "Release on successful queried interface",
+      "object-class fallback for imported objects",
+      "assertion failure paths in malformed COM state"
+    ]
+  },
+  "proposed_abi_shield": {
+    "known_exact_target_only": true,
+    "preserve_numeric_diagnostic": true,
+    "preserve_existing_destination_identity": true,
+    "preserve_original_x0_x1_source_identities": true,
+    "trim_only_verified_raw_capture_suffix": "From exact18operand target/result/X0-X7/V0-V7 layout to target/result/originalX0/originalX1",
+    "nominal_return_type": "Canonical System.Object only when result type is unknown or already canonical; reject conflicting declared types",
+    "class_argument": "Preserve exact X1 native class operand and unresolved loads. ABI recognition alone does not convert an unknown or runtime-dependent class into System.Type/static metadata.",
+    "carrier": "Use existing immutable exact-ABI carrier/clone/emitter validation pattern; reject stale target/owner/opcode/result/source identities or noncanonical raw layout.",
+    "layout_guard": "Original opt-in legacy NSO24 plus image/FDE/body hash. Check aliases before generic method lookup; no helper name guess or ABI inference from nearby methods.",
+    "semantics": "None. Keep call effect and diagnostic; never replace return with default/null/Boolean or delete the call. Existing key-function field may expose validated identity but does not replace exact fallback proof."
+  },
+  "original_caller": {
+    "owner": "InControl.PlayStation4MacBTProfile..ctor",
+    "rva": "0x11A4CC0",
+    "original_numeric_calls": 28,
+    "current_operand_count": 18,
+    "first_call_rva": "0x11A4D88",
+    "first_call_ir_index": 63,
+    "class_read_ir_index": 61,
+    "target_element_class_ir_index": 62,
+    "object_input": "Original OS X string inX0 /v66",
+    "class_input": "Original runtime array objectv65\u2192klassv68\u2192[klass+0x40]v69 inX1; this local remains untyped",
+    "exact_result": "v70/X0_v347 remains live in original CheckEqual64 and failure branch65",
+    "exception_order": "Original type-test failure leads toB4DA50 at11A5C54 before the array length read11A4D94 and original element store11A4DAC.",
+    "element_class_layout": "Original pointer-size8 Class prefix: image/gc_desc/name/namespaze plus two16-byte Il2CppType values place element_class at0x40, independently matching native loads.",
+    "private_ir": "analysis\\reconstruction\\compiler-family-v38\\actual-ir\\11A4CC0-after-type.txt",
+    "private_ir_sha256": "a653fe59718aedd64da63776af3efd2b12db4b9a05079af30cf0c2bcc906fd07"
+  },
+  "observed_coverage": {
+    "canonical_diagnostics": [
+      20728,
+      32710
+    ],
+    "total_diagnostics": 53438,
+    "array_to_nint_diagnostic_occurrences": 3508,
+    "array_to_nint_B5B390_within4lines": 3355,
+    "distinct_exported_owner_groups": [
+      313,
+      337
+    ],
+    "matching_original_BL_encodings": 13188,
+    "enclosing_original_FDEs": 4783,
+    "interpretation": "These are exact log/source associations and matching BL instruction encodings inside text/FDE ranges. They are not independent bugs, proof of full reachability, guaranteed eliminated diagnostics or a completion percentage."
+  },
+  "semantic_phase_deferred": {
+    "static_metadata_target": "A separate original metadata-origin proof might support exact CIL isinst for a known closed target, with result/null/effect/type validation.",
+    "runtime_array_target": "The target is actual runtime array element_class, not the array expression's static ElementType. A future semantic representation must preserve this dynamic target or explicitly prove exact freshly allocated array identity without covariance/escape.",
+    "array_store_fusion": "Do not fuse into stelem.ref merely because it also checks covariance: preserve original type-check versus bounds/null exception order and exact source/index/store/return uses.",
+    "system_array_metadata_functions": 113,
+    "system_array_metadata_caller_count": 5,
+    "system_array_metadata_callers": [
+      {
+        "rva": "0x6ea510",
+        "declaration": "private static Array.Swapper get_swapper(Array array) { }",
+        "matching_bl_encodings": 3
+      },
+      {
+        "rva": "0x6ec200",
+        "declaration": "private void int_swapper(int i, int j) { }",
+        "matching_bl_encodings": 1
+      },
+      {
+        "rva": "0x6ec310",
+        "declaration": "private void obj_swapper(int i, int j) { }",
+        "matching_bl_encodings": 3
+      },
+      {
+        "rva": "0x6ec4f0",
+        "declaration": "private void double_swapper(int i, int j) { }",
+        "matching_bl_encodings": 1
+      },
+      {
+        "rva": "0x6ec650",
+        "declaration": "private static int compare(object value1, object value2, IComparer comparer) { }",
+        "matching_bl_encodings": 1
+      }
+    ]
+  },
+  "concrete_counterexamples": [
+    "An object[] reference holding a string[] cannot use isinst System.Object for a boxed Int32 store: runtime target String rejects it.",
+    "Wrong element type plus out-of-range index can distinguish original pre-bounds type check from a blindly fused stelem.ref check order.",
+    "IsInst result is the original object or null; replacing it with Boolean breaks casts/stores/identity consumers outside null-test-only array guards.",
+    "Null object input must not eagerly dereference an invalid/unknown target class, since original helper exits before those reads.",
+    "Imported COM/WinRT objects can invoke QueryInterface/Release and assertion paths; no purity assumption or host substitution follows from this ABI proof.",
+    "Class metadata from a Phi, generic context, unrelated class field, mismatched array, indexed/mutated source, cross-use or address escape cannot establish a static managed target.",
+    "Object arithmetic errors also arise independently from missing field/load/FP-flag semantics; correcting this helper does not type all object-valued integer masks."
+  ],
+  "other_independent_gap": {
+    "owner": "Vector3f.get_Length",
+    "rva": "0x15C5AE0",
+    "evidence": "Original FSQRT S1,S0 then FCMP S1,S1/B.VS; current decoder sends FCMP through integer EmitCompareFlags and emits Single XOR/AND overflow formulas. FSQRT itself is NotImplemented, so stale S1 contributes the previous product. This is not a bitcast or array ABI problem.",
+    "private_ir": "analysis\\reconstruction\\compiler-family-v38\\actual-ir\\15C5AE0-after-type.txt",
+    "private_ir_sha256": "844aeb5a8007bb4766cabd4d7ef618724e4ef8bb42b04aa094788969108e671d",
+    "required_future_scope": "Typed floating compare/unordered flag model and real sqrt/FPrelated ABI recovery, with NaN/inf/signed-zero fixtures; no blanket casts."
+  },
+  "bindings": {
+    "survey_report_sha256": "cbc144e3cbe54b1f55c37165e4c78f12a854ab0681ab31e651f92226c5e50b3e",
+    "actual_ir_report_sha256": "274b369979701ef20297abda7fc7d527da27c7a715c79c899b36817ca79045f0",
+    "official_source_report_sha256": "f09fc4e1ea389e237952657294e359002d909766750f0f869d26434436098d74",
+    "private_native_dependencies": "analysis\\reconstruction\\compiler-family-v38\\object-isinst-dependencies.json",
+    "private_native_sha256": "bd8059590d9e2819bd8a8e5ecd63117b5259b62a9f7025bb10e0863d90dd0535",
+    "official_class_header_sha256": "ebafce9983456b0abeeff64cc34e69ca6f87e05676241e2dd0e972d991b31ecc",
+    "official_class_source_sha256": "2801e2fdfd3dd7db4b14238f70df9335460e777b6a40fe48cb0eb9241ceb7a1d",
+    "source_sha256": "dc982f0ac47764ac6ef2865d75afffb97afd5d2feb86bb7b3ae09c2dcc63e0ff"
+  }
+}

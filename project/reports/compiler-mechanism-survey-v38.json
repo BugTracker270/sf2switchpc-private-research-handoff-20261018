@@ -1,0 +1,821 @@
+{
+  "status": "READ_ONLY_FRESH_CANONICAL_COMPILER_AND_NATIVE_MECHANISM_SURVEY",
+  "recovery_run": "nso-virtual-companion-copy-v38",
+  "assemblies": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "unique_diagnostic_lines": 20728,
+      "codes": {
+        "CS0117": 211,
+        "CS1061": 1555,
+        "CS0103": 104,
+        "CS0030": 8306,
+        "CS7036": 98,
+        "CS0122": 2713,
+        "CS0019": 5074,
+        "CS0023": 349,
+        "CS0266": 458,
+        "CS0234": 1092,
+        "CS1729": 25,
+        "CS0037": 341,
+        "CS1510": 9,
+        "CS0149": 22,
+        "CS0029": 6,
+        "CS0177": 159,
+        "CS0165": 36,
+        "CS8174": 37,
+        "CS0269": 62,
+        "CS0250": 11,
+        "CS0191": 16,
+        "CS8172": 1,
+        "CS0221": 3,
+        "CS0079": 32,
+        "CS1540": 1,
+        "CS8373": 2,
+        "CS0246": 3,
+        "CS0152": 2
+      },
+      "compiler_log": "logs/source-profile-legacy-reference-build-nso-virtual-companion-copy-v38-Assembly-CSharp-firstpass.log",
+      "compiler_log_sha256": "6136b6c1e0213904a903d0914f2fbabca5fdbdeaec5e7fde46edb554ce13848e",
+      "cast_pairs": [
+        {
+          "source_type": "System.Type",
+          "target_type": "nint",
+          "count": 2858
+        },
+        {
+          "source_type": "object[]",
+          "target_type": "nint",
+          "count": 783
+        },
+        {
+          "source_type": "System.IO.TextWriter",
+          "target_type": "nint",
+          "count": 243
+        },
+        {
+          "source_type": "Newtonsoft.Json.JsonReader",
+          "target_type": "nint",
+          "count": 203
+        },
+        {
+          "source_type": "int",
+          "target_type": "string",
+          "count": 159
+        },
+        {
+          "source_type": "Newtonsoft.Json.JsonWriter",
+          "target_type": "nint",
+          "count": 155
+        },
+        {
+          "source_type": "object*",
+          "target_type": "object",
+          "count": 153
+        },
+        {
+          "source_type": "string[]",
+          "target_type": "nint",
+          "count": 147
+        },
+        {
+          "source_type": "System.IO.Stream",
+          "target_type": "nint",
+          "count": 143
+        },
+        {
+          "source_type": "System.Text.StringBuilder",
+          "target_type": "nint",
+          "count": 118
+        },
+        {
+          "source_type": "Newtonsoft.Json.JsonSerializer",
+          "target_type": "nint",
+          "count": 114
+        },
+        {
+          "source_type": "System.Delegate",
+          "target_type": "nint",
+          "count": 106
+        },
+        {
+          "source_type": "System.IO.TextReader",
+          "target_type": "nint",
+          "count": 100
+        },
+        {
+          "source_type": "System.IO.MemoryStream",
+          "target_type": "nint",
+          "count": 86
+        },
+        {
+          "source_type": "string",
+          "target_type": "nint",
+          "count": 81
+        },
+        {
+          "source_type": "System.IO.BinaryWriter",
+          "target_type": "nint",
+          "count": 68
+        },
+        {
+          "source_type": "System.Text.Encoding",
+          "target_type": "nint",
+          "count": 66
+        },
+        {
+          "source_type": "YamlDotNet.Core.Tokens.Token",
+          "target_type": "nint",
+          "count": 65
+        },
+        {
+          "source_type": "SimpleJSON.JSONNode",
+          "target_type": "nint",
+          "count": 53
+        },
+        {
+          "source_type": "Newtonsoft.Json.JsonTextReader",
+          "target_type": "nint",
+          "count": 49
+        },
+        {
+          "source_type": "int",
+          "target_type": "System.DateTime",
+          "count": 47
+        },
+        {
+          "source_type": "string",
+          "target_type": "string*",
+          "count": 45
+        },
+        {
+          "source_type": "System.Type",
+          "target_type": "int",
+          "count": 44
+        },
+        {
+          "source_type": "System.Type[]",
+          "target_type": "nint",
+          "count": 44
+        },
+        {
+          "source_type": "SevenZip.Compression.RangeCoder.BitEncoder",
+          "target_type": "SevenZip.Compression.RangeCoder.BitEncoder*",
+          "count": 44
+        },
+        {
+          "source_type": "System.Reflection.MemberInfo",
+          "target_type": "nint",
+          "count": 44
+        },
+        {
+          "source_type": "YamlDotNet.Core.Events.ParsingEvent",
+          "target_type": "nint",
+          "count": 36
+        },
+        {
+          "source_type": "int",
+          "target_type": "System.Type",
+          "count": 34
+        },
+        {
+          "source_type": "YamlDotNet.RepresentationModel.YamlNode",
+          "target_type": "nint",
+          "count": 34
+        },
+        {
+          "source_type": "SevenZip.Compression.RangeCoder.BitTreeEncoder",
+          "target_type": "SevenZip.Compression.RangeCoder.BitTreeEncoder*",
+          "count": 33
+        }
+      ],
+      "operator_pairs": [
+        {
+          "operator": "&",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 1399
+        },
+        {
+          "operator": "-",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 347
+        },
+        {
+          "operator": "+",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 296
+        },
+        {
+          "operator": "+",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 278
+        },
+        {
+          "operator": "+",
+          "left_type": "int",
+          "right_type": "object",
+          "count": 227
+        },
+        {
+          "operator": "+",
+          "left_type": "byte[]",
+          "right_type": "int",
+          "count": 190
+        },
+        {
+          "operator": "+",
+          "left_type": "uint[]",
+          "right_type": "int",
+          "count": 83
+        },
+        {
+          "operator": "+",
+          "left_type": "short[]",
+          "right_type": "int",
+          "count": 83
+        },
+        {
+          "operator": "+",
+          "left_type": "Type",
+          "right_type": "int",
+          "count": 73
+        },
+        {
+          "operator": "-",
+          "left_type": "int",
+          "right_type": "object",
+          "count": 73
+        },
+        {
+          "operator": ">>",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 72
+        },
+        {
+          "operator": "&",
+          "left_type": "object",
+          "right_type": "long",
+          "count": 69
+        },
+        {
+          "operator": "+",
+          "left_type": "HTTPRequest",
+          "right_type": "int",
+          "count": 62
+        },
+        {
+          "operator": "-",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 56
+        },
+        {
+          "operator": "&",
+          "left_type": "AppId_t",
+          "right_type": "long",
+          "count": 52
+        },
+        {
+          "operator": "+",
+          "left_type": "int[]",
+          "right_type": "int",
+          "count": 45
+        },
+        {
+          "operator": "&",
+          "left_type": "HTTPRequestHandle",
+          "right_type": "long",
+          "count": 44
+        },
+        {
+          "operator": "+=",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 40
+        },
+        {
+          "operator": "^",
+          "left_type": "float",
+          "right_type": "float",
+          "count": 39
+        },
+        {
+          "operator": "^",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 36
+        }
+      ],
+      "exact_source_vicinity_counts": {
+        "type_to_nint_total": 2858,
+        "type_to_nint_near_unmanaged_load": 2120,
+        "array_to_nint_total": 1095,
+        "array_to_nint_with_B5B390_within4lines": 1026,
+        "object_and_int_total": 1399,
+        "object_and_int_near_unmanaged_load": 204,
+        "object_and_int_without_near_unmanaged_load": 1195,
+        "type_to_nint_near_indirect_call": 144
+      },
+      "array_helper_cast_owner_groups": [
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\CodeStage\\AntiCheat\\Examples\\ActTesterGui.cs",
+          "declaration_line": 1267,
+          "diagnostic_occurrences": 50
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\LitJson\\Lexer.cs",
+          "declaration_line": 194,
+          "diagnostic_occurrences": 28
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\BestHTTP\\SocketIO\\Events\\EventNames.cs",
+          "declaration_line": 65,
+          "diagnostic_occurrences": 26
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\BestHTTP\\Authentication\\Digest.cs",
+          "declaration_line": 195,
+          "diagnostic_occurrences": 23
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\Serialization\\DefaultContractResolver.cs",
+          "declaration_line": 1951,
+          "diagnostic_occurrences": 20
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\nn\\hid\\GestureState.cs",
+          "declaration_line": 59,
+          "diagnostic_occurrences": 17
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\UnityEditor_iOS_Xcode\\PlistDocument.cs",
+          "declaration_line": 54,
+          "diagnostic_occurrences": 13
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\nn\\hid\\ControllerSupportArg.cs",
+          "declaration_line": 47,
+          "diagnostic_occurrences": 12
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\BestHTTP\\WebSocket\\WebSocket.cs",
+          "declaration_line": 99,
+          "diagnostic_occurrences": 10
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\SendMeLog.cs",
+          "declaration_line": 407,
+          "diagnostic_occurrences": 10
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\JsonValidatingReader.cs",
+          "declaration_line": 1336,
+          "diagnostic_occurrences": 10
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\BestHTTP\\Decompression\\Zlib\\DeflateManager.cs",
+          "declaration_line": 1,
+          "diagnostic_occurrences": 10
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\JsonValidatingReader.cs",
+          "declaration_line": 1856,
+          "diagnostic_occurrences": 10
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\BestHTTP\\Decompression\\Zlib\\DeflateManager.cs",
+          "declaration_line": 6086,
+          "diagnostic_occurrences": 10
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp-firstpass\\TextureDownloadSample.cs",
+          "declaration_line": 22,
+          "diagnostic_occurrences": 9
+        }
+      ],
+      "array_helper_distinct_owner_groups": 313
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "unique_diagnostic_lines": 32710,
+      "codes": {
+        "CS0122": 4225,
+        "CS0019": 4981,
+        "CS0030": 15759,
+        "CS1061": 3139,
+        "CS0117": 576,
+        "CS0234": 1057,
+        "CS0103": 738,
+        "CS0023": 211,
+        "CS8174": 2,
+        "CS0266": 1021,
+        "CS0165": 24,
+        "CS0037": 514,
+        "CS0177": 24,
+        "CS8172": 1,
+        "CS1510": 14,
+        "CS0029": 30,
+        "CS0191": 107,
+        "CS1540": 20,
+        "CS7036": 103,
+        "CS0250": 1,
+        "CS0149": 71,
+        "CS0020": 1,
+        "CS1729": 10,
+        "CS0272": 3,
+        "CS0246": 1,
+        "CS1503": 38,
+        "CS0079": 30,
+        "CS0120": 2,
+        "CS1501": 3,
+        "CS0269": 4
+      },
+      "compiler_log": "logs/source-profile-legacy-reference-build-nso-virtual-companion-copy-v38-Assembly-CSharp.log",
+      "compiler_log_sha256": "8144cc7ec3d501795a23dadcca083339d4513806a64058c6aeb63ac278ebf635",
+      "cast_pairs": [
+        {
+          "source_type": "System.Type",
+          "target_type": "nint",
+          "count": 4764
+        },
+        {
+          "source_type": "InControl.InputControlMapping[]",
+          "target_type": "nint",
+          "count": 1279
+        },
+        {
+          "source_type": "System.Xml.XmlNode",
+          "target_type": "nint",
+          "count": 1071
+        },
+        {
+          "source_type": "object[]",
+          "target_type": "nint",
+          "count": 668
+        },
+        {
+          "source_type": "int",
+          "target_type": "string",
+          "count": 562
+        },
+        {
+          "source_type": "System.Delegate",
+          "target_type": "nint",
+          "count": 431
+        },
+        {
+          "source_type": "string[]",
+          "target_type": "nint",
+          "count": 404
+        },
+        {
+          "source_type": "object*",
+          "target_type": "object",
+          "count": 341
+        },
+        {
+          "source_type": "System.Xml.XmlAttribute",
+          "target_type": "nint",
+          "count": 209
+        },
+        {
+          "source_type": "SimpleJSON.JSONClass",
+          "target_type": "nint",
+          "count": 168
+        },
+        {
+          "source_type": "System.Xml.XmlNodeList",
+          "target_type": "nint",
+          "count": 146
+        },
+        {
+          "source_type": "System.Xml.XmlDocument",
+          "target_type": "nint",
+          "count": 127
+        },
+        {
+          "source_type": "SimpleJSON.JSONNode",
+          "target_type": "nint",
+          "count": 124
+        },
+        {
+          "source_type": "Nekki.SF2.GUI.LabelAlias",
+          "target_type": "nint",
+          "count": 115
+        },
+        {
+          "source_type": "object*",
+          "target_type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredLong",
+          "count": 87
+        },
+        {
+          "source_type": "nint",
+          "target_type": "System.Delegate",
+          "count": 80
+        },
+        {
+          "source_type": "int",
+          "target_type": "UnityEngine.Vector2",
+          "count": 79
+        },
+        {
+          "source_type": "Nekki.SF2.Core.Fights.Model.Support.ModelParameters",
+          "target_type": "nint",
+          "count": 76
+        },
+        {
+          "source_type": "Nekki.SF2.GUI.ResolutionImage",
+          "target_type": "nint",
+          "count": 70
+        },
+        {
+          "source_type": "System.Type",
+          "target_type": "int",
+          "count": 70
+        },
+        {
+          "source_type": "System.Text.StringBuilder",
+          "target_type": "nint",
+          "count": 56
+        },
+        {
+          "source_type": "Nekki.SF2.GUI.TableViewCell",
+          "target_type": "nint",
+          "count": 50
+        },
+        {
+          "source_type": "Nekki.SF2.Core.Zones.Battle",
+          "target_type": "nint",
+          "count": 49
+        },
+        {
+          "source_type": "object*",
+          "target_type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat",
+          "count": 48
+        },
+        {
+          "source_type": "nint",
+          "target_type": "string",
+          "count": 46
+        },
+        {
+          "source_type": "Nekki.SF2.Core.API.Items.ItemInfo",
+          "target_type": "nint",
+          "count": 44
+        },
+        {
+          "source_type": "Nekki.SF2.GUI.Pvp.PhaseItem",
+          "target_type": "nint",
+          "count": 44
+        },
+        {
+          "source_type": "System.Xml.XmlElement",
+          "target_type": "nint",
+          "count": 43
+        },
+        {
+          "source_type": "UnityEngine.UI.Image",
+          "target_type": "nint",
+          "count": 41
+        },
+        {
+          "source_type": "ProgressBar",
+          "target_type": "nint",
+          "count": 37
+        }
+      ],
+      "operator_pairs": [
+        {
+          "operator": "&",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 1920
+        },
+        {
+          "operator": "-",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 230
+        },
+        {
+          "operator": "+",
+          "left_type": "int",
+          "right_type": "object",
+          "count": 168
+        },
+        {
+          "operator": "+",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 155
+        },
+        {
+          "operator": "^",
+          "left_type": "float",
+          "right_type": "float",
+          "count": 130
+        },
+        {
+          "operator": "&",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 116
+        },
+        {
+          "operator": "+",
+          "left_type": "Type",
+          "right_type": "int",
+          "count": 98
+        },
+        {
+          "operator": "+",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 95
+        },
+        {
+          "operator": "-",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 54
+        },
+        {
+          "operator": "^",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 52
+        },
+        {
+          "operator": "+",
+          "left_type": "Model",
+          "right_type": "int",
+          "count": 51
+        },
+        {
+          "operator": "+",
+          "left_type": "SFScrollRect",
+          "right_type": "int",
+          "count": 48
+        },
+        {
+          "operator": "+",
+          "left_type": "string[]",
+          "right_type": "int",
+          "count": 47
+        },
+        {
+          "operator": "-",
+          "left_type": "int",
+          "right_type": "Type",
+          "count": 42
+        },
+        {
+          "operator": "+=",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 31
+        },
+        {
+          "operator": "+",
+          "left_type": "ItemInfo",
+          "right_type": "int",
+          "count": 28
+        },
+        {
+          "operator": "+",
+          "left_type": "SwitchInputDevice",
+          "right_type": "int",
+          "count": 28
+        },
+        {
+          "operator": "^",
+          "left_type": "double",
+          "right_type": "double",
+          "count": 25
+        },
+        {
+          "operator": "^",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 24
+        },
+        {
+          "operator": ">>",
+          "left_type": "VersionInfo",
+          "right_type": "int",
+          "count": 23
+        }
+      ],
+      "exact_source_vicinity_counts": {
+        "type_to_nint_total": 4764,
+        "object_and_int_total": 1920,
+        "object_and_int_near_unmanaged_load": 267,
+        "type_to_nint_near_unmanaged_load": 3792,
+        "array_to_nint_total": 2413,
+        "array_to_nint_with_B5B390_within4lines": 2329,
+        "object_and_int_without_near_unmanaged_load": 1653,
+        "type_to_nint_near_indirect_call": 80
+      },
+      "array_helper_cast_owner_groups": [
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\UnityInputDeviceProfileList.cs",
+          "declaration_line": 1,
+          "diagnostic_occurrences": 65
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\Xbox360WinProfile.cs",
+          "declaration_line": 9,
+          "diagnostic_occurrences": 37
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\TestInputManager.cs",
+          "declaration_line": 902,
+          "diagnostic_occurrences": 33
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\Xbox360LinuxProfile.cs",
+          "declaration_line": 9,
+          "diagnostic_occurrences": 28
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\PlayStation4MacBTProfile.cs",
+          "declaration_line": 9,
+          "diagnostic_occurrences": 28
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\Xbox360MacProfile.cs",
+          "declaration_line": 9,
+          "diagnostic_occurrences": 27
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\PlayStation4MacUSBProfile.cs",
+          "declaration_line": 9,
+          "diagnostic_occurrences": 25
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\PlayStation3WinProfile.cs",
+          "declaration_line": 9,
+          "diagnostic_occurrences": 25
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\PlayStation3AndroidProfile.cs",
+          "declaration_line": 11,
+          "diagnostic_occurrences": 25
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\ExecutionerXProfile.cs",
+          "declaration_line": 10,
+          "diagnostic_occurrences": 24
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\PlayStation4WinProfile.cs",
+          "declaration_line": 9,
+          "diagnostic_occurrences": 24
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\OuyaWinProfile.cs",
+          "declaration_line": 10,
+          "diagnostic_occurrences": 24
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\PlayStation3LinuxProfile.cs",
+          "declaration_line": 10,
+          "diagnostic_occurrences": 24
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\OuyaLinuxProfile.cs",
+          "declaration_line": 11,
+          "diagnostic_occurrences": 24
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-virtual-companion-copy-v38\\Assembly-CSharp\\InControl\\PlayStation3MacProfile.cs",
+          "declaration_line": 10,
+          "diagnostic_occurrences": 24
+        }
+      ],
+      "array_helper_distinct_owner_groups": 337
+    }
+  ],
+  "source_manifest_sha256": "bcbfb8c77a30988f85a2d430731607e09caa627eafdd8c50ac68c51fa55b1255",
+  "private_evidence": "analysis\\reconstruction\\compiler-family-v38",
+  "array_helper_native": {
+    "rva": "0xb5b390",
+    "bytes": 244,
+    "sha256": "1b265abeee0dfb0991ffe2b237b6cf3f817a9a5071eb8787a2dc28b87d9cbec6",
+    "direct_call_sites": 13188,
+    "enclosing_exact_frames": 4783
+  },
+  "original_native_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "core_modified": false,
+  "exported_source_modified": false,
+  "native_executed": false,
+  "original_methods_invoked": 0,
+  "full_clean_decompile_ready": false,
+  "scope": "Complete matching-reference canonical log counts and checked source hashes. Owner declarations use conservative nearest exported declaration grouping and are observational, not formal C# semantic ownership. Four-line source vicinity is association, not a proof of root cause or recoverable error count. Original exact-FDE native candidates and all direct array-helper callers are retained privately for mechanism review.",
+  "source_sha256": "763e2e7e80e7034bb8628cc22de1baba8a6cd0c3f115558f14792b0247821470"
+}

@@ -1,0 +1,11 @@
+# Fresh v40 ABI-only output correlation
+
+`reports/recovered-object-isinst-abi-nso-object-isinst-abi-v40.json` passes 41 offline checks. It binds the completed 44-assembly invocation and Core `14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6` to immutable v39 output. No recovered method or constructor was executed.
+
+The original InControl profile constructor retains all 28 unresolved Object::IsInst helper diagnostics and its complete remaining operation/member/control sequence. The comparison matches 506 used locals bijectively with exact types, 342 branch targets, and 375 metadata operands. The 38 relocated metadata operands are identical string literals. Only four zero stores into a local with no loads or address escapes become Nop; fourteen unreferenced Object locals disappear. No managed `isinst` or new explicit default replacement appears.
+
+This is a diagnostic-scaffold comparison, not semantic recovery. Both actual output assemblies contain an injected issue helper whose complete body is one `ret` byte (`2A`, SHA-256 `684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1`). It does not throw or log. All 28 purported helper results are distinct Object locals without emitted assignments; InitLocals therefore supplies implicit null if those reads are reached. The method has not been executed or JIT-validated. Real helper return, class-input evaluation, exception and native runtime effects remain unrecovered.
+
+The five System.Array callers are unchanged default bodies in both full outputs, with respectively 2, 1, 1, 1 and 2 instructions. Their nine numeric helper calls exist in the separately forced production-stage analysis, not these exported CIL bodies. They receive no body-recovery credit. The independent synthetic emitter contract uses a Console.WriteLine fallback; it must not be confused with the bare-ret helper in the actual full output.
+
+Detailed CIL, local/branch mappings and preserved initial expectations remain local under ignored `analysis/reconstruction/object-isinst-v40/fresh-output/`. An independent fail-loud emitter contract for unknown operations is a useful next infrastructure task; making unsupported effects throw would expose missing semantics rather than recover them. The full clean decompile is incomplete.

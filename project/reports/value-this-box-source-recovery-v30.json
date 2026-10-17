@@ -1,0 +1,153 @@
+{
+  "status": "SCOPED_BODY_SELECTION_AND_BOXING_VALIDATED_RUNTIME_GUARDS_UNRESOLVED",
+  "updated": "2026-10-17T12:13:11.334520+00:00",
+  "recovery_run": "nso-value-this-box-v30",
+  "compiler_before": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 18066
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 28290
+    }
+  ],
+  "compiler_after": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 18762
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 28906
+    }
+  ],
+  "evidence": {
+    "pointer_observations": {
+      "report": "reports/value-this-pointer-observations.json",
+      "status": "CPP2IL_REGISTERED_POINTER_OBSERVATIONS_ONLY",
+      "source_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "source_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "scope": "Observed actual Cpp2IL context pointer and native entry representation; no recovery-address correction, target aliases, behavior or source claim."
+    },
+    "body_selection": {
+      "report": "reports/value-this-thunks-v30.json",
+      "status": "PASS_SCOPED_VALUE_THIS_THUNK_SELECTION_AND_ALIASES",
+      "checks": 35,
+      "accepted_bodies": 287,
+      "frame_error": null,
+      "source_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "source_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "scope": "Metadata/native exact FDE body selection, retained registered pointers, unique aliases and rejection guards only. Original boxed/unboxed codec equivalence is separately tested; recovered InternalDecrypt CIL and complete source still require validation."
+    },
+    "native_adjustor_equivalence": {
+      "report": "reports/integer-aggregate-adjustor-native-proof.json",
+      "status": "PASS_ORIGINAL_BOXED_ADJUSTOR_VS_UNBOXED_CODEC_AND_FIXTURES",
+      "cases": 1024,
+      "checks": 10240,
+      "boxed_entry": "0x7A9200",
+      "unboxed_entry": "0x7A8F20",
+      "receiver_adjustment": 16,
+      "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+      "game_function_mocks": 0,
+      "text_modified": false,
+      "scope": "Both original entry paths execute against the same existing native-verified codec fixtures and match result/post-call value words while preserving the supplied 16-byte header and following sentinel. Synthetic initialized metadata and absent/inactive/active-consistent detector states; no mismatch callback, real boxed object allocation, GC, class initialization, general ABI, recovered CIL or full source claim."
+    },
+    "native_boxing": {
+      "report": "reports/native-scalar-boxing-v30.json",
+      "status": "PASS_ORIGINAL_NON_NULLABLE_SCALAR_BOX_PAYLOADS_AT_GC_COPY_BOUNDARIES",
+      "cases": 2560,
+      "checks": 17920,
+      "text_modified": false,
+      "metadata_observation_sha256": "96676225f7bd96469e5a905be40aea0ba01b392142410375289db7c3f410b0f7",
+      "fixtures": "analysis\\il2cpp\\scalar-boxing-native-fixtures-v30.jsonl",
+      "fixtures_sha256": "8517d2e1d9f1d0df951283e53ae02c3ba92b9beacfcd9817381ff22b59af9119",
+      "scope": "Original boxing helper, nullable predicate, instance-size reader and already-initialized class path execute unchanged for ten concrete primitive classes with actual metadata sizes and no metadata .cctor. GC allocation and imported memcpy are explicit supplied contracts. Payload bits, exact requested type, fresh pointer, source bytes and destination bounds are checked. Boolean/Char (cctor), nullable/reference/custom types, GC/lifetime, uninitialized classes, actual CLR box instructions and full callers are outside this oracle."
+    },
+    "boxing_ir": {
+      "report": "reports/scalar-boxing-validation-v30.json",
+      "status": "PASS_TYPED_SCALAR_BOX_DISCOVERY_AND_CALLER_IR",
+      "checks": 28,
+      "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "scope": "Actual Cpp2IL method context addresses and primitive class layout/cctor observations. No native boxing or recovered CIL execution is implied."
+    },
+    "liveness_before": {
+      "report": "reports/addressed-storage-liveness-before-v30.json",
+      "status": "ADDRESSED_STORAGE_INITIALIZATION_LOSS_CONFIRMED",
+      "initializer_retained": false,
+      "address_identity_retained": true,
+      "core_assembly_sha256": "d150eb2c28e49af6b59ea71105d82bf4fe37b0c387d37e1be4cd1e74fbc9808a",
+      "scope": "Independent ISIL fixture copies an input into distinct local storage, reads and mutates that storage through its address, and requires the original input to remain unchanged. No application metadata or native code is involved; actual SetAge input provenance is tested separately."
+    },
+    "liveness_after": {
+      "report": "reports/addressed-storage-liveness-after-v30.json",
+      "status": "PASS_ADDRESSED_COPY_INITIALIZATION_AND_IDENTITY_PRESERVED",
+      "initializer_retained": true,
+      "address_identity_retained": true,
+      "core_assembly_sha256": "18e25d76f4cbb75c362342b22891581a3b1da8fa83c1ebc1756bd919a158cbc5",
+      "scope": "Independent ISIL fixture copies an input into distinct local storage, reads and mutates that storage through its address, and requires the original input to remain unchanged. No application metadata or native code is involved; actual SetAge input provenance is tested separately."
+    },
+    "recovered_boxing": {
+      "report": "reports/recovered-primitive-box-nso-value-this-box-v30.json",
+      "status": "PASS_RECOVERED_INT32_BOX_EXPRESSION_AT_TYPED_VALUE_BOUNDARY",
+      "recovery_run": "nso-value-this-box-v30",
+      "cases": 80,
+      "checks": 240,
+      "caller": "FyberPlugin.User::SetAge(System.Int32)",
+      "caller_rva": "0xF230F0",
+      "boxing_call_rva": "0xF23144",
+      "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+      "native_input_window_sha256": "ac2a6da8e3b41f7df15a057c586db1324818cb5d48b64573b0acd60a843019bc",
+      "native_input_storage": "W1 -> W19 -> [SP+0xC]",
+      "input_type_provenance_report_sha256": "27bfddfd4448a7fbe8236696372b44ef6d1186f3beecb00da488b649b1933411",
+      "native_type_info_slot": "0x3979BA8",
+      "box_instructions": 1,
+      "legacy_box_diagnostic_strings": 0,
+      "input_boundary": "actual typed Int32 local 2; unique copy chain from actual age argument 0",
+      "original_body_il_sha256": "3bcf37af34a717e5bd82144e819a67f7be477db7e23e4137848335b86ef71206",
+      "selected_expression_sha256": "4f6887f5f7cdff035cf0a040739c22bc4dd5d70b33350126092c93fd92931ece",
+      "expression_start_il_offset": 130,
+      "expression_end_il_offset": 139,
+      "fatal": null,
+      "original_native_executed": false,
+      "runtime_helpers_replaced": 0,
+      "whole_game_source_ready": false,
+      "scope": "Execute only the actual recovered Int32 box expression from the chosen present native caller. Require exact original native argument-copy/stack/type-slot/call witnesses, actual method argument signature, exact host CLR Int32 box type token and a unique typed copy chain whose stores dominate their original uses when a local supplies the value. Reject escaping addresses or modified input arguments. The original expression instructions are retained; only exact Int32 type tokens map to the same CLR type, one proven Int32 local may be supplied at its declared value boundary, and a return is appended. Check signed/raw-bit payload, boxed type identity and fresh object identity. Original native boxing runtime allocation/GC, metadata initialization, the remainder of SetAge, other primitive/nullable/ref/enum/custom types and Switch feature availability are outside this scope."
+    },
+    "recovered_value_this": {
+      "report": "reports/recovered-value-this-nso-value-this-box-v30.json",
+      "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+      "recovery_run": "nso-value-this-box-v30",
+      "cases": 0,
+      "checks": 0,
+      "lazy_initialization_cases": 0,
+      "already_initialized_cases": 0,
+      "failure_count": 0,
+      "fatal": "System.IO.InvalidDataException: Reachable unresolved helper/unsafe address operation; actual body was not executed",
+      "unreachable_helper_calls": 0,
+      "cil_sha256": "9bf691bf8386e8dbaaa991ae7122bb0c0b17cabcd55c5cc5ca8bb071dc86208e",
+      "assembly_sha256": "2970bb34e41eef86d20be1bda76165bf10c9379a8dd35c56487f88559d47c4e6",
+      "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+      "cil_or_source_edited": false,
+      "tokens_remapped": 0,
+      "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+    }
+  },
+  "recovered_value_this_blocked_calls": 8,
+  "cil_assemblies_audited": 44,
+  "stack_status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY",
+  "syntax_valid": true,
+  "active_sessions": [],
+  "whole_game_source_ready": false,
+  "changes": [
+    "Select exact unboxed native FDE bodies for 287 unique value-this adjustors, keeping registered pointers and rejecting four ambiguous wrappers.",
+    "Recognize the reviewed boxing helper only for concrete eligible primitive types with initialized typed storage and no original static constructor.",
+    "Retain original initializing copies when addresses, array elements or array length operands read their storage; preserve storage identity."
+  ],
+  "limits": "Native boxing uses explicit GC-allocation/imported-memcpy boundaries. The CLR boxing expression validates one actual Int32 caller and its original input provenance; it does not certify all boxing callers or full method behavior. Value-this body selection and native boxed/unboxed equivalence do not certify recovered method execution: InternalDecrypt still has eight reachable runtime metadata/class-initialization diagnostics and its actual CIL probe runs zero cases. No fields are reinterpreted by an assumed header subtraction, no method body is filled with a default to pass tests, and full clean source remains incomplete. Compiler counts include cascades and are not completion percentages."
+}

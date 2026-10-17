@@ -1,0 +1,957 @@
+{
+  "status": "PASS_CANONICAL_COMPLETE_SOURCE_COMPILER_COMPARISON",
+  "before_run": "nso-virtual-dispatch-v36",
+  "after_run": "nso-runtime-helper-abi-v37",
+  "before": "nso-virtual-dispatch-v36",
+  "after": "nso-runtime-helper-abi-v37",
+  "source_modified": false,
+  "core_modified": false,
+  "assemblies": {
+    "Assembly-CSharp-firstpass": {
+      "before_unique": 20843,
+      "after_unique": 20733,
+      "old_unique": 20843,
+      "new_unique": 20733,
+      "delta": -110,
+      "before_error_codes": {
+        "CS0117": 211,
+        "CS7036": 98,
+        "CS1061": 1575,
+        "CS0030": 8371,
+        "CS0103": 105,
+        "CS0019": 5076,
+        "CS0122": 2713,
+        "CS0023": 349,
+        "CS1729": 25,
+        "CS0266": 460,
+        "CS0234": 1094,
+        "CS0037": 363,
+        "CS1510": 9,
+        "CS0149": 22,
+        "CS0029": 7,
+        "CS0177": 159,
+        "CS8174": 37,
+        "CS0269": 62,
+        "CS0165": 36,
+        "CS0250": 11,
+        "CS0191": 16,
+        "CS8172": 1,
+        "CS0079": 32,
+        "CS1540": 1,
+        "CS0152": 2,
+        "CS0221": 3,
+        "CS8373": 2,
+        "CS0246": 3
+      },
+      "after_error_codes": {
+        "CS0117": 211,
+        "CS0030": 8309,
+        "CS7036": 98,
+        "CS1061": 1555,
+        "CS1729": 25,
+        "CS0122": 2713,
+        "CS0103": 104,
+        "CS0234": 1092,
+        "CS0019": 5076,
+        "CS0037": 341,
+        "CS0266": 458,
+        "CS0023": 349,
+        "CS0149": 22,
+        "CS0029": 6,
+        "CS0165": 36,
+        "CS0250": 11,
+        "CS0269": 62,
+        "CS0177": 159,
+        "CS8174": 37,
+        "CS8172": 1,
+        "CS1510": 9,
+        "CS0191": 16,
+        "CS0079": 32,
+        "CS1540": 1,
+        "CS0152": 2,
+        "CS0221": 3,
+        "CS8373": 2,
+        "CS0246": 3
+      },
+      "error_code_delta": {
+        "CS0029": -1,
+        "CS0030": -62,
+        "CS0037": -22,
+        "CS0103": -1,
+        "CS0234": -2,
+        "CS0266": -2,
+        "CS1061": -20
+      },
+      "semantic_added_occurrences": 0,
+      "semantic_removed_occurrences": 110,
+      "top_added_messages": [],
+      "most_added_messages": [],
+      "most_added_files": [],
+      "top_removed_messages": [
+        {
+          "code": "CS0037",
+          "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+          "count": 22
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 11
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Array'",
+          "count": 7
+        },
+        {
+          "code": "CS1061",
+          "message": "'_003C_003E__AnonType0<ConnectionAPISample.MessageTypes, string>' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type '_003C_003E__AnonType0<ConnectionAPISample.MessageTypes, string>' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 6
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'byte[]'",
+          "count": 6
+        },
+        {
+          "code": "CS1061",
+          "message": "'Func<Type, IList<object>, object>' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'Func<Type, IList<object>, object>' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 6
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'string'",
+          "count": 4
+        },
+        {
+          "code": "CS1061",
+          "message": "'_003C_003E__AnonType2<string, int, _003C_003E__AnonType1<string, string>>' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type '_003C_003E__AnonType2<string, int, _003C_003E__AnonType1<string, string>>' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Reflection.MemberInfo'",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.Stream' to 'nint'",
+          "count": 2
+        },
+        {
+          "code": "CS0266",
+          "message": "Cannot implicitly convert type 'object' to 'System.Exception'. An explicit conversion exists (are you missing a cast?)",
+          "count": 2
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Collections.Generic.IEnumerator<T>' to 'nint'",
+          "count": 2
+        }
+      ],
+      "top_changed_files": [
+        {
+          "file": "Newtonsoft/Json/JsonWriter.cs",
+          "before": 138,
+          "after": 124,
+          "delta": -14,
+          "before_source": {
+            "bytes": 66886,
+            "sha256": "df3344ea1e47fab3eedf3337af672bf37decc4017be7e72aec53c3d70bb57603"
+          },
+          "after_source": {
+            "bytes": 63533,
+            "sha256": "9b776e15ded9c1b34a70b7526b610caedb235843765ba451484913bbc81b40aa"
+          }
+        },
+        {
+          "file": "BestHTTP/WebSocket/Frames/WebSocketFrameReader.cs",
+          "before": 34,
+          "after": 25,
+          "delta": -9,
+          "before_source": {
+            "bytes": 11222,
+            "sha256": "f9131890d850524ec7b5a140c684029807cf7f04cba031e73ed7189aa662ccb5"
+          },
+          "after_source": {
+            "bytes": 10456,
+            "sha256": "a1f8803c37083322754115b45c428994f8a955af5c2d3023bde0ed340b571b0f"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Utilities/CollectionUtils.cs",
+          "before": 138,
+          "after": 131,
+          "delta": -7,
+          "before_source": {
+            "bytes": 94638,
+            "sha256": "159d3ade7f10e0ad273b551492bf22330be5d82766281a38ba67c36f59884319"
+          },
+          "after_source": {
+            "bytes": 92565,
+            "sha256": "a01d5a12759f08a889baff746dd108c58c0c70ac4adae2f8502d8eb6ae26ee95"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Utilities/ReflectionUtils.cs",
+          "before": 262,
+          "after": 255,
+          "delta": -7,
+          "before_source": {
+            "bytes": 116786,
+            "sha256": "755d72600405b2e02d04179f2e64afc96a6ad97c717382ce9a98e67bfa8ab375"
+          },
+          "after_source": {
+            "bytes": 115337,
+            "sha256": "788557a52a861602a34b7908952fec7f62204c14ec9e9d467540d262300cc349"
+          }
+        },
+        {
+          "file": "ConnectionAPISample.cs",
+          "before": 32,
+          "after": 26,
+          "delta": -6,
+          "before_source": {
+            "bytes": 20993,
+            "sha256": "808a6313e51d52ee0cb7362e6fec4fc0e37ccdece6f8a4a6dc9ab8c225238a6d"
+          },
+          "after_source": {
+            "bytes": 18839,
+            "sha256": "4e179386488a36d28db97523a439ff445434a0433941f4254a47d5b1a7173112"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Utilities/Base64Encoder.cs",
+          "before": 31,
+          "after": 25,
+          "delta": -6,
+          "before_source": {
+            "bytes": 11617,
+            "sha256": "ae5929ccd946b14174cdd0f2a8b3804c2f4d736a3727dddda97143aa6d762138"
+          },
+          "after_source": {
+            "bytes": 10937,
+            "sha256": "49b0b6a45dc9d7dd35c89c98630658b256213ca8a10f7f458ef3b15d815a19a4"
+          }
+        },
+        {
+          "file": "DemoHubSample.cs",
+          "before": 29,
+          "after": 24,
+          "delta": -5,
+          "before_source": {
+            "bytes": 12118,
+            "sha256": "ea6ed84ed34fa955de6718e2e3c957fd126cfeb9ffdf58b8c38c86bebc80d453"
+          },
+          "after_source": {
+            "bytes": 11627,
+            "sha256": "391344f3c4188324d9c9a8e74e570209c6908b03e15ac7a7d84883e6ad77e810"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/JsonTypeReflector.cs",
+          "before": 64,
+          "after": 59,
+          "delta": -5,
+          "before_source": {
+            "bytes": 39373,
+            "sha256": "9173fe70e42499fd2fe75547fe3a9ed3724d6f63370ce2c357512bc7c9f58eae"
+          },
+          "after_source": {
+            "bytes": 38089,
+            "sha256": "eaa1412034bc9f5f0bbc1dba6ded4f81594822b76c9ad52a50271b273ef43ef9"
+          }
+        },
+        {
+          "file": "BestHTTP/Decompression/Zlib/ZlibBaseStream.cs",
+          "before": 57,
+          "after": 53,
+          "delta": -4,
+          "before_source": {
+            "bytes": 44225,
+            "sha256": "44bab966aaa87822748e42f87bce5db5ff7ff0a5e233166d810a74e984b7e098"
+          },
+          "after_source": {
+            "bytes": 42241,
+            "sha256": "afb106c4ed8c4b163a173e9f172d391fd223c64a9f2ff49a529552d848332c8b"
+          }
+        },
+        {
+          "file": "BestHTTP/HTTPRequest.cs",
+          "before": 166,
+          "after": 162,
+          "delta": -4,
+          "before_source": {
+            "bytes": 89018,
+            "sha256": "25dee3764da5cf68a0886e1fbddd752463e1bab5e8f653f53100b9edda8ea06c"
+          },
+          "after_source": {
+            "bytes": 87858,
+            "sha256": "43449b04893be8b3e60ecbc06f1f1ebb508ddadce4c0bfd3b77a07c8d868e729"
+          }
+        },
+        {
+          "file": "YamlDotNet/Core/FakeList.cs",
+          "before": 6,
+          "after": 2,
+          "delta": -4,
+          "before_source": {
+            "bytes": 3697,
+            "sha256": "faa4acebe4112f45e233d76428af483c03f601bfefdd1171185ce268dfb11156"
+          },
+          "after_source": {
+            "bytes": 3248,
+            "sha256": "94ad1a1b58c2d8346d8c705ca87acd308221440723e605344bec44f7fc1e6d8d"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Schema/JsonSchemaBuilder.cs",
+          "before": 179,
+          "after": 176,
+          "delta": -3,
+          "before_source": {
+            "bytes": 71327,
+            "sha256": "bd4712ba9bf089f77cee9c0f9e8245cecb584c9f8e93da882bd4bdb8e02698ee"
+          },
+          "after_source": {
+            "bytes": 71158,
+            "sha256": "2b0e62658641024554fd675dc5d15bb61a1226622c39fe40df1fcc47b6f6fdf4"
+          }
+        },
+        {
+          "file": "QiHe/Yaml/Grammar/YamlParser.cs",
+          "before": 542,
+          "after": 539,
+          "delta": -3,
+          "before_source": {
+            "bytes": 502832,
+            "sha256": "192cbd59752b786a115f6b4fdafe78390809ad19ffe5305643d05b75094410d9"
+          },
+          "after_source": {
+            "bytes": 502659,
+            "sha256": "3561104d50a4ad6c31edf5304422bdfa1447418742f1a1eaa68853220b017c7e"
+          }
+        },
+        {
+          "file": "BestHTTP/SocketIO/SocketManager.cs",
+          "before": 77,
+          "after": 75,
+          "delta": -2,
+          "before_source": {
+            "bytes": 33628,
+            "sha256": "761837e10bddd278751100a250f2f8144b0d5b60a40f869b1e3d09b9ba13aa9b"
+          },
+          "after_source": {
+            "bytes": 33551,
+            "sha256": "e45fbf09b2c2aa754f0c48d84706bd6aef272537ad4a39be4eb27e75dcc933b4"
+          }
+        },
+        {
+          "file": "BestHTTP/WebSocket/Frames/WebSocketBinaryFrame.cs",
+          "before": 19,
+          "after": 17,
+          "delta": -2,
+          "before_source": {
+            "bytes": 9726,
+            "sha256": "05d7830bb42c816c69fc80a8e380393c5215c07e8c935abc08e271feea677958"
+          },
+          "after_source": {
+            "bytes": 9377,
+            "sha256": "eecef34a85518fe27d2af5c7ddbe02e66d6a2c8cdf9f8b62410449b2b153c2f6"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/JsonValidatingReader.cs",
+          "before": 138,
+          "after": 136,
+          "delta": -2,
+          "before_source": {
+            "bytes": 87617,
+            "sha256": "676f746cc678939e5954073a13dd0d1153aeab2d3fd83ac379b46d6bc739043d"
+          },
+          "after_source": {
+            "bytes": 86631,
+            "sha256": "e79e1f3f3196f8db93b9632bf5ec60e13c8f3e94ddf50f9de2f47159202d502e"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/JsonDictionaryContract.cs",
+          "before": 38,
+          "after": 36,
+          "delta": -2,
+          "before_source": {
+            "bytes": 16065,
+            "sha256": "3abd2e20b471f425d1c73b7c46c579b3dc7fe2e2342d40add437d5a4cfe3e5f0"
+          },
+          "after_source": {
+            "bytes": 15910,
+            "sha256": "d2cd47b4d55eb1ede844b4b2073aae47b8d314e593d5ed4e6dbebb0885f3bd11"
+          }
+        },
+        {
+          "file": "SevenZip/Compression/LZMA/Decoder.cs",
+          "before": 367,
+          "after": 365,
+          "delta": -2,
+          "before_source": {
+            "bytes": 118007,
+            "sha256": "a31eda71b88a92cd2ff22995b6b845c4e7f06963a00c0132e039e927363c7705"
+          },
+          "after_source": {
+            "bytes": 116673,
+            "sha256": "5f09c0027f0027bfa92dd4b6e206035653d80930ed04ceadc457f1bd2136dc3e"
+          }
+        },
+        {
+          "file": "YamlDotNet/Serialization/Utilities/SerializerState.cs",
+          "before": 8,
+          "after": 6,
+          "delta": -2,
+          "before_source": {
+            "bytes": 5121,
+            "sha256": "1879e149491fe66833ed430542b793a834d12431ab3b4a193f575a2cd82b2334"
+          },
+          "after_source": {
+            "bytes": 4939,
+            "sha256": "b28436d3cf1a31155bde1c95f8e3031825b45593c1f017cff95a60e480dded58"
+          }
+        },
+        {
+          "file": "ActionExtenstions.cs",
+          "before": 13,
+          "after": 12,
+          "delta": -1,
+          "before_source": {
+            "bytes": 11263,
+            "sha256": "2fbbf7781eb9ee50a30daf6e55ce41e9e7f3ec4c2546a409e675769c6abb4108"
+          },
+          "after_source": {
+            "bytes": 11184,
+            "sha256": "c427774ece86e0781bd94ac8b20b60dac255daf75f525a5436da6e22f9aaf205"
+          }
+        }
+      ],
+      "source_integrity": {
+        "nso-virtual-dispatch-v36": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-virtual-dispatch-v36.json",
+            "sha256": "9f433ee52f8ced9ee90cbaae2815b6bd3b5ac6a17aec0c20a7f0aabb11d9a28d"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-virtual-dispatch-v36.json",
+            "sha256": "2efb5d510d8e8aa8c10407632e96cfcb3d7929bfd99e1302a09ecf2780147f5e"
+          },
+          "manifest_sha256": "2efb5d510d8e8aa8c10407632e96cfcb3d7929bfd99e1302a09ecf2780147f5e",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-virtual-dispatch-v36-Assembly-CSharp-firstpass.log",
+            "sha256": "10f4e6525217fa319fc84813d34390517c90c4d71638d189da2ca23e180f397a"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1342,
+          "diagnostic_source_files_hash_verified": 631,
+          "matching_reference_source_manifest_unchanged": true
+        },
+        "nso-runtime-helper-abi-v37": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-runtime-helper-abi-v37.json",
+            "sha256": "7f2c56bf344f90615965cfabde9196d998d65dad3e5e2220e8bfab931a955115"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-runtime-helper-abi-v37.json",
+            "sha256": "e058b596182cb4f771229dc396cea15bfef61c3d47d7a1626755393803257866"
+          },
+          "manifest_sha256": "e058b596182cb4f771229dc396cea15bfef61c3d47d7a1626755393803257866",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-runtime-helper-abi-v37-Assembly-CSharp-firstpass.log",
+            "sha256": "c3bdb131eaa47d9f07b42f6ea8e66a8ea91f1558bdadc1cada5749f1f04079f4"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1342,
+          "diagnostic_source_files_hash_verified": 631,
+          "matching_reference_source_manifest_unchanged": true
+        }
+      }
+    },
+    "Assembly-CSharp": {
+      "before_unique": 32879,
+      "after_unique": 32724,
+      "old_unique": 32879,
+      "new_unique": 32724,
+      "delta": -155,
+      "before_error_codes": {
+        "CS1061": 3166,
+        "CS0117": 576,
+        "CS0122": 4225,
+        "CS0030": 15855,
+        "CS0019": 4981,
+        "CS0234": 1057,
+        "CS0023": 211,
+        "CS0103": 761,
+        "CS0266": 1023,
+        "CS0037": 533,
+        "CS8174": 2,
+        "CS0165": 24,
+        "CS0177": 24,
+        "CS0029": 30,
+        "CS0191": 107,
+        "CS8172": 1,
+        "CS1510": 14,
+        "CS1540": 20,
+        "CS7036": 103,
+        "CS0250": 1,
+        "CS0149": 73,
+        "CS0246": 1,
+        "CS0020": 1,
+        "CS0272": 3,
+        "CS1729": 10,
+        "CS0079": 30,
+        "CS1503": 38,
+        "CS0120": 2,
+        "CS0269": 4,
+        "CS1501": 3
+      },
+      "after_error_codes": {
+        "CS0122": 4225,
+        "CS1061": 3139,
+        "CS0117": 576,
+        "CS0030": 15773,
+        "CS0019": 4981,
+        "CS0103": 738,
+        "CS0234": 1057,
+        "CS0266": 1021,
+        "CS0037": 514,
+        "CS0023": 211,
+        "CS8174": 2,
+        "CS0165": 24,
+        "CS8172": 1,
+        "CS1510": 14,
+        "CS0029": 30,
+        "CS0177": 24,
+        "CS0191": 107,
+        "CS1540": 20,
+        "CS7036": 103,
+        "CS0149": 71,
+        "CS0272": 3,
+        "CS0250": 1,
+        "CS1503": 38,
+        "CS0246": 1,
+        "CS0079": 30,
+        "CS0120": 2,
+        "CS1729": 10,
+        "CS0269": 4,
+        "CS1501": 3,
+        "CS0020": 1
+      },
+      "error_code_delta": {
+        "CS0030": -82,
+        "CS0037": -19,
+        "CS0103": -23,
+        "CS0149": -2,
+        "CS0266": -2,
+        "CS1061": -27
+      },
+      "semantic_added_occurrences": 0,
+      "semantic_removed_occurrences": 155,
+      "top_added_messages": [],
+      "most_added_messages": [],
+      "most_added_files": [],
+      "top_removed_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'string'",
+          "count": 26
+        },
+        {
+          "code": "CS0103",
+          "message": "The name '__ldftn' does not exist in the current context",
+          "count": 23
+        },
+        {
+          "code": "CS1061",
+          "message": "'Action<ControlData>' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'Action<ControlData>' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 22
+        },
+        {
+          "code": "CS0037",
+          "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+          "count": 19
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 12
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'nint' to 'string'",
+          "count": 11
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'string' to 'int'",
+          "count": 6
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Sfs2X.Core.BaseEvent' to 'nint'",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'CallEventArgsBase<Nekki.SF2.Core.MultiplayerSF.ConnectionEvent>' to 'nint'",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'System.Collections.Generic.List<string>.Enumerator*'",
+          "count": 3
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.DateTime'",
+          "count": 2
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'object*' to 'object[]'",
+          "count": 2
+        }
+      ],
+      "top_changed_files": [
+        {
+          "file": "Nekki/SF2/Core/Fights/Controls/GameController.cs",
+          "before": 101,
+          "after": 57,
+          "delta": -44,
+          "before_source": {
+            "bytes": 41229,
+            "sha256": "0576e377a679241fe7502d2ed3b93348e040cd3ff1108291056d69b3a807fca9"
+          },
+          "after_source": {
+            "bytes": 39556,
+            "sha256": "b565cd9559dd951c35fcf7c12fdfbf5b7baa9843f9c2526c64e6d2ba34f36ff6"
+          }
+        },
+        {
+          "file": "UIFigures/Utils/FigureTopology.cs",
+          "before": 46,
+          "after": 33,
+          "delta": -13,
+          "before_source": {
+            "bytes": 9192,
+            "sha256": "b752f54637ade2ed7e61b5808a1f29a01f0baf387a218bb5b1786b9029406d62"
+          },
+          "after_source": {
+            "bytes": 8162,
+            "sha256": "a2f8582e5f603e5f01c7ad6a2bc7fc0a01d4d3815914abd885fcb909f5e2d113"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/SFRequestSender.cs",
+          "before": 178,
+          "after": 169,
+          "delta": -9,
+          "before_source": {
+            "bytes": 97935,
+            "sha256": "6ac7acbff49c2d0b43da55bec09f295deefa081e9a579fa3814b04d91e0f3f5f"
+          },
+          "after_source": {
+            "bytes": 97096,
+            "sha256": "b4ce429c45996caa0124e16416d39e8df705a91944296eb42689ac1c9e4fa8ed"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/SFSConnection.cs",
+          "before": 81,
+          "after": 75,
+          "delta": -6,
+          "before_source": {
+            "bytes": 62705,
+            "sha256": "d773cadcbae7f7ee1488259070a4ffaad503688a7519176481312aa80838a2dd"
+          },
+          "after_source": {
+            "bytes": 62267,
+            "sha256": "4c1055fd9cf052766bc8e9f2b4db53bf1054240c53f49d6f99fe59fd1fd637ae"
+          }
+        },
+        {
+          "file": "Nekki/SF2/GUI/Dialogs/Raids/GeneralPlayerInfoView.cs",
+          "before": 16,
+          "after": 11,
+          "delta": -5,
+          "before_source": {
+            "bytes": 15342,
+            "sha256": "82e59be54b020e10482390983e53fad2a8bb917e2c257fa931e7ebd0e2447752"
+          },
+          "after_source": {
+            "bytes": 13198,
+            "sha256": "13d54482d8b5fbd7bbef29b85b9cc658c4b65e8e0e94154bb619ce1d07e79c38"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Rules/LoseFallRule.cs",
+          "before": 24,
+          "after": 20,
+          "delta": -4,
+          "before_source": {
+            "bytes": 13563,
+            "sha256": "cb56592596436ce9cb5866ba4ef60c6a43bde8fa0e9186e3fd3b11606ffa1090"
+          },
+          "after_source": {
+            "bytes": 13045,
+            "sha256": "1262c5bac1c3af77eb1a63cf924ab0ae4f80d6699a3be9ce06cd545e41da1d19"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Rules/RingOutRule.cs",
+          "before": 16,
+          "after": 12,
+          "delta": -4,
+          "before_source": {
+            "bytes": 10433,
+            "sha256": "296182f094f46cf6d2139751ef1653e1b590c098704844d7b23518ec260f0926"
+          },
+          "after_source": {
+            "bytes": 10010,
+            "sha256": "b2dea4a499fb67d62f4ac4503cd0e624b0674896413857e7d7dfadadf5f886ec"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/IconPathHelper.cs",
+          "before": 178,
+          "after": 174,
+          "delta": -4,
+          "before_source": {
+            "bytes": 107979,
+            "sha256": "cd67fcd666b57c5ae3d9e3c15378d99b70d8592754947694f4052586026a281b"
+          },
+          "after_source": {
+            "bytes": 107611,
+            "sha256": "c92e19aa2032c59f5a2be5331d8b584a1056666fa78ad9e5440a71dd7f6063cd"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Fight.cs",
+          "before": 430,
+          "after": 427,
+          "delta": -3,
+          "before_source": {
+            "bytes": 318256,
+            "sha256": "8971eaed0a3f11f9aa7d67895ebe49a76bf4499899e595b2e60d7bf615252687"
+          },
+          "after_source": {
+            "bytes": 317954,
+            "sha256": "41cc35de0f901011d0f9e9a6be724f22c9f3e1cc52166b3c542d88d0b66d6d4e"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/Perks/PerksCompiler.cs",
+          "before": 66,
+          "after": 63,
+          "delta": -3,
+          "before_source": {
+            "bytes": 26954,
+            "sha256": "02b89fb336e7bd1c520dff6dc1ea5f50aec76dd982809db94b542fc5f289571a"
+          },
+          "after_source": {
+            "bytes": 26700,
+            "sha256": "8ffd8b72c03ef3b4cd56aa2bf4d46e19fd8c7cc541b4761e2a89f5fc57521a2d"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/Vibration/Vibration.cs",
+          "before": 20,
+          "after": 17,
+          "delta": -3,
+          "before_source": {
+            "bytes": 11692,
+            "sha256": "f07d64f0c44b803ff1fa8b9648687242227cc44fd509bd983b487c667ac23549"
+          },
+          "after_source": {
+            "bytes": 11435,
+            "sha256": "eaca44d037470fedeae3631f8dfabd4311c668223d2bddc4f79638b552f01b0e"
+          }
+        },
+        {
+          "file": "InControl/SwitchInputDevice.cs",
+          "before": 243,
+          "after": 241,
+          "delta": -2,
+          "before_source": {
+            "bytes": 72244,
+            "sha256": "7ab4d4d6468b5c15df925cb126ffeeead489a988ab66e7db1f6331141dccafae"
+          },
+          "after_source": {
+            "bytes": 72298,
+            "sha256": "95454a42b9cc65a8a214605352cd0c2564c687f37df5704ffde2d63474efb7e4"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/AI/Data/AiData.cs",
+          "before": 265,
+          "after": 263,
+          "delta": -2,
+          "before_source": {
+            "bytes": 138366,
+            "sha256": "c2bbc99a718cc8cb1f292acf05d4d9e4c31461db315a405850f415d19b287c51"
+          },
+          "after_source": {
+            "bytes": 138247,
+            "sha256": "4d7596ec8b1aa4e3ad817542cb98691673bbb3924db31cb9ff778e1b58f0b4f1"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/ConfigHelper.cs",
+          "before": 6,
+          "after": 4,
+          "delta": -2,
+          "before_source": {
+            "bytes": 6862,
+            "sha256": "e7bc2a149d9df6485f83258dea08737823a1708c1d897cc16b79c0fe02dea0cc"
+          },
+          "after_source": {
+            "bytes": 6568,
+            "sha256": "c2d2a8f5105f50e8d7077f397b8076d57a1b79a9fe5510a46af4df26cbd9cfe5"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Network/ServerProvider.cs",
+          "before": 58,
+          "after": 56,
+          "delta": -2,
+          "before_source": {
+            "bytes": 65273,
+            "sha256": "dafcda2606a6c4159fb8d9f2b411f11e685d8a0c644d728bdaf41ff9f7aca3c4"
+          },
+          "after_source": {
+            "bytes": 65090,
+            "sha256": "91cf6ace77257850e97d5de3258061ca62afed8a104ff9f71db1af042b19bb07"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Quests/Actions/QuestActionGiveItem.cs",
+          "before": 9,
+          "after": 7,
+          "delta": -2,
+          "before_source": {
+            "bytes": 9557,
+            "sha256": "d79f669bb6c862df588ed1aee338b420541e0ffa722fc78d3673f18efa754122"
+          },
+          "after_source": {
+            "bytes": 9413,
+            "sha256": "a3db9b3ec5397922dc8c29b0e6b4e88b9900c42c9db2a4b3ba98149adfd34719"
+          }
+        },
+        {
+          "file": "Nekki/SF2/GUI/Fight/RaidFinalFightRatingContent.cs",
+          "before": 16,
+          "after": 14,
+          "delta": -2,
+          "before_source": {
+            "bytes": 7409,
+            "sha256": "e1a105075a60335f1912c7ebe5008eb96e98d6e461199c132883e93bc0fc44fa"
+          },
+          "after_source": {
+            "bytes": 7061,
+            "sha256": "c58a35392cdb6c4042f899e79d65f4e2a8db18dc19670eddd340a8b38aa17587"
+          }
+        },
+        {
+          "file": "Nekki/SF2/GUI/Pvp/CharacterSelectModule.cs",
+          "before": 123,
+          "after": 121,
+          "delta": -2,
+          "before_source": {
+            "bytes": 50121,
+            "sha256": "d3ae7819c9ffd5b39de2f258c992d7b383b5e2802671ef3dbdabba7610e7da71"
+          },
+          "after_source": {
+            "bytes": 49963,
+            "sha256": "652ed187f34c5b9ba74381204c91fca492e71d7d88206258f2507ba8c62886e2"
+          }
+        },
+        {
+          "file": "ColorUtils.cs",
+          "before": 12,
+          "after": 11,
+          "delta": -1,
+          "before_source": {
+            "bytes": 9777,
+            "sha256": "f2fb4ac1543552a78a55ccfd417ae49a04753ee51277f5de88242555bd50a50d"
+          },
+          "after_source": {
+            "bytes": 9695,
+            "sha256": "55ce19de4864ad77f18fca936c3b0174c60e1524cd46c2ef0d48e88bca504ad3"
+          }
+        },
+        {
+          "file": "InControl/PlayStation3ShenghicWinProfile.cs",
+          "before": 29,
+          "after": 28,
+          "delta": -1,
+          "before_source": {
+            "bytes": 20844,
+            "sha256": "f96e222e0f5540cbcf0b156d874b5c5a3867f86ec90ce106de5ffcb199bf2a84"
+          },
+          "after_source": {
+            "bytes": 19830,
+            "sha256": "5c1387c1be9d34aec97510b5328520dbadab832a0fae520965b2137db241a48d"
+          }
+        }
+      ],
+      "source_integrity": {
+        "nso-virtual-dispatch-v36": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-virtual-dispatch-v36.json",
+            "sha256": "9f433ee52f8ced9ee90cbaae2815b6bd3b5ac6a17aec0c20a7f0aabb11d9a28d"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-virtual-dispatch-v36.json",
+            "sha256": "2efb5d510d8e8aa8c10407632e96cfcb3d7929bfd99e1302a09ecf2780147f5e"
+          },
+          "manifest_sha256": "2efb5d510d8e8aa8c10407632e96cfcb3d7929bfd99e1302a09ecf2780147f5e",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-virtual-dispatch-v36-Assembly-CSharp.log",
+            "sha256": "6c5b30c8794c17d6ce9ad078700431243f4ff52244172e3584109014a4cdc3c3"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1637,
+          "diagnostic_source_files_hash_verified": 1243,
+          "matching_reference_source_manifest_unchanged": true
+        },
+        "nso-runtime-helper-abi-v37": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-runtime-helper-abi-v37.json",
+            "sha256": "7f2c56bf344f90615965cfabde9196d998d65dad3e5e2220e8bfab931a955115"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-runtime-helper-abi-v37.json",
+            "sha256": "e058b596182cb4f771229dc396cea15bfef61c3d47d7a1626755393803257866"
+          },
+          "manifest_sha256": "e058b596182cb4f771229dc396cea15bfef61c3d47d7a1626755393803257866",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-runtime-helper-abi-v37-Assembly-CSharp.log",
+            "sha256": "17eabac3eee25fb8dc65d9a6e9a2ea156c96e4ca7dd3594f1d27c0424a2aa1da"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1637,
+          "diagnostic_source_files_hash_verified": 1243,
+          "matching_reference_source_manifest_unchanged": true
+        }
+      }
+    }
+  },
+  "compiler_diagnostic_delta": {
+    "Assembly-CSharp-firstpass": -110,
+    "Assembly-CSharp": -155
+  },
+  "whole_game_source_ready": false,
+  "full_clean_decompile_ready": false,
+  "portable_game_ready": false,
+  "methodology": "Each complete matching-reference log is streamed. Canonical lines remove build-worker prefixes, surrounding whitespace and duplicate build-summary occurrences, and must exactly match the authoritative summary total and error-code counts. Multisets of relative source path, code and message additionally reduce line-shift inflation; local-name or decompiler presentation changes can still alter messages. Every diagnostic-bearing file is checked against the byte-identical export/matching-reference source manifest. Reports contain no source excerpts.",
+  "limits": "Diagnostic lines include compiler cascades and are not independent bugs, recovered-method counts or completion percentages. This read-only comparison neither executes recovered game methods nor establishes that added or removed diagnostics correspond to correct semantics. Complete source compilation, original-runtime/gameplay parity and portability remain separate requirements."
+}

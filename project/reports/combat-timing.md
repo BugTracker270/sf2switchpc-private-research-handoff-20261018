@@ -1,0 +1,38 @@
+# Combat clock and animation evidence
+
+Updated 2026-10-17T08:26:34.003364+00:00. Scope: static binary/data analysis; no game timing or FPS was measured.
+
+- ApplicationController.Awake, RVA `0xC79BC0`, calls UnityEngine.Application.set_targetFrameRate (`0x1217700`) with **60** (`W1=0x3C`). This is a request, not observed frame presentation.
+- Original TimeManager fixed step is approximately `1/60` seconds. Internal settings also contain FrameRateValue=60. The metadata exposes no managed fixedDeltaTime setter in this build; native engine scheduling remains a separate concern.
+- FightScene.FixedUpdate, `0xE57190`, is a 20-byte null check and tail call to Fight.Draw (`0xC9DD50`). Ghidra's pseudocode may expand that tail call. The frame loop lives in Draw: it checks GameUtils.IsReduceFPS, runs the fight step once or twice, increments the fight frame counter and conditionally calls RenderFight/RenderCamera. Native data pointer `0x397AD38` resolves to type-info slot `0x3B37410`; the flag is at static offset `0x1F8`. Exact runtime activation of the compensation path is unmeasured.
+- ModelContainer.FixedUpdate (`0xEA8610`) and Render (`0xEA6D70`) update custom model state. Methods named Render include simulation work; their names do not justify moving them wholesale into a 120-Hz presentation loop.
+- ModelPhysics.TimeStep (`0xE99140`) calls a gravity-producing function at `0xE99520`, then ModelNode.TimeStep (`0xFEBD80`). ARM64 S0 carries the float gravity argument. Early pseudocode omitted it before callee signatures were applied; raw disassembly retains the evidence.
+- ModelNode.TimeStep uses current/previous positions, attenuation and a per-step vertical gravity increment. It does not accept elapsed seconds. Changing the number of these calls changes motion and combat speed.
+- SystemProperties.SetFrameRate (`0xAEF40`) is a single RET in the supplied build. Reusing a mobile implementation of this method would introduce behavior absent from Switch code.
+- Raw damage getter/setter at `0xF968C0` / `0xF968D0` are independently validated float loads/stores at offset `0x1C`.
+
+Custom animation files contain frame-by-frame point positions. All 559 parsed files pass complete bounds, node-count, finite-float and trailing-byte checks; all 910 explicit move-file references resolve. The catalog includes 932 moves, 114 templates and 22 triggers. Twenty-two moves lack explicit filenames and require template/default resolution rather than invented animation data.
+
+Future presentation work must retain original simulation ticks and hit/attack intervals, sample previous/current visual state between ticks, and test hit timing, recovery, projectiles, camera and input latency against the original. No interpolation or Windows implementation is performed in this phase.
+
+Evidence: analysis/nso/behavior-samples; analysis/nso/corpus.sqlite; analysis/assets/content-v2; reports/native-mapping-tests.json. Full combat semantics, collision ordering, all damage formulas and runtime replay equivalence remain IN_PROGRESS.
+
+Native integration validation: ModelNode.TimeStep (`0xFEBD80`) and its six real Vector helpers were executed with read-only original ARM64 text and synthetic initialized objects. A separately compiled C# model matches 1024 cases across 8704 node ticks and 53248 bit-exact floating-point checks. Exact artifact hashes and scope are in reports/native-node-integration.json.
+
+The validated update is delta = current - previous; apply delta *= (1 - attenuation) only for a physics node; next = current + delta; add the supplied gravity to next.Y; then previous = current and current = next. Every native float operation is retained in order. The gravity addition also occurs when the node flag is false; the caller decides which nodes receive a step.
+
+ModelPhysics.TimeStep (`0xE99140`) skips fixed nodes and steps nodes according to StartPhysics, IsPhysics and shock state. Its gravity getter (`0xE99520`) divides PhysicsController.Gravitation by GameUtils.SlowMode squared. The getter's original native calls are included in the v2 numeric checks for positive slow-mode values. Constraint solving, collision/damage ordering, animation-to-physics coupling and whole-fight replay remain unverified. This is not a measured game frame rate.
+
+Contact geometry validation: Vector2f.GetEquationLine (`0x15C4A90`) and IsDistanceStrike (`0x15C50A0`) match a compiled C# reference over 4131 finite nondegenerate cases and 28917 checks. This covers normalized line coefficients, capsule endpoint inclusion and projection mutation, including boundary/tangent cases, with zero game-function mocks. Evidence: reports/native-contact-geometry.json.
+
+Complete finite nondegenerate capsule/segment math: 4186 cases / 29302 comparisons pass. Scope: Original complete capsule/segment/contact/line math and constructors, finite nondegenerate inputs including optional-null line objects. IL2CPP allocation is modeled as zeroed 32-byte Vector3f/EquationLine objects; no GC/lifetime or whole-combat parity claim. Evidence: reports/native-capsule-geometry.json.
+
+First intersecting edge in list order and no-hit state retention: 517 cases / 4653 comparisons pass. Scope: Original strike selection, list iteration, class-initialization fast path and capsule/contact math. Synthetic initialized MethodInfo/RGCTX, valid lists and edges; only Vector3f/EquationLine allocation modeled. No whole-fight or GC parity claim. Evidence: reports/native-strike-selection.json.
+
+Internal damage combination slice; upstream factors supplied as inputs: 4096 cases / 4096 comparisons pass. Scope: Internal GetTotalDamage slice 0xFFBE40..0xFFBEBC with register inputs for earlier calculations. Original Max, weapon modifier, string equality, list helpers and interval-factor selection executed. This does not validate upstream attribute differences, exponentiation, raid-charge exception, hit eligibility or whole combat. Evidence: reports/native-damage-combination.json.
+
+Original Bezier recurrence and midpoint sampling: 704 cases / 54336 comparisons pass. Scope: Original Bezier coefficients, curve recurrence, midpoint helper, vector accessors and list iteration. Finite points; positive sample counts 1..120 from the listed fixture set; pre-sized non-null output vectors. Synthetic initialized generic metadata; only Vector3f allocation modeled. Resize/delegate allocation, full animation scheduling, interrupts and rendering/FPS remain unverified. Evidence: reports/native-animation-bezier.json.
+
+Original animation draw-step and physics point coupling: 1024 cases / 40448 comparisons pass. Scope: Original DrawFrame sample application, prior/current node state, shock exclusion, velocity/acceleration and slow-mode index logic with valid nonempty pre-populated buffers. Initialized synthetic metadata and Vector3f allocation model. Does not execute full Render/SetBufferFrame/events/interrupt scheduling, Unity rendering or gameplay FPS. Evidence: reports/native-animation-step.json.
+
+Template interpretation applies native depth-first parent order and first-existing-attribute precedence to all 932 moves. The 22 moves lacking explicit filenames resolve as {'PHYSICS_WITHOUT_FILE': 11, 'NO_ANIMATION_WITHOUT_FILE': 4, 'INHERITED_FILE': 7}. Six original ShortAttack references are logged/skipped by native parser behavior; no replacement template was invented. Ordered raw event/interval candidates are preserved, not certified instantiated objects. See reports/move-template-resolution.json and analysis/assets/moves-resolved-v1. The null/empty filename loader branch separately passes 256 original-code checks without resource IO (reports/native-empty-animation-gate.json).

@@ -1,0 +1,40 @@
+{
+  "status": "READ_ONLY_DISTINCT_COLD_BRANCH_AND_PHI_RELOAD_LIMITS",
+  "method": "BundlesUtil::GetAssetBundleSafe(System.String&)",
+  "rva": "0x4A8920",
+  "exact_fde_bytes": 256,
+  "native_body_sha256": "07369c1cddf45700ee6c60c559312bc29ed5debc2c953755d9ac7d7c1414991c",
+  "existing_scoped_macro": {
+    "guard_start": "0x4A89D0",
+    "helper_call": "0x4A89E0",
+    "join": "0x4A89E4",
+    "accepted": true,
+    "effect": "Existing sequential shape preserves scheduled X21 BundleName field load before the semantic class request."
+  },
+  "remaining_native_shapes": [
+    {
+      "class_load": "0x4A8960: LDR X0,[X22]",
+      "guard_start": "0x4A8964",
+      "finished_branch": "0x4A8970: CBZ W8,0x4A89F8",
+      "helper_call": "0x4A89F8",
+      "reloads": "0x4A89FC reloads the class into X0, then loads static storage/currentConfig and branches back to0x4A8980 only when the post-initialization field is nonnull.",
+      "matcher_limit": "The ordinary sequential matcher requires an adjacent helper call after a CBNZ finished test. This site uses an out-of-line CBZ cold block and post-call static-field reloads.",
+      "actual_current_isil": "The helper request itself already lowers to RunClassConstructor at instruction75. Original class flag loads, field reload and conditional CFG remain explicit."
+    },
+    {
+      "guard_start": "0x4A8980",
+      "helper_call": "0x4A8990",
+      "join": "0x4A89A0",
+      "metadata_origin": "X0 reaches the guard through a Phi of original class load0x4A8960 and cold-path exact reload0x4A89FC; both slots use X22. Current v46 has one Phi definition and remains outside the unique dominating Move-only origin proof.",
+      "reloads": "After the helper,0x4A8994 loads class into X8, then static storage and currentConfig into X8 at0x4A8998/0x4A899C. Those post-initialization field reads cannot be skipped by jumping directly to the join with the old X8 value.",
+      "matcher_limit": "The nearest X0 class load is beyond the16-byte backward witness, with intervening conditional CFG. The optional reload is a three-instruction X8/class-storage/field chain rather than the permitted single identical X0 class-slot reload.",
+      "actual_current_isil": "Instruction40 remains the exact raw B2E720 call with18 operands and Phi class argument. This unresolved origin is intentionally retained."
+    }
+  ],
+  "possible_next_bounded_investigations": [
+    "For the cold-branch shape, assess the existing FDE-bounded CFG matcher against this original ordinary body, preserving all post-constructor field reads and conditional paths. Acceptance of the current simple scheduling extension does not authorize this separate integration.",
+    "For the Phi, a future exact metadata-origin proof must validate every incoming type identity and its predecessor-edge definition/dominance, with bounded cycle handling. Equal propagated RuntimeClass<T> types alone do not prove identical runtime class pointers."
+  ],
+  "source_or_core_edited": false,
+  "scope": "Read-only original native and actual v33 production ISIL classification. The two unrecognized sequential macro shapes are distinct from the one remaining raw helper request. Native helper request counts remain3 total;2 managed requests and1 diagnostic raw Phi request survive. No wider CFG fix, metadata-layout guess, initializer no-op, field reload suppression, emitted-source success or runtime claim is included."
+}

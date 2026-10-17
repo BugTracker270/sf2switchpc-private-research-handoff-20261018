@@ -1,0 +1,527 @@
+{
+  "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovery_run": "nso-static-getter-v31b",
+  "structural_checks": 12,
+  "runtime_checks": 28,
+  "successful_cases": 0,
+  "cases": 5,
+  "fatal": null,
+  "tests": [
+    {
+      "Name": "original native indirect-return witness",
+      "Status": "PASS"
+    },
+    {
+      "Name": "original InitLocals contract",
+      "Status": "PASS"
+    },
+    {
+      "Name": "concrete game Model provenance",
+      "Status": "PASS"
+    },
+    {
+      "Name": "actual consumer slot equals actual returned slot",
+      "Status": "FAIL"
+    },
+    {
+      "Name": "actual returned and consumed local types agree",
+      "Status": "PASS"
+    },
+    {
+      "Name": "MoveNext original scalar result type",
+      "Status": "PASS"
+    },
+    {
+      "Name": "Current original result local type",
+      "Status": "PASS"
+    },
+    {
+      "Name": "no scalar stores into enumerator locals",
+      "Status": "FAIL"
+    },
+    {
+      "Name": "get-input-call-store contains no unresolved helper or branch",
+      "Status": "PASS"
+    },
+    {
+      "Name": "move-receiver-call-store contains no unresolved helper or branch",
+      "Status": "PASS"
+    },
+    {
+      "Name": "current-receiver-call-store contains no unresolved helper or branch",
+      "Status": "PASS"
+    },
+    {
+      "Name": "dispose-receiver-call contains no unresolved helper or branch",
+      "Status": "PASS"
+    }
+  ],
+  "evidence": {
+    "method_token": "0x0600092C",
+    "method_cil_sha256": "dbbeff691a05109d1565f5002d8d4b72bfbcec190933ca28d96d5a2603bfa3da",
+    "method_cil_bytes": 608,
+    "source_model_type": "Nekki.SF2.Core.Fights.Model.Model, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "source_models_field_token": "0x040005B8",
+    "source_list_type": "System.Collections.Generic.List\u00601[Nekki.SF2.Core.Fights.Model.Model]",
+    "source_enumerator_type": "System.Collections.Generic.List\u00601\u002BEnumerator[Nekki.SF2.Core.Fights.Model.Model]",
+    "enum_local_slots": [
+      3,
+      12
+    ],
+    "return_store_slot": 12,
+    "consumer_slots": {
+      "get_Current": 3,
+      "Dispose": 3,
+      "MoveNext": 3
+    },
+    "native_indirect_return_buffer_bytes": 24,
+    "host_enumerator_size": 24,
+    "scalar_enum_store_offsets": [
+      465
+    ],
+    "local_signature_boundaries": [
+      {
+        "index": 0,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 1,
+        "source_type": "Nekki.SF2.Core.Fights.StageType\u002BStage",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 2,
+        "source_type": "System.Boolean",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 3,
+        "source_type": "System.Collections.Generic.List\u00601\u002BEnumerator[Nekki.SF2.Core.Fights.Model.Model]",
+        "host_type": "System.Collections.Generic.List\u00601\u002BEnumerator[System.Object]",
+        "role": "original enumerator storage"
+      },
+      {
+        "index": 4,
+        "source_type": "System.Boolean",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 5,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 6,
+        "source_type": "System.Boolean",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 7,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 8,
+        "source_type": "System.Boolean",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 9,
+        "source_type": "System.Boolean",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 10,
+        "source_type": "System.Boolean",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 11,
+        "source_type": "Nekki.SF2.Core.Fights.Controls.GamePad",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 12,
+        "source_type": "System.Collections.Generic.List\u00601\u002BEnumerator[Nekki.SF2.Core.Fights.Model.Model]",
+        "host_type": "System.Collections.Generic.List\u00601\u002BEnumerator[System.Object]",
+        "role": "original enumerator storage"
+      },
+      {
+        "index": 13,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 14,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 15,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 16,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 17,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 18,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 19,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 20,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 21,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 22,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 23,
+        "source_type": "Nekki.SF2.Core.Fights.Controls.GameController",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 24,
+        "source_type": "Nekki.SF2.Core.Fights.StageType\u002BStage",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 25,
+        "source_type": "Nekki.SF2.Core.Fights.StageType\u002BStage",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 26,
+        "source_type": "Nekki.SF2.Core.Fights.Model.Model\u002BEventModel",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 27,
+        "source_type": "System.Boolean",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 28,
+        "source_type": "System.Boolean",
+        "host_type": "System.Boolean",
+        "role": "original MoveNext result"
+      },
+      {
+        "index": 29,
+        "source_type": "Nekki.SF2.Core.Fights.Model.Model",
+        "host_type": "System.Object",
+        "role": "explicit Model output boundary"
+      },
+      {
+        "index": 30,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 31,
+        "source_type": "Nekki.SF2.Core.Fights.Model.Model\u002BEventModel",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 32,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 33,
+        "source_type": "System.Boolean",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 34,
+        "source_type": "System.Object",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 35,
+        "source_type": "Nekki.SF2.Core.Fights.Fight",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      },
+      {
+        "index": 36,
+        "source_type": "System.IntPtr",
+        "host_type": "System.Object",
+        "role": "unused opaque storage"
+      }
+    ]
+  },
+  "assembly_sha256": "cb731b1ec1b137ddff8904e5d06a3c2c8870e2bba608709336f5c146ae38569b",
+  "source_fragments": [
+    {
+      "name": "get-input-call-store",
+      "start": 493,
+      "end": 508,
+      "sha256": "5c5f5c4c45fe7ee605d3e51034141298d99f042b31541a903727f2c9507fe5f8",
+      "instructions": [
+        {
+          "offset": 493,
+          "op": "ldarg.0",
+          "operand": "0",
+          "cil_member_token": null
+        },
+        {
+          "offset": 494,
+          "op": "ldfld",
+          "operand": "System.Collections.Generic.List\u00601[Nekki.SF2.Core.Fights.Model.Model] Models",
+          "cil_member_token": "0x040005B8"
+        },
+        {
+          "offset": 499,
+          "op": "call",
+          "operand": "Enumerator GetEnumerator()",
+          "cil_member_token": "0x0A000302"
+        },
+        {
+          "offset": 504,
+          "op": "stloc",
+          "operand": "12",
+          "cil_member_token": null
+        }
+      ]
+    },
+    {
+      "name": "move-receiver-call-store",
+      "start": 566,
+      "end": 579,
+      "sha256": "d1e6f2a92acf68291c20325a0b490e6befd7485a339c338e9ff2e9136c04a8a5",
+      "instructions": [
+        {
+          "offset": 566,
+          "op": "ldloca",
+          "operand": "3",
+          "cil_member_token": null
+        },
+        {
+          "offset": 570,
+          "op": "call",
+          "operand": "Boolean MoveNext()",
+          "cil_member_token": "0x0A000305"
+        },
+        {
+          "offset": 575,
+          "op": "stloc",
+          "operand": "28",
+          "cil_member_token": null
+        }
+      ]
+    },
+    {
+      "name": "current-receiver-call-store",
+      "start": 228,
+      "end": 241,
+      "sha256": "ef981925c1ddb66325ea52f74c3c3892b6e296008822f5f039aad5d0ca9964cb",
+      "instructions": [
+        {
+          "offset": 228,
+          "op": "ldloca",
+          "operand": "3",
+          "cil_member_token": null
+        },
+        {
+          "offset": 232,
+          "op": "call",
+          "operand": "Nekki.SF2.Core.Fights.Model.Model get_Current()",
+          "cil_member_token": "0x0A000303"
+        },
+        {
+          "offset": 237,
+          "op": "stloc",
+          "operand": "29",
+          "cil_member_token": null
+        }
+      ]
+    },
+    {
+      "name": "dispose-receiver-call",
+      "start": 430,
+      "end": 439,
+      "sha256": "62f60f21525cae176817dbf2b7646dd230f81f84ce68237aaae08f490f1f2564",
+      "instructions": [
+        {
+          "offset": 430,
+          "op": "ldloca",
+          "operand": "3",
+          "cil_member_token": null
+        },
+        {
+          "offset": 434,
+          "op": "call",
+          "operand": "Void Dispose()",
+          "cil_member_token": "0x0A000304"
+        }
+      ]
+    }
+  ],
+  "member_boundary_count": 5,
+  "member_boundaries": [
+    {
+      "source_token": "0x040005B8",
+      "source": "System.Collections.Generic.List\u00601[Nekki.SF2.Core.Fights.Model.Model] Models",
+      "source_owner": "Nekki.SF2.Core.Fights.Fight",
+      "host": "System.Collections.Generic.List\u00601[System.Object] Models",
+      "host_owner": "HostFightInput"
+    },
+    {
+      "source_token": "0x0600A46D",
+      "source": "Enumerator GetEnumerator()",
+      "source_owner": "System.Collections.Generic.List\u00601[Nekki.SF2.Core.Fights.Model.Model]",
+      "host": "Enumerator GetEnumerator()",
+      "host_owner": "System.Collections.Generic.List\u00601[System.Object]"
+    },
+    {
+      "source_token": "0x0600A48D",
+      "source": "Boolean MoveNext()",
+      "source_owner": "System.Collections.Generic.List\u00601\u002BEnumerator[Nekki.SF2.Core.Fights.Model.Model]",
+      "host": "Boolean MoveNext()",
+      "host_owner": "System.Collections.Generic.List\u00601\u002BEnumerator[System.Object]"
+    },
+    {
+      "source_token": "0x0600A48E",
+      "source": "Nekki.SF2.Core.Fights.Model.Model get_Current()",
+      "source_owner": "System.Collections.Generic.List\u00601\u002BEnumerator[Nekki.SF2.Core.Fights.Model.Model]",
+      "host": "System.Object get_Current()",
+      "host_owner": "System.Collections.Generic.List\u00601\u002BEnumerator[System.Object]"
+    },
+    {
+      "source_token": "0x0600A48C",
+      "source": "Void Dispose()",
+      "source_owner": "System.Collections.Generic.List\u00601\u002BEnumerator[Nekki.SF2.Core.Fights.Model.Model]",
+      "host": "Void Dispose()",
+      "host_owner": "System.Collections.Generic.List\u00601\u002BEnumerator[System.Object]"
+    }
+  ],
+  "runtime_cases": [
+    {
+      "element_count": 0,
+      "version_mutation": false,
+      "passed": false,
+      "exception": "System.NullReferenceException",
+      "moves": [],
+      "current_element_indices": [],
+      "dispose_calls": 0,
+      "fragment_cil_sha256": "9698cf36121efad62a179a0ead2424350bf424847fa5d56dda02164a0a314e92",
+      "member_token_remap_occurrences": 12,
+      "original_local_indices_retained": true,
+      "injected_default_or_initobj": false,
+      "return_store_retargeted": false
+    },
+    {
+      "element_count": 1,
+      "version_mutation": false,
+      "passed": false,
+      "exception": "System.NullReferenceException",
+      "moves": [],
+      "current_element_indices": [],
+      "dispose_calls": 0,
+      "fragment_cil_sha256": "9698cf36121efad62a179a0ead2424350bf424847fa5d56dda02164a0a314e92",
+      "member_token_remap_occurrences": 12,
+      "original_local_indices_retained": true,
+      "injected_default_or_initobj": false,
+      "return_store_retargeted": false
+    },
+    {
+      "element_count": 3,
+      "version_mutation": false,
+      "passed": false,
+      "exception": "System.NullReferenceException",
+      "moves": [],
+      "current_element_indices": [],
+      "dispose_calls": 0,
+      "fragment_cil_sha256": "9698cf36121efad62a179a0ead2424350bf424847fa5d56dda02164a0a314e92",
+      "member_token_remap_occurrences": 12,
+      "original_local_indices_retained": true,
+      "injected_default_or_initobj": false,
+      "return_store_retargeted": false
+    },
+    {
+      "element_count": 8,
+      "version_mutation": false,
+      "passed": false,
+      "exception": "System.NullReferenceException",
+      "moves": [],
+      "current_element_indices": [],
+      "dispose_calls": 0,
+      "fragment_cil_sha256": "9698cf36121efad62a179a0ead2424350bf424847fa5d56dda02164a0a314e92",
+      "member_token_remap_occurrences": 12,
+      "original_local_indices_retained": true,
+      "injected_default_or_initobj": false,
+      "return_store_retargeted": false
+    },
+    {
+      "element_count": 3,
+      "version_mutation": true,
+      "passed": false,
+      "exception": "System.NullReferenceException",
+      "moves": [],
+      "current_element_indices": [],
+      "dispose_calls": 0,
+      "fragment_cil_sha256": "2c45c183a43397c6f0ab919db7dd76a17b5170cbd27251921ce7e5237a936c35",
+      "member_token_remap_occurrences": 12,
+      "original_local_indices_retained": true,
+      "injected_default_or_initobj": false,
+      "return_store_retargeted": false
+    }
+  ],
+  "original_game_method_executed": false,
+  "production_cil_or_source_modified": false,
+  "scope": "Runs actual GetEnumerator input field load/call/store and actual MoveNext/Current/Dispose receiver/call/result-store byte fragments with original local indices. Exactly five member tokens map explicit Fight.Models/List\u003CModel\u003E/Model boundaries to HostFightInput.Models/List\u003Cobject\u003E/object; enum locals map to host enum, Current output to object, unused locals are opaque. Harness loop/order/recording is explicit; not whole SetStage control flow, game effects, or native MoveNext parity. Original InitLocals retained; no injected initobj/default or retargeted stores can pass. Original native unchanged24-byte SRET witness is independently checked. Exhausted Current null is observed BCL behavior, not an injected substitute."
+}

@@ -1,0 +1,296 @@
+{
+  "status": "PASS_SCOPED_16BYTE_NATIVE_FIELD_COPY_RECOGNITION",
+  "checks": 24,
+  "tests": [
+    {
+      "name": "disabled by default",
+      "status": "PASS"
+    },
+    {
+      "name": "actual setter complete decoded body",
+      "status": "PASS"
+    },
+    {
+      "name": "actual getter complete decoded body",
+      "status": "PASS"
+    },
+    {
+      "name": "actual integer shape",
+      "status": "PASS"
+    },
+    {
+      "name": "different store receiver rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "different second argument word rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "store writeback rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong store offset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "missing setter return rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "different getter result word rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong first getter destination register rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "effect in getter rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "appended observable code rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "truncated body rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "field metadata offset mismatch rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "readonly setter rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "overlapping value fields rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "floating or unknown field shape rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "different managed signature rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "static dummy argument shape rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "unboxed value owner rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "spilled or preceding-argument signature rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "undersized matched field and argument rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "actual CurrencyStruct getter and setter inventoried",
+      "status": "PASS"
+    }
+  ],
+  "matched_obscured_int_leaves": 18,
+  "leaves": [
+    {
+      "rva": "0xE9D890",
+      "method": "Nekki.SF2.Core.Fights.Model.Support.ModelParameters::get_Level",
+      "field": "_Level",
+      "field_offset": "0x188",
+      "setter": false,
+      "body_bytes": 12,
+      "native_text_sha256": "c056c7e51274161366574af746cd7a441d5e8a7bd5b21c1d23c0e6070715bf19"
+    },
+    {
+      "rva": "0xE9D8A0",
+      "method": "Nekki.SF2.Core.Fights.Model.Support.ModelParameters::set_Level",
+      "field": "_Level",
+      "field_offset": "0x188",
+      "setter": true,
+      "body_bytes": 8,
+      "native_text_sha256": "f92125297f3bbab0251256b37cc6c547da8476f780856050620a3cf0b878bbb7"
+    },
+    {
+      "rva": "0xE9D8D0",
+      "method": "Nekki.SF2.Core.Fights.Model.Support.ModelParameters::get_ShieldTotal",
+      "field": "_ShieldTotal",
+      "field_offset": "0x1B0",
+      "setter": false,
+      "body_bytes": 12,
+      "native_text_sha256": "e2a6480343213c280e285ffbb9fe4b8f49be6b0d38d38ee39b7c697b2bcfdb4d"
+    },
+    {
+      "rva": "0xE9D8E0",
+      "method": "Nekki.SF2.Core.Fights.Model.Support.ModelParameters::set_ShieldTotal",
+      "field": "_ShieldTotal",
+      "field_offset": "0x1B0",
+      "setter": true,
+      "body_bytes": 8,
+      "native_text_sha256": "a49ae0d1f9091a8413f567826845ab645ade8691ac62be3aafa1e4c8508117cc"
+    },
+    {
+      "rva": "0xE9D8F0",
+      "method": "Nekki.SF2.Core.Fights.Model.Support.ModelParameters::get_ShieldStack",
+      "field": "_ShieldStack",
+      "field_offset": "0x1C0",
+      "setter": false,
+      "body_bytes": 12,
+      "native_text_sha256": "170a923825fc83a053239dcd90b56d61e57f76396566c00c2c4baf7338c6a9fd"
+    },
+    {
+      "rva": "0xE9D900",
+      "method": "Nekki.SF2.Core.Fights.Model.Support.ModelParameters::set_ShieldStack",
+      "field": "_ShieldStack",
+      "field_offset": "0x1C0",
+      "setter": true,
+      "body_bytes": 8,
+      "native_text_sha256": "d668b3978a4d7a8482cfe9979124311545d3ada24159768aebd0c1fb7619e4b3"
+    },
+    {
+      "rva": "0xE9D910",
+      "method": "Nekki.SF2.Core.Fights.Model.Support.ModelParameters::get_ShieldStackMax",
+      "field": "_ShieldStackMax",
+      "field_offset": "0x1D0",
+      "setter": false,
+      "body_bytes": 12,
+      "native_text_sha256": "7ad7b0bb6c8b2cd455a40a484fe73ebafc007cff99018421c906a20a2097f1e0"
+    },
+    {
+      "rva": "0xE9D920",
+      "method": "Nekki.SF2.Core.Fights.Model.Support.ModelParameters::set_ShieldStackMax",
+      "field": "_ShieldStackMax",
+      "field_offset": "0x1D0",
+      "setter": true,
+      "body_bytes": 8,
+      "native_text_sha256": "d85d73fb6150a5e3c4d9eacf3f0b2a2f2604337330bfca0583150c9ce5cb6c11"
+    },
+    {
+      "rva": "0xF61F40",
+      "method": "Nekki.SF2.Core.Utils.MoneyStruct::get_Count",
+      "field": "\u003CCount\u003Ek__BackingField",
+      "field_offset": "0x18",
+      "setter": false,
+      "body_bytes": 12,
+      "native_text_sha256": "031b293e06b6ca3615ac38e75047a4ee1254b023e65c4248cda2bca812f13342"
+    },
+    {
+      "rva": "0xF61F20",
+      "method": "Nekki.SF2.Core.Utils.MoneyStruct::set_Count",
+      "field": "\u003CCount\u003Ek__BackingField",
+      "field_offset": "0x18",
+      "setter": true,
+      "body_bytes": 8,
+      "native_text_sha256": "7a2dd33fdedf154abcdb5d6dfe32dc5d1dd95eee18191544eace83cb6bdcbc46"
+    },
+    {
+      "rva": "0xD3D390",
+      "method": "Nekki.SF2.Core.Utils.CurrencyStruct::get_Count",
+      "field": "\u003CCount\u003Ek__BackingField",
+      "field_offset": "0x18",
+      "setter": false,
+      "body_bytes": 12,
+      "native_text_sha256": "031b293e06b6ca3615ac38e75047a4ee1254b023e65c4248cda2bca812f13342"
+    },
+    {
+      "rva": "0xD3D370",
+      "method": "Nekki.SF2.Core.Utils.CurrencyStruct::set_Count",
+      "field": "\u003CCount\u003Ek__BackingField",
+      "field_offset": "0x18",
+      "setter": true,
+      "body_bytes": 8,
+      "native_text_sha256": "7a2dd33fdedf154abcdb5d6dfe32dc5d1dd95eee18191544eace83cb6bdcbc46"
+    },
+    {
+      "rva": "0xEF2600",
+      "method": "Nekki.SF2.Core.Utils.ResistanceStruct::get_Count",
+      "field": "\u003CCount\u003Ek__BackingField",
+      "field_offset": "0x18",
+      "setter": false,
+      "body_bytes": 12,
+      "native_text_sha256": "031b293e06b6ca3615ac38e75047a4ee1254b023e65c4248cda2bca812f13342"
+    },
+    {
+      "rva": "0xEF25E0",
+      "method": "Nekki.SF2.Core.Utils.ResistanceStruct::set_Count",
+      "field": "\u003CCount\u003Ek__BackingField",
+      "field_offset": "0x18",
+      "setter": true,
+      "body_bytes": 8,
+      "native_text_sha256": "7a2dd33fdedf154abcdb5d6dfe32dc5d1dd95eee18191544eace83cb6bdcbc46"
+    },
+    {
+      "rva": "0xEF2610",
+      "method": "Nekki.SF2.Core.Utils.ResistanceStruct::get_PrevCount",
+      "field": "\u003CPrevCount\u003Ek__BackingField",
+      "field_offset": "0x28",
+      "setter": false,
+      "body_bytes": 12,
+      "native_text_sha256": "1e16d234e308b01ce0eddce526dcff7e970ab11758961fe394212728ba073fc9"
+    },
+    {
+      "rva": "0xEF2620",
+      "method": "Nekki.SF2.Core.Utils.ResistanceStruct::set_PrevCount",
+      "field": "\u003CPrevCount\u003Ek__BackingField",
+      "field_offset": "0x28",
+      "setter": true,
+      "body_bytes": 8,
+      "native_text_sha256": "e0c624223a7919fc581fb1cab2424249bca21db1065980571812d1f408b22b78"
+    },
+    {
+      "rva": "0xE5AEB0",
+      "method": "Nekki.SF2.GUI.Fight.ViewerFight::get_TimeCount",
+      "field": "timeCount",
+      "field_offset": "0x88",
+      "setter": false,
+      "body_bytes": 12,
+      "native_text_sha256": "98416fe48702360e9a752f6f02814aa9c8c7420b1b2ba89bc3cb905ebc594339"
+    },
+    {
+      "rva": "0xE5ADD0",
+      "method": "Nekki.SF2.GUI.Fight.ViewerFight::get_TimeSecond",
+      "field": "timeSecond",
+      "field_offset": "0x98",
+      "setter": false,
+      "body_bytes": 12,
+      "native_text_sha256": "a4741ec1154ccb64cc41044cf33070cc36659aa23796723b13a992b0e1f9c8d4"
+    }
+  ],
+  "value_layout": {
+    "type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt",
+    "size": 16,
+    "attributes": "Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit",
+    "fields": [
+      {
+        "name": "currentCryptoKey",
+        "type": "System.Int32",
+        "offset": 0
+      },
+      {
+        "name": "hiddenValue",
+        "type": "System.Int32",
+        "offset": 4
+      },
+      {
+        "name": "fakeValue",
+        "type": "System.Int32",
+        "offset": 8
+      },
+      {
+        "name": "inited",
+        "type": "System.Boolean",
+        "offset": 12
+      }
+    ]
+  },
+  "helper_sha256": "e1aa22bee294d0ebe370d12a439c284110870eaaffc4a1de1fd16edcb8ece252",
+  "scope": "Native bytes and metadata recognition only. No recovered CIL execution, general integer aggregate call/entry/return ABI, padding-byte identity, currency codec, or complete game-source claim. Direct managed field copies must be independently emitted and executed against original native fixtures."
+}

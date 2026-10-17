@@ -1,0 +1,44 @@
+{
+  "status": "PASS_COMPILED_CAPSULE_REFERENCE_VS_ORIGINAL_ARM64",
+  "cases": 4186,
+  "checks": 29302,
+  "contacts": 1440,
+  "fixture_sha256": "9bc1f6ef6b0ed8ccdda2e70931c453d4a2405a2c58f43e565c0b47c852dbf8cc",
+  "calls": {
+    "capsules": 4186
+  },
+  "executed_functions": {
+    "capsules": 61706,
+    "segment_intersection": 6462,
+    "allocated_equation_line": 21665,
+    "equation_ctor": 6190,
+    "object_ctor": 3935,
+    "distance_contact": 7511
+  },
+  "runtime_allocation_model": {
+    "EquationLine": 3095,
+    "Vector3f": 840
+  },
+  "allocation_hook_rva": "0xB5B110",
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "original_text_sha256": {
+    "capsules": "87befd62162356744f4d193d7995133673655884fc4f3accf057c86aa7d8ba06",
+    "segment_intersection": "d8f865a22e5ae5499f7b2b42d663e7cf662a566da14fea1d6c389b7c6d6047fd",
+    "distance_contact": "7a77ca1cbb25a5781336f4b0df596b42cba91dcf7808d1fc81defec2ce40d12e",
+    "equation_line": "c295d0acf631daecf18e77a5de597139081ace1de031a98673f9bd479f7d31a9",
+    "allocated_equation_line": "27d3500a5182957529412fe7dbcdd2e29a929f924f8e2df28bb96416e88471cf",
+    "equation_ctor": "31f0876ae5076669a7eb321966869e838eb8a8ff059859a576b36798ae020402",
+    "object_ctor": "110f46b5b35c069160560c6ad6786f647dd44e8760a52a46fc22dbbcd7630b91"
+  },
+  "metadata_initialization_guards": [
+    "0x3b898fd",
+    "0x3b898f9",
+    "0x3b898f8",
+    "0x3b89901",
+    "0x3b898ad",
+    "0x3b898fb",
+    "0x3b898fc"
+  ],
+  "scope": "Original complete capsule/segment/contact/line math and constructors, finite nondegenerate inputs including optional-null line objects. IL2CPP allocation is modeled as zeroed 32-byte Vector3f/EquationLine objects; no GC/lifetime or whole-combat parity claim."
+}

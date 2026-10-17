@@ -1,0 +1,1538 @@
+{
+  "upstream": "https://github.com/rodroidmods/il2cpp-dumper-rs",
+  "commit": "145a751023258a35f133c4f111785a8df0580985",
+  "source_only": true,
+  "archive_sha256": "2ba361f052c65e13a2989f06844509a9ad254b5e7dc9a618e9ff04c1ee81ab99",
+  "files": [
+    {
+      "path": "Cargo.lock",
+      "git_blob_sha1": "dfd6b1b51ef1069b493f9d946391a7e9f0f11f56",
+      "sha256": "0774423a9e36bbdf8e8a6ba9d855f6a328d91ce8a2e3959896f60e7f07049445",
+      "bytes": 30477
+    },
+    {
+      "path": "Cargo.toml",
+      "git_blob_sha1": "1594b520d5ca20d77217d72a1915c7589769aadb",
+      "sha256": "9d362de2ffe3ea602d833f07fbc179d68286bee3c8a02af303e30707925562f8",
+      "bytes": 1446
+    },
+    {
+      "path": "LICENSE",
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha1": "46e9e4efb0a24bf00852f7e2429ac311a64d9040",
+      "sha256": "07a7c0ed963906895eb61aaeba6b7140dbc7ad3dc9ea5eed60950c417f080ad9",
+      "bytes": 28206
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2017.1.0-2017.1.5.h",
+      "git_blob_sha1": "31a8c402cb931ea79c4718f2a758d90513848579",
+      "sha256": "6ee5ed7e65f34e67152b36490703e387423e6e82d91c9a579b3776b6c3fe13f4",
+      "bytes": 16817
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2017.2.0-2017.2.5.h",
+      "git_blob_sha1": "2dc7fb3124cbd59733d6f648b642484251ace569",
+      "sha256": "4ac2f444412f4f8a5687510efc6b6d943825f5ff3a7f33acad4d0bb8130c10c0",
+      "bytes": 16909
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2017.3.0-2017.4.40.h",
+      "git_blob_sha1": "0b1882b255ac3a8c6c9ea0321f7bb9f55b7362d2",
+      "sha256": "a4c16d9701efaff07663d0b22bab025b04118685607868ba058fc2cef7a1292f",
+      "bytes": 14909
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2018.1.0-2018.1.9.h",
+      "git_blob_sha1": "5eb6b25f1856583fe01fe889f7186f29a21fc548",
+      "sha256": "f1e0f91dee1ee0c7632eb233962402c5c71ed748cc36bcbe06ff1528e6854ace",
+      "bytes": 15203
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2018.2.0-2018.2.21.h",
+      "git_blob_sha1": "6a9665c06acf6cbc6944d0ce71d3454f6da2cf30",
+      "sha256": "4b1e670c3f95f3a9af2349a02eceed84581e46665aa7400cde58ab8d03ed5d76",
+      "bytes": 15613
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2018.3.0-2018.4.99.h",
+      "git_blob_sha1": "83c18181b73576dcda797a2ef27665277b2f7f86",
+      "sha256": "a93ce0d37eb19c12f1c6dd0ae5eab9305954331a0efe5b7fb856734bcea96829",
+      "bytes": 16609
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2019.1.0-2019.2.21.h",
+      "git_blob_sha1": "86581492d2d30c5bf395de9d312139b176258604",
+      "sha256": "a77d0984ea9ce31d30af7ac6d515482ed55fee257089989b4abf2d3820e95480",
+      "bytes": 17182
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2019.3.0-2019.3.15.h",
+      "git_blob_sha1": "43293e37f62d6302336e8d1a4b315062236d4336",
+      "sha256": "15d3c1cb6493de04444a92680a7c20210bb95f8606ccfad8489edbd2c3e30e2d",
+      "bytes": 18717
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2019.4.0-2019.4.99.h",
+      "git_blob_sha1": "4250a283e49918a54058fee6192111a53a9d0fb4",
+      "sha256": "0adb16ee2b5eac15e7355db66a78d847cf290ce0772657b2ec4a41d078aad4aa",
+      "bytes": 18793
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2020.1.0-2020.1.99.h",
+      "git_blob_sha1": "0b50d22c45c4fa29077eff8db908c28abe986b6a",
+      "sha256": "d47bc65a31582413ef841508506540a702173640a50059da0250380837d7c752",
+      "bytes": 18920
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2020.2.0-2021.1.99.h",
+      "git_blob_sha1": "a4b477025efebf760f742489cbb1c6041abf8d33",
+      "sha256": "cbf4bd328c63058f8d542ef4b4bcf06399a8507f802c27936e9505c1e2435ca2",
+      "bytes": 19034
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2021.2.0-2023.1.99.h",
+      "git_blob_sha1": "f3133eb2eade0cbc8c636e959f88c456f1115e9e",
+      "sha256": "5002cb052a3b7578b96bc78886df2f6015080f09754400ea4f0794f5110c0d91",
+      "bytes": 19174
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/2023.2.0-.h",
+      "git_blob_sha1": "b13828629ef547e466ed00e6ab2178d0ad23103a",
+      "sha256": "22ef739fea73096888ba979e6bf1fbc54682205e14fd9cccf35765b7b56e41f9",
+      "bytes": 19460
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/5.3.0.h",
+      "git_blob_sha1": "64a3efc91f5ae8fa193e0913557d5f373564002a",
+      "sha256": "c87184732b0d75bd5b83d07eaaeae1f2cb7806ab13c5ea8583ad83448cb2e968",
+      "bytes": 16021
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/5.3.1.h",
+      "git_blob_sha1": "d3a6c79fc02cf67c25921cae8a346e731e426fa7",
+      "sha256": "fc88915ac328e74ecc62a39ec72a9759e600c839010fbc96605bb453387f62f2",
+      "bytes": 16107
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/5.3.2-5.3.4.h",
+      "git_blob_sha1": "48a1e3ac4f77676094c60c6a0a8b981465124356",
+      "sha256": "7dfdbfecd7ea33eca85b096fb53352dc7036e8f6dd1ce0409dbe199536224f18",
+      "bytes": 16191
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/5.3.5.h",
+      "git_blob_sha1": "c2d46166d560f1ce13f701695ca599c7c547b26f",
+      "sha256": "053e90acb62400fae144007851c01b6def239337cf21558dee12db4e1872093e",
+      "bytes": 16597
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/5.3.6-5.4.6.h",
+      "git_blob_sha1": "f326efb294eae361cf9cf6bea45b448cf85ebbde",
+      "sha256": "5f09e8345df8a30a613c4f5c7e9b3ec4c0e1339ec569d542eafe40f41f441ec0",
+      "bytes": 16637
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/5.5.0-5.5.6.h",
+      "git_blob_sha1": "abef95da1a1c2d99ec3aa45278888666149e9694",
+      "sha256": "7b4edbe1942c78512a2902886c98fad7c5267a31791578cb1edb9e3ac19179cb",
+      "bytes": 16702
+    },
+    {
+      "path": "assets/Il2CppAPIHeaders/5.6.0-5.6.7.h",
+      "git_blob_sha1": "6ac0568871289de34f3b307dd7d7f7e3978dccfb",
+      "sha256": "f155ce1f29615000059ebf28e195dca87c37c004d36a88171a942446916d0223",
+      "bytes": 16897
+    },
+    {
+      "path": "assets/UnityHeaders/104-6000.5.0a3.h",
+      "git_blob_sha1": "f3097d56c607dd3a60562ea95fd81b7198752bc6",
+      "sha256": "4cf2f03aea0504b2e1ee60e96278847be9c653bfa9a3d39edb4979d9c0c40958",
+      "bytes": 71850
+    },
+    {
+      "path": "assets/UnityHeaders/105-6000.5.0a5.h",
+      "git_blob_sha1": "f3097d56c607dd3a60562ea95fd81b7198752bc6",
+      "sha256": "4cf2f03aea0504b2e1ee60e96278847be9c653bfa9a3d39edb4979d9c0c40958",
+      "bytes": 71850
+    },
+    {
+      "path": "assets/UnityHeaders/106-6000.5.0a6.h",
+      "git_blob_sha1": "f3097d56c607dd3a60562ea95fd81b7198752bc6",
+      "sha256": "4cf2f03aea0504b2e1ee60e96278847be9c653bfa9a3d39edb4979d9c0c40958",
+      "bytes": 71850
+    },
+    {
+      "path": "assets/UnityHeaders/16-5.3.0.h",
+      "git_blob_sha1": "fd11705a59ae53882eb471adb59733bf1765c93c",
+      "sha256": "091e1514c16da75572428457f60056a729d377943efb70ea60b218a6597e5115",
+      "bytes": 40890
+    },
+    {
+      "path": "assets/UnityHeaders/16-5.3.1.h",
+      "git_blob_sha1": "78eed3a7d73d726c0a79b455be4ae4be44e2ac08",
+      "sha256": "6da45a438442ca7573c9b106ec2b590f6c1d2af2a28aff1cbdcad66cf729a203",
+      "bytes": 40955
+    },
+    {
+      "path": "assets/UnityHeaders/19-5.3.2.h",
+      "git_blob_sha1": "0b013257682046d3abe675e9be0b05d4945adf72",
+      "sha256": "b3f9c0cd54a0acecba6bbf27f048513332941c223b26f1c2dbfe8715f569d25d",
+      "bytes": 42146
+    },
+    {
+      "path": "assets/UnityHeaders/20-5.3.3.h",
+      "git_blob_sha1": "db1402834d1d253cd8bc096b3edc7fe56c75d9a4",
+      "sha256": "e364a100b4a23b5eee705c1ec85380c6a87e17bb8b102258aad70b317b4bda61",
+      "bytes": 42726
+    },
+    {
+      "path": "assets/UnityHeaders/20-5.3.4.h",
+      "git_blob_sha1": "a03c642f6849305f374f9750a51b42557c614e4f",
+      "sha256": "20a9426bc47e006a8844618c616e33235bdd4f7c6c0d077d409282e70c0277ff",
+      "bytes": 42845
+    },
+    {
+      "path": "assets/UnityHeaders/21-5.3.5.h",
+      "git_blob_sha1": "1ca27d487f658dbcf7858e1f752c49fb1334f751",
+      "sha256": "a2e588540056de81522825a51a8ba8b14de23d1824115fccb9c21289aff314bf",
+      "bytes": 47887
+    },
+    {
+      "path": "assets/UnityHeaders/21-5.3.6.h",
+      "git_blob_sha1": "55d6bb5974c1fc641a178b9d53ac69b04a02460d",
+      "sha256": "43719a3519aa0b2f562b4dac70751facf3725a5432e02660f0c366e748a7973c",
+      "bytes": 50219
+    },
+    {
+      "path": "assets/UnityHeaders/21-5.3.7-5.3.8.h",
+      "git_blob_sha1": "37ef8559e81c48269409cdbfca19129247545b40",
+      "sha256": "1089090c7bcb8ab62be4dcc8a52ee23faf2b7c804646b5660dffa46765009893",
+      "bytes": 50221
+    },
+    {
+      "path": "assets/UnityHeaders/21-5.4.0.h",
+      "git_blob_sha1": "55d6bb5974c1fc641a178b9d53ac69b04a02460d",
+      "sha256": "43719a3519aa0b2f562b4dac70751facf3725a5432e02660f0c366e748a7973c",
+      "bytes": 50219
+    },
+    {
+      "path": "assets/UnityHeaders/21-5.4.1-5.4.3.h",
+      "git_blob_sha1": "37ef8559e81c48269409cdbfca19129247545b40",
+      "sha256": "1089090c7bcb8ab62be4dcc8a52ee23faf2b7c804646b5660dffa46765009893",
+      "bytes": 50221
+    },
+    {
+      "path": "assets/UnityHeaders/21-5.4.4-5.4.6.h",
+      "git_blob_sha1": "511c1e36b91a5993d23603bb1a19150f5f4be09f",
+      "sha256": "0618fd237cd40c046d75d2091639b0ce8186112efb4a288a06d64f4849be935b",
+      "bytes": 50288
+    },
+    {
+      "path": "assets/UnityHeaders/22-5.5.0.h",
+      "git_blob_sha1": "960e329ea341d0c581053f6a66bc76b924f59aa8",
+      "sha256": "df5394d95554d1380822bb78bc7cbb8ecf2933d5315ebaf5885aac9851a2b1a4",
+      "bytes": 55689
+    },
+    {
+      "path": "assets/UnityHeaders/22-5.5.1-5.5.2.h",
+      "git_blob_sha1": "a8d2d69c2ef1d6df894e3d6a46d9924d57f2c574",
+      "sha256": "f2d938906e70fdb7950b381ccb843f3d4f00210d210ac46bacc9244a57d45aa9",
+      "bytes": 55756
+    },
+    {
+      "path": "assets/UnityHeaders/22-5.5.3.h",
+      "git_blob_sha1": "0e2251aa0f229cf953b78d01be0c5f787684ad26",
+      "sha256": "7a6b8a86e536a5bc5f964c8cc3c8c31b90ec68b653dd3c95353623840e65db21",
+      "bytes": 60589
+    },
+    {
+      "path": "assets/UnityHeaders/22-5.5.4-5.5.6.h",
+      "git_blob_sha1": "ab923b8c852322c9e7f2c107c374b2877633fd86",
+      "sha256": "b4c274b54ffdc53954be892cf32d254fb75394c30a5a351d54dbe4479b60efbe",
+      "bytes": 60916
+    },
+    {
+      "path": "assets/UnityHeaders/23-5.6.0.h",
+      "git_blob_sha1": "7d4f23bec78dea55a507e6ff9a92cd81ba639898",
+      "sha256": "e07cd77c03ae5dce8b2d26ff422780cf71ba6122326735666555238ed14da52c",
+      "bytes": 56725
+    },
+    {
+      "path": "assets/UnityHeaders/23-5.6.1-5.6.7.h",
+      "git_blob_sha1": "4cbec7f7c30da6a9996002f3b2e27556516c9d7f",
+      "sha256": "b57120e758f86cc91481112e12e6b68facbd30ccbde80681a2f7ef1ee054d154",
+      "bytes": 62026
+    },
+    {
+      "path": "assets/UnityHeaders/24-2017.1.0-2017.1.2.h",
+      "git_blob_sha1": "18cd30957c732c543abe53fcdd951424878a07c3",
+      "sha256": "bf195a8a238c373deafbb53a23248309dc9a8a8f23b3a63b115c0cc25140c004",
+      "bytes": 62231
+    },
+    {
+      "path": "assets/UnityHeaders/24-2017.1.3-2017.1.5.h",
+      "git_blob_sha1": "1140d58dc0cdb058308f96d7a5271cd8f5f16f5f",
+      "sha256": "55f2f4962a80002a1e3a94854c4a624d7d63ec457196c99d79701b3102ab4f53",
+      "bytes": 62258
+    },
+    {
+      "path": "assets/UnityHeaders/24-2017.2.0.h",
+      "git_blob_sha1": "dc682e3b1d4a9ea51c12fd96bb9bbd67add30b33",
+      "sha256": "610c67f98ec1fd56330b08b37afadff4e6df3a1f0e39252f9d8efc1cda17200d",
+      "bytes": 62244
+    },
+    {
+      "path": "assets/UnityHeaders/24-2017.2.1-2017.2.5.h",
+      "git_blob_sha1": "5c68b9e4924345d2ebd4101117b113062c8b652f",
+      "sha256": "0e5d8eb18d149b2de33c4d9c338680403cea21274612be94e1d5b360673b4b44",
+      "bytes": 62271
+    },
+    {
+      "path": "assets/UnityHeaders/24-2017.3.0-2017.3.1.h",
+      "git_blob_sha1": "21fd8ecf4140e8bc751f74d930497de34c0ac325",
+      "sha256": "8ebbb3caa4355f3404e7c616fe8044eb1a47fda54913a89a77553e704a61b023",
+      "bytes": 62418
+    },
+    {
+      "path": "assets/UnityHeaders/24-2017.4.1-2017.4.14.h",
+      "git_blob_sha1": "d1e0c1bd2e7857c590b5e1fee81d0fda4316eaab",
+      "sha256": "2bc71b591c9c610eb5da67b7ba0dd2ec0b1a50853cc862fe97c9ec8c2c32bb4c",
+      "bytes": 62467
+    },
+    {
+      "path": "assets/UnityHeaders/24-2017.4.15-2017.4.40.h",
+      "git_blob_sha1": "7fd9df999f1ad0a8182990b5aa0347133e792c58",
+      "sha256": "df156682d0b5a6902efc8a7197b895defaafc3fe6ebcb219ca7dff59f77149d0",
+      "bytes": 62506
+    },
+    {
+      "path": "assets/UnityHeaders/24-2018.1.0-2018.1.1.h",
+      "git_blob_sha1": "0e58b2a9defe81746fbc91d41b9eb49db52b54ab",
+      "sha256": "d55f2a4cea76d957cba5444af3febc1c7df8e50e669eb3aca1457e703f393cd2",
+      "bytes": 63103
+    },
+    {
+      "path": "assets/UnityHeaders/24-2018.1.2-2018.1.9.h",
+      "git_blob_sha1": "bbe346b58b8407bba53747c1b1d18454cc75b290",
+      "sha256": "0b2d86aac6c0196a971f87d452c748dfd658914d82362c25694da7faf35884e4",
+      "bytes": 63109
+    },
+    {
+      "path": "assets/UnityHeaders/24-2018.2.0-2018.2.11.h",
+      "git_blob_sha1": "0124d2f0dda5662284df1b47a38ae4112d54d316",
+      "sha256": "191443b665be09bc3f054355d0b88637f16c50deb761a17125e4310783f57bf8",
+      "bytes": 64747
+    },
+    {
+      "path": "assets/UnityHeaders/24-2018.2.12-2018.2.15.h",
+      "git_blob_sha1": "e317dd0cb0d5fc7f30dcf9fb561ea8e8fee68a63",
+      "sha256": "6766e30f99944e11fd53ce666659b60a23b0df0e0e1e3f9f2812de4fee72e803",
+      "bytes": 64774
+    },
+    {
+      "path": "assets/UnityHeaders/24-2018.2.16-2018.2.21.h",
+      "git_blob_sha1": "185eb54fd50e2c6161f5f741793faccfe08dcdb9",
+      "sha256": "11c2fc2c36b1300e2f763aac1ee86a83ec443c9fb98de122b466d7e01f0df7eb",
+      "bytes": 64814
+    },
+    {
+      "path": "assets/UnityHeaders/24.1-2018.3.0-2018.3.7.h",
+      "git_blob_sha1": "e57bcbc8cc9c06935f9113564a1232cf806a2683",
+      "sha256": "c3ea2af8735a52493c1d0fbfb2d10b61efe2fbd4fe943e6b9fcf0fb35ffd9165",
+      "bytes": 64699
+    },
+    {
+      "path": "assets/UnityHeaders/24.1-2018.3.8-2018.4.17.h",
+      "git_blob_sha1": "686520c1d34001fb25a278625daedd235fd1e862",
+      "sha256": "c1ba5c7f97386a4b8336e5c9038c28865a95c32d29ec5e91679732c21efb775a",
+      "bytes": 64757
+    },
+    {
+      "path": "assets/UnityHeaders/24.1-2018.4.18-2018.4.33.h",
+      "git_blob_sha1": "67d80a148dabe781823bf7d8060780782d341ab7",
+      "sha256": "b7e04e285f2c49153bfeb07476881b543ee510601beef1754f2eaee70dd1b516",
+      "bytes": 65040
+    },
+    {
+      "path": "assets/UnityHeaders/24.1-2018.4.34-2018.4.36.h",
+      "git_blob_sha1": "ff096e6b5097e12b8defa41448ca1a7770166e27",
+      "sha256": "7ed4436605124151dc3066e8d9a88bf1c15d84b1f968f668d19ae96d17053925",
+      "bytes": 65008
+    },
+    {
+      "path": "assets/UnityHeaders/24.2-2019.1.0-2019.1.14.h",
+      "git_blob_sha1": "172b1b6b349ca616a793c5f3751eb8408491fb09",
+      "sha256": "4e6601bf1bcbede3cd7a21cfc66de2ed7837b41213409f401c926c5ff2fa6a8b",
+      "bytes": 66222
+    },
+    {
+      "path": "assets/UnityHeaders/24.2-2019.2.0-2019.2.21.h",
+      "git_blob_sha1": "7c533013248ef97aefcaae7bee237ae42c99614f",
+      "sha256": "03a6b8bc6b6b02410c2d315dce4882db7ffba1c9b1154e3b9eec3c88596d7248",
+      "bytes": 65885
+    },
+    {
+      "path": "assets/UnityHeaders/24.2-2019.3.0-2019.3.6.h",
+      "git_blob_sha1": "73c71a185a18c6d1afda89e7e7efccfbeedf1b76",
+      "sha256": "fc3aa31aa151bce5add561b17cce2323339f8fb1fdf030456cb8944b33bae4d7",
+      "bytes": 66750
+    },
+    {
+      "path": "assets/UnityHeaders/24.3-2019.3.7-2019.4.9.h",
+      "git_blob_sha1": "42964b7d7e5d93573c12d06f5d12ae7d8a6f2096",
+      "sha256": "24df1fd1bef9b19a83b648bfb923578e718c2a4f0a7c95129a58c8388968fd61",
+      "bytes": 67033
+    },
+    {
+      "path": "assets/UnityHeaders/24.3-2019.4.10-2019.4.14.h",
+      "git_blob_sha1": "e2324082e3bb3f81a087ebf9851f4ce22142e488",
+      "sha256": "360cab2e92ed252a92868c8b8f95446afb0266e354484a55a326b77754966ae7",
+      "bytes": 67035
+    },
+    {
+      "path": "assets/UnityHeaders/24.3-2020.1.0-2020.1.4.h",
+      "git_blob_sha1": "5552fd9aa96c962495b6d34126cc8d06d3f688f1",
+      "sha256": "4760845795ad474eb2824fde564e4ab4c4d7acb38efca4cc4cba78fc4015772d",
+      "bytes": 67055
+    },
+    {
+      "path": "assets/UnityHeaders/24.3-2020.1.5-2020.1.10.h",
+      "git_blob_sha1": "b50fef3763b78914dfbcf95be2dfcbb916da96cc",
+      "sha256": "ebe8add5349d18e9414914de89d39ea1de72c99ebe68d81efd08ccd6b0cf7c6d",
+      "bytes": 67057
+    },
+    {
+      "path": "assets/UnityHeaders/24.4-2019.4.15-2019.4.20.h",
+      "git_blob_sha1": "6ea02ef9096cf9beca26f7f82670e9f5652dfba8",
+      "sha256": "ff5c8fa0957068cd1acd601e15bac0a7617ec108d29513f121d0a72d32ae4919",
+      "bytes": 67014
+    },
+    {
+      "path": "assets/UnityHeaders/24.4-2020.1.11-2020.1.17.h",
+      "git_blob_sha1": "fe0e130f43d0a2b4f224177c40f9e742dc0214dc",
+      "sha256": "d8693bab77ad058094bc328bc010f14debcb21fdccf579d14ffc31ca6d709536",
+      "bytes": 67036
+    },
+    {
+      "path": "assets/UnityHeaders/24.5-2019.4.21-2019.4.24.h",
+      "git_blob_sha1": "337052e1a65cfbbab90a5aac660840cd39fc95b8",
+      "sha256": "9e70d5c72a1e0e5465debc1e14a225234e0a31d3df9ddbbe83e1d532f2304ae1",
+      "bytes": 67336
+    },
+    {
+      "path": "assets/UnityHeaders/27-2020.2.0-2020.2.3.h",
+      "git_blob_sha1": "35e61404d1f666843c09be7c4d84327f9746d4ca",
+      "sha256": "4732ba058354ca79e22b22dacbd01a032f776a8febc1c92c33da1d88ca865a89",
+      "bytes": 69588
+    },
+    {
+      "path": "assets/UnityHeaders/27.1-2020.2.4-2020.3.99.h",
+      "git_blob_sha1": "e7deaa4104a788e9b2403df9a096294288fc4c23",
+      "sha256": "06b9c1ab4cd94cb3b0ddabeed894d3b6ac6822b800168a1e090d1293a1f4fe73",
+      "bytes": 69910
+    },
+    {
+      "path": "assets/UnityHeaders/27.2-2021.1.0-2021.1.99.h",
+      "git_blob_sha1": "e1c542b42b73e30462bd0b4caac8b1300dbc5ac9",
+      "sha256": "9ed2f0b16131bed0fc82f2de7e86edea99aa41fa34f611c8fc6994fd7408721f",
+      "bytes": 69975
+    },
+    {
+      "path": "assets/UnityHeaders/29-2021.2.0-2021.2.99.h",
+      "git_blob_sha1": "8df0314a8385f1f33d53a76691b33f15679c88cb",
+      "sha256": "ebbedf7ef5206bfca8bc3b8beb54a3915d0118867af0c56fe193d6ae8ae2e689",
+      "bytes": 71706
+    },
+    {
+      "path": "assets/UnityHeaders/29.1-2021.3.0-.h",
+      "git_blob_sha1": "49e542907e357d16ca8eec6e1b66b14de03ad98e",
+      "sha256": "88502ac101057ff6a52ef70ef138ded150ae4266cc1ec5460d633805518a5b52",
+      "bytes": 71815
+    },
+    {
+      "path": "assets/UnityHeaders/31-2022.3.33-.h",
+      "git_blob_sha1": "f3097d56c607dd3a60562ea95fd81b7198752bc6",
+      "sha256": "4cf2f03aea0504b2e1ee60e96278847be9c653bfa9a3d39edb4979d9c0c40958",
+      "bytes": 71850
+    },
+    {
+      "path": "assets/UnityHeaders/35-6000.3.0a2.h",
+      "git_blob_sha1": "f3097d56c607dd3a60562ea95fd81b7198752bc6",
+      "sha256": "4cf2f03aea0504b2e1ee60e96278847be9c653bfa9a3d39edb4979d9c0c40958",
+      "bytes": 71850
+    },
+    {
+      "path": "assets/UnityHeaders/38-6000.3.0a5.h",
+      "git_blob_sha1": "f3097d56c607dd3a60562ea95fd81b7198752bc6",
+      "sha256": "4cf2f03aea0504b2e1ee60e96278847be9c653bfa9a3d39edb4979d9c0c40958",
+      "bytes": 71850
+    },
+    {
+      "path": "assets/UnityHeaders/39-6000.3.0b1.h",
+      "git_blob_sha1": "f3097d56c607dd3a60562ea95fd81b7198752bc6",
+      "sha256": "4cf2f03aea0504b2e1ee60e96278847be9c653bfa9a3d39edb4979d9c0c40958",
+      "bytes": 71850
+    },
+    {
+      "path": "config.json",
+      "git_blob_sha1": "e7502997f761527ff9b17b07c8ca8eece772642f",
+      "sha256": "a5001bde843a165413f5b7791cf974d7f54a5ed083ce503206f6a9475d42f533",
+      "bytes": 1357
+    },
+    {
+      "path": "dotnetdll-main/.cargo/config.toml",
+      "git_blob_sha1": "44fe421cdcc451ad47faecdc58969edcbcc03dbe",
+      "sha256": "2baf5aa90e95a9e9f889200f805bbefd38d1cd89f3ae0027387cd3af3e2cc4bf",
+      "bytes": 27
+    },
+    {
+      "path": "dotnetdll-main/.rustfmt.toml",
+      "git_blob_sha1": "75306517965a54731b94dca8bace640e856af115",
+      "sha256": "e090969e99df9360705680cc0097cfaddae10c22dc2e01470592cf3b9787fd36",
+      "bytes": 16
+    },
+    {
+      "path": "dotnetdll-main/Cargo.toml",
+      "git_blob_sha1": "7c8c1636a4f450dc6ccb0f823f02657beea9d45f",
+      "sha256": "e500f11a94ce7f84215e75e4a2ca6415bc8761f279f3cc18a48ed313910e4254",
+      "bytes": 1051
+    },
+    {
+      "path": "dotnetdll-main/README.md",
+      "git_blob_sha1": "44507c1f2ff58cb46ee5324e25b162d0315c5090",
+      "sha256": "f64d2c87a236649e0e378a5f1530c96d4c0b4572200d1da1fa27154cf7904868",
+      "bytes": 3859
+    },
+    {
+      "path": "dotnetdll-main/dotnetdll-macros/Cargo.toml",
+      "git_blob_sha1": "3b73ce5072d5e26976631dd6024198ae04ec26d4",
+      "sha256": "4d7a0d21d9ae8beb6845ea8f593f58873e9143a4f22898364d3bcc8e730ecdf5",
+      "bytes": 629
+    },
+    {
+      "path": "dotnetdll-main/dotnetdll-macros/README.md",
+      "git_blob_sha1": "cda19123a2826003ab00fce6c57d8930523d9d32",
+      "sha256": "d97eae1c15142d5791d7b37d77479af9300a86886c34ed78f87c3c3ff6cda837",
+      "bytes": 104
+    },
+    {
+      "path": "dotnetdll-main/dotnetdll-macros/src/binary_il.rs",
+      "git_blob_sha1": "b3f964d47775dc99bbbcf4a920328d083a9f84ab",
+      "sha256": "8c79e4c787f745c6c16a084432eb26e98a996b2ac15d60f7880700b21f077ebe",
+      "bytes": 17273
+    },
+    {
+      "path": "dotnetdll-main/dotnetdll-macros/src/coded.rs",
+      "git_blob_sha1": "2aaa9589f19bfa9233f5bc62e5b69216c51172ff",
+      "sha256": "b100c728a7dff1c6f5a4465f8989238df4126f0b99b3bef400586d68779ef97e",
+      "bytes": 4856
+    },
+    {
+      "path": "dotnetdll-main/dotnetdll-macros/src/constructors.rs",
+      "git_blob_sha1": "ed624161157f484ae49c2f50bb61f1c7271f43d1",
+      "sha256": "4ffdee485c5d0dab338c4792d9e27ea70233d54d3bd98bacb86bc30e99c649dc",
+      "bytes": 10610
+    },
+    {
+      "path": "dotnetdll-main/dotnetdll-macros/src/from.rs",
+      "git_blob_sha1": "bea9428be2da9f5e386f42781407bfb489bb1965",
+      "sha256": "c302a5d8071ef6e12cc458cc4e9d7f0708f7a71827ecc23ae1acec65799429f8",
+      "bytes": 1699
+    },
+    {
+      "path": "dotnetdll-main/dotnetdll-macros/src/lib.rs",
+      "git_blob_sha1": "39be6f287d8297de8a92106f0ba449400a879fed",
+      "sha256": "d24213b6e35cb47925f81a22ac106e4d37832278e1f583a69653db9721849e1f",
+      "bytes": 1081
+    },
+    {
+      "path": "dotnetdll-main/dotnetdll-macros/src/resolved_il.rs",
+      "git_blob_sha1": "f5c937f0ff71c97be40cdbf0cb36f2b87c813c7c",
+      "sha256": "7cc1689621d1f3e615e30726ba37e7c2a7870657ba9b8479840827b2bb9ce3e3",
+      "bytes": 8935
+    },
+    {
+      "path": "dotnetdll-main/examples/dump-dll/.rustfmt.toml",
+      "git_blob_sha1": "758d4179d759bdff87d4fe714d55b588f71583e8",
+      "sha256": "7e1c845eb4c10735ee1060760592a18b47a53aaf45e63b7e0932c005b523a6ea",
+      "bytes": 16
+    },
+    {
+      "path": "dotnetdll-main/examples/dump-dll/Cargo.toml",
+      "git_blob_sha1": "e39877d34b32cf249d5759e51c6ab750d0eb8ece",
+      "sha256": "825346f6b14e554a8efc10a1474e1402b836b006653703f88e851d217a9b853f",
+      "bytes": 208
+    },
+    {
+      "path": "dotnetdll-main/examples/dump-dll/src/main.rs",
+      "git_blob_sha1": "f0508597de69a5dc4965cf21bf4c5d26205845fb",
+      "sha256": "4d4cde54d7d0509c230aa3cc0311481c8055ff3831bc9ce617b23686b559d057",
+      "bytes": 2557
+    },
+    {
+      "path": "dotnetdll-main/examples/smolasm/.rustfmt.toml",
+      "git_blob_sha1": "758d4179d759bdff87d4fe714d55b588f71583e8",
+      "sha256": "7e1c845eb4c10735ee1060760592a18b47a53aaf45e63b7e0932c005b523a6ea",
+      "bytes": 16
+    },
+    {
+      "path": "dotnetdll-main/examples/smolasm/Cargo.toml",
+      "git_blob_sha1": "4f5060b1a7347fad1de0e58647cec8799068d0d5",
+      "sha256": "41419dd3d0c831cc98138df4a7c118ff6b2bf4d421ead67efec47793fc0da16d",
+      "bytes": 264
+    },
+    {
+      "path": "dotnetdll-main/examples/smolasm/README.md",
+      "git_blob_sha1": "3d8b966cc81f3cb61cb53a05d2fddb3d2e2a262e",
+      "sha256": "d08b1996a31694b96a71ca9a83d5ffa40d67e5516e076e6aadd4590b3e4071ff",
+      "bytes": 186
+    },
+    {
+      "path": "dotnetdll-main/examples/smolasm/src/ast.rs",
+      "git_blob_sha1": "1383c7f93c26fc2d6d4625a5a83c49659d59e9a1",
+      "sha256": "cc835ad4f8e9afe365c02a33051c4ec196a17bbcd7086acd893a4171a3d3201b",
+      "bytes": 5695
+    },
+    {
+      "path": "dotnetdll-main/examples/smolasm/src/main.rs",
+      "git_blob_sha1": "fd4fc8530a6ae88600f9fc061bbc0ceed527beca",
+      "sha256": "6df4a4027f1dd569dd89ed624fac58403c28c5b7eb52f93b88dddab9768b1f8b",
+      "bytes": 21727
+    },
+    {
+      "path": "dotnetdll-main/examples/smolasm/src/parse/combinators.rs",
+      "git_blob_sha1": "0ad432118d0bae4fe401a6f9f03e88ea816a6934",
+      "sha256": "dab141212d8cc284f9b6996d4df1229fe5380b64308da6bd3cc3615f383b32ed",
+      "bytes": 947
+    },
+    {
+      "path": "dotnetdll-main/examples/smolasm/src/parse/mod.rs",
+      "git_blob_sha1": "4c292c6721109b9f280f27da3a9a38c6cbc4376d",
+      "sha256": "f49bbd16ed9cea60aad788421b8acbd011f34330e7d70f422182d496a98276b6",
+      "bytes": 15387
+    },
+    {
+      "path": "dotnetdll-main/src/binary/cli.rs",
+      "git_blob_sha1": "b96d441692ca658a4aeb2cc37af2c4ce8155a101",
+      "sha256": "960be7ff5189c83560cd7d3c0113ecec0825ef21f669fbce9f5d2cf79d44affd",
+      "bytes": 3001
+    },
+    {
+      "path": "dotnetdll-main/src/binary/heap.rs",
+      "git_blob_sha1": "eb9e8c838ad52df1e6e5aff465bef68bcb2f7b83",
+      "sha256": "f6ac9e56d1c44de180439a23526b69c768b63269333f62ec7460ec6c8c0dc8b7",
+      "bytes": 5573
+    },
+    {
+      "path": "dotnetdll-main/src/binary/il.rs",
+      "git_blob_sha1": "895ae41c492dc9924caa21113ccb6d90824702e8",
+      "sha256": "d767717196f5273aa829cd7088e4d721a7c1b39296e60dd4b51f108b25d96653",
+      "bytes": 5549
+    },
+    {
+      "path": "dotnetdll-main/src/binary/metadata/header.rs",
+      "git_blob_sha1": "71edee4303777ee12f49a2240f0ea63dc3707a89",
+      "sha256": "5f78dc897633d29e0094a59ac83f3507d5a2b262fa2f694747bb68e4f11dbbc2",
+      "bytes": 4357
+    },
+    {
+      "path": "dotnetdll-main/src/binary/metadata/index.rs",
+      "git_blob_sha1": "d4f8b2611700f1bc86f0a51310041679d7b640af",
+      "sha256": "b700c4499828d115f0e763775da374f59caf7fab6a10e866aca8aae408eb1551",
+      "bytes": 6666
+    },
+    {
+      "path": "dotnetdll-main/src/binary/metadata/mod.rs",
+      "git_blob_sha1": "75c3c4c9172ceac5abb0937a0b8aeb72aa7ab465",
+      "sha256": "c24c0d38c69fba519660ab51afcb32db027a9fdfed47bf225227e97894031e98",
+      "bytes": 60
+    },
+    {
+      "path": "dotnetdll-main/src/binary/metadata/table.rs",
+      "git_blob_sha1": "075e8919673cfee878f442c7faf19d283b3d73fa",
+      "sha256": "a77a828dc65108ae83db508ec29c7eb7369ae59326e54149d86f6027e24420d4",
+      "bytes": 9867
+    },
+    {
+      "path": "dotnetdll-main/src/binary/method.rs",
+      "git_blob_sha1": "cae36612b67e0f3eeeec4cf1395178d35d66ffd6",
+      "sha256": "63b675df969033547ae6f1c1e6f6a7747ef9f2951ce427507ac6d5a1a801d5e3",
+      "bytes": 10830
+    },
+    {
+      "path": "dotnetdll-main/src/binary/mod.rs",
+      "git_blob_sha1": "288a79a2f572df0cf54ba04f63bf4ba017f7c2e4",
+      "sha256": "afc9f84de9be3437cf2c85225c8991e318a58c747a3a9a6d6471d7baf28c47ba",
+      "bytes": 269
+    },
+    {
+      "path": "dotnetdll-main/src/binary/signature/attribute.rs",
+      "git_blob_sha1": "77c9624a8b6b8298d268f3e5c6edda8687631958",
+      "sha256": "82b895a91810288918873b5419f5b84c378f8c5c997047a48289f56a9c5ad90b",
+      "bytes": 12107
+    },
+    {
+      "path": "dotnetdll-main/src/binary/signature/compressed.rs",
+      "git_blob_sha1": "faa90659723ec641aeabba83f2a37c9087fb6177",
+      "sha256": "ea495373b0662e9e5425c1655c2f51a2f31e519cebbbea9f796a910839ae4108",
+      "bytes": 5665
+    },
+    {
+      "path": "dotnetdll-main/src/binary/signature/encoded.rs",
+      "git_blob_sha1": "972f8759163aaa6f9bf0aa2385a8c61d48190b00",
+      "sha256": "77e5f8164398f2d4e8c8ac8412b23af5b6848963f204e23e28ae47f0e9161cce",
+      "bytes": 22037
+    },
+    {
+      "path": "dotnetdll-main/src/binary/signature/kinds.rs",
+      "git_blob_sha1": "a74b853e9d4361d953c58425700a47c32a8fb17d",
+      "sha256": "36b60707f37e0feab8502078fb7df2cfe1d72da0680c38096b42bd792515bd37",
+      "bytes": 18036
+    },
+    {
+      "path": "dotnetdll-main/src/binary/signature/mod.rs",
+      "git_blob_sha1": "81e23d018de4559ab1dd4f8fe214744f8613540e",
+      "sha256": "3cf65845aed314a8ef6f87be0fc09e31b07cb2a2141fd7629db0ab42c32df6fb",
+      "bytes": 71
+    },
+    {
+      "path": "dotnetdll-main/src/binary/stream.rs",
+      "git_blob_sha1": "b1de3d05cf0f03e94d8b7943f3c2216f57c8ed8b",
+      "sha256": "885ff055980d4d8e36672585f21616f09423221ee8f9dcf842d105c69abd5046",
+      "bytes": 1389
+    },
+    {
+      "path": "dotnetdll-main/src/convert/mod.rs",
+      "git_blob_sha1": "09a4d84371e29b6b2393134991c36a6c1d5e3707",
+      "sha256": "7bd6909b817014cd044d1226a0196c839eae090014b73f712aaed5b1b6843f70",
+      "bytes": 3220
+    },
+    {
+      "path": "dotnetdll-main/src/convert/read.rs",
+      "git_blob_sha1": "748dcdce9265c5bf78ba74ea2f1a3bbd25d039b1",
+      "sha256": "c1a5116e83213d84a829e119f15a957127d477956ade60072aa1e50ee4a08dd1",
+      "bytes": 47548
+    },
+    {
+      "path": "dotnetdll-main/src/convert/write.rs",
+      "git_blob_sha1": "0a2675144a9576b977c20d59984aa0d808ccdead",
+      "sha256": "06e325505ed7397bd2e089db22665898c56df42e93d27624f1b872929a923189",
+      "bytes": 33819
+    },
+    {
+      "path": "dotnetdll-main/src/dll.rs",
+      "git_blob_sha1": "4c0ac2cd9df1960e1c2356bba9df9167d11dcb39",
+      "sha256": "dfd83bd08147b55edc9854dc5c19a8f124abb1d86ce16c78bbf3a3e36a9b8cf1",
+      "bytes": 5168
+    },
+    {
+      "path": "dotnetdll-main/src/lib.rs",
+      "git_blob_sha1": "f299b0a3fa73906a2542891111b3f7ca2e970b4d",
+      "sha256": "45de4faaa20cb6612308e8cc63cefd05019373baf1de1a73b1200001b3a90c6e",
+      "bytes": 10672
+    },
+    {
+      "path": "dotnetdll-main/src/resolution/mod.rs",
+      "git_blob_sha1": "d43131c45b3c760e6d56cb1a0e7863818d1abcf1",
+      "sha256": "dcb21735160c050846bdcd44f7f80e33b0661928c7da4b55ef81883f8fb896a6",
+      "bytes": 20930
+    },
+    {
+      "path": "dotnetdll-main/src/resolution/read.rs",
+      "git_blob_sha1": "d4fde5ed605ae8e8ab25c251ea6e85b72f93d1e0",
+      "sha256": "ac8c7ce3df1a7760751518637a01c3516d162e352a720c2ef4b65ae9c992e1e8",
+      "bytes": 76859
+    },
+    {
+      "path": "dotnetdll-main/src/resolution/utils.rs",
+      "git_blob_sha1": "7e6974dfdc79f6f27080fadca9557a0ab0a9f8c3",
+      "sha256": "3bf10248b63c01746ed5cbb4741060d261baa5b5c381757578fb078c6c2a5e3a",
+      "bytes": 963
+    },
+    {
+      "path": "dotnetdll-main/src/resolution/write.rs",
+      "git_blob_sha1": "9b68c2213acc543c9bb67fe1982479dd7cb1fb7f",
+      "sha256": "a4d569a4e691dec042abbffbc66a0296ce265894f376d4c05c127eabe3908ebe",
+      "bytes": 52492
+    },
+    {
+      "path": "dotnetdll-main/src/resolved/assembly.rs",
+      "git_blob_sha1": "8f686a5de0ded7bc006be228227e8ac8554bde61",
+      "sha256": "bf0c9197c4c9df9d3da2bbb079d28191802b692904dbd269d0f98e7524df8216",
+      "bytes": 4908
+    },
+    {
+      "path": "dotnetdll-main/src/resolved/attribute.rs",
+      "git_blob_sha1": "0b2c18c90c95d3e61a6053dfa69129ae6ae98316",
+      "sha256": "858b4542aae7a8c64f370a2a387ff87d8ee95ac6afdeb71e5b3bc95dd290b1ef",
+      "bytes": 13449
+    },
+    {
+      "path": "dotnetdll-main/src/resolved/body.rs",
+      "git_blob_sha1": "6260e1ad0e425359101dac0a5e1c114443d71789",
+      "sha256": "e8aa8902e7edbff3473f8e44878387228d96e1f883cc57c908bf351d709b36fd",
+      "bytes": 1466
+    },
+    {
+      "path": "dotnetdll-main/src/resolved/generic.rs",
+      "git_blob_sha1": "e7f7e7accb4582af98e5a47a70250980b21b2de4",
+      "sha256": "34a930e97e236981eb663b046f05433f30b7a9fc9a2054e78555348ce169148b",
+      "bytes": 4601
+    },
+    {
+      "path": "dotnetdll-main/src/resolved/il.rs",
+      "git_blob_sha1": "0b6d647531af0b92811671d88bf8406f12990ed5",
+      "sha256": "aa1f08d278f7ebde0273cf18eb68b45c0f0e15f9a858bcfcfb7e25d3f77a71b0",
+      "bytes": 9071
+    },
+    {
+      "path": "dotnetdll-main/src/resolved/members.rs",
+      "git_blob_sha1": "2e646c681b488d962147d2455792c45d971f6a5e",
+      "sha256": "cb3c3e48a6efbef6fe0348c583a47cfd59999b7db91faaf561adcc9a7a1c15fa",
+      "bytes": 33832
+    },
+    {
+      "path": "dotnetdll-main/src/resolved/mod.rs",
+      "git_blob_sha1": "d2df4391184f332273d19bf840ff60ef2c3f82e6",
+      "sha256": "1fcbd5cdecc4a8ae94fbcea2df8fe77dec208e5417dce3391a2b61495afd1e1f",
+      "bytes": 1796
+    },
+    {
+      "path": "dotnetdll-main/src/resolved/module.rs",
+      "git_blob_sha1": "9cc25127707a807ac2417294e42a9db9c4d1cfde",
+      "sha256": "86a12e34ded1b1d52b406363846dce8627e410ea97ff7f9aedaddb9ba76215c9",
+      "bytes": 1876
+    },
+    {
+      "path": "dotnetdll-main/src/resolved/resource.rs",
+      "git_blob_sha1": "5ccf40bc133ac3d9ba0f535d5342183a9fe62dca",
+      "sha256": "ff1b90a35ca731468fbbe38b93c8a3b40ac8f02a3aa524ee8bdfcf1e4edb7984",
+      "bytes": 1348
+    },
+    {
+      "path": "dotnetdll-main/src/resolved/signature.rs",
+      "git_blob_sha1": "cf563cd87f3e999c3e16476b266fc4c6e479b9ba",
+      "sha256": "ecbbeeac4d40ac1d31000a8c82a2ced870baeab38ea0da1a0f95014bb5df6049",
+      "bytes": 9339
+    },
+    {
+      "path": "dotnetdll-main/src/resolved/types.rs",
+      "git_blob_sha1": "0078c18e855d85c29ea87136992c5861399002ba",
+      "sha256": "dbdd4c42fd107767a2a13cd21cd6cf35bb802950c32ac83b97570a75565216f8",
+      "bytes": 45103
+    },
+    {
+      "path": "dotnetdll-main/tests/attributes.rs",
+      "git_blob_sha1": "0d1b79c91ec6405371622be77b680b888eb4ae90",
+      "sha256": "8aae488843bb7dc5f83d5c473c3972fa75451e6c89bd6e89e246de24ff763843",
+      "bytes": 9806
+    },
+    {
+      "path": "dotnetdll-main/tests/common/env.rs",
+      "git_blob_sha1": "d00d2d5066eb030ef516bcecaa90da3a775bf58f",
+      "sha256": "8c7438be0551b393edf46e23940943c441f069a7cfa84b92a06ff9dd5264b7e5",
+      "bytes": 1479
+    },
+    {
+      "path": "dotnetdll-main/tests/common/mod.rs",
+      "git_blob_sha1": "311c2d0060638d90f80485500a64ada60b5a07c8",
+      "sha256": "58f517cef2f8805c8f5a040a70c92e1eb424794dda63af45d1c8cf0c25d8649f",
+      "bytes": 6645
+    },
+    {
+      "path": "dotnetdll-main/tests/common/template.runtimeconfig.json",
+      "git_blob_sha1": "d1bdd0584d491a8d48cb5acac2c055d63fb405ef",
+      "sha256": "b863984fe0fdf575bd74e964db9d8c63a4142e9927ebcfe589ad922206d44e48",
+      "bytes": 312
+    },
+    {
+      "path": "dotnetdll-main/tests/events.rs",
+      "git_blob_sha1": "46417b856e43c9dff61bc7e6a4974e21e6080a33",
+      "sha256": "5ea321e16506dbe9c2119ffafab32de10c8fd8815a036c1597c97a6d29fe6f52",
+      "bytes": 8022
+    },
+    {
+      "path": "dotnetdll-main/tests/exceptions.rs",
+      "git_blob_sha1": "c838d61ec8c4c6b92e22ac35fd9c51753749fd93",
+      "sha256": "1855c6cd511697a67369bab8d327e5fb3e57f4be774600bbe2ab307f30a1057c",
+      "bytes": 6880
+    },
+    {
+      "path": "dotnetdll-main/tests/fields_props.rs",
+      "git_blob_sha1": "54c377c8c599cf282ef787a8c2ac3ade1f921e5f",
+      "sha256": "870e67ac0eeef3e80a6bc49720fdecd5e333c46d7bbd5406aec2913399eee96d",
+      "bytes": 7101
+    },
+    {
+      "path": "dotnetdll-main/tests/generics.rs",
+      "git_blob_sha1": "f74dbf669aee504a1d471a25d7cfa8f52c3f772d",
+      "sha256": "b0b17a6108084823cf21d392b90484313ef015947d382c64cf2050ace8874f23",
+      "bytes": 13011
+    },
+    {
+      "path": "dotnetdll-main/tests/hello_world.rs",
+      "git_blob_sha1": "bf354c92bff028852bb31d536c2a1d5ee7a8e75e",
+      "sha256": "61470eae9527fc8bda22920e7fadab617a3c805252df18e653b56a35cc30326f",
+      "bytes": 1371
+    },
+    {
+      "path": "dotnetdll-main/tests/oop.rs",
+      "git_blob_sha1": "d6827b11b228b60cd04c381d895f905683076a08",
+      "sha256": "ebcc906c56b247b4a3e5188240bc6e6effdeedc0bbc29153a0702ce9957d77ae",
+      "bytes": 7959
+    },
+    {
+      "path": "dotnetdll-main/tests/pinvoke.rs",
+      "git_blob_sha1": "b28d4aaff3f726e3394ed10a5de8f89b081b6b68",
+      "sha256": "f6b6c1105e6c6c881471321c8d3ca3b46c3a5523769c7e7480ae586c7ae81a17",
+      "bytes": 1442
+    },
+    {
+      "path": "dotnetdll-main/tests/resources.rs",
+      "git_blob_sha1": "5601bd1b252fc0004779e375ac4eadf750a0738b",
+      "sha256": "78c8462fb7453a217867c350a25b315263e1299a3d7252e8f2739006ab3787ba",
+      "bytes": 3296
+    },
+    {
+      "path": "dotnetdll-main/tests/system_private_corelib.rs",
+      "git_blob_sha1": "8c68647f8babcb1001a96006e4243bf61b195bc4",
+      "sha256": "25bb135a4da660aa5ccd4aac7d536ff6a1877a00b76ceb1e23c68a309613459f",
+      "bytes": 2220
+    },
+    {
+      "path": "scripts/Il2CppBinaryNinja/__init__.py",
+      "git_blob_sha1": "08277283cf821114d850dc543c4cab799d2bd513",
+      "sha256": "bdae3e5ec0193c9a0a282485c0458d06d07b9db268a03e802ab10d2d3a08c169",
+      "bytes": 3739
+    },
+    {
+      "path": "scripts/Il2CppBinaryNinja/plugin.json",
+      "git_blob_sha1": "2deecf3b937dc2a0ffae5b37b148ebc55a9218b4",
+      "sha256": "ab0d957f20ffb7a5a38df69abe6cce32b32f658ac380885b8061d152208ee3cc",
+      "bytes": 1696
+    },
+    {
+      "path": "scripts/add_mem_width.py",
+      "git_blob_sha1": "43b6bf8a399f60458258b9e890f12ca26caed6e1",
+      "sha256": "8301e4e9be0f65e0c51982db49a6665c2e7466a66ba7991c17840e4f021bbd9a",
+      "bytes": 2256
+    },
+    {
+      "path": "scripts/audit_dump.py",
+      "git_blob_sha1": "deaddbb924029f16b67cd5dab7d0694bf03fe312",
+      "sha256": "10a7c779c76de7562954e47d48e0d22a5df68ae455af156ebf7028ddc07737b3",
+      "bytes": 10531
+    },
+    {
+      "path": "scripts/buckets.py",
+      "git_blob_sha1": "eff097032cd813598471b884e19fe0a874df807d",
+      "sha256": "733e49ed72ae8a428c65bd48ea8c4b8b63d3d6fe62d5ecd12f816e10dcc0cfcf",
+      "bytes": 2473
+    },
+    {
+      "path": "scripts/call_delta.py",
+      "git_blob_sha1": "a7e407acdb1433bed2dbf14e6486bb075389fcca",
+      "sha256": "252b424212dc1c1eeacb8779c16d2311081b1af14e8d0d206c2f610d3859f799",
+      "bytes": 13566
+    },
+    {
+      "path": "scripts/census_nint.py",
+      "git_blob_sha1": "9704c27b2fa4ed90fad563bb4e41f29e0fae6036",
+      "sha256": "cd997b0a68cd88c00ef9e0c58710076ccab2836ec5f4a3ded84c75d4d4301f7d",
+      "bytes": 4476
+    },
+    {
+      "path": "scripts/dump_census.py",
+      "git_blob_sha1": "e819a05c8c53347000e3c0d9957f424664875408",
+      "sha256": "5ef838787e3efe6e81b43ea0496520f1d8da1e11f204247f557afee4aaa021b6",
+      "bytes": 4586
+    },
+    {
+      "path": "scripts/find_sites.py",
+      "git_blob_sha1": "f5454af414a15cfe116fe645a3b00ed9b33dbc76",
+      "sha256": "b9676d8f833f869db4e71fd68b50ec597715ccfa2ab03a00b8e07fbf09f43b75",
+      "bytes": 2636
+    },
+    {
+      "path": "scripts/fnptr_shapes.py",
+      "git_blob_sha1": "34b223fd45c1ba53953292e86ee8b06ccd58794e",
+      "sha256": "31484eea094fe422031f24d10c31f3f2cbf25a8fb4de1e105c4f2420a4268200",
+      "bytes": 3852
+    },
+    {
+      "path": "scripts/ghidra.py",
+      "git_blob_sha1": "9e26ded4d44b91914f624ea833f1109fd6f33790",
+      "sha256": "7b83aba78813e0feb188b8325d1a314976ac6d746abbc7ad9e0576fe27227dbe",
+      "bytes": 2756
+    },
+    {
+      "path": "scripts/ghidra_wasm.py",
+      "git_blob_sha1": "254a7d5eb6a972c0f08e8f9d129db008058168b1",
+      "sha256": "d9e6aace83834555cd160b31b0bc893a56f5f48942335a6022da0cb070c5cf76",
+      "bytes": 3235
+    },
+    {
+      "path": "scripts/ghidra_with_struct.py",
+      "git_blob_sha1": "5f188924f96c671ca9ace5038383c64e004a1e49",
+      "sha256": "512bcf07df8731d8a9a3ddf1aa5262211a2f5ca0c8d357c68616eb89cd861397",
+      "bytes": 5156
+    },
+    {
+      "path": "scripts/hopper-py3.py",
+      "git_blob_sha1": "20dc471bf7eb4b98ce4cc66e6f8aa6a91e21e581",
+      "sha256": "8c2fb2618fb7e5802e33e05edaa1e866e4776ac2f28dec7e09f79e1162785ba6",
+      "bytes": 711
+    },
+    {
+      "path": "scripts/ida.py",
+      "git_blob_sha1": "e5f55e1de55191ae30bd1609a84bb99dadcf14ca",
+      "sha256": "a7181502646c9bdfeeeb097dd94d20735807594d720d3cfd38361b4aa3af278e",
+      "bytes": 2405
+    },
+    {
+      "path": "scripts/ida_py3.py",
+      "git_blob_sha1": "bbf4a183b87e7970b60df1ba147a5f69280b9f7d",
+      "sha256": "4b7f9815ccd5e837faa70ff1a9be691e40c20f2d06f30db9addbb42c3552f6ad",
+      "bytes": 5561
+    },
+    {
+      "path": "scripts/ida_with_struct.py",
+      "git_blob_sha1": "f007a3bfd1bf13e0ab94788c4bd1c83e6bbc738c",
+      "sha256": "39c7af4cc99c6ff59f934253ee89bbe29bb563101db111079377e27607222817",
+      "bytes": 2903
+    },
+    {
+      "path": "scripts/ida_with_struct_py3.py",
+      "git_blob_sha1": "8a4ccd0a2813187895056f53a20a772364beda56",
+      "sha256": "ca80d5444629c37ab22809abfd54a61d05677bcaa63e2d0dba6f50f200d3f612",
+      "bytes": 6207
+    },
+    {
+      "path": "scripts/il2cpp_header_to_binja.py",
+      "git_blob_sha1": "18cb4536add365ff62c59df7867dfe6bab40f257",
+      "sha256": "3060c289757c53378f05d18a0ad8aa23d536795c51aca81f1761e9371c07422c",
+      "bytes": 1498
+    },
+    {
+      "path": "scripts/il2cpp_header_to_ghidra.py",
+      "git_blob_sha1": "47422db7e6500ee7c91aa4634270529e671a00a8",
+      "sha256": "f8c1180bf70ac6ff142bfdd19f6bad1a84e9208b2e8cc120f7d1b98586478337",
+      "bytes": 1209
+    },
+    {
+      "path": "scripts/show_method.py",
+      "git_blob_sha1": "5b46af989bba761b5889ac8451cb5744e19711f3",
+      "sha256": "c9a43c087cc440f0e702959808e71d25e7c8cc343ff893af21dcb1d6975f8e99",
+      "bytes": 2100
+    },
+    {
+      "path": "src/config.rs",
+      "git_blob_sha1": "1a48990d5077c9a4ea98b7446ee1754186773110",
+      "sha256": "9dbe18bb7b3fff104efd5764cbea9fc52129f416c97c16785be3037eb40ad3c3",
+      "bytes": 15866
+    },
+    {
+      "path": "src/disassembler/arm.rs",
+      "git_blob_sha1": "bd6444aac725c273289d91b12998267e68fb2424",
+      "sha256": "bca344bbcc918e8fb8b6b4684ee7a82736f789807080e81e9d9e3fa119672ae4",
+      "bytes": 37974
+    },
+    {
+      "path": "src/disassembler/mod.rs",
+      "git_blob_sha1": "3859cd4dd2076c835c7865f2b5118b93dda410cc",
+      "sha256": "9b45f60a119a532c6a65e3aa78e49f848837fa675dde9b0edf2efa5af4a2d711",
+      "bytes": 82661
+    },
+    {
+      "path": "src/disassembler/x86.rs",
+      "git_blob_sha1": "7d756b11756747581f4065ba572218ae2ec10721",
+      "sha256": "76189b2ef37efb66a1540db7f496d8834fa203bbc876d63d59d2d5d254744c3f",
+      "bytes": 21725
+    },
+    {
+      "path": "src/error.rs",
+      "git_blob_sha1": "c29581242a31da27560db01f779a127ef0d4668f",
+      "sha256": "a36d7a4fddfb29d4491a20f0deae0defa1cda0cf573a250c4c990e61efdfc27b",
+      "bytes": 3768
+    },
+    {
+      "path": "src/executor/custom_attribute_reader.rs",
+      "git_blob_sha1": "1dc8c251be830e8ae264530a68750f424a371bd6",
+      "sha256": "6cc8cb4703afb826dce01a99753a9abf3c87c1b778bb566b1d3db849ee8fc3f2",
+      "bytes": 13312
+    },
+    {
+      "path": "src/executor/il2cpp_executor.rs",
+      "git_blob_sha1": "f437d6414a03e63ab160e9a159e84b1c32dece0b",
+      "sha256": "aef5ceb5f4ffb8803ca5d4b68248fa8033258064dba0967d545464fa29b4729e",
+      "bytes": 27652
+    },
+    {
+      "path": "src/executor/mod.rs",
+      "git_blob_sha1": "0939fd823c4086b595c717aa59149d6b1a373e64",
+      "sha256": "910dd7a604771ff0c9d4c0af420319359474667d20e2e54923cad260a0af7559",
+      "bytes": 100
+    },
+    {
+      "path": "src/formats/elf.rs",
+      "git_blob_sha1": "f5fb86b387ec5ee687ded041621ac0ad9e5ee569",
+      "sha256": "83cc96e8cb513a74faf19a3bcb68bee0d1a661f63226a78fbea9d2f8f0b5e155",
+      "bytes": 70399
+    },
+    {
+      "path": "src/formats/macho.rs",
+      "git_blob_sha1": "b21e024f598d8b54c2f02ec6571b205619eec5c9",
+      "sha256": "22f2a1ad7e89f9145b4bbe3324576154738532b35eb64a5c76cb8ea53b973eaa",
+      "bytes": 54523
+    },
+    {
+      "path": "src/formats/mod.rs",
+      "git_blob_sha1": "98a931443b8cc0f786a6ff2bbd6d94c2686346e9",
+      "sha256": "0e13b021174329b66f495d40aa29223f78b0c58a4416b750f04f52131b3c4ad0",
+      "bytes": 162
+    },
+    {
+      "path": "src/formats/nso.rs",
+      "git_blob_sha1": "55bc0bda0eea7b38aae381eaba3b4323020d35d9",
+      "sha256": "6ac2a5059edc281aa56f5cd927e489ea746810093ad6f3eecdc2c1ca3df7fab9",
+      "bytes": 17353
+    },
+    {
+      "path": "src/formats/pe.rs",
+      "git_blob_sha1": "575729f0259002334c392fc278e1567ae635e41d",
+      "sha256": "9a56419e867be76f40c71081f8b9433c9ddecc8ea64d39b694a45f3b1a2ec295",
+      "bytes": 21924
+    },
+    {
+      "path": "src/formats/wasm.rs",
+      "git_blob_sha1": "7caf57c08674bf069cd784a237f94a50f8b7d605",
+      "sha256": "d30ee990d28e731e71091f12f5fedbd7e8cf99177e8fda93d8e380354631a836",
+      "bytes": 16595
+    },
+    {
+      "path": "src/il2cpp/base.rs",
+      "git_blob_sha1": "0b34b614abe6575ebb8fd3fe5e7e50e68bd70c0b",
+      "sha256": "e1c9438296fe923d0249e4059774f9c75155be015d504ece0609b1682a53d6cc",
+      "bytes": 67026
+    },
+    {
+      "path": "src/il2cpp/dump_scan.rs",
+      "git_blob_sha1": "c4b9172928499d955f0a70f839ba896b8c39c7ee",
+      "sha256": "d9485b940cf64522056939f40342e4ec5cbf877dee54a49e2cd740d5b4fa1f9f",
+      "bytes": 11792
+    },
+    {
+      "path": "src/il2cpp/enums.rs",
+      "git_blob_sha1": "c7d652b12d924da15b277a6149d4724722ef4433",
+      "sha256": "921e35fc5cb3fb3813c3aa3a7986197f63156a034e62827da129fc025a52ef28",
+      "bytes": 8781
+    },
+    {
+      "path": "src/il2cpp/field_layout.rs",
+      "git_blob_sha1": "5a24d02ae70c0f0dfba22cafd0b66404691dd183",
+      "sha256": "a2625508702bf60757799c1b5aa207948bf7cf4a212ab7a5c8d210c58b7efca2",
+      "bytes": 12114
+    },
+    {
+      "path": "src/il2cpp/layout.rs",
+      "git_blob_sha1": "6296b3378a1115f61c999c8045d82bd6256bf2fd",
+      "sha256": "7d1990364a6db147a59e1bedab9988c652537cc1be7bfac46ec09259d32465c6",
+      "bytes": 12636
+    },
+    {
+      "path": "src/il2cpp/metadata.rs",
+      "git_blob_sha1": "0e47e4fd35f9058879b3a33be7a87c606e392e9e",
+      "sha256": "74680e42d65af0aba6b573cabb75e317ac3966172438af39dfec53f4a1327344",
+      "bytes": 57994
+    },
+    {
+      "path": "src/il2cpp/mod.rs",
+      "git_blob_sha1": "f63a437e169d79026f265ef0f5c297ead76b5aa2",
+      "sha256": "6e517a85824c90981f29c7a62c5a0391e606903dcaea12607e956f5702b8edf8",
+      "bytes": 286
+    },
+    {
+      "path": "src/il2cpp/structures.rs",
+      "git_blob_sha1": "b4c8c11fdbaf91b8cd1af86548cae5bee43f3365",
+      "sha256": "24fbd58a22f4a35f6ec515c90e3f5ea63bc9fb28901e420c70d6ff9aa8807fa8",
+      "bytes": 114602
+    },
+    {
+      "path": "src/io/binary_stream.rs",
+      "git_blob_sha1": "1c15501becc0f7b67e72a7060a8934a4fb42a217",
+      "sha256": "3f9265167755581f70bac25fd74209e851a0050163a1bdba3f4a1cf35b68627b",
+      "bytes": 25018
+    },
+    {
+      "path": "src/io/mod.rs",
+      "git_blob_sha1": "ff3cd93b4cf30f235dba8599ad9538528e0046ef",
+      "sha256": "648b55f7eaaf445a4928eec8e4d9c51813f4ce8a1468bea437c65c67cbbd18e6",
+      "bytes": 206
+    },
+    {
+      "path": "src/io/version_aware.rs",
+      "git_blob_sha1": "80534aa5745532e08fdfbad580ba5b74992f2fad",
+      "sha256": "e743c528d10ed7d1b4c3606bd7fe93fe226f69621547792a31dd3f74b7735017",
+      "bytes": 1141
+    },
+    {
+      "path": "src/lib.rs",
+      "git_blob_sha1": "2c0eed9f970905ed51d6b4e434d645496e0ff87f",
+      "sha256": "a525f0c117d4d6d8e05bf0792b36cd1a6e55544ef92eb72b92a9c3d4e6075f05",
+      "bytes": 181
+    },
+    {
+      "path": "src/main.rs",
+      "git_blob_sha1": "0e857a524dcbde7a8710a0f067289318a5017af7",
+      "sha256": "e2462dfd62deec3e28ad0c0812e6411934aae647c909ecf7972a113fb5f92209",
+      "bytes": 77240
+    },
+    {
+      "path": "src/output/cpp_ast.rs",
+      "git_blob_sha1": "9e086837bdfbd67c09b95677680b5c6b5fe73f92",
+      "sha256": "be749bca5042ec7fd470bcd6fd689c5cebff3bbfbd9bec6b6bf6c7a80b15dfc4",
+      "bytes": 17716
+    },
+    {
+      "path": "src/output/cpp_scaffolding.rs",
+      "git_blob_sha1": "157eb11e99cb6bb6a443fdafe6b37a4071912c41",
+      "sha256": "b1213b4413a59a2bc35191c16a1fe5f36a4f6d145f1e2c499d7e118026959a32",
+      "bytes": 45679
+    },
+    {
+      "path": "src/output/cpp_type_dependency_graph.rs",
+      "git_blob_sha1": "dac4d9cd967b2f53c19cd23f87c059c09c786a25",
+      "sha256": "1f727a5cc7a2a68b22cfd0339f1598848ff3ce10691b1e6ac6b410b74ef5b6db",
+      "bytes": 11053
+    },
+    {
+      "path": "src/output/cpp_type_model.rs",
+      "git_blob_sha1": "b8b756f7cf3145bc5ec3f26d32bbb38c3b7984e2",
+      "sha256": "10e4c48247d2048765d1b99b86ba2d119475b477fcb7f8006ad170775e13ff26",
+      "bytes": 8355
+    },
+    {
+      "path": "src/output/decompiler.rs",
+      "git_blob_sha1": "4741ab50cc87e3d8547c678cff89d6f97a1977cd",
+      "sha256": "97724b857d66a6cdec3737c874a19dd1b4faf22b078c6e76a6b971fac65a4e62",
+      "bytes": 79178
+    },
+    {
+      "path": "src/output/dummy_assembly_generator.rs",
+      "git_blob_sha1": "b857da9900567f7b5d6e023f539a0cdd27021e3e",
+      "sha256": "ffd6adf56b491450d61a83e63ebde7397aba16aa227cae25da7230306b6e1b9d",
+      "bytes": 71378
+    },
+    {
+      "path": "src/output/embedded_scripts.rs",
+      "git_blob_sha1": "770bfa06d438da5851296f5e41007f3e89451c62",
+      "sha256": "cd4decd29bb07d97068003d8f91275047b9c8ca2c5f1978c08f59d861dd9a22c",
+      "bytes": 1420
+    },
+    {
+      "path": "src/output/generics.rs",
+      "git_blob_sha1": "ba81a4bda7290289705273f1f701b9f6871c4a9d",
+      "sha256": "d02d1bce419fc02987065a1e86a6bc1811fb12a0dc8bcd151a211f1f745e8a46",
+      "bytes": 53937
+    },
+    {
+      "path": "src/output/header_constants.rs",
+      "git_blob_sha1": "f671f9655b14b66d662476b3f2fcecf9b107f19b",
+      "sha256": "ee2eb9369682704dbd127e943aaff216be0c534dae878dd0350806c881eeefe7",
+      "bytes": 16082
+    },
+    {
+      "path": "src/output/header_manager.rs",
+      "git_blob_sha1": "35d360dab234f7a7dfa784d402130298e5509140",
+      "sha256": "8d028cac2b2378b2bd1863872f51e81c0da3b11563dfd637b0b336abc1b81a89",
+      "bytes": 7898
+    },
+    {
+      "path": "src/output/mod.rs",
+      "git_blob_sha1": "ecbb69c00ff7cf9b9f5e9975b249af018e42e0ca",
+      "sha256": "ba7056640bd53fe0b451e1e9724bb4926c9b36837f797bc1ac1bea0e0d195443",
+      "bytes": 1139
+    },
+    {
+      "path": "src/output/name_mangler.rs",
+      "git_blob_sha1": "eab1505bcfded5173161e58a18a9a88494c0ce77",
+      "sha256": "0fb86acc83ce24567d3c3c3c208246d131eb59ebdc81d2fb7f5518beedbc20ac",
+      "bytes": 17779
+    },
+    {
+      "path": "src/output/pseudo_c.rs",
+      "git_blob_sha1": "71aafcf06616a71439008f3be2f4fae4f5252c72",
+      "sha256": "915570feeb5e1783e86fcd44eff1b405db4ae7ddf66a14c46439459652c7a9bc",
+      "bytes": 15098
+    },
+    {
+      "path": "src/output/recovery_integration.rs",
+      "git_blob_sha1": "9427aba45c8d5a2d9553b887133e999f8a966f3d",
+      "sha256": "df2ce7060775703798623e2e3aade833995e3d0c4454f7091708f24f079debbd",
+      "bytes": 17750
+    },
+    {
+      "path": "src/output/script_json.rs",
+      "git_blob_sha1": "a22dc7005e59b751115f0b884a57cec3a0ae22c7",
+      "sha256": "6b41622c56e316f7fe07a2d0d41d98874be2c76fc730382ea0d8a2401fcb0e24",
+      "bytes": 3337
+    },
+    {
+      "path": "src/output/static_field_exporter.rs",
+      "git_blob_sha1": "2f25f08e260001c6d65d803b50b94467c4d6fba6",
+      "sha256": "f92ac07b2310047ad694461c7cbfb3478abf8b297f55afdc921ad67e5653f0ea",
+      "bytes": 19325
+    },
+    {
+      "path": "src/output/struct_generator.rs",
+      "git_blob_sha1": "f3530cfb7d5b3f786eb6f84d8bd9acf55f276516",
+      "sha256": "c06c8aa5aa36b43217b41f94f0a9acef78127f5f55f697306662e65f241a9be1",
+      "bytes": 109207
+    },
+    {
+      "path": "src/output/unity_version.rs",
+      "git_blob_sha1": "bdc47c06a077563d4c84d3e78530a481acf7de3f",
+      "sha256": "2c61b584e233f664fa43c2809be24fb621ee0093ac7959a3ddeab0f94ff2916e",
+      "bytes": 5703
+    },
+    {
+      "path": "src/recovery/cfg.rs",
+      "git_blob_sha1": "9971bdfc1f31abadd226254b646131c895919063",
+      "sha256": "3ac9db471eb5cf4232cd8f456146af26322bfaef7d7bf783e97192b9dc09cd08",
+      "bytes": 15848
+    },
+    {
+      "path": "src/recovery/concord.rs",
+      "git_blob_sha1": "b566a40eda30e06091f35aea3d6c841ee84ebfe5",
+      "sha256": "5e842ccd3966c4989c86c5e05d6fcd8cb2ad35516a6e600cae6b5dae851f33a8",
+      "bytes": 59585
+    },
+    {
+      "path": "src/recovery/conform.rs",
+      "git_blob_sha1": "499a75e6e089ff46eb78c84e33787334a014553e",
+      "sha256": "3d139229ced496abb556c0514faf9185d015425b23428a5005808fc25560d514",
+      "bytes": 37334
+    },
+    {
+      "path": "src/recovery/csharp.rs",
+      "git_blob_sha1": "2c184086d80c5ec0f2ef4b3c507b7c6d0879f7fa",
+      "sha256": "c9a5e73804231fe8ff639a6b29ea66c3b04056a836a5c20137d8166464dfaa7a",
+      "bytes": 634947
+    },
+    {
+      "path": "src/recovery/dominator.rs",
+      "git_blob_sha1": "ec78f2d5577ee682f09ddf560e780c6c60aac3de",
+      "sha256": "7e14758a1b52e715f2639a494a9980cee0e14335c1b8d7e92a534dafd218a089",
+      "bytes": 6763
+    },
+    {
+      "path": "src/recovery/emit.rs",
+      "git_blob_sha1": "541802e00285027a04d2c0c53755ea9a61045532",
+      "sha256": "877bb2476e90afb128782b9f1234f11de92901787b8f5cbf92063685462cae0c",
+      "bytes": 39453
+    },
+    {
+      "path": "src/recovery/exceptions.rs",
+      "git_blob_sha1": "9609962778811f27380fd59fd78e3e7d7d3da48a",
+      "sha256": "ebd8007ae2d9bc2cba0de16c6e66fcbc3e76bdb565945609cb3e1db5c4ec7efb",
+      "bytes": 85162
+    },
+    {
+      "path": "src/recovery/highvar.rs",
+      "git_blob_sha1": "6b34b0820c5b4e2ac40fa98b207aa1e34618afb7",
+      "sha256": "0e009169f8401e41ae2dddfdae9d75b6902223925cf6ba4faf15c059f46ba3ad",
+      "bytes": 72234
+    },
+    {
+      "path": "src/recovery/idioms.rs",
+      "git_blob_sha1": "13cb4bce4ca0c3716d3a594d09025889b5a36346",
+      "sha256": "d5c0dff25eda19005b8397ef83e55b1cb6b1a428de25fe2311600c629370060b",
+      "bytes": 82155
+    },
+    {
+      "path": "src/recovery/ir.rs",
+      "git_blob_sha1": "365252e7140f28119dc88f0cc8944abd0b950ee4",
+      "sha256": "e2da6862e359dd38cf5aec28897629896aff883a48bb12ea9e8ff0dbf399bb5b",
+      "bytes": 32912
+    },
+    {
+      "path": "src/recovery/lift.rs",
+      "git_blob_sha1": "fb4c920ac3f2db7549664d8eda91d27051f9ea4c",
+      "sha256": "44a75b4c6d5ca8088abe66556fa1a5b4e0f8a3cfe7cfd55f72bd2ae73900f384",
+      "bytes": 160714
+    },
+    {
+      "path": "src/recovery/lift_arm32.rs",
+      "git_blob_sha1": "db0dabf17dfe05523d10c1bd38ea164cfc5639e3",
+      "sha256": "13d46f95d1ea08a308b4b4e3059f0cbff3ba28c81eaccb0824d9b1db6413fb9f",
+      "bytes": 201896
+    },
+    {
+      "path": "src/recovery/lift_x86.rs",
+      "git_blob_sha1": "d369481dc52633565b4bfaff49e715607174e622",
+      "sha256": "a1fa62972e7d765e9d692066b486f8ba2bba835ce3509487091b418ed25cbb2f",
+      "bytes": 187548
+    },
+    {
+      "path": "src/recovery/locals.rs",
+      "git_blob_sha1": "a1385fb1a32e178939618d171e8365395763ae86",
+      "sha256": "f2dcb44683010da69cf38ebbd1d9f7494fcc9917b67e2de34162573303054d79",
+      "bytes": 132896
+    },
+    {
+      "path": "src/recovery/mod.rs",
+      "git_blob_sha1": "e4d5e9601fd009d0530c0d58e28dbefcd107968c",
+      "sha256": "e0bcf77bb082ec3d2b44039dc4c5d0b6b021e150de12fb2e0c693380f450eed0",
+      "bytes": 201213
+    },
+    {
+      "path": "src/recovery/passes.rs",
+      "git_blob_sha1": "debab2eea9e440d1c1e2ded27e70c869cb0b8b06",
+      "sha256": "e29b56ae61d4cdbfd2799010553465b26f0e4feb8d08cb871feed1c98475b0b0",
+      "bytes": 124973
+    },
+    {
+      "path": "src/recovery/probe_tests.rs",
+      "git_blob_sha1": "85788de8277def884b6634bc735902bad5bb2bd5",
+      "sha256": "02123b88323f8bd358c91f3345e3096d86f91b4999e85dd2830bcb906440513e",
+      "bytes": 10785
+    },
+    {
+      "path": "src/recovery/reconstruct/array_init.rs",
+      "git_blob_sha1": "80797d3eb1aede4cdcc643cbbc60c5c37cd92939",
+      "sha256": "8a2e1e20e182b0086dcc48d633b48b748e52cb4e68b5ebebd00d901c8c145363",
+      "bytes": 17334
+    },
+    {
+      "path": "src/recovery/reconstruct/base_call.rs",
+      "git_blob_sha1": "973309310439712e210ddd4fa40609bdc91af6ab",
+      "sha256": "af3f68ecf6a9c27c1b6258b74cbb334f3859bca7927653d7b2a169b991be2718",
+      "bytes": 10280
+    },
+    {
+      "path": "src/recovery/reconstruct/closures.rs",
+      "git_blob_sha1": "28b4dc9a509b4c6f9174b106e72bd1e018078021",
+      "sha256": "4732a7ab702a0d661862c82b99aef3b7efa430b2d370a185566373db3051c80e",
+      "bytes": 16826
+    },
+    {
+      "path": "src/recovery/reconstruct/delegate_ctor.rs",
+      "git_blob_sha1": "7df5921ffadfbd0e3b59afa86176b074cd8bcf25",
+      "sha256": "8f3b892e3f763712fdbc2d5a2b928de60fd1a89b8cf81d064a9f925e69d8e584",
+      "bytes": 13969
+    },
+    {
+      "path": "src/recovery/reconstruct/for_loop.rs",
+      "git_blob_sha1": "be6a674437a09894c9e9bad7d85018f13e2e6ad9",
+      "sha256": "c3d9b6f437e78ca9bada45aa02f4b4ed15cf54eb82634287fd8f5bd5845c5159",
+      "bytes": 19291
+    },
+    {
+      "path": "src/recovery/reconstruct/mod.rs",
+      "git_blob_sha1": "af28ccf6875208f27c0d9af1b5d349b676936b13",
+      "sha256": "ee62bd380f47b4f53e192a8dec07b436652077365d837cf9cbae18357d52b2f0",
+      "bytes": 26178
+    },
+    {
+      "path": "src/recovery/reconstruct/nullability.rs",
+      "git_blob_sha1": "a7a9b03536835b208ffc01612da0a74a06949a05",
+      "sha256": "b7a3fd260c9c44388050e1e37284ed77b58cd65c12e2eb3ee77de1b430771ae5",
+      "bytes": 19030
+    },
+    {
+      "path": "src/recovery/reconstruct/state_machine.rs",
+      "git_blob_sha1": "c721e8613ad59b5bd502d260081cae468c518123",
+      "sha256": "d65b4246f312f76a6317d68a2141cd7a4811f381ae2832b4deb91d025aae02e0",
+      "bytes": 21539
+    },
+    {
+      "path": "src/recovery/reconstruct/using_lock.rs",
+      "git_blob_sha1": "53027eeb3aa5df48454424e045de92aefe3b97a9",
+      "sha256": "af7cf51d11125b67e21c4fd2a87cb4662288d72070fe2e990c18bd0ee0c6a610",
+      "bytes": 37875
+    },
+    {
+      "path": "src/recovery/resolve.rs",
+      "git_blob_sha1": "7dca75d807f7c8723a861faeee44b580ba96d806",
+      "sha256": "9dff2483f7d4bb5997b522cffd90e1b6e67bd8faba8b98fc8f63f62fc44ce7f1",
+      "bytes": 280576
+    },
+    {
+      "path": "src/recovery/runtime_helpers.rs",
+      "git_blob_sha1": "348afab5f9cfe5b4fb5f4af33c79310477a0f025",
+      "sha256": "38c8790b6f926073e672c4a2a88e580461641bca0cb9aed028b806ff7ac631d3",
+      "bytes": 19415
+    },
+    {
+      "path": "src/recovery/ssa.rs",
+      "git_blob_sha1": "30c89ab2930a59d3ea475b8c790e76622f4600b7",
+      "sha256": "2b2b11cab29015f807751faee526e444bf5c0622455fa82ecb72bf780d1dbf24",
+      "bytes": 45352
+    },
+    {
+      "path": "src/recovery/stack_analyzer.rs",
+      "git_blob_sha1": "cac50a3c7398c0af2c2412e4b270a3a3f752d9c0",
+      "sha256": "fafb01e7b824bc73a0c2e4cfce0f0e9a50821473884249f714ffbc0f09a4840e",
+      "bytes": 20938
+    },
+    {
+      "path": "src/recovery/tests.rs",
+      "git_blob_sha1": "0a4ea47ca2f01e6980eef498f4dcb36a2b67f995",
+      "sha256": "90d03a163e89ea0ec4ab0a62c300b4d6fea03accc3b87b237e8e1e900fcdb5e2",
+      "bytes": 507658
+    },
+    {
+      "path": "src/recovery/types.rs",
+      "git_blob_sha1": "7b6c76535bed8718b752a91f81e527f68c24bb26",
+      "sha256": "1b601464917e8699a29f673544f1d35f9fc4aaf73f068be4952a9abb612e9c49",
+      "bytes": 7580
+    },
+    {
+      "path": "src/recovery/verify.rs",
+      "git_blob_sha1": "58f9e864564f1a372115147217e941c93f756612",
+      "sha256": "b7fda3980a9058cb42b505199c4e4478daeac044c481189575a9b131e4af30ef",
+      "bytes": 260039
+    },
+    {
+      "path": "src/search/mod.rs",
+      "git_blob_sha1": "b2cfc0f869244d8ce37a383ac347bd96caa32a8c",
+      "sha256": "4b5cefb87aac7e452575453d50623ba48c96fdc10719bdeab06e6685c0df74e8",
+      "bytes": 81
+    },
+    {
+      "path": "src/search/section_helper.rs",
+      "git_blob_sha1": "f649ff8ce9ace67f5199ac9b07b48341c34dcb4e",
+      "sha256": "8defa927d4d8de0b6815ba6a5246bd77f1933b0b8e616cf294774c3b31386a1a",
+      "bytes": 34787
+    },
+    {
+      "path": "src/utils/mod.rs",
+      "git_blob_sha1": "804382481280d25ec18e08d9822eeadcd363f53d",
+      "sha256": "33bd9939df9c67cc7c30cc41377d5750b57d35ba362a6b239478427093f00f1f",
+      "bytes": 357
+    },
+    {
+      "path": "src/utils/pattern_search.rs",
+      "git_blob_sha1": "38112b3429fe2cd740be981f08bf1fa90275e5ec",
+      "sha256": "39dfdbde93fdf0a0ae0f0a73455cfa46b7c5ba6ed5e70ea062e423b07d399381",
+      "bytes": 800
+    },
+    {
+      "path": "src/utils/string_utils.rs",
+      "git_blob_sha1": "57c89e607fa7b870217f9a46d30e672105114ed4",
+      "sha256": "ab3ea64b6894af5e8a8fcd385d8f01b0eaa3472d84fa10b521c81ef1d22b9ad8",
+      "bytes": 4011
+    },
+    {
+      "path": "tools/tv_check.py",
+      "git_blob_sha1": "22d18049893356ba5cb1d445d21d83904c0acf89",
+      "sha256": "cc98e5e55578e60557a807a6b32f059d731e8ecb68a2fb64d171f4ce643b6348",
+      "bytes": 13763
+    }
+  ]
+}

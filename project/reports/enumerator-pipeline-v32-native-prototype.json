@@ -1,0 +1,2313 @@
+{
+  "status": "COUNTERFACTUAL_DIRECT_BUFFER_RESULT_PIPELINE_OBSERVATIONS_ONLY",
+  "caller": "Nekki.SF2.Core.Fights.Fight::SetStage",
+  "caller_rva": "0xC9F3F0",
+  "prototype": true,
+  "nativePrototype": true,
+  "prototype_guards": {
+    "alias_count": 279,
+    "selected_callee": "System.Collections.Generic.List\u00601::GetEnumerator",
+    "return_type": "System.Collections.Generic.List\u00601\u003CT\u003E\u002BEnumerator\u003CT\u003E",
+    "returns_via_hidden_buffer": false,
+    "hfa_return": false,
+    "buffer_offset": 8,
+    "explicit_native_descriptor_used": true,
+    "native_x0_read_before_overwrite": false,
+    "visited_instructions": 8,
+    "stopped_on_overwrite": 1,
+    "native_x8_address_is_unchanged_adjacent_operand": true,
+    "changed_isil_call_index": 86,
+    "original_destination": "X0",
+    "replacement": "stack[8]"
+  },
+  "native_descriptor": {
+    "kind": "EXACT_NATIVE_REVIEWED_LIST_REFERENCE_ENUMERATOR_RETURN_ONLY",
+    "byte_size": 24,
+    "target_rva": "0x1585F60",
+    "concrete_aliases_verified": 278,
+    "open_signature_definition_verified": 1,
+    "actual_concrete_methodinfo": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E::GetEnumerator",
+    "methodinfo_metadata_slot": "0x3B4CE60",
+    "methodinfo_context_pointer": "0x0",
+    "matching_registered_native_aliases": 1,
+    "methodinfo_pointer_scope": "MetadataUsage.AsGenericMethodRef constructs a fresh metadata-only method ref without assigning GenericVariantPtr. The exact direct BL target is independently matched through registered aliases using the same base and concrete generic type identities.",
+    "existing_classifier_result": false,
+    "existing_metadata_size": 0,
+    "complete_native_code_hash_and_fde_match": true,
+    "native_report_sha256": "d2455fedd7f55448386a0985fb32975ae19bc6564cada9138593fb434ef22517",
+    "inference_scope": "This explicit descriptor overrides the false size-zero classification only for this reviewed native shared reference-enumerator body and copied SetStage experiment. It is not a general generic-size or ABI rule."
+  },
+  "final_ir_assertions": {
+    "status": "PASS_EXACT_COPIED_IR_RESULT_AND_CONSUMER_STORAGE_ONLY",
+    "checks": 6,
+    "result_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E",
+    "resolved_getenumerator": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E::GetEnumerator",
+    "result_storage": "stack_-68_v3",
+    "consumers": [
+      {
+        "isil_index": 95,
+        "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E::MoveNext",
+        "same_result_storage_identity": true
+      },
+      {
+        "isil_index": 101,
+        "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E::get_Current",
+        "same_result_storage_identity": true
+      },
+      {
+        "isil_index": 135,
+        "method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E::Dispose",
+        "same_result_storage_identity": true
+      }
+    ],
+    "result_storage_definitions": 1,
+    "scalar_zero_stores": 0,
+    "game_executed": false,
+    "recovered_cil_generated": false,
+    "production_changed": false
+  },
+  "probe_source_sha256": "128b291597b9e5767b982c53c29008b3115e09b53b82b0a13049e32860538033",
+  "tool_core_sha256": "6fa3bae49f3fd93cff826dcaa181ec99d24fecdfb005e0aeb536b0b51be42f7e",
+  "original_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "original_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "source_hashes": [
+    {
+      "file": "refs/Cpp2IL/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs",
+      "sha256": "c2f08a6ab4974747f38ffe0d860a5eb36bd71cdb552e8df46dd6e74c616db20f"
+    },
+    {
+      "file": "refs/Cpp2IL/Cpp2IL.Core/Analysis/StackAnalyzer.cs",
+      "sha256": "708c6e5bd464bff4b6b20be18563a21a934b10871ad8704a544fb56ae000c8c0"
+    },
+    {
+      "file": "refs/Cpp2IL/Cpp2IL.Core/Analysis/SsaForm.cs",
+      "sha256": "036b41f0259c6f02fec2a8a0f122137dd6c12a6b1a21f415b1b1bb34fe9ac6cc"
+    },
+    {
+      "file": "refs/Cpp2IL/Cpp2IL.Core/Analysis/LocalVariables.cs",
+      "sha256": "19a5e9330da015c80b0891f772ce9d6949f9010c0dfde3d895aac44da59791af"
+    },
+    {
+      "file": "refs/Cpp2IL/Cpp2IL.Core/Model/Contexts/MethodAnalysisContext.cs",
+      "sha256": "3630c47dbb88e1ef06fb1e9fe41a4ab491243ac4bb03c7c1d0ea6f58d5fe8c37"
+    }
+  ],
+  "original_game_code_executed": false,
+  "core_modified": false,
+  "production_output_modified": false,
+  "stages": [
+    {
+      "stage": "raw-converted-before-stack",
+      "instructions": 142,
+      "calls": [
+        {
+          "Index": 86,
+          "target_rva": "0x1585F60",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 95,
+          "target_rva": "0x11DD3E0",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            },
+            {
+              "kind": "Register",
+              "value": "X2"
+            },
+            {
+              "kind": "Register",
+              "value": "X3"
+            },
+            {
+              "kind": "Register",
+              "value": "X4"
+            },
+            {
+              "kind": "Register",
+              "value": "X5"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 101,
+          "target_rva": "0x11DD540",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            },
+            {
+              "kind": "Register",
+              "value": "X2"
+            },
+            {
+              "kind": "Register",
+              "value": "X3"
+            },
+            {
+              "kind": "Register",
+              "value": "X4"
+            },
+            {
+              "kind": "Register",
+              "value": "X5"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 135,
+          "target_rva": "0x11DD3B0",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            },
+            {
+              "kind": "Register",
+              "value": "X2"
+            },
+            {
+              "kind": "Register",
+              "value": "X3"
+            },
+            {
+              "kind": "Register",
+              "value": "X4"
+            },
+            {
+              "kind": "Register",
+              "value": "X5"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ],
+      "tracked_storage_definitions": [],
+      "stack_addresses": [
+        {
+          "Index": 1,
+          "op": "Move",
+          "destination": "stack[20]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 2,
+          "op": "Move",
+          "destination": "stack[30]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 3,
+          "op": "Move",
+          "destination": "stack[38]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 4,
+          "op": "Move",
+          "destination": "stack[40]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 5,
+          "op": "Move",
+          "destination": "stack[48]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 6,
+          "op": "Move",
+          "destination": "stack[50]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 7,
+          "op": "Move",
+          "destination": "stack[58]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 8,
+          "op": "Move",
+          "destination": "stack[60]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 9,
+          "op": "Move",
+          "destination": "stack[68]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 10,
+          "op": "Move",
+          "destination": "X29",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[60]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 32,
+          "op": "Move",
+          "destination": "stack[10]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 33,
+          "op": "Move",
+          "destination": "stack[18]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 34,
+          "op": "Move",
+          "destination": "stack[8]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 85,
+          "op": "Move",
+          "destination": "X8",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[8]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 94,
+          "op": "Move",
+          "destination": "X0",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[8]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 100,
+          "op": "Move",
+          "destination": "X0",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[8]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 134,
+          "op": "Move",
+          "destination": "X0",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[8]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 105,
+          "op": "Move",
+          "destination": "stack[2C]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 106,
+          "op": "Move",
+          "destination": "X1",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[2C]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 169,
+          "op": "Move",
+          "destination": "X29",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 170,
+          "op": "Move",
+          "destination": "X30",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 171,
+          "op": "Move",
+          "destination": "X25",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 172,
+          "op": "Move",
+          "destination": "X20",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 173,
+          "op": "Move",
+          "destination": "X19",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 174,
+          "op": "Move",
+          "destination": "X22",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 175,
+          "op": "Move",
+          "destination": "X21",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 176,
+          "op": "Move",
+          "destination": "X24",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 177,
+          "op": "Move",
+          "destination": "X23",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 119,
+          "op": "Move",
+          "destination": "stack[28]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 120,
+          "op": "Move",
+          "destination": "X1",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[28]"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ]
+    },
+    {
+      "stage": "counterfactual-direct-buffer-call-destination-before-stack",
+      "instructions": 142,
+      "calls": [
+        {
+          "Index": 86,
+          "target_rva": "0x1585F60",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "stack[8]",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 95,
+          "target_rva": "0x11DD3E0",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            },
+            {
+              "kind": "Register",
+              "value": "X2"
+            },
+            {
+              "kind": "Register",
+              "value": "X3"
+            },
+            {
+              "kind": "Register",
+              "value": "X4"
+            },
+            {
+              "kind": "Register",
+              "value": "X5"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 101,
+          "target_rva": "0x11DD540",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            },
+            {
+              "kind": "Register",
+              "value": "X2"
+            },
+            {
+              "kind": "Register",
+              "value": "X3"
+            },
+            {
+              "kind": "Register",
+              "value": "X4"
+            },
+            {
+              "kind": "Register",
+              "value": "X5"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 135,
+          "target_rva": "0x11DD3B0",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            },
+            {
+              "kind": "Register",
+              "value": "X2"
+            },
+            {
+              "kind": "Register",
+              "value": "X3"
+            },
+            {
+              "kind": "Register",
+              "value": "X4"
+            },
+            {
+              "kind": "Register",
+              "value": "X5"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ],
+      "tracked_storage_definitions": [],
+      "stack_addresses": [
+        {
+          "Index": 1,
+          "op": "Move",
+          "destination": "stack[20]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 2,
+          "op": "Move",
+          "destination": "stack[30]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 3,
+          "op": "Move",
+          "destination": "stack[38]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 4,
+          "op": "Move",
+          "destination": "stack[40]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 5,
+          "op": "Move",
+          "destination": "stack[48]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 6,
+          "op": "Move",
+          "destination": "stack[50]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 7,
+          "op": "Move",
+          "destination": "stack[58]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 8,
+          "op": "Move",
+          "destination": "stack[60]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 9,
+          "op": "Move",
+          "destination": "stack[68]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 10,
+          "op": "Move",
+          "destination": "X29",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[60]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 32,
+          "op": "Move",
+          "destination": "stack[10]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 33,
+          "op": "Move",
+          "destination": "stack[18]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 34,
+          "op": "Move",
+          "destination": "stack[8]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 85,
+          "op": "Move",
+          "destination": "X8",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[8]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 86,
+          "op": "Call",
+          "destination": "stack[8]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 94,
+          "op": "Move",
+          "destination": "X0",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[8]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 100,
+          "op": "Move",
+          "destination": "X0",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[8]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 134,
+          "op": "Move",
+          "destination": "X0",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[8]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 105,
+          "op": "Move",
+          "destination": "stack[2C]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 106,
+          "op": "Move",
+          "destination": "X1",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[2C]"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 169,
+          "op": "Move",
+          "destination": "X29",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 170,
+          "op": "Move",
+          "destination": "X30",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 171,
+          "op": "Move",
+          "destination": "X25",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 172,
+          "op": "Move",
+          "destination": "X20",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 173,
+          "op": "Move",
+          "destination": "X19",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 174,
+          "op": "Move",
+          "destination": "X22",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 175,
+          "op": "Move",
+          "destination": "X21",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 176,
+          "op": "Move",
+          "destination": "X24",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 177,
+          "op": "Move",
+          "destination": "X23",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 119,
+          "op": "Move",
+          "destination": "stack[28]",
+          "address_operands": [],
+          "implicit_definition": null
+        },
+        {
+          "Index": 120,
+          "op": "Move",
+          "destination": "X1",
+          "address_operands": [
+            {
+              "kind": "StackOffset",
+              "target": "stack[28]"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ]
+    },
+    {
+      "stage": "stack-normalized-before-ssa",
+      "instructions": 140,
+      "calls": [
+        {
+          "Index": 86,
+          "target_rva": "0x1585F60",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "stack_-68",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 95,
+          "target_rva": "0x11DD3E0",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            },
+            {
+              "kind": "Register",
+              "value": "X2"
+            },
+            {
+              "kind": "Register",
+              "value": "X3"
+            },
+            {
+              "kind": "Register",
+              "value": "X4"
+            },
+            {
+              "kind": "Register",
+              "value": "X5"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 101,
+          "target_rva": "0x11DD540",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            },
+            {
+              "kind": "Register",
+              "value": "X2"
+            },
+            {
+              "kind": "Register",
+              "value": "X3"
+            },
+            {
+              "kind": "Register",
+              "value": "X4"
+            },
+            {
+              "kind": "Register",
+              "value": "X5"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 135,
+          "target_rva": "0x11DD3B0",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            },
+            {
+              "kind": "Register",
+              "value": "X2"
+            },
+            {
+              "kind": "Register",
+              "value": "X3"
+            },
+            {
+              "kind": "Register",
+              "value": "X4"
+            },
+            {
+              "kind": "Register",
+              "value": "X5"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ],
+      "tracked_storage_definitions": [
+        {
+          "Index": 34,
+          "op": "Move",
+          "destination": "stack_-68",
+          "source_operands": [
+            {
+              "kind": "Immediate",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "Index": 86,
+          "op": "Call",
+          "destination": "stack_-68",
+          "source_operands": [
+            {
+              "kind": "Register",
+              "value": "X0"
+            },
+            {
+              "kind": "Register",
+              "value": "X1"
+            }
+          ]
+        }
+      ],
+      "stack_addresses": [
+        {
+          "Index": 10,
+          "op": "Move",
+          "destination": "X29",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-10"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 85,
+          "op": "Move",
+          "destination": "X8",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-68"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 94,
+          "op": "Move",
+          "destination": "X0",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-68"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 100,
+          "op": "Move",
+          "destination": "X0",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-68"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 134,
+          "op": "Move",
+          "destination": "X0",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-68"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 106,
+          "op": "Move",
+          "destination": "X1",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-44"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 120,
+          "op": "Move",
+          "destination": "X1",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-48"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ]
+    },
+    {
+      "stage": "ssa-before-local-allocation",
+      "instructions": 177,
+      "calls": [
+        {
+          "Index": 86,
+          "target_rva": "0x1585F60",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "stack_-68_v3",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0_v3"
+            },
+            {
+              "kind": "Register",
+              "value": "X1_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 95,
+          "target_rva": "0x11DD3E0",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0_v6",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0_v5"
+            },
+            {
+              "kind": "Register",
+              "value": "X1_v3"
+            },
+            {
+              "kind": "Register",
+              "value": "X2_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X3_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X4_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X5_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 101,
+          "target_rva": "0x11DD540",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0_v10",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0_v9"
+            },
+            {
+              "kind": "Register",
+              "value": "X1_v5"
+            },
+            {
+              "kind": "Register",
+              "value": "X2_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X3_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X4_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X5_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 135,
+          "target_rva": "0x11DD3B0",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "X0_v8",
+          "argument_operands": [
+            {
+              "kind": "Register",
+              "value": "X0_v7"
+            },
+            {
+              "kind": "Register",
+              "value": "X1_v4"
+            },
+            {
+              "kind": "Register",
+              "value": "X2_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X3_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X4_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X5_v1"
+            },
+            {
+              "kind": "Register",
+              "value": "X6"
+            },
+            {
+              "kind": "Register",
+              "value": "X7"
+            },
+            {
+              "kind": "Register",
+              "value": "V0"
+            },
+            {
+              "kind": "Register",
+              "value": "V1"
+            },
+            {
+              "kind": "Register",
+              "value": "V2"
+            },
+            {
+              "kind": "Register",
+              "value": "V3"
+            },
+            {
+              "kind": "Register",
+              "value": "V4"
+            },
+            {
+              "kind": "Register",
+              "value": "V5"
+            },
+            {
+              "kind": "Register",
+              "value": "V6"
+            },
+            {
+              "kind": "Register",
+              "value": "V7"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ],
+      "tracked_storage_definitions": [
+        {
+          "Index": 34,
+          "op": "Move",
+          "destination": "stack_-68_v1",
+          "source_operands": [
+            {
+              "kind": "Immediate",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "Index": 86,
+          "op": "Call",
+          "destination": "stack_-68_v3",
+          "source_operands": [
+            {
+              "kind": "Register",
+              "value": "X0_v3"
+            },
+            {
+              "kind": "Register",
+              "value": "X1_v1"
+            }
+          ]
+        }
+      ],
+      "stack_addresses": [
+        {
+          "Index": 10,
+          "op": "Move",
+          "destination": "X29_v1",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-10_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 85,
+          "op": "Move",
+          "destination": "X8_v12",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-68_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 94,
+          "op": "Move",
+          "destination": "X0_v5",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-68_v3"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 100,
+          "op": "Move",
+          "destination": "X0_v9",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-68_v3"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 134,
+          "op": "Move",
+          "destination": "X0_v7",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-68_v3"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 106,
+          "op": "Move",
+          "destination": "X1_v6",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-44_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 120,
+          "op": "Move",
+          "destination": "X1_v8",
+          "address_operands": [
+            {
+              "kind": "Register",
+              "target": "stack_-48_v2"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ]
+    },
+    {
+      "stage": "ssa-with-local-identities",
+      "instructions": 177,
+      "calls": [
+        {
+          "Index": 86,
+          "target_rva": "0x1585F60",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "v90 @ stack_-68_v3",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v85 @ X0_v3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v87 @ X1_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 95,
+          "target_rva": "0x11DD3E0",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "v155 @ X0_v6",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v154 @ X0_v5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v153 @ X1_v3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v138 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v136 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v134 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v132 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v109 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 101,
+          "target_rva": "0x11DD540",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "v159 @ X0_v10",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v158 @ X0_v9"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v157 @ X1_v5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v138 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v136 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v134 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v132 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v109 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 135,
+          "target_rva": "0x11DD3B0",
+          "target_context": "Immediate",
+          "resolved_method": null,
+          "destination": "v164 @ X0_v8",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v163 @ X0_v7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v162 @ X1_v4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v138 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v136 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v134 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v132 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v109 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ],
+      "tracked_storage_definitions": [
+        {
+          "Index": 34,
+          "op": "Move",
+          "destination": "v38 @ stack_-68_v1",
+          "source_operands": [
+            {
+              "kind": "Immediate",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "Index": 86,
+          "op": "Call",
+          "destination": "v90 @ stack_-68_v3",
+          "source_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v85 @ X0_v3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v87 @ X1_v1"
+            }
+          ]
+        }
+      ],
+      "stack_addresses": [
+        {
+          "Index": 10,
+          "op": "Move",
+          "destination": "v18 @ X29_v1",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v19 @ stack_-10_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 85,
+          "op": "Move",
+          "destination": "v88 @ X8_v12",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v89 @ stack_-68_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 94,
+          "op": "Move",
+          "destination": "v154 @ X0_v5",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v90 @ stack_-68_v3"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 100,
+          "op": "Move",
+          "destination": "v158 @ X0_v9",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v90 @ stack_-68_v3"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 134,
+          "op": "Move",
+          "destination": "v163 @ X0_v7",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v90 @ stack_-68_v3"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 106,
+          "op": "Move",
+          "destination": "v167 @ X1_v6",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v142 @ stack_-44_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 120,
+          "op": "Move",
+          "destination": "v185 @ X1_v8",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v131 @ stack_-48_v2"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ]
+    },
+    {
+      "stage": "counterfactual-through-existing-final-IR-pipeline",
+      "instructions": 47,
+      "calls": [
+        {
+          "Index": 86,
+          "target_rva": "0x0",
+          "target_context": "ConcreteGenericMethodAnalysisContext",
+          "resolved_method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E::GetEnumerator",
+          "destination": "v90 @ stack_-68_v3 (System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E)",
+          "argument_operands": [
+            {
+              "kind": "FieldReference",
+              "value": "this.Models (System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E)"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 95,
+          "target_rva": "0x0",
+          "target_context": "ConcreteGenericMethodAnalysisContext",
+          "resolved_method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E::MoveNext",
+          "destination": "v155 @ X0_v6 (System.Boolean)",
+          "argument_operands": [
+            {
+              "kind": "AddressOf",
+              "value": "\u0026v90 @ stack_-68_v3 (System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E)"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 101,
+          "target_rva": "0x0",
+          "target_context": "ConcreteGenericMethodAnalysisContext",
+          "resolved_method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E::get_Current",
+          "destination": "v159 @ X0_v10 (Nekki.SF2.Core.Fights.Model.Model)",
+          "argument_operands": [
+            {
+              "kind": "AddressOf",
+              "value": "\u0026v90 @ stack_-68_v3 (System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E)"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 135,
+          "target_rva": "0x0",
+          "target_context": "ConcreteGenericMethodAnalysisContext",
+          "resolved_method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E::Dispose",
+          "destination": "v164 @ X0_v8",
+          "argument_operands": [
+            {
+              "kind": "AddressOf",
+              "value": "\u0026v90 @ stack_-68_v3 (System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E)"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ],
+      "tracked_storage_definitions": [
+        {
+          "Index": 86,
+          "op": "Call",
+          "destination": "v90 @ stack_-68_v3 (System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E)",
+          "source_operands": [
+            {
+              "kind": "FieldReference",
+              "value": "this.Models (System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E)"
+            }
+          ]
+        }
+      ],
+      "stack_addresses": [
+        {
+          "Index": 95,
+          "op": "Call",
+          "destination": "v155 @ X0_v6 (System.Boolean)",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v90 @ stack_-68_v3 (System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E)"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 101,
+          "op": "Call",
+          "destination": "v159 @ X0_v10 (Nekki.SF2.Core.Fights.Model.Model)",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v90 @ stack_-68_v3 (System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E)"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 107,
+          "op": "Call",
+          "destination": "v168 @ X0_v12 (System.Object)",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v142 @ stack_-44_v2 (Nekki.SF2.Core.Fights.StageType\u002BStage)"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 135,
+          "op": "Call",
+          "destination": "v164 @ X0_v8",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v90 @ stack_-68_v3 (System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E)"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 121,
+          "op": "Call",
+          "destination": "v186 @ X0_v16 (System.Object)",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v131 @ stack_-48_v2 (Nekki.SF2.Core.Fights.StageType\u002BStage)"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ]
+    }
+  ],
+  "scope": "Counterfactual prototype on a fresh copied actual SetStage ISIL only: change a verified direct-SP-buffer managed-call destination before SSA, then run existing passes. No production source/CIL/binary changed, no game method executed. Symbolic observations do not establish recovered behavior; actual output CIL, source and runtime must still be tested."
+}

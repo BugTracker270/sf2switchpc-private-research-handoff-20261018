@@ -1,0 +1,8 @@
+{
+  "status": "PASS_BYTE_EXACT_LOCAL_EVIDENCE_BACKUP",
+  "archive": "backups\\virtual-companion-copy-v38-raw-evidence.zip",
+  "archive_sha256": "d5f004c230fc75fe3554cc39e3b2a384739b750af2539e7057c98d77e3480d6e",
+  "files": 766,
+  "uncompressed_bytes": 57794172,
+  "scope": "Final raw reports,40 frozen v38 tool sources and3 exact tool binaries. Every ZIP entry SHA verified. Own archive-hash report excluded to avoid recursion. Git text normalization alone cannot preserve raw evidence hashes; this is backup integrity, not game source completion."
+}

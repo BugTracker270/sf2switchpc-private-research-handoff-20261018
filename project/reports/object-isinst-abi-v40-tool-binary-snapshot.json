@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "sha256": "3cd1e888a20bf2256c120a25102aad2cb276c2d068d8bdf1ea88ca3ab21ff9e3",
+      "path": "analysis\\il2cpp\\object-isinst-abi-v40-tool-binaries\\Cpp2IL.dll",
+      "name": "Cpp2IL.dll"
+    },
+    {
+      "sha256": "14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6",
+      "path": "analysis\\il2cpp\\object-isinst-abi-v40-tool-binaries\\Cpp2IL.Core.dll",
+      "name": "Cpp2IL.Core.dll"
+    },
+    {
+      "sha256": "c15339ded4039f7aaf827c80db38788a02ac3e86a016e24bcdefc9ef515d52df",
+      "path": "analysis\\il2cpp\\object-isinst-abi-v40-tool-binaries\\LibCpp2IL.dll",
+      "name": "LibCpp2IL.dll"
+    }
+  ],
+  "status": "PASS_IMMUTABLE_INVOCATION_TOOL_BINARIES",
+  "recovery_run": "nso-object-isinst-abi-v40",
+  "core_built": false,
+  "recovery_invocation_sha256": "3cd258cb7c4f4ba455cef66e5f05fee040dc83dff38bd80fd7ec03546ade6e1b",
+  "source_mutated": false,
+  "file_count": 3
+}

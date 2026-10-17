@@ -1,0 +1,23 @@
+{
+  "status": "PASS_ORIGINAL_NATIVE_16BYTE_FIELD_COPY_FIXTURES",
+  "cases": 1024,
+  "checks": 6144,
+  "nonzero_padding_cases": 1008,
+  "fixture_sha256": "b92e8ac01938bfb436bd8805673a791d390c5db8bc7d248a23515d627fdebb57",
+  "fixture": "analysis\\il2cpp\\integer-aggregate-leaf-native-fixtures-v1.jsonl",
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "calls": {
+    "currency_aggregate_set": 1024,
+    "currency_aggregate_get": 1024
+  },
+  "executed_functions": {
+    "currency_aggregate_set": 1024,
+    "currency_aggregate_get": 1024
+  },
+  "native_text_sha256": {
+    "currency_aggregate_set": "7a2dd33fdedf154abcdb5d6dfe32dc5d1dd95eee18191544eace83cb6bdcbc46",
+    "currency_aggregate_get": "031b293e06b6ca3615ac38e75047a4ee1254b023e65c4248cda2bca812f13342"
+  },
+  "scope": "Original eight-byte setter and twelve-byte getter only; synthetic owner storage with guard bytes. Native copies preserve all 16 bytes including tail padding. Managed recovered comparisons must compare the four declared fields and expressly exclude padding-byte identity. No currency codec, class initialization, GC, null receiver, general integer aggregate ABI, or complete game claim."
+}

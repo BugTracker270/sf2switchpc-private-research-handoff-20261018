@@ -1,0 +1,18 @@
+{
+  "status": "RECOVERED_NESTED_GENERIC_CALLER_LIMITATION",
+  "recovery_run": "nso-generic-fp-fields-v22",
+  "cases": 0,
+  "checks": 0,
+  "nested_field_address_instructions": 18,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": "System.Exception: Unexpected token/call; diagnostic helpers are forbidden: ldstr",
+  "body_il_sha256": {
+    "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+    "RecoveredNestedTweenCaller": "d0465cfadb81b78d8ebbc3317e124ff8340669ef90909e8aa701e65653c62d06"
+  },
+  "vector_assembly_sha256": "7c91755f16dcea18bdd1bfcd136d2111f735b23dc5c996a36fc4e065462a57f6",
+  "tween_assembly_sha256": "0afbb71651c8b87d02678ed2bf8b8db60ac3bec5774a367079bc1ce0fdf83428",
+  "fixture_sha256": "a90434a7d325d6761703a46412a5e30e7585b90179a80568c3c74ca673330c6f",
+  "scope": "Actual recovered caller and addition CIL, with exact vector/wrapper/closed-generic field tokens replaced by isolated equivalent storage types. Scalar instructions, local layout, branches and stores retained; only call target replaced by the actual recovered addition DynamicMethod. Three resulting component bits and six unchanged start/change component bits per case. Any other calls, helpers or type substitutions are rejected before execution. Explicitly bypasses Unity/plugin initialization and original class-initializer ordering; no other caller, whole assembly or portable-game claim. Original complete caller evidence: reports/native-fp-class-guard-caller.json."
+}

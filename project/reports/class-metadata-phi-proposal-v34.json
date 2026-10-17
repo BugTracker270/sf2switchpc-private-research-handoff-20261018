@@ -1,0 +1,180 @@
+{
+  "status": "PASS_READ_ONLY_EDGE_AWARE_CLASS_METADATA_PHI_PROPOSAL",
+  "checks": 26,
+  "actual_method": "BundlesUtil::GetAssetBundleSafe",
+  "actual_raw_call_index": 40,
+  "actual_phi_block": 7,
+  "actual_phi_destination": "v46",
+  "actual_phi_edges": [
+    {
+      "source_index": 1,
+      "predecessor": 6,
+      "source": "v20",
+      "definitions": [
+        {
+          "block": 24,
+          "position": 2,
+          "opcode": "Move",
+          "root_type": "BundlesUtil",
+          "definition_dominates_predecessor": true
+        }
+      ]
+    },
+    {
+      "source_index": 2,
+      "predecessor": 21,
+      "source": "v47",
+      "definitions": [
+        {
+          "block": 21,
+          "position": 1,
+          "opcode": "Move",
+          "root_type": "BundlesUtil",
+          "definition_dominates_predecessor": true
+        }
+      ]
+    }
+  ],
+  "actual_proposed_identity_proof": true,
+  "actual_call_stays_unresolved": true,
+  "fixtures": [
+    {
+      "name": "two independent exact metadata roots",
+      "expected": true,
+      "accepted": true,
+      "rejection": null
+    },
+    {
+      "name": "same root reused across both incoming edges",
+      "expected": true,
+      "accepted": true,
+      "rejection": null
+    },
+    {
+      "name": "conflicting original type identity despite matching propagated local type",
+      "expected": false,
+      "accepted": false,
+      "rejection": "conflicting-original-type-identity"
+    },
+    {
+      "name": "unknown incoming source",
+      "expected": false,
+      "accepted": false,
+      "rejection": "unknown-origin"
+    },
+    {
+      "name": "uninitialized incoming source",
+      "expected": false,
+      "accepted": false,
+      "rejection": "missing-or-multiple-definitions"
+    },
+    {
+      "name": "duplicate incoming definition",
+      "expected": false,
+      "accepted": false,
+      "rejection": "missing-or-multiple-definitions"
+    },
+    {
+      "name": "swapped predecessor source positions",
+      "expected": false,
+      "accepted": false,
+      "rejection": "definition-unavailable-at-edge-or-use"
+    },
+    {
+      "name": "missing predecessor source",
+      "expected": false,
+      "accepted": false,
+      "rejection": "malformed-phi-predecessor-arity"
+    },
+    {
+      "name": "extra predecessor source",
+      "expected": false,
+      "accepted": false,
+      "rejection": "malformed-phi-predecessor-arity"
+    },
+    {
+      "name": "duplicate predecessor",
+      "expected": false,
+      "accepted": false,
+      "rejection": "asymmetric-successor"
+    },
+    {
+      "name": "asymmetric predecessor edge",
+      "expected": false,
+      "accepted": false,
+      "rejection": "unreachable-or-asymmetric-predecessor"
+    },
+    {
+      "name": "incoming untyped local",
+      "expected": false,
+      "accepted": false,
+      "rejection": "untyped-or-conflicting-runtime-class"
+    },
+    {
+      "name": "incoming local assigned wrong represented class",
+      "expected": false,
+      "accepted": false,
+      "rejection": "untyped-or-conflicting-runtime-class"
+    },
+    {
+      "name": "Phi placed after an ordinary instruction",
+      "expected": false,
+      "accepted": false,
+      "rejection": "phi-not-in-entry-prefix"
+    },
+    {
+      "name": "class local address escapes",
+      "expected": false,
+      "accepted": false,
+      "rejection": "class-local-address-escapes"
+    },
+    {
+      "name": "merge Phi defined after call",
+      "expected": false,
+      "accepted": false,
+      "rejection": "definition-unavailable-at-edge-or-use"
+    },
+    {
+      "name": "repeated false typing result is not cached across passes",
+      "expected": true,
+      "accepted": true,
+      "rejection": null
+    },
+    {
+      "name": "distinct local budget with 29 shared chain nodes",
+      "expected": true,
+      "accepted": true,
+      "rejection": null
+    },
+    {
+      "name": "distinct local budget with 30 shared chain nodes",
+      "expected": false,
+      "accepted": false,
+      "rejection": "origin-budget"
+    },
+    {
+      "name": "loop-carried origin dependency cycle",
+      "expected": false,
+      "accepted": false,
+      "rejection": "cyclic-origin"
+    }
+  ],
+  "original_post_cctor_reload_indices": [
+    41,
+    42,
+    43
+  ],
+  "original_graph_unchanged": true,
+  "proposed_production_location": "KeyFunctionRecovery.HasExactClassMetadataOrigin only; retain existing target/ABI/unused-result/closed-type/API-overload gates.",
+  "proposed_rules": [
+    "Fresh dominance for the current immutable CFG pass; reachable reciprocal unique edges, unique SSA definition and available definition at each use.",
+    "Move roots must end at the same original represented TypeAnalysisContext object. Propagated names or RuntimeClass\u003CT\u003E alone do not prove identity.",
+    "Phi operand i\u002B1 is checked at Block.Predecessors[i] end, with exact arity and entry-prefix placement; do not require conditional source definitions to dominate the merge.",
+    "Separate active recursion path from a32-distinct-local budget: cycles/unknowns/escapes reject, repeated identical shared roots may pass. No false-result cache survives type-fixpoint iterations.",
+    "Only class identity proof may change later; preserve all post-cctor field reloads, branches, fields, original call position and initialization effects."
+  ],
+  "core_sha256": "08f55a8f59aa06ebc5bb899806b297b750b275b09d58255ebd966cbfbc8eba1e",
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "scope": "Independent proposal checker reads the current production CFG without changing Core or recovered output. It verifies exact original metadata type identity on every positionally mapped Phi predecessor edge, bounded acyclic origin dependencies, fresh dominance and strict source availability. Actual helper remains unresolved; all original post-cctor field reloads/control flow remain untouched. This is a proposed recovery rule and fixture evidence, not production acceptance, emitted CIL/runtime or full-decompilation proof."
+}

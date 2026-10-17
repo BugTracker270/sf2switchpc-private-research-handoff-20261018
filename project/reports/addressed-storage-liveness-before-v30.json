@@ -1,0 +1,19 @@
+{
+  "status": "ADDRESSED_STORAGE_INITIALIZATION_LOSS_CONFIRMED",
+  "before": {
+    "Returned": 305419896,
+    "Argument": 305419896,
+    "Slot": -7,
+    "Error": null
+  },
+  "after": {
+    "Returned": null,
+    "Argument": 305419896,
+    "Slot": null,
+    "Error": "Addressed storage was not initialized"
+  },
+  "initializer_retained": false,
+  "address_identity_retained": true,
+  "core_assembly_sha256": "d150eb2c28e49af6b59ea71105d82bf4fe37b0c387d37e1be4cd1e74fbc9808a",
+  "scope": "Independent ISIL fixture copies an input into distinct local storage, reads and mutates that storage through its address, and requires the original input to remain unchanged. No application metadata or native code is involved; actual SetAge input provenance is tested separately."
+}

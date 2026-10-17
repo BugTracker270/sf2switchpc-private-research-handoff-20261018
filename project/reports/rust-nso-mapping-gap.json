@@ -1,0 +1,26 @@
+{
+  "status": "STATIC_NSO_MAPPING_GAP_CONFIRMED",
+  "upstream_commit": "145a751023258a35f133c4f111785a8df0580985",
+  "source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "witnesses": [
+    {
+      "method": "Vector3.op_Addition",
+      "rva": "0x15d9380",
+      "expected_file_offset": "0x15d9480",
+      "adapter_identity_offset": "0x15d9380",
+      "expected_16byte_sha256": "eb1a6a3fa6769cfee5ff13ceee0e48c0030c2b4e1242bb6cf4a747addca82528",
+      "identity_16byte_sha256": "cec20cdd4190afc3b63e3c74b19a80267e41cdf36400d129a00bb9b3f9e99716",
+      "same_bytes": false
+    },
+    {
+      "method": "AdvLog.get_LogNow",
+      "rva": "0x2221c0",
+      "expected_file_offset": "0x2222c0",
+      "adapter_identity_offset": "0x2221c0",
+      "expected_16byte_sha256": "4a10f24db67e2b43e8d3ff8835932470b6f0066df47db328fb3790e958a18c53",
+      "identity_16byte_sha256": "8c3679de59eaecdcf671982b97f002df30d0069623f2b5d7a71f06a46910325b",
+      "same_bytes": false
+    }
+  ],
+  "scope": "The uncompressed NSO adapter sets the later generic VA mapper to identity. Actual segment file offsets differ from RVAs by0x100. Initialization has a separate correct format callback. This static source/byte witness does not establish all resulting CIL errors or a complete fix. Compressed loader additionally retains stale segment offsets after repacking."
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PASS_LEGACY_CLASS_INIT_TYPED_LOWERING_AND_CLR_CONTRACT",
+  "cases": 80,
+  "checks": 120,
+  "known_native_target": "0xB2E720",
+  "native_target_discovery": "Three agreeing corlib families in existing NewArm64KeyFunctionAddresses recovery",
+  "exact_managed_target": "System.Void System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor(System.RuntimeTypeHandle type)",
+  "rejected_candidates": [
+    "wrong helper",
+    "extra semantic argument",
+    "return-bearing call",
+    "unknown class",
+    "ordinary managed Type",
+    "unproven direct typeof operand",
+    "absent argument"
+  ],
+  "unproven_initializer_preserved": true,
+  "type_seeding_fixpoint_before_ssa": true,
+  "emitted_opcodes": [
+    "ldtoken",
+    "call",
+    "br",
+    "ret"
+  ],
+  "fixture_effect_calls": 32,
+  "fixture_throw_calls": 32,
+  "fixture_concurrent_calls": 16,
+  "fixture_effect_count": 1,
+  "fixture_throw_effect_count": 1,
+  "fixture_concurrent_effect_count": 1,
+  "core_assembly_sha256": "23b43f3a1d07dca7483ec0fac031380d934a16f2fc8c34bc5922f52af0ac6044",
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "scope": "Actual metadata and the real ISIL/emitter prove the exact RuntimeTypeHandle-taking API and unchanged class-init effect. Host-fixture type/API token rebinding executes the emitted ldtoken/call/forward-branch/ret contract with independently authored .cctors, proving observable nondefault effects, once-only execution, concurrent once semantics and persistent throwing behavior. The forward branch is checked to target the sole ret and retained. It does not execute original game .cctor bodies, the native runtime initializer, or a whole recovered caller; it cannot certify gameplay or full decompilation."
+}

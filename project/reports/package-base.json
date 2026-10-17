@@ -1,0 +1,127 @@
+{
+  "magic": "PFS0",
+  "file_count": 7,
+  "header_size": 464,
+  "entries": [
+    {
+      "name": "0100ab000abfe0000000000000000005.cert",
+      "offset": 32768,
+      "relative_offset": 32304,
+      "size": 1792,
+      "sha256": "3c4f20dca231655e90c75b3e9689e4dd38135401029ab1f2ea32d1c2573f1dfe"
+    },
+    {
+      "name": "0100ab000abfe0000000000000000005.tik",
+      "offset": 34560,
+      "relative_offset": 34096,
+      "size": 704,
+      "sha256": "b92692a1d44fa5e253cb3e7772426351317afbb6cb12cff299c41a7ebdcde649"
+    },
+    {
+      "name": "b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+      "offset": 35264,
+      "relative_offset": 34800,
+      "size": 1485357056,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "b5028f4e100d63d35e0e9ff223c7ffcd05061fb0f0fee811eb244b31502ef517",
+      "content_id_matches_sha256_prefix": true
+    },
+    {
+      "name": "fce770151cf290990b26b69f4bcb94ed.nca",
+      "offset": 1485392320,
+      "relative_offset": 1485391856,
+      "size": 191488,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "fce770151cf290990b26b69f4bcb94ed75a0f903dceb48b71a5d45ce9d3c802b",
+      "content_id_matches_sha256_prefix": true
+    },
+    {
+      "name": "07b0aa77e9f96147892003b507ed56ae.cnmt.nca",
+      "offset": 1485583808,
+      "relative_offset": 1485583344,
+      "size": 3584,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "07b0aa77e9f96147892003b507ed56aea5cc75706cf8785033fa6139add6c79f",
+      "content_id_matches_sha256_prefix": true
+    },
+    {
+      "name": "07b0aa77e9f96147892003b507ed56ae.cnmt.xml",
+      "offset": 1485587392,
+      "relative_offset": 1485586928,
+      "size": 1402,
+      "sha256": "ba288f8b6a6c82b1a6a12242931a1212a79a0aed4871493d67d76fac5d1a39bb"
+    },
+    {
+      "name": "0d8f90c6c7ee98750ff3071a050e9947.nca",
+      "offset": 1485588794,
+      "relative_offset": 1485588330,
+      "size": 992256,
+      "nca": {
+        "status": "encrypted_or_unrecognized",
+        "content_type": "UNKNOWN",
+        "note": "No plaintext NCA magic at +0x200; header key required for classification"
+      },
+      "sha256": "0d8f90c6c7ee98750ff3071a050e99472ec324662e42ff9a5707f15d801ce25b",
+      "content_id_matches_sha256_prefix": true
+    }
+  ],
+  "source": "F:\\SF2SwitchPC\\input\\base\\Shadow Fight 2 [0100AB000ABFE000][v0][Base].nsp",
+  "kind": "base",
+  "source_sha256": "98d2d44f224321a174ce672826c5ece77d4f98350da336a21ffefc247e36cba5",
+  "supplied_cnmt_xml": {
+    "source": "07b0aa77e9f96147892003b507ed56ae.cnmt.xml",
+    "status": "untrusted package sidecar; not decrypted/signed CNMT",
+    "fields": {
+      "Type": "Application",
+      "Id": "0x0100ab000abfe000",
+      "Version": "0",
+      "RequiredDownloadSystemVersion": "0",
+      "Digest": "7b3d57c4ec33563b7a0db4953b8ec263923d2309ebf7e707a59c51916c2b1711",
+      "KeyGenerationMin": "5",
+      "RequiredSystemVersion": "336592896",
+      "PatchId": "0x0100ab000abfe800"
+    },
+    "contents": [
+      {
+        "Type": "Program",
+        "Id": "b5028f4e100d63d35e0e9ff223c7ffcd",
+        "Size": "1485357056",
+        "Hash": "b5028f4e100d63d35e0e9ff223c7ffcd05061fb0f0fee811eb244b31502ef517",
+        "KeyGeneration": "5"
+      },
+      {
+        "Type": "Control",
+        "Id": "0d8f90c6c7ee98750ff3071a050e9947",
+        "Size": "992256",
+        "Hash": "0d8f90c6c7ee98750ff3071a050e99472ec324662e42ff9a5707f15d801ce25b",
+        "KeyGeneration": "5"
+      },
+      {
+        "Type": "LegalInformation",
+        "Id": "fce770151cf290990b26b69f4bcb94ed",
+        "Size": "191488",
+        "Hash": "fce770151cf290990b26b69f4bcb94ed75a0f903dceb48b71a5d45ce9d3c802b",
+        "KeyGeneration": "5"
+      },
+      {
+        "Type": "Meta",
+        "Id": "07b0aa77e9f96147892003b507ed56ae",
+        "Size": "3584",
+        "Hash": "07b0aa77e9f96147892003b507ed56aea5cc75706cf8785033fa6139add6c79f",
+        "KeyGeneration": "5"
+      }
+    ]
+  }
+}

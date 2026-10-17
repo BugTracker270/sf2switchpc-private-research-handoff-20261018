@@ -1,0 +1,38 @@
+{
+  "status": "PROTECTED_FIELD_CANDIDATE_CIL_AND_METADATA_CONFIRMED",
+  "recovery_run": "nso-native-leaves-v29",
+  "owner": "Nekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode",
+  "owner_attributes": "Public, BeforeFieldInit",
+  "before_field_init": true,
+  "has_type_initializer": true,
+  "field": "_Current",
+  "field_visibility": "Family",
+  "getter": "get_CurrentPosition",
+  "getter_public": true,
+  "getter_virtual": false,
+  "caller": "Nekki.SF2.Core.Fights.Model.Components.Edges.ModelEdge::get_StartPosition",
+  "caller_il_sha256": "9689d3bbf47a6314f96d7612cd92cdb740613e2defaa9d9af29640b005c4b901",
+  "caller_field_accesses": [
+    {
+      "il_offset": 1,
+      "opcode": "ldfld",
+      "owner": "Nekki.SF2.Core.Fights.Model.Components.Edges.ModelEdge",
+      "field": "_Start",
+      "field_type": "Nekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode",
+      "protected_current": false
+    },
+    {
+      "il_offset": 14,
+      "opcode": "ldfld",
+      "owner": "Nekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode",
+      "field": "_Current",
+      "field_type": "Vector3f",
+      "protected_current": true
+    }
+  ],
+  "caller_calls": [],
+  "recovered_cil_executed": false,
+  "current_emitter_gate_accepts": false,
+  "whole_game_source_ready": false,
+  "scope": "Read-only recovered-metadata/CIL candidate survey. ModelEdge.StartPosition reads its ModelNode receiver field then protected ModelNode._Current. The existing public nonvirtual getter has an independent exact native leaf witness, but the current emitter deliberately accepts private fields only. ModelNode has a type initializer and BeforeFieldInit; absence of explicit native getter initialization does not certify cross-runtime initialization timing. A future protected-field increment needs a declared initialization boundary and actual rewritten-caller execution proof."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS_SCOPED_GENERIC_FIELD_AND_SPARSE_PARAMETER_SOURCE_CORRELATION",
+  "recovery_run": "nso-sparse-params-v25",
+  "native_comparison_checks": 1296,
+  "before_source_sha256": "9fd4524834b2310fae16e507912b1ba37744ed013c7f7298060a697247fee8fd",
+  "after_source_sha256": "a518309f6d331d501e00ff986c2122059fa7c797c067da87a9d47153cec80d9e",
+  "relative_load_diagnostics_before": 6,
+  "relative_load_diagnostics_after": 0,
+  "recovered_reads": 6,
+  "recovered_writes": 3,
+  "wrapper_load_diagnostics_before": 2,
+  "wrapper_load_diagnostics_after": 0,
+  "scope": "Two selected actual ILSpy methods without source edits. Source field paths correlate with strict actual recovered-CIL execution against the recorded original-code fixtures. Other methods in the same type still contain unresolved logic; full assemblies still fail compilation."
+}

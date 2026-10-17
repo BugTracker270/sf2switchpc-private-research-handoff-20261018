@@ -1,0 +1,120 @@
+{
+  "utc": "2026-10-16T16:49:05.7558036Z",
+  "os": {
+    "Caption": "Microsoft Windows 10 Home",
+    "Version": "10.0.19045",
+    "BuildNumber": "19045",
+    "OSArchitecture": "64-bit"
+  },
+  "cpu": [
+    {
+      "Name": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "NumberOfCores": 6,
+      "NumberOfLogicalProcessors": 12
+    }
+  ],
+  "ram_bytes": 8419950592,
+  "gpu": [
+    {
+      "Name": "NVIDIA GeForce RTX 2060",
+      "DriverVersion": "32.0.16.1074",
+      "DriverDate": "2026-07-02T03:00:00+03:00",
+      "CurrentHorizontalResolution": 1920,
+      "CurrentVerticalResolution": 1080,
+      "CurrentRefreshRate": 144
+    }
+  ],
+  "disks": [
+    {
+      "Number": 1,
+      "FriendlyName": "USB SanDisk 3.2Gen1",
+      "SerialNumber": "00023421022526082855",
+      "BusType": "USB",
+      "Size": 123009761280
+    },
+    {
+      "Number": 0,
+      "FriendlyName": "SAMSUNG MZVLB512HBJQ-000H1",
+      "SerialNumber": "0025_3885_01E4_DE7A.",
+      "BusType": "NVMe",
+      "Size": 512110190592
+    }
+  ],
+  "volumes": [
+    {
+      "DriveLetter": "F",
+      "FileSystem": "exFAT",
+      "FileSystemLabel": "",
+      "Size": 122480099328,
+      "SizeRemaining": 120708661248
+    },
+    {
+      "DriveLetter": null,
+      "FileSystem": "NTFS",
+      "FileSystemLabel": "",
+      "Size": 979365888,
+      "SizeRemaining": 127021056
+    },
+    {
+      "DriveLetter": "C",
+      "FileSystem": "NTFS",
+      "FileSystemLabel": "",
+      "Size": 498996191232,
+      "SizeRemaining": 92742348800
+    },
+    {
+      "DriveLetter": "E",
+      "FileSystem": "NTFS",
+      "FileSystemLabel": "New Volume",
+      "Size": 9132044288,
+      "SizeRemaining": 4896350208
+    },
+    {
+      "DriveLetter": "D",
+      "FileSystem": "NTFS",
+      "FileSystemLabel": "New Volume",
+      "Size": 1521479680,
+      "SizeRemaining": 1502257152
+    }
+  ],
+  "shell": "7.6.5",
+  "commands": [
+    {
+      "Name": "git.exe",
+      "Source": "C:\\Program Files\\Git\\cmd\\git.exe"
+    },
+    {
+      "Name": "python.exe",
+      "Source": "C:\\Users\\Kinan\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+    },
+    {
+      "Name": "java.exe",
+      "Source": "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath\\java.exe"
+    },
+    {
+      "Name": "javac.exe",
+      "Source": "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath\\javac.exe"
+    },
+    {
+      "Name": "dotnet.exe",
+      "Source": "C:\\Program Files\\dotnet\\dotnet.exe"
+    },
+    {
+      "Name": "node.exe",
+      "Source": "C:\\Program Files\\nodejs\\node.exe"
+    },
+    {
+      "Name": "npm.ps1",
+      "Source": "C:\\Program Files\\nodejs\\npm.ps1"
+    },
+    {
+      "Name": "codex.exe",
+      "Source": "C:\\Users\\Kinan\\AppData\\Local\\OpenAI\\Codex\\bin\\9614f1d9b40d9c4f\\codex.exe"
+    }
+  ],
+  "unity_hub_exists": false,
+  "unity_editors": [],
+  "model": "Not exposed by a trusted runtime query; no override performed",
+  "execution": "Local Windows shell; original USB files accessible",
+  "outside_workspace": "Installed programs read/executed from C:. Codex host session storage is host-managed; CODEX_HOME not changed. No intentional project writes to C:."
+}

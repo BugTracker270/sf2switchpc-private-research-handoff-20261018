@@ -1,0 +1,17 @@
+{
+  "status": "PASS_FROZEN_V38_THREE_TOOL_ASSEMBLIES",
+  "files": [
+    {
+      "path": "analysis\\il2cpp\\virtual-companion-copy-v38-tool-binaries\\Cpp2IL.Core.dll",
+      "sha256": "197403735d374bdde681ad203cdb3eb18e8cd9eef01897908a8c4f9e786ad99a"
+    },
+    {
+      "path": "analysis\\il2cpp\\virtual-companion-copy-v38-tool-binaries\\Cpp2IL.dll",
+      "sha256": "adc6112c4c4eaf9d413cef1769315ca1980b68787ea6e3a2de9254ef146399f3"
+    },
+    {
+      "path": "analysis\\il2cpp\\virtual-companion-copy-v38-tool-binaries\\LibCpp2IL.dll",
+      "sha256": "c15339ded4039f7aaf827c80db38788a02ac3e86a016e24bcdefc9ef515d52df"
+    }
+  ]
+}

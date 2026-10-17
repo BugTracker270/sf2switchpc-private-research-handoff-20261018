@@ -1,0 +1,425 @@
+{
+  "status": "METHOD_GROUPED_ADDITION_CANDIDATES_UNATTRIBUTED",
+  "before_run": "nso-assembly-leaf-getter-v39",
+  "after_run": "nso-object-isinst-abi-v40",
+  "original_file_group_growth": 8,
+  "method_group_growth": 8,
+  "groups": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "file": "BestHTTP/Authentication/Digest.cs",
+      "code": "CS0165",
+      "message": "Use of unassigned local variable 'obj25'",
+      "declaration_candidate": "public string GenerateResponseHeader(HTTPRequest request, Credentials credentials)",
+      "added_multiplicity": 1,
+      "before_method_occurrences": 0,
+      "after_method_occurrences": 1,
+      "after_location_candidates": [
+        {
+          "file": "BestHTTP/Authentication/Digest.cs",
+          "line": 803,
+          "column": 10,
+          "code": "CS0165",
+          "message": "Use of unassigned local variable 'obj25'",
+          "nearest_declaration_candidate": {
+            "line": 195,
+            "text": "public string GenerateResponseHeader(HTTPRequest request, Credentials credentials)"
+          }
+        }
+      ],
+      "before_location_candidates": [],
+      "uniquely_new_method_message_key": true
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "file": "Newtonsoft/Json/Converters/StringEnumConverter.cs",
+      "code": "CS0030",
+      "message": "Cannot convert type 'string*' to 'object'",
+      "declaration_candidate": "private BidirectionalDictionary<string, string> GetEnumNameMap(Type t)",
+      "added_multiplicity": 2,
+      "before_method_occurrences": 0,
+      "after_method_occurrences": 2,
+      "after_location_candidates": [
+        {
+          "file": "Newtonsoft/Json/Converters/StringEnumConverter.cs",
+          "line": 382,
+          "column": 22,
+          "code": "CS0030",
+          "message": "Cannot convert type 'string*' to 'object'",
+          "nearest_declaration_candidate": {
+            "line": 271,
+            "text": "private unsafe BidirectionalDictionary<string, string> GetEnumNameMap(Type t)"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Converters/StringEnumConverter.cs",
+          "line": 389,
+          "column": 16,
+          "code": "CS0030",
+          "message": "Cannot convert type 'string*' to 'object'",
+          "nearest_declaration_candidate": {
+            "line": 271,
+            "text": "private unsafe BidirectionalDictionary<string, string> GetEnumNameMap(Type t)"
+          }
+        }
+      ],
+      "before_location_candidates": [],
+      "uniquely_new_method_message_key": true
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "file": "CocosAnimationData.cs",
+      "code": "CS0030",
+      "message": "Cannot convert type 'object' to 'int*'",
+      "declaration_candidate": "private SpriteFrameCocos ParseFrame(XmlNode p_frame, string p_name)",
+      "added_multiplicity": 1,
+      "before_method_occurrences": 0,
+      "after_method_occurrences": 1,
+      "after_location_candidates": [
+        {
+          "file": "CocosAnimationData.cs",
+          "line": 958,
+          "column": 104,
+          "code": "CS0030",
+          "message": "Cannot convert type 'object' to 'int*'",
+          "nearest_declaration_candidate": {
+            "line": 699,
+            "text": "private unsafe SpriteFrameCocos ParseFrame(XmlNode p_frame, string p_name)"
+          }
+        }
+      ],
+      "before_location_candidates": [],
+      "uniquely_new_method_message_key": true
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "file": "Nekki/SF2/Core/API/ListSF.cs",
+      "code": "CS0019",
+      "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+      "declaration_candidate": "public XmlNode GetFightNodeFromSlot(int slot, string fightIDS)",
+      "added_multiplicity": 1,
+      "before_method_occurrences": 3,
+      "after_method_occurrences": 4,
+      "after_location_candidates": [
+        {
+          "file": "Nekki/SF2/Core/API/ListSF.cs",
+          "line": 10086,
+          "column": 19,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 10010,
+            "text": "public unsafe XmlNode GetFightNodeFromSlot(int slot, string fightIDS)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/API/ListSF.cs",
+          "line": 10115,
+          "column": 21,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 10010,
+            "text": "public unsafe XmlNode GetFightNodeFromSlot(int slot, string fightIDS)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/API/ListSF.cs",
+          "line": 10155,
+          "column": 21,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 10010,
+            "text": "public unsafe XmlNode GetFightNodeFromSlot(int slot, string fightIDS)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/API/ListSF.cs",
+          "line": 10193,
+          "column": 23,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 10010,
+            "text": "public unsafe XmlNode GetFightNodeFromSlot(int slot, string fightIDS)"
+          }
+        }
+      ],
+      "before_location_candidates": [
+        {
+          "file": "Nekki/SF2/Core/API/ListSF.cs",
+          "line": 10095,
+          "column": 19,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 10017,
+            "text": "public unsafe XmlNode GetFightNodeFromSlot(int slot, string fightIDS)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/API/ListSF.cs",
+          "line": 10167,
+          "column": 21,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 10017,
+            "text": "public unsafe XmlNode GetFightNodeFromSlot(int slot, string fightIDS)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/API/ListSF.cs",
+          "line": 10205,
+          "column": 23,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 10017,
+            "text": "public unsafe XmlNode GetFightNodeFromSlot(int slot, string fightIDS)"
+          }
+        }
+      ],
+      "uniquely_new_method_message_key": false
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "file": "Nekki/SF2/Core/API/Roster.cs",
+      "code": "CS0019",
+      "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+      "declaration_candidate": "public void RemoveBattle(RosterBattle rosterBattle)",
+      "added_multiplicity": 1,
+      "before_method_occurrences": 1,
+      "after_method_occurrences": 2,
+      "after_location_candidates": [
+        {
+          "file": "Nekki/SF2/Core/API/Roster.cs",
+          "line": 3499,
+          "column": 18,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 3452,
+            "text": "public unsafe void RemoveBattle(RosterBattle rosterBattle)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/API/Roster.cs",
+          "line": 3530,
+          "column": 21,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 3452,
+            "text": "public unsafe void RemoveBattle(RosterBattle rosterBattle)"
+          }
+        }
+      ],
+      "before_location_candidates": [
+        {
+          "file": "Nekki/SF2/Core/API/Roster.cs",
+          "line": 3525,
+          "column": 21,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 3453,
+            "text": "public unsafe void RemoveBattle(RosterBattle rosterBattle)"
+          }
+        }
+      ],
+      "uniquely_new_method_message_key": false
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "file": "Nekki/SF2/Core/MultiplayerSF/RaidConfigParser.cs",
+      "code": "CS0019",
+      "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+      "declaration_candidate": "public static RaidConfig.RaidQuests ParseRaidQuests(XmlDocument doc)",
+      "added_multiplicity": 1,
+      "before_method_occurrences": 3,
+      "after_method_occurrences": 4,
+      "after_location_candidates": [
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidConfigParser.cs",
+          "line": 842,
+          "column": 20,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 674,
+            "text": "public unsafe static RaidConfig.RaidQuests ParseRaidQuests(XmlDocument doc)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidConfigParser.cs",
+          "line": 946,
+          "column": 22,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 674,
+            "text": "public unsafe static RaidConfig.RaidQuests ParseRaidQuests(XmlDocument doc)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidConfigParser.cs",
+          "line": 985,
+          "column": 23,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 674,
+            "text": "public unsafe static RaidConfig.RaidQuests ParseRaidQuests(XmlDocument doc)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidConfigParser.cs",
+          "line": 1081,
+          "column": 22,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 674,
+            "text": "public unsafe static RaidConfig.RaidQuests ParseRaidQuests(XmlDocument doc)"
+          }
+        }
+      ],
+      "before_location_candidates": [
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidConfigParser.cs",
+          "line": 844,
+          "column": 20,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 677,
+            "text": "public unsafe static RaidConfig.RaidQuests ParseRaidQuests(XmlDocument doc)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidConfigParser.cs",
+          "line": 948,
+          "column": 22,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 677,
+            "text": "public unsafe static RaidConfig.RaidQuests ParseRaidQuests(XmlDocument doc)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidConfigParser.cs",
+          "line": 1083,
+          "column": 22,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 677,
+            "text": "public unsafe static RaidConfig.RaidQuests ParseRaidQuests(XmlDocument doc)"
+          }
+        }
+      ],
+      "uniquely_new_method_message_key": false
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "file": "Nekki/SF2/Core/MultiplayerSF/RaidPerksContainer.cs",
+      "code": "CS0019",
+      "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+      "declaration_candidate": "public bool Parse(XmlDocument doc)",
+      "added_multiplicity": 1,
+      "before_method_occurrences": 3,
+      "after_method_occurrences": 4,
+      "after_location_candidates": [
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidPerksContainer.cs",
+          "line": 139,
+          "column": 21,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 55,
+            "text": "public unsafe bool Parse(XmlDocument doc)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidPerksContainer.cs",
+          "line": 168,
+          "column": 23,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 55,
+            "text": "public unsafe bool Parse(XmlDocument doc)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidPerksContainer.cs",
+          "line": 254,
+          "column": 21,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 55,
+            "text": "public unsafe bool Parse(XmlDocument doc)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidPerksContainer.cs",
+          "line": 287,
+          "column": 22,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 55,
+            "text": "public unsafe bool Parse(XmlDocument doc)"
+          }
+        }
+      ],
+      "before_location_candidates": [
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidPerksContainer.cs",
+          "line": 137,
+          "column": 20,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 55,
+            "text": "public unsafe bool Parse(XmlDocument doc)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidPerksContainer.cs",
+          "line": 248,
+          "column": 21,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 55,
+            "text": "public unsafe bool Parse(XmlDocument doc)"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidPerksContainer.cs",
+          "line": 281,
+          "column": 22,
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "nearest_declaration_candidate": {
+            "line": 55,
+            "text": "public unsafe bool Parse(XmlDocument doc)"
+          }
+        }
+      ],
+      "uniquely_new_method_message_key": false
+    }
+  ],
+  "location_report_sha256": "8b96b28ed39e7e66bfad06016ff2ccf52a5b9fac829f161f3d8965a3de069fb9",
+  "source_sha256": "2fd39cee302c77555fb16c84becfd8b0678fae2b4d43cdb1c239b53073d5b6f8",
+  "source_modified": false,
+  "core_modified": false,
+  "native_or_cil_semantics_verified": false,
+  "limits": "Textual declaration candidates are not verified method owners. Existing message growth keeps every before/after location within the same declaration. A source body/CIL/native comparison is still required, including renamed diagnostics and pointer-result control uses. No occurrence is arbitrarily selected from a growing multiplicity."
+}

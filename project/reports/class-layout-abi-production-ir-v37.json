@@ -1,0 +1,549 @@
+{
+  "status": "PASS_SCOPED_CLASS_LAYOUT_NATIVE_ABI_THROUGH_PRODUCTION_EMITTER_INPUT",
+  "checks": 25,
+  "core_sha256": "014d9b9698ae1448e9a14a41c132fae3ed7efc7023fef4932dae2da8196c9a49",
+  "source_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "source_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "uncompressed_original_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "derived_loaded_image_sha256": "b84d5b3eb4a3a12d3260b06840414445fb2d2deff54d1ba84876e8fa28549449",
+  "derived_loaded_image_bytes": 74363922,
+  "helper_rva": "0xB04F60",
+  "helper_exact_bytes": 140,
+  "helper_sha256": "496575374643a8ca7a9f1181d685de0fa4ac68574a3cc50c315d52d74a4d7dd3",
+  "method": "BestHTTP.WebSocket.Frames.WebSocketFrameReader::Read",
+  "stages": [
+    {
+      "stage": "raw",
+      "helper_calls": [
+        {
+          "index": 67,
+          "original_raw_index": 67,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "register",
+              "Name": "X0",
+              "Version": -1
+            },
+            {
+              "kind": "register",
+              "Name": "X0",
+              "Version": -1
+            }
+          ]
+        },
+        {
+          "index": 123,
+          "original_raw_index": 123,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "register",
+              "Name": "X0",
+              "Version": -1
+            },
+            {
+              "kind": "register",
+              "Name": "X0",
+              "Version": -1
+            }
+          ]
+        },
+        {
+          "index": 182,
+          "original_raw_index": 182,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "register",
+              "Name": "X0",
+              "Version": -1
+            },
+            {
+              "kind": "register",
+              "Name": "X0",
+              "Version": -1
+            }
+          ]
+        },
+        {
+          "index": 213,
+          "original_raw_index": 213,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "register",
+              "Name": "X0",
+              "Version": -1
+            },
+            {
+              "kind": "register",
+              "Name": "X0",
+              "Version": -1
+            }
+          ]
+        }
+      ],
+      "proven_virtual_calls": [],
+      "companion260_memory_loads": 2,
+      "unresolved_indirect_calls": [
+        26,
+        36,
+        195,
+        231
+      ]
+    },
+    {
+      "stage": "ssa",
+      "helper_calls": [
+        {
+          "index": 123,
+          "original_raw_index": 123,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v79",
+              "register": "X0",
+              "version": 39,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "local",
+              "Name": "v78",
+              "register": "X0",
+              "version": 38,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 67,
+          "original_raw_index": 67,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v84",
+              "register": "X0",
+              "version": 50,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "local",
+              "Name": "v83",
+              "register": "X0",
+              "version": 49,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 182,
+          "original_raw_index": 182,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v133",
+              "register": "X0",
+              "version": 33,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "local",
+              "Name": "v132",
+              "register": "X0",
+              "version": 32,
+              "type": null
+            }
+          ]
+        },
+        {
+          "index": 213,
+          "original_raw_index": 213,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v183",
+              "register": "X0",
+              "version": 10,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "local",
+              "Name": "v182",
+              "register": "X0",
+              "version": 9,
+              "type": null
+            }
+          ]
+        }
+      ],
+      "proven_virtual_calls": [],
+      "companion260_memory_loads": 2,
+      "unresolved_indirect_calls": [
+        26,
+        36,
+        195,
+        231
+      ]
+    },
+    {
+      "stage": "after-type",
+      "helper_calls": [
+        {
+          "index": 123,
+          "original_raw_index": 123,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v79",
+              "register": "X0",
+              "version": 39,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "local",
+              "Name": "v78",
+              "register": "X0",
+              "version": 38,
+              "type": "Il2CppClass\u003CSystem.Byte[]\u003E"
+            }
+          ]
+        },
+        {
+          "index": 67,
+          "original_raw_index": 67,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v84",
+              "register": "X0",
+              "version": 50,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "local",
+              "Name": "v83",
+              "register": "X0",
+              "version": 49,
+              "type": "Il2CppClass\u003CSystem.Byte[]\u003E"
+            }
+          ]
+        },
+        {
+          "index": 182,
+          "original_raw_index": 182,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v133",
+              "register": "X0",
+              "version": 33,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "local",
+              "Name": "v132",
+              "register": "X0",
+              "version": 32,
+              "type": "Il2CppClass\u003CSystem.Byte[]\u003E"
+            }
+          ]
+        },
+        {
+          "index": 213,
+          "original_raw_index": 213,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v183",
+              "register": "X0",
+              "version": 10,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "local",
+              "Name": "v182",
+              "register": "X0",
+              "version": 9,
+              "type": "Il2CppClass\u003CSystem.Byte[]\u003E"
+            }
+          ]
+        }
+      ],
+      "proven_virtual_calls": [
+        26,
+        36
+      ],
+      "companion260_memory_loads": 2,
+      "unresolved_indirect_calls": [
+        195,
+        231
+      ]
+    },
+    {
+      "stage": "simplified-ssa",
+      "helper_calls": [
+        {
+          "index": 123,
+          "original_raw_index": 123,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v79",
+              "register": "X0",
+              "version": 39,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "type",
+              "FullName": "System.Byte[]"
+            }
+          ]
+        },
+        {
+          "index": 67,
+          "original_raw_index": 67,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v84",
+              "register": "X0",
+              "version": 50,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "type",
+              "FullName": "System.Byte[]"
+            }
+          ]
+        },
+        {
+          "index": 182,
+          "original_raw_index": 182,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v133",
+              "register": "X0",
+              "version": 33,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "type",
+              "FullName": "System.Byte[]"
+            }
+          ]
+        },
+        {
+          "index": 213,
+          "original_raw_index": 213,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v183",
+              "register": "X0",
+              "version": 10,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "type",
+              "FullName": "System.Byte[]"
+            }
+          ]
+        }
+      ],
+      "proven_virtual_calls": [
+        26,
+        36
+      ],
+      "companion260_memory_loads": 1,
+      "unresolved_indirect_calls": [
+        195,
+        231
+      ]
+    },
+    {
+      "stage": "emitter-input",
+      "helper_calls": [
+        {
+          "index": 123,
+          "original_raw_index": 123,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v79",
+              "register": "X0",
+              "version": 39,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "type",
+              "FullName": "System.Byte[]"
+            }
+          ]
+        },
+        {
+          "index": 67,
+          "original_raw_index": 67,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v84",
+              "register": "X0",
+              "version": 50,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "type",
+              "FullName": "System.Byte[]"
+            }
+          ]
+        },
+        {
+          "index": 182,
+          "original_raw_index": 182,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v133",
+              "register": "X0",
+              "version": 33,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "type",
+              "FullName": "System.Byte[]"
+            }
+          ]
+        },
+        {
+          "index": 213,
+          "original_raw_index": 213,
+          "opcode": "Call",
+          "operands": [
+            {
+              "kind": "immediate",
+              "value": "0xB04F60"
+            },
+            {
+              "kind": "local",
+              "Name": "v183",
+              "register": "X0",
+              "version": 10,
+              "type": "System.Boolean"
+            },
+            {
+              "kind": "type",
+              "FullName": "System.Byte[]"
+            }
+          ]
+        }
+      ],
+      "proven_virtual_calls": [
+        26,
+        36
+      ],
+      "companion260_memory_loads": 1,
+      "unresolved_indirect_calls": [
+        195,
+        231
+      ]
+    }
+  ],
+  "game_methods_invoked": 0,
+  "helper_semantics_recovered": false,
+  "full_clean_decompile_ready": false,
+  "portable_game_ready": false,
+  "limits": "ABI-only correction retains all four numeric unresolved helper calls and native Boolean results. Actual helper effects are not implemented or executed. Original native pointer widths and original call semantics require separate evidence; no source or recovered CIL is edited."
+}

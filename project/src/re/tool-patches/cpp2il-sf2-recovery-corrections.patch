@@ -1,0 +1,1387 @@
+diff --git a/Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs b/Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs
+--- a/Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs
++++ b/Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs
+@@ -40,11 +40,16 @@
+ 
+     protected override bool HiddenBufferConsumesArgumentSlot => false;
+ 
++    // IL2CPP metadata <=24 retains a dummy object argument for static methods.
++    // It occupies X0, but is not a managed parameter. Keep FP registers independent.
++    protected override bool HasStaticDummyObjectArgument(MethodAnalysisContext ctx)
++        => ctx.IsStatic && ctx.AppContext.MetadataVersion <= 24;
++
+     public override IOperand[] ResolveForManaged(MethodAnalysisContext ctx)
+     {
+         var args = new List<IOperand>();
+ 
+-        var integer = 0;
++        var integer = HasStaticDummyObjectArgument(ctx) ? 1 : 0;
+         var floating = 0;
+         var stack = 0;
+ 
+diff --git a/Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs b/Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs
+--- a/Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs
++++ b/Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs
+@@ -27,6 +27,8 @@
+ 
+     // false when the return buffer pointer lives outside the argument registers (e.g. arm64 uses x8)
+     protected virtual bool HiddenBufferConsumesArgumentSlot => true;
++
++    protected virtual bool HasStaticDummyObjectArgument(MethodAnalysisContext ctx) => false;
+ 
+     public IOperand[] ResolveForUnmanaged(ApplicationAnalysisContext app, ulong target)
+     {
+@@ -68,6 +70,8 @@
+ 
+         var slots = new List<(bool IsFloat, bool Emit)>();
+         if (ReturnsViaHiddenBuffer(resolved) && HiddenBufferConsumesArgumentSlot)
++            slots.Add((false, false));
++        if (HasStaticDummyObjectArgument(resolved))
+             slots.Add((false, false));
+         if (!resolved.IsStatic)
+             slots.Add((false, true));
+diff --git a/Cpp2IL.Core/Analysis/MetadataAddressResolver.cs b/Cpp2IL.Core/Analysis/MetadataAddressResolver.cs
+new file mode 100644
+--- /dev/null
++++ b/Cpp2IL.Core/Analysis/MetadataAddressResolver.cs
+@@ -0,0 +1,47 @@
++using System;
++using System.Collections.Generic;
++using Cpp2IL.Core.ISIL;
++
++namespace Cpp2IL.Core.Analysis;
++
++/// <summary>Keep the address of a metadata load distinct from a GOT pointer load.</summary>
++public static class MetadataAddressResolver
++{
++    public static ulong? LoadAddress(MemoryOperand memory, Dictionary<LocalVariable, Instruction> definitions,
++        Func<ulong, ulong?> readKnownPointer)
++        => LoadAddress(memory, definitions, readKnownPointer, new HashSet<LocalVariable>(), 0);
++
++    private static ulong? LoadAddress(MemoryOperand memory, Dictionary<LocalVariable, Instruction> definitions,
++        Func<ulong, ulong?> readKnownPointer, HashSet<LocalVariable> visiting, int depth)
++    {
++        if (depth > 32 || memory.Index != null || memory.Scale != 0)
++            return null;
++        if (memory.Base == null)
++            return unchecked((ulong)memory.Addend);
++        var value = Value(memory.Base, definitions, readKnownPointer, visiting, depth + 1);
++        return value.HasValue ? unchecked(value.Value + (ulong)memory.Addend) : null;
++    }
++
++    private static ulong? Value(IOperand operand, Dictionary<LocalVariable, Instruction> definitions,
++        Func<ulong, ulong?> readKnownPointer, HashSet<LocalVariable> visiting, int depth)
++    {
++        if (depth > 32)
++            return null;
++        if (operand is Immediate immediate)
++            return immediate.UnsignedValue;
++        if (operand is LocalVariable local && visiting.Add(local))
++        {
++            try
++            {
++                if (definitions.TryGetValue(local, out var definition)
++                    && definition is { OpCode: OpCode.Move, Operands: [_, var source] })
++                    return Value(source, definitions, readKnownPointer, visiting, depth + 1);
++            }
++            finally { visiting.Remove(local); }
++        }
++        if (operand is MemoryOperand memory
++            && LoadAddress(memory, definitions, readKnownPointer, visiting, depth + 1) is { } address)
++            return readKnownPointer(address);
++        return null;
++    }
++}
+diff --git a/Cpp2IL.Core/Analysis/MetadataResolver.cs b/Cpp2IL.Core/Analysis/MetadataResolver.cs
+--- a/Cpp2IL.Core/Analysis/MetadataResolver.cs
++++ b/Cpp2IL.Core/Analysis/MetadataResolver.cs
+@@ -1,4 +1,5 @@
+ using System.Collections.Generic;
++using System;
+ using System.Linq;
+ using System.Reflection;
+ using Cpp2IL.Core.Extensions;
+@@ -8,6 +9,7 @@
+ using Cpp2IL.Core.Model.Contexts;
+ using Cpp2IL.Core.Utils;
+ using LibCpp2IL;
++using LibCpp2IL.NintendoSwitch;
+ 
+ namespace Cpp2IL.Core.Analysis;
+ 
+@@ -67,6 +69,25 @@
+     private static void ResolveMetadataUsages(MethodAnalysisContext method)
+     {
+         var libContext = method.AppContext.LibCpp2IlContext;
++        var definitions = new Dictionary<LocalVariable, Instruction>();
++        foreach (var candidate in method.ControlFlowGraph!.Instructions)
++            if (candidate.Destination is LocalVariable destination)
++                definitions[destination] = candidate;
++
++        // A Switch GOT load yields the address of a metadata slot, not its runtime value.
++        // Only follow file-backed pointers which land on a registered legacy metadata usage.
++        ulong? ReadKnownNsoMetadataPointer(ulong address)
++        {
++            if (method.AppContext.Binary is not NsoFile binary || method.AppContext.MetadataVersion >= 27f
++                || !binary.TryMapVirtualAddressToRaw(address, out _))
++                return null;
++            try
++            {
++                var pointer = binary.ReadPointerAtVirtualAddress(address);
++                return libContext.GetAnyGlobalByAddress(pointer) != null ? pointer : null;
++            }
++            catch (Exception) { return null; } // Keep the original diagnostic for unreadable pointers.
++        }
+ 
+         foreach (var instruction in method.ControlFlowGraph!.Instructions)
+         {
+@@ -78,7 +99,7 @@
+ 
+             var address = instruction.Operands[1] switch
+             {
+-                MemoryOperand { Base: null, Index: null, Scale: 0 } memory => (ulong)memory.Addend,
++                MemoryOperand memory => MetadataAddressResolver.LoadAddress(memory, definitions, ReadKnownNsoMetadataPointer) ?? 0ul,
+                 Immediate immediate => immediate.UnsignedValue,
+                 _ => 0ul,
+             };
+@@ -238,6 +259,10 @@
+                     }
+                     else
+                     {
++                        // The strict legacy witness returns a constructed
++                        // exception; discarding its result is not a throw.
++                        if (method.AppContext.Binary is NsoFile && method.AppContext.MetadataVersion == 24f)
++                            continue;
+                         callInstruction.OpCode = OpCode.Throw;
+                         callInstruction.SetOperands(thrown);
+                     }
+@@ -547,7 +572,8 @@
+     }
+ 
+     // Offset of Il2CppClass::vtable, VirtualInvokeData entries of {methodPtr, MethodInfo*}.
+-    // TODO this is almost certainly not correct on every version
++    // The pre-24.2 64-bit class has a 0x128 vtable; using 0x138 shifts
++    // every legacy virtual dispatch by one slot (e.g. BinaryReader reads).
+     private const long VTableOffset64 = 0x138;
+     private const long VTableOffset32 = 0xC0;
+     
+@@ -556,7 +582,9 @@
+     public static bool ResolveVirtualCalls(MethodAnalysisContext method)
+     {
+         var pointerSize = method.AppContext.Binary.PointerSizeBytes;
+-        var vtableOffset = pointerSize == 8 ? VTableOffset64 : VTableOffset32;
++        var vtableOffset = pointerSize == 8
++            ? Il2CppClassUsefulOffsets.GetVtableOffset(method.AppContext.MetadataVersion, false)
++            : VTableOffset32;
+         var invokeDataSize = 2L * pointerSize;
+         var changed = false;
+ 
+diff --git a/Cpp2IL.Core/Analysis/InterfaceDispatchRecovery.cs b/Cpp2IL.Core/Analysis/InterfaceDispatchRecovery.cs
+--- a/Cpp2IL.Core/Analysis/InterfaceDispatchRecovery.cs
++++ b/Cpp2IL.Core/Analysis/InterfaceDispatchRecovery.cs
+@@ -55,7 +55,6 @@
+             DeadCodeEliminator.Run(method);
+     }
+ 
+-    private const long VTableOffset = 0x138;
+     private const int InvokeDataShift = 4; // sizeof(VirtualInvokeData) == 16
+ 
+     private record struct Match(
+@@ -107,7 +106,8 @@
+         var slot = (int)slotImmediate.Value;
+ 
+         // fast path computes klass + vtableOffset + ((entryOffset + slot) << 4) (the +slot folds away for slot 0)
+-        if (MatchVTableEntryChain(definitions, vtableEntry, slot) is not { } klassLocal)
++        var vtableOffset = Il2CppClassUsefulOffsets.GetVtableOffset(method.AppContext.MetadataVersion, false);
++        if (MatchVTableEntryChain(definitions, vtableEntry, slot, vtableOffset) is not { } klassLocal)
+             return null;
+ 
+         if (ResolveInterfaceSlot(declaringInterface, slot) is not { } resolved)
+@@ -119,7 +119,7 @@
+         return new Match(resolved, phi, merge, slowCall, klassLocal);
+     }
+ 
+-    private static LocalVariable? MatchVTableEntryChain(Dictionary<LocalVariable, Instruction> definitions, Instruction? vtableEntry, int slot)
++    private static LocalVariable? MatchVTableEntryChain(Dictionary<LocalVariable, Instruction> definitions, Instruction? vtableEntry, int slot, int vtableOffset)
+     {
+         if (vtableEntry is not { OpCode: OpCode.Add, Operands: [_, LocalVariable addLeft, LocalVariable addRight] })
+             return null;
+@@ -131,7 +131,8 @@
+         if (Definition(definitions, klassCandidate) is not { OpCode: OpCode.Move, Operands: [_, MemoryOperand { Index: null, Scale: 0, Addend: 0, Base: LocalVariable }] })
+             return null;
+ 
+-        if (ChaseCopies(definitions, sum) is not { OpCode: OpCode.Add, Operands: [_, LocalVariable shifted, Immediate { Value: VTableOffset }] })
++        if (ChaseCopies(definitions, sum) is not { OpCode: OpCode.Add, Operands: [_, LocalVariable shifted, Immediate offset] }
++            || offset.Value != vtableOffset)
+             return null;
+ 
+         if (ChaseCopies(definitions, shifted) is not { OpCode: OpCode.ShiftLeft, Operands: [_, LocalVariable index, Immediate { Value: InvokeDataShift }] })
+diff --git a/Cpp2IL.Core/Utils/LegacyArm64AllocationPattern.cs b/Cpp2IL.Core/Utils/LegacyArm64AllocationPattern.cs
+new file mode 100644
+--- /dev/null
++++ b/Cpp2IL.Core/Utils/LegacyArm64AllocationPattern.cs
+@@ -0,0 +1,131 @@
++using System;
++using System.Buffers.Binary;
++using System.Collections.Generic;
++
++namespace Cpp2IL.Core.Utils;
++
++/// <summary>Conservative witness for stripped legacy ARM64 singleton allocation.</summary>
++public static class LegacyArm64AllocationPattern
++{
++    public static bool IsImmediateReturn(ReadOnlySpan<byte> bytes) =>
++        bytes.Length >= 4 && BinaryPrimitives.ReadUInt32LittleEndian(bytes[..4]) == 0xD65F03C0;
++
++    public readonly record struct ClassGuard(ulong Branch, ulong Skip, ulong Target)
++    {
++        public ulong Start => Branch - 4;
++    }
++
++    public static List<ulong> ClassInitTargets(ReadOnlySpan<byte> bytes, ulong start)
++    {
++        var result = new List<ulong>();
++        foreach (var guard in ClassInitSites(bytes, start)) result.Add(guard.Target);
++        return result;
++    }
++
++    public static List<ClassGuard> ClassInitSites(ReadOnlySpan<byte> bytes, ulong start)
++    {
++        var targets = new List<ClassGuard>();
++        if (bytes.Length % 4 != 0 || bytes.Length > 65536) return targets;
++        for (var i = 4; i + 20 <= bytes.Length; i += 4)
++        {
++            if (!FindClassLoad(bytes, i, out var loadClass)) continue;
++            var flag = BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(i, 4));
++            var testFlag = BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(i + 4, 4));
++            var finished = BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(i + 8, 4));
++            var testFinished = BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(i + 12, 4));
++            var call = BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(i + 16, 4));
++            // klass->has_cctor bit followed by klass->cctor_finished. X0 stays
++            // unchanged and is the initializer's class argument.
++            if ((flag & 0xffc003e0) != 0x39400000 || ((flag >> 10) & 0xfff) != 0x122
++                || (testFlag & 0xfff80000) != 0x36000000 || (testFlag & 31) != (flag & 31)
++                || (finished & 0xffc003e0) != 0xb9400000 || ((finished >> 10) & 0xfff) * 4 != 0xd4
++                || (testFinished & 0xff000000) != 0x35000000 || (testFinished & 31) != (finished & 31)
++                || (call & 0xfc000000) != 0x94000000) continue;
++            var skip = Target(start + (ulong)i + 4, (testFlag >> 5) & 0x3fff, 14);
++            if (skip != Target(start + (ulong)i + 12, (testFinished >> 5) & 0x7ffff, 19)) continue;
++            if (skip > start + (ulong)bytes.Length) continue;
++            if (skip != start + (ulong)i + 20 && skip != start + (ulong)i + 24) continue;
++            // Some instances reload the class after the runtime call, which
++            // clobbers X0. Never skip an arbitrary intervening instruction.
++            if (skip == start + (ulong)i + 24
++                && BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(i + 20, 4)) != loadClass) continue;
++            targets.Add(new ClassGuard(start + (ulong)i + 4, skip, Target(start + (ulong)i + 16, call & 0x3ffffff, 26)));
++        }
++        return targets;
++    }
++
++    private static bool FindClassLoad(ReadOnlySpan<byte> bytes, int flagOffset, out uint classLoad)
++    {
++        classLoad = 0;
++        // Scheduling can place ordinary loads and stack-zero stores between
++        // the class load and its flag test. Preserve those instructions; only
++        // accept this small, explicit set which cannot change X0 or branch.
++        for (var offset = flagOffset - 4; offset >= Math.Max(0, flagOffset - 16); offset -= 4)
++        {
++            var word = BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(offset, 4));
++            if (Load(word, out var destination, out _, out var addend))
++            {
++                if (destination != 0) continue;
++                if (addend != 0) return false;
++                classLoad = word;
++                return true;
++            }
++            // STR XZR,[SP,#imm], no writeback; ADRP to a register other than X0.
++            if ((word & 0xffc003ff) == 0xf90003ff
++                || ((word & 0x9f000000) == 0x90000000 && (word & 31) != 0)) continue;
++            return false;
++        }
++        return false;
++    }
++
++    private static ulong Target(ulong pc, uint immediate, int bits)
++    {
++        var signed = ((int)(immediate << (32 - bits))) >> (32 - bits);
++        return unchecked((ulong)((long)pc + signed * 4L));
++    }
++
++    public static ulong? Match(ReadOnlySpan<byte> bytes, ulong start, ulong initializeMetadata, ulong objectConstructor)
++    {
++        if (bytes.Length % 4 != 0 || bytes.Length < 40 || bytes.Length > 512 || initializeMetadata == 0 || objectConstructor == 0)
++            return null;
++        var words = new uint[bytes.Length / 4];
++        var calls = new List<(int Index, ulong Target)>();
++        for (var i = 0; i < words.Length; i++)
++        {
++            var word = words[i] = BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(i * 4, 4));
++            if ((word & 0xfc000000) != 0x94000000) continue;
++            var immediate = (int)(word & 0x03ffffff);
++            if ((immediate & 0x02000000) != 0) immediate |= unchecked((int)0xfc000000);
++            calls.Add((i, unchecked((ulong)((long)start + i * 4L + immediate * 4L))));
++        }
++        if (calls.Count != 3 || calls[0].Target != initializeMetadata || calls[2].Target != objectConstructor)
++            return null;
++        var allocation = calls[1]; var ctor = calls[2];
++        if (allocation.Target == initializeMetadata || allocation.Target == objectConstructor || allocation.Index < 1 || ctor.Index + 3 >= words.Length || ctor.Index != allocation.Index + 3)
++            return null;
++        // Class pointer is the sole real input; return value survives the empty
++        // Object constructor and is stored in this class's singleton static.
++        var classLoad = words[allocation.Index - 1];
++        if (!Load(classLoad, out var register, out var classSlotRegister, out var offset) || register != 0 || offset != 0)
++            return null;
++        if (words[allocation.Index + 1] != 0xaa1f03e1) return null; // mov x1,xzr
++        var save = words[allocation.Index + 2];
++        if ((save & 0xffffffe0) != 0xaa0003e0) return null; // mov saved,x0
++        var saved = save & 31;
++        if (saved is < 19 or > 28) return null;
++        if (!Load(words[ctor.Index + 1], out var klass, out var slot, out offset) || slot != classSlotRegister || offset != 0)
++            return null;
++        if (!Load(words[ctor.Index + 2], out var statics, out var klassSource, out offset) || klassSource != klass || offset != 0xb8)
++            return null;
++        var store = words[ctor.Index + 3];
++        if ((store & 0xffc00000) != 0xf9000000 || (store & 31) != saved || ((store >> 5) & 31) != statics || ((store >> 10) & 0xfff) != 0)
++            return null;
++        return allocation.Target;
++    }
++
++    private static bool Load(uint instruction, out uint destination, out uint source, out uint offset)
++    {
++        destination = instruction & 31; source = (instruction >> 5) & 31; offset = ((instruction >> 10) & 0xfff) * 8;
++        return (instruction & 0xffc00000) == 0xf9400000;
++    }
++}
+diff --git a/Cpp2IL.Core/Il2CppApiFunctions/NewArm64KeyFunctionAddresses.cs b/Cpp2IL.Core/Il2CppApiFunctions/NewArm64KeyFunctionAddresses.cs
+--- a/Cpp2IL.Core/Il2CppApiFunctions/NewArm64KeyFunctionAddresses.cs
++++ b/Cpp2IL.Core/Il2CppApiFunctions/NewArm64KeyFunctionAddresses.cs
+@@ -1,13 +1,175 @@
+ using System.Collections.Generic;
+ using System.Linq;
++using System.Buffers.Binary;
+ using Disarm;
+ using Cpp2IL.Core.Logging;
+ using Cpp2IL.Core.Utils;
++using LibCpp2IL.NintendoSwitch;
+ 
+ namespace Cpp2IL.Core.Il2CppApiFunctions;
+ 
+ public class NewArm64KeyFunctionAddresses : BaseKeyFunctionAddresses
+ {
++    protected override void AttemptInstructionAnalysisToFillGaps()
++    {
++        base.AttemptInstructionAnalysisToFillGaps();
++        if (_appContext.Binary is not NsoFile || _appContext.MetadataVersion < 24f || _appContext.MetadataVersion >= 24.2f) return;
++        RecoverLegacySingletonAllocation();
++        RecoverLegacyClassInit();
++        RecoverLegacyExceptionRaiser();
++        RecoverLegacyArrayAllocation();
++    }
++
++    private void RecoverLegacyArrayAllocation()
++    {
++        if (_appContext.MetadataVersion != 24f || il2cpp_vm_array_new_specific != 0 || il2cpp_array_new_specific != 0 || SzArrayNew != 0 || il2cpp_vm_exception_raise == 0) return;
++        var binary = _appContext.Binary;
++        var text = binary.GetVirtualAddressOfPrimaryExecutableSection();
++        var textEnd = text + (ulong)binary.GetEntirePrimaryExecutableSection().Length;
++        var cache = new Dictionary<ulong, bool>();
++        ulong? agreed = null;
++        foreach (var name in new[] { "String", "BitConverter", "Convert" })
++        {
++            var type = ReflectionCache.GetType(name, "System");
++            if (type?.Methods == null) return;
++            var candidates = new HashSet<ulong>();
++            foreach (var method in type.Methods.Where(m => m.MethodPointer != 0))
++            {
++                var next = _appContext.GetAddressOfNextFunctionStart(method.MethodPointer);
++                if (next <= method.MethodPointer || next - method.MethodPointer > 65536) continue;
++                if (!binary.TryMapVirtualAddressToRaw(method.MethodPointer, out var start) || !binary.TryMapVirtualAddressToRaw(next, out var end)
++                    || end <= start || end - start > 65536) continue;
++                var code = binary.GetRawBinaryContent().Slice((int)start, (int)(end - start));
++                for (var offset = 0; offset + 4 <= code.Length; offset += 4)
++                {
++                    var word = BinaryPrimitives.ReadUInt32LittleEndian(code[offset..]);
++                    if ((word & 0xfc000000) != 0x94000000) continue;
++                    var target = unchecked((ulong)((long)method.MethodPointer + offset + (((int)(word << 6)) >> 4)));
++                    if (target < text || target + 244 > textEnd || _appContext.MethodsByAddress.ContainsKey(target)) continue;
++                    if (!cache.TryGetValue(target, out var matches))
++                    {
++                        matches = binary.TryMapVirtualAddressToRaw(target, out var raw)
++                            && LegacyArm64ArrayAllocationPattern.Match(binary.GetRawBinaryContent().Slice((int)raw, 244), target, il2cpp_vm_exception_raise) != null;
++                        cache[target] = matches;
++                    }
++                    if (matches) candidates.Add(target);
++                }
++            }
++            if (candidates.Count != 1) return;
++            var candidate = candidates.Single();
++            if (agreed != null && candidate != agreed) return;
++            agreed = candidate;
++        }
++        if (agreed is not { } allocator) return;
++        il2cpp_vm_array_new_specific = allocator;
++        Logger.InfoNewline($"Recovered legacy NSO array allocation at 0x{allocator:X} from three corlib families and checked size/header/return flow.");
++    }
++
++    private void RecoverLegacyExceptionRaiser()
++    {
++        if (_appContext.MetadataVersion != 24f || il2cpp_vm_exception_raise != 0 || il2cpp_raise_exception != 0 || il2cpp_codegen_raise_exception != 0) return;
++        var binary = _appContext.Binary;
++        var text = binary.GetVirtualAddressOfPrimaryExecutableSection();
++        var textEnd = text + (ulong)binary.GetEntirePrimaryExecutableSection().Length;
++        var cache = new Dictionary<ulong, LegacyArm64ExceptionRaiserPattern.Witness?>();
++        ulong? agreed = null;
++        foreach (var name in new[] { "String", "Array", "Convert" })
++        {
++            var type = ReflectionCache.GetType(name, "System");
++            if (type?.Methods == null) return;
++            var candidates = new HashSet<ulong>();
++            foreach (var method in type.Methods.Where(m => m.MethodPointer != 0))
++            {
++                var next = _appContext.GetAddressOfNextFunctionStart(method.MethodPointer);
++                if (next <= method.MethodPointer || next - method.MethodPointer > 65536) continue;
++                if (!binary.TryMapVirtualAddressToRaw(method.MethodPointer, out var start) || !binary.TryMapVirtualAddressToRaw(next, out var end)
++                    || end <= start || end - start > 65536) continue;
++                var code = binary.GetRawBinaryContent().Slice((int)start, (int)(end - start));
++                for (var offset = 0; offset + 4 <= code.Length; offset += 4)
++                {
++                    var word = BinaryPrimitives.ReadUInt32LittleEndian(code[offset..]);
++                    if ((word & 0xfc000000) != 0x94000000) continue;
++                    var target = unchecked((ulong)((long)method.MethodPointer + offset + (((int)(word << 6)) >> 4)));
++                    if (target < text || target >= textEnd || _appContext.MethodsByAddress.ContainsKey(target)) continue;
++                    if (!cache.TryGetValue(target, out var witness))
++                    {
++                        witness = null;
++                        if (binary.TryMapVirtualAddressToRaw(target, out var raw))
++                            witness = LegacyArm64ExceptionRaiserPattern.Match(binary.GetRawBinaryContent().Slice((int)raw, (int)System.Math.Min(512ul, textEnd - target)), target);
++                        cache[target] = witness;
++                    }
++                    if (witness is { } value && value.AllocateException >= text && value.AllocateException < textEnd && value.NativeThrow >= text && value.NativeThrow < textEnd)
++                        candidates.Add(target);
++                }
++            }
++            if (candidates.Count != 1) return;
++            var candidate = candidates.Single();
++            if (agreed != null && candidate != agreed) return;
++            agreed = candidate;
++        }
++        if (agreed is not { } raiser) return;
++        il2cpp_vm_exception_raise = raiser;
++        Logger.InfoNewline($"Recovered legacy NSO exception raiser at 0x{raiser:X} from three corlib families and a checked C++ exception-wrapper pattern.");
++    }
++
++    private void RecoverLegacySingletonAllocation()
++    {
++        if (il2cpp_object_new != 0 || il2cpp_codegen_object_new != 0 || il2cpp_codegen_initialize_method == 0) return;
++        var objectCtor = ReflectionCache.GetType("Object", "System")?.Methods?.FirstOrDefault(m => m.Name == ".ctor")?.MethodPointer ?? 0;
++        if (objectCtor == 0) return;
++        ulong? agreed = null;
++        foreach (var (name, ns) in new[] { ("EventArgs", "System"), ("DBNull", "System"), ("Missing", "System.Reflection") })
++        {
++            var anchor = ReflectionCache.GetType(name, ns)?.Methods?.FirstOrDefault(m => m.Name == ".cctor");
++            if (anchor == null || anchor.MethodPointer == 0) return;
++            var next = _appContext.GetAddressOfNextFunctionStart(anchor.MethodPointer);
++            if (next <= anchor.MethodPointer || next - anchor.MethodPointer > 512) return;
++            var binary = _appContext.Binary;
++            if (!binary.TryMapVirtualAddressToRaw(anchor.MethodPointer, out var start) || !binary.TryMapVirtualAddressToRaw(next, out var end)
++                || end <= start || end - start > 512) return;
++            var bytes = binary.GetRawBinaryContent().Slice((int)start, (int)(end - start));
++            var candidate = LegacyArm64AllocationPattern.Match(bytes, anchor.MethodPointer, il2cpp_codegen_initialize_method, objectCtor);
++            if (candidate == null || (agreed != null && candidate != agreed)) return;
++            agreed = candidate;
++        }
++        if (agreed is not { } target) return;
++        var text = _appContext.Binary.GetVirtualAddressOfPrimaryExecutableSection();
++        if (target < text || target - text >= (ulong)_appContext.Binary.GetEntirePrimaryExecutableSection().Length || target % 4 != 0) return;
++        il2cpp_codegen_object_new = target;
++        Logger.InfoNewline($"Recovered legacy NSO object allocation at 0x{target:X} from three agreeing singleton constructors.");
++    }
++
++    private void RecoverLegacyClassInit()
++    {
++        if (_appContext.MetadataVersion != 24f || il2cpp_runtime_class_init_export != 0 || il2cpp_runtime_class_init_actual != 0 || il2cpp_codegen_runtime_class_init != 0) return;
++        ulong? agreed = null;
++        foreach (var (name, methodName) in new[] { ("String", "Concat"), ("BitConverter", "ToString"), ("Convert", "ToString") })
++        {
++            var type = ReflectionCache.GetType(name, "System");
++            if (type?.Methods == null) return;
++            var candidates = new HashSet<ulong>();
++            foreach (var method in type.Methods.Where(m => m.Name == methodName && m.MethodPointer != 0))
++            {
++                var next = _appContext.GetAddressOfNextFunctionStart(method.MethodPointer);
++                if (next <= method.MethodPointer || next - method.MethodPointer > 65536) continue;
++                var binary = _appContext.Binary;
++                if (!binary.TryMapVirtualAddressToRaw(method.MethodPointer, out var start) || !binary.TryMapVirtualAddressToRaw(next, out var end)
++                    || end <= start || end - start > 65536) continue;
++                foreach (var candidate in LegacyArm64AllocationPattern.ClassInitTargets(binary.GetRawBinaryContent().Slice((int)start, (int)(end - start)), method.MethodPointer))
++                    candidates.Add(candidate);
++            }
++            if (candidates.Count != 1) return;
++            var target = candidates.Single();
++            if (agreed != null && target != agreed) return;
++            agreed = target;
++        }
++        if (agreed is not { } initializer) return;
++        var text = _appContext.Binary.GetVirtualAddressOfPrimaryExecutableSection();
++        if (initializer < text || initializer - text >= (ulong)_appContext.Binary.GetEntirePrimaryExecutableSection().Length || initializer % 4 != 0) return;
++        il2cpp_codegen_runtime_class_init = initializer;
++        Logger.InfoNewline($"Recovered legacy NSO class initialization at 0x{initializer:X} from three agreeing corlib families.");
++    }
++
+     private List<Arm64Instruction>? _cachedDisassembledBytes;
+ 
+     private List<Arm64Instruction> DisassembleTextSection()
+@@ -45,6 +207,17 @@
+ 
+     protected override IEnumerable<ulong> FindAllThunkFunctions(ulong addr, uint maxBytesBack = 0, params ulong[] addressesToIgnore)
+     {
++        if (_appContext.Binary is NsoFile && _appContext.MetadataVersion == 24f)
++        {
++            // A decoded instruction object for every word of a large NSO can
++            // exhaust the bounded research heap. Fixed-width branch witnesses
++            // need only a compact set of direct BL targets and two linear scans.
++            foreach (var thunk in LegacyArm64ThunkScanner.Find(_appContext.Binary.GetEntirePrimaryExecutableSection(),
++                _appContext.Binary.GetVirtualAddressOfPrimaryExecutableSection(), addr, maxBytesBack,
++                addressesToIgnore.ToHashSet(), addr == il2cpp_vm_exception_raise))
++                yield return thunk;
++            yield break;
++        }
+         //Disassemble .text
+         var disassembly = DisassembleTextSection();
+ 
+diff --git a/Cpp2IL.Core/Utils/LegacyArm64InitializationPattern.cs b/Cpp2IL.Core/Utils/LegacyArm64InitializationPattern.cs
+new file mode 100644
+--- /dev/null
++++ b/Cpp2IL.Core/Utils/LegacyArm64InitializationPattern.cs
+@@ -0,0 +1,74 @@
++using System;
++using System.Buffers.Binary;
++using System.Collections.Generic;
++
++namespace Cpp2IL.Core.Utils;
++
++/// <summary>Strict native witness for an old codegen method-metadata guard.</summary>
++public static class LegacyArm64InitializationPattern
++{
++    public readonly record struct Guard(ulong Branch, ulong Skip, ulong Flag);
++
++    public static List<Guard> Match(ReadOnlySpan<byte> bytes, ulong start, ulong initializer, ulong writableStart, ulong writableEnd)
++    {
++        var result = new List<Guard>();
++        if (initializer == 0 || writableEnd <= writableStart || bytes.Length % 4 != 0 || bytes.Length > 512) return result;
++        var words = new uint[bytes.Length / 4];
++        for (var n = 0; n < words.Length; n++) words[n] = BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(n * 4, 4));
++        for (var i = 0; i + 7 < words.Length; i++)
++        {
++            var branch = words[i];
++            // Never walk through an entry thunk/return into a neighboring body.
++            if ((branch & 0xfc000000) == 0x14000000 || (branch & 0xfffffc1f) is 0xd65f0000 or 0xd61f0000) break;
++            if (i < 2) continue;
++            // TBNZ Wflag,#0,skip; exactly six metadata-init instructions follow.
++            if ((branch & 0xfff80000) != 0x37000000 || ((branch >> 5) & 0x3fff) != 7) continue;
++            var flagRegister = branch & 31;
++            var page = words[i + 1]; var load = words[i + 2]; var handle = words[i + 3];
++            var call = words[i + 4]; var one = words[i + 5]; var store = words[i + 6];
++            var scratch = page & 31;
++            if (scratch > 17 || (page & 0x9f000000) != 0x90000000
++                || (load & 0xffc003ff) != (0xf9400000u | (scratch << 5) | scratch)
++                || handle != (0xb9400000u | (scratch << 5))
++                || (call & 0xfc000000) != 0x94000000
++                || BranchTarget(start + (ulong)(i + 4) * 4, call) != initializer
++                || ((one & 0xffffffe0) != 0x320003e0 && (one & 0xffffffe0) != 0x52800020)
++                || (one & 31) != flagRegister
++                || (store & 0xffc0001f) != (0x39000000u | flagRegister)) continue;
++            var baseRegister = (store >> 5) & 31;
++            if (baseRegister is < 19 or > 28 || flagRegister > 17) continue;
++            var loadIndex = i - 1;
++            for (; loadIndex >= Math.Max(0, i - 8); loadIndex--)
++            {
++                var word = words[loadIndex];
++                if (word == (0x39400000u | (store & 0x003fffff))) break; // same byte address/register
++                // Only unrelated register copies and plain SP stores may lie
++                // between the flag load and its test. No calls or clobbers.
++                var move = (word & 0xffe0ffe0) is 0xaa0003e0 or 0x2a0003e0;
++                var stackStore = (word & 0xffc003e0) is 0xf90003e0 or 0xb90003e0;
++                if (!(move && (word & 31) != flagRegister && (word & 31) != baseRegister) && !stackStore) break;
++            }
++            if (loadIndex < Math.Max(0, i - 8) || words[loadIndex] != (0x39400000u | (store & 0x003fffff))) continue;
++            var before = loadIndex - 1;
++            ulong extra = 0;
++            if (before >= 0 && (words[before] & 0xffc003ff) == (0x91000000u | (baseRegister << 5) | baseRegister))
++            {
++                extra = (words[before] >> 10) & 0xfff; before--;
++            }
++            if (before < 0 || (words[before] & 0x9f00001f) != (0x90000000u | baseRegister)) continue;
++            var flag = unchecked((ulong)((long)((start + (ulong)before * 4) & ~0xffful) + PageDelta(words[before])))
++                + extra + ((store >> 10) & 0xfff);
++            if (flag < writableStart || flag >= writableEnd) continue;
++            result.Add(new Guard(start + (ulong)i * 4, start + (ulong)(i + 7) * 4, flag));
++        }
++        return result;
++    }
++
++    private static ulong BranchTarget(ulong pc, uint word)
++        => unchecked((ulong)((long)pc + (((int)(word << 6)) >> 6) * 4L));
++    private static long PageDelta(uint word)
++    {
++        var immediate = (((word >> 5) & 0x7ffff) << 2) | ((word >> 29) & 3);
++        return (((int)(immediate << 11)) >> 11) * 4096L;
++    }
++}
+diff --git a/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs b/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs
+--- a/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs
++++ b/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs
+@@ -8,6 +8,8 @@
+ using Cpp2IL.Core.Model.Contexts;
+ using Cpp2IL.Core.Utils;
+ using Disarm.InternalDisassembly;
++using System.Buffers.Binary;
++using LibCpp2IL.NintendoSwitch;
+ 
+ namespace Cpp2IL.Core.InstructionSets;
+ 
+@@ -148,8 +150,55 @@
+         var instructions = new List<Instruction>();
+         var addresses = new List<ulong>();
+ 
++        // Old NSO codegen emits byte guards in writable globals. They are not
++        // managed fields. Excise only an exact load/test/known-init/store witness;
++        // do not generalize modern class bitfields to legacy layouts.
++        var metadataGuards = new Dictionary<ulong, ulong>();
++        if (context.AppContext.Binary is NsoFile && context.AppContext.MetadataVersion is >= 24f and < 24.2f)
++        {
++            var binary = context.AppContext.Binary;
++            var content = binary.GetRawBinaryContent();
++            if (content.Length >= 0x40 && insns.Count > 0 && binary.TryMapVirtualAddressToRaw(context.UnderlyingPointer, out var raw))
++            {
++                var count = Math.Min(512, insns.Count * 4);
++                var writable = BinaryPrimitives.ReadUInt32LittleEndian(content.Slice(0x34, 4));
++                var writableEnd = (ulong)writable + BinaryPrimitives.ReadUInt32LittleEndian(content.Slice(0x38, 4)) + BinaryPrimitives.ReadUInt32LittleEndian(content.Slice(0x3c, 4));
++                if (raw >= 0 && raw + count <= content.Length)
++                {
++                    var helpers = context.AppContext.GetOrCreateKeyFunctionAddresses();
++                    foreach (var guard in LegacyArm64InitializationPattern.Match(content.Slice((int)raw, count), context.UnderlyingPointer,
++                        helpers.il2cpp_codegen_initialize_method, writable, writableEnd))
++                        metadataGuards[guard.Branch] = guard.Skip;
++                    // The 24.0 class macro checks has_cctor/cctor_finished, not
++                    // the modern initialized_and_no_error byte. Require the
++                    // independently identified class-initializer call as well.
++                    if (context.AppContext.MetadataVersion == 24f && helpers.il2cpp_codegen_runtime_class_init != 0)
++                    {
++                        var decodedAddresses = insns.Select(instruction => instruction.Address).ToHashSet();
++                        var classCount = (int)Math.Min(65536ul, insns.Max(instruction => instruction.Address) + 4 - context.UnderlyingPointer);
++                        if (raw + classCount <= content.Length)
++                            foreach (var guard in LegacyArm64AllocationPattern.ClassInitSites(content.Slice((int)raw, classCount), context.UnderlyingPointer))
++                                if (guard.Target == helpers.il2cpp_codegen_runtime_class_init
++                                    && decodedAddresses.Contains(guard.Skip)
++                                    && Enumerable.Range(0, 5).All(index => decodedAddresses.Contains(guard.Start + (ulong)index * 4)))
++                                    // Start before the native flag load. Rewriting only
++                                    // TBZ leaves an unmanaged class-byte read in CIL.
++                                    metadataGuards[guard.Start] = guard.Skip;
++                    }
++                }
++            }
++        }
++
+         foreach (var instruction in insns)
++        {
++            if (metadataGuards.TryGetValue(instruction.Address, out var skip))
++            {
++                addresses.Add(instruction.Address);
++                instructions.Add(new Instruction(instructions.Count, OpCode.Jump, Imm(skip)));
++                continue;
++            }
+             ConvertInstructionStatement(instruction, instructions, addresses, context);
++        }
+ 
+         // Add return if the function doesn't end with one already
+         if (instructions.Count > 0 && instructions[^1].OpCode != OpCode.Return)
+diff --git a/Cpp2IL.Core/Utils/LegacyArm64ExceptionRaiserPattern.cs b/Cpp2IL.Core/Utils/LegacyArm64ExceptionRaiserPattern.cs
+new file mode 100644
+--- /dev/null
++++ b/Cpp2IL.Core/Utils/LegacyArm64ExceptionRaiserPattern.cs
+@@ -0,0 +1,63 @@
++using System;
++using System.Buffers.Binary;
++
++namespace Cpp2IL.Core.Utils;
++
++/// <summary>A narrow legacy ARM64 exception-wrapper witness, not a generic throw recognizer.</summary>
++public static class LegacyArm64ExceptionRaiserPattern
++{
++    public readonly record struct Witness(ulong AllocateException, ulong NativeThrow, int BodyBytes);
++
++    private static ulong Branch(uint word, ulong address)
++        => unchecked((ulong)((long)address + (((int)(word << 6)) >> 4)));
++
++    public static Witness? Match(ReadOnlySpan<byte> bytes, ulong address)
++    {
++        static uint Tail(ReadOnlySpan<byte> data, int i) => BinaryPrimitives.ReadUInt32LittleEndian(data[(i * 4)..]);
++        var length = Math.Min(bytes.Length & ~3, 512);
++        for (var copy = 0; copy + 12 <= Math.Min(length, 64); copy += 4)
++        {
++            var word = BinaryPrimitives.ReadUInt32LittleEndian(bytes[copy..]);
++            if ((word & 0xfc000000) is 0x14000000 or 0x94000000 || (word & 0xfffffc1f) is 0xd65f0000 or 0xd61f0000)
++                break;
++            var exception = (int)(word & 31);
++            if ((word & 0xffffffe0) != 0xaa0003e0 || exception is < 19 or > 28)
++                continue; // preserve incoming exception X0 in a callee-saved register
++            var load = BinaryPrimitives.ReadUInt32LittleEndian(bytes[(copy + 4)..]);
++            if ((load & 0xfffffc00) != 0xf9400800 || ((load >> 5) & 31) != exception)
++                continue; // Il2CppException.trace_ips at object + 0x10
++            var trace = load & 31;
++            if (trace == 31)
++                continue;
++            for (var test = copy + 8; test <= copy + 16 && test + 4 <= length; test += 4)
++            {
++                var condition = BinaryPrimitives.ReadUInt32LittleEndian(bytes[test..]);
++                if ((condition & 0xff00001f) != (0xb5000000 | trace))
++                {
++                    var destination = condition & 31;
++                    if ((condition & 0xffe0ffe0) != 0xaa0003e0 || destination == exception || destination == trace || destination is < 19 or > 28)
++                        break;
++                    continue;
++                }
++                long displacement = (condition >> 5) & 0x7ffff;
++                if ((displacement & (1 << 18)) != 0)
++                    displacement -= 1 << 19;
++                var tail = (long)test + displacement * 4;
++                if (tail <= test || tail + 32 > length)
++                    break;
++                var span = bytes[(int)tail..];
++                if (Tail(span, 0) is not (0x321d03e0 or 0x52800100) || (Tail(span, 1) & 0xfc000000) != 0x94000000 ||
++                    Tail(span, 2) != (0xf9000000 | (uint)exception) || (Tail(span, 3) & 0x9f00001f) != 0x90000001 ||
++                    (Tail(span, 4) & 0xffc003ff) != 0xf9400021 || Tail(span, 5) != 0xaa1f03e2 ||
++                    (Tail(span, 6) & 0xfc000000) != 0x94000000 || Tail(span, 7) != 0)
++                    break;
++                var allocate = Branch(Tail(span, 1), address + (ulong)tail + 4);
++                var nativeThrow = Branch(Tail(span, 6), address + (ulong)tail + 24);
++                if (allocate == 0 || nativeThrow == 0 || allocate == nativeThrow)
++                    break;
++                return new Witness(allocate, nativeThrow, (int)tail + 32);
++            }
++        }
++        return null;
++    }
++}
+diff --git a/Cpp2IL.Core/Utils/LegacyArm64ThunkScanner.cs b/Cpp2IL.Core/Utils/LegacyArm64ThunkScanner.cs
+new file mode 100644
+--- /dev/null
++++ b/Cpp2IL.Core/Utils/LegacyArm64ThunkScanner.cs
+@@ -0,0 +1,59 @@
++using System;
++using System.Buffers.Binary;
++using System.Collections.Generic;
++
++namespace Cpp2IL.Core.Utils;
++
++/// <summary>Bounded-width ARM64 B/BL indexing without retaining a full decoded text section.</summary>
++public static class LegacyArm64ThunkScanner
++{
++    private static ulong Target(uint word, ulong address)
++        => unchecked((ulong)((long)address + (((int)(word << 6)) >> 4)));
++
++    private static bool Terminates(uint word)
++        => word == 0 || (word & 0xfc000000) == 0x14000000 ||
++           (word & 0xfffffc1f) is 0xd65f0000 or 0xd61f0000 || (word & 0xffe0001f) == 0xd4200000;
++
++    public static List<ulong> Find(ReadOnlySpan<byte> code, ulong address, ulong target, uint maxBytesBack,
++        ISet<ulong> ignored, bool preserveExceptionX0 = false)
++    {
++        var calls = new HashSet<ulong>();
++        for (var offset = 0; offset + 4 <= code.Length; offset += 4)
++        {
++            var word = BinaryPrimitives.ReadUInt32LittleEndian(code[offset..]);
++            if ((word & 0xfc000000) == 0x94000000)
++                calls.Add(Target(word, address + (ulong)offset));
++        }
++        var result = new List<ulong>();
++        for (var offset = 0; offset + 4 <= code.Length; offset += 4)
++        {
++            var word = BinaryPrimitives.ReadUInt32LittleEndian(code[offset..]);
++            var branch = address + (ulong)offset;
++            if ((word & 0xfc000000) != 0x14000000 || Target(word, branch) != target || ignored.Contains(branch))
++                continue;
++            for (var back = 0; back <= maxBytesBack / 4 && back * 4 <= offset; back++)
++            {
++                var start = offset - back * 4;
++                if (start != 0 && !calls.Contains(address + (ulong)start) &&
++                    !Terminates(BinaryPrimitives.ReadUInt32LittleEndian(code[(start - 4)..])))
++                    continue;
++                var candidate = address + (ulong)start;
++                if (!ignored.Contains(candidate))
++                {
++                    // A legacy raiser thunk may clear auxiliary arguments,
++                    // but must hand the same incoming exception X0 onward.
++                    var safe = true;
++                    if (preserveExceptionX0)
++                        for (var at = start; at < offset; at += 4)
++                        {
++                            var setup = BinaryPrimitives.ReadUInt32LittleEndian(code[at..]);
++                            if (setup is not (0xaa1f03e1 or 0xaa1f03e2)) { safe = false; break; }
++                        }
++                    if (safe) result.Add(candidate);
++                }
++                break;
++            }
++        }
++        return result;
++    }
++}
+diff --git a/Cpp2IL.Core/Analysis/ThrowHelperRecovery.cs b/Cpp2IL.Core/Analysis/ThrowHelperRecovery.cs
+--- a/Cpp2IL.Core/Analysis/ThrowHelperRecovery.cs
++++ b/Cpp2IL.Core/Analysis/ThrowHelperRecovery.cs
+@@ -2,6 +2,8 @@
+ using System.Collections.Generic;
+ using System.Linq;
+ using Cpp2IL.Core.Model.Contexts;
++using LibCpp2IL.NintendoSwitch;
++using Cpp2IL.Core.Utils;
+ 
+ namespace Cpp2IL.Core.Analysis;
+ 
+@@ -18,6 +20,31 @@
+ 
+     public static TypeAnalysisContext? GetThrownException(ApplicationAnalysisContext appContext, ulong address)
+     {
++        // A conditional failure path is not evidence that a native routine is
++        // an exception factory or unconditional thrower. In the legacy NSO,
++        // the array allocator reaches OverflowException on oversized input.
++        // Only the exact native factory shape is accepted here. Unknown
++        // helpers remain unresolved; the exact raiser is handled separately.
++        if (appContext.Binary is NsoFile && appContext.MetadataVersion == 24f)
++        {
++            if (!appContext.ThrowHelperNamesByAddress.TryGetValue(address, out var factoryName))
++            {
++                factoryName = null;
++                var binary = appContext.Binary;
++                var text = binary.GetVirtualAddressOfPrimaryExecutableSection();
++                var textEnd = text + (ulong)binary.GetEntirePrimaryExecutableSection().Length;
++                var allocator = appContext.GetOrCreateKeyFunctionAddresses().il2cpp_codegen_object_new;
++                if (address >= text && address + 64 <= textEnd && binary.TryMapVirtualAddressToRaw(address, out var raw)
++                    && LegacyArm64ExceptionFactoryPattern.Match(binary.GetRawBinaryContent().Slice((int)raw, 64), address, allocator) is { } witness
++                    && ReadCStringAtVirtualAddress(appContext, witness.Namespace) == "System"
++                    && ReadCStringAtVirtualAddress(appContext, witness.Name) is { } directName
++                    && directName.EndsWith("Exception", StringComparison.Ordinal)) factoryName = directName;
++                appContext.ThrowHelperNamesByAddress[address] = factoryName;
++            }
++            var factoryType = factoryName == null ? null : appContext.LibCpp2IlContext.ReflectionCache.GetType(factoryName, "System");
++            return factoryType == null ? null : appContext.ResolveContextForType(factoryType);
++        }
++
+         var name = ResolveName(appContext, address, 0);
+ 
+         if (name == null)
+@@ -42,6 +69,23 @@
+ 
+         if (raise == 0)
+             return false;
++
++        if (address == raise)
++        {
++            appContext.ExceptionRaisersByAddress[address] = true;
++            return true;
++        }
++
++        // A transitive call to a raiser does not prove that this function
++        // unconditionally raises its incoming argument. Legacy NSO collection
++        // verifiers, for example, return normally unless their state is invalid.
++        // Their short linear inspection window may also stop before the real
++        // C++ throw tail. Require the independently witnessed exact target here.
++        if (appContext.Binary is NsoFile && appContext.MetadataVersion == 24f)
++        {
++            appContext.ExceptionRaisersByAddress[address] = false;
++            return false;
++        }
+ 
+         // grab the c++ exception raise method from the end of il2cpp::vm::Exception::Raise
+         var nativeThrow = appContext.InstructionSet.InspectPotentialThrowHelper(appContext, raise).CallTargets.LastOrDefault();
+diff --git a/Cpp2IL.Core/Utils/LegacyArm64ArrayAllocationPattern.cs b/Cpp2IL.Core/Utils/LegacyArm64ArrayAllocationPattern.cs
+new file mode 100644
+--- /dev/null
++++ b/Cpp2IL.Core/Utils/LegacyArm64ArrayAllocationPattern.cs
+@@ -0,0 +1,47 @@
++using System;
++using System.Buffers.Binary;
++
++namespace Cpp2IL.Core.Utils;
++
++/// <summary>Strict witness for the legacy NSO single-dimensional array allocator.</summary>
++public static class LegacyArm64ArrayAllocationPattern
++{
++    public readonly record struct Witness(ulong ClassLayout, ulong ElementSize, ulong AtomicAllocation, ulong TypedAllocation, ulong GeneralAllocation, ulong ClearMemory);
++
++    public static Witness? Match(ReadOnlySpan<byte> bytes, ulong start, ulong raise)
++    {
++        if (raise == 0 || bytes.Length < 244 || bytes.Length % 4 != 0) return null;
++        var words = new uint[244 / 4];
++        for (var i = 0; i < words.Length; i++) words[i] = BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(i * 4, 4));
++        uint Word(int offset) => words[offset / 4];
++        // The two arguments survive helper calls in callee-saved registers.
++        if (Word(0x10) != 0xaa0103f4 || Word(0x14) != 0xaa0003f3) return null;
++        // Array class rank, initialized-size flag, and its element class flag.
++        if (Word(0x1c) != 0x39447a68 || Word(0x24) != 0x39448668
++            || Word(0x2c) != 0xf9402268 || Word(0x30) != 0x39448508) return null;
++        // Invalid lengths call the independently witnessed exception raiser;
++        // the normal path bypasses that branch and computes elementSize*length.
++        if (Word(0x38) != 0xd35ffe88 || Word(0x3c) != 0xb4000128
++            || Call(Word(0x54), start + 0x54) != raise
++            || Word(0x60) != 0xaa1303e0 || Word(0x64) != 0x91048675
++            || Word(0x6c) != 0x2a0003e8 || Word(0x70) != 0x9b147d16
++            || Word(0x78) != 0x910082c0) return null;
++        // Bounds are null; payload starts after the 32-byte array header.
++        if (Word(0x88) != 0xaa0003f5 || Word(0x8c) != 0x910042c2
++            || Word(0x90) != 0x2a1f03e1 || Word(0x94) != 0xf8010c1f
++            || Word(0xc0) != 0xf9000eb4 || Word(0xe4) != 0xaa1503e0
++            || Word(0xf0) != 0xd65f03c0) return null;
++        var layout = Call(Word(0x18), start + 0x18);
++        var element = Call(Word(0x68), start + 0x68);
++        var atomic = Call(Word(0x84), start + 0x84);
++        var typed = Call(Word(0xac), start + 0xac);
++        var general = Call(Word(0xb8), start + 0xb8);
++        var clear = Call(Word(0x98), start + 0x98);
++        if (layout == 0 || element == 0 || atomic == 0 || typed == 0 || general == 0 || clear == 0) return null;
++        if (layout == element || atomic == typed || typed == general || atomic == general) return null;
++        return new(layout, element, atomic, typed, general, clear);
++    }
++
++    private static ulong Call(uint word, ulong pc) => (word & 0xfc000000) == 0x94000000
++        ? unchecked((ulong)((long)pc + (((int)(word << 6)) >> 4))) : 0;
++}
+diff --git a/Cpp2IL.Core/Analysis/LocalVariables.cs b/Cpp2IL.Core/Analysis/LocalVariables.cs
+--- a/Cpp2IL.Core/Analysis/LocalVariables.cs
++++ b/Cpp2IL.Core/Analysis/LocalVariables.cs
+@@ -425,19 +425,32 @@
+                     changed |= PropagatePhi(instruction);
+                     break;
+                 case OpCode.Add or OpCode.Subtract or OpCode.Multiply:
+-                    changed |= PropagateArithmetic(instruction, method);
++                    changed |= PropagateArithmetic(instruction, method) || PropagateIntegerResult(instruction, method);
+                     break;
+                 case OpCode.Divide or OpCode.Modulo:
+                     changed |= PropagateArithmetic(instruction, method) || PropagateIntegerResult(instruction, method);
+                     break;
+-                case OpCode.And or OpCode.Or or OpCode.Xor or OpCode.Not or OpCode.Negate
+-                    or OpCode.ShiftLeft or OpCode.ShiftRight:
++                case OpCode.And or OpCode.Or or OpCode.Xor or OpCode.Not:
++                    changed |= PropagateBooleanResult(instruction, method) || PropagateIntegerResult(instruction, method);
++                    break;
++                case OpCode.Negate or OpCode.ShiftLeft or OpCode.ShiftRight:
+                     changed |= PropagateIntegerResult(instruction, method);
+                     break;
+             }
+         }
+ 
+         return changed;
++    }
++
++    // These operations preserve a known boolean domain. Do not leave their
++    // result untyped (which the emitter would declare as System.Object).
++    private static bool PropagateBooleanResult(Instruction instruction, MethodAnalysisContext method)
++    {
++        if (instruction.Operands[0] is not LocalVariable { Type: null } destination) return false;
++        var boolean = method.AppContext.SystemTypes.SystemBooleanType;
++        for (var i = 1; i < instruction.Operands.Count; i++)
++            if (instruction.Operands[i] is not LocalVariable { Type: { } type } || type != boolean) return false;
++        return SetTypeIfUnknown(destination, boolean);
+     }
+ 
+     // A local assigned a float/double literal (a lifted rodata constant load) is that float type
+@@ -490,6 +503,11 @@
+             FieldReference field => field.Field.FieldType,
+             _ => null,
+         };
++
++        // Enum values use their actual metadata-declared integral storage in
++        // native arithmetic. Leaving the result unknown emits an Object local
++        // for expressions such as a switch's enum-minus-base index.
++        if (type is { IsEnumType: true }) type = type.EnumUnderlyingType;
+ 
+         return type?.FullName switch
+         {
+@@ -528,6 +546,13 @@
+         if (destination is FieldReference storeField && source is LocalVariable storeSource)
+             return SetTypeIfUnknown(storeSource, storeField.Field.FieldType);
+ 
++        // Matches the existing ArrayLength emitter's ldlen/conv.i4 contract.
++        // Elements start at 4*pointerSize; this is the preceding length word.
++        if (destination is LocalVariable { Type: null } lengthDest
++            && source is MemoryOperand { Index: null, Scale: 0, Base: LocalVariable { Type: SzArrayTypeAnalysisContext arrayType } } lengthMemory
++            && lengthMemory.Addend == 3L * pointerSize)
++            return SetTypeIfUnknown(lengthDest, arrayType.AppContext.SystemTypes.SystemInt32Type);
++
+         // An element of T[] is a T, whether we loaded it (reference arrays) or only computed its address
+         if (destination is LocalVariable { Type: null } elementDest
+             && source is MemoryOperand { Base: LocalVariable { Type: SzArrayTypeAnalysisContext { ElementType: { } elementType } } } elementAccess
+diff --git a/Cpp2IL.Core/Utils/LegacyArm64ExceptionFactoryPattern.cs b/Cpp2IL.Core/Utils/LegacyArm64ExceptionFactoryPattern.cs
+new file mode 100644
+--- /dev/null
++++ b/Cpp2IL.Core/Utils/LegacyArm64ExceptionFactoryPattern.cs
+@@ -0,0 +1,41 @@
++using System;
++using System.Buffers.Binary;
++
++namespace Cpp2IL.Core.Utils;
++
++/// <summary>One proven no-argument factory shape; never follows conditional error callees.</summary>
++public static class LegacyArm64ExceptionFactoryPattern
++{
++    public readonly record struct Witness(ulong Namespace, ulong Name, ulong Corlib, ulong ClassLookup, ulong Initialization);
++
++    public static Witness? Match(ReadOnlySpan<byte> bytes, ulong start, ulong allocation)
++    {
++        if (bytes.Length < 64 || allocation == 0) return null;
++        var words = new uint[16];
++        for (var i = 0; i < 16; i++) words[i] = BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(i * 4, 4));
++        if (words[0] != 0xf81e0ff3 || words[1] != 0xa9017bfd || words[2] != 0x910043fd
++            || words[10] != 0xaa0003f3 || words[12] != 0xa9417bfd || words[13] != 0xaa1303e0
++            || words[14] != 0xf84207f3 || words[15] != 0xd65f03c0) return null;
++        if (Call(words[9], start + 36) != allocation) return null;
++        var corlib = Call(words[3], start + 12);
++        var lookup = Call(words[8], start + 32);
++        var initialization = Call(words[11], start + 44);
++        var ns = CStringAddress(words[4], words[5], start + 16, 1);
++        var name = CStringAddress(words[6], words[7], start + 24, 2);
++        if (corlib == 0 || lookup == 0 || initialization == 0 || ns == null || name == null
++            || corlib == lookup || initialization == allocation) return null;
++        return new(ns.Value, name.Value, corlib, lookup, initialization);
++    }
++
++    private static ulong? CStringAddress(uint page, uint add, ulong pc, uint register)
++    {
++        if ((page & 0x9f00001f) != (0x90000000 | register)
++            || (add & 0xffc003ff) != (0x91000000 | register << 5 | register)) return null;
++        var imm = ((page >> 5) & 0x7ffff) << 2 | ((page >> 29) & 3);
++        long delta = (((int)(imm << 11)) >> 11) * 4096L;
++        return unchecked((ulong)((long)(pc & ~0xffful) + delta)) + ((add >> 10) & 0xfff);
++    }
++
++    private static ulong Call(uint word, ulong pc) => (word & 0xfc000000) == 0x94000000
++        ? unchecked((ulong)((long)pc + (((int)(word << 6)) >> 4))) : 0;
++}
+diff --git a/Cpp2IL.Core/IlGenerator.cs b/Cpp2IL.Core/IlGenerator.cs
+--- a/Cpp2IL.Core/IlGenerator.cs
++++ b/Cpp2IL.Core/IlGenerator.cs
+@@ -23,7 +23,7 @@
+         var helpersType = appContext.InjectTypeIntoAllAssemblies(
+             HelpersNamespace,
+             HelpersTypeName,
+-            null,
++            appContext.SystemTypes.SystemObjectType,
+             TypeAttributes.Public | TypeAttributes.Class | TypeAttributes.Abstract | TypeAttributes.Sealed);
+ 
+         helpersType.InjectMethodToAllAssemblies(
+@@ -61,7 +61,9 @@
+         var body = new CilMethodBody()
+         {
+             InitializeLocals = true, // Without this ILSpy does: CompilerServices.Unsafe.SkipInit(out object obj);
+-            ComputeMaxStackOnBuild = false // There's stack imbalance somewhere, but this works for now
++            // Compute inside the per-method recovery boundary below. Invalid
++            // stack flow must become an explicit failure, not a zero header.
++            ComputeMaxStackOnBuild = false
+         };
+ 
+         definition.CilMethodBody = body;
+@@ -221,6 +223,7 @@
+             instructions.Add(CilOpCodes.Ldstr, Diagnostic("Warning: " + warning));
+             instructions.Add(CilOpCodes.Call, writeLine);
+         }
++        body.MaxStack = checked((ushort)body.ComputeMaxStack());
+     }
+ 
+     // Limit so we don't run into the 16mb limit (see AsmResolver issue #775)
+@@ -326,8 +329,9 @@
+                 break;
+ 
+             case OpCode.Newobj:
+-                // Try and fuse our Newobj + the follow up constructor CallVoid into one IL newobj.
+-                // If we can't, just fall back to an Ldnull.
++                // Only fuse an adjacent constructor of the exact allocated type in
++                // the same block. Moving a later/base constructor to the allocation
++                // can change type identity or reorder inlined initialization.
+                 if (FindConstructorCall(context, instruction) is { Operands: [MethodAnalysisContext constructor, _, ..] } constructorCall)
+                 {
+                     // Operands run [ctor, newObject, arguments..., methodInfo], so take only as many as
+@@ -342,16 +346,17 @@
+                     constructorCall.OpCode = OpCode.Nop;
+                     constructorCall.SetOperands();
+                 }
+-                else if (instruction.Operands is [_, TypeAnalysisContext allocatedType] && allocatedType.Methods.FirstOrDefault(m => m is { Name: ".ctor", Parameters.Count: 0 }) is { } parameterlessCtor)
+-                {
+-                    // Nothing to fuse with, so the allocation was self-contained. The type is still right, so construct it bare.
+-                    instructions.Add(CilOpCodes.Newobj, parameterlessCtor.ToMethodDescriptor());
++                else if (AllocatedType(instruction) is { IsValueType: false } allocatedType)
++                {
++                    // IL2CPP separates zeroed allocation from constructor code.
++                    // Keep subsequent field writes and constructor calls in place;
++                    // an extra parameterless constructor would duplicate effects.
++                    UninitializedObjectAllocation.Emit(method, allocatedType.ToTypeSignature().ToTypeDefOrRef());
+                     StoreToOperand(instruction.Operands[0], method, locals, writeLine);
+                 }
+                 else
+                 {
+-                    instructions.Add(CilOpCodes.Ldnull);
+-                    StoreToOperand(instruction.Operands[0], method, locals, writeLine);
++                    throw new System.NotSupportedException("Unresolved or value-type allocation requires explicit recovery");
+                 }
+                 break;
+ 
+@@ -399,6 +404,21 @@
+                 }
+ 
+                 var importedMethod = targetMethod.ToMethodDescriptor();
++
++                // Native IL2CPP can leave an empty Object::.ctor call after
++                // inlining a derived initializer. Outside a managed constructor,
++                // that raw call has no legal C# spelling. Omit only a proven
++                // immediate ARM64 return, retaining ordinary base-ctor calls.
++                if (instruction.OpCode == OpCode.CallVoid && context.Name != ".ctor"
++                    && context.AppContext.Binary is LibCpp2IL.NintendoSwitch.NsoFile
++                    && targetMethod is { Name: ".ctor", IsStatic: false, Parameters.Count: 0, DeclaringType.FullName: "System.Object" }
++                    && context.AppContext.Binary.TryMapVirtualAddressToRaw(targetMethod.UnderlyingPointer, out var ctorRaw)
++                    && ctorRaw <= context.AppContext.Binary.RawLength - 4
++                    && Cpp2IL.Core.Utils.LegacyArm64AllocationPattern.IsImmediateReturn(context.AppContext.Binary.GetRawBinaryContent().Slice((int)ctorRaw, 4)))
++                {
++                    instructions.Add(CilOpCodes.Nop);
++                    break;
++                }
+ 
+                 var thisParamIndex = instruction.OpCode == OpCode.Call ? 2 : 1;
+ 
+@@ -584,13 +604,25 @@
+     
+     private static int ConstructorReceiverIndex(Instruction constructorCall) => constructorCall.OpCode == OpCode.CallVoid ? 1 : 2;
+ 
++    private static TypeAnalysisContext? AllocatedType(Instruction instruction) => instruction.Operands.Count < 2 ? null : instruction.Operands[1] switch
++    {
++        LocalVariable { Type: RuntimeClassTypeAnalysisContext { RepresentedType: var type } } => type,
++        RuntimeClassTypeAnalysisContext { RepresentedType: var type } => type,
++        TypeAnalysisContext type => type,
++        _ => null,
++    };
++
+     // Try find the follow up CallVoid for a constructor, after a Newobj.
+     private static Instruction? FindConstructorCall(MethodAnalysisContext context, Instruction newobj)
+     {
++        if (AllocatedType(newobj) is not { } allocatedType)
++            return null;
++
+         var newObject = newobj.Operands[0];
+-
+-        // The allocation and the constructor call routinely end up in different blocks
+-        var instructions = context.ControlFlowGraph!.Instructions;
++        var block = context.ControlFlowGraph!.Blocks.FirstOrDefault(b => b.Instructions.Contains(newobj));
++        if (block == null)
++            return null;
++        var instructions = block.Instructions;
+         var index = instructions.IndexOf(newobj);
+ 
+         if (index < 0)
+@@ -600,13 +632,18 @@
+         {
+             var candidate = instructions[i];
+ 
+-            if (candidate is not { OpCode: OpCode.Call or OpCode.CallVoid, Operands: [MethodAnalysisContext { Name: ".ctor" }, ..] })
++            if (candidate.OpCode == OpCode.Nop)
+                 continue;
++
++            if (candidate is not { OpCode: OpCode.Call or OpCode.CallVoid, Operands: [MethodAnalysisContext { Name: ".ctor", IsStatic: false } constructor, ..] }
++                || !ReferenceEquals(constructor.DeclaringType, allocatedType))
++                return null;
+ 
+             var receiver = ConstructorReceiverIndex(candidate);
+ 
+             if (candidate.Operands.Count > receiver && ReferenceEquals(candidate.Operands[receiver], newObject))
+                 return candidate;
++            return null;
+         }
+ 
+         return null;
+@@ -828,7 +865,9 @@
+     }
+ 
+     private static bool IsBoolean(IOperand operand, MethodAnalysisContext context) =>
+-        operand is LocalVariable { Type: { } type } && type == context.AppContext.SystemTypes.SystemBooleanType;
++        // SSA forwarding can replace a boolean local with its field/array
++        // read. Preserve that metadata type when lowering logical negation.
++        DestinationType(operand) == context.AppContext.SystemTypes.SystemBooleanType;
+ 
+     private static bool IsZeroConstant(IOperand operand) => operand is Immediate { Value: 0 };
+     
+diff --git a/Cpp2IL.Core/UninitializedObjectAllocation.cs b/Cpp2IL.Core/UninitializedObjectAllocation.cs
+new file mode 100644
+--- /dev/null
++++ b/Cpp2IL.Core/UninitializedObjectAllocation.cs
+@@ -0,0 +1,27 @@
++using AsmResolver.DotNet;
++using AsmResolver.DotNet.Signatures;
++using AsmResolver.PE.DotNet.Cil;
++
++namespace Cpp2IL.Core;
++
++/// <summary>Explicit lowering of separate native reference allocation, without running an instance constructor.</summary>
++public static class UninitializedObjectAllocation
++{
++    public static void Emit(MethodDefinition method, ITypeDefOrRef allocatedType)
++    {
++        var factory = method.DeclaringModule!.CorLibTypeFactory;
++        var scope = factory.CorLibScope;
++        var systemType = scope.CreateTypeReference("System", "Type");
++        var handle = scope.CreateTypeReference("System", "RuntimeTypeHandle");
++        var fromHandle = systemType.CreateMemberReference("GetTypeFromHandle",
++            MethodSignature.CreateStatic(systemType.ToTypeSignature(false), [handle.ToTypeSignature(true)]));
++        var allocate = scope.CreateTypeReference("System.Runtime.Serialization", "FormatterServices")
++            .CreateMemberReference("GetUninitializedObject",
++                MethodSignature.CreateStatic(factory.Object, [systemType.ToTypeSignature(false)]));
++        var instructions = method.CilMethodBody!.Instructions;
++        instructions.Add(CilOpCodes.Ldtoken, allocatedType);
++        instructions.Add(CilOpCodes.Call, fromHandle);
++        instructions.Add(CilOpCodes.Call, allocate);
++        instructions.Add(CilOpCodes.Castclass, allocatedType);
++    }
++}
+diff --git a/Cpp2IL.Core/ProcessingLayers/AttributeInjectorProcessingLayer.cs b/Cpp2IL.Core/ProcessingLayers/AttributeInjectorProcessingLayer.cs
+--- a/Cpp2IL.Core/ProcessingLayers/AttributeInjectorProcessingLayer.cs
++++ b/Cpp2IL.Core/ProcessingLayers/AttributeInjectorProcessingLayer.cs
+@@ -18,6 +18,33 @@
+ 
+     public override void Process(ApplicationAnalysisContext appContext, Action<int, int>? progressCallback = null)
+     {
++        Cpp2IL.Core.Analysis.LegacyDefaultMemberRecovery.Restore(appContext);
++        if (appContext.GetExtraData<string>("attr-injector-original-markers-only") != null)
++        {
++            // A source-oriented view of exact metadata-listed marker attributes.
++            // Keep the fully annotated output as separate evidence; injected RVA
++            // and field-offset attributes can prevent C# property reconstruction.
++            var markers = new[] { "System.Runtime.CompilerServices.CompilerGeneratedAttribute",
++                "System.Runtime.CompilerServices.ExtensionAttribute", "System.ParamArrayAttribute",
++                "System.NonSerializedAttribute", "System.SerializableAttribute",
++                "System.Diagnostics.DebuggerHiddenAttribute" };
++            var kept = 0; var omitted = 0;
++            foreach (var assembly in appContext.Assemblies)
++            foreach (var context in assembly.Types.SelectMany(type => type.Methods.SelectMany(method => method.Parameters.Cast<HasCustomAttributes>().Append(method))
++                         .Concat(type.Fields).Concat(type.Events).Concat(type.Properties).Append(type)).Append(assembly).Append(assembly.ManifestModule))
++            {
++                context.AnalyzeCustomAttributeData(false);
++                if (context.CustomAttributes == null) continue;
++                var selected = context.CustomAttributes.Where(attribute => attribute.IsSuitableForEmission
++                    && ((attribute.Constructor.Parameters.Count == 0 && markers.Contains(attribute.Constructor.DeclaringType!.FullName))
++                        || attribute.Constructor.DeclaringType!.FullName == "System.Reflection.DefaultMemberAttribute")).ToList();
++                kept += selected.Count; omitted += context.CustomAttributes.Count - selected.Count;
++                context.CustomAttributes = selected;
++            }
++            Cpp2IL.Core.Logging.Logger.InfoNewline($"Source marker view: {kept} exact metadata-listed marker attributes retained; {omitted} other attributes omitted from this separate output. Complete attribute recovery is not claimed.", "CA Restore");
++            return;
++        }
++
+         //EZ diff mode removes token attributes and method address/rva fields to make diffing using e.g. git easier
+         _useEzDiffMode = appContext.GetExtraData<string>("attr-injector-use-ez-diff") != null;
+ 
+diff --git a/Cpp2IL.Core/Utils/LegacyArm64DefaultMemberPattern.cs b/Cpp2IL.Core/Utils/LegacyArm64DefaultMemberPattern.cs
+new file mode 100644
+--- /dev/null
++++ b/Cpp2IL.Core/Utils/LegacyArm64DefaultMemberPattern.cs
+@@ -0,0 +1,46 @@
++using System;
++using System.Buffers.Binary;
++
++namespace Cpp2IL.Core.Utils;
++
++/// <summary>Bounded native cache-generator/string-wrapper witnesses; no property name is inferred.</summary>
++public static class LegacyArm64DefaultMemberPattern
++{
++    public readonly record struct Witness(ulong CString, ulong Utf8Wrapper);
++
++    public static Witness? Match(ReadOnlySpan<byte> bytes, ulong start, ulong constructor)
++    {
++        if (bytes.Length < 56 || constructor == 0) return null;
++        var w = Words(bytes, 14);
++        if (w[0] != 0xf81e0ff3 || w[1] != 0xa9017bfd || w[2] != 0x910043fd
++            || w[3] != 0xf9400408 || w[6] != 0xf9400113 || w[8] != 0xa9417bfd
++            || w[9] != 0xaa0003e1 || w[10] != 0xaa1303e0 || w[11] != 0xaa1f03e2
++            || w[12] != 0xf84207f3 || Branch(w[13], start + 52, false) != constructor) return null;
++        if ((w[4] & 0x9f00001f) != 0x90000000 || (w[5] & 0xffc003ff) != 0x91000000) return null;
++        var immediate = ((w[4] >> 5) & 0x7ffff) << 2 | ((w[4] >> 29) & 3);
++        long delta = (((int)(immediate << 11)) >> 11) * 4096L;
++        var literal = unchecked((ulong)((long)((start + 16) & ~0xffful) + delta)) + ((w[5] >> 10) & 0xfff);
++        var helper = Branch(w[7], start + 28, true);
++        return helper == 0 ? null : new(literal, helper);
++    }
++
++    public static bool IsStringWrapper(ReadOnlySpan<byte> bytes, ulong start)
++    {
++        if (bytes.Length < 40) return false;
++        var w = Words(bytes, 10);
++        return w[0] == 0xf81e0ff3 && w[1] == 0xa9017bfd && w[2] == 0x910043fd
++            && w[3] == 0xaa0003f3 && Branch(w[4], start + 16, true) != 0
++            && w[5] == 0xa9417bfd && w[6] == 0xaa0003e1 && w[7] == 0xaa1303e0
++            && w[8] == 0xf84207f3 && Branch(w[9], start + 36, false) != 0;
++    }
++
++    private static uint[] Words(ReadOnlySpan<byte> bytes, int count)
++    {
++        var output = new uint[count];
++        for (var i = 0; i < count; i++) output[i] = BinaryPrimitives.ReadUInt32LittleEndian(bytes.Slice(i * 4, 4));
++        return output;
++    }
++
++    private static ulong Branch(uint word, ulong pc, bool call) => (word & 0xfc000000) == (call ? 0x94000000u : 0x14000000u)
++        ? unchecked((ulong)((long)pc + (((int)(word << 6)) >> 4))) : 0;
++}
+diff --git a/Cpp2IL.Core/Analysis/LegacyDefaultMemberRecovery.cs b/Cpp2IL.Core/Analysis/LegacyDefaultMemberRecovery.cs
+new file mode 100644
+--- /dev/null
++++ b/Cpp2IL.Core/Analysis/LegacyDefaultMemberRecovery.cs
+@@ -0,0 +1,52 @@
++using System;
++using System.Collections.Generic;
++using System.Linq;
++using Cpp2IL.Core.Logging;
++using Cpp2IL.Core.Model.Contexts;
++using Cpp2IL.Core.Model.CustomAttributes;
++using Cpp2IL.Core.Utils;
++using LibCpp2IL.NintendoSwitch;
++
++namespace Cpp2IL.Core.Analysis;
++
++/// <summary>Restore only single-attribute native witnesses with a metadata-backed constructor and matching real property.</summary>
++public static class LegacyDefaultMemberRecovery
++{
++    private const string AttributeName = "System.Reflection.DefaultMemberAttribute";
++
++    public static int Restore(ApplicationAnalysisContext app)
++    {
++        if (app.Binary is not NsoFile || app.MetadataVersion != 24f) return 0;
++        var candidates = new List<(TypeAnalysisContext Owner, AnalyzedCustomAttribute Attribute, ulong Helper, string Value)>();
++        foreach (var owner in app.AllTypes)
++        {
++            if (!owner.HasCustomAttributeWithFullName(AttributeName)) continue;
++            owner.AnalyzeCustomAttributeData(false);
++            if (owner.CustomAttributes is not [{ } attribute] || attribute.IsSuitableForEmission
++                || attribute.Constructor.DeclaringType?.FullName != AttributeName
++                || attribute.Constructor.Parameters is not [{ ParameterType.FullName: "System.String" }]
++                || owner.CaCacheGeneratorAnalysis is not { } generator) continue;
++            generator.EnsureRawBytes();
++            var witness = LegacyArm64DefaultMemberPattern.Match(generator.RawBytes.ToArray(), generator.UnderlyingPointer, attribute.Constructor.UnderlyingPointer);
++            if (witness == null || !app.Binary.TryMapVirtualAddressToRaw(witness.Value.Utf8Wrapper, out var raw)
++                || raw > app.Binary.RawLength - 40
++                || !LegacyArm64DefaultMemberPattern.IsStringWrapper(app.Binary.GetRawBinaryContent().Slice((int)raw, 40), witness.Value.Utf8Wrapper)) continue;
++            var value = ThrowHelperRecovery.ReadCStringAtVirtualAddress(app, witness.Value.CString, 128);
++            if (string.IsNullOrEmpty(value) || value.Any(c => c < 0x20 || c > 0x7e)
++                || !owner.Properties.Any(p => p.Name == value && (p.Getter?.Parameters.Count > 0 || p.Setter?.Parameters.Count > 1))) continue;
++            candidates.Add((owner, attribute, witness.Value.Utf8Wrapper, value));
++        }
++        var consensus = candidates.GroupBy(c => c.Helper).Where(group => group.Count() >= 3).ToList();
++        if (consensus.Count != 1) return 0;
++        var recovered = 0;
++        foreach (var candidate in consensus[0])
++        {
++            candidate.Attribute.ConstructorParameters.Add(new CustomAttributePrimitiveParameter(candidate.Value,
++                candidate.Attribute, CustomAttributeParameterKind.ConstructorParam, 0));
++            recovered++;
++            Logger.VerboseNewline($"Recovered DefaultMember argument for {candidate.Owner.FullName} from original cache generator: {candidate.Value}", "CA Restore");
++        }
++        Logger.InfoNewline($"Recovered {recovered} DefaultMember arguments from strict native generators and a shared string-wrapper witness at 0x{consensus[0].Key:X}. Property names match metadata; no default name guessed.", "CA Restore");
++        return recovered;
++    }
++}

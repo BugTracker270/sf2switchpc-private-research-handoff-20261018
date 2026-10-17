@@ -1,0 +1,12 @@
+{
+  "status": "RECOVERED_TYPE_HANDLE_TOKEN_LIMITATION",
+  "recovery_run": "nso-sparse-params-v25",
+  "type_from_handle_calls": 2,
+  "checks": 0,
+  "fatal": "System.Exception: Branch escapes the bounded prefix",
+  "actual_type": null,
+  "full_body_il_sha256": "608c1c4a4bf493286a2aef76dcbb9b1219f03f78071049c148c6f75aff4debe9",
+  "bounded_prefix_il_sha256": "964263499ed65ceb3a5284c4a851e6ad99c6f824476ac02c3486f1c816f7d35f",
+  "assembly_sha256": "893f687fd0f95d776c139bbbd81fe4a6c14a6b28db380d80eca95e82a9123dda",
+  "scope": "Execute only the actual recovered CIL prefix ending at the selected enum\u0027s final Type.GetTypeFromHandle call, with a ret appended at that boundary. Scalar instructions, branches and used locals retained. Original enum token maps to that exact recovered enum; only the verified System.Type API token maps to the host BCL implementation of the same handle contract. Reject every other call/token and escaping branch before execution. The remaining getter has unresolved logic and is never executed. This is a CLR token/stack contract check, not original ARM64 execution, full getter validation or full source compilation."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "RECOVERY_QUALITY_LIMITATIONS_CONFIRMED",
+  "utc": "2026-10-17T01:27:30.688308+00:00",
+  "counts": {
+    "records": 152914,
+    "records_with_frame": 152904,
+    "records_with_partial_output_markers": 90808,
+    "records_with_listing_outside_frame": 5963
+  },
+  "functions_by_marker": {
+    "warning_comments": 90808,
+    "unrecovered_jump_table": 16725,
+    "unresolved_flow": 16725,
+    "bad_instruction_or_data": 553
+  },
+  "details": "analysis\\nso\\pseudocode-quality-snapshot.jsonl",
+  "snapshot_records": 152914,
+  "scope": "Read-only snapshot of indexed original Ghidra output. Warning/partial-output markers are observations, not necessarily independent defects. Listing addresses outside a validated frame require boundary/flow review; omitted instructions and data are not certified by this check. Pseudocode export success does not mean clean decompilation. Bulk export can advance beyond this snapshot."
+}

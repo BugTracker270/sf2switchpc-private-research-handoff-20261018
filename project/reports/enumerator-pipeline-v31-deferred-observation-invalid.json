@@ -1,0 +1,1331 @@
+{
+  "status": "READ_ONLY_ACTUAL_CALLER_STACK_AND_SSA_OBSERVATIONS",
+  "caller": "Nekki.SF2.Core.Fights.Fight::SetStage",
+  "caller_rva": "0xC9F3F0",
+  "tool_core_sha256": "2012db2ff4305d6e8903cc2ae84f8f4fbd68b208356cfae3813ca0c82b76da0d",
+  "original_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "original_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "source_hashes": [
+    {
+      "file": "refs/Cpp2IL/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs",
+      "sha256": "c2f08a6ab4974747f38ffe0d860a5eb36bd71cdb552e8df46dd6e74c616db20f"
+    },
+    {
+      "file": "refs/Cpp2IL/Cpp2IL.Core/Analysis/StackAnalyzer.cs",
+      "sha256": "708c6e5bd464bff4b6b20be18563a21a934b10871ad8704a544fb56ae000c8c0"
+    },
+    {
+      "file": "refs/Cpp2IL/Cpp2IL.Core/Analysis/SsaForm.cs",
+      "sha256": "036b41f0259c6f02fec2a8a0f122137dd6c12a6b1a21f415b1b1bb34fe9ac6cc"
+    },
+    {
+      "file": "refs/Cpp2IL/Cpp2IL.Core/Analysis/LocalVariables.cs",
+      "sha256": "19a5e9330da015c80b0891f772ce9d6949f9010c0dfde3d895aac44da59791af"
+    },
+    {
+      "file": "refs/Cpp2IL/Cpp2IL.Core/Model/Contexts/MethodAnalysisContext.cs",
+      "sha256": "3630c47dbb88e1ef06fb1e9fe41a4ab491243ac4bb03c7c1d0ea6f58d5fe8c37"
+    }
+  ],
+  "original_game_code_executed": false,
+  "core_modified": false,
+  "stages": [
+    {
+      "stage": "raw-converted-before-stack",
+      "instructions": 142,
+      "calls": [
+        {
+          "Index": 86,
+          "target_rva": "0x1585F60",
+          "destination": "v89 @ X0_v4",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v85 @ X0_v3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v87 @ X1_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 95,
+          "target_rva": "0x11DD3E0",
+          "destination": "v154 @ X0_v7",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v153 @ X0_v6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v152 @ X1_v3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 101,
+          "target_rva": "0x11DD540",
+          "destination": "v158 @ X0_v11",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v157 @ X0_v10"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v156 @ X1_v5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 135,
+          "target_rva": "0x11DD3B0",
+          "destination": "v163 @ X0_v9",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v162 @ X0_v8"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v161 @ X1_v4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ],
+      "stack_addresses": [
+        {
+          "Index": 10,
+          "op": "Move",
+          "destination": "v18 @ X29_v1",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v19 @ stack_-10_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 85,
+          "op": "Move",
+          "destination": "v88 @ X8_v12",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 94,
+          "op": "Move",
+          "destination": "v153 @ X0_v6",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 100,
+          "op": "Move",
+          "destination": "v157 @ X0_v10",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 134,
+          "op": "Move",
+          "destination": "v162 @ X0_v8",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 106,
+          "op": "Move",
+          "destination": "v166 @ X1_v6",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v141 @ stack_-44_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 120,
+          "op": "Move",
+          "destination": "v184 @ X1_v8",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v130 @ stack_-48_v2"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ]
+    },
+    {
+      "stage": "stack-normalized-before-ssa",
+      "instructions": 140,
+      "calls": [
+        {
+          "Index": 86,
+          "target_rva": "0x1585F60",
+          "destination": "v89 @ X0_v4",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v85 @ X0_v3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v87 @ X1_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 95,
+          "target_rva": "0x11DD3E0",
+          "destination": "v154 @ X0_v7",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v153 @ X0_v6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v152 @ X1_v3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 101,
+          "target_rva": "0x11DD540",
+          "destination": "v158 @ X0_v11",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v157 @ X0_v10"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v156 @ X1_v5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 135,
+          "target_rva": "0x11DD3B0",
+          "destination": "v163 @ X0_v9",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v162 @ X0_v8"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v161 @ X1_v4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ],
+      "stack_addresses": [
+        {
+          "Index": 10,
+          "op": "Move",
+          "destination": "v18 @ X29_v1",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v19 @ stack_-10_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 85,
+          "op": "Move",
+          "destination": "v88 @ X8_v12",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 94,
+          "op": "Move",
+          "destination": "v153 @ X0_v6",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 100,
+          "op": "Move",
+          "destination": "v157 @ X0_v10",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 134,
+          "op": "Move",
+          "destination": "v162 @ X0_v8",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 106,
+          "op": "Move",
+          "destination": "v166 @ X1_v6",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v141 @ stack_-44_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 120,
+          "op": "Move",
+          "destination": "v184 @ X1_v8",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v130 @ stack_-48_v2"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ]
+    },
+    {
+      "stage": "ssa-before-local-allocation",
+      "instructions": 177,
+      "calls": [
+        {
+          "Index": 86,
+          "target_rva": "0x1585F60",
+          "destination": "v89 @ X0_v4",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v85 @ X0_v3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v87 @ X1_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 95,
+          "target_rva": "0x11DD3E0",
+          "destination": "v154 @ X0_v7",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v153 @ X0_v6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v152 @ X1_v3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 101,
+          "target_rva": "0x11DD540",
+          "destination": "v158 @ X0_v11",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v157 @ X0_v10"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v156 @ X1_v5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 135,
+          "target_rva": "0x11DD3B0",
+          "destination": "v163 @ X0_v9",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v162 @ X0_v8"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v161 @ X1_v4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ],
+      "stack_addresses": [
+        {
+          "Index": 10,
+          "op": "Move",
+          "destination": "v18 @ X29_v1",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v19 @ stack_-10_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 85,
+          "op": "Move",
+          "destination": "v88 @ X8_v12",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 94,
+          "op": "Move",
+          "destination": "v153 @ X0_v6",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 100,
+          "op": "Move",
+          "destination": "v157 @ X0_v10",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 134,
+          "op": "Move",
+          "destination": "v162 @ X0_v8",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 106,
+          "op": "Move",
+          "destination": "v166 @ X1_v6",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v141 @ stack_-44_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 120,
+          "op": "Move",
+          "destination": "v184 @ X1_v8",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v130 @ stack_-48_v2"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ]
+    },
+    {
+      "stage": "ssa-with-local-identities",
+      "instructions": 177,
+      "calls": [
+        {
+          "Index": 86,
+          "target_rva": "0x1585F60",
+          "destination": "v89 @ X0_v4",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v85 @ X0_v3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v87 @ X1_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 95,
+          "target_rva": "0x11DD3E0",
+          "destination": "v154 @ X0_v7",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v153 @ X0_v6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v152 @ X1_v3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 101,
+          "target_rva": "0x11DD540",
+          "destination": "v158 @ X0_v11",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v157 @ X0_v10"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v156 @ X1_v5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 135,
+          "target_rva": "0x11DD3B0",
+          "destination": "v163 @ X0_v9",
+          "argument_operands": [
+            {
+              "kind": "LocalVariable",
+              "value": "v162 @ X0_v8"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v161 @ X1_v4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v137 @ X2_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v135 @ X3_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v133 @ X4_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v131 @ X5_v1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v99 @ X6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v100 @ X7"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v101 @ V0"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v102 @ V1"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v103 @ V2"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v104 @ V3"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v105 @ V4"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v106 @ V5"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v107 @ V6"
+            },
+            {
+              "kind": "LocalVariable",
+              "value": "v108 @ V7"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ],
+      "stack_addresses": [
+        {
+          "Index": 10,
+          "op": "Move",
+          "destination": "v18 @ X29_v1",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v19 @ stack_-10_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 85,
+          "op": "Move",
+          "destination": "v88 @ X8_v12",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 94,
+          "op": "Move",
+          "destination": "v153 @ X0_v6",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 100,
+          "op": "Move",
+          "destination": "v157 @ X0_v10",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 134,
+          "op": "Move",
+          "destination": "v162 @ X0_v8",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v38 @ stack_-68_v1"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 106,
+          "op": "Move",
+          "destination": "v166 @ X1_v6",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v141 @ stack_-44_v2"
+            }
+          ],
+          "implicit_definition": null
+        },
+        {
+          "Index": 120,
+          "op": "Move",
+          "destination": "v184 @ X1_v8",
+          "address_operands": [
+            {
+              "kind": "LocalVariable",
+              "target": "v130 @ stack_-48_v2"
+            }
+          ],
+          "implicit_definition": null
+        }
+      ]
+    }
+  ],
+  "scope": "Unmodified actual SetStage conversion, stack normalization, SSA and local allocation only. Symbolic operand identities are observations, not recovered behavior. No initializer/default-value substitution, call retargeting or production fixes. The original native ownership and CIL counterexamples are tested separately."
+}

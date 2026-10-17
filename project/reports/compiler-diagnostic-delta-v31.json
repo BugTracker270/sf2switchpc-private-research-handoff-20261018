@@ -1,0 +1,465 @@
+{
+  "status": "HASH_VERIFIED_CANONICAL_COMPILER_DELTA",
+  "before": "nso-value-this-box-v30",
+  "after": "nso-cfg-init-v31",
+  "source_modified": false,
+  "whole_game_source_ready": false,
+  "assemblies": {
+    "Assembly-CSharp-firstpass": {
+      "old_unique": 18762,
+      "new_unique": 19480,
+      "delta": 718,
+      "source_integrity": {
+        "nso-value-this-box-v30": {
+          "manifest_sha256": "0353b29916e4883ef7b346c58e95542dc0713c70ef388106013809f875a91de6",
+          "diagnostic_source_files_hash_verified": 610
+        },
+        "nso-cfg-init-v31": {
+          "manifest_sha256": "e857f536c77b77938e72e823915cead04e6f11a320289afc65f810310c8fb762",
+          "diagnostic_source_files_hash_verified": 620
+        }
+      },
+      "error_code_delta": {
+        "CS0019": 4,
+        "CS0030": 589,
+        "CS0037": 96,
+        "CS0103": 4,
+        "CS0122": 4,
+        "CS0165": -1,
+        "CS0177": -1,
+        "CS0234": 11,
+        "CS0269": 1,
+        "CS1061": 10,
+        "CS8174": 1
+      },
+      "operand_categories": {
+        "nso-value-this-box-v30": {
+          "int_zero_cast_to_enumerator": 34,
+          "int_zero_cast_to_other_nonprimitive": 237,
+          "value_cast_to_pointer_of_same_type": 393
+        },
+        "nso-cfg-init-v31": {
+          "int_zero_cast_to_enumerator": 34,
+          "value_cast_to_pointer_of_same_type": 394,
+          "int_zero_cast_to_other_nonprimitive": 327
+        }
+      },
+      "semantic_added_occurrences": 744,
+      "semantic_removed_occurrences": 26,
+      "most_added_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 385
+        },
+        {
+          "code": "CS0037",
+          "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+          "count": 96
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'SevenZip.Compression.LZMA.Base.State'",
+          "count": 37
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Type'",
+          "count": 12
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'short[]'",
+          "count": 12
+        },
+        {
+          "code": "CS0234",
+          "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+          "count": 11
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'string'",
+          "count": 11
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.DateTime'",
+          "count": 9
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'object*' to 'object'",
+          "count": 9
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'long*' to 'object'",
+          "count": 9
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.RuntimeTypeHandle'",
+          "count": 9
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Text.Encoding' to 'nint'",
+          "count": 7
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'string' to 'nint'",
+          "count": 7
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Array'",
+          "count": 5
+        },
+        {
+          "code": "CS0103",
+          "message": "The name '__ldftn' does not exist in the current context",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'nint' to 'System.Collections.Generic.List<BestHTTP.HTTPConnection>'",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'bool*' to 'object'",
+          "count": 3
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'nint' to 'string'",
+          "count": 3
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'nint' to 'System.Collections.Generic.Dictionary<string, UnityEngine.AssetBundle>'",
+          "count": 3
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '+' cannot be applied to operands of type 'int' and 'object'",
+          "count": 3
+        }
+      ],
+      "most_added_files": [
+        {
+          "file": "LitJson/JsonMapper.cs",
+          "count": 79
+        },
+        {
+          "file": "SevenZip/Compression/LZMA/Encoder.cs",
+          "count": 74
+        },
+        {
+          "file": "BestHTTP/Decompression/Zlib/DeflateManager.cs",
+          "count": 74
+        },
+        {
+          "file": "BestHTTP/Cookies/CookieJar.cs",
+          "count": 40
+        },
+        {
+          "file": "BestHTTP/HTTPManager.cs",
+          "count": 31
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredPrefs.cs",
+          "count": 28
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/DefaultContractResolver.cs",
+          "count": 28
+        },
+        {
+          "file": "SystemProperties.cs",
+          "count": 23
+        },
+        {
+          "file": "SceneLoader.cs",
+          "count": 22
+        },
+        {
+          "file": "Newtonsoft/Json/JsonConvert.cs",
+          "count": 18
+        },
+        {
+          "file": "LitJson/JsonReader.cs",
+          "count": 17
+        },
+        {
+          "file": "BestHTTP/Decompression/Zlib/ZTree.cs",
+          "count": 13
+        },
+        {
+          "file": "BestHTTP/WebSocket/WebSocketResponse.cs",
+          "count": 10
+        },
+        {
+          "file": "ServerProviderBase.cs",
+          "count": 9
+        },
+        {
+          "file": "BestHTTP/Caching/HTTPCacheService.cs",
+          "count": 9
+        },
+        {
+          "file": "GlobalPaths.cs",
+          "count": 8
+        },
+        {
+          "file": "Rand.cs",
+          "count": 8
+        },
+        {
+          "file": "Newtonsoft/Json/JsonTextReader.cs",
+          "count": 8
+        },
+        {
+          "file": "Newtonsoft/Json/Bson/BsonReader.cs",
+          "count": 7
+        },
+        {
+          "file": "YamlDotNet/Core/Emitter.cs",
+          "count": 7
+        }
+      ]
+    },
+    "Assembly-CSharp": {
+      "old_unique": 28906,
+      "new_unique": 30393,
+      "delta": 1487,
+      "source_integrity": {
+        "nso-value-this-box-v30": {
+          "manifest_sha256": "0353b29916e4883ef7b346c58e95542dc0713c70ef388106013809f875a91de6",
+          "diagnostic_source_files_hash_verified": 1186
+        },
+        "nso-cfg-init-v31": {
+          "manifest_sha256": "e857f536c77b77938e72e823915cead04e6f11a320289afc65f810310c8fb762",
+          "diagnostic_source_files_hash_verified": 1187
+        }
+      },
+      "error_code_delta": {
+        "CS0019": 9,
+        "CS0029": 1,
+        "CS0030": 1315,
+        "CS0037": 61,
+        "CS0103": 5,
+        "CS0117": 1,
+        "CS0122": 25,
+        "CS0149": 7,
+        "CS0165": 1,
+        "CS0234": 4,
+        "CS0266": -1,
+        "CS0272": 1,
+        "CS1061": 57,
+        "CS1540": 1
+      },
+      "operand_categories": {
+        "nso-value-this-box-v30": {
+          "int_zero_cast_to_other_nonprimitive": 659,
+          "int_zero_cast_to_enumerator": 490,
+          "value_cast_to_pointer_of_same_type": 246
+        },
+        "nso-cfg-init-v31": {
+          "int_zero_cast_to_other_nonprimitive": 716,
+          "int_zero_cast_to_enumerator": 493,
+          "value_cast_to_pointer_of_same_type": 249
+        }
+      },
+      "semantic_added_occurrences": 1496,
+      "semantic_removed_occurrences": 9,
+      "most_added_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 713
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'nint' to 'System.Delegate'",
+          "count": 80
+        },
+        {
+          "code": "CS0037",
+          "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+          "count": 61
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'string'",
+          "count": 46
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Delegate' to 'nint'",
+          "count": 40
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Action' to 'nint'",
+          "count": 28
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Action<InControl.InputDevice>' to 'nint'",
+          "count": 20
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'string' to 'int'",
+          "count": 11
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Action<bool>' to 'nint'",
+          "count": 8
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'nint' to 'string'",
+          "count": 8
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Action<Nekki.SF2.GUI.UIModule>' to 'nint'",
+          "count": 8
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'UnityEngine.Object'",
+          "count": 7
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Nekki.SF2.Core.API.Items.ItemInfo' to 'nint'",
+          "count": 7
+        },
+        {
+          "code": "CS0149",
+          "message": "Method name expected",
+          "count": 7
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'nint' to 'System.Collections.Generic.Dictionary<string, int>'",
+          "count": 6
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'System.Collections.Generic.List<Nekki.SF2.Core.Zones.Zone>.Enumerator*'",
+          "count": 6
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'string' to 'nint'",
+          "count": 6
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'char[]'",
+          "count": 6
+        },
+        {
+          "code": "CS0122",
+          "message": "'SwitchInputDevice.npadStyle' is inaccessible due to its protection level",
+          "count": 6
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'string[]'",
+          "count": 5
+        }
+      ],
+      "most_added_files": [
+        {
+          "file": "Nekki/SF2/Core/Console/ConsoleCommands.cs",
+          "count": 157
+        },
+        {
+          "file": "InControl/InputManager.cs",
+          "count": 126
+        },
+        {
+          "file": "InControl/SwitchInputDeviceManager.cs",
+          "count": 51
+        },
+        {
+          "file": "Nekki/SF2/GUI/DebugModules/ConsoleUI.cs",
+          "count": 47
+        },
+        {
+          "file": "Nekki/SF2/Core/API/Roster.cs",
+          "count": 37
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/Perks/PerkTree.cs",
+          "count": 35
+        },
+        {
+          "file": "Nekki/SF2/Core/Localization/LocalizationManager.cs",
+          "count": 33
+        },
+        {
+          "file": "Nekki/SF2/Core/API/ListSF.cs",
+          "count": 31
+        },
+        {
+          "file": "DumpController.cs",
+          "count": 28
+        },
+        {
+          "file": "Nekki/SF2/Core/ApplicationController.cs",
+          "count": 28
+        },
+        {
+          "file": "Nekki/SF2/GUI/UIModule.cs",
+          "count": 28
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/Sounds/Sound.cs",
+          "count": 25
+        },
+        {
+          "file": "Nekki/SF2/Core/API/Items/ItemInfo.cs",
+          "count": 24
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/GameUtils.cs",
+          "count": 24
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Fight.cs",
+          "count": 23
+        },
+        {
+          "file": "Nekki/SF2/Core/Settings/GameSettings.cs",
+          "count": 23
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidCheatManager.cs",
+          "count": 22
+        },
+        {
+          "file": "CUDLR/Server.cs",
+          "count": 20
+        },
+        {
+          "file": "Nekki/SF2/GUI/Common/Hints/HintSchemeController.cs",
+          "count": 16
+        },
+        {
+          "file": "Nekki/SF2/GUI/Map/MapButtonController.cs",
+          "count": 16
+        }
+      ]
+    }
+  },
+  "limits": "Diagnostic lines include cascades and are not independent bug counts or completion percentages. Semantic multisets ignore line movement but local-variable spelling can still change a message. Every diagnostic-bearing source file is hash/size checked against its original export manifest. This report measures changes without certifying whether any change preserves behavior."
+}

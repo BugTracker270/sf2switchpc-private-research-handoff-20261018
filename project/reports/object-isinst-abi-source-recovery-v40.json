@@ -1,0 +1,337 @@
+{
+  "status": "OBJECT_ISINST_ABI_ADDED_DIAGNOSTIC_REVIEW_PENDING",
+  "recovery_run": "nso-object-isinst-abi-v40",
+  "baseline_run": "nso-assembly-leaf-getter-v39",
+  "updated": "2026-10-17T19:12:27.936275+00:00",
+  "recovery_core_sha256": "14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6",
+  "evidence": {
+    "invocation": {
+      "path": "logs/cpp2il-nso-object-isinst-abi-v40-result.json",
+      "sha256": "3cd258cb7c4f4ba455cef66e5f05fee040dc83dff38bd80fd7ec03546ade6e1b",
+      "status": null
+    },
+    "sources": {
+      "path": "reports/object-isinst-abi-v40-source-snapshot.json",
+      "sha256": "813c0e1052d21cdcde80490ac8d8f9fb0073d04030dec12559fa2039d197ea3e",
+      "status": "PASS_IMMUTABLE_COMPLETE_CANDIDATE_SOURCE_CAPTURE"
+    },
+    "binaries": {
+      "path": "reports/object-isinst-abi-v40-tool-binary-snapshot.json",
+      "sha256": "164981a7909bf1693268cd14f7e3174a68510ba04f5d880227898e920d8b4ba8",
+      "status": "PASS_IMMUTABLE_INVOCATION_TOOL_BINARIES"
+    },
+    "candidate": {
+      "path": "reports/cpp2il-hfa-experimental-lock-object-isinst-abi-v40.json",
+      "sha256": "92cf4531df36dabb9542d481d57cc22b197781be6d5d29d1c8ad7654e775f32d",
+      "status": "EXPERIMENTAL_SAVED_NOT_PROMOTED"
+    },
+    "frozen_reverse_check": {
+      "path": "reports\\object-isinst-abi-v40-frozen-reverse-check.json",
+      "sha256": "7e00ff2c8cfb7e8a6522284c89a7a5e1a726502d1f92a90e2cb73f736e99222f",
+      "status": "PASS_FROZEN_CANDIDATE_REVERSE_CHECK"
+    },
+    "source_review": {
+      "path": "reports/object-isinst-abi-independent-source-review-v40.json",
+      "sha256": "3f7d8d9aa65563f0f4eec5f17a54a783d321153ca7141f3316d11e0ba1acfbad",
+      "status": "ACCEPTED_EXACT_ABI_ONLY_WITH_EXPLICIT_UNRECOVERED_EMITTED_SEMANTICS"
+    },
+    "contract": {
+      "path": "reports/object-isinst-abi-contract-v40.json",
+      "sha256": "18612897d497465269d79bc60460fe3faa423488ff4466ae71e8bedcd82362c2",
+      "status": "PASS_EXACT_OBJECT_ISINST_ABI_ONLY_CONTRACT"
+    },
+    "production": {
+      "path": "reports/object-isinst-abi-production-v40.json",
+      "sha256": "59fc6915edc66ec5a0795d282984ffc9b91280ef605b8649508554201fbc0952",
+      "status": "PASS_ORIGINAL_ISINST_ABI_ONLY_PRODUCTION_DATAFLOW_AND_DIAGNOSTICS"
+    },
+    "native_wrapper": {
+      "path": "reports/native-object-isinst-abi-v40.json",
+      "sha256": "b819a3069e7bda1dfa6850f3782977f0b76cd8bde37392a1d1a2961a030a133b",
+      "status": "PASS_UNCHANGED_NATIVE_ISINST_WRAPPER_AT_EXPLICIT_ASSIGNABILITY_BOUNDARY"
+    },
+    "fresh_output": {
+      "path": "reports/recovered-object-isinst-abi-nso-object-isinst-abi-v40.json",
+      "sha256": "f148376d01c1ce5c9537842052e3924a66640ba954b90af3c54048a25e8aa2cc",
+      "status": "PASS_FRESH_ABI_ONLY_CIL_CORRELATION_WITH_EXPLICIT_UNRECOVERED_SCAFFOLD_LIMITATIONS"
+    },
+    "regressions": {
+      "path": "reports/recovery-regression-nso-object-isinst-abi-v40.json",
+      "sha256": "e870a347b39ae2591bdd4536b8466d31a401a7a94650e048b2cc6c4e5397b82c",
+      "status": "PASS_SCOPED_RECOVERY_REGRESSIONS"
+    },
+    "syntax": {
+      "path": "analysis/il2cpp/cil-audit-nso-object-isinst-abi-v40/summary.json",
+      "sha256": "6ad8586fc496e894d9044c85db6bd6f019028f677fcf5b21a4e658f4d44abf70",
+      "status": null
+    },
+    "stack": {
+      "path": "reports/cil-stack-audit-nso-object-isinst-abi-v40.json",
+      "sha256": "89b33fafd3d833a7208b15ea88b10235e573501925ade6ca386f77aef9cfafbe",
+      "status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY"
+    },
+    "diagnostic_scaffolds": {
+      "path": "reports/diagnostic-scaffolds-nso-object-isinst-abi-v40.json",
+      "sha256": "766e71a3b57ace264eab420cc66fc49eca3dcc0c512979348d9df5a7fa47d360",
+      "status": "OBSERVED_DIAGNOSTIC_SCAFFOLDS_FULL_SOURCE_NOT_READY"
+    },
+    "compiler_comparison": {
+      "path": "reports/compiler-diagnostic-delta-v40.json",
+      "sha256": "32b341c34c85d1354c855474e6a424067fc81e372baa3056560e7eb30be0b509",
+      "status": "PASS_CANONICAL_COMPLETE_SOURCE_COMPILER_COMPARISON"
+    }
+  },
+  "gates": [
+    {
+      "name": "completed_exact_core_invocation",
+      "status": "PASS"
+    },
+    {
+      "name": "all44_output_assemblies",
+      "status": "PASS"
+    },
+    {
+      "name": "sources_status",
+      "status": "PASS"
+    },
+    {
+      "name": "41_frozen_sources_and_manifest_match_invocation",
+      "status": "PASS"
+    },
+    {
+      "name": "binaries_status",
+      "status": "PASS"
+    },
+    {
+      "name": "three_frozen_invocation_binaries",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_status",
+      "status": "PASS"
+    },
+    {
+      "name": "complete41_candidate_binds_frozen_source",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_reverse_apply_check",
+      "status": "PASS"
+    },
+    {
+      "name": "seven_reviewed_source_paths_match_frozen_core",
+      "status": "PASS"
+    },
+    {
+      "name": "contract_status",
+      "status": "PASS"
+    },
+    {
+      "name": "57_independent_signature_contract_checks",
+      "status": "PASS"
+    },
+    {
+      "name": "production_status",
+      "status": "PASS"
+    },
+    {
+      "name": "41_original_caller_stage_checks",
+      "status": "PASS"
+    },
+    {
+      "name": "native_wrapper_status",
+      "status": "PASS"
+    },
+    {
+      "name": "1034_wrapper_cases_at_explicit_supplied_boundary",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh_output_status",
+      "status": "PASS"
+    },
+    {
+      "name": "41_fresh_output_checks_bind_completed_invocation",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_constructor_alignment_only_dead_store_and_unused_local_changes",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_noop_diagnostic_and_implicit_null_limits_retained",
+      "status": "PASS"
+    },
+    {
+      "name": "regressions_status",
+      "status": "PASS"
+    },
+    {
+      "name": "18_existing_bounded_regression_jobs",
+      "status": "PASS"
+    },
+    {
+      "name": "44_syntactic_audits_only",
+      "status": "PASS"
+    },
+    {
+      "name": "stack_status",
+      "status": "PASS"
+    },
+    {
+      "name": "44_stack_depth_headers_only",
+      "status": "PASS"
+    },
+    {
+      "name": "diagnostic_scaffolds_status",
+      "status": "PASS"
+    },
+    {
+      "name": "whole_output_diagnostic_scaffold_limits_explicit",
+      "status": "PASS"
+    },
+    {
+      "name": "compiler_comparison_status",
+      "status": "PASS"
+    },
+    {
+      "name": "compiler_comparison_exact_runs",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_source_profile_Assembly-CSharp-firstpass_nso-assembly-leaf-getter-v39",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_manifest_hash_reports/recovered-source-profile-legacy-reference-check-nso-assembly-leaf-getter-v39.json",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_manifest_hash_reports/recovered-source-profile-project-build-nso-assembly-leaf-getter-v39.json",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_source_profile_Assembly-CSharp-firstpass_nso-object-isinst-abi-v40",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_manifest_hash_reports/recovered-source-profile-legacy-reference-check-nso-object-isinst-abi-v40.json",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_manifest_hash_reports/recovered-source-profile-project-build-nso-object-isinst-abi-v40.json",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_source_profile_Assembly-CSharp_nso-assembly-leaf-getter-v39",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_source_profile_Assembly-CSharp_nso-object-isinst-abi-v40",
+      "status": "PASS"
+    },
+    {
+      "name": "added_semantic_diagnostics_reviewed_or_absent",
+      "status": "PENDING"
+    }
+  ],
+  "failed_gates": [],
+  "pending_gates": [
+    "added_semantic_diagnostics_reviewed_or_absent"
+  ],
+  "assembly_hashes": {
+    "Assembly-CSharp-firstpass.dll": "5ab955502d73f3307e9fe5c700d1a5ae62e8a1450e953f3fc3cfc342551d9150",
+    "Assembly-CSharp.dll": "e5026c3658a143007dabd8feee3fe629ae69d0aba4990c3fd7078e34f65213c5",
+    "DOTween.dll": "63f6c694894e0a963ff43b3be9ddebd5defb555aa8e328322573f6191e975e85",
+    "DOTween46.dll": "f8fd9ff5eb4dc218f35c03646a4a584df9a85bfe1927fb372ec28263dfb162a5",
+    "Facebook.Unity.Settings.dll": "fec973640a06cd92a1fe21f6abc401dccb03505de3341bba1df8e5ff652f59c2",
+    "FyberLitJson.dll": "e5c50c0e95cc13af5b4a0b1d6e605769e2d6b3bc024453f21e5e3512fb075929",
+    "FyberPlugin.dll": "f613783d250046b252ea40c18657562d95545546af125f8990e13c24eda3efc5",
+    "Ionic.Zip.Unity.dll": "fc68d35742cf13a64bdb020a6d6fcb72479da317aece8e8fbce5d568de39f77d",
+    "Mono.Security.dll": "ac185477ee73738b235b6e57eca2d2868f94bf3e9e96c9e1acc8aa5fb8e33577",
+    "mscorlib.dll": "ecaaa05d98f1d7255175ac748c51c94c3d694e2c348ca80036a24aacf5bc3aed",
+    "protobuf-net.dll": "09d79bf8402321d4b44ee9764be6d631f5f22b3065ba1d7e83e335c473168e33",
+    "SmartFox2X.dll": "308e43bd361b26467a9e0c61bf67d15ac96103f77ee77e1c978d69a080b50f73",
+    "System.Configuration.dll": "4fc830c15f61bda49b4a9fc67af592cd31b5b89d608c111c8fa5d94443d91317",
+    "System.Core.dll": "4fff29bfcddd43fe51892e6b5cc80bb7b9382190a6fb4358ac1b09069606a223",
+    "System.dll": "77f86bc52011f56d537978638485f7c31afdeed1e55feec6dc81ca011d39749f",
+    "System.Xml.dll": "a9225b03c2dab6f1d99ecadea5d755afa06ae92d67625512020bf7870faf1cae",
+    "System.Xml.Linq.dll": "9803b135c2670923885cf37bd3268b543f6b38ad022007a1d8c9b7c5d4e6abac",
+    "TcpClientImplementation.dll": "9de8c535e9797b3c047aca575d664d9791ded9438a37205739eecf8d73365aec",
+    "UnityEngine.AIModule.dll": "bc3e2d34e282a24ec16d14fd567e38920dffe6675b9c7c57d2b6b982a0232299",
+    "UnityEngine.AnimationModule.dll": "076571ba94671cfd67e1e1aa91547dc78a8d5abe490d9aa88fc0f131cc79960c",
+    "UnityEngine.AssetBundleModule.dll": "02799cd05ec989498e181c998efcaa32aa01b947c555229e1257046500eaa18a",
+    "UnityEngine.AudioModule.dll": "a6c68bf2614afd801f1bff6fc30d524be87bb2aaf505bc79a2e166103ca4d177",
+    "UnityEngine.CoreModule.dll": "48652012e315cd67e0e3676bd38f45d4bec545a5ef26a43783e0d232b20fdb0f",
+    "UnityEngine.DirectorModule.dll": "55fb98a358c8f9c55d2e5037f8c06b1f7327fa1b5102faccd521c872b195df8a",
+    "UnityEngine.dll": "7eb4e5d1934ba07eff3a1ce440b8d2cdae76aeeabfc10fcf8ee880e48e1f4593",
+    "UnityEngine.GameCenterModule.dll": "336e278d76a081221d2da9acfb8a209f9700faae597d4c3a93ad9a34f4802595",
+    "UnityEngine.GridModule.dll": "a489e6ba863bafc88f342bbbeba56a4aab0dd635bac4a8ffcdae1181a3b41b1d",
+    "UnityEngine.ImageConversionModule.dll": "8a712eb7e7abea97d381760d88466f17283da6d00126ad9ae210694dcb5870a9",
+    "UnityEngine.IMGUIModule.dll": "dc7e7dc3e21b4915d70368a21ffea8fecdc301a7fa4725317a4bd9093b4b0827",
+    "UnityEngine.InputModule.dll": "0add27a1887824e2dbfa1df89d7fc5c0832f6cdad5f841d0d232489b0aa39236",
+    "UnityEngine.ParticleSystemModule.dll": "02f32bcaea4aa1df2d6da0fa1f23c165412e8685afc05ec5395ce393156f5aef",
+    "UnityEngine.Physics2DModule.dll": "fdb9b3f702673bc6540184d1d9c0b2b86efdb041b60f6b64ecfcfcc6d6957bdc",
+    "UnityEngine.PhysicsModule.dll": "b767d3d76d6d73e17ba9976212b933d6d21aea7064382210dbe11fd79dc09e6b",
+    "UnityEngine.SharedInternalsModule.dll": "bba062b40c94100feac712c17a2eb47e84d5dcd30948ad577c59a085a646d9df",
+    "UnityEngine.TerrainModule.dll": "61f836347946b56208ef07f3da68927c290f33499f6f78e07f4f6d7ee08f1afe",
+    "UnityEngine.TextRenderingModule.dll": "efdfd73d11f279de1197d0c98da9deb29af5fc6376c9038ad29f4dedf096c637",
+    "UnityEngine.TilemapModule.dll": "636e0e17e14f74f9967a0833be1e3346bc0b04c14d4170532ca21702b629173a",
+    "UnityEngine.UI.dll": "3110261f86d183835db46a19cadc598419cff3302ce11ea5a5acac8bca6df22c",
+    "UnityEngine.UIElementsModule.dll": "48784bc3a8d7e8862c8aff039d93286d354812fd5b9867e76ed8e311a3d7189a",
+    "UnityEngine.UIModule.dll": "9c63bee8a2cb6b512d715a2d7c2ed395404e6425b458c5e428ac40e7be313f38",
+    "UnityEngine.UnityWebRequestAssetBundleModule.dll": "33b7c81a3a9543f7ca7567aec9dbfae1f4e5e75841d39eefcb21b547d2f8d8bf",
+    "UnityEngine.UnityWebRequestModule.dll": "8a04d7f748166d059d6b6d2c27c5cbcd2c021a0b2dfbf646d8527e624675ba2c",
+    "UnityEngine.UnityWebRequestWWWModule.dll": "c0b69ff9db28dc489597af7a47972c418fef7a523e9c9446653d4c8c2e70e245",
+    "UnityEngine.VRModule.dll": "6284bff6bccd2b11246e467a67474a06f44a02f4a23a233393c6a9e4f82b831a"
+  },
+  "compiler": {
+    "Assembly-CSharp-firstpass": {
+      "before": 20534,
+      "after": 20393,
+      "delta": -141,
+      "added_semantic_diagnostic_occurrences": 3
+    },
+    "Assembly-CSharp": {
+      "before": 32710,
+      "after": 32399,
+      "delta": -311,
+      "added_semantic_diagnostic_occurrences": 5
+    }
+  },
+  "diagnostic_scaffolds": {
+    "inspected_method_bodies": 28119,
+    "bodies_without_diagnostic_helper_semantics_unclassified": 17283,
+    "minimal_bodies_without_diagnostic_helper_semantics_unclassified": 5586,
+    "methods_calling_diagnostic_helper": 10834,
+    "diagnostic_helper_call_sites": 61133
+  },
+  "canonical_source_audit_reused": true,
+  "new_full_source_tree_hash_audit_performed": false,
+  "candidate_patch": {
+    "path": "src\\re\\tool-patches\\cpp2il-sf2-hfa-experimental-object-isinst-abi-v40.patch",
+    "sha256": "2a0844fb02086f0a7a0846f1d27592a4df91b2b691f006a9a84db7a1420d7dd1",
+    "files": 41,
+    "promoted": false
+  },
+  "native_wrapper_scope": {
+    "cases": 1034,
+    "checks": 8272,
+    "supplied_assignability_calls": 1024,
+    "actual_assignability_executed": false
+  },
+  "contract_checks": 57,
+  "production_stage_checks": 41,
+  "fresh_output_checks": 41,
+  "bounded_regression_jobs": 18,
+  "numeric_diagnostic_runtime_behavior": "Injected bare ret; does not log or throw. Unassigned results can read as InitLocals defaults.",
+  "fixture_console_write_line_is_full_output_helper": false,
+  "semantic_isinst_recovered": false,
+  "class_input_evaluation_recovered": false,
+  "array_forced_analysis_is_emitted_body_recovery": false,
+  "full_clean_decompile_ready": false,
+  "whole_game_source_ready": false,
+  "portable_game_ready": false,
+  "summary_tool_sha256": "7bef1cf351a9bc65d14f4f8e0aacd805819fbebbd2a6f9e81ad9831fae875d32",
+  "limits": "This validates an exact native signature and retained IR provenance, not executable helper semantics. The actual injected diagnostic helper is a bare return. The sampled constructor has 28 unassigned helper results that can read as implicit null, and the five sampled System.Array methods remain unchanged default stubs. Original class metadata, assignability, COM/error effects and production EH are unresolved. Both complete source builds fail. Bodies without diagnostic calls remain semantically unclassified. The separate exact-class native oracle is future research and does not implement caller recovery in this run."
+}

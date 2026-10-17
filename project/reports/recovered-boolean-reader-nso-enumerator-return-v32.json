@@ -1,0 +1,41 @@
+{
+  "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovery_run": "nso-enumerator-return-v32",
+  "cases": 0,
+  "checks": 0,
+  "structural_checks": [
+    {
+      "name": "all 811 unchanged-native return cases, no guest replacements, all byte values and valid positions bound by hashes",
+      "passed": true
+    }
+  ],
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": "System.IO.InvalidDataException: Unexpected reader instruction: ldstr\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\RecoveredBooleanReaderProbe\\Program.cs:line 125",
+  "calls": [],
+  "original_constructor_calls": 0,
+  "original_conversion_calls": 0,
+  "assembly_sha256": "efec7b9dcaa5e3f8e30a72c04840449cfbbe6e065de7020be366e949e6a11b82",
+  "body_il_sha256": "dace731d1d5dadd11edd13b3f409c8627ee82f75b0aab0c4fde247dcd9d0b1a0",
+  "fixture_sha256": "cf8b32ede10b3ee006fc93b5efac1d86c0daf4a93ddea15fcc7f2acaf9d71fa4",
+  "native_report_sha256": "8225bc0cd815be377337e15f1a23c385e15ce59c909ef58139e3dcdd6826afe2",
+  "native_case_binding": {
+    "native_cases": 811,
+    "native_failures": 0,
+    "native_guest_function_replacements": 0,
+    "fixture_cases": 811,
+    "native_evidence_bound": true,
+    "fixture_case_binding": true,
+    "actual_executed_cases": 0,
+    "all_native_cases_executed": false,
+    "single_byte_value_count": 256,
+    "valid_position_count": 257,
+    "valid_positions_min": 0,
+    "valid_positions_max": 256
+  },
+  "probe_source_sha256": "9a705d926b5e74191a6d606184d1902cbfc108c93f40509aa07e754b167af053",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "dynamic_clones": 0,
+  "scope": "Direct execution of the unchanged recovered BinaryReaderNekki.ReadBoolean method on its actual recovered type. Explicit caller boundary allocates the type without invoking its instance constructor and supplies its two original input fields. Real CLR BitConverter.ToBoolean and exact RunClassConstructor(BitConverter) calls remain; no original static constructor is stubbed or suppressed. All 811 native return cases, position changes, unchanged array bytes and array identity must agree. Native/runtime initialization boundaries and exceptional cases retain the native report\u0027s separate limits. No whole-reader constructor, serialization system, startup, complete source or portable game claim."
+}

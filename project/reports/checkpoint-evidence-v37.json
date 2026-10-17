@@ -1,0 +1,8 @@
+{
+  "status": "PASS_BYTE_EXACT_LOCAL_EVIDENCE_BACKUP",
+  "archive": "backups\\runtime-helper-abi-v37-final-raw-evidence.zip",
+  "archive_sha256": "d77b2c30efe75ef3b628c558e370984539aea0a199aa3b7a7556e53dc5e14850",
+  "files": 685,
+  "uncompressed_bytes": 54161945,
+  "scope": "Final raw report and frozen v37 source-snapshot bytes; per-entry SHA verification passed. Own archive-hash report excluded to avoid recursion. Git text normalization alone does not preserve raw evidence hashes. Full game source remains incomplete."
+}

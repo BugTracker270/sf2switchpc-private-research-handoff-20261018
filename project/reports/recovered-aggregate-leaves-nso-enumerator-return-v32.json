@@ -1,0 +1,34 @@
+{
+  "status": "PASS_RECOVERED_16BYTE_FIELD_COPIES_VS_ORIGINAL_NATIVE",
+  "recovery_run": "nso-enumerator-return-v32",
+  "cases": 1024,
+  "checks": 10240,
+  "fields_remapped": 2,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": null,
+  "bodies": [
+    {
+      "method": "get_Count",
+      "cil_sha256": "114f5981bf996738732f7c4fabbc319d93cc0f728ce3d2d02bd642a9f335b060",
+      "bytes": 7,
+      "max_stack": 8,
+      "locals": 0,
+      "exception_regions": 0
+    },
+    {
+      "method": "set_Count",
+      "cil_sha256": "2d909bf331c9cc6004acb8dfa2a19ea5b0862eb3eb5b97404028177c14c2aa8f",
+      "bytes": 8,
+      "max_stack": 8,
+      "locals": 0,
+      "exception_regions": 0
+    }
+  ],
+  "assembly_sha256": "efec7b9dcaa5e3f8e30a72c04840449cfbbe6e065de7020be366e949e6a11b82",
+  "firstpass_sha256": "ab0236a21932363c72dd20c605ac879bbec7513b5324a0790d9f5a0179b700f9",
+  "fixture_sha256": "b92e8ac01938bfb436bd8805673a791d390c5db8bc7d248a23515d627fdebb57",
+  "source_changes": false,
+  "cil_opcode_and_branch_bytes_changed": false,
+  "scope": "Retains actual complete recovered getter/setter CIL instruction bytes, changing only the sole field metadata token in each body to isolated storage with the same four declared value fields. Matches original ARM64 field values; native tail padding identity is expressly excluded. Helpers, calls, branches, locals and other instructions are rejected. No original runtime, class initialization, GC, null receiver, generic aggregate entry/call/return, codec, or complete source claim."
+}

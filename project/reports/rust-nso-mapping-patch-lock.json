@@ -1,0 +1,15 @@
+{
+  "status": "EXPERIMENTAL_NOT_VALIDATED",
+  "upstream": "https://github.com/rodroidmods/il2cpp-dumper-rs",
+  "commit": "145a751023258a35f133c4f111785a8df0580985",
+  "patch": "src\\re\\tool-patches\\rust-il2cpp-nso-mapping-experimental.patch",
+  "sha256": "dcc31a7444c14982b0ce6ae85f3e535dfaf7fb83a2d7851220df6c977540c57e",
+  "files": [
+    {
+      "path": "src/main.rs",
+      "before_sha256": "e2462dfd62deec3e28ad0c0812e6411934aae647c909ecf7972a113fb5f92209",
+      "sha256": "71b6d251889f84e5aa7ff7557df5464063e510b8f1f18c0f45897787b1861671"
+    }
+  ],
+  "scope": "Generic NSO RVA-to-file mapping only. Test uses independently hashed uncompressed NSO. Compressed-loader repacking and all recovered CIL semantics remain separate issues. Upstream source/license provenance stays in the original source lock."
+}

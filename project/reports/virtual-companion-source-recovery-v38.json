@@ -1,0 +1,210 @@
+{
+  "status": "SCOPED_COMPANION_COPY_RECOVERY_VALIDATED_FULL_SOURCE_INCOMPLETE",
+  "recovery_run": "nso-virtual-companion-copy-v38",
+  "baseline_run": "nso-runtime-helper-abi-v37",
+  "updated_utc": "2026-10-17T18:27:28.892871+00:00",
+  "core_sha256": "197403735d374bdde681ad203cdb3eb18e8cd9eef01897908a8c4f9e786ad99a",
+  "gates": [
+    {
+      "name": "completed_exact_core_invocation",
+      "passed": true
+    },
+    {
+      "name": "complete_frozen_candidate_sources",
+      "passed": true
+    },
+    {
+      "name": "frozen_tool_assemblies",
+      "passed": true
+    },
+    {
+      "name": "only_companion_helper_changed",
+      "passed": true
+    },
+    {
+      "name": "contract_same_core_and_all_checks",
+      "passed": true
+    },
+    {
+      "name": "production_same_core_and_all_checks",
+      "passed": true
+    },
+    {
+      "name": "actual_cil_correlation_without_execution_or_edits",
+      "passed": true
+    },
+    {
+      "name": "unchanged_whole_helper_at_host_xml_boundary",
+      "passed": true
+    },
+    {
+      "name": "module_initializer_absent_metadata_only",
+      "passed": true
+    },
+    {
+      "name": "contract_probe_source_unchanged",
+      "passed": true
+    },
+    {
+      "name": "production_probe_source_unchanged",
+      "passed": true
+    },
+    {
+      "name": "actual_probe_source_unchanged",
+      "passed": true
+    },
+    {
+      "name": "runtime_probe_source_unchanged",
+      "passed": true
+    },
+    {
+      "name": "module_probe_source_unchanged",
+      "passed": true
+    },
+    {
+      "name": "all_18_scoped_regressions",
+      "passed": true
+    },
+    {
+      "name": "both_full_source_failures_recorded",
+      "passed": true
+    },
+    {
+      "name": "canonical_complete_source_comparison",
+      "passed": true
+    },
+    {
+      "name": "complete_unpromoted_candidate_bound",
+      "passed": true
+    },
+    {
+      "name": "all_44_output_assemblies_present",
+      "passed": true
+    },
+    {
+      "name": "executed_main_assembly_still_unchanged",
+      "passed": true
+    }
+  ],
+  "failed_gates": [],
+  "summary_tool_sha256": "fc213e7d82b58a1de1c5f8d17ca54e2a344525661d26dea4bdd44a886e04a0c3",
+  "evidence": {
+    "invocation": {
+      "path": "logs/cpp2il-nso-virtual-companion-copy-v38-result.json",
+      "sha256": "2c29714207c76bdad3db171ef571a60d6cdcf4f020d5fabf7b026616d9fcda88"
+    },
+    "snapshot": {
+      "path": "reports/virtual-companion-copy-v38-source-snapshot.json",
+      "sha256": "16dd23e7d9900e4ee1a847a373eea80e3961c1a28e5fd415550a0e1b164a6742"
+    },
+    "binaries": {
+      "path": "reports/virtual-companion-copy-v38-tool-binary-snapshot.json",
+      "sha256": "27fa5c2e67b8678a632f84c378a626069eae1e8d299d02108f94ac668e19c57d"
+    },
+    "review": {
+      "path": "reports/virtual-companion-independent-source-review-v38.json",
+      "sha256": "8a5e8a0f51d50790812dcfc904c081fa7d7895ebe4ef0dd506c9e6b4787b470c"
+    },
+    "contract": {
+      "path": "reports/virtual-companion-copy-contract-v38.json",
+      "sha256": "23b9ab93aec864520c9788f1602f1881340910c5b1acaf9957a12b93a0320f1c"
+    },
+    "production": {
+      "path": "reports/virtual-companion-production-v38.json",
+      "sha256": "d06c8e23567ad7ba2d16c990f103103f8937010bb7bc815b973b41928d85657b"
+    },
+    "actual": {
+      "path": "reports/recovered-virtual-companion-nso-virtual-companion-copy-v38.json",
+      "sha256": "cf699c28c1923b060bb40585045ad92f9fa6d2984f36ba0e89207e4bf42cd0fd"
+    },
+    "runtime": {
+      "path": "reports/recovered-xml-attribute-runtime-nso-virtual-companion-copy-v38.json",
+      "sha256": "23929a57c33a13ed61f817982b6e2c69baccfdddd13007bda5f056a6cee3ccbb"
+    },
+    "module": {
+      "path": "reports/recovered-xml-attribute-module-initializer-v38.json",
+      "sha256": "6deeb3be14a130c4bb991f998e22b5c4e900bff9614cc3219a28f0ca0c8ff73e"
+    },
+    "batch": {
+      "path": "reports/recovery-regression-nso-virtual-companion-copy-v38.json",
+      "sha256": "648f37f4ccd3407510ef5726b87e9ec390848e8fbb5aa1c789cb0f38bb52ef9c"
+    },
+    "compiler": {
+      "path": "reports/recovered-source-profile-legacy-reference-check-nso-virtual-companion-copy-v38.json",
+      "sha256": "bcbfb8c77a30988f85a2d430731607e09caa627eafdd8c50ac68c51fa55b1255"
+    },
+    "delta": {
+      "path": "reports/compiler-diagnostic-delta-v38.json",
+      "sha256": "101ab5c29bbf9ba367012cbf079729f1ce7f8d7f42e061d4e070c21227bb7c2b"
+    },
+    "candidate": {
+      "path": "reports/cpp2il-hfa-experimental-lock-virtual-companion-copy-v38.json",
+      "sha256": "1000e35209b851364245245cacb7bbe6e024c6a101c0f21741853f3c97eb40e9"
+    }
+  },
+  "assembly_hashes": {
+    "Assembly-CSharp-firstpass.dll": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192",
+    "Assembly-CSharp.dll": "b27b575f04159eb61cd50eaf21566e682b882726b5faa216bf1402b55e7ae27c",
+    "DOTween.dll": "2d9f0e630fa51eac8a00ca8572e3d8f7791b472022dae50e48bb5b84c55f07df",
+    "DOTween46.dll": "fcfd1c4d8cd10c14b0eca09fbc69c9a2f74cf9e9372fdca377f261846512ecc8",
+    "Facebook.Unity.Settings.dll": "7a85d7f4b07ec8edccb95228ec6f039d08e68e611427167016575b476ec53c61",
+    "FyberLitJson.dll": "35b5c9dcab2c0ee903a9943334b5a511bb3caf374c03c4128974087a8595a906",
+    "FyberPlugin.dll": "31b717a1639301e4073b21f4a682357334c9b77cd35fbda5b338ca17a7a55bab",
+    "Ionic.Zip.Unity.dll": "7d7ec1ffa49adfc06c80de9da63258971a791a5c97f1def301e8f920fc370b76",
+    "Mono.Security.dll": "b902f78887dec3b295db3dc33be6fbf7ac46e3e336f1eca1f30c05a22e82322e",
+    "mscorlib.dll": "f616eeb43e98f73badc148868253bfc1c9b9cd09d73d832a7f658f61b09a08cc",
+    "protobuf-net.dll": "861c5e8f2a3c3728462b761278a5ef38e2124c0d6a430bfa172f2b75d820b9d1",
+    "SmartFox2X.dll": "d301441303accb8c2e3cf6c7b330dd7b1a673002e7c99785c122fbd8130820a5",
+    "System.Configuration.dll": "7589c64e9a78ae851ebd162bdd09c219d78245635d07a4501570858463ffd045",
+    "System.Core.dll": "7feeb74fe45bf4fe62897b70e24fad8d8511a609d1718497a79f106a45856e8a",
+    "System.dll": "b7beb03736574ed65b7d03fcaa78d7171f4d87bf238815a46dcf0e6b5d9d5e6a",
+    "System.Xml.dll": "9d0471ee1502623608588ddcde18c0f1511d35f0e9a6befad8ab0666bc09f76f",
+    "System.Xml.Linq.dll": "ee089aff79e048f58a00f9c692582a6600d9b0d71216ebc968dc1e20bac66427",
+    "TcpClientImplementation.dll": "7c2c7e4297eb27a2e7cfe4c127c57dc123820ec9d768aa5d54f6d430af3eaa4e",
+    "UnityEngine.AIModule.dll": "58884eb55e9a6903cd40cc3326786f723a714a912634e0bb0548f201f5a5c611",
+    "UnityEngine.AnimationModule.dll": "336d901eed4a57aae9f95c4f1be18270c49208d9a6d249dd01434b611254b668",
+    "UnityEngine.AssetBundleModule.dll": "38b7892f89bebea2d336f8183a93ed6876028eaef593c1959db830503de893d6",
+    "UnityEngine.AudioModule.dll": "caf50d3b56c112f6d62245f8345feef7bcfca512b477d41eec2ca45975d77206",
+    "UnityEngine.CoreModule.dll": "e71d48a5bd5cb7ebe1ecf8a238dc1aa1879c477b3a14dada3880cdd53d740a91",
+    "UnityEngine.DirectorModule.dll": "e16ad09db2aa8cf70eed2e785bcc1eef5d9af963f660c602533f7645616ee43a",
+    "UnityEngine.dll": "214987b478fe2c9eb876b96e43c6da55944b3dab0520ff41ff5a987498e22071",
+    "UnityEngine.GameCenterModule.dll": "99d185f6de29003e5aa34807698b7ac5c088252a5ed608932823484c5bdb98c8",
+    "UnityEngine.GridModule.dll": "6a05b9d41b4791de5feb5dc16def49421862b84f1795dfd667184f9bf9f354f0",
+    "UnityEngine.ImageConversionModule.dll": "5bd193dcc6bebaf5ee96f75dfa2f6f94fe0d79dd2494c863441829e868026aa5",
+    "UnityEngine.IMGUIModule.dll": "fe691682efdcee0369b3fd8dee799c0455724f0c10ff3e9e1e71a73149086039",
+    "UnityEngine.InputModule.dll": "1edb7a7d3a6e047badee34d1686aab7d87826b7c21483f23787e4fe6c5e971a0",
+    "UnityEngine.ParticleSystemModule.dll": "a0e9d330719e50130048141a8161830f00829ed240f21420583aa678f3925aee",
+    "UnityEngine.Physics2DModule.dll": "618dcf9e0d26368c6ca411b7f1eebeada63e70c6e775cd3a9bead7923544a524",
+    "UnityEngine.PhysicsModule.dll": "fe1ff2a18349011597ec6708c558c7171e6604f880112ffa7a6385ed8ba12529",
+    "UnityEngine.SharedInternalsModule.dll": "b97643143e93158f7193e956dfc5ba7c5baee5fcd950a97a5cd29f3706b9c3df",
+    "UnityEngine.TerrainModule.dll": "2c5d7c938c668681e2f2ad6076108a4654062097fac5cb7bc6a8048c4d362b89",
+    "UnityEngine.TextRenderingModule.dll": "3c9ca7ca83f80dfdbd4e6811ef373eeebeb204f661d3663243ad1bf923b99b7f",
+    "UnityEngine.TilemapModule.dll": "1695c21161604948a2b3faaa1877ae7dc8bcf5bc9863361d7a5f647e82cf1bab",
+    "UnityEngine.UI.dll": "12202e6abb3b3f45d6f041aa23677c912ed319196b5f25615150c0d8a9cad80a",
+    "UnityEngine.UIElementsModule.dll": "fcf6c510a1ac9b934a576c6b2209316d23f66cf2c6d31346ef56549d9ffac992",
+    "UnityEngine.UIModule.dll": "eff792f5358984ae9bdf06f685b53db3531984ffc6bf6315976733688555e57c",
+    "UnityEngine.UnityWebRequestAssetBundleModule.dll": "c13c2e544482458782141f9c520f5153a4afe8364d2e839d871047210b3591b3",
+    "UnityEngine.UnityWebRequestModule.dll": "2474d923af85af25dfc40f60cad4b988f70ec15cdfc81eb3eb36de89f81f090a",
+    "UnityEngine.UnityWebRequestWWWModule.dll": "982985fbf6135be8308f60578354b4c52f407005f51d79236c1120385af66552",
+    "UnityEngine.VRModule.dll": "dc4d16d6b5c0f2d595e9899d3dadbc8a1ee2a196ad8b7c091dab675923cfda80"
+  },
+  "compiler_after": {
+    "Assembly-CSharp-firstpass": 20728,
+    "Assembly-CSharp": 32710
+  },
+  "compiler_diagnostic_delta": {
+    "Assembly-CSharp-firstpass": -5,
+    "Assembly-CSharp": -14
+  },
+  "source_audit": "Reuse of the completed canonical comparison and its exact source/log manifests; this summarizer does not re-read every exported source file.",
+  "host_xml_whole_helper": {
+    "cases": 26,
+    "comparisons": 104,
+    "observing_getter_calls": 5,
+    "native_xml_parity": false
+  },
+  "full_clean_decompile_ready": false,
+  "portable_game_ready": false,
+  "whole_game_source_ready": false,
+  "limits": "Only paired companion copies are added to the existing virtual witness. Producer roots, void/argument signatures, general aggregate ABI and production EH remain unresolved. The unchanged complete XML helper executes at an explicit host System.Xml boundary; this is not Switch XML runtime or whole-game parity. Both complete source builds fail; diagnostic counts include cascades and are not completion percentages."
+}

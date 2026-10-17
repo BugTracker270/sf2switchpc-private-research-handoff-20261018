@@ -1,0 +1,8 @@
+{
+  "status": "PASS_BYTE_EXACT_LOCAL_EVIDENCE_BACKUP",
+  "archive": "backups\\virtual-dispatch-v36-raw-evidence.zip",
+  "archive_sha256": "661b0f5965aad6ca927d856be9f1d323d7c1acfc0a24cab87014acaefde74e26",
+  "files": 629,
+  "uncompressed_bytes": 51491674,
+  "scope": "Preserves raw local report and frozen v36 source-snapshot bytes alongside the Git bundle; Git text normalization alone does not preserve raw evidence hashes. This is backup integrity only, not game-source completion."
+}

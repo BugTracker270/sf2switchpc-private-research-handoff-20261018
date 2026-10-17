@@ -1,0 +1,50 @@
+{
+  "status": "READ_ONLY_EXACT_RUNTIME_FACTORY_AND_OFFICIAL_SOURCE_PAIR",
+  "original_native_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "helper_rva": "0xb4d960",
+  "helper_end": "0xb4d994",
+  "helper_bytes": 52,
+  "helper_sha256": "3b5fd1d3de5b03792cd3309198170fba22c09b9434a348fa01330c20d8709f3f",
+  "private_native_path": "analysis\\reconstruction\\exception-factory-v37\\native.json",
+  "private_native_sha256": "fcf53e9e52358e249bbf5272e87049239ab9eeed9f80ea31251ac3909744ce0b",
+  "source_release": "2018.1.9f1",
+  "source_revision": "24bbd83e8b9e",
+  "source_archive_sha256": "ce666b2de60716cb5564b53317b56f0b82eddbea7afb3462ef51d5e121833c96",
+  "source_files": [
+    {
+      "path": "tools\\unity-2018.1.9f1\\exception-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Exception.cpp",
+      "bytes": 18699,
+      "sha256": "490df8fbd7d1f67ef55d0ea1cbda3cae697e3ec418167cec4f05a25c2114d973"
+    },
+    {
+      "path": "tools\\unity-2018.1.9f1\\exception-runtime-source\\Editor\\Data\\il2cpp\\libil2cpp\\vm\\Exception.h",
+      "bytes": 5290,
+      "sha256": "d39704528d77644fd285f672417c490e3918158edd0f712ebefa2aeab61a14e1"
+    }
+  ],
+  "installer_executed": false,
+  "core_modified": false,
+  "guest_functions_executed": 0,
+  "source_uploaded": false,
+  "constants": {
+    "0x2cbf925": "System",
+    "0x2cc3783": "OverflowException"
+  },
+  "private_dependencies_path": "analysis\\reconstruction\\exception-factory-v37\\dependencies-and-caller.json",
+  "private_dependencies_sha256": "0432c62cc8c52a0a2dc195a26975d69de818feb5a1369a00ea9cf2736535c8da",
+  "reader_call_rva": "0x4a0fd4",
+  "dependencies": [
+    {
+      "start": "0xb547a0",
+      "end": "0xb547b0",
+      "bytes": 16,
+      "sha256": "963ae7b0935b32a1dee79fb9b805e3e6b0c088e405a85003c97f7dcaa2641500"
+    },
+    {
+      "start": "0xb4d660",
+      "end": "0xb4d7a4",
+      "bytes": 324,
+      "sha256": "0152ef5e8f3afbf556d322183f8ecca2c457ec92757115a2dbd514b40b0df0a7"
+    }
+  ]
+}

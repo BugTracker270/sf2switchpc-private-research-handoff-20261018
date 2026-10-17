@@ -1,0 +1,265 @@
+{
+  "status": "RECOVERED_BODY_SELECTED_RUNTIME_GUARD_RECOVERY_INCOMPLETE",
+  "registered_rva": "0x7A9200",
+  "analysis_rva": "0x7A8F20",
+  "exact_native_body_bytes": 520,
+  "metadata_status": "PASS_SCOPED_VALUE_THIS_THUNK_SELECTION_AND_ALIASES",
+  "metadata_checks": 35,
+  "normalized_and_backing_fields": [
+    {
+      "Name": "currentCryptoKey",
+      "normalized_offset": 0,
+      "backing_offset": 0,
+      "override_offset": null,
+      "type": "System.Int32"
+    },
+    {
+      "Name": "hiddenValue",
+      "normalized_offset": 4,
+      "backing_offset": 4,
+      "override_offset": null,
+      "type": "System.Int32"
+    },
+    {
+      "Name": "fakeValue",
+      "normalized_offset": 8,
+      "backing_offset": 8,
+      "override_offset": null,
+      "type": "System.Int32"
+    },
+    {
+      "Name": "inited",
+      "normalized_offset": 12,
+      "backing_offset": 12,
+      "override_offset": null,
+      "type": "System.Boolean"
+    }
+  ],
+  "field_offset_change_needed": false,
+  "recovered_status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovered_cases": 0,
+  "recovered_checks": 0,
+  "cil_sha256": "9bf691bf8386e8dbaaa991ae7122bb0c0b17cabcd55c5cc5ca8bb071dc86208e",
+  "reachable_blockers": [
+    {
+      "offset": 56,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2+70]"
+    },
+    {
+      "offset": 129,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v37 @ X0_v2 (Il2CppClass<CodeStage.AntiCheat.ObscuredTypes.ObscuredInt>)+D4]"
+    },
+    {
+      "offset": 166,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2+72]"
+    },
+    {
+      "offset": 263,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2+4]"
+    },
+    {
+      "offset": 458,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2+72]"
+    },
+    {
+      "offset": 627,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v37 @ X0_v2 (Il2CppClass<CodeStage.AntiCheat.ObscuredTypes.ObscuredInt>)+122]"
+    },
+    {
+      "offset": 689,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2+6F]"
+    },
+    {
+      "offset": 861,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Unmanaged memory load: [v17 @ X21_v2+4]"
+    }
+  ],
+  "native_metadata_base": "0x3A36610",
+  "native_sites": [
+    {
+      "rva": "0x7A8FA0",
+      "kind": "metadata init guard",
+      "flag": "0x3A3667F"
+    },
+    {
+      "rva": "0x7A8FD8",
+      "kind": "metadata init guard",
+      "flag": "0x3A36680"
+    },
+    {
+      "rva": "0x7A9038",
+      "kind": "class init guard header byte",
+      "offset": "0x122"
+    },
+    {
+      "rva": "0x7A9040",
+      "kind": "class init guard cctor_finished",
+      "offset": "0xD4",
+      "cold_initializer": "0x7A90CC"
+    },
+    {
+      "rva": "0x7A9048",
+      "kind": "metadata init guard",
+      "flag": "0x3A36682",
+      "cold_initializer": "0x7A90D8"
+    },
+    {
+      "rva": "0x7A90D0",
+      "kind": "metadata init guard reload",
+      "flag": "0x3A36682"
+    },
+    {
+      "rva": "0x7A9054",
+      "kind": "detector metadata init guard",
+      "flag": "0x3A36614"
+    },
+    {
+      "rva": "0x7A9118",
+      "kind": "scheduled detector metadata guard",
+      "flag": "0x3A36614",
+      "test_rva": "0x7A9120",
+      "intervening_arithmetic": "0x7A911C"
+    }
+  ],
+  "existing_matcher_limits": [
+    "The first unconditional B at 0x7A8F6C terminates scanning, although it is an internal CFG edge.",
+    "Cached X21 base is established once rather than adjacent to every flag load.",
+    "Cold metadata/class initializer blocks require multiple incoming CFG edges and retain real key branches.",
+    "EOR lies between flag load and test at both detector guard sites; the current load search accepts only copies/SP stores.",
+    "The 512-byte cap excludes the final test in the independently validated 520-byte FDE body."
+  ],
+  "safe_next_step": "Recover native guard CFG and stable metadata base from exact bounded bodies, preserve real arithmetic/key branches and class-init semantics, then rerun actual recovered CIL without substitutions. Do not subtract16 from fields already normalized.",
+  "native_state_boundary": "Separate native boxed/unboxed proof uses supplied initialized metadata flags and class initialization state; those conditions do not make unresolved recovered-CIL guard memory loads valid.",
+  "core_files_changed": [
+    "Cpp2IL.Core/Utils/LegacyArm64ValueThisThunks.cs",
+    "Cpp2IL.Core/Model/Contexts/ApplicationAnalysisContext.cs"
+  ],
+  "scope": "Exact native body selection and alias registration are validated. Actual InternalDecrypt execution remains blocked before running any fixture; no codec, general aggregate ABI, whole source or port completion claim.",
+  "native_cfg": [
+    {
+      "start": "0x7A8F34",
+      "role": "callee-saved metadata base",
+      "operations": [
+        "ADRP X21 page 0x3A36000",
+        "ADD X21, X21, 0x610"
+      ],
+      "value": "0x3A36610",
+      "lifetime": "Preserved through branches and calls under the ABI; restore in the return epilogue is not on cold-path entries."
+    },
+    {
+      "start": "0x7A8F6C",
+      "role": "first internal unconditional branch",
+      "target": "0x7A9028",
+      "effect_on_matcher": "Current linear matcher breaks here and never examines later metadata guards."
+    },
+    {
+      "start": "0x7A8FA0",
+      "role": "inline metadata guard",
+      "flag": "0x3A3667F",
+      "test": "0x7A8FA4 TBNZ bit0",
+      "initialized_target": "0x7A8FC0",
+      "initialization_range": [
+        "0x7A8FA8",
+        "0x7A8FBC"
+      ]
+    },
+    {
+      "start": "0x7A8FD8",
+      "role": "inline metadata guard",
+      "flag": "0x3A36680",
+      "test": "0x7A8FDC TBNZ bit0",
+      "initialized_target": "0x7A8FF8",
+      "initialization_range": [
+        "0x7A8FE0",
+        "0x7A8FF4"
+      ]
+    },
+    {
+      "start": "0x7A9038",
+      "role": "cold class initialization guard",
+      "class_pointer": "X0",
+      "header_flag_offset": "0x122",
+      "finished_offset": "0xD4",
+      "edges": [
+        "TBZ bit0 at 0x7A903C -> 0x7A9048",
+        "CBZ cctor_finished at 0x7A9044 -> 0x7A90CC",
+        "otherwise -> 0x7A9048"
+      ],
+      "cold_block": "0x7A90CC BL 0xB2E720, then 0x7A90D0"
+    },
+    {
+      "start": "0x7A9048",
+      "role": "cold metadata initialization guard",
+      "flag": "0x3A36682",
+      "test": "0x7A904C TBZ bit0 -> 0x7A90D8",
+      "initialized_target": "0x7A9050",
+      "semantic_branch": "0x7A9050 CBZ W23 -> 0x7A90F4"
+    },
+    {
+      "start": "0x7A90D0",
+      "role": "metadata guard after class initializer",
+      "flag": "0x3A36682",
+      "test": "0x7A90D4 TBNZ bit0 -> 0x7A9050",
+      "uninitialized_fallthrough": "0x7A90D8"
+    },
+    {
+      "start": "0x7A90D8",
+      "role": "cold metadata initializer",
+      "initializer_call": "0x7A90E4 BL 0xB12650",
+      "flag_store": "0x7A90EC -> 0x3A36682",
+      "semantic_branch": "0x7A90F0 CBNZ W23 -> 0x7A9054; zero falls through 0x7A90F4",
+      "warning": "Do not erase the real key-selection branch with metadata scaffolding."
+    },
+    {
+      "start": "0x7A9054",
+      "role": "scheduled detector metadata guard",
+      "flag": "0x3A36614",
+      "arithmetic": "0x7A9058 EOR W20,W23,W20",
+      "test": "0x7A905C TBNZ bit0 -> 0x7A9078",
+      "initialization_range": [
+        "0x7A9060",
+        "0x7A9074"
+      ],
+      "warning": "The EOR computes the decrypted result and must remain."
+    },
+    {
+      "start": "0x7A9118",
+      "role": "second entry to shared detector initialization",
+      "flag": "0x3A36614",
+      "arithmetic": "0x7A911C EOR W20,W23,W20",
+      "test": "0x7A9120 TBZ bit0 -> 0x7A9060",
+      "initialized_fallthrough": "0x7A9124 B -> 0x7A9078",
+      "warning": "The EOR must remain. The branch is at offset 512 in a 520-byte function."
+    }
+  ],
+  "native_writable_flag_states_in_separate_proof": {
+    "metadata_flags": "Supplied initialized (1) for the existing native comparison; see integer-aggregate-adjustor-native-proof.json.",
+    "class_header_bitflags2": "Supplied zero at +0x122 so class constructor boundary is not entered.",
+    "detector": "Native proof includes absent/inactive/active-consistent states; actual recovered CIL gate planned for exact absent-detector subset only."
+  },
+  "evidence": [
+    "reports/value-this-thunks-v30.json",
+    "reports/value-this-thunks-v30-fields.json",
+    "reports/integer-aggregate-adjustor-native-proof.json",
+    "reports/recovered-value-this-nso-native-leaves-v29.json",
+    "reports/recovered-value-this-nso-value-this-box-v30.json",
+    "logs/recovered-value-this-v30.log",
+    "logs/recovered-value-this-v30-2.log"
+  ]
+}

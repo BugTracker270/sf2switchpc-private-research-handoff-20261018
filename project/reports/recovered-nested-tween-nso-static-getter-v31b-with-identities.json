@@ -1,0 +1,28 @@
+{
+  "status": "PASS_RECOVERED_NESTED_HFA_AND_CALLER_NATIVE_COMPARISON",
+  "recovery_run": "nso-static-getter-v31b",
+  "cases": 64,
+  "checks": 576,
+  "nested_field_address_instructions": 30,
+  "caller_nested_field_addresses": 18,
+  "identity_cases": 240,
+  "identity_checks": 720,
+  "total_checks": 1296,
+  "failure_count": 0,
+  "statically_unreachable_analysis_warning_calls": 2,
+  "diagnostic_tail_termination_experiment": false,
+  "first_failures": [],
+  "fatal": null,
+  "body_il_sha256": {
+    "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+    "RecoveredNestedTweenCaller": "af81173da5091d424636712b48fd6062c88f14e6a949ee72b31981b3be2eaf95",
+    "RecoveredWrapperConvert": "34905c76dd42b76fcb658cdd80406c0e59a886f4abacf0412a04a7e10c4fed7f",
+    "RecoveredWrapperUnwrap": "cbf2d1a235412b94900fb04a7fa1ff5d1a78a74c59e3d5ec74c532c48b11f261",
+    "RecoveredWrapperWrap": "7bba7c58a1a2db54ddc67915c65c014ce8f27d293ee16266bdf3d6d1aede24a5"
+  },
+  "vector_assembly_sha256": "f52888e5249b97ff2f085198365cf701677ba47741c43fe9025472208bde37cb",
+  "tween_assembly_sha256": "a7534f8ac6f8217650f69e62f3b60ac4da179072ffb6641eded10ecab3e6e062",
+  "fixture_sha256": "a90434a7d325d6761703a46412a5e30e7585b90179a80568c3c74ca673330c6f",
+  "identity_fixture_sha256": "92ebd80f174a7945688f6436c9cd72d20b2f351a3a267f5b0085b2e584c94740",
+  "scope": "Actual recovered caller and addition CIL, with exact vector/wrapper/closed-generic field tokens replaced by isolated equivalent storage types. Scalar instructions, local layout, branches and stores retained; managed addition call target replaced by the actual recovered addition DynamicMethod. Appended analysis-warning calls are allowed only after a full intraprocedural reachability check proves they are unreachable, and map to a throwing trap without removing bytes. Three resulting component bits and six unchanged start/change component bits per case. Every reachable diagnostic/helper or other substitution is rejected. Explicitly bypasses Unity/plugin initialization and original class-initializer ordering; no other caller, whole assembly or portable-game claim. Original complete caller evidence: reports/native-fp-class-guard-caller.json. Also executes three actual recovered nested-wrapper argument/return methods against all 240 original-code identity fixtures (720 checks); no game-method call substitutions in those identities."
+}

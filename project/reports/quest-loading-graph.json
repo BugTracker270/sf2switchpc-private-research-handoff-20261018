@@ -1,0 +1,23 @@
+{
+  "status": "STATIC_NATIVE_QUEST_LOADING_GRAPH_APPLIED",
+  "root": "quests.xml",
+  "initial_files": 4,
+  "initial_quest_definitions": 165,
+  "potential_files": 15,
+  "potential_quest_definitions": 559,
+  "sensei_in_root_include_graph": true,
+  "sensei_quest_definitions": 30,
+  "edge_counts": {
+    "INCLUDE": 3,
+    "POTENTIAL_ACTION_ATTACHMENT": 21
+  },
+  "missing_resources": [],
+  "duplicate_quest_names": {
+    "CheckZone4TournamentEclipseMode_InEclipseMode": 2
+  },
+  "native_evidence": {
+    "parse_quests": "0xD12370",
+    "attach_action": "0xD74010"
+  },
+  "limitations": "Root Includes follow native load ordering and filename deduplication. Potential attachment closure ignores quest conditions, event timing and native action factories; it is an upper bound on referenced files, not playable-mode or complete story-progression certification. Resource .xml logical names map to recovered .bytes TextAssets; original payload hashes retained."
+}

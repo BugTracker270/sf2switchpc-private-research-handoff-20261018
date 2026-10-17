@@ -1,0 +1,367 @@
+{
+  "status": "READ_ONLY_CONFIRMED_RAW_CLASS_INIT_ABI_AND_FALSE_METHODINFO_RESOLUTION",
+  "survey_sha256": "bd89076fa2ad1faf1bbe0f59aae090da607508c119747ef500830595189185c8",
+  "original_native_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "methods": [
+    {
+      "method": "BinaryReaderNekki::ReadBoolean",
+      "rva": "0xF0D390",
+      "exact_frame": {
+        "rva": 15782800,
+        "end_rva": 15782948,
+        "fde_rva": 54261232,
+        "fde_end_rva": 54261264,
+        "cie_rva": 52097888,
+        "cfi_start": 54261249,
+        "cfi_bytes": 15
+      },
+      "body_sha256": "a2c22a6bcf2d17e31452dd9f67a08c42b7b246e10cf3db95f8e6cac2a1fef722",
+      "original_native_class_init_calls": 1,
+      "surviving_raw_isil_calls": 1,
+      "original_calls_already_absent_before_metadata_resolution": 0,
+      "native_call_sites": [
+        {
+          "rva": "0xf0d3ec",
+          "target": "0xB2E720",
+          "window_sha256": "0388d4a030d74e2db5f1b220034f71cc8016f3141882fd679593d32b9c0ce0ab",
+          "preceding_opcodes": [
+            "ldr",
+            "ldr",
+            "ldr",
+            "ldr",
+            "ldrb",
+            "tbz",
+            "ldr",
+            "cbnz"
+          ],
+          "following_opcodes": [
+            "mov",
+            "mov",
+            "mov",
+            "mov"
+          ]
+        }
+      ],
+      "captured_raw_calls": [
+        {
+          "index": 30,
+          "raw_opcode": "Call",
+          "raw_operands": 18,
+          "unused_return": true,
+          "first_register": "X0",
+          "all_physical_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "resolved_origin": {
+            "kind": "local",
+            "Name": "v19",
+            "register": "X0",
+            "version": 1,
+            "type": "Il2CppClass<System.BitConverter>",
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "System.BitConverter"
+            }
+          },
+          "after_fixpoint_target": "11724576",
+          "after_fixpoint_target_kind": "Immediate"
+        }
+      ]
+    },
+    {
+      "method": "BundlesUtil::UnloadDependencies",
+      "rva": "0x4A83A0",
+      "exact_frame": {
+        "rva": 4883360,
+        "end_rva": 4883744,
+        "fde_rva": 56808784,
+        "fde_end_rva": 56808824,
+        "cie_rva": 56727496,
+        "cfi_start": 56808809,
+        "cfi_bytes": 15
+      },
+      "body_sha256": "0fd52a9b449be83e29a7424dab0003da060929dbe574320d54ecfac5121483f2",
+      "original_native_class_init_calls": 2,
+      "surviving_raw_isil_calls": 1,
+      "original_calls_already_absent_before_metadata_resolution": 1,
+      "native_call_sites": [
+        {
+          "rva": "0x4a83fc",
+          "target": "0xB2E720",
+          "window_sha256": "06993bb9b6468d1eacfddc88352b139d2d0d2d134090bae9c43fe9cba606f1b0",
+          "preceding_opcodes": [
+            "adrp",
+            "ldr",
+            "ldr",
+            "str",
+            "ldrb",
+            "tbz",
+            "ldr",
+            "cbnz"
+          ],
+          "following_opcodes": [
+            "ldr",
+            "ldr",
+            "ldr",
+            "adrp"
+          ]
+        },
+        {
+          "rva": "0x4a84e8",
+          "target": "0xB2E720",
+          "window_sha256": "3fe85dddb4b41eb1cbabe9be51ce111c5e0747638bc43da6fccdbe15ad69b850",
+          "preceding_opcodes": [
+            "mov",
+            "mov",
+            "bl",
+            "ldr",
+            "ldrb",
+            "tbz",
+            "ldr",
+            "cbnz"
+          ],
+          "following_opcodes": [
+            "ldr",
+            "ldr",
+            "ldr",
+            "adrp"
+          ]
+        }
+      ],
+      "captured_raw_calls": [
+        {
+          "index": 124,
+          "raw_opcode": "Call",
+          "raw_operands": 18,
+          "unused_return": true,
+          "first_register": "X0",
+          "all_physical_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "resolved_origin": {
+            "kind": "local",
+            "Name": "v65",
+            "register": "X0",
+            "version": 9,
+            "type": "Il2CppClass<BundlesUtil>",
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "BundlesUtil"
+            }
+          },
+          "after_fixpoint_target": "System.Collections.Generic.List`1<UnityEngine.AssetBundle>+Enumerator<UnityEngine.AssetBundle>::Dispose",
+          "after_fixpoint_target_kind": "ConcreteGenericMethodAnalysisContext"
+        }
+      ]
+    },
+    {
+      "method": "BundlesUtil::GetAssetBundleSafe",
+      "rva": "0x4A8920",
+      "exact_frame": {
+        "rva": 4884768,
+        "end_rva": 4885024,
+        "fde_rva": 52670024,
+        "fde_end_rva": 52670064,
+        "cie_rva": 52097888,
+        "cfi_start": 52670041,
+        "cfi_bytes": 23
+      },
+      "body_sha256": "07369c1cddf45700ee6c60c559312bc29ed5debc2c953755d9ac7d7c1414991c",
+      "original_native_class_init_calls": 3,
+      "surviving_raw_isil_calls": 2,
+      "original_calls_already_absent_before_metadata_resolution": 1,
+      "native_call_sites": [
+        {
+          "rva": "0x4a8990",
+          "target": "0xB2E720",
+          "window_sha256": "399b8ae1b4b6a094dc213edaa685434604b9d51b4c8438e713600489c2329256",
+          "preceding_opcodes": [
+            "cbz",
+            "ldr",
+            "ldr",
+            "cbz",
+            "ldrb",
+            "tbz",
+            "ldr",
+            "cbnz"
+          ],
+          "following_opcodes": [
+            "ldr",
+            "ldr",
+            "ldr",
+            "ldr"
+          ]
+        },
+        {
+          "rva": "0x4a89e0",
+          "target": "0xB2E720",
+          "window_sha256": "6a28f5b41f56ff313f6a8b7b340357e59f139041a8ada91a49ca6b57c9f3d2a9",
+          "preceding_opcodes": [
+            "cbz",
+            "tbnz",
+            "ldr",
+            "ldr",
+            "ldrb",
+            "tbz",
+            "ldr",
+            "cbnz"
+          ],
+          "following_opcodes": [
+            "mov",
+            "bl",
+            "ldr",
+            "str"
+          ]
+        },
+        {
+          "rva": "0x4a89f8",
+          "target": "0xB2E720",
+          "window_sha256": "a6145ed7a320f1693107ba707c1c6b986e9d5578b636309638fb6a6dc43bd8ef",
+          "preceding_opcodes": [
+            "ldr",
+            "cbnz",
+            "bl",
+            "mov",
+            "bl",
+            "ldr",
+            "str",
+            "b"
+          ],
+          "following_opcodes": [
+            "ldr",
+            "ldr",
+            "ldr",
+            "cbnz"
+          ]
+        }
+      ],
+      "captured_raw_calls": [
+        {
+          "index": 74,
+          "raw_opcode": "Call",
+          "raw_operands": 18,
+          "unused_return": true,
+          "first_register": "X0",
+          "all_physical_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "resolved_origin": {
+            "kind": "local",
+            "Name": "v20",
+            "register": "X0",
+            "version": 1,
+            "type": "Il2CppClass<BundlesUtil>",
+            "definitions": 1,
+            "definition_opcode": "Move",
+            "source": {
+              "kind": "type_operand",
+              "type": "BundlesUtil"
+            }
+          },
+          "after_fixpoint_target": "11724576",
+          "after_fixpoint_target_kind": "Immediate"
+        },
+        {
+          "index": 40,
+          "raw_opcode": "Call",
+          "raw_operands": 18,
+          "unused_return": true,
+          "first_register": "X0",
+          "all_physical_registers": [
+            "X0",
+            "X1",
+            "X2",
+            "X3",
+            "X4",
+            "X5",
+            "X6",
+            "X7",
+            "V0",
+            "V1",
+            "V2",
+            "V3",
+            "V4",
+            "V5",
+            "V6",
+            "V7"
+          ],
+          "resolved_origin": {
+            "kind": "local",
+            "Name": "v46",
+            "register": "X0",
+            "version": 5,
+            "type": "Il2CppClass<BundlesUtil>",
+            "definitions": 1,
+            "definition_opcode": "Phi",
+            "source": null
+          },
+          "after_fixpoint_target": "11724576",
+          "after_fixpoint_target_kind": "Immediate"
+        }
+      ]
+    }
+  ],
+  "concrete_findings": [
+    "All four surviving helper calls use exact unknown-callee ARM64 layout: target, unused result, X0-X7,V0-V7. Three have a unique Move root naming exact type metadata after the type fixpoint; one GetAssetBundleSafe class value is a Phi and remains outside the existing provenance rule.",
+    "UnloadDependencies native class-init target is B2E720 with no managed aliases. ResolveCallsViaMethodInfo nevertheless changes its surviving raw helper call into List<AssetBundle>.Enumerator.Dispose using a stale MethodInfo operand. The X0 operand still represents the BundlesUtil class, not an enumerator receiver.",
+    "Exact FDE inventory shows additional original class-init calls are already absent before metadata resolution. Correcting only the raw-call lowering cannot restore those effects; the old native class-macro removal also requires semantic replacement."
+  ],
+  "proposed_scope": [
+    "Exclude the exact known opt-in legacy class-init helper from MethodInfo fallback resolution, preserving unknowns.",
+    "Allow raw Call/CallVoid only when HasRawArgumentLayout proves X0-X7,V0-V7 and any result is a genuine unused local. Retain existing exact void-one-argument path.",
+    "Keep the unique dominating exact metadata-origin class proof; reject Phi/unknown/dynamic origins, used returns, and mismatched or extra nonphysical semantic arguments.",
+    "Emit CallVoid to the unique mscorlib RunClassConstructor(RuntimeTypeHandle) overload; discard only unused physical-register capture and return slot, never a semantic effect.",
+    "Replace separately proven native class-init guard macros with semantic calls inside exact registered FDEs, preserving unrelated instructions; do not leave the old no-op path enabled for these accepted sites."
+  ],
+  "core_source_edited": false,
+  "scope": "Read-only native instruction/call-site and production-stage observations. No emitted CIL, source changes, class-initializer execution, compilation success or whole-game behavior is certified by this report."
+}

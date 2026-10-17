@@ -1,0 +1,22 @@
+{
+  "module": "sdk",
+  "status": "AUXILIARY_RANGE_EXPORT_COMPLETE",
+  "total_targets": 24032,
+  "ranges_with_pseudocode": 24032,
+  "unresolved_ranges": 0,
+  "historical_failed_records": 1,
+  "layers": [
+    {
+      "path": "analysis\\nso\\auxiliary-sdk-v1\\corpus\\functions.jsonl",
+      "records": 24000,
+      "sha256": "dabf107ef3320d4754b7e0a6a1656d3ba5d86ab0c2d05c1051c465d9b578d41a"
+    },
+    {
+      "path": "analysis\\nso\\auxiliary-sdk-v1\\overlay-timeout-v1\\functions.jsonl",
+      "records": 33,
+      "sha256": "f709c1d718eb1a70a0a24be0474c4ead97eed0225677aff1901a63fbb65ef92f"
+    }
+  ],
+  "source_sha256": "5119d48ae893e7585dca3e2f01c2319f046699a294d8c579f49e9329052e618d",
+  "scope": "Independent module range exports with preserved failed attempts and explicit retry overlays. Every original target is accounted for once in the resolved view. No main RVA index mutation, clean-source or semantic-completeness claim."
+}

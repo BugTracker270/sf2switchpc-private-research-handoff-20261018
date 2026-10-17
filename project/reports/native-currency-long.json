@@ -1,0 +1,57 @@
+{
+  "status": "PASS_COMPILED_CURRENCY_LONG_CODEC_VS_ORIGINAL_ARM64",
+  "cases": 1024,
+  "checks": 20480,
+  "fixture_sha256": "1e9162e012592efbbbc62139c2f19c48658ec66777f4c3b3f8efeb3e81ff53bd",
+  "executed_functions": {
+    "long_from_plain": 12288,
+    "long_to_plain": 3072,
+    "long_internal_decrypt": 46743,
+    "long_encrypt_default": 5120,
+    "long_decrypt_default": 5120,
+    "long_encrypt_explicit": 3328,
+    "long_decrypt_explicit": 3328,
+    "money_get": 5120,
+    "bonus_get": 4096,
+    "paid_bonus_get": 1024
+  },
+  "calls": {
+    "long_from_plain": 1024,
+    "long_to_plain": 1024,
+    "long_encrypt_default": 1024,
+    "long_decrypt_default": 1024,
+    "long_encrypt_explicit": 1024,
+    "long_decrypt_explicit": 1024,
+    "long_internal_decrypt": 1024,
+    "money_get": 1024,
+    "bonus_get": 1024,
+    "paid_bonus_get": 1024
+  },
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "metadata_initialization_guards": [
+    "0x3a36692",
+    "0x3a3668a",
+    "0x3a3668b",
+    "0x3a3668d",
+    "0x3a3668c",
+    "0x3a3668e",
+    "0x3a36691",
+    "0x3a36614",
+    "0x3b86769",
+    "0x3b86851"
+  ],
+  "original_text_sha256": {
+    "long_from_plain": "69df525b3241380b63e5c7d0c69c0d35ac63ff68ffa8280801602296cc0b6d06",
+    "long_to_plain": "ed96767e3ccf0076a13ac3d0b439c75e276da151088dc3c600cdb573250bb198",
+    "long_encrypt_default": "0e11e78046ae8996eba7f8ba251d0aa9a90607ef5ce48093af0f91ad143dea06",
+    "long_encrypt_explicit": "84df25ec3176dd533df7d3122a83854ab7890c6404dd6728d25434cda696fb69",
+    "long_decrypt_default": "7979a17d46a4ee3edd7168b3db81cfc9b0ae5fac0c011875f5ccc0c56749e371",
+    "long_decrypt_explicit": "a751635bd02ef682b7c7b48909139eca8504065839fc7b05429aa1cba5849d74",
+    "long_internal_decrypt": "35147221c62050bb4a4c19beebb8db76a5bf8168f24aab7f2ef5d053d1ec0dc6",
+    "money_get": "c438e7a263c2f34b586392ee6ab417eb52aac04f5e100939dfb1bb5f99b3c08a",
+    "bonus_get": "0b0f1c9dafbea4e4cf25f3de9bb728d090b8298e803cdc25f89cc13a90f8584d",
+    "paid_bonus_get": "91d8f1cea3285d74ba3967ec71e9861182452e7779b9753f57f1ec2417e60775"
+  },
+  "scope": "64-bit currency codec and complete Money/Bonus/PaidBonus getters, including indirect 32-byte result ABI and lazy initialization of copied values. Synthetic initialized metadata; absent/inactive/active-consistent detector states. No mismatch callback, reward transaction, wallet setter, real save or full economy parity claim."
+}

@@ -1,0 +1,225 @@
+{
+  "status": "NO_NEW_ELIGIBLE_CALLERS_UNDER_EH_FREE_RECEIVER_ONLY_CONTRACT",
+  "checks": 12,
+  "failures": 0,
+  "tests": [
+    {
+      "name": "original native image",
+      "passed": true
+    },
+    {
+      "name": "native inventory exact hash",
+      "passed": true
+    },
+    {
+      "name": "typed inventory exact hash",
+      "passed": true
+    },
+    {
+      "name": "all original target BL sites classified once",
+      "passed": true
+    },
+    {
+      "name": "metadata survey does not mutate Core or use generic size classifier",
+      "passed": true
+    },
+    {
+      "name": "native MethodInfo expression loads are original 64-bit unsigned-offset loads",
+      "passed": true
+    },
+    {
+      "name": "no current EH-free receiver-only shape candidates",
+      "passed": true
+    },
+    {
+      "name": "no main-game EH-free adjacent candidate",
+      "passed": true
+    },
+    {
+      "name": "firstpass EH-free wrappers fail receiver-only shape",
+      "passed": true
+    },
+    {
+      "name": "passing shape/liveness wrapper still reads aggregate words and boxes",
+      "passed": true
+    },
+    {
+      "name": "actual main-game physical-slot reuse has distinct concrete generic types",
+      "passed": true
+    },
+    {
+      "name": "existing pinned adapter source unchanged",
+      "passed": true
+    }
+  ],
+  "by_caller_assembly": {
+    "Assembly-CSharp": {
+      "native_getenumerator_calls": 1014,
+      "typed_reference_family_calls": 953,
+      "native_adjacent_x8_sp_calls": 792,
+      "typed_adjacent_x8_sp_calls": 744,
+      "typed_adjacent_both_dead_normal_cfg_calls": 292,
+      "typed_adjacent_eh_free_calls": 0,
+      "typed_adjacent_eh_free_receiver_address_shape_calls": 0
+    },
+    "Assembly-CSharp-firstpass": {
+      "native_getenumerator_calls": 47,
+      "typed_reference_family_calls": 44,
+      "native_adjacent_x8_sp_calls": 37,
+      "typed_adjacent_x8_sp_calls": 35,
+      "typed_adjacent_both_dead_normal_cfg_calls": 25,
+      "typed_adjacent_eh_free_calls": 4,
+      "typed_adjacent_eh_free_receiver_address_shape_calls": 0
+    },
+    "SmartFox2X": {
+      "native_getenumerator_calls": 15,
+      "typed_reference_family_calls": 15,
+      "native_adjacent_x8_sp_calls": 11,
+      "typed_adjacent_x8_sp_calls": 11,
+      "typed_adjacent_both_dead_normal_cfg_calls": 4,
+      "typed_adjacent_eh_free_calls": 1,
+      "typed_adjacent_eh_free_receiver_address_shape_calls": 0
+    },
+    "System": {
+      "native_getenumerator_calls": 7,
+      "typed_reference_family_calls": 7,
+      "native_adjacent_x8_sp_calls": 5,
+      "typed_adjacent_x8_sp_calls": 5,
+      "typed_adjacent_both_dead_normal_cfg_calls": 5,
+      "typed_adjacent_eh_free_calls": 3,
+      "typed_adjacent_eh_free_receiver_address_shape_calls": 0
+    },
+    "UnityEngine.IMGUIModule": {
+      "native_getenumerator_calls": 12,
+      "typed_reference_family_calls": 12,
+      "native_adjacent_x8_sp_calls": 12,
+      "typed_adjacent_x8_sp_calls": 12,
+      "typed_adjacent_both_dead_normal_cfg_calls": 11,
+      "typed_adjacent_eh_free_calls": 0,
+      "typed_adjacent_eh_free_receiver_address_shape_calls": 0
+    },
+    "Ionic.Zip.Unity": {
+      "native_getenumerator_calls": 1,
+      "typed_reference_family_calls": 1,
+      "native_adjacent_x8_sp_calls": 1,
+      "typed_adjacent_x8_sp_calls": 1,
+      "typed_adjacent_both_dead_normal_cfg_calls": 0,
+      "typed_adjacent_eh_free_calls": 0,
+      "typed_adjacent_eh_free_receiver_address_shape_calls": 0
+    },
+    "System.Configuration": {
+      "native_getenumerator_calls": 10,
+      "typed_reference_family_calls": 10,
+      "native_adjacent_x8_sp_calls": 5,
+      "typed_adjacent_x8_sp_calls": 5,
+      "typed_adjacent_both_dead_normal_cfg_calls": 5,
+      "typed_adjacent_eh_free_calls": 1,
+      "typed_adjacent_eh_free_receiver_address_shape_calls": 0
+    },
+    "FyberPlugin": {
+      "native_getenumerator_calls": 2,
+      "typed_reference_family_calls": 1,
+      "native_adjacent_x8_sp_calls": 2,
+      "typed_adjacent_x8_sp_calls": 1,
+      "typed_adjacent_both_dead_normal_cfg_calls": 1,
+      "typed_adjacent_eh_free_calls": 0,
+      "typed_adjacent_eh_free_receiver_address_shape_calls": 0
+    },
+    "UnityEngine.CoreModule": {
+      "native_getenumerator_calls": 1,
+      "typed_reference_family_calls": 1,
+      "native_adjacent_x8_sp_calls": 1,
+      "typed_adjacent_x8_sp_calls": 1,
+      "typed_adjacent_both_dead_normal_cfg_calls": 1,
+      "typed_adjacent_eh_free_calls": 0,
+      "typed_adjacent_eh_free_receiver_address_shape_calls": 0
+    },
+    "UnityEngine.AudioModule": {
+      "native_getenumerator_calls": 3,
+      "typed_reference_family_calls": 3,
+      "native_adjacent_x8_sp_calls": 3,
+      "typed_adjacent_x8_sp_calls": 3,
+      "typed_adjacent_both_dead_normal_cfg_calls": 3,
+      "typed_adjacent_eh_free_calls": 0,
+      "typed_adjacent_eh_free_receiver_address_shape_calls": 0
+    }
+  },
+  "game_assemblies": [
+    "Assembly-CSharp",
+    "Assembly-CSharp-firstpass"
+  ],
+  "strict_initial_shape_candidates": 0,
+  "full_storage_ownership_proved": false,
+  "new_production_acceptances": 0,
+  "generalized_adapter_prototyped": false,
+  "core_edited": false,
+  "native_static_call_sites": 1112,
+  "typed_methodinfo_call_sites": 1047,
+  "adjacent_static_call_sites": 869,
+  "adjacent_cie_groups": {
+    "zPLR": 860,
+    "zR": 9
+  },
+  "corpus_index_instruction_sites": {
+    "0x1585f60": {
+      "unique_instruction_sites": 1105,
+      "duplicate_instruction_sites": 49,
+      "unparsed": 0,
+      "sites_missing_from_exact_text_scan": 0
+    },
+    "0x11dd130": {
+      "unique_instruction_sites": 1,
+      "duplicate_instruction_sites": 0,
+      "unparsed": 0,
+      "sites_missing_from_exact_text_scan": 0
+    }
+  },
+  "physical_regions_reused_with_distinct_t": 33,
+  "wrapper_counterexample": {
+    "caller": "System.Net.HttpListenerPrefixCollection.System.Collections.IEnumerable.GetEnumerator",
+    "caller_rva": "0x33EB70",
+    "call_rva": "0x33EBBC",
+    "caller_body_sha256": "f41fe5eb781dde37c4fde07ede60bca42b18b291f98365bb977cf0c319d1f715",
+    "buffer_sp_offset": 24,
+    "original_field_read_offsets": [
+      24,
+      32,
+      40
+    ],
+    "original_box_helper_call_rvas": [
+      "0x33ebe8"
+    ],
+    "reason": "Passes adjacent-buffer and conservative normal-CFG register filters but reads/copies all aggregate words for boxing, outside a receiver-only contract."
+  },
+  "typed_slot_reuse_counterexample": {
+    "caller": "Nekki.SF2.Core.Utils.GameUtils.AchievCounters.GetAchievement",
+    "caller_rva": "0xF58B50",
+    "buffer_sp_offset": 8,
+    "calls": [
+      {
+        "call_rva": "0xf58bbc",
+        "element_type": "Nekki.SF2.Core.Utils.AchievCounter"
+      },
+      {
+        "call_rva": "0xf58c34",
+        "element_type": "Nekki.SF2.Core.Utils.Achievement"
+      }
+    ],
+    "reason": "One physical buffer holds distinct closed generic Enumerator types at different native call sites. Lifetime/type partition must be proved, not inferred from equal size."
+  },
+  "future_acceptance_requirements": [
+    "Keep the verified exact callee/constructor FDE+code+canonical metadata-family descriptor. Resolve each call MethodInfo to one identical registered closed-reference alias and the exact substituted ref/int/int/ref declaration; do not use target address or a guessed generic size alone.",
+    "For an initial reusable receiver-only contract, require an exact unique caller/frame and CIE zR with no exception-bearing LSDA contract. Reject unknown, shared-signature or exception-bearing callers until independently supported.",
+    "Normalize all original frame addresses through SP/CFA/FP, including dynamic adjustment and derived pointers. Prove the whole aligned 24-byte result region is allocated, nonoverlapping and nonescaping throughout its live interval, with no unsupported interior pointers, raw field copies, boxing or address consumers.",
+    "Initially reject multiple GetEnumerator definitions sharing a physical region. A later lifetime extension must prove all-path ordering, dominance, consumers and closed generic type for each definition, including same-slot reuse by different T.",
+    "Prove native X0 buffer-pointer and X8 uses dead using the complete relevant CFG and typed call ABI, not merely a target match. Preserve exact pre-SSA native-address/ISIL correspondence and clone branch targets without mutating originals on rejection.",
+    "Require unchanged actual recovered CIL to store the aggregate into the same correctly typed local consumed by MoveNext/Current/Dispose, with no scalar aggregate initialization, retarget controls or added defaults. Validate actual native/CIL fragments and existing regressions before any production extension.",
+    "Before admitting exception-bearing callers, decode exact FDE/CIE LSDA encodings, call-site ranges, landing pads and cleanup/action/type chains. Include exception paths and their buffer consumers/aliases in lifetime and escape proofs; recover the corresponding CLR EH/rethrow behavior. Ordinary reachable CFG omission cannot prove cleanup dead."
+  ],
+  "native_survey_report_sha256": "ea6c40901d50664f1c9f18a0fc0b935dc750d52d0ab26af1cd263e604d84e6db",
+  "metadata_survey_report_sha256": "c9e6ec47607cf5aba828470b738848c01213cee5187a701965963dd237c36f12",
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "metadata_reader_core_sha256": "341daafcadf39c4f62f75e9769f00deb5275ad198f9f194382ac175da8677669",
+  "probe_source_sha256": "2d1abebf63c4d70f77f12e6e541285a323f9b4248198acf4f1aef6d4833613d2",
+  "scope": "Read-only static candidate assessment and actual metadata resolution only. The current contract has zero eligible new game callers, so no generalized adapter or acceptance prototype was attempted. This does not prove full storage ownership for rejected candidates or count recovered methods/runtime coverage. The existing pinned SetStage recovery retains its previously documented EH boundary. Full exception recovery is a confirmed prerequisite for expanding this receiver-only family safely."
+}

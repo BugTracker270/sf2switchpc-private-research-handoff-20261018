@@ -1,0 +1,21 @@
+{
+  "status": "PASS_SCOPED_NATIVE_BOX_ARGUMENT_TYPE_PROVENANCE",
+  "caller": "FyberPlugin.User::SetAge(System.Int32)",
+  "caller_rva": "0xF230F0",
+  "boxing_call_rva": "0xF23144",
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "native_input_window_sha256": "ac2a6da8e3b41f7df15a057c586db1324818cb5d48b64573b0acd60a843019bc",
+  "metadata_observation_sha256": "96676225f7bd96469e5a905be40aea0ba01b392142410375289db7c3f410b0f7",
+  "metadata_observation_source": "reports\\scalar-boxing-metadata-v30.json",
+  "selected_native_type": "System.Int32",
+  "selected_typed_source_address": "System.Int32",
+  "input_provenance": "native W1 -> W19 -> [SP+0xC]; X1 points to that same four-byte source slot at the boxing call",
+  "native_type_info_slot": "0x3979BA8",
+  "primitive_value_type": true,
+  "primitive_boxed_size": 20,
+  "primitive_payload_size": 4,
+  "primitive_has_static_constructor": false,
+  "original_native_executed": false,
+  "whole_game_source_ready": false,
+  "scope": "Static correlation of exact unchanged native instructions with the independent pre-lowering Cpp2IL metadata/operand observations for one boxing call. This establishes the selected primitive class and typed payload-address provenance; it does not execute native allocation/GC or prove recovered operand copy semantics, which require the separate recovered-expression test."
+}

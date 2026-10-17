@@ -1,0 +1,16 @@
+{
+  "checkpoint": "backups\\usb-restart-v40-v41-20261017T205754Z.zip",
+  "changes": [
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/Simplifier.cs",
+      "before_sha256": "5f205e29be60c8faf2710c4ba81ec39d0eba7d4ccaa4efd5fddbfd2fc87a60ba",
+      "after_sha256": "36b09778e88ed2ae04925bb47f7454fb0d7d1017325834e6fee18cf5510a4fe0"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64FreshArrayElementClass.cs",
+      "before_sha256": "7a541d6698240627a4555295be2da3606d170abfb31f37515502cf13f3220c08",
+      "after_sha256": "bf41157e00f9981b9c98c871f9dd192ddc41e6f774f5c6f66bc11e1af9f79eb8"
+    }
+  ],
+  "fresh_array_change": "Compile API repair only; escape/CFG review remains unvalidated; no production hook added"
+}

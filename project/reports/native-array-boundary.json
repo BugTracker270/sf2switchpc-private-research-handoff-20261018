@@ -1,0 +1,23 @@
+{
+  "status": "PASS_NATIVE_ARRAY_HEADER_AND_OVERFLOW_BOUNDARIES",
+  "cases": 582,
+  "checks": 3468,
+  "executed_functions": {
+    "array_new_specific": 6762
+  },
+  "runtime_boundaries": {
+    "supplied_initialized_class_layout": 582,
+    "supplied_element_size": 576,
+    "supplied_allocator_0xb5afc0": 192,
+    "supplied_memset": 192,
+    "supplied_allocator_0xb5af60": 192,
+    "supplied_allocator_0xb5b020": 192,
+    "supplied_overflow_exception_factory": 6,
+    "exception_raiser_stop": 6
+  },
+  "original_text_sha256": "b5f06a2413563cc4f795dbb9d54d039631f0a3ab9ccf16da5b17adebdac44d76",
+  "text_modified": false,
+  "game_function_mocks": 0,
+  "profiler_enabled": false,
+  "scope": "Original Array::NewSpecific control flow, size calculation, allocation-path choice, bounds/length header and return identity. Class initialization, element size, three allocator contracts, memset and overflow exception construction are explicitly supplied runtime boundaries; raiser is a stop boundary. Normal sizes are bounded to 24,584 bytes; large lengths test only pre-allocation overflow rejection. No real allocation failure, profiler, GC, OS allocation, huge-array memory or whole-runtime parity claim."
+}

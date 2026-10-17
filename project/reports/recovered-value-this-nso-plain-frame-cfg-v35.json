@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ACTUAL_RECOVERED_VALUE_THIS_CODEC_VS_ORIGINAL_NATIVE",
+  "recovery_run": "nso-plain-frame-cfg-v35",
+  "cases": 342,
+  "checks": 2052,
+  "lazy_initialization_cases": 171,
+  "already_initialized_cases": 171,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": null,
+  "blocked_calls": [],
+  "unreachable_helper_calls": 0,
+  "cil_sha256": "626ed9e857b8ace2b4a35f1389f74a0402c471f520770ba3b71cf023ddf00000",
+  "assembly_sha256": "59f79443e959b919de896f171fa65dcb88d5dce8ac17ed7683ee179383e9fa90",
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+}

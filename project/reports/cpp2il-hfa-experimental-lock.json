@@ -1,0 +1,149 @@
+{
+  "status": "EXPERIMENTAL_SAVED_NOT_PROMOTED",
+  "upstream": "https://github.com/SamboyCoding/Cpp2IL",
+  "commit": "b5ad444b82267cb1e4b88b8b373c008105bdea52",
+  "license": "MIT",
+  "patch": "src\\re\\tool-patches\\cpp2il-sf2-hfa-experimental.patch",
+  "sha256": "87db73bd472b2c4fb0fc89feb614dca3acbd84116ecdf0e5b5867f9607be7cad",
+  "files": [
+    {
+      "path": "Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs",
+      "sha256": "48b91ca27a3bcbb522b84dea44893ca6498c98015082ef7a52762fe9b2e7604c"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs",
+      "sha256": "c5489016f9d9368ebf0a92849e099e78ec3e82e2ae71f095ec2dd0eb4be8b715"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/MetadataAddressResolver.cs",
+      "sha256": "706e73d8a6d7076de657decb47c701dfe84a7dccb3931e9ffeef54a0ed92e5bb"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/MetadataResolver.cs",
+      "sha256": "25f3f8037cab569e370810fc62e52cd5164ebabb65ea2c95dde12eba8ea59a38"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/InterfaceDispatchRecovery.cs",
+      "sha256": "5c2171a2b2a85a3e0b81943041b1fc2b57a90e8272a8f236109e6591e3f9da06"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64AllocationPattern.cs",
+      "sha256": "daee4b11808995b6d2333139cd7609b4d32dcfd2f908be39f9adb5943e7ec29c"
+    },
+    {
+      "path": "Cpp2IL.Core/Il2CppApiFunctions/NewArm64KeyFunctionAddresses.cs",
+      "sha256": "14f2f30a34e624120f66fe2b038f4a422c0670d18d0dc10f26f763c286f9f527"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64InitializationPattern.cs",
+      "sha256": "c9ad1261b7940cce6e7049a2f430c01113017b6a7f37480b52638fbbb5f236da"
+    },
+    {
+      "path": "Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs",
+      "sha256": "b463b461da33a0359254813552777d96b4b718bdf195144f418506cea38f3d8b"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64ExceptionRaiserPattern.cs",
+      "sha256": "cba7320450b2c26e829c680becafd34e52233b98d4def90a3e1242750fc148c1"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64ThunkScanner.cs",
+      "sha256": "c7360baab0b79d9a3f229a6d103c93e083c3aef4574d822fbdf3970bec1a4795"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/ThrowHelperRecovery.cs",
+      "sha256": "e5d4aedf843ac5107fa3c3805c0e54b90ea52f7dcac2859771e3e3ad6e0373c0"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64ArrayAllocationPattern.cs",
+      "sha256": "2e3f7c89011f8baf4d71138759aa0fae8914bfa1cf42e297a9dc21fc2b17db3f"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/LocalVariables.cs",
+      "sha256": "19a5e9330da015c80b0891f772ce9d6949f9010c0dfde3d895aac44da59791af"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64ExceptionFactoryPattern.cs",
+      "sha256": "d221f48068c2e2dec77fd62da7b921977df8f462a9de3f506f6608d02e06a55f"
+    },
+    {
+      "path": "Cpp2IL.Core/IlGenerator.cs",
+      "sha256": "12e9b48b895b8792203a740f5899a0e1e414944aa0942af9164bd2e7d2d79f32"
+    },
+    {
+      "path": "Cpp2IL.Core/UninitializedObjectAllocation.cs",
+      "sha256": "05d1f4e6f6b9d404ffcb35830fb4a9a7b7836c909ee52278afb662da7d65d8fe"
+    },
+    {
+      "path": "Cpp2IL.Core/ProcessingLayers/AttributeInjectorProcessingLayer.cs",
+      "sha256": "177099d399f25c9db4ee7e1d303d4cefa0fe6ccc8d4350f17bead29763295daf"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64DefaultMemberPattern.cs",
+      "sha256": "7b3ce477b50846e6d68ac3055957fe4924a0d577057d2df9ad5ac55c06e34397"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/LegacyDefaultMemberRecovery.cs",
+      "sha256": "797a14c056f61fea6b6ab2e857fdd5b1129eedfb81893eb1fc376e46cd5b560f"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64Hfa.cs",
+      "sha256": "a91380654ecaf181c5a7d712603a5c392585396d5f41f6a32a899ad17dae646f"
+    },
+    {
+      "path": "Cpp2IL.Core/OutputFormats/AsmResolverDllOutputFormatIlRecovery.cs",
+      "sha256": "c47656e44d7a7bfccf4396bc643c36febf990f3ba727a9dfe2e190a79404cd4c"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/LegacyArm64FieldPaths.cs",
+      "sha256": "29fbff63bdfa075ca59e2b3e598c92e55aad813d0c2c0696c52f9622704aac0c"
+    },
+    {
+      "path": "Cpp2IL.Core/ISIL/MemoryOperand.cs",
+      "sha256": "cb8be9b16ffb5b190186fd2956d4423a504f2f08c5fcfebe7e46df53034ef644"
+    },
+    {
+      "path": "Cpp2IL.Core/ISIL/FieldReference.cs",
+      "sha256": "32aa29b60690c4c47379a0125683dcd1e68400f4b7230d8520ddad0eee6b54d4"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64LeafAccessors.cs",
+      "sha256": "d3a19e4646778502b8dca6807d79e4d2ed2db7b82c88bf918cc487875324b5d7"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64AggregateLeaves.cs",
+      "sha256": "e1aa22bee294d0ebe370d12a439c284110870eaaffc4a1de1fd16edcb8ece252"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64ValueThisThunks.cs",
+      "sha256": "4a24d9598320b91ec19078882d9c46bd90b399c055301cdd81d61c4e2c9f1ee4"
+    },
+    {
+      "path": "Cpp2IL.Core/Model/Contexts/ApplicationAnalysisContext.cs",
+      "sha256": "67eccfb7cd00e9410654b05c36dc21dff8607a7691c33c9af778d2abe9025970"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64ScalarBoxing.cs",
+      "sha256": "7b376ffcd06efbcd5c9831f748dafb2f3ae76fe7f6829155aa97d5dcd7c43457"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/KeyFunctionRecovery.cs",
+      "sha256": "9064474aed01a88a959be70f338e7597ed46b69c6dea487a58ae13a3e9d3a5f0"
+    },
+    {
+      "path": "Cpp2IL.Core/Analysis/SsaSimplifier.cs",
+      "sha256": "d7d70df888bf6eceb782ad155803b4b2ff871a7dc00e8e0ae983c536b4473c3f"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64CfgInitializationPattern.cs",
+      "sha256": "e5e9bc6669d38f5879d79ca4a2cc0a2e7b5924cc405434c2e9eea1dd2cbdfcfa"
+    },
+    {
+      "path": "Cpp2IL.Core/Utils/LegacyArm64IndirectReturns.cs",
+      "sha256": "8c89942388dd92070a024e2238754d40aa83c1d7448c302e1e51209b526a2365"
+    }
+  ],
+  "enable": "Invoke-Cpp2IlMetadataRecovery.ps1 -RecoverHfa (records process-scoped CPP2IL_LEGACY_HFA=1)",
+  "usage": "Complete alternative patch against the pinned upstream, not an incremental patch to combine with the canonical one.",
+  "scope": "Experimental metadata-validated flat/nested HFA entry/call/result packing and value-type field addressing. The class-macro recognizer additionally preserves scheduled scalar FP loads; the bounded class-load witness also admits independent unsigned-offset 32-bit loads and rejects flag/finished W0 clobbers. see native-fp-class-guard-caller and recovered-fp-class-guard reports. Closed-generic layouts and nested scalar FP field paths preserve observed base-field offsets and tail-padding reuse; unsupported layouts stay diagnostic. Analysis-warning tails terminate by throwing so even unreachable tails cannot fall off a CIL method. Surviving parameters bind to original signature positions even when earlier arguments are unused. Type literal operands keep RuntimeTypeHandle when required by the exact expected parameter type, instead of materializing System.Type before the native managed call. Adjacent reference-type constructor fusion recognizes equivalent closed generic owner contexts by canonical metadata definition/arguments, preserving receiver/block/order guards. Existing public nonvirtual scalar/ref accessors restore foreign private field access only after exact native leaf proof. Exact complete two-word field-copy leaves recover managed whole-value assignment/return before generic ABI analysis. Reviewed returning exception factories preserve their exact default constructor effect. Exact value-this adjustors select independently bounded unboxed bodies and unique aliases while registered addresses stay intact. Reviewed primitive boxing retains only proven initialized typed storage; address-taken and array liveness preserve original stores. Exact FDE-bounded CFG witnesses recover cached metadata flags and cold initialization paths while preserving scheduled arithmetic; the additive ordinary-method route requires an exact zR frame with empty FDE augmentation and retains the unchanged bounded matcher. Unknown/exception-bearing frames are excluded from that new route; the pre-existing selected route still includes twelve zPLR bodies with unverified exception semantics. typed legacy class initialization lowers to the existing CLR class-constructor contract rather than a no-op. Reviewed raw class-init ABI captures require an unused result and exact metadata origin; known runtime helpers cannot acquire stale managed MethodInfo identities. Class metadata Phi inputs require exact original type identity and edge-end definition availability, with topology, escape, cycle, 32-local and 256-visit bounds; constructor and reload order stay intact. A pinned native caller/callee/constructor descriptor binds one reviewed indirect Enumerator return to its original stack buffer before SSA; broader generic structure sizing and exception cleanup remain unresolved. Canonical patch stays separate. Stack-spilled HFAs are explicit recovery failures; integer multiword aggregates and general generic/indirect call recovery remain outside this experiment. No clean-source or whole-ABI claim."
+}

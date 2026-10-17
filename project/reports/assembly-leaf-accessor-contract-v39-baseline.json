@@ -1,0 +1,55 @@
+{
+  "status": "PASS_BASELINE_PUBLIC_ONLY_LEAF_ROUTE_REJECTS_INTERNAL_GETTER",
+  "checks": 9,
+  "tests": [
+    {
+      "name": "original input identities",
+      "status": "PASS"
+    },
+    {
+      "name": "original private field and Assembly getter preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "owner is nonnested nongeneric reference class without cctor",
+      "status": "PASS"
+    },
+    {
+      "name": "original getter exact native field load and return",
+      "status": "PASS"
+    },
+    {
+      "name": "public getter route remains distinct and rejects Assembly getter",
+      "status": "PASS"
+    },
+    {
+      "name": "private setter remains rejected by public route",
+      "status": "PASS"
+    },
+    {
+      "name": "current v38 recovered getter retains original Assembly/private metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "current recovered getter has exact one field read and return with local copies only",
+      "status": "PASS"
+    },
+    {
+      "name": "immutable v38 baseline has no internal-getter recovery API",
+      "status": "PASS"
+    }
+  ],
+  "fatal": null,
+  "baseline": true,
+  "core_sha256": "197403735d374bdde681ad203cdb3eb18e8cd9eef01897908a8c4f9e786ad99a",
+  "probe_source_sha256": "a38bc862966c28f57a5d1ee2ad757c81c4faa880e4d8a3d4d2f0abd66650c7cf",
+  "native_getter_sha256": "f289023bfc90be5c90aa1a98a40c5b356af639e69af0399f5914b2202364955c",
+  "recovered_getter_run": "nso-virtual-companion-copy-v38",
+  "recovered_getter_assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192",
+  "recovered_getter_field_loads": 1,
+  "emitted": [],
+  "original_game_methods_executed": 0,
+  "original_game_metadata_modified": false,
+  "production_outputs_written": false,
+  "scope": "Original input/native/getter metadata and current recovered CIL are read-only. Baseline distinguishes public-only rejection. New API fixtures populate actual production stub/type/member attachment stages in memory, then test caller assembly object identity and real emitter instructions. Temporary in-process metadata-attribute/attachment negatives are restored; no game code is executed, no private flags are widened and no static/setter/aggregate recovery is asserted."
+}

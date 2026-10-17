@@ -1,0 +1,75 @@
+{
+  "status": "READ_ONLY_ORIGINAL_NATIVE_CFG_AND_V33_STAGE_WITNESS",
+  "private_evidence_path": "analysis\\reconstruction\\class-guard-cfg-v35\\native-witness.json",
+  "private_evidence_sha256": "ca287136781e51c18f81ef296d2b37ea9a1b1c013b6b09631d48b3215c8e61a3",
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "probe_source_sha256": "e04d009f84a10b09143e28dea9ed5a6c7c3da0e9950865d6df3203a6ad37ed80",
+  "exact_class_metadata_witness": {
+    "got": "0x3982f58",
+    "metadata_slot": "0x3b34fb8",
+    "original_record": {
+      "Address": 62083000,
+      "Name": "BundlesUtil_TypeInfo",
+      "Signature": "BundlesUtil_c*"
+    },
+    "script_sha256": "df6991f38ddc65b757a6036d43e9caa949b4f0347ccc48b5aab6abe8219f1ec4"
+  },
+  "methods": [
+    {
+      "name": "BundlesUtil::GetAssetBundleSafe",
+      "exact_frame": {
+        "rva": 4884768,
+        "end_rva": 4885024,
+        "fde_rva": 52670024,
+        "fde_end_rva": 52670064,
+        "cie_rva": 52097888,
+        "cfi_start": 52670041,
+        "cfi_bytes": 23
+      },
+      "body_sha256": "07369c1cddf45700ee6c60c559312bc29ed5debc2c953755d9ac7d7c1414991c",
+      "instruction_count": 64,
+      "direct_branch_block_count": 17,
+      "original_class_init_call_count": 3,
+      "cie_augmentation": "zR",
+      "has_lsda": false,
+      "lsda_rva": null,
+      "lsda_table_sha256": null,
+      "lsda_call_site_count": 0,
+      "lsda_landing_entries": [],
+      "private_production_snapshot": "analysis\\il2cpp\\raw-classinit-BundlesUtil-GetAssetBundleSafe-after-type-v33.txt",
+      "private_production_snapshot_sha256": "8a967ec092fac62597de2c4b735153c48f4cd5da7e5f7c35e5424043350d691e"
+    },
+    {
+      "name": "BundlesUtil::UnloadDependencies",
+      "exact_frame": {
+        "rva": 4883360,
+        "end_rva": 4883744,
+        "fde_rva": 56808784,
+        "fde_end_rva": 56808824,
+        "cie_rva": 56727496,
+        "cfi_start": 56808809,
+        "cfi_bytes": 15
+      },
+      "body_sha256": "0fd52a9b449be83e29a7424dab0003da060929dbe574320d54ecfac5121483f2",
+      "instruction_count": 96,
+      "direct_branch_block_count": 22,
+      "original_class_init_call_count": 2,
+      "cie_augmentation": "zPLR",
+      "has_lsda": true,
+      "lsda_rva": "0x2fe4da8",
+      "lsda_table_sha256": "4f4ce0131150d04463d410507771aabe06d5948f00c55e8a3244c3ab8d449b41",
+      "lsda_call_site_count": 5,
+      "lsda_landing_entries": [
+        "0x4a8480",
+        "0x4a848c",
+        "0x4a8498"
+      ],
+      "private_production_snapshot": "analysis\\il2cpp\\raw-classinit-BundlesUtil-UnloadDependencies-after-type-v33.txt",
+      "private_production_snapshot_sha256": "6995cecd906f7a709482bc5d467d1265541a5b1b5c497a8c055502e21375615b"
+    }
+  ],
+  "code_modified": false,
+  "core_modified": false,
+  "execution_performed": false,
+  "scope": "Sanitized hashes, ranges, counts and original exception-metadata findings. Full original disassembly and typed instruction snapshots remain in ignored local analysis evidence. This is not a production recovery or runtime-equivalence result."
+}

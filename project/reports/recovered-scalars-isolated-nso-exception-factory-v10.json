@@ -1,0 +1,333 @@
+{
+  "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovery_run": "nso-exception-factory-v10",
+  "isolated_accessors": true,
+  "isolation_self_checks": 3,
+  "method_headers": [
+    {
+      "method": "get_Production",
+      "max_stack": 0,
+      "locals": [
+        "System.Int32[]",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "set_Production",
+      "max_stack": 0,
+      "locals": [
+        "System.Int32[]",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "get_Major",
+      "max_stack": 0,
+      "locals": [
+        "System.Int32[]",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "set_Major",
+      "max_stack": 0,
+      "locals": [
+        "System.Int32[]",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "get_Minor",
+      "max_stack": 0,
+      "locals": [
+        "System.Int32[]",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "set_Minor",
+      "max_stack": 0,
+      "locals": [
+        "System.Int32[]",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "get_DataVersion",
+      "max_stack": 0,
+      "locals": [
+        "System.Int32[]",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    },
+    {
+      "method": "set_DataVersion",
+      "max_stack": 0,
+      "locals": [
+        "System.Int32[]",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Int32",
+        "System.Boolean",
+        "System.Boolean",
+        "System.Boolean",
+        "System.IndexOutOfRangeException",
+        "VersionContainer"
+      ],
+      "init_locals": true
+    }
+  ],
+  "cases": 768,
+  "checks": 1760,
+  "failure_count": 768,
+  "first_failures": [
+    {
+      "index": 0,
+      "property": "Production",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 1,
+      "property": "Production",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 2,
+      "property": "Major",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 3,
+      "property": "Major",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 4,
+      "property": "Minor",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 5,
+      "property": "Minor",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 6,
+      "property": "DataVersion",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 7,
+      "property": "DataVersion",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 8,
+      "property": "Production",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 9,
+      "property": "Production",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 10,
+      "property": "Major",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 11,
+      "property": "Major",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 12,
+      "property": "Minor",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 13,
+      "property": "Minor",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 14,
+      "property": "DataVersion",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 15,
+      "property": "DataVersion",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    }
+  ],
+  "fatal": null,
+  "assembly_sha256": "4a42b8fa29f518dbccde262c3939a3eea6a9e4db431adc54bfee774798f660e7",
+  "fixture_sha256": "7cf2a4e8e3b47f01ab3de94c8d3a6c5b1aa87b900071ae26689d6fa50d814209",
+  "scope": "Recovered accessor CIL isolated in DynamicMethods: the sole _versionSource field load becomes a same-size NOP span, and an int[] argument supplies that field directly; metadata tokens are remapped to their same runtime targets. All other instruction/branch bytes and local types are retained. Class initialization and constructors are deliberately outside this experiment. This is a bounded CIL comparison, not executable recovered whole-game source."
+}

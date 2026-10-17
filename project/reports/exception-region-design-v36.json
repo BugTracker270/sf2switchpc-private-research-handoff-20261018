@@ -1,0 +1,330 @@
+{
+  "status": "PASS_STANDALONE_REGION_DESIGN_FOUNDATION",
+  "synthetic_model_tests": 32,
+  "synthetic_failures": 0,
+  "synthetic_errors": 0,
+  "synthetic_skips": 0,
+  "evidence_checks": 6,
+  "evidence_failures": 0,
+  "checks": [
+    {
+      "name": "standalone structural fixture suite",
+      "passed": true
+    },
+    {
+      "name": "actual existing-Core pruning/clone boundary gates",
+      "passed": true
+    },
+    {
+      "name": "Core probe binds its source and v35 immutable tool provenance",
+      "passed": true
+    },
+    {
+      "name": "normal enumeration excludes retained handler nodes",
+      "passed": true
+    },
+    {
+      "name": "normal leave and exceptional dispatch remain distinct",
+      "passed": true
+    },
+    {
+      "name": "all production EH readiness remains false",
+      "passed": true
+    }
+  ],
+  "current_core_boundary_checks": 13,
+  "current_core_boundary_report_sha256": "2eca1d6281b62a9eb3370b9c8dd00896ca1e2ccea8017982a192af329e78c314",
+  "runtime_probe_core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+  "unit_log_sha256": "518b2c5409d624f17b710cc92757c0f05663a3126bbe7b1bb3306e97ed6c7715",
+  "model_source_sha256": "731e3bf80d70a2fe378e8bac65272400382c21cb3424fc066da8dd3038bbbe98",
+  "unit_source_sha256": "a95730650d55b0d7864a4e48b0dec616da7d4ed8b0138a69651fbbd5ee9796db",
+  "report_source_sha256": "05469826c890e8e726a56363d9ad00a46d26e69494a7bb4f6c876f4af6889eed",
+  "standalone_validated_fixture": {
+    "normal_reachable": [
+      "acquire",
+      "pre",
+      "next",
+      "test",
+      "leave",
+      "current",
+      "unload",
+      "loop",
+      "clear",
+      "return"
+    ],
+    "handler_roots": [
+      "dispose"
+    ],
+    "handler_only_reachable": [
+      "dispose",
+      "end"
+    ],
+    "retained": [
+      "acquire",
+      "pre",
+      "next",
+      "test",
+      "leave",
+      "current",
+      "unload",
+      "loop",
+      "dispose",
+      "end",
+      "clear",
+      "return"
+    ],
+    "leave_dispatches": [
+      [
+        "leave",
+        "dispose",
+        "clear"
+      ]
+    ],
+    "exceptional_dispatches": [
+      [
+        "next",
+        "dispose",
+        "propagate_runtime_pending"
+      ],
+      [
+        "current",
+        "dispose",
+        "propagate_runtime_pending"
+      ],
+      [
+        "unload",
+        "dispose",
+        "propagate_runtime_pending"
+      ]
+    ],
+    "production_eh_ready": false
+  },
+  "upstream_code_audit": [
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\InstructionSets\\NewArmV8InstructionSet.cs",
+      "line": 177,
+      "source_sha256": "b463b461da33a0359254813552777d96b4b718bdf195144f418506cea38f3d8b",
+      "current_behavior": "Native address mapping is a local parallel list; one native instruction may lift to multiple ISIL operations. Synthetic entries use ulong.MaxValue. Bare instructions leave this method, so a persistent region/provenance sidecar is missing."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\Instruction.cs",
+      "line": 40,
+      "source_sha256": "8e5e1ee080394c9dd33c4db80fd62f6bcd86f086fa6c27c562e3ca61a806b468",
+      "current_behavior": "Instruction instances and operands are mutable identity objects. The terminator/use/definition model has no Leave, EndFinally or Rethrow semantics."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\ISIL\\Instruction.cs",
+      "line": 241,
+      "source_sha256": "8e5e1ee080394c9dd33c4db80fd62f6bcd86f086fa6c27c562e3ca61a806b468",
+      "current_behavior": "Instruction identity is deliberately distinct from structural equality; indices are not safe persistent region anchors, and synthetic phi copies can share index -1."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Graphs\\ISILControlFlowGraph.cs",
+      "line": 424,
+      "source_sha256": "78a6b98f8d2e5926be744c86d2acdb3a439771e356ff4888310f8790e0818791",
+      "current_behavior": "CFG construction mutates instruction operands from instruction targets to Block identities; shallow list copies do not isolate analysis."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Graphs\\ISILControlFlowGraph.cs",
+      "line": 24,
+      "source_sha256": "78a6b98f8d2e5926be744c86d2acdb3a439771e356ff4888310f8790e0818791",
+      "current_behavior": "Instruction enumeration starts only at ordinary method entry, omitting disconnected handler roots."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Graphs\\ISILControlFlowGraph.cs",
+      "line": 87,
+      "source_sha256": "78a6b98f8d2e5926be744c86d2acdb3a439771e356ff4888310f8790e0818791",
+      "current_behavior": "Reachability uses only ordinary successor lists; no exception-region root or typed exceptional transfer is represented."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Graphs\\ISILControlFlowGraph.cs",
+      "line": 136,
+      "source_sha256": "78a6b98f8d2e5926be744c86d2acdb3a439771e356ff4888310f8790e0818791",
+      "current_behavior": "Branch targets protect NOPs; protected/handler boundary anchors are not considered."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Graphs\\ISILControlFlowGraph.cs",
+      "line": 193,
+      "source_sha256": "78a6b98f8d2e5926be744c86d2acdb3a439771e356ff4888310f8790e0818791",
+      "current_behavior": "Empty-block rewrites update normal predecessor/successor references only; region anchors would also require atomic remapping."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Graphs\\ISILControlFlowGraph.cs",
+      "line": 281,
+      "source_sha256": "78a6b98f8d2e5926be744c86d2acdb3a439771e356ff4888310f8790e0818791",
+      "current_behavior": "Call blocks merge without region membership or handler-root checks. MetadataResolver invokes this pass."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Model\\Contexts\\MethodAnalysisContext.cs",
+      "line": 370,
+      "source_sha256": "3630c47dbb88e1ef06fb1e9fe41a4ab491243ac4bb03c7c1d0ea6f58d5fe8c37",
+      "current_behavior": "Attach and validate native region/provenance data before this CFG construction and before StackAnalyzer pruning."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\StackAnalyzer.cs",
+      "line": 33,
+      "source_sha256": "708c6e5bd464bff4b6b20be18563a21a934b10871ad8704a544fb56ae000c8c0",
+      "current_behavior": "Stack analysis immediately prunes ordinary-unreachable handlers, then seeds only EntryBlock with stack delta zero."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\StackAnalyzer.cs",
+      "line": 99,
+      "source_sha256": "708c6e5bd464bff4b6b20be18563a21a934b10871ad8704a544fb56ae000c8c0",
+      "current_behavior": "Stack offsets rely on a per-instruction ordinary stack state. Handler frames need independently validated entry/storage state, not a borrowed normal call-return state."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\SsaForm.cs",
+      "line": 40,
+      "source_sha256": "036b41f0259c6f02fec2a8a0f122137dd6c12a6b1a21f415b1b1bb34fe9ac6cc",
+      "current_behavior": "SSA rename has one ordinary entry and positional normal predecessors; no fresh exception-entry definitions or exceptional memory state."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Analysis\\SsaForm.cs",
+      "line": 423,
+      "source_sha256": "036b41f0259c6f02fec2a8a0f122137dd6c12a6b1a21f415b1b1bb34fe9ac6cc",
+      "current_behavior": "Phi removal emits normal predecessor copies. A thrown call cannot execute copies appended after its normal return; exceptional state requires a separate transfer contract."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\IlGenerator.cs",
+      "line": 52,
+      "source_sha256": "26d820b2c81b00d374f57f099cc326f4c2bc9032deb9d2a8759ae4034af08266",
+      "current_behavior": "Emitter mutates Block operands back to instruction targets; region anchors must survive this identity conversion."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\IlGenerator.cs",
+      "line": 160,
+      "source_sha256": "26d820b2c81b00d374f57f099cc326f4c2bc9032deb9d2a8759ae4034af08266",
+      "current_behavior": "Ordinary bridges use br; region exits need explicit leave, and finally completion needs endfinally with an empty stack."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\IlGenerator.cs",
+      "line": 389,
+      "source_sha256": "26d820b2c81b00d374f57f099cc326f4c2bc9032deb9d2a8759ae4034af08266",
+      "current_behavior": "Current Throw can throw an existing managed object or construct one; it is not Rethrow or native _Unwind_Resume."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\IlGenerator.cs",
+      "line": 187,
+      "source_sha256": "26d820b2c81b00d374f57f099cc326f4c2bc9032deb9d2a8759ae4034af08266",
+      "current_behavior": "Unresolved normal branch targets currently degrade to warnings/NOP. Region boundaries and illegal EH transfers must instead fail the entire candidate atomically."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\OutputFormats\\AsmResolverDllOutputFormatIlRecovery.cs",
+      "line": 68,
+      "source_sha256": "c47656e44d7a7bfccf4396bc643c36febf990f3ba727a9dfe2e190a79404cd4c",
+      "current_behavior": "A future exact whole-method descriptor/emitter could isolate one proved cleanup case here; this is a placement proposal, not implementation or permission to bypass missing native/typed evidence."
+    },
+    {
+      "path": "refs\\Cpp2IL\\Cpp2IL.Core\\Model\\Contexts\\MethodAnalysisContext.cs",
+      "line": 465,
+      "source_sha256": "3630c47dbb88e1ef06fb1e9fe41a4ab491243ac4bb03c7c1d0ea6f58d5fe8c37",
+      "current_behavior": "Any future region sidecar needs explicit lifecycle handling and evidence export before analysis data is released."
+    }
+  ],
+  "proposed_core_contracts": [
+    {
+      "stage": "Lifting/provenance",
+      "proposed": "MethodRegionPlan sidecar on MethodAnalysisContext; stable boundary labels and NativeInstructionSpan(original method/body hash, RVA, lift ordinal). Keep 1-to-many native/ISIL mapping and explicit synthetic origins. Bind every protected throwpoint before native-address data is discarded."
+    },
+    {
+      "stage": "Typed entry",
+      "proposed": "Separate NativeLandingEntry(X0 opaque unwind token, W1 selector, independently validated frame/storage and unknown volatile registers) from ManagedFinallyEntry(empty evaluation stack, runtime-owned pending dispatch). Fresh handler-entry values cannot reuse normal call destinations or MethodInfo registers. CFI parser observations alone cannot authorize frame installation."
+    },
+    {
+      "stage": "IR terminators",
+      "proposed": "Leave(continuation, region), EndFinally(region), and Rethrow(catch region) require explicit IsFallThrough/use/definition/terminator handling. Rethrow is rejected until an actual managed catch scope is proved; it is not needed in a finally. Keep native Resume unsupported and distinct from managed Throw/Rethrow."
+    },
+    {
+      "stage": "CFG roots and partitions",
+      "proposed": "Split at protected/handler boundaries and exceptional throwpoints. Keep normal successors/predecessors separate from instruction-specific exceptional transfers. Structural retention includes anchored handler roots; it must not fabricate normal flow into handlers. Do not merge across region partitions or delete boundary NOP/empty blocks without remapping all anchors."
+    },
+    {
+      "stage": "Stack and memory",
+      "proposed": "Seed handler physical-frame state independently at a proved entry boundary. Preserve one typed live 24-byte Enumerator storage identity across acquisition, protected byref calls and cleanup; memory state is from the throwpoint after possible callee effects, not an unconditional pre-call snapshot. Unknown alias/overlap/escape/frame states reject."
+    },
+    {
+      "stage": "SSA/dataflow",
+      "proposed": "Use a normal-flow forest plus explicit exceptional entry parameters/state joins, or initially bypass general SSA only for an exact complete typed method descriptor after all equivalence gates. Ordinary phi predecessor copies are not exceptional argument transfers. Calls produce a normal result only on their normal edge; exception-entry registers are fresh and byref storage effects remain conservative."
+    },
+    {
+      "stage": "Clone/rewrite contract",
+      "proposed": "Clone instruction instances, remap every branch and region anchor to cloned identities, and clone mutable AddressOf/FieldReference/LocalVariable operand graphs when applicable. Current tiny probe validates only primitive/branch fixture cloning, not a general deep clone. Every rewrite must preserve region membership, labels and ordered side effects atomically."
+    },
+    {
+      "stage": "CIL layout",
+      "proposed": "Emit acquisition outside try; one structured protected loop; leave to normal continuation; a separate Finally clause with Dispose and endfinally; post-finally class initialization/Clear only on normal completion. Finally has no catch type. Instruction-backed boundary labels must survive zero-IL nodes; do not use arbitrary original block order or normal br across region boundaries."
+    },
+    {
+      "stage": "Validation and failure",
+      "proposed": "Validate serialized EH kind/bounds/labels and all control transfers, evaluation stack and exact typed operands in addition to MaxStack. Unsupported aliases, foreign dispatch, nested regions, changed native evidence, unresolved labels or inconsistent storage reject the whole method with preserved diagnostic evidence."
+    }
+  ],
+  "unresolved_original_semantics": [
+    "No native LSDA/RTTI action is converted into a managed finally or catch. Original selector 1/non-null managed-wrapper cleanup and foreign/unmatched-selector _Unwind_Resume have different behavior; foreign-exception cleanup stays unresolved.",
+    "The v35 CFI API supplies ordered instruction-state observations, including intermediate states at one PC. It does not provide completed PC ranges or an executed SDK personality/unwinder context.",
+    "The original null managed-payload branch and trace/raise semantics remain separate proof obligations. A finally propagates runtime-owned pending dispatch; an explicit managed Throw or Rethrow must not be substituted to guess native trace behavior.",
+    "The original protected native table has three bounded call intervals. A future contiguous managed try must prove every additional included instruction is non-throwing or has equivalent handling; no action is widened from address proximity.",
+    "Exact typed static fields, List/AssetBundle member identities, the 24-byte frame-storage lifetime and normal/cleanup initialization ordering must all be validated before a complete original method can be emitted."
+  ],
+  "future_test_groups": [
+    {
+      "state": "PROPOSED_NOT_RUN",
+      "group": "Native landing/context witnesses",
+      "cases": [
+        "All three unchanged landing entries with selector 1 and distinct non-null managed payloads",
+        "Original begin/end catch order, one Dispose and same-pointer raise",
+        "Selector 0/other reaches original resume boundary without fabricated Dispose",
+        "Separate null-payload behavior and actual installed unwind/frame context"
+      ]
+    },
+    {
+      "state": "PROPOSED_NOT_RUN",
+      "group": "Serialized CIL structure",
+      "cases": [
+        "Exactly one Finally, no catch type, correct half-open instruction boundaries",
+        "Normal protected exits use leave, handler completes with endfinally",
+        "Empty finally entry stack and no branch/ret across region boundaries",
+        "Malformed/foreign/nested/changed descriptor rejects atomically"
+      ]
+    },
+    {
+      "state": "PROPOSED_NOT_RUN",
+      "group": "Runtime side-effect/exception behavior",
+      "cases": [
+        "Empty/1/3/8 element normal loop and repeated invocation",
+        "Acquisition throws: no Dispose or Clear",
+        "MoveNext/Current/Unload throws: Dispose once, Clear absent, same exception identity",
+        "Dispose throws: replacement exception propagates, no Clear",
+        "Post-finally initialization/Clear throws: no duplicate Dispose",
+        "Trace and normal-result visibility checked independently"
+      ]
+    }
+  ],
+  "original_contract_report_sha256": "d16957b6c4502d136cb708bc450542d69e866d25028953cd1353e85650aaa70a",
+  "primary_references": [
+    {
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.reflection.emit.opcodes.br?view=net-10.0",
+      "claim": "Ordinary branch cannot enter/leave protected and handler blocks."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.reflection.emit.opcodes.leave?view=net-10.0",
+      "claim": "Leave clears the stack and executes surrounding finally blocks; it cannot exit finally."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.reflection.emit.opcodes.rethrow?view=net-10.0",
+      "claim": "Rethrow belongs only to a catch body, not a finally."
+    },
+    {
+      "url": "https://ecma-international.org/wp-content/uploads/ECMA-335_6th_edition_june_2012.pdf",
+      "claim": "CLI exception-region and instruction semantics; the standalone checker is a conservative subset, not full CIL verification."
+    }
+  ],
+  "core_edited": false,
+  "core_built": false,
+  "production_eh_ready": false,
+  "catch_or_finally_mapping_implemented": false,
+  "original_game_code_executed": false,
+  "actual_unwinding_executed": false,
+  "full_clean_decompile_ready": false,
+  "scope": "New original infrastructure and concrete integration design only. Synthetic structural model tests and the separate actual existing-Core graph probe do not recover original handlers, validate operand types or prove game exception behavior."
+}

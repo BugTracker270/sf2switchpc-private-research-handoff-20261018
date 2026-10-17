@@ -1,0 +1,17 @@
+{
+  "passed": 2,
+  "failed": 0,
+  "checks": [
+    {
+      "rva": 15036816,
+      "status": "PASS_STATIC_CONTROL_FLOW",
+      "behavior": "Null Fight returns; non-null Fight tail-calls Fight.Draw with MethodInfo*=0. Pseudocode may expand the tail call."
+    },
+    {
+      "rva": 14241744,
+      "status": "PASS_STATIC_CONTROL_FLOW",
+      "behavior": "HaveSecondPlayer compares current GamePadController.DevicesCount > 1."
+    }
+  ],
+  "scope": "Small wrappers/predicates only; no whole-combat, physical-controller or runtime parity certification."
+}

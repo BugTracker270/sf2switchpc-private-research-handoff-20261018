@@ -1,0 +1,94 @@
+{
+  "status": "PASS_ORIGINAL_NON_NULLABLE_SCALAR_BOX_PAYLOADS_AT_GC_COPY_BOUNDARIES",
+  "cases": 2560,
+  "checks": 17920,
+  "types": {
+    "System.SByte": {
+      "width": 1,
+      "cases": 256,
+      "checks": 1792
+    },
+    "System.Byte": {
+      "width": 1,
+      "cases": 256,
+      "checks": 1792
+    },
+    "System.Int16": {
+      "width": 2,
+      "cases": 256,
+      "checks": 1792
+    },
+    "System.UInt16": {
+      "width": 2,
+      "cases": 256,
+      "checks": 1792
+    },
+    "System.Int32": {
+      "width": 4,
+      "cases": 256,
+      "checks": 1792
+    },
+    "System.UInt32": {
+      "width": 4,
+      "cases": 256,
+      "checks": 1792
+    },
+    "System.Int64": {
+      "width": 8,
+      "cases": 256,
+      "checks": 1792
+    },
+    "System.UInt64": {
+      "width": 8,
+      "cases": 256,
+      "checks": 1792
+    },
+    "System.Single": {
+      "width": 4,
+      "cases": 256,
+      "checks": 1792
+    },
+    "System.Double": {
+      "width": 8,
+      "cases": 256,
+      "checks": 1792
+    }
+  },
+  "text_modified": false,
+  "metadata_observation_sha256": "96676225f7bd96469e5a905be40aea0ba01b392142410375289db7c3f410b0f7",
+  "fixtures": "analysis\\il2cpp\\scalar-boxing-native-fixtures-v30.jsonl",
+  "fixtures_sha256": "8517d2e1d9f1d0df951283e53ae02c3ba92b9beacfcd9817381ff22b59af9119",
+  "reviewed_functions": {
+    "box": {
+      "rva": "0xb5b070",
+      "bytes": 156,
+      "sha256": "827735a47ad60dc6eb33046526701fa86647e543ab655c6ecc1ff4b766c74aa2"
+    },
+    "nullable": {
+      "rva": "0xb05bb0",
+      "bytes": 48,
+      "sha256": "a61cfe7955c2fcb9224cc24df52d426b8574d4485afd70a249d8b932e5a53d13"
+    },
+    "size": {
+      "rva": "0xb04ff0",
+      "bytes": 56,
+      "sha256": "13099b82b75073da5d08b01043d321cb250786d439936676711d891f3f19f369"
+    },
+    "initialized_class": {
+      "rva": "0xb04f60",
+      "bytes": 112,
+      "sha256": "16314f8396501200adcba482521357b30cf07bc7e95f3c26ae6c206873088b81"
+    }
+  },
+  "executed_blocks": {
+    "box": 23040,
+    "initialized_class": 7680,
+    "nullable": 5120,
+    "size": 5120
+  },
+  "runtime_boundaries": {
+    "supplied_zeroed_GC_allocation_without_scalar_cctor": 2560,
+    "supplied_standard_memcpy": 2560
+  },
+  "scope": "Original boxing helper, nullable predicate, instance-size reader and already-initialized class path execute unchanged for ten concrete primitive classes with actual metadata sizes and no metadata .cctor. GC allocation and imported memcpy are explicit supplied contracts. Payload bits, exact requested type, fresh pointer, source bytes and destination bounds are checked. Boolean/Char (cctor), nullable/reference/custom types, GC/lifetime, uninitialized classes, actual CLR box instructions and full callers are outside this oracle."
+}

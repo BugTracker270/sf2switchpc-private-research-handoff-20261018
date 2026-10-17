@@ -1,0 +1,115 @@
+{
+  "status": "RECOVERED_GAME_EXECUTION_LIMITATION_CONFIRMED",
+  "updated": "2026-10-17T12:40:52.465562+00:00",
+  "recovery_run": "nso-cfg-init-v31",
+  "evidence": {
+    "native_cfg_recognition": {
+      "report": "reports/cfg-initialization-recognition-v31.json",
+      "status": "PASS_SCOPED_CFG_INITIALIZATION_RECOGNITION",
+      "native_start": "0x7A8F20",
+      "native_bytes": 520,
+      "native_sha256": "a809ba86d78a7b73c9938699426f19400aca92d342ef5e3ce61cbef56121b67f",
+      "checks": 26,
+      "scope": "Exact 520-byte original FDE body matcher only; no recovered CLR execution or class-constructor equivalence claim."
+    },
+    "typed_class_constructor_lowering": {
+      "report": "reports/legacy-class-init-lowering-v31.json",
+      "status": "PASS_LEGACY_CLASS_INIT_TYPED_LOWERING_AND_CLR_CONTRACT",
+      "cases": 80,
+      "checks": 120,
+      "known_native_target": "0xB2E720",
+      "native_target_discovery": "Three agreeing corlib families in existing NewArm64KeyFunctionAddresses recovery",
+      "exact_managed_target": "System.Void System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor(System.RuntimeTypeHandle type)",
+      "unproven_initializer_preserved": true,
+      "type_seeding_fixpoint_before_ssa": true,
+      "fixture_effect_calls": 32,
+      "fixture_throw_calls": 32,
+      "fixture_concurrent_calls": 16,
+      "fixture_effect_count": 1,
+      "fixture_throw_effect_count": 1,
+      "fixture_concurrent_effect_count": 1,
+      "core_assembly_sha256": "7ffff037f9a1e2f509950d81dda763ebb804835b1144c53d82b88a74e492a03c",
+      "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+      "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+      "scope": "Actual metadata and the real ISIL/emitter prove the exact RuntimeTypeHandle-taking API and unchanged class-init effect. Host-fixture type/API token rebinding executes the emitted ldtoken/call/forward-branch/ret contract with independently authored .cctors, proving observable nondefault effects, once-only execution, concurrent once semantics and persistent throwing behavior. The forward branch is checked to target the sole ret and retained. It does not execute original game .cctor bodies, the native runtime initializer, or a whole recovered caller; it cannot certify gameplay or full decompilation."
+    },
+    "actual_recovered_codec": {
+      "report": "reports/recovered-value-this-nso-cfg-init-v31.json",
+      "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+      "recovery_run": "nso-cfg-init-v31",
+      "cases": 0,
+      "checks": 0,
+      "lazy_initialization_cases": 0,
+      "already_initialized_cases": 0,
+      "failure_count": 0,
+      "fatal": "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. -> System.FieldAccessException: Attempt by method 'CodeStage.AntiCheat.ObscuredTypes.ObscuredInt.InternalDecrypt()' to access field 'CodeStage.AntiCheat.Detectors.ObscuredCheatingDetector.<Instance>k__BackingField' failed.",
+      "unreachable_helper_calls": 0,
+      "cil_sha256": "10f23f449ef751b98ddc4f93f02ef65692185e13046ac4f3321dc4eee540c2ab",
+      "assembly_sha256": "1c03dc559015e0001a0a4b0258f036fb80b5a63784fa1d38168614e701ee7d51",
+      "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+      "cil_or_source_edited": false,
+      "tokens_remapped": 0,
+      "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+    },
+    "recovered_boxing": {
+      "report": "reports/recovered-primitive-box-nso-cfg-init-v31.json",
+      "status": "PASS_RECOVERED_INT32_BOX_EXPRESSION_AT_TYPED_VALUE_BOUNDARY",
+      "recovery_run": "nso-cfg-init-v31",
+      "cases": 80,
+      "checks": 240,
+      "caller": "FyberPlugin.User::SetAge(System.Int32)",
+      "caller_rva": "0xF230F0",
+      "boxing_call_rva": "0xF23144",
+      "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+      "native_input_window_sha256": "ac2a6da8e3b41f7df15a057c586db1324818cb5d48b64573b0acd60a843019bc",
+      "native_input_storage": "W1 -> W19 -> [SP+0xC]",
+      "input_type_provenance_report_sha256": "27bfddfd4448a7fbe8236696372b44ef6d1186f3beecb00da488b649b1933411",
+      "native_type_info_slot": "0x3979BA8",
+      "box_instructions": 1,
+      "legacy_box_diagnostic_strings": 0,
+      "input_boundary": "actual typed Int32 local 2; unique copy chain from actual age argument 0",
+      "original_body_il_sha256": "3bcf37af34a717e5bd82144e819a67f7be477db7e23e4137848335b86ef71206",
+      "selected_expression_sha256": "4f6887f5f7cdff035cf0a040739c22bc4dd5d70b33350126092c93fd92931ece",
+      "expression_start_il_offset": 130,
+      "expression_end_il_offset": 139,
+      "fatal": null,
+      "original_native_executed": false,
+      "runtime_helpers_replaced": 0,
+      "whole_game_source_ready": false,
+      "scope": "Execute only the actual recovered Int32 box expression from the chosen present native caller. Require exact original native argument-copy/stack/type-slot/call witnesses, actual method argument signature, exact host CLR Int32 box type token and a unique typed copy chain whose stores dominate their original uses when a local supplies the value. Reject escaping addresses or modified input arguments. The original expression instructions are retained; only exact Int32 type tokens map to the same CLR type, one proven Int32 local may be supplied at its declared value boundary, and a return is appended. Check signed/raw-bit payload, boxed type identity and fresh object identity. Original native boxing runtime allocation/GC, metadata initialization, the remainder of SetAge, other primitive/nullable/ref/enum/custom types and Switch feature availability are outside this scope."
+    }
+  },
+  "native_metadata_guard_sites": 7,
+  "native_class_guard_sites": 5,
+  "reachable_recovered_codec_blockers": 0,
+  "cil_assemblies_audited": 44,
+  "syntax_valid": true,
+  "stack_status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY",
+  "compiler_before": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 18762
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 28906
+    }
+  ],
+  "compiler_after": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 19480
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "build_exit_code": 1,
+      "unique_compiler_diagnostic_lines": 30393
+    }
+  ],
+  "active_sessions": [],
+  "whole_game_source_ready": false,
+  "limits": "Native recognition is limited to exact FDE-bounded selected legacy value-receiver bodies and reviewed initializer identities. Metadata assurance flags are replaced only after exact native witnesses; scheduled arithmetic and semantic branches remain. Class-constructor effects use the exact existing managed RuntimeHelpers.RunClassConstructor handle API only after typed metadata-origin proof; unknown pointers stay diagnostic. CLR constructor-contract fixtures and actual recovered game-code comparisons have separate scopes. The game codec comparison uses explicit supplied static state and native absent-detector fixtures; active detector callbacks, general aggregate ABI, serialization attributes, the complete source build and later ports remain unverified. Compiler diagnostic counts include cascades and do not measure completion."
+}

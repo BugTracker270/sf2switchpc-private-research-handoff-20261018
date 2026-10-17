@@ -1,0 +1,484 @@
+{
+  "recovery_run": "nso-default-member-v16",
+  "status": "TYPE_OR_RECOVERY_LIMITATIONS_CONFIRMED",
+  "files": [
+    {
+      "path": "analysis\\il2cpp\\cpp2il-csharp-nso-default-member-v16\\triangle\\Nekki.SF2.Core.Fights.Model.Components.Figures.Triangle.decompiled.cs",
+      "sha256": "eec0729d221d73d9f2bbd4d26b79f9472dd820559e5f06d16d28383fba1669d4",
+      "type_warnings": 21,
+      "warning_locations": [
+        {
+          "line": 40,
+          "message": "//IL_002f: Expected I, but got Obj"
+        },
+        {
+          "line": 82,
+          "message": "//IL_002f: Expected I, but got Obj"
+        },
+        {
+          "line": 129,
+          "message": "//IL_002f: Expected I, but got Obj"
+        },
+        {
+          "line": 159,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 160,
+          "message": "//IL_004c: Expected Obj, but got I"
+        },
+        {
+          "line": 161,
+          "message": "//IL_0161: Expected Obj, but got I"
+        },
+        {
+          "line": 162,
+          "message": "//IL_00a4: Expected I, but got Obj"
+        },
+        {
+          "line": 163,
+          "message": "//IL_02ad: Expected Obj, but got I"
+        },
+        {
+          "line": 164,
+          "message": "//IL_01b9: Expected I, but got Obj"
+        },
+        {
+          "line": 165,
+          "message": "//IL_0305: Expected I, but got Obj"
+        },
+        {
+          "line": 252,
+          "message": "//IL_0034: Expected I, but got Obj"
+        },
+        {
+          "line": 253,
+          "message": "//IL_0195: Expected I, but got Obj"
+        },
+        {
+          "line": 254,
+          "message": "//IL_0295: Expected I, but got Obj"
+        },
+        {
+          "line": 329,
+          "message": "//IL_0118: Expected I, but got Obj"
+        },
+        {
+          "line": 330,
+          "message": "//IL_0136: Expected I, but got Obj"
+        },
+        {
+          "line": 331,
+          "message": "//IL_019b: Expected I, but got Obj"
+        },
+        {
+          "line": 332,
+          "message": "//IL_0254: Expected I, but got Obj"
+        },
+        {
+          "line": 333,
+          "message": "//IL_028d: Expected I, but got Obj"
+        },
+        {
+          "line": 334,
+          "message": "//IL_0332: Expected I, but got Obj"
+        },
+        {
+          "line": 335,
+          "message": "//IL_03ed: Expected I, but got Obj"
+        },
+        {
+          "line": 336,
+          "message": "//IL_0426: Expected I, but got Obj"
+        }
+      ],
+      "recovery_diagnostic_calls": 30,
+      "suspicious_base_constructor_syntax": true,
+      "suspected_exception_as_array": false,
+      "recovered_int_array_allocations": 0
+    },
+    {
+      "path": "analysis\\il2cpp\\cpp2il-csharp-nso-default-member-v16\\version\\VersionContainer.decompiled.cs",
+      "sha256": "61b0e92101bd0828bee143c68a2f44ff550e2aa895a149d111824efce4c3ae61",
+      "type_warnings": 92,
+      "warning_locations": [
+        {
+          "line": 170,
+          "message": "//IL_00e5: Expected I4, but got I8"
+        },
+        {
+          "line": 171,
+          "message": "//IL_00ee: Unknown result type (might be due to invalid IL or missing references)"
+        },
+        {
+          "line": 172,
+          "message": "//IL_00f3: Expected Obj, but got Unknown"
+        },
+        {
+          "line": 173,
+          "message": "//IL_00fc: Expected Obj, but got I4"
+        },
+        {
+          "line": 174,
+          "message": "//IL_0134: Expected Obj, but got I"
+        },
+        {
+          "line": 175,
+          "message": "//IL_01a4: Unknown result type (might be due to invalid IL or missing references)"
+        },
+        {
+          "line": 176,
+          "message": "//IL_01a9: Expected Obj, but got Unknown"
+        },
+        {
+          "line": 322,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 323,
+          "message": "//IL_005f: Expected Obj, but got I"
+        },
+        {
+          "line": 341,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 342,
+          "message": "//IL_0146: Expected Obj, but got I"
+        },
+        {
+          "line": 343,
+          "message": "//IL_0109: Expected I, but got Obj"
+        },
+        {
+          "line": 408,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 409,
+          "message": "//IL_006b: Expected Obj, but got I"
+        },
+        {
+          "line": 433,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 434,
+          "message": "//IL_0037: Expected Obj, but got I"
+        },
+        {
+          "line": 449,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 450,
+          "message": "//IL_00fd: Expected I, but got Obj"
+        },
+        {
+          "line": 451,
+          "message": "//IL_0113: Expected Obj, but got I"
+        },
+        {
+          "line": 452,
+          "message": "//IL_004f: Expected Obj, but got I"
+        },
+        {
+          "line": 453,
+          "message": "//IL_00cd: Expected Obj, but got I"
+        },
+        {
+          "line": 496,
+          "message": "//IL_0029: Expected Obj, but got I4"
+        },
+        {
+          "line": 504,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 505,
+          "message": "//IL_0037: Expected Obj, but got I"
+        },
+        {
+          "line": 506,
+          "message": "//IL_008e: Expected Obj, but got I4"
+        },
+        {
+          "line": 522,
+          "message": "//IL_0029: Expected Obj, but got I4"
+        },
+        {
+          "line": 530,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 531,
+          "message": "//IL_0037: Expected Obj, but got I"
+        },
+        {
+          "line": 532,
+          "message": "//IL_008e: Expected Obj, but got I4"
+        },
+        {
+          "line": 556,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 557,
+          "message": "//IL_0037: Expected Obj, but got I"
+        },
+        {
+          "line": 574,
+          "message": "//IL_0029: Expected Obj, but got I4"
+        },
+        {
+          "line": 575,
+          "message": "//IL_0032: Unknown result type (might be due to invalid IL or missing references)"
+        },
+        {
+          "line": 576,
+          "message": "//IL_0037: Expected Obj, but got Unknown"
+        },
+        {
+          "line": 585,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 586,
+          "message": "//IL_0037: Expected Obj, but got I"
+        },
+        {
+          "line": 587,
+          "message": "//IL_008e: Expected Obj, but got I4"
+        },
+        {
+          "line": 588,
+          "message": "//IL_0097: Unknown result type (might be due to invalid IL or missing references)"
+        },
+        {
+          "line": 589,
+          "message": "//IL_009c: Expected Obj, but got Unknown"
+        },
+        {
+          "line": 606,
+          "message": "//IL_0666: Expected I, but got Obj"
+        },
+        {
+          "line": 607,
+          "message": "//IL_07c1: Expected I, but got Obj"
+        },
+        {
+          "line": 608,
+          "message": "//IL_07d7: Expected Obj, but got I"
+        },
+        {
+          "line": 609,
+          "message": "//IL_0703: Expected I, but got Obj"
+        },
+        {
+          "line": 610,
+          "message": "//IL_079f: Expected I, but got Obj"
+        },
+        {
+          "line": 611,
+          "message": "//IL_0073: Expected I, but got Obj"
+        },
+        {
+          "line": 612,
+          "message": "//IL_00ad: Expected I, but got Obj"
+        },
+        {
+          "line": 613,
+          "message": "//IL_011b: Expected I, but got Obj"
+        },
+        {
+          "line": 614,
+          "message": "//IL_01bf: Expected I, but got Obj"
+        },
+        {
+          "line": 615,
+          "message": "//IL_01f8: Expected I, but got Obj"
+        },
+        {
+          "line": 616,
+          "message": "//IL_029d: Expected I, but got Obj"
+        },
+        {
+          "line": 617,
+          "message": "//IL_0341: Expected I, but got Obj"
+        },
+        {
+          "line": 618,
+          "message": "//IL_037a: Expected I, but got Obj"
+        },
+        {
+          "line": 619,
+          "message": "//IL_041f: Expected I, but got Obj"
+        },
+        {
+          "line": 620,
+          "message": "//IL_04c3: Expected I, but got Obj"
+        },
+        {
+          "line": 621,
+          "message": "//IL_05c6: Expected I, but got Obj"
+        },
+        {
+          "line": 622,
+          "message": "//IL_05dc: Expected Obj, but got I"
+        },
+        {
+          "line": 623,
+          "message": "//IL_04fc: Expected I, but got Obj"
+        },
+        {
+          "line": 825,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 826,
+          "message": "//IL_0022: Expected I, but got Obj"
+        },
+        {
+          "line": 827,
+          "message": "//IL_002a: Expected I, but got Obj"
+        },
+        {
+          "line": 828,
+          "message": "//IL_0089: Expected Obj, but got I"
+        },
+        {
+          "line": 829,
+          "message": "//IL_00d7: Expected Obj, but got I"
+        },
+        {
+          "line": 830,
+          "message": "//IL_00f4: Expected I, but got Obj"
+        },
+        {
+          "line": 831,
+          "message": "//IL_0176: Expected Obj, but got I"
+        },
+        {
+          "line": 832,
+          "message": "//IL_017f: Unknown result type (might be due to invalid IL or missing references)"
+        },
+        {
+          "line": 833,
+          "message": "//IL_0184: Expected Obj, but got Unknown"
+        },
+        {
+          "line": 834,
+          "message": "//IL_0110: Expected I, but got Obj"
+        },
+        {
+          "line": 835,
+          "message": "//IL_0132: Expected Obj, but got I"
+        },
+        {
+          "line": 836,
+          "message": "//IL_0293: Expected Obj, but got I"
+        },
+        {
+          "line": 837,
+          "message": "//IL_0308: Expected I, but got Obj"
+        },
+        {
+          "line": 838,
+          "message": "//IL_031e: Expected Obj, but got I"
+        },
+        {
+          "line": 994,
+          "message": "//IL_0045: Unknown result type (might be due to invalid IL or missing references)"
+        },
+        {
+          "line": 995,
+          "message": "//IL_004a: Expected Obj, but got Unknown"
+        },
+        {
+          "line": 996,
+          "message": "//IL_0058: Unknown result type (might be due to invalid IL or missing references)"
+        },
+        {
+          "line": 997,
+          "message": "//IL_005d: Expected Obj, but got Unknown"
+        },
+        {
+          "line": 998,
+          "message": "//IL_0066: Expected Obj, but got I4"
+        },
+        {
+          "line": 999,
+          "message": "//IL_016c: Unknown result type (might be due to invalid IL or missing references)"
+        },
+        {
+          "line": 1000,
+          "message": "//IL_0171: Expected Obj, but got Unknown"
+        },
+        {
+          "line": 1001,
+          "message": "//IL_01d5: Unknown result type (might be due to invalid IL or missing references)"
+        },
+        {
+          "line": 1002,
+          "message": "//IL_01da: Expected Obj, but got Unknown"
+        },
+        {
+          "line": 1003,
+          "message": "//IL_012f: Unknown result type (might be due to invalid IL or missing references)"
+        },
+        {
+          "line": 1004,
+          "message": "//IL_0134: Expected Obj, but got Unknown"
+        },
+        {
+          "line": 1005,
+          "message": "//IL_024d: Expected Obj, but got I"
+        },
+        {
+          "line": 1006,
+          "message": "//IL_0288: Expected Obj, but got I"
+        },
+        {
+          "line": 1007,
+          "message": "//IL_0298: Unknown result type (might be due to invalid IL or missing references)"
+        },
+        {
+          "line": 1008,
+          "message": "//IL_029d: Expected Obj, but got Unknown"
+        },
+        {
+          "line": 1083,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 1084,
+          "message": "//IL_00ca: Expected Obj, but got I"
+        },
+        {
+          "line": 1085,
+          "message": "//IL_0042: Expected Obj, but got I"
+        },
+        {
+          "line": 1116,
+          "message": "//IL_0026: Expected Obj, but got I4"
+        },
+        {
+          "line": 1124,
+          "message": "//IL_000f: Expected Obj, but got I4"
+        },
+        {
+          "line": 1125,
+          "message": "//IL_0074: Expected Obj, but got I"
+        }
+      ],
+      "recovery_diagnostic_calls": 65,
+      "suspicious_base_constructor_syntax": true,
+      "suspected_exception_as_array": false,
+      "recovered_int_array_allocations": 8
+    }
+  ],
+  "empty_export_paths": [],
+  "warning_total": 113,
+  "buildable_game_source": false,
+  "scope": "ILSpy exit zero confirms an export attempt, not valid C# or verifiable CIL. Commented operand-type failures are recorded even in methods without injected helper calls. No compilation or whole-game source-correctness claim."
+}

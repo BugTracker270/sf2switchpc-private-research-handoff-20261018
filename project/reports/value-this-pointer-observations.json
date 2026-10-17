@@ -1,0 +1,89 @@
+{
+  "status": "CPP2IL_REGISTERED_POINTER_OBSERVATIONS_ONLY",
+  "observations": [
+    {
+      "type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt",
+      "IsValueType": true,
+      "method": "InternalDecrypt",
+      "underlying_pointer": "0x7A9200",
+      "definition_pointer": "0x7A9200",
+      "first_instruction": "0x91004000",
+      "second_instruction": "0x17FFFF47",
+      "exact_add16_tail_branch": true,
+      "target": "0x7A8F20",
+      "registered_aliases": [
+        "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt::InternalDecrypt"
+      ],
+      "target_aliases": null,
+      "IsStatic": false,
+      "parameters": [],
+      "returns": "System.Int32"
+    },
+    {
+      "type": "System.Boolean",
+      "IsValueType": true,
+      "method": "System.IConvertible.ToType",
+      "underlying_pointer": "0x89E8C0",
+      "definition_pointer": "0x89E8C0",
+      "first_instruction": "0x91004000",
+      "second_instruction": "0x17FFFCFF",
+      "exact_add16_tail_branch": true,
+      "target": "0x89DCC0",
+      "registered_aliases": [
+        "System.Boolean::System.IConvertible.ToType"
+      ],
+      "target_aliases": null,
+      "IsStatic": false,
+      "parameters": [
+        "System.Type",
+        "System.IFormatProvider"
+      ],
+      "returns": "System.Object"
+    },
+    {
+      "type": "System.Int32",
+      "IsValueType": true,
+      "method": "System.IConvertible.ToType",
+      "underlying_pointer": "0x82CFA0",
+      "definition_pointer": "0x82CFA0",
+      "first_instruction": "0x91004000",
+      "second_instruction": "0x17FFFFBF",
+      "exact_add16_tail_branch": true,
+      "target": "0x82CEA0",
+      "registered_aliases": [
+        "System.Int32::System.IConvertible.ToType"
+      ],
+      "target_aliases": null,
+      "IsStatic": false,
+      "parameters": [
+        "System.Type",
+        "System.IFormatProvider"
+      ],
+      "returns": "System.Object"
+    },
+    {
+      "type": "System.Double",
+      "IsValueType": true,
+      "method": "System.IConvertible.ToType",
+      "underlying_pointer": "0x753670",
+      "definition_pointer": "0x753670",
+      "first_instruction": "0x91004000",
+      "second_instruction": "0x17FFFFBF",
+      "exact_add16_tail_branch": true,
+      "target": "0x753570",
+      "registered_aliases": [
+        "System.Double::System.IConvertible.ToType"
+      ],
+      "target_aliases": null,
+      "IsStatic": false,
+      "parameters": [
+        "System.Type",
+        "System.IFormatProvider"
+      ],
+      "returns": "System.Object"
+    }
+  ],
+  "source_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "source_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "scope": "Observed actual Cpp2IL context pointer and native entry representation; no recovery-address correction, target aliases, behavior or source claim."
+}

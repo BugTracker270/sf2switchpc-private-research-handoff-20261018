@@ -1,0 +1,20 @@
+{
+  "status": "PASS_ORIGINAL_STATIC_GETTER_AT_METADATA_ASSURANCE_BOUNDARY",
+  "cases": 64,
+  "checks": 512,
+  "getter_rva": "0x78C270",
+  "getter_bytes": 84,
+  "getter_sha256": "1c2adeb47a4e000ab9a444c3c66c6d2a3a53db2fe59560b006394bc56602eaef",
+  "selection_report_sha256": "fa82c3f9fe1b4fa7b2f3161d0e5bbf7b49aa7e7ff0b73aa53970ca050d515352",
+  "cold_cases": 32,
+  "already_assured_cases": 32,
+  "runtime_boundaries": {
+    "supplied_method_metadata_assurance": 32
+  },
+  "executed_blocks": {
+    "static_getter": 160
+  },
+  "native_text_modified": false,
+  "field_visibility_changed": false,
+  "scope": "Unchanged original 84-byte getter executes from entry to RET for actual GOT/type-slot addresses and valid synthetic runtime-class/static-storage objects. The sole supplied boundary is known method-metadata assurance; its original argument and cold/hot call count are checked. Returned field bits, unchanged static storage, assurance flag and SP/X19/X29 restoration are checked. No original metadata initialization, managed class initializer, allocation, active detector or whole caller executes. Owner metadata independently proves no .cctor. Actual recovered CLR getter/caller identity requires separate tests."
+}

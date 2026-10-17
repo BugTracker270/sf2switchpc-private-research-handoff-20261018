@@ -1,0 +1,13 @@
+feature,required,evidence,status,source
+Story,Switch campaign and rebalance,Native root Include order maps 165 quests across 4 files; potential attachments reach 559 definitions in 15 files; exact branch/reward parity pending,IN_PROGRESS,reports/quest-loading-graph.json
+Sensei story,Playable Sensei arc,Native root loading includes all 30 Sensei quest definitions; event/progression execution pending,IN_PROGRESS,reports/quest-loading-graph.json + internalSettings
+Equipment/economy,"Switch catalog, prices and rewards",32/64-bit currency codecs and balance getters checked against original ARM64; setter arithmetic checked at explicit persistence/statistics boundaries; full rewards/prices pending,IN_PROGRESS,reports/economy-research.md
+Local Sparring,Two local players and Switch match flow,"Serialized menu callback and native mode-2/module-8 route identified; separate player inputs, controller count and fight start traced",IN_PROGRESS,reports/local-sparring.md
+Save slots,Four slots per Nintendo profile,Serialized menu bindings prove slots 0..3; save/write native chain identified,IN_PROGRESS,reports/save-research.md
+Redesigned UI,Switch interface and controller prompts,"10 original scene files, Switch/PvP atlases and field graph exported",IN_PROGRESS,reports/asset-integrity.md
+Offline play,No server dependence for core modes,SkipContentDownload/SkipPayment settings present; residual networking requires reachability audit,IN_PROGRESS,internalSettings + native corpus
+Removed mobile modes,Energy/ads/IAP/raids/Forge/Ascension absent from playable Switch release,Residual mobile code/data exists; reachability/gates must be validated rather than deleted blindly,IN_PROGRESS,reports/switch-vs-mobile.md
+Combat/animation,Original speed and hit timing,"Original ARM64 capsule, first-contact, damage-slice, Bezier and animation sample/physics coupling comparisons pass; full combat/scheduling remains unfinished",IN_PROGRESS,reports/combat-timing.md
+AI,Original decision tables and difficulty policy,All 6084 table blocks bounded/decoded; native interval/candidate checks pass; full policy remains unfinished,IN_PROGRESS,reports/ai-data-recovery.md
+Native Windows build,Independent x64 executable,Deferred by latest user instruction to stop after reverse engineering,OUT_OF_SCOPE,STATUS.md
+120 FPS,Measured render performance without timing changes,"No executable, gameplay timing or FPS measurement in this phase",OUT_OF_SCOPE,reports/performance

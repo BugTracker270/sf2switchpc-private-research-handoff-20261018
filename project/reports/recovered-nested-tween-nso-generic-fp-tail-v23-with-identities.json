@@ -1,0 +1,26 @@
+{
+  "status": "RECOVERED_NESTED_GENERIC_CALLER_LIMITATION",
+  "recovery_run": "nso-generic-fp-tail-v23",
+  "cases": 64,
+  "checks": 576,
+  "nested_field_address_instructions": 18,
+  "caller_nested_field_addresses": 18,
+  "identity_cases": 0,
+  "identity_checks": 0,
+  "total_checks": 576,
+  "failure_count": 0,
+  "statically_unreachable_analysis_warning_calls": 1,
+  "diagnostic_tail_termination_experiment": false,
+  "first_failures": [],
+  "fatal": "System.Exception: Unapproved local/type substitution: DG.Tweening.Plugins.Vector3WrapperPlugin",
+  "body_il_sha256": {
+    "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+    "RecoveredNestedTweenCaller": "08a9c66b49dd1144682bd7cb6b4a96716d68d27ba91a54fc5dd4b2b23ea306c4",
+    "RecoveredWrapperConvert": "2434fdab84f43e54e4b865934d087d41b9b807519d2c3f311d71fe007360f8ae"
+  },
+  "vector_assembly_sha256": "3d4dbd7db06dc635711735b71c03e162ca152ec8b261a9cc37cc539a85364a70",
+  "tween_assembly_sha256": "2a47abd51069f82ebdb6d2ee18df8a9eb5b0df0262563c5657871bc6b411befd",
+  "fixture_sha256": "a90434a7d325d6761703a46412a5e30e7585b90179a80568c3c74ca673330c6f",
+  "identity_fixture_sha256": null,
+  "scope": "Actual recovered caller and addition CIL, with exact vector/wrapper/closed-generic field tokens replaced by isolated equivalent storage types. Scalar instructions, local layout, branches and stores retained; managed addition call target replaced by the actual recovered addition DynamicMethod. Appended analysis-warning calls are allowed only after a full intraprocedural reachability check proves they are unreachable, and map to a throwing trap without removing bytes. Three resulting component bits and six unchanged start/change component bits per case. Every reachable diagnostic/helper or other substitution is rejected. Explicitly bypasses Unity/plugin initialization and original class-initializer ordering; no other caller, whole assembly or portable-game claim. Original complete caller evidence: reports/native-fp-class-guard-caller.json. Also executes three actual recovered nested-wrapper argument/return methods against all 240 original-code identity fixtures (720 checks); no game-method call substitutions in those identities."
+}

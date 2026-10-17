@@ -1,0 +1,119 @@
+{
+  "status": "PASS_ORIGINAL_POINTER_FDE_RANGE_API_AND_CLOSED_ENUMERATOR_EVIDENCE",
+  "checks": 15,
+  "tests": [
+    {
+      "name": "registered static getter exact84byte FDE",
+      "status": "PASS"
+    },
+    {
+      "name": "range API does not select static getter replacement",
+      "status": "PASS"
+    },
+    {
+      "name": "address-only overload agrees without selecting identity",
+      "status": "PASS"
+    },
+    {
+      "name": "unregistered native constructor exact16byte FDE",
+      "status": "PASS"
+    },
+    {
+      "name": "reviewed generic getter exact36byte FDE",
+      "status": "PASS"
+    },
+    {
+      "name": "interior address is not an FDE start",
+      "status": "PASS"
+    },
+    {
+      "name": "range API uses original adjustor8bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "selected adjustor analysis remains520bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "parallel lazy range cache queries",
+      "status": "PASS"
+    },
+    {
+      "name": "unregistered zero pointer has no range",
+      "status": "PASS"
+    },
+    {
+      "name": "opt-in disabled refuses exact bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "opt-in disabled refuses address-only bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "range queries preserve pointers and alias selection",
+      "status": "PASS"
+    },
+    {
+      "name": "closed Model return remains definition-null size0",
+      "status": "PASS"
+    },
+    {
+      "name": "closed substituted fourfield evidence computes24",
+      "status": "PASS"
+    }
+  ],
+  "getter": {
+    "rva": "0x78C270",
+    "exact_fde_bytes": 84,
+    "range_does_not_select_body": true
+  },
+  "closed_enumerator": {
+    "methodinfo_slot": "0x3B4CE60",
+    "concrete_method": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E::GetEnumerator",
+    "returned_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E\u002BEnumerator\u003CNekki.SF2.Core.Fights.Model.Model\u003E",
+    "definition_is_null": true,
+    "definition_type": "System.Collections.Generic.List\u00601\u002BEnumerator",
+    "definition_boxed_size": 0,
+    "Attributes": 1057034,
+    "fields": [
+      {
+        "Name": "l",
+        "raw_metadata_offset": 0,
+        "closed_type": "System.Collections.Generic.List\u00601\u003CNekki.SF2.Core.Fights.Model.Model\u003E",
+        "reference_type": true,
+        "inferred_offset": 0,
+        "inferred_size": 8
+      },
+      {
+        "Name": "next",
+        "raw_metadata_offset": 0,
+        "closed_type": "System.Int32",
+        "reference_type": false,
+        "inferred_offset": 8,
+        "inferred_size": 4
+      },
+      {
+        "Name": "ver",
+        "raw_metadata_offset": 0,
+        "closed_type": "System.Int32",
+        "reference_type": false,
+        "inferred_offset": 12,
+        "inferred_size": 4
+      },
+      {
+        "Name": "current",
+        "raw_metadata_offset": 0,
+        "closed_type": "Nekki.SF2.Core.Fights.Model.Model",
+        "reference_type": true,
+        "inferred_offset": 16,
+        "inferred_size": 8
+      }
+    ],
+    "inferred_unboxed_size": 24,
+    "native_size_witness": "reports/enumerator-native-return-v31.json",
+    "classification_changed": false
+  },
+  "loaded_core_sha256": "84ac829935d8b769829a668ea8bd778413b5ccfd58b4552236af1dc7a83b55b7",
+  "scope": "Bounds-only API at original registered native pointer; no identity or alias selection. Fourfield sequential ref/int/int/ref computation is corroborative scoped evidence, not a general generic layout classifier. Open, value-type, packing, explicit and unresolved substitutions require independent proof. No game method executed."
+}

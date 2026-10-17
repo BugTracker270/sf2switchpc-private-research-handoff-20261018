@@ -1,0 +1,120 @@
+{
+  "status": "DESIGN_ONLY_FRESH_ARRAY_CLASS_ORIGIN_WITH_SEMANTIC_BLOCKERS",
+  "core_sha256": "14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6",
+  "original_method": "InControl.PlayStation4MacBTProfile::.ctor",
+  "original_method_rva": "0x11A4CC0",
+  "static_textual_newarr_roots": 4,
+  "static_textual_class_projection_candidates": 28,
+  "candidate_array_types": {
+    "System.String[]": 2,
+    "InControl.InputControlMapping[]": 26
+  },
+  "literal_string_object_candidates": 2,
+  "accepted_semantic_sites": 0,
+  "evidence": [
+    {
+      "path": "reports/object-isinst-abi-production-v40.json",
+      "sha256": "59fc6915edc66ec5a0795d282984ffc9b91280ef605b8649508554201fbc0952"
+    },
+    {
+      "path": "reports/object-isinst-abi-contract-v40.json",
+      "sha256": "18612897d497465269d79bc60460fe3faa423488ff4466ae71e8bedcd82362c2"
+    },
+    {
+      "path": "reports/native-object-isinst-abi-v40.json",
+      "sha256": "b819a3069e7bda1dfa6850f3782977f0b76cd8bde37392a1d1a2961a030a133b"
+    },
+    {
+      "path": "reports/object-isinst-official-source-v40.json",
+      "sha256": "f09fc4e1ea389e237952657294e359002d909766750f0f869d26434436098d74"
+    },
+    {
+      "path": "analysis/reconstruction/object-isinst-v40/profile-emitter-input.txt",
+      "sha256": "ea5e1d69e3a599a7c4fd023874548a53eaeed37888ac259267a888700071a481"
+    },
+    {
+      "path": "analysis/reconstruction/compiler-family-v38/official-runtime/Object.cpp",
+      "sha256": "91991f55dd7da9d147e35072054cf3d692ef2bc77cdc248d80d2fc7bd67cea03"
+    },
+    {
+      "path": "tools/unity-2018.1.9f1/common-runtime-source/Editor/Data/il2cpp/libil2cpp/vm/Class.cpp",
+      "sha256": "2801e2fdfd3dd7db4b14238f70df9335460e777b6a40fe48cb0eb9241ceb7a1d"
+    },
+    {
+      "path": "analysis/reference/byte-array-layout-fusion-v40/runtime-source/Array.cpp",
+      "sha256": "b78b8acc4fd8bdd6a74b541054b95dc546dad6689a65a69a168fcd8dc75be605"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Model/Contexts/MethodAnalysisContext.cs",
+      "sha256": "21e3f26b49e87d85da69cdaeada0a6e75c0927baa30bd4f330af9c5ec878cd40"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/ArrayRecovery.cs",
+      "sha256": "093f0dce41ab3fb2d2b62ae9410560ab06284aa5be72b9f67ce5cd302b3b074b"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/ISIL/OpCode.cs",
+      "sha256": "09bceffeccc66d524c2dc39427abebcfce15a51c7d28c2d1eadeece4b4442aae"
+    }
+  ],
+  "read_only_text_view_encodings": {
+    "reports/object-isinst-abi-production-v40.json": "utf-8-sig",
+    "reports/object-isinst-abi-contract-v40.json": "utf-8-sig",
+    "reports/native-object-isinst-abi-v40.json": "utf-8-sig",
+    "reports/object-isinst-official-source-v40.json": "utf-8-sig",
+    "analysis/reconstruction/object-isinst-v40/profile-emitter-input.txt": "utf-8-sig",
+    "analysis/reconstruction/compiler-family-v38/official-runtime/Object.cpp": "cp1252",
+    "tools/unity-2018.1.9f1/common-runtime-source/Editor/Data/il2cpp/libil2cpp/vm/Class.cpp": "utf-8-sig",
+    "analysis/reference/byte-array-layout-fusion-v40/runtime-source/Array.cpp": "utf-8-sig",
+    "refs/Cpp2IL/Cpp2IL.Core/Model/Contexts/MethodAnalysisContext.cs": "utf-8-sig",
+    "refs/Cpp2IL/Cpp2IL.Core/Analysis/ArrayRecovery.cs": "utf-8-sig",
+    "refs/Cpp2IL/Cpp2IL.Core/ISIL/OpCode.cs": "utf-8-sig"
+  },
+  "private_inventory": {
+    "path": "analysis/reconstruction/object-isinst-v40/fresh-array-root-design-inventory.json",
+    "sha256": "f97b94ae281771d7f8a730a76799b63ece394dfe0d59a11136358b3911d557eb"
+  },
+  "class_origin_contract": [
+    "Start from a surviving reviewed B5B390 ABI call and exact original X1 element-class source, not the inferred managed array variable type.",
+    "Require actual operand identities: class=load(header(array)+0x40), header=load(array+0), eight-byte ordinary loads with no index/extra offset; both header and array copies have one unique definition and are available before each use.",
+    "Follow a bounded acyclic copy-only chain to one typed NewArr whose canonical SzArray element is a closed, non-generic ordinary reference class. Reject parameter, field, call-return, Phi, arithmetic/address, cast, interface, value-type, byref/pointer and unresolved roots.",
+    "Recompute dominance on the current CFG; one unique allocation must dominate each header/projection/call use, including within-block order. Never reuse pre-SSA-removal dominator state or infer dominance from text order.",
+    "Reject rewritten/multiply-defined locals, overlapping addressed storage, unknown native writes, escaping array/header/class aliases, unsupported exceptional flow and unproved cycles. Preserve allocation, class-init, object computation and original call position.",
+    "Keep a proof separate from the ABI carrier and bind allocation/type/array/header/class/call objects plus evidence image; invalidate stale proofs at emission. Do not suppress a class load shared by another unresolved user."
+  ],
+  "semantic_contract_separate_from_class_origin": [
+    "Fresh NewArr proves an exact runtime element type only after the above object-level proof; it does not prove native IsInst behavior or object runtime-class origin.",
+    "Official Object::IsInst has an imported/Windows-Runtime branch. Reject object sources whose ordinary non-import runtime class is unknown; a fresh target array cannot rule that branch out.",
+    "Official Class::IsAssignableFrom returns immediately for identical classes; other ordinary-class paths initialize both target and object class. Prove metadata readiness and failure ordering independently, without running a managed .cctor or mapping metadata initialization to one.",
+    "Initial stronger candidates are the two String[] sites with literal String objects. Their class identity/no-interop evidence still needs original metadata/native and real CLR tests. The 26 mapping sites also need precise Newobj object-class and intervening-effect/escape proof.",
+    "If authorized after proof, use a dedicated result-bearing IsInst-like IR operation and emit load-original-object, isinst exact T, store-original-result. Keep the original result-null branch, ArrayTypeMismatch failure edge, later bounds checks and original element store in their existing order. Do not fuse stelem.ref, replace with a constant/original argument, or delete failure branches."
+  ],
+  "pipeline_design": {
+    "current_newarr_stage": "ArrayRecovery.Run after SsaForm.Remove and CopyCoalescer; current NewArr is not inherently a single-assignment provenance proof.",
+    "smallest_readonly_next_probe": "Recompute a unique-definition map and dominance on this final CFG, bind original local/operand identities, enumerate every array/header/class use and reject unsupported escape/entry paths. Keep all semantic acceptance false.",
+    "future_ssa_option": "Recognize the existing typed allocator while still in SSA and retain an immutable allocation-origin proof through late NewArr recovery; this would require separately reviewed Core changes.",
+    "isil_support": "Current OpCode has no IsInst operation. A future implementation must define destination/source/type ownership, use/liveness/type propagation, clone and stale emitter validation, plus managed result-null semantics. ABI-only Object result typing is insufficient."
+  },
+  "required_fail_closed_fixtures": [
+    "Positive one exact NewArr, no copies and boundary copy depth; retain exact original object/result identity and original block/exception order.",
+    "Reject same declared object[] from a covariant String[] parameter/field/managed call, two NewArr roots merged by Phi, duplicate/late definitions, cycles, branch-only allocation, wrong header/0x40 width/index/offset, mutable-address storage and alias escape.",
+    "Reject generic/interface/value/import/WinRT types, unresolved runtime object classes, unknown native effects, and altered proof owner/call/type/array/header/result at emission.",
+    "Compare original native return pointer/null and original failure/bounds ordering against the exact emitted CIL expression for null/matching/nonmatching objects. Existing ordinary native ABI oracle supplies assignability and cannot certify this semantic test.",
+    "Real CLR counter and throwing .cctor types must show NewArr plus isinst does not initialize the element or tested class early; independently test zero/positive lengths, original-object reference identity and no constructor invocation."
+  ],
+  "unresolved": [
+    "This inventory parses immutable stage text. It has not proved actual operand identities, unique definitions, current CFG dominance, full use/escape graph, ordinary runtime object classes or exception coverage.",
+    "The existing native wrapper oracle deliberately supplies Class::IsAssignableFrom; it does not recover its initialization/assignability/COM/error effects.",
+    "Current numeric helper CIL emits a diagnostic without evaluating original arguments or producing the original return semantics. An ABI or static-candidate count is not an executable decompile."
+  ],
+  "core_edited": false,
+  "core_built": false,
+  "original_game_methods_invoked": 0,
+  "native_functions_executed": 0,
+  "helper_suppressed": false,
+  "semantic_lowering_implemented": false,
+  "production_ready": false,
+  "full_clean_decompile_ready": false,
+  "portable_game_ready": false,
+  "tool_sha256": "471c0571d6ad1bb5f7d07197d8421b463a27424ef0973b21216d0b7678f9e451"
+}

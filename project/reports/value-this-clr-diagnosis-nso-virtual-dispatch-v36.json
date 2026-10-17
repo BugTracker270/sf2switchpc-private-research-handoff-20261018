@@ -1,0 +1,80 @@
+{
+  "status": "DIAGNOSIS_ONLY_ACTUAL_VALUE_THIS_CLR_IMPORT_RESULT",
+  "recovery_run": "nso-virtual-dispatch-v36",
+  "exact_pure_getter_no_cctor_verified": true,
+  "diagnostic_invocations_attempted": 1,
+  "diagnostic_invocations_returned": 1,
+  "diagnostic_return_matches_one_native_fixture": true,
+  "invocation_exception": null,
+  "fatal": null,
+  "accepted_regression_cases": 0,
+  "calls": [
+    {
+      "offset": 25,
+      "opcode": "call",
+      "name": "RunClassConstructor",
+      "owner": "System.Runtime.CompilerServices.RuntimeHelpers",
+      "return_type": "System.Void"
+    },
+    {
+      "offset": 200,
+      "opcode": "call",
+      "name": "NoteDecompilerIssue",
+      "owner": "Cpp2ILInjected.Cpp2ILHelpers",
+      "return_type": "System.Void"
+    },
+    {
+      "offset": 215,
+      "opcode": "call",
+      "name": "RunClassConstructor",
+      "owner": "System.Runtime.CompilerServices.RuntimeHelpers",
+      "return_type": "System.Void"
+    },
+    {
+      "offset": 262,
+      "opcode": "call",
+      "name": "RunClassConstructor",
+      "owner": "System.Runtime.CompilerServices.RuntimeHelpers",
+      "return_type": "System.Void"
+    },
+    {
+      "offset": 293,
+      "opcode": "call",
+      "name": "RunClassConstructor",
+      "owner": "System.Runtime.CompilerServices.RuntimeHelpers",
+      "return_type": "System.Void"
+    },
+    {
+      "offset": 350,
+      "opcode": "call",
+      "name": "get_Instance",
+      "owner": "CodeStage.AntiCheat.Detectors.ObscuredCheatingDetector",
+      "return_type": "CodeStage.AntiCheat.Detectors.ObscuredCheatingDetector"
+    },
+    {
+      "offset": 359,
+      "opcode": "call",
+      "name": "get_Instance",
+      "owner": "CodeStage.AntiCheat.Detectors.ObscuredCheatingDetector",
+      "return_type": "CodeStage.AntiCheat.Detectors.ObscuredCheatingDetector"
+    },
+    {
+      "offset": 418,
+      "opcode": "call",
+      "name": "RunClassConstructor",
+      "owner": "System.Runtime.CompilerServices.RuntimeHelpers",
+      "return_type": "System.Void"
+    }
+  ],
+  "assembly_sha256": "224877d85a8b3dcde0a6f3f1d766ee3eafd7b02f00281b142d95b37ba0a64031",
+  "cil_sha256": "a5205a5ff8db842dd1364036451ba57e703964274a9b2a2c0ee9ae92217d0b0b",
+  "getter_cil_sha256": "e2fc24869b8d39bb20cf308dda7ffe9c838bfb5cca2ea6af9a92b3d391c8c0fb",
+  "private_cil_path": "analysis\\reconstruction\\value-this-regression-v36\\nso-virtual-dispatch-v36-cil.json",
+  "private_cil_sha256": "586a0fdb0836a9ca217ad64c3ca0d34b74076efe401007f4f05ebf5b502bbe31",
+  "probe_source_sha256": "86c95ce0b5a7c66d8412287e06cbdf474cbe42749901dea7c4f8b16cc97e04dc",
+  "existing_regression_modified": false,
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "dynamic_clones": 0,
+  "scope": "Diagnosis only. Exact independently verified no-cctor static getter is supplied null, crypto key and original struct fields are supplied from one absent-detector native fixture. The unchanged private method is invoked to distinguish CLR import rejection from an overbroad syntactic reachability gate. Existing regression gates remain unchanged, and zero cases count as acceptance. Actual diagnostics and other branches are never rewritten or bypassed in recovered code."
+}

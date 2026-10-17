@@ -1,0 +1,8 @@
+{
+  "status": "PASS_BYTE_EXACT_LOCAL_EVIDENCE_BACKUP",
+  "archive": "backups\\assembly-leaf-getter-v39-raw-evidence.zip",
+  "archive_sha256": "b26d99b68360e4c483e32544f05efb2fb7c2ef7d815b7b0adecae6c73f19eb43",
+  "files": 943,
+  "uncompressed_bytes": 223472392,
+  "scope": "Raw reports excluding active v40 research, v39 logs and final tracked infrastructure, 40 frozen v39 tool sources and 3 exact tool binaries. Every ZIP entry SHA verified. Own archive-hash report excluded to avoid recursion. This records backup integrity, not game source completion."
+}

@@ -1,0 +1,59 @@
+{
+  "status": "PASS_ACTUAL_RECOVERED_VALUE_THIS_CODEC_VS_ORIGINAL_NATIVE",
+  "recovery_run": "nso-virtual-companion-copy-v38",
+  "cases": 342,
+  "checks": 2052,
+  "lazy_initialization_cases": 171,
+  "already_initialized_cases": 171,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": null,
+  "blocked_calls": [],
+  "unreachable_helper_calls": 1,
+  "cil_sha256": "20a7c9a4a29ad8dc449d1d8c89b9b11e6a1bb3140ce34a283310dac9b65a9586",
+  "assembly_sha256": "a9a79ecc2a492b8706940f13e3cee28e23622684a3bf72668203d3bfd4527192",
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "probe_source_sha256": "277c7647ca7546d48adfe34d80dfeb1a5f127ae420d147bc445cf6a3b61ef18d",
+  "getter_cil_sha256": "e2fc24869b8d39bb20cf308dda7ffe9c838bfb5cca2ea6af9a92b3d391c8c0fb",
+  "exact_null_getter_boundary_proved": true,
+  "null_boundary_checks": 342,
+  "scope_guard_controls": [
+    {
+      "control": "exact_original_null_getter_branch",
+      "passed": true
+    },
+    {
+      "control": "non_null_detector_rejected_without_invocation",
+      "passed": true
+    },
+    {
+      "control": "altered_getter_copy_rejected_without_execution",
+      "passed": true
+    },
+    {
+      "control": "altered_branch_copy_rejected_without_execution",
+      "passed": true
+    }
+  ],
+  "scope_excluded_helpers": [
+    {
+      "offset": 200,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers"
+    }
+  ],
+  "analysis_only_forced_null_branch": {
+    "offset": 379,
+    "taken_successor": 389,
+    "excluded_successor": 384
+  },
+  "diagnostic_token_relocation_equivalent": true,
+  "relocated_diagnostic_string_tokens": 1,
+  "pinned_reference_assembly_sha256": "224877d85a8b3dcde0a6f3f1d766ee3eafd7b02f00281b142d95b37ba0a64031",
+  "token_relocation_scope": "Only the four-byte LDSTR user-string token at original offset195 may differ; resolved string, every other original CIL byte, locals/pinning/InitLocals/maxstack and the original null-getter/branch remain identical to the pinned v36 reference. No candidate or original CIL is rewritten or executed from the analysis-only comparison copy.",
+  "active_detector_callback_recovered": false,
+  "active_detector_callback_executed": false,
+  "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+}

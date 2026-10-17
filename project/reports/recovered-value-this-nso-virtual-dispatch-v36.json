@@ -1,0 +1,55 @@
+{
+  "status": "PASS_ACTUAL_RECOVERED_VALUE_THIS_CODEC_VS_ORIGINAL_NATIVE",
+  "recovery_run": "nso-virtual-dispatch-v36",
+  "cases": 342,
+  "checks": 2052,
+  "lazy_initialization_cases": 171,
+  "already_initialized_cases": 171,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": null,
+  "blocked_calls": [],
+  "unreachable_helper_calls": 1,
+  "cil_sha256": "a5205a5ff8db842dd1364036451ba57e703964274a9b2a2c0ee9ae92217d0b0b",
+  "assembly_sha256": "224877d85a8b3dcde0a6f3f1d766ee3eafd7b02f00281b142d95b37ba0a64031",
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "probe_source_sha256": "9039f5bb867001443d7a3f081fda0f0905b74d3864b3e30a294db1279d525cf8",
+  "getter_cil_sha256": "e2fc24869b8d39bb20cf308dda7ffe9c838bfb5cca2ea6af9a92b3d391c8c0fb",
+  "exact_null_getter_boundary_proved": true,
+  "null_boundary_checks": 342,
+  "scope_guard_controls": [
+    {
+      "control": "exact_original_null_getter_branch",
+      "passed": true
+    },
+    {
+      "control": "non_null_detector_rejected_without_invocation",
+      "passed": true
+    },
+    {
+      "control": "altered_getter_copy_rejected_without_execution",
+      "passed": true
+    },
+    {
+      "control": "altered_branch_copy_rejected_without_execution",
+      "passed": true
+    }
+  ],
+  "scope_excluded_helpers": [
+    {
+      "offset": 200,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers"
+    }
+  ],
+  "analysis_only_forced_null_branch": {
+    "offset": 379,
+    "taken_successor": 389,
+    "excluded_successor": 384
+  },
+  "active_detector_callback_recovered": false,
+  "active_detector_callback_executed": false,
+  "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+}

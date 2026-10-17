@@ -1,0 +1,107 @@
+{
+  "status": "PASS_SCOPED_NATIVE_ASSEMBLY_GETTER_SOURCE_CORRELATION",
+  "before": {
+    "run": "nso-virtual-companion-copy-v38",
+    "manifest_sha256": "bcbfb8c77a30988f85a2d430731607e09caa627eafdd8c50ac68c51fa55b1255",
+    "assemblies": [
+      {
+        "assembly": "Assembly-CSharp-firstpass",
+        "unique_diagnostic_lines": 20728,
+        "private_access_diagnostics": 2713,
+        "focused_member_diagnostics": 101,
+        "compiler_log_sha256": "6136b6c1e0213904a903d0914f2fbabca5fdbdeaec5e7fde46edb554ce13848e",
+        "build_exit_code": 1
+      },
+      {
+        "assembly": "Assembly-CSharp",
+        "unique_diagnostic_lines": 32710,
+        "private_access_diagnostics": 4225,
+        "focused_member_diagnostics": 0,
+        "compiler_log_sha256": "8144cc7ec3d501795a23dadcca083339d4513806a64058c6aeb63ac278ebf635",
+        "build_exit_code": 1
+      }
+    ],
+    "focused_compiler_expression_shapes": {
+      "read_or_address_other": 99,
+      "simple_store": 2
+    }
+  },
+  "after": {
+    "run": "nso-assembly-leaf-getter-v39",
+    "manifest_sha256": "8391d00183aa426b50ae567c5b7939d11e174860863caa0da127409c25e8e2f1",
+    "assemblies": [
+      {
+        "assembly": "Assembly-CSharp-firstpass",
+        "unique_diagnostic_lines": 20534,
+        "private_access_diagnostics": 2528,
+        "focused_member_diagnostics": 2,
+        "compiler_log_sha256": "61cfca9db8636584e304b9eebf939cf07f865b2d888647f40664b3c19f3bec58",
+        "build_exit_code": 1
+      },
+      {
+        "assembly": "Assembly-CSharp",
+        "unique_diagnostic_lines": 32710,
+        "private_access_diagnostics": 4225,
+        "focused_member_diagnostics": 0,
+        "compiler_log_sha256": "3578ccfd7d3380acca427669152083bc45a6818aedab9fb39b7131e17305c608",
+        "build_exit_code": 1
+      }
+    ],
+    "focused_compiler_expression_shapes": {
+      "simple_store": 2
+    }
+  },
+  "canonical_comparison_sha256": "a4f31d97e12e821b66267390d672f44274d63c27643fecc5617775ee6d2a57c0",
+  "recovery_core_sha256": "52e9fa40275b71be5ea48e1bab1816e59dc4412ddfc0c627c29345f3086a4929",
+  "focused_unedited_exported_source_files": 3,
+  "source_files": [
+    {
+      "relative_source": "Newtonsoft\\Json\\Serialization\\JsonSerializerInternalReader.cs",
+      "before": {
+        "sha256": "c68411be49f2627a05dd95f5192878e27c6221bd7633c5a513f9c56cd440dc44",
+        "explicit_private_backing_references": 46,
+        "existing_internal_property_identifier_occurrences": 0
+      },
+      "after": {
+        "sha256": "bccb6599541e1beee487ea0b858eb5527a842d6863e71c700b6a0eaf703ed466",
+        "explicit_private_backing_references": 1,
+        "existing_internal_property_identifier_occurrences": 45
+      }
+    },
+    {
+      "relative_source": "Newtonsoft\\Json\\Serialization\\JsonSerializerInternalWriter.cs",
+      "before": {
+        "sha256": "acb5bf645463c22cfcbd0ff24249330d840f9fdd482cc14cd14b19c1a05975fb",
+        "explicit_private_backing_references": 53,
+        "existing_internal_property_identifier_occurrences": 0
+      },
+      "after": {
+        "sha256": "ff26501cdbac7ececd945ec403b7f217f1212e71b2ac101ee7ed8f156d619fea",
+        "explicit_private_backing_references": 1,
+        "existing_internal_property_identifier_occurrences": 52
+      }
+    },
+    {
+      "relative_source": "Newtonsoft\\Json\\Serialization\\JsonSerializerProxy.cs",
+      "before": {
+        "sha256": "2d7edcc81cf232589ea8bbc96c804717ca575b9776b6c56e6919b0c40d8cd360",
+        "explicit_private_backing_references": 2,
+        "existing_internal_property_identifier_occurrences": 0
+      },
+      "after": {
+        "sha256": "939aa8a69e67807ba75ca36999d8cf78549937b5c353442a00bdfd5297f8ca98",
+        "explicit_private_backing_references": 0,
+        "existing_internal_property_identifier_occurrences": 2
+      }
+    }
+  ],
+  "private_backing_references_before": 101,
+  "private_backing_references_after": 2,
+  "additional_existing_internal_property_references": 99,
+  "private_constructor_store_diagnostics_preserved": 2,
+  "private_visibility_preserved": true,
+  "source_text_edited": false,
+  "new_game_metadata_added": false,
+  "whole_game_source_ready": false,
+  "scope": "Named Serializer private-access compiler errors and exact unedited matching source files correlate 99 backing-field read diagnostics to 99 additional existing internal property identifier occurrences (qualified or inherited unqualified spellings). String/character literals and comments are excluded from lexical counts; this is not a general C# semantic parser. Two private constructor/base-inlining stores remain diagnostics. Canonical whole compiler results stay separate and include cascades. Getter/native/actual-CIL runtime boundaries are separate reports; no entire caller/game parity, manual source rewrite or full clean source is claimed."
+}

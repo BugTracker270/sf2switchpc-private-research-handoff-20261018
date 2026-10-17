@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><NuGetAudit>false</NuGetAudit></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="../ValueThisThunkProbe/bin/Release/net10.0/*.dll" Exclude="../ValueThisThunkProbe/bin/Release/net10.0/Cpp2IL.Core.dll;../ValueThisThunkProbe/bin/Release/net10.0/ValueThisThunkProbe.dll"><Private>true</Private></Reference>
+    <Reference Include="Cpp2IL.Core"><HintPath>../../../analysis/il2cpp/object-isinst-abi-v40-tool-binaries/Cpp2IL.Core.dll</HintPath><Private>true</Private></Reference>
+  </ItemGroup>
+</Project>

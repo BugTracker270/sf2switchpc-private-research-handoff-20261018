@@ -1,0 +1,19 @@
+{
+  "status": "RECOVERED_BOOLEAN_BEHAVIOR_MISMATCH",
+  "recovery_run": "nso-enum-arithmetic-v18",
+  "cases": 4,
+  "checks": 12,
+  "isolation_reference_cases": 4,
+  "failures": [
+    {
+      "before": false,
+      "requested": true,
+      "stored": true,
+      "getter": true,
+      "calls": 0
+    }
+  ],
+  "assembly_sha256": "c2a33009a83864d15e3cb19bb4258ac0b4f4c4cd5470c35721e4fa7feff9e4a8",
+  "fixture_sha256": "2f5f22d9afbf62d51148ff4dbe1e787cf6a0624ae110640deaad68fc2e6684dc",
+  "scope": "Executes recovered getter/setter CIL in DynamicMethods. Exact field tokens map to a same-type boolean test field and the sole Init callback maps to an observable counter. All other instruction and branch bytes/local types remain. No game DLL modification; class initialization, Init contents and complete-game parity are outside scope."
+}

@@ -1,0 +1,12 @@
+{
+  "scope": "Unmodified tool retry using already independently verified registration RVAs. No method edits or source/semantic completeness claim.",
+  "manual_registrations": {
+    "metadata": "0x3925280",
+    "code": "0x3925210"
+  },
+  "exit_code": 1,
+  "prior_evidence": "reports/engine-fingerprint.json",
+  "status": "PROBE_FAILED",
+  "output": "F:\\SF2SwitchPC\\analysis\\il2cpp\\rust-source-v2-manual",
+  "source_pin": "145a751023258a35f133c4f111785a8df0580985"
+}

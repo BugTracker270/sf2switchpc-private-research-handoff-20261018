@@ -1,0 +1,34 @@
+{
+  "status": "PASS_STATIC_ALLOCATION_IDENTITY_ONLY",
+  "recovery_run": "nso-class-guards-v17",
+  "native": {
+    "allocation_site": "0xC4A74",
+    "allocator": "0xB5B110",
+    "got": "0x397B948",
+    "metadata_slot": "0x3b35180",
+    "metadata_name": "VersionContainer_TypeInfo",
+    "base_ctor_site": "0xC4AC8"
+  },
+  "baseline_run": "nso-stack-headers-v11",
+  "baseline_actual_type": "System.Object",
+  "recovered_runtime_identity": {
+    "expected": "VersionContainer",
+    "actual": "VersionContainer",
+    "error": null,
+    "tested": true,
+    "matches": true
+  },
+  "explicit_uninitialized_allocation": true,
+  "cil_call_targets": [
+    "VersionContainer::SetVersion",
+    "System.Type::GetTypeFromHandle",
+    "System.Runtime.Serialization.FormatterServices::GetUninitializedObject",
+    "Cpp2ILInjected.Cpp2ILHelpers::NoteDecompilerIssue",
+    "Cpp2ILInjected.Cpp2ILHelpers::NoteDecompilerIssue"
+  ],
+  "source_sha256": "027c08f80f4ec573e04bd9d295336770cd66344ba7a815e4a6d65f7571552ef6",
+  "synthetic_allocation_emission_checks": 4,
+  "policy": "Fuse only an adjacent constructor of the exact allocated type in the same basic block. Otherwise preserve separate reference allocation and later initialization/calls; no invented parameterless constructor.",
+  "api_reference": "https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatterservices.getuninitializedobject?view=netframework-4.8.1",
+  "scope": "Confirms the independently witnessed native allocation type in one recovered static field, plus a synthetic emitted-CIL constructor/field-initializer test. Complete initialization order, managed class initialization, special runtime types, exception behavior and whole-game source compilation remain separate gates. This is an explicit recovery lowering, not recovered original C# syntax."
+}

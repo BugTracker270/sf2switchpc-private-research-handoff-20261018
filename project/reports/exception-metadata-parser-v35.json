@@ -1,0 +1,278 @@
+{
+  "status": "PASS_BOUNDED_EXCEPTION_METADATA_PARSER",
+  "synthetic_tests": 38,
+  "synthetic_failures": 0,
+  "synthetic_errors": 0,
+  "synthetic_skips": 0,
+  "synthetic_test_results": [
+    {
+      "name": "test_exception_metadata.CursorAndCfiTests.test_cfi_cie_and_frame_state",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.CursorAndCfiTests.test_cfi_initial_saved_register_container_is_validated",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.CursorAndCfiTests.test_cfi_invalid_configuration_and_undefined_cfa_updates",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.CursorAndCfiTests.test_cfi_out_of_frame_register_and_stack_limits",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.CursorAndCfiTests.test_cfi_unknown_opcode_and_truncation",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.CursorAndCfiTests.test_encoding_must_be_a_byte",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.CursorAndCfiTests.test_initial_cfi_state_is_validated_even_for_empty_program",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.CursorAndCfiTests.test_leb_64bit_overflow_and_truncation",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.CursorAndCfiTests.test_pc_relative_zero_and_address_overflow",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.CursorAndCfiTests.test_span_and_truncated_reader",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.CursorAndCfiTests.test_valid_empty_cfi_preserves_initial_state",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_action_offset_out_of_bounds",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_action_records_overlap",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_action_without_landing",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_cleanup_only_without_type_table",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_configured_entry_chain_and_byte_limits",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_cyclic_action_chain",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_exception_specification_not_guessed",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_invalid_configuration_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_landing_outside_or_unaligned",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_no_landing_without_action",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_overlapping_or_unsorted_ranges",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_range_outside_function",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_shared_action_chain_multiple_call_sites",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_truncated_header_and_table",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_type_table_base_outside_metadata",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_type_table_overlaps_action_record",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_typed_action_points_outside_type_table",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_unknown_call_encoding_unsupported",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_valid_typed_action_backlink_and_cleanup",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_variable_width_type_encoding_unsupported",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_zero_and_unaligned_ranges",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.LsdaTests.test_zero_encoded_type_reference_is_catch_all_not_pc",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.RttiTests.test_bounded_simple_class_info_preserves_raw_native_name",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.RttiTests.test_imported_name_and_short_object_unsupported",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.RttiTests.test_invalid_name_limit",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.RttiTests.test_unterminated_nonascii_and_out_of_bounds_names",
+      "passed": true
+    },
+    {
+      "name": "test_exception_metadata.RttiTests.test_wrong_vtable_is_not_treated_as_class_info",
+      "passed": true
+    }
+  ],
+  "integration_checks": 15,
+  "integration_failures": 0,
+  "integration_results": [
+    {
+      "name": "synthetic suite has no failures/errors/skips",
+      "passed": true
+    },
+    {
+      "name": "reusable parser agrees with prior independent inspection: original_native_sha256",
+      "passed": true
+    },
+    {
+      "name": "reusable parser agrees with prior independent inspection: exact_frame",
+      "passed": true
+    },
+    {
+      "name": "reusable parser agrees with prior independent inspection: lsda",
+      "passed": true
+    },
+    {
+      "name": "reusable parser agrees with prior independent inspection: action_chains",
+      "passed": true
+    },
+    {
+      "name": "reusable parser agrees with prior independent inspection: types",
+      "passed": true
+    },
+    {
+      "name": "reusable parser agrees with prior independent inspection: plt_imports",
+      "passed": true
+    },
+    {
+      "name": "reusable parser agrees with prior independent inspection: personality_slot",
+      "passed": true
+    },
+    {
+      "name": "reusable parser agrees with prior independent inspection: raiser_rtti_slot",
+      "passed": true
+    },
+    {
+      "name": "all original CIE/FDE CFI steps agree with prior inspection",
+      "passed": true
+    },
+    {
+      "name": "positive evidence binds current reusable parser and adapter",
+      "passed": true
+    },
+    {
+      "name": "exact original native image",
+      "passed": true
+    },
+    {
+      "name": "exact original 384-byte caller body",
+      "passed": true
+    },
+    {
+      "name": "reviewed CIE/FDE program lengths",
+      "passed": true
+    },
+    {
+      "name": "exact protected table and parsed action scope",
+      "passed": true
+    }
+  ],
+  "parser_path": "src\\tools\\exception_metadata.py",
+  "parser_sha256": "96540cbea573f9b34b4cc6dab7ae8bdf2643a49cb8195563da1e4771fba9cd95",
+  "unit_test_path": "tests/test_exception_metadata.py",
+  "unit_test_source_sha256": "43338f15e91be03ab3865d12efe30df030da6eeb3a8bef52ef120d52c173900a",
+  "unit_log": "logs\\exception-metadata-v35-unit-tests.log",
+  "unit_log_sha256": "66ff56c791550e6ac825a2780888257a7b305fb9cc5603fc4ffa3dc0d8c7c813",
+  "integration_adapter_sha256": "830d8cab4a565190418e4fd5d8ccbf6ccc400b4038527402668ed2fbed38f0e6",
+  "validation_source_sha256": "b5111f295cbf234af8daf7fd0523e11dc8b4249e2d9289ebbadfe7afce22ebfb",
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "original_code_sha256": "0fd52a9b449be83e29a7424dab0003da060929dbe574320d54ecfac5121483f2",
+  "original_lsda_sha256": "6d460fe54f394fe02939a591d3af1b82c8207e99ca8a8a717c80e9f02c8d9308",
+  "original_cie_program_sha256": "5e25541b778adf3263cbf6f21a927d3599c63fdef15a07b4be5c54dba0868dc9",
+  "original_fde_program_sha256": "fded23ef877f4b1d2653dba9b75bbbf3ab3fbca7a607196420b67a2958fbc2b1",
+  "private_native_evidence": "analysis\\reconstruction\\unload-exception-contract-v35\\native-evidence.json",
+  "private_native_evidence_sha256": "0bcda0c13a7529e763841579116e71ee52c236b3f2c66f6a69bf61b8e93e9dc4",
+  "prior_independent_evidence_sha256": "31b2985f8e644a13abb9b2be51eb4a28b88ae68fc3047d8c1af0bcec222e9624",
+  "observed_original": {
+    "protected_ranges": 3,
+    "action_filters": [
+      1,
+      0
+    ],
+    "type_entries": 1,
+    "native_cpp_type": "22Il2CppExceptionWrapper",
+    "cfi_steps": 9,
+    "cfa": "X29 + 16",
+    "saved_register_cfa_offsets": {
+      "19": -24,
+      "20": -32,
+      "21": -48,
+      "29": -16,
+      "30": -8
+    }
+  },
+  "implemented_contract": [
+    "64-bit bounded cursor/LEB and explicit absolute/PC-relative/indirect pointer references; encoded zero remains null.",
+    "Bounded unsigned-32 call-site ranges, fixed-width type table, signed action back-links and shared chains.",
+    "Reject cycles, overlapping records/ranges, truncated/outside type entries, negative exception specifications and unsupported forms.",
+    "Narrow per-instruction CFI state observations with bounded registers/PC/stack, validated initial state and explicit unsupported opcodes; shared-PC intermediate observations are not finalized unwind rows.",
+    "Caller-supplied checked relocation resolution plus bounded simple C++ class RTTI name reading; no managed catch inference."
+  ],
+  "unsupported_contract": [
+    "General LSDA encodings, exception specifications and arbitrary C++ inheritance/RTTI structures.",
+    "General DWARF CFI expressions, remember/restore, stack unwinding or SDK personality execution.",
+    "EH-aware ISIL/SSA, managed region emission, game exception behavior or portable source completeness."
+  ],
+  "core_edited": false,
+  "core_built": false,
+  "original_image_modified": false,
+  "runtime_code_executed": false,
+  "production_eh_implemented": false,
+  "full_clean_decompile_ready": false,
+  "scope": "Original local metadata decoding plus synthetic malformed-input infrastructure. Counts are parser/evidence gates, not recovered method or gameplay coverage."
+}

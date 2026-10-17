@@ -1,0 +1,19 @@
+Incoming AI: continue the user's authorized Shadow Fight 2 Nintendo Switch full-decompilation project from the supplied complete private folder.
+
+FIRST read AI_HANDOFF_FULL_DECOMPILE.md completely, then verify AI_HANDOFF_EVIDENCE_MANIFEST.json. Read the original master specification and AGENTS.md with the later scope/cloud instructions explained in the handoff.
+
+The user is supplying this folder for private analysis in your cloud environment. Establish a safe canonical workspace and adapt Windows-only USB/path/dependency wrappers explicitly. Keep proprietary inputs, keys, recovered code and assets private. Do not upload them to public repos or unrelated services. The outgoing agent has not uploaded anything.
+
+The goal is full clean, buildable, behavior-supported game logic usable for a later complete OS port. Stop after that foundation is genuinely complete; Windows/PS5 porting comes later. Do not substitute Android, stubs, an emulator wrapper or a generic remake.
+
+Current state:
+- Last Git checkpoint: f51919b11eba685c83f25fe755cd1d8c827caa87 (v39).
+- Latest completed run: nso-object-isinst-abi-v40. All 44 DLLs generated; complete source compiler still fails with 20,393 firstpass / 32,399 main diagnostics. 18 bounded regressions pass.
+- V40 summary: 37 evidence gates PASS / 1 PENDING; 8 added compiler occurrences still lack original native/CIL attribution.
+- Actual injected diagnostic helpers are bare returns. There are 61,133 placeholder call sites across 10,834 game methods. Some results silently default to null. Compiler success alone would not establish recovered behavior.
+- Current Cpp2IL source includes UNBUILT, UNVALIDATED v41 carrier/origin edits. The live compiled Core is still v40. The ordinary recovery wrapper rebuilds current sources first; do not accidentally rebuild this unfinished work as if reproducing v40.
+- V41 origin helper has a known compile error (owner.AnalysisAddress should use the existing helper API), incomplete source review and no contracts/production hook. Details and exact stopped hashes are in the full handoff.
+
+The central hurdle is correct executable method-body recovery from optimized ARM64 IL2CPP: runtime/class semantics, ABI, control flow and exception handling. Assets, symbols and effective extraction already exist. There is no demonstrated single tool/helper fix that makes the rest automatic.
+
+Please bring your strongest independent reverse-engineering judgment, challenge inherited assumptions, and produce real, tested method logic. You have the full evidence corpus; use it to find and implement a better path. Continue from the exact saved state, preserving original inputs, failed evidence and historical checkpoints. Read the full handoff before running builds.

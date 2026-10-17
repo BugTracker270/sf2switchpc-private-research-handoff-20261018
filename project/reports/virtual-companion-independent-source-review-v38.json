@@ -1,0 +1,15 @@
+{
+  "status": "PASS_FROZEN_V38_SOURCE_DIFF_REVIEW",
+  "reviewed_changed_paths": [
+    "Cpp2IL.Core/Utils/LegacyArm64VirtualDispatch.cs"
+  ],
+  "complete_candidate_files": 40,
+  "all_frozen_hashes_verified": true,
+  "inherited_v37_helper_sources_unchanged": 8,
+  "core_sha256": "197403735d374bdde681ad203cdb3eb18e8cd9eef01897908a8c4f9e786ad99a",
+  "snapshot_manifest_sha256": "a522ea651f40111cb2d81b6d239b31e116ed18cd27524ceefdebdf884ad55f62",
+  "candidate_patch_sha256": "042ff9c1555bd913690e3859b32f8becfd125139fd0bc28dfe2f1c860ad78dd4",
+  "frozen_reverse_check_exit_code": 0,
+  "scope": "Only paired companion lookup follows32 bounded unique same-block definitions. Function/class loads, original parameter receiver, target/slot/ABI, purity/escape and final emitter guards retain their prior scope. No additional source blocker; full compiler and actual runtime gates remain separate.",
+  "full_clean_decompile_ready": false
+}

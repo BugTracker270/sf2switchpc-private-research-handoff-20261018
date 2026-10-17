@@ -1,0 +1,970 @@
+{
+  "status": "SELECTED_HANDOFF_BYTES_CAPTURED_NOT_GAME_READINESS",
+  "prepared_at_asia_riyadh": "2026-10-17T22:59:43.905441+03:00",
+  "original_root": "F:\\SF2SwitchPC",
+  "last_git_checkpoint": "f51919b11eba685c83f25fe755cd1d8c827caa87",
+  "latest_completed_run": "nso-object-isinst-abi-v40",
+  "v40_full_clean_decompile_ready": false,
+  "v41_unbuilt_and_unvalidated": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 466,
+      "sha256": "d6da5ed747086c72d5b1a28851c1faa1f484688ee20a23168ac226fa7845dfaf"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2445,
+      "sha256": "bb5832f40910875feeeebff88e8e4c42ba918309fc3a97cf0a5ab895da5661e4"
+    },
+    {
+      "path": "AI_HANDOFF_FULL_DECOMPILE.md",
+      "bytes": 58841,
+      "sha256": "6f40a624abb4c650fbd4d38208bf05bf6e62a29d328d995ee07826a346e79e99"
+    },
+    {
+      "path": "AI_HANDOFF_START_HERE.txt",
+      "bytes": 2748,
+      "sha256": "8d1b8f1c148212b29291c2b3ee7522e4240a847f188e32c4ef959147fd6b637f"
+    },
+    {
+      "path": "analysis/continuation-state.json",
+      "bytes": 27930,
+      "sha256": "da8efecf46975ba5bd51fa896f250675d3d14f91d39b76c7d95216b939a60f9b"
+    },
+    {
+      "path": "analysis/il2cpp/cil-audit-nso-object-isinst-abi-v40/summary.json",
+      "bytes": 25445,
+      "sha256": "6ad8586fc496e894d9044c85db6bd6f019028f677fcf5b21a4e658f4d44abf70"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/Assembly-CSharp-firstpass.dll",
+      "bytes": 6996480,
+      "sha256": "5ab955502d73f3307e9fe5c700d1a5ae62e8a1450e953f3fc3cfc342551d9150"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/Assembly-CSharp.dll",
+      "bytes": 10270720,
+      "sha256": "e5026c3658a143007dabd8feee3fe629ae69d0aba4990c3fd7078e34f65213c5"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/DOTween.dll",
+      "bytes": 294912,
+      "sha256": "63f6c694894e0a963ff43b3be9ddebd5defb555aa8e328322573f6191e975e85"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/DOTween46.dll",
+      "bytes": 16384,
+      "sha256": "f8fd9ff5eb4dc218f35c03646a4a584df9a85bfe1927fb372ec28263dfb162a5"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/Facebook.Unity.Settings.dll",
+      "bytes": 14848,
+      "sha256": "fec973640a06cd92a1fe21f6abc401dccb03505de3341bba1df8e5ff652f59c2"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/FyberLitJson.dll",
+      "bytes": 223744,
+      "sha256": "e5c50c0e95cc13af5b4a0b1d6e605769e2d6b3bc024453f21e5e3512fb075929"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/FyberPlugin.dll",
+      "bytes": 117760,
+      "sha256": "f613783d250046b252ea40c18657562d95545546af125f8990e13c24eda3efc5"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/Ionic.Zip.Unity.dll",
+      "bytes": 932352,
+      "sha256": "fc68d35742cf13a64bdb020a6d6fcb72479da317aece8e8fbce5d568de39f77d"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/Mono.Security.dll",
+      "bytes": 937984,
+      "sha256": "ac185477ee73738b235b6e57eca2d2868f94bf3e9e96c9e1acc8aa5fb8e33577"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/mscorlib.dll",
+      "bytes": 536064,
+      "sha256": "ecaaa05d98f1d7255175ac748c51c94c3d694e2c348ca80036a24aacf5bc3aed"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/protobuf-net.dll",
+      "bytes": 789504,
+      "sha256": "09d79bf8402321d4b44ee9764be6d631f5f22b3065ba1d7e83e335c473168e33"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/SmartFox2X.dll",
+      "bytes": 1230336,
+      "sha256": "308e43bd361b26467a9e0c61bf67d15ac96103f77ee77e1c978d69a080b50f73"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/System.Configuration.dll",
+      "bytes": 30208,
+      "sha256": "4fc830c15f61bda49b4a9fc67af592cd31b5b89d608c111c8fa5d94443d91317"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/System.Core.dll",
+      "bytes": 46080,
+      "sha256": "4fff29bfcddd43fe51892e6b5cc80bb7b9382190a6fb4358ac1b09069606a223"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/System.dll",
+      "bytes": 402432,
+      "sha256": "77f86bc52011f56d537978638485f7c31afdeed1e55feec6dc81ca011d39749f"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/System.Xml.dll",
+      "bytes": 222720,
+      "sha256": "a9225b03c2dab6f1d99ecadea5d755afa06ae92d67625512020bf7870faf1cae"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/System.Xml.Linq.dll",
+      "bytes": 16384,
+      "sha256": "9803b135c2670923885cf37bd3268b543f6b38ad022007a1d8c9b7c5d4e6abac"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/TcpClientImplementation.dll",
+      "bytes": 5169664,
+      "sha256": "9de8c535e9797b3c047aca575d664d9791ded9438a37205739eecf8d73365aec"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.AIModule.dll",
+      "bytes": 2048,
+      "sha256": "bc3e2d34e282a24ec16d14fd567e38920dffe6675b9c7c57d2b6b982a0232299"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.AnimationModule.dll",
+      "bytes": 5632,
+      "sha256": "076571ba94671cfd67e1e1aa91547dc78a8d5abe490d9aa88fc0f131cc79960c"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.AssetBundleModule.dll",
+      "bytes": 3072,
+      "sha256": "02799cd05ec989498e181c998efcaa32aa01b947c555229e1257046500eaa18a"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.AudioModule.dll",
+      "bytes": 8704,
+      "sha256": "a6c68bf2614afd801f1bff6fc30d524be87bb2aaf505bc79a2e166103ca4d177"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.CoreModule.dll",
+      "bytes": 115200,
+      "sha256": "48652012e315cd67e0e3676bd38f45d4bec545a5ef26a43783e0d232b20fdb0f"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.DirectorModule.dll",
+      "bytes": 2560,
+      "sha256": "55fb98a358c8f9c55d2e5037f8c06b1f7327fa1b5102faccd521c872b195df8a"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.dll",
+      "bytes": 23040,
+      "sha256": "7eb4e5d1934ba07eff3a1ce440b8d2cdae76aeeabfc10fcf8ee880e48e1f4593"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.GameCenterModule.dll",
+      "bytes": 2048,
+      "sha256": "336e278d76a081221d2da9acfb8a209f9700faae597d4c3a93ad9a34f4802595"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.GridModule.dll",
+      "bytes": 2048,
+      "sha256": "a489e6ba863bafc88f342bbbeba56a4aab0dd635bac4a8ffcdae1181a3b41b1d"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.ImageConversionModule.dll",
+      "bytes": 2048,
+      "sha256": "8a712eb7e7abea97d381760d88466f17283da6d00126ad9ae210694dcb5870a9"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.IMGUIModule.dll",
+      "bytes": 34304,
+      "sha256": "dc7e7dc3e21b4915d70368a21ffea8fecdc301a7fa4725317a4bd9093b4b0827"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.InputModule.dll",
+      "bytes": 3072,
+      "sha256": "0add27a1887824e2dbfa1df89d7fc5c0832f6cdad5f841d0d232489b0aa39236"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.ParticleSystemModule.dll",
+      "bytes": 2560,
+      "sha256": "02f32bcaea4aa1df2d6da0fa1f23c165412e8685afc05ec5395ce393156f5aef"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.Physics2DModule.dll",
+      "bytes": 5120,
+      "sha256": "fdb9b3f702673bc6540184d1d9c0b2b86efdb041b60f6b64ecfcfcc6d6957bdc"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.PhysicsModule.dll",
+      "bytes": 5632,
+      "sha256": "b767d3d76d6d73e17ba9976212b933d6d21aea7064382210dbe11fd79dc09e6b"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.SharedInternalsModule.dll",
+      "bytes": 6656,
+      "sha256": "bba062b40c94100feac712c17a2eb47e84d5dcd30948ad577c59a085a646d9df"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.TerrainModule.dll",
+      "bytes": 3072,
+      "sha256": "61f836347946b56208ef07f3da68927c290f33499f6f78e07f4f6d7ee08f1afe"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.TextRenderingModule.dll",
+      "bytes": 7680,
+      "sha256": "efdfd73d11f279de1197d0c98da9deb29af5fc6376c9038ad29f4dedf096c637"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.TilemapModule.dll",
+      "bytes": 4096,
+      "sha256": "636e0e17e14f74f9967a0833be1e3346bc0b04c14d4170532ca21702b629173a"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.UI.dll",
+      "bytes": 93696,
+      "sha256": "3110261f86d183835db46a19cadc598419cff3302ce11ea5a5acac8bca6df22c"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.UIElementsModule.dll",
+      "bytes": 3072,
+      "sha256": "48784bc3a8d7e8862c8aff039d93286d354812fd5b9867e76ed8e311a3d7189a"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.UIModule.dll",
+      "bytes": 7680,
+      "sha256": "9c63bee8a2cb6b512d715a2d7c2ed395404e6425b458c5e428ac40e7be313f38"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "bytes": 2048,
+      "sha256": "33b7c81a3a9543f7ca7567aec9dbfae1f4e5e75841d39eefcb21b547d2f8d8bf"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.UnityWebRequestModule.dll",
+      "bytes": 9728,
+      "sha256": "8a04d7f748166d059d6b6d2c27c5cbcd2c021a0b2dfbf646d8527e624675ba2c"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.UnityWebRequestWWWModule.dll",
+      "bytes": 3584,
+      "sha256": "c0b69ff9db28dc489597af7a47972c418fef7a523e9c9446653d4c8c2e70e245"
+    },
+    {
+      "path": "analysis/il2cpp/cpp2il-recovery-nso-object-isinst-abi-v40/UnityEngine.VRModule.dll",
+      "bytes": 3584,
+      "sha256": "6284bff6bccd2b11246e467a67474a06f44a02f4a23a233393c6a9e4f82b831a"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/candidate-lock.json",
+      "bytes": 11840,
+      "sha256": "92cf4531df36dabb9542d481d57cc22b197781be6d5d29d1c8ad7654e775f32d"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/manifest.json",
+      "bytes": 13954,
+      "sha256": "9d4f1247fcb384e9505e9d8eb7c023644947d55bf91fd0626875bef965e27076"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/recovery-invocation.json",
+      "bytes": 942,
+      "sha256": "3cd258cb7c4f4ba455cef66e5f05fee040dc83dff38bd80fd7ec03546ade6e1b"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/CopyCoalescer.cs",
+      "bytes": 13961,
+      "sha256": "e1b12c77485bae9903b94f5439d29aa49b060bd4e80d399681f9bb168daeb857"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/InterfaceDispatchRecovery.cs",
+      "bytes": 18917,
+      "sha256": "5c2171a2b2a85a3e0b81943041b1fc2b57a90e8272a8f236109e6591e3f9da06"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/KeyFunctionRecovery.cs",
+      "bytes": 20850,
+      "sha256": "9064474aed01a88a959be70f338e7597ed46b69c6dea487a58ae13a3e9d3a5f0"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/LegacyArm64FieldPaths.cs",
+      "bytes": 6039,
+      "sha256": "29fbff63bdfa075ca59e2b3e598c92e55aad813d0c2c0696c52f9622704aac0c"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/LegacyDefaultMemberRecovery.cs",
+      "bytes": 3224,
+      "sha256": "797a14c056f61fea6b6ab2e857fdd5b1129eedfb81893eb1fc376e46cd5b560f"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/LocalVariables.cs",
+      "bytes": 33684,
+      "sha256": "19a5e9330da015c80b0891f772ce9d6949f9010c0dfde3d895aac44da59791af"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/MetadataAddressResolver.cs",
+      "bytes": 2061,
+      "sha256": "706e73d8a6d7076de657decb47c701dfe84a7dccb3931e9ffeef54a0ed92e5bb"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/MetadataResolver.cs",
+      "bytes": 37901,
+      "sha256": "2fc7e84ed5829caad7b0186ad00d09790ead92925c59ecab98d131cdf2277af7"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/SsaSimplifier.cs",
+      "bytes": 8300,
+      "sha256": "d7d70df888bf6eceb782ad155803b4b2ff871a7dc00e8e0ae983c536b4473c3f"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Analysis/ThrowHelperRecovery.cs",
+      "bytes": 13736,
+      "sha256": "e5d4aedf843ac5107fa3c3805c0e54b90ea52f7dcac2859771e3e3ad6e0373c0"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Il2CppApiFunctions/NewArm64KeyFunctionAddresses.cs",
+      "bytes": 17682,
+      "sha256": "14f2f30a34e624120f66fe2b038f4a422c0670d18d0dc10f26f763c286f9f527"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/IlGenerator.cs",
+      "bytes": 51948,
+      "sha256": "d12568671706c093078e881db2b4db42f8794a5c88ed16600c8a541f080e24e9"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs",
+      "bytes": 60921,
+      "sha256": "d895be7ed6d860d41fa651c974987963d5707665dc4e28584d55c82bfac30f8b"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/ISIL/FieldReference.cs",
+      "bytes": 763,
+      "sha256": "32aa29b60690c4c47379a0125683dcd1e68400f4b7230d8520ddad0eee6b54d4"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/ISIL/Instruction.cs",
+      "bytes": 10416,
+      "sha256": "212543654aede90f3fc6b9b2f19d9474578ff4afb9e2dae32f80095d53a50663"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/ISIL/MemoryOperand.cs",
+      "bytes": 1545,
+      "sha256": "cb8be9b16ffb5b190186fd2956d4423a504f2f08c5fcfebe7e46df53034ef644"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Model/Contexts/ApplicationAnalysisContext.cs",
+      "bytes": 15450,
+      "sha256": "67eccfb7cd00e9410654b05c36dc21dff8607a7691c33c9af778d2abe9025970"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Model/Contexts/MethodAnalysisContext.cs",
+      "bytes": 20635,
+      "sha256": "21e3f26b49e87d85da69cdaeada0a6e75c0927baa30bd4f330af9c5ec878cd40"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/OutputFormats/AsmResolverDllOutputFormatIlRecovery.cs",
+      "bytes": 8153,
+      "sha256": "c47656e44d7a7bfccf4396bc643c36febf990f3ba727a9dfe2e190a79404cd4c"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/ProcessingLayers/AttributeInjectorProcessingLayer.cs",
+      "bytes": 13212,
+      "sha256": "177099d399f25c9db4ee7e1d303d4cefa0fe6ccc8d4350f17bead29763295daf"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/UninitializedObjectAllocation.cs",
+      "bytes": 1394,
+      "sha256": "05d1f4e6f6b9d404ffcb35830fb4a9a7b7836c909ee52278afb662da7d65d8fe"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/Arm64CallingConventionResolver.cs",
+      "bytes": 3347,
+      "sha256": "48b91ca27a3bcbb522b84dea44893ca6498c98015082ef7a52762fe9b2e7604c"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/BaseCallingConventionResolver.cs",
+      "bytes": 4784,
+      "sha256": "c5489016f9d9368ebf0a92849e099e78ec3e82e2ae71f095ec2dd0eb4be8b715"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64AggregateLeaves.cs",
+      "bytes": 6076,
+      "sha256": "e1aa22bee294d0ebe370d12a439c284110870eaaffc4a1de1fd16edcb8ece252"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64AllocationPattern.cs",
+      "bytes": 7704,
+      "sha256": "daee4b11808995b6d2333139cd7609b4d32dcfd2f908be39f9adb5943e7ec29c"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64ArrayAllocationPattern.cs",
+      "bytes": 2738,
+      "sha256": "2e3f7c89011f8baf4d71138759aa0fae8914bfa1cf42e297a9dc21fc2b17db3f"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64CfgInitializationPattern.cs",
+      "bytes": 19060,
+      "sha256": "e5e9bc6669d38f5879d79ca4a2cc0a2e7b5924cc405434c2e9eea1dd2cbdfcfa"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64ClassLayoutAbi.cs",
+      "bytes": 5888,
+      "sha256": "9e4daa163c2677d940ef1696e92b42cdb90d4c896fb5b680db5e43e8d23d8d99"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64DefaultMemberPattern.cs",
+      "bytes": 2237,
+      "sha256": "7b3ce477b50846e6d68ac3055957fe4924a0d577057d2df9ad5ac55c06e34397"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64ExceptionFactoryPattern.cs",
+      "bytes": 2166,
+      "sha256": "d221f48068c2e2dec77fd62da7b921977df8f462a9de3f506f6608d02e06a55f"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64ExceptionRaiserPattern.cs",
+      "bytes": 3327,
+      "sha256": "cba7320450b2c26e829c680becafd34e52233b98d4def90a3e1242750fc148c1"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64Hfa.cs",
+      "bytes": 7304,
+      "sha256": "a91380654ecaf181c5a7d712603a5c392585396d5f41f6a32a899ad17dae646f"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64IndirectReturns.cs",
+      "bytes": 16989,
+      "sha256": "e46aecc8b2e21731a53acdaf8f9b69ad685722af0abc83df9c9b904d023e2852"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64InitializationPattern.cs",
+      "bytes": 4146,
+      "sha256": "c9ad1261b7940cce6e7049a2f430c01113017b6a7f37480b52638fbbb5f236da"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64LeafAccessors.cs",
+      "bytes": 16125,
+      "sha256": "c14e11f22f1965890dd864d0b11552c13c0287165802e6438312d517ba3036b9"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64ObjectIsInstAbi.cs",
+      "bytes": 5337,
+      "sha256": "ea443616ca0d0f146936f873fda98415766626e1611b8709b0d4057501f950e0"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64OverflowExceptionAbi.cs",
+      "bytes": 4861,
+      "sha256": "cf78e506b535b0aab18160a8e9586e4d9c563060d4dd4e69d13f5cfd008e8998"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64ScalarBoxing.cs",
+      "bytes": 7621,
+      "sha256": "7b376ffcd06efbcd5c9831f748dafb2f3ae76fe7f6829155aa97d5dcd7c43457"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64ThunkScanner.cs",
+      "bytes": 2656,
+      "sha256": "c7360baab0b79d9a3f229a6d103c93e083c3aef4574d822fbdf3970bec1a4795"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64ValueThisThunks.cs",
+      "bytes": 20170,
+      "sha256": "4a24d9598320b91ec19078882d9c46bd90b399c055301cdd81d61c4e2c9f1ee4"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-source-snapshot/refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64VirtualDispatch.cs",
+      "bytes": 15007,
+      "sha256": "fb9144842f246d3b8359444e58b8c072701f3e4169c3b8c8b477c68e79dfb1d2"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-tool-binaries/Cpp2IL.Core.dll",
+      "bytes": 815616,
+      "sha256": "14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-tool-binaries/Cpp2IL.dll",
+      "bytes": 52736,
+      "sha256": "3cd1e888a20bf2256c120a25102aad2cb276c2d068d8bdf1ea88ca3ab21ff9e3"
+    },
+    {
+      "path": "analysis/il2cpp/object-isinst-abi-v40-tool-binaries/LibCpp2IL.dll",
+      "bytes": 319488,
+      "sha256": "c15339ded4039f7aaf827c80db38788a02ac3e86a016e24bcdefc9ef515d52df"
+    },
+    {
+      "path": "analysis/il2cpp/source-profile-legacy-reference-check-nso-object-isinst-abi-v40/Assembly-CSharp/MatchingReferences.csproj",
+      "bytes": 9895,
+      "sha256": "bb03fea66a7ecba1d47c6d6ff93185793efddcbe1537fa0a05d26467132ae9b3"
+    },
+    {
+      "path": "analysis/il2cpp/source-profile-legacy-reference-check-nso-object-isinst-abi-v40/Assembly-CSharp-firstpass/MatchingReferences.csproj",
+      "bytes": 9915,
+      "sha256": "88d0e7d82c6935667ace2a8b2cde5f49518e1e0e9826eddafd3f2fe2ad9a359c"
+    },
+    {
+      "path": "analysis/reconstruction/compiler-additions-v40/source-context.json",
+      "bytes": 315748,
+      "sha256": "b9d6a431a7297f339251dbc5c7d984c99aa8aa49be8a2e971c79349f5916e5ef"
+    },
+    {
+      "path": "analysis/reconstruction/object-isinst-v40/fresh-output/correlation40.json",
+      "bytes": 400678,
+      "sha256": "bc65c8777bb44cf0d4605bc468466badceed6fd4f86dab30017feceaf5adfbc5"
+    },
+    {
+      "path": "input/reference/SF2_Switch_to_Windows10_Codex_Master_Prompt.md",
+      "bytes": 49069,
+      "sha256": "eb5efe5a684c1bd65112ecc270c1950a66d37f3c83a56852824c8625e28706e2"
+    },
+    {
+      "path": "logs/cpp2il-nso-object-isinst-abi-v40-result.json",
+      "bytes": 942,
+      "sha256": "3cd258cb7c4f4ba455cef66e5f05fee040dc83dff38bd80fd7ec03546ade6e1b"
+    },
+    {
+      "path": "originals_manifest/inputs.json",
+      "bytes": 1559,
+      "sha256": "163ee91bfbdbcb4e999701da8fd1344a982cf073eb263a32f3a728ed8931be72"
+    },
+    {
+      "path": "patches/experimental-native-read-proof-v41.patch",
+      "bytes": 11263,
+      "sha256": "834693154ec49d6e32d38bcb3a2b45e948de703fdda5f452acfe005ba8feaf04"
+    },
+    {
+      "path": "README.md",
+      "bytes": 733,
+      "sha256": "8ce78c69a7d3f491ab5c220c63a7c326f2dc2984a7bc3729f12b2baa799b11a2"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/CopyCoalescer.cs",
+      "bytes": 13979,
+      "sha256": "3188b99170b7b7e82aa775dbac30e0500a53ce2c9ff8905cf04b6d477e9f1e23"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/LocalVariables.cs",
+      "bytes": 33702,
+      "sha256": "3bdaa2bb30c1f29640d59efcc45f87f5ed61d63598ea2330509ab1be6fb8b3d9"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/Simplifier.cs",
+      "bytes": 15694,
+      "sha256": "5f205e29be60c8faf2710c4ba81ec39d0eba7d4ccaa4efd5fddbfd2fc87a60ba"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/SsaForm.cs",
+      "bytes": 16332,
+      "sha256": "052dd3c07f0d8d3a3463da7ed6ac34f9419e7c3133db6d1777bfbe75895afbcf"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Analysis/SsaSimplifier.cs",
+      "bytes": 8318,
+      "sha256": "b474b43c5f3d4ad2807fa468072b1f737ca0f97b5822b1c33345d29565a651a1"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/InstructionSets/NewArmV8InstructionSet.cs",
+      "bytes": 62098,
+      "sha256": "2c3db294f3a7c0cdcd5444d4979a5c6d07d44b4bc655cdb0d46a60ed73d0383b"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/ISIL/MemoryOperand.cs",
+      "bytes": 7279,
+      "sha256": "92c58a3d0f2841f48ae54a51efb689daf31332732efbf66e2a5388714b6acfdf"
+    },
+    {
+      "path": "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64FreshArrayElementClass.cs",
+      "bytes": 20055,
+      "sha256": "7a541d6698240627a4555295be2da3606d170abfb31f37515502cf13f3220c08"
+    },
+    {
+      "path": "reports/array-cast-use-attribution-v38.json",
+      "bytes": 448106,
+      "sha256": "b711d0f64b99a1aaa9aab92c47c8925d6cedcd57628b79c6662a32b7324f7087"
+    },
+    {
+      "path": "reports/assembly-leaf-added-diagnostics-attribution-v39.json",
+      "bytes": 37402,
+      "sha256": "152a95b1118c00e1179c4169ea8f66ff7ec9df626d44592655cdb7c2ba784ed5"
+    },
+    {
+      "path": "reports/assembly-leaf-getter-source-recovery-v39.json",
+      "bytes": 16315,
+      "sha256": "31eea7052d086fd9b758341692323597de250de76db2f3c71a1f5276a44b4b07"
+    },
+    {
+      "path": "reports/cil-stack-audit-nso-object-isinst-abi-v40.json",
+      "bytes": 8781,
+      "sha256": "89b33fafd3d833a7208b15ea88b10235e573501925ade6ca386f77aef9cfafbe"
+    },
+    {
+      "path": "reports/class-guard-eh-eligibility-inventory-v35.json",
+      "bytes": 13595,
+      "sha256": "465c35e38c48e7510c34cab74adcebb23865e07000ee129c1550015dcaef6984"
+    },
+    {
+      "path": "reports/compiler-diagnostic-added-locations-v40.json",
+      "bytes": 107462,
+      "sha256": "8b96b28ed39e7e66bfad06016ff2ccf52a5b9fac829f161f3d8965a3de069fb9"
+    },
+    {
+      "path": "reports/compiler-diagnostic-added-methods-v40.json",
+      "bytes": 16812,
+      "sha256": "29135673cc2824c160288dc4f3c0f113fdd873e5df6362edf6e76f5963f0b704"
+    },
+    {
+      "path": "reports/compiler-diagnostic-attribution-v40-handoff.json",
+      "bytes": 1713,
+      "sha256": "50041ae6861a1da330d1d9e02a36390776c740097adea0f099f6e278f5a66632"
+    },
+    {
+      "path": "reports/compiler-diagnostic-delta-v40.json",
+      "bytes": 36665,
+      "sha256": "32b341c34c85d1354c855474e6a424067fc81e372baa3056560e7eb30be0b509"
+    },
+    {
+      "path": "reports/cpp2il-hfa-experimental-lock-object-isinst-abi-v40.json",
+      "bytes": 11840,
+      "sha256": "92cf4531df36dabb9542d481d57cc22b197781be6d5d29d1c8ad7654e775f32d"
+    },
+    {
+      "path": "reports/decompilation-acceptance.json",
+      "bytes": 6932,
+      "sha256": "bbc63cf1c60f8d36470ad9a5b2bc2937b2ac637d7a8372179a17fe8e1c771f37"
+    },
+    {
+      "path": "reports/diagnostic-scaffolds-nso-object-isinst-abi-v40.json",
+      "bytes": 37237,
+      "sha256": "766e71a3b57ace264eab420cc66fc49eca3dcc0c512979348d9df5a7fa47d360"
+    },
+    {
+      "path": "reports/engine-fingerprint.md",
+      "bytes": 2091,
+      "sha256": "1675fed0c2b72bb84ba183866a4f1f6288fa8c23efb0e931082cfc02c5abc048"
+    },
+    {
+      "path": "reports/exception-metadata-independent-review-v35.json",
+      "bytes": 2799,
+      "sha256": "2d051a1464be8ce3d25ed0ac69dcbdd4f3d6dd85acef962037bbcba51d32a3f7"
+    },
+    {
+      "path": "reports/exception-metadata-parser-v35.json",
+      "bytes": 10284,
+      "sha256": "c412fce738c53644fa905d7737ab74484945884b107cade717239fe1243030d2"
+    },
+    {
+      "path": "reports/exception-region-design-v36.json",
+      "bytes": 18041,
+      "sha256": "b0a24c5b6be9db024160bc95622495a596b25cddf0a93aa0fbc00c0ae4b0d95c"
+    },
+    {
+      "path": "reports/exception-region-independent-review-v36.json",
+      "bytes": 2055,
+      "sha256": "8e77a03b0c4d78950c2eadea571fea9ca9f304e2f7b68b43a8cd0384b07f59dd"
+    },
+    {
+      "path": "reports/extract-manifest.json",
+      "bytes": 62196,
+      "sha256": "8c5c8b92268bb6c86e2adefed84a46e09e9f3adfe7b9afb8765d9065cd0c9906"
+    },
+    {
+      "path": "reports/fresh-array-class-origin-design-v40.json",
+      "bytes": 9533,
+      "sha256": "1b0fae3a72304d6f5879368f697ea2d39cb5124ff8304d1c9d48fc41444687a9"
+    },
+    {
+      "path": "reports/fresh-string-literal-source-v40.json",
+      "bytes": 2514,
+      "sha256": "12c107d22b9d8c46da47e05ae5b6332003512e1ca48d2c4e4f6fce759065d5b8"
+    },
+    {
+      "path": "reports/in-progress-save-v40-v41.json",
+      "bytes": 589,
+      "sha256": "8e08179e7a97a8ec0fe15b29fa10e1ffaca95fa4cb9bd959d124519cb27e433a"
+    },
+    {
+      "path": "reports/legacy-reference-assemblies-lock.json",
+      "bytes": 29321,
+      "sha256": "bdfd4ba42f2dab006f82267149a9225a84fe0e2b211b9eb5349baa63707fcddd"
+    },
+    {
+      "path": "reports/native-integer-read-carrier-design-v41.json",
+      "bytes": 7204,
+      "sha256": "19992499083688b68cb43ccf1f8ea55136ef25e6c262605a274577a35201b51d"
+    },
+    {
+      "path": "reports/native-object-isinst-abi-v40.json",
+      "bytes": 2483,
+      "sha256": "b819a3069e7bda1dfa6850f3782977f0b76cd8bde37392a1d1a2961a030a133b"
+    },
+    {
+      "path": "reports/native-object-isinst-exact-class.json",
+      "bytes": 2535,
+      "sha256": "59e64cb5942e30e3b5bafe177bc5052d5c10074fe8511eddce5878a221f581f2"
+    },
+    {
+      "path": "reports/object-isinst-abi-contract-v40.json",
+      "bytes": 13521,
+      "sha256": "18612897d497465269d79bc60460fe3faa423488ff4466ae71e8bedcd82362c2"
+    },
+    {
+      "path": "reports/object-isinst-abi-independent-source-review-v40.json",
+      "bytes": 2508,
+      "sha256": "3f7d8d9aa65563f0f4eec5f17a54a783d321153ca7141f3316d11e0ba1acfbad"
+    },
+    {
+      "path": "reports/object-isinst-abi-production-v40.json",
+      "bytes": 11486,
+      "sha256": "59fc6915edc66ec5a0795d282984ffc9b91280ef605b8649508554201fbc0952"
+    },
+    {
+      "path": "reports/object-isinst-abi-source-recovery-v40.json",
+      "bytes": 15097,
+      "sha256": "2c56ec47fccd3782cc8f994ad2066e1426cb36646ea1568f05cce52d8cf298e4"
+    },
+    {
+      "path": "reports/object-isinst-abi-source-recovery-v40.md",
+      "bytes": 1057,
+      "sha256": "e56108bd32ad8a983a2973cfca9f4f270f816e938968805153b0078cb354e0cb"
+    },
+    {
+      "path": "reports/object-isinst-abi-v40-frozen-reverse-check.json",
+      "bytes": 784,
+      "sha256": "7e00ff2c8cfb7e8a6522284c89a7a5e1a726502d1f92a90e2cb73f736e99222f"
+    },
+    {
+      "path": "reports/object-isinst-abi-v40-source-snapshot.json",
+      "bytes": 14136,
+      "sha256": "813c0e1052d21cdcde80490ac8d8f9fb0073d04030dec12559fa2039d197ea3e"
+    },
+    {
+      "path": "reports/object-isinst-abi-v40-tool-binary-snapshot.json",
+      "bytes": 953,
+      "sha256": "164981a7909bf1693268cd14f7e3174a68510ba04f5d880227898e920d8b4ba8"
+    },
+    {
+      "path": "reports/object-isinst-native-source-proposal-v40.json",
+      "bytes": 10742,
+      "sha256": "d6f058357a164cbcd8e47d3456b06097df12ea5d3720ba003c5380135814f181"
+    },
+    {
+      "path": "reports/object-isinst-official-source-v40.json",
+      "bytes": 1338,
+      "sha256": "f09fc4e1ea389e237952657294e359002d909766750f0f869d26434436098d74"
+    },
+    {
+      "path": "reports/recovered-object-isinst-abi-nso-object-isinst-abi-v40.json",
+      "bytes": 21070,
+      "sha256": "f148376d01c1ce5c9537842052e3924a66640ba954b90af3c54048a25e8aa2cc"
+    },
+    {
+      "path": "reports/recovered-object-isinst-abi-v40.md",
+      "bytes": 2296,
+      "sha256": "8bbdb784a647fe4225c05d4eb69f6da53099b970456a1116e09ecdee50c3b113"
+    },
+    {
+      "path": "reports/recovered-source-profile-legacy-reference-check-nso-object-isinst-abi-v40.json",
+      "bytes": 910255,
+      "sha256": "d04b2a7c9ff5ca3ff67cd0a246354a8352842b3c1c841440a75c4be3647d70f6"
+    },
+    {
+      "path": "reports/recovered-source-profile-project-build-nso-object-isinst-abi-v40.json",
+      "bytes": 887371,
+      "sha256": "499c349e71d20e767867c4895582002561e2610fb7183cfcc259ac9799262598"
+    },
+    {
+      "path": "reports/recovered-xml-attribute-runtime-nso-virtual-companion-copy-v38.json",
+      "bytes": 13220,
+      "sha256": "23929a57c33a13ed61f817982b6e2c69baccfdddd13007bda5f056a6cee3ccbb"
+    },
+    {
+      "path": "reports/recovery-regression-nso-object-isinst-abi-v40.json",
+      "bytes": 5388,
+      "sha256": "e870a347b39ae2591bdd4536b8466d31a401a7a94650e048b2cc6c4e5397b82c"
+    },
+    {
+      "path": "reports/runtime-helper-abi-source-recovery-v37.json",
+      "bytes": 96797,
+      "sha256": "476ee8d360dc3263c085f928c4176229e3fef0e90d540bbba5770d146bcf9788"
+    },
+    {
+      "path": "reports/tool-survey-20261017.md",
+      "bytes": 7064,
+      "sha256": "aefdb0f83bedcd98a674fe42c9807ef195a658e8051dfc8a970bebb30364735b"
+    },
+    {
+      "path": "reports/toolchain-lock.json",
+      "bytes": 95442,
+      "sha256": "da1601dc5eea37d3cb558ea66b10f0117336ec2ddb67eb7760ef5c869db5fbe5"
+    },
+    {
+      "path": "reports/unknown-operation-emitter-contract-design.md",
+      "bytes": 2349,
+      "sha256": "e74061e9e72c7a313592af9980b52fbb6b46eb4190945d9980fd524ff67edcba"
+    },
+    {
+      "path": "reports/virtual-companion-source-recovery-v38.json",
+      "bytes": 10107,
+      "sha256": "03f66b24522f1281abeee252a746ecfbcd4cbeab3f884238de524edf249e1687"
+    },
+    {
+      "path": "src/re/ObjectIsInstAbiContractProbe/ObjectIsInstAbiContractProbe.csproj",
+      "bytes": 682,
+      "sha256": "41e3efd4e475a8eee5bfd81ec1e3aafc6227fe5be800b4f9cfbe98c935303ad7"
+    },
+    {
+      "path": "src/re/ObjectIsInstAbiContractProbe/Program.cs",
+      "bytes": 19824,
+      "sha256": "fa4020f841e4fc2a0067e6a615c8c4c9084fd2c68a678dcbc48e35cae88e1963"
+    },
+    {
+      "path": "src/re/ObjectIsInstProductionProbe/ObjectIsInstProductionProbe.csproj",
+      "bytes": 713,
+      "sha256": "0d03dd54fa5d256dce7ae6f0e0ec342ff3fe8b3df7bc10538917e61a4c2b3709"
+    },
+    {
+      "path": "src/re/ObjectIsInstProductionProbe/Program.cs",
+      "bytes": 17667,
+      "sha256": "c404c9b3382fd37edd59ad730d7b7fa51e9544575f0a574bbf5db7ba464167bd"
+    },
+    {
+      "path": "src/re/RecoveredObjectIsInstAbiProbe/Program.cs",
+      "bytes": 22651,
+      "sha256": "356a0b0c961e0086390d109aab38978669036e0c4e955b5eb841e0d167bd1b0a"
+    },
+    {
+      "path": "src/re/RecoveredObjectIsInstAbiProbe/RecoveredObjectIsInstAbiProbe.csproj",
+      "bytes": 394,
+      "sha256": "2f801be8c179ef878ae311e4a4c4dda0806ed48cbff93cbcdc5225d654949353"
+    },
+    {
+      "path": "src/re/tool-patches/cpp2il-sf2-hfa-experimental-object-isinst-abi-v40.patch",
+      "bytes": 283491,
+      "sha256": "2a0844fb02086f0a7a0846f1d27592a4df91b2b691f006a9a84db7a1420d7dd1"
+    },
+    {
+      "path": "src/re/tools/capture_added_compiler_diagnostics.py",
+      "bytes": 6497,
+      "sha256": "d72a655c4b725b3ff77dc0d49a8bc7c3563a76496c9b94358dd91411806fbeed"
+    },
+    {
+      "path": "src/re/tools/capture_candidate_source_snapshot.py",
+      "bytes": 5461,
+      "sha256": "cc63361023a179aa97ec5c86b645ccbb0256d234c9c4fbb2bdc01b0bda4bea8c"
+    },
+    {
+      "path": "src/re/tools/compiler_diagnostic_delta.py",
+      "bytes": 9067,
+      "sha256": "098133fbacc479de43655e173676fcca7cb7b893b93fc55d8cf38022720cd38e"
+    },
+    {
+      "path": "src/re/tools/execute_native_object_isinst_abi.py",
+      "bytes": 9330,
+      "sha256": "354eaf1d09b79bdb4bdbe7ae35c8bbd2ab2a00c16dbcf4399a166268a4a94b51"
+    },
+    {
+      "path": "src/re/tools/execute_native_object_isinst_exact_class.py",
+      "bytes": 10715,
+      "sha256": "c7c332dec0a975a847736570301f95cdcd3d13c5f3d3fc1a4f0ae5b8903cb9a0"
+    },
+    {
+      "path": "src/re/tools/package_cpp2il_hfa_experiment.py",
+      "bytes": 10257,
+      "sha256": "fa5a413fe633bedde2fdbc38d8651677df53857fc02df44f2ea0b6c3623a1b01"
+    },
+    {
+      "path": "src/re/tools/refine_added_diagnostic_methods.py",
+      "bytes": 2984,
+      "sha256": "2fd39cee302c77555fb16c84becfd8b0678fae2b4d43cdb1c239b53073d5b6f8"
+    },
+    {
+      "path": "src/re/tools/summarize_diagnostic_scaffolds.py",
+      "bytes": 6059,
+      "sha256": "a40b56981b023dfca46fd96cec426658b4eff00ffb7400b422a99cef6cb608ab"
+    },
+    {
+      "path": "src/re/tools/summarize_object_isinst_abi_recovery.py",
+      "bytes": 14961,
+      "sha256": "7bef1cf351a9bc65d14f4f8e0aacd805819fbebbd2a6f9e81ad9831fae875d32"
+    },
+    {
+      "path": "src/tools/build_ai_handoff_manifest.py",
+      "bytes": 9227,
+      "sha256": "6e1d5f9761004515b4c991a07b8f2e8bd4b83ee3b570c72b9addfa4729c23394"
+    },
+    {
+      "path": "src/tools/Initialize-UsbWorkspace.ps1",
+      "bytes": 3225,
+      "sha256": "b95eb045035ca66af99884f8b5ceb62ef861eb35374785ae179e02beb646b5b1"
+    },
+    {
+      "path": "src/tools/Invoke-Cpp2IlMetadataRecovery.ps1",
+      "bytes": 2824,
+      "sha256": "003518a32113474adde5e884f10ae5f4ae70ee2dbd52b5510e31aa3683e11195"
+    },
+    {
+      "path": "src/tools/Invoke-RecoveredSourceBuild.ps1",
+      "bytes": 5451,
+      "sha256": "7f4c8bdd45f4d680817a89e6deacacaf42426e246d030d5918a2bd62aceafd18"
+    },
+    {
+      "path": "src/tools/Invoke-RecoveryRegression.ps1",
+      "bytes": 3842,
+      "sha256": "e02cdfe219d16c035bcea3d73018badcdb2c8e6e9a1680db98c1751dbb3728f6"
+    },
+    {
+      "path": "src/tools/Invoke-SourceReferenceCheck.ps1",
+      "bytes": 5978,
+      "sha256": "ed003c094f6d61920c89bd9488bcfaca367c6cc656e6e1cc5e69e54e0e2e55c0"
+    },
+    {
+      "path": "src/tools/usb_boundary.py",
+      "bytes": 1167,
+      "sha256": "0cf32a3cd5e8ba9963c7af52390e834c69de628ee2e26fd747b0879ef1ee1883"
+    },
+    {
+      "path": "src/tools/UsbBoundary.ps1",
+      "bytes": 2028,
+      "sha256": "5952f6325cec5c57eeafada3d8a8205bdb2f72a8827929a9d99bfb7b214adde7"
+    },
+    {
+      "path": "src/tools/verify_ai_handoff.py",
+      "bytes": 2850,
+      "sha256": "93eef3b5ac0fb72d6eb2b10cc1003ff2bd401225b59ab2492e42999717603fbd"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 22970,
+      "sha256": "6acbedbce6343706defc744e4c346791c0113d61e778027ab954b34b27fb0b74"
+    },
+    {
+      "path": "TASKS.md",
+      "bytes": 10243,
+      "sha256": "bc76a4be204ef6b936141e112fd24a5f7dfba90e2b3d910f809eb35f3b1d6481"
+    }
+  ],
+  "recorded_game_input_hashes_not_rehashed_at_handoff": [
+    {
+      "path": "input/base/Shadow Fight 2 [0100AB000ABFE000][v0][Base].nsp",
+      "sha256": "98d2d44f224321a174ce672826c5ece77d4f98350da336a21ffefc247e36cba5"
+    },
+    {
+      "path": "input/update/Shadow Fight 2 [0100AB000ABFE800][v131072][Up v1.1.0].nsp",
+      "sha256": "21831c39c058b815d838a7543678685ef89e1e95778753e71091ae3b8415b8f8"
+    },
+    {
+      "path": "unpacked/effective/exefs/main",
+      "sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238"
+    },
+    {
+      "path": "analysis/nso/main-uncompressed.nso",
+      "sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968"
+    },
+    {
+      "path": "unpacked/effective/romfs/Data/Managed/Metadata/global-metadata.dat",
+      "sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85"
+    }
+  ],
+  "credential_files_included": false,
+  "scope": "Selected critical evidence, all 44 generated DLLs, frozen v40 tool sources/binaries, current eight unbuilt v41 files and handoff infrastructure. This is not a complete-folder backup. Transfer the entire private project including ignored data/dependencies/logs. Input hashes are recorded provenance, not fresh reads during handoff."
+}

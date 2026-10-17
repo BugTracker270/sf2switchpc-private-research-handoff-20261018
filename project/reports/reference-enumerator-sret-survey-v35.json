@@ -1,0 +1,49 @@
+{
+  "status": "READ_ONLY_REFERENCE_ENUMERATOR_SRET_STATIC_CANDIDATES",
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "probe_source_sha256": "ac8c4ed91111cb965284b1ef12f5d8dc7bc339eb18b15598d253bbe066beab22",
+  "details": "analysis\\nso\\reference-enumerator-sret-survey-v35.json",
+  "details_sha256": "3fb18a22de9e1497cd9bdf98eaee6441bd897d921c237bdd76f4ff8afd01c1b3",
+  "original_text_bytes": 37181704,
+  "indexed_call_edges": {
+    "0x1585f60": 1154,
+    "0x11dd130": 1
+  },
+  "indexed_instruction_sites": {
+    "0x1585f60": {
+      "unique_instruction_sites": 1105,
+      "duplicate_instruction_sites": 49,
+      "unparsed": 0,
+      "sites_missing_from_exact_text_scan": 0
+    },
+    "0x11dd130": {
+      "unique_instruction_sites": 1,
+      "duplicate_instruction_sites": 0,
+      "unparsed": 0,
+      "sites_missing_from_exact_text_scan": 0
+    }
+  },
+  "native_direct_edges": {
+    "bl:0x1585f60": 1112,
+    "b:0x11dd130": 1
+  },
+  "getenumerator_bl_calls": 1112,
+  "unique_exact_fde_callers": 905,
+  "adjacent_x8_sp_calls": 869,
+  "adjacent_unique_callers": 741,
+  "adjacent_cie_groups": {
+    "zPLR": 860,
+    "zR": 9
+  },
+  "straight_line_methodinfo_slot_candidates": 1047,
+  "adjacent_methodinfo_slot_candidates": 818,
+  "normal_cfg_x0_dead_before_overwrite": 869,
+  "normal_cfg_x8_dead_before_overwrite": 377,
+  "normal_cfg_both_dead_before_overwrite": 377,
+  "literal_slot_reused_by_multiple_getenumerator_calls": 138,
+  "typed_metadata_aliases_resolved": false,
+  "storage_ownership_proved": false,
+  "production_acceptances": 0,
+  "core_edited": false,
+  "scope": "Counts are native static call/window candidates, not runtime/managed recovery coverage. Exact frame ownership, adjacent literal SP buffers, straight-line X1 slot expressions and conservative normal-CFG overwrite observations are separate filters. No production adapter is generalized; metadata, storage lifetime/escape, exception flow and actual CIL parity remain required."
+}

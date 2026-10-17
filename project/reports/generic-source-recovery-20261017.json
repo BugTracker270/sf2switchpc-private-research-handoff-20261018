@@ -1,0 +1,286 @@
+{
+  "status": "SCOPED_RECOVERY_VALIDATED_WHOLE_SOURCE_INCOMPLETE",
+  "updated": "2026-10-17T11:17:53.723541+00:00",
+  "runs": [
+    {
+      "run": "nso-generic-fp-fields-v22",
+      "source_status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "compiler": [
+        {
+          "assembly": "Assembly-CSharp-firstpass",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 21338
+        },
+        {
+          "assembly": "Assembly-CSharp",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 36018
+        }
+      ],
+      "recovered_execution": {
+        "report": "reports/recovered-nested-tween-nso-generic-fp-fields-v22.json",
+        "status": "RECOVERED_NESTED_GENERIC_CALLER_LIMITATION",
+        "cases": 0,
+        "checks": 0,
+        "statically_unreachable_analysis_warning_calls": 1,
+        "fatal": "System.InvalidProgramException: Common Language Runtime detected an invalid program.",
+        "body_il_sha256": {
+          "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+          "RecoveredNestedTweenCaller": "d0465cfadb81b78d8ebbc3317e124ff8340669ef90909e8aa701e65653c62d06"
+        }
+      },
+      "stack_status": "NOT_STARTED",
+      "cil_assemblies_audited": 0
+    },
+    {
+      "run": "nso-generic-fp-tail-v23",
+      "source_status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "compiler": [
+        {
+          "assembly": "Assembly-CSharp-firstpass",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 21360
+        },
+        {
+          "assembly": "Assembly-CSharp",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 36020
+        }
+      ],
+      "recovered_execution": {
+        "report": "reports/recovered-nested-tween-nso-generic-fp-tail-v23-with-identities.json",
+        "status": "RECOVERED_NESTED_GENERIC_CALLER_LIMITATION",
+        "cases": 64,
+        "checks": 576,
+        "identity_cases": 0,
+        "identity_checks": 0,
+        "total_checks": 576,
+        "caller_nested_field_addresses": 18,
+        "statically_unreachable_analysis_warning_calls": 1,
+        "fatal": "System.Exception: Unapproved local/type substitution: DG.Tweening.Plugins.Vector3WrapperPlugin",
+        "diagnostic_tail_termination_experiment": false,
+        "body_il_sha256": {
+          "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+          "RecoveredNestedTweenCaller": "08a9c66b49dd1144682bd7cb6b4a96716d68d27ba91a54fc5dd4b2b23ea306c4",
+          "RecoveredWrapperConvert": "2434fdab84f43e54e4b865934d087d41b9b807519d2c3f311d71fe007360f8ae"
+        }
+      },
+      "stack_status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY",
+      "cil_assemblies_audited": 44
+    },
+    {
+      "run": "nso-nested-hfa-v24",
+      "source_status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "compiler": [
+        {
+          "assembly": "Assembly-CSharp-firstpass",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 21360
+        },
+        {
+          "assembly": "Assembly-CSharp",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 36015
+        }
+      ],
+      "recovered_execution": {
+        "report": "reports/recovered-nested-tween-nso-nested-hfa-v24-with-identities.json",
+        "status": "RECOVERED_NESTED_GENERIC_CALLER_LIMITATION",
+        "cases": 64,
+        "checks": 576,
+        "identity_cases": 0,
+        "identity_checks": 0,
+        "total_checks": 576,
+        "caller_nested_field_addresses": 18,
+        "statically_unreachable_analysis_warning_calls": 1,
+        "fatal": "System.Exception: Unexpected token/call; diagnostic helpers are forbidden: ldstr",
+        "diagnostic_tail_termination_experiment": false,
+        "body_il_sha256": {
+          "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+          "RecoveredNestedTweenCaller": "0d1555571396a2890b74ed5957e21e8d82406756d6b8f98bf65b49761a59fdf1",
+          "RecoveredWrapperConvert": "4b82aba740efe6b1396161b225247b50672a19b0182a5c7399cc3ebdbb262ad4"
+        }
+      },
+      "stack_status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY",
+      "cil_assemblies_audited": 44
+    },
+    {
+      "run": "nso-sparse-params-v25",
+      "source_status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "compiler": [
+        {
+          "assembly": "Assembly-CSharp-firstpass",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 21360
+        },
+        {
+          "assembly": "Assembly-CSharp",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 35980
+        }
+      ],
+      "recovered_execution": {
+        "report": "reports/recovered-nested-tween-nso-sparse-params-v25-with-identities.json",
+        "status": "PASS_RECOVERED_NESTED_HFA_AND_CALLER_NATIVE_COMPARISON",
+        "cases": 64,
+        "checks": 576,
+        "identity_cases": 240,
+        "identity_checks": 720,
+        "total_checks": 1296,
+        "caller_nested_field_addresses": 18,
+        "statically_unreachable_analysis_warning_calls": 2,
+        "fatal": null,
+        "diagnostic_tail_termination_experiment": false,
+        "body_il_sha256": {
+          "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+          "RecoveredNestedTweenCaller": "adef6b3a9052e1d9abb961a0be1726ab85fa3b97a3d3f9a11f8f048501ff81b8",
+          "RecoveredWrapperConvert": "7db2ed6f6775acbb2aa95cccb3406e611a8da894dadfb000e989a3175c7f9250",
+          "RecoveredWrapperUnwrap": "ca02c03259632048d6f37c438c219505d9fdce0ac1d4f4734c190f695b440bb2",
+          "RecoveredWrapperWrap": "90e9d33956237ecf3321203888ba265f6edd9952467e23eb056ae7cfe61827e8"
+        }
+      },
+      "stack_status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY",
+      "cil_assemblies_audited": 44
+    },
+    {
+      "run": "nso-type-handle-v26",
+      "source_status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "compiler": [
+        {
+          "assembly": "Assembly-CSharp-firstpass",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 21055
+        },
+        {
+          "assembly": "Assembly-CSharp",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 35788
+        }
+      ],
+      "recovered_execution": {
+        "report": "reports/recovered-nested-tween-nso-type-handle-v26-with-identities.json",
+        "status": "PASS_RECOVERED_NESTED_HFA_AND_CALLER_NATIVE_COMPARISON",
+        "cases": 64,
+        "checks": 576,
+        "identity_cases": 240,
+        "identity_checks": 720,
+        "total_checks": 1296,
+        "caller_nested_field_addresses": 18,
+        "statically_unreachable_analysis_warning_calls": 2,
+        "fatal": null,
+        "diagnostic_tail_termination_experiment": false,
+        "body_il_sha256": {
+          "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+          "RecoveredNestedTweenCaller": "adef6b3a9052e1d9abb961a0be1726ab85fa3b97a3d3f9a11f8f048501ff81b8",
+          "RecoveredWrapperConvert": "7db2ed6f6775acbb2aa95cccb3406e611a8da894dadfb000e989a3175c7f9250",
+          "RecoveredWrapperUnwrap": "ca02c03259632048d6f37c438c219505d9fdce0ac1d4f4734c190f695b440bb2",
+          "RecoveredWrapperWrap": "90e9d33956237ecf3321203888ba265f6edd9952467e23eb056ae7cfe61827e8"
+        }
+      },
+      "stack_status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY",
+      "cil_assemblies_audited": 44
+    },
+    {
+      "run": "nso-generic-ctor-v27",
+      "source_status": "SOURCE_BUILD_LIMITATIONS_CONFIRMED",
+      "compiler": [
+        {
+          "assembly": "Assembly-CSharp-firstpass",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 20266
+        },
+        {
+          "assembly": "Assembly-CSharp",
+          "build_exit_code": 1,
+          "unique_compiler_diagnostic_lines": 33148
+        }
+      ],
+      "recovered_execution": {
+        "report": "reports/recovered-nested-tween-nso-generic-ctor-v27-with-identities.json",
+        "status": "PASS_RECOVERED_NESTED_HFA_AND_CALLER_NATIVE_COMPARISON",
+        "cases": 64,
+        "checks": 576,
+        "identity_cases": 240,
+        "identity_checks": 720,
+        "total_checks": 1296,
+        "caller_nested_field_addresses": 18,
+        "statically_unreachable_analysis_warning_calls": 2,
+        "fatal": null,
+        "diagnostic_tail_termination_experiment": false,
+        "body_il_sha256": {
+          "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+          "RecoveredNestedTweenCaller": "adef6b3a9052e1d9abb961a0be1726ab85fa3b97a3d3f9a11f8f048501ff81b8",
+          "RecoveredWrapperConvert": "7db2ed6f6775acbb2aa95cccb3406e611a8da894dadfb000e989a3175c7f9250",
+          "RecoveredWrapperUnwrap": "ca02c03259632048d6f37c438c219505d9fdce0ac1d4f4734c190f695b440bb2",
+          "RecoveredWrapperWrap": "90e9d33956237ecf3321203888ba265f6edd9952467e23eb056ae7cfe61827e8"
+        }
+      },
+      "stack_status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY",
+      "cil_assemblies_audited": 44
+    }
+  ],
+  "original_caller": {
+    "status": "PASS_ORIGINAL_FP_SCHEDULED_CLASS_GUARD_HFA_CALLER",
+    "cases": 256,
+    "checks": 1024,
+    "caller_sha256": "e0230943b6c3767067ee367a6c318f9c707997f2790287560a4fe042419d0467"
+  },
+  "original_identities": {
+    "status": "PASS_ORIGINAL_NESTED_HFA_IDENTITY_BOUNDARIES",
+    "cases": 240,
+    "checks": 720,
+    "fixture_sha256": "92ebd80f174a7945688f6436c9cd72d20b2f351a3a267f5b0085b2e584c94740"
+  },
+  "metadata_checks": 308,
+  "sparse_parameter_cases": 96,
+  "sparse_parameter_checks": 272,
+  "type_handle_before": {
+    "report": "reports/recovered-type-handle-token-nso-sparse-params-v25.json",
+    "status": "RECOVERED_TYPE_HANDLE_TOKEN_LIMITATION",
+    "checks": 0,
+    "fatal": "System.InvalidProgramException: Common Language Runtime detected an invalid program.",
+    "type_from_handle_calls": 2,
+    "actual_type": null
+  },
+  "type_handle_after": {
+    "report": "reports/recovered-type-handle-token-nso-type-handle-v26.json",
+    "status": "PASS_RECOVERED_TYPE_HANDLE_TOKEN_CONTRACT",
+    "checks": 2,
+    "fatal": null,
+    "type_from_handle_calls": 1,
+    "actual_type": "UnityEngine.SpriteDrawMode"
+  },
+  "constructor_before": {
+    "report": "reports/recovered-constructor-nso-type-handle-v26.json",
+    "status": "PASS_RECOVERED_CONSTRUCTION_AT_CLR_LIST_BOUNDARY",
+    "cases": 32,
+    "checks": 128,
+    "fatal": null,
+    "raw_allocation_calls": 1,
+    "direct_constructor_calls": 1,
+    "newobj_constructors": 0
+  },
+  "constructor_after": {
+    "report": "reports/recovered-constructor-nso-generic-ctor-v27.json",
+    "status": "PASS_RECOVERED_CONSTRUCTION_AT_CLR_LIST_BOUNDARY",
+    "cases": 32,
+    "checks": 128,
+    "fatal": null,
+    "raw_allocation_calls": 0,
+    "direct_constructor_calls": 0,
+    "newobj_constructors": 1
+  },
+  "constructor_metadata_checks": 12,
+  "active_sessions": [],
+  "whole_game_source_ready": false,
+  "changes": [
+    "Closed-generic field layout with observed inherited field offsets and tail-padding reuse.",
+    "Scalar FP access widths and nested managed field addresses for reads and stores.",
+    "Analysis-warning tails now terminate by throwing instead of falling off the method.",
+    "Recursive metadata-validated homogeneous FP aggregates; unsupported layouts remain diagnostic.",
+    "Surviving parameters keep their original signature position when earlier arguments are optimized out.",
+    "A literal token stays RuntimeTypeHandle when required by the managed signature; ordinary Type conversion remains separate.",
+    "Adjacent closed-generic reference allocation/constructor pairs match canonical definitions and arguments, while receiver/block/order guards remain."
+  ],
+  "limits": "Opt-in experimental tool patch remains separate from canonical v19. Native tests are bounded instruction harnesses. The original full caller uses an explicit class-initializer boundary; recovered execution substitutes exact isolated field storage and rejects reachable diagnostics. Stack-spilled HFAs, integer multiword aggregates, full runtime ordering, other call paths and full game source remain unverified. Constructor expression checks use the host CLR List<T> contract and stop before Unity base initialization; Nintendo allocator/GC and the full constructor are unverified. Compiler diagnostic counts include cascades and are not completion measures."
+}

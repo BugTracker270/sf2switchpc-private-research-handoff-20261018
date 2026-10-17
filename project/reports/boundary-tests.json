@@ -1,0 +1,267 @@
+{
+  "utc": "2026-10-17T18:54:06.5909895Z",
+  "cases": [
+    {
+      "name": "directory:input/base",
+      "passed": true
+    },
+    {
+      "name": "directory:input/update",
+      "passed": true
+    },
+    {
+      "name": "directory:input/reference",
+      "passed": true
+    },
+    {
+      "name": "directory:originals_manifest",
+      "passed": true
+    },
+    {
+      "name": "directory:tools",
+      "passed": true
+    },
+    {
+      "name": "directory:refs",
+      "passed": true
+    },
+    {
+      "name": "directory:unpacked/nsp_pfs0/base",
+      "passed": true
+    },
+    {
+      "name": "directory:unpacked/nsp_pfs0/update",
+      "passed": true
+    },
+    {
+      "name": "directory:unpacked/base",
+      "passed": true
+    },
+    {
+      "name": "directory:unpacked/update",
+      "passed": true
+    },
+    {
+      "name": "directory:unpacked/effective",
+      "passed": true
+    },
+    {
+      "name": "directory:analysis/nso",
+      "passed": true
+    },
+    {
+      "name": "directory:analysis/il2cpp",
+      "passed": true
+    },
+    {
+      "name": "directory:analysis/assets",
+      "passed": true
+    },
+    {
+      "name": "directory:analysis/reference",
+      "passed": true
+    },
+    {
+      "name": "directory:unity",
+      "passed": true
+    },
+    {
+      "name": "directory:src/tools",
+      "passed": true
+    },
+    {
+      "name": "directory:src/re/tools",
+      "passed": true
+    },
+    {
+      "name": "directory:tests",
+      "passed": true
+    },
+    {
+      "name": "directory:build",
+      "passed": true
+    },
+    {
+      "name": "directory:dist",
+      "passed": true
+    },
+    {
+      "name": "directory:reports/performance",
+      "passed": true
+    },
+    {
+      "name": "directory:logs",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/temp",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/pip",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/nuget",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/npm",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/gradle",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/dotnet",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/python",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/java",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/xdg",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/nuget-http",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/nuget-scratch",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/nuget-plugins",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/dotnet-bundles",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/ghidra-settings",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/ghidra-cache",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/ghidra-temp",
+      "passed": true
+    },
+    {
+      "name": "directory:cache/cargo",
+      "passed": true
+    },
+    {
+      "name": "directory:backups",
+      "passed": true
+    },
+    {
+      "name": "directory:.codex",
+      "passed": true
+    },
+    {
+      "name": "cache:TEMP",
+      "passed": true
+    },
+    {
+      "name": "cache:TMP",
+      "passed": true
+    },
+    {
+      "name": "cache:TMPDIR",
+      "passed": true
+    },
+    {
+      "name": "cache:PIP_CACHE_DIR",
+      "passed": true
+    },
+    {
+      "name": "cache:NUGET_PACKAGES",
+      "passed": true
+    },
+    {
+      "name": "cache:NUGET_HTTP_CACHE_PATH",
+      "passed": true
+    },
+    {
+      "name": "cache:NUGET_SCRATCH",
+      "passed": true
+    },
+    {
+      "name": "cache:NUGET_PLUGINS_CACHE_PATH",
+      "passed": true
+    },
+    {
+      "name": "cache:DOTNET_BUNDLE_EXTRACT_BASE_DIR",
+      "passed": true
+    },
+    {
+      "name": "cache:npm_config_cache",
+      "passed": true
+    },
+    {
+      "name": "cache:CARGO_HOME",
+      "passed": true
+    },
+    {
+      "name": "cache:GRADLE_USER_HOME",
+      "passed": true
+    },
+    {
+      "name": "cache:DOTNET_CLI_HOME",
+      "passed": true
+    },
+    {
+      "name": "cache:PYTHONPYCACHEPREFIX",
+      "passed": true
+    },
+    {
+      "name": "cache:XDG_CACHE_HOME",
+      "passed": true
+    },
+    {
+      "name": "reject:C:\\SF2SwitchPC\\build",
+      "passed": true
+    },
+    {
+      "name": "reject:F:\\SF2SwitchPC-escape\\bad",
+      "passed": true
+    },
+    {
+      "name": "reject:F:\\SF2SwitchPC\\..\\escape",
+      "passed": true
+    },
+    {
+      "name": "reject:F:\\SF2SwitchPC\\input\\file:stream",
+      "passed": true
+    },
+    {
+      "name": "reject:relative\\output",
+      "passed": true
+    },
+    {
+      "name": "reject:\\\\server\\share\\out",
+      "passed": true
+    },
+    {
+      "name": "reject:F:relative\\output",
+      "passed": true
+    },
+    {
+      "name": "reject:\\relative\\output",
+      "passed": true
+    }
+  ],
+  "failed": 0,
+  "passed": 65
+}

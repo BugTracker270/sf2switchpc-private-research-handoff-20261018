@@ -1,0 +1,238 @@
+{
+  "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovery_run": "nso-exception-factory-v10",
+  "isolated_accessors": false,
+  "cases": 768,
+  "checks": 1760,
+  "failure_count": 768,
+  "first_failures": [
+    {
+      "index": 0,
+      "property": "Production",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 1,
+      "property": "Production",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 2,
+      "property": "Major",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 3,
+      "property": "Major",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 4,
+      "property": "Minor",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 5,
+      "property": "Minor",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 6,
+      "property": "DataVersion",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 7,
+      "property": "DataVersion",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 8,
+      "property": "Production",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 9,
+      "property": "Production",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 10,
+      "property": "Major",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 11,
+      "property": "Major",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 12,
+      "property": "Minor",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 13,
+      "property": "Minor",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 14,
+      "property": "DataVersion",
+      "operation": "get",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    },
+    {
+      "index": 15,
+      "property": "DataVersion",
+      "operation": "set",
+      "actual": null,
+      "exception": "System.InvalidProgramException",
+      "exception_chain": [
+        "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.",
+        "System.TypeInitializationException: The type initializer for \u0027VersionContainer\u0027 threw an exception.",
+        "System.InvalidProgramException: Common Language Runtime detected an invalid program."
+      ],
+      "expected_exception": "System.IndexOutOfRangeException",
+      "array_matches": true
+    }
+  ],
+  "fatal": null,
+  "assembly_sha256": "4a42b8fa29f518dbccde262c3939a3eea6a9e4db431adc54bfee774798f660e7",
+  "fixture_sha256": "7cf2a4e8e3b47f01ab3de94c8d3a6c5b1aa87b900071ae26689d6fa50d814209",
+  "scope": "Executes recovered CIL accessors directly in the installed .NET runtime against original ARM64 fixtures. Constructor bypass via uninitialized object and private field injection is explicit; class initialization can still block execution. No Windows game, original-runtime parity, constructor/static-initialization, UI or combat claim."
+}

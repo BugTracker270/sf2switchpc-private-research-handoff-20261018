@@ -1,0 +1,63 @@
+{
+  "status": "PASS_SCOPED_RUNTIME_PARITY_AND_SOURCE_SYNTHETIC_PAIR_AUDIT",
+  "checks": 9,
+  "failures": 0,
+  "tests": [
+    {
+      "name": "actual production and all 23 adapter guard checks pass",
+      "passed": true
+    },
+    {
+      "name": "actual production result is the original SP8 storage",
+      "passed": true
+    },
+    {
+      "name": "runtime acceptance retains the strict instruction/address count guard",
+      "passed": true
+    },
+    {
+      "name": "compiled Core matches recorded runtime gate",
+      "passed": true
+    },
+    {
+      "name": "synthetic void return has a paired non-native sentinel",
+      "passed": true
+    },
+    {
+      "name": "every synthetic HFA return copy has a paired non-native sentinel",
+      "passed": true
+    },
+    {
+      "name": "synthetic nonvoid return has a paired non-native sentinel",
+      "passed": true
+    },
+    {
+      "name": "all fallback instruction emission sites accounted for",
+      "passed": true
+    },
+    {
+      "name": "pre-fix negative production result remains preserved",
+      "passed": true
+    }
+  ],
+  "helper_gate_sha256": "d30516558b3eab7214c2d66e58933752dc56e3a1adb820d9e933d4783eadfe1a",
+  "preserved_negative_gate_sha256": "0a00727fa04b5f0ad6908296dbff5bcae3a74ab0ea0475d1c7a48b610b7201e6",
+  "converter_source_sha256": "c18d279801c220362aca29452cb0715d02f4484c0315f72946f03b1cd6f31587",
+  "converter_source_origin": "reconstructed from pinned upstream plus exact v32 experimental patch",
+  "converter_source_serialization": "UTF8_CRLF",
+  "v32_patch_sha256": "effbf13b420f98e3687780b7c0e78b39cfd3420068ca8802c1208be6ab92991a",
+  "v32_lock_sha256": "dde9d88e3d07983a42d0b40d0e80221b06e7679e4d6fe4e28c25ac9a930fb932",
+  "helper_source_sha256": "8c89942388dd92070a024e2238754d40aa83c1d7448c302e1e51209b526a2365",
+  "tool_core_sha256": "341daafcadf39c4f62f75e9769f00deb5275ad198f9f194382ac175da8677669",
+  "probe_source_sha256": "9f5f226d5ec41c653e0c6878de22a28101c14875e9e7ac7d051c924a0499b811",
+  "runtime_production_instruction_count": 184,
+  "runtime_native_address_count_directly_observed": false,
+  "runtime_equal_address_count_proved_by_unchanged_strict_guard": true,
+  "native_source_span_bytes": 560,
+  "exact_caller_fde_bytes": 552,
+  "native_last_decoded_rva": "0xC9F61C",
+  "native_last_decoded_operation": "UDF",
+  "synthetic_addresses_are_original_native_addresses": false,
+  "game_executed": false,
+  "scope": "Actual SetStage production adapter acceptance proves list/address parity through the unchanged strict count guard; the address-list count was not separately exposed or measured. The source audit covers void fallback, each HFA return copy, and nonvoid fallback emission sites using non-native ulong.MaxValue sentinels. HFA/nonvoid fallback paths are statically audited here, not claimed as dynamically exercised. Original FDE is552bytes, while the metadata-neighbor source span560bytes includes trailing UDF padding that triggers the void fallback. No helper guard was relaxed, no game method executed and no source/runtime/game completion is certified."
+}

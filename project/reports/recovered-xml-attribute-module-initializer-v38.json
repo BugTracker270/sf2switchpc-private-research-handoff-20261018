@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ORIGINAL_V38_MODULE_INITIALIZER_ABSENT_METADATA_ONLY",
+  "recovery_run": "nso-virtual-companion-copy-v38",
+  "assembly": "analysis/il2cpp/cpp2il-recovery-nso-virtual-companion-copy-v38/Assembly-CSharp.dll",
+  "assembly_sha256": "b27b575f04159eb61cd50eaf21566e682b882726b5faa216bf1402b55e7ae27c",
+  "module_type_token": "0x02000001",
+  "global_methods": [],
+  "global_type_initializer_count": 0,
+  "owner_type_initializer_absence_already_proved": true,
+  "runtime_report_sha256": "23929a57c33a13ed61f817982b6e2c69baccfdddd13007bda5f056a6cee3ccbb",
+  "source_sha256": "f88c002fae495fcb32e8d1a66d84ff3399a6a9f8c8644c97bb705ee529d3e28c",
+  "assemblies_loaded": 0,
+  "original_methods_invoked": 0,
+  "scope": "Metadata-only PEReader inspection of exact unchanged Assembly-CSharp.dll already exercised by the host XML helper gate. The unique \u003CModule\u003E type has no .cctor; no global initializer can be supplied by this module. Original XmlExtensions .cctor absence is separately required in the frozen runtime report. This does not certify arbitrary referenced assemblies or whole-game initialization."
+}

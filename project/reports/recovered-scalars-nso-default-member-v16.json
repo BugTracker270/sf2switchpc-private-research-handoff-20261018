@@ -1,0 +1,22 @@
+{
+  "status": "PASS_RECOVERED_SCALARS_VS_ORIGINAL_NATIVE_FIXTURES",
+  "recovery_run": "nso-default-member-v16",
+  "isolated_accessors": false,
+  "isolation_self_checks": 0,
+  "method_headers": [],
+  "cases": 768,
+  "checks": 1760,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": null,
+  "separate_static_identity_witness": {
+    "expected": "VersionContainer",
+    "actual": "VersionContainer",
+    "error": null,
+    "tested": true,
+    "matches": true
+  },
+  "assembly_sha256": "6405d12a22246cb0ca898046b73669ba69bd9b99ae71cdefa931f72348e5bc97",
+  "fixture_sha256": "7cf2a4e8e3b47f01ab3de94c8d3a6c5b1aa87b900071ae26689d6fa50d814209",
+  "scope": "Executes recovered CIL accessors directly in the installed .NET runtime against original ARM64 fixtures. Constructor bypass via uninitialized object and private field injection is explicit; class initialization can still block execution. No Windows game, original-runtime parity, constructor/static-initialization, UI or combat claim."
+}

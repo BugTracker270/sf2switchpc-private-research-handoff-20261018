@@ -1,0 +1,929 @@
+{
+  "status": "PASS_HOST_METADATA_OBSERVATION_WITH_CCTOR_CANARIES",
+  "checks": 60,
+  "failures": 0,
+  "tests": [
+    {
+      "name": "counter canaries begin uninitialized",
+      "passed": true
+    },
+    {
+      "name": "both canaries declare precise explicit type initializers",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-0 Byte[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-0 CountedElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-0 CountedElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-0 ThrowingElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-0 ThrowingElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "metadata queries do not run either .cctor, iteration 0",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-1 Byte[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-1 CountedElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-1 CountedElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-1 ThrowingElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-1 ThrowingElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "metadata queries do not run either .cctor, iteration 1",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-2 Byte[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-2 CountedElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-2 CountedElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-2 ThrowingElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-2 ThrowingElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "metadata queries do not run either .cctor, iteration 2",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-3 Byte[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-3 CountedElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-3 CountedElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-3 ThrowingElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-3 ThrowingElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "metadata queries do not run either .cctor, iteration 3",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-4 Byte[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-4 CountedElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-4 CountedElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-4 ThrowingElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-4 ThrowingElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "metadata queries do not run either .cctor, iteration 4",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-5 Byte[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-5 CountedElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-5 CountedElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-5 ThrowingElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-5 ThrowingElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "metadata queries do not run either .cctor, iteration 5",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-6 Byte[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-6 CountedElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-6 CountedElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-6 ThrowingElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-6 ThrowingElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "metadata queries do not run either .cctor, iteration 6",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-7 Byte[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-7 CountedElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-7 CountedElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-7 ThrowingElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "before-positive-control-7 ThrowingElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "metadata queries do not run either .cctor, iteration 7",
+      "passed": true
+    },
+    {
+      "name": "byte array has exact primitive/SZArray identity and no .cctor",
+      "passed": true
+    },
+    {
+      "name": "ready byte-array runtime supports real typed storage",
+      "passed": true
+    },
+    {
+      "name": "actual byte-array typed write/read",
+      "passed": true
+    },
+    {
+      "name": "explicit counted .cctor positive control runs once",
+      "passed": true
+    },
+    {
+      "name": "explicit throwing .cctor positive control fails with expected exception",
+      "passed": true
+    },
+    {
+      "name": "after-positive-control CountedElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "after-positive-control CountedElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "after-positive-control ThrowingElement metadata identity",
+      "passed": true
+    },
+    {
+      "name": "after-positive-control ThrowingElement[] metadata identity",
+      "passed": true
+    },
+    {
+      "name": "metadata observation after failed .cctor does not rerun or throw it",
+      "passed": true
+    }
+  ],
+  "observations": [
+    {
+      "phase": "before-positive-control-0",
+      "type": "System.Byte[]",
+      "exact_type_identity": true,
+      "element": "System.Byte",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-0",
+      "type": "CountedElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 1,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-0",
+      "type": "CountedElement[]",
+      "exact_type_identity": true,
+      "element": "CountedElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-0",
+      "type": "ThrowingElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 0,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-0",
+      "type": "ThrowingElement[]",
+      "exact_type_identity": true,
+      "element": "ThrowingElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-1",
+      "type": "System.Byte[]",
+      "exact_type_identity": true,
+      "element": "System.Byte",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-1",
+      "type": "CountedElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 1,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-1",
+      "type": "CountedElement[]",
+      "exact_type_identity": true,
+      "element": "CountedElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-1",
+      "type": "ThrowingElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 0,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-1",
+      "type": "ThrowingElement[]",
+      "exact_type_identity": true,
+      "element": "ThrowingElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-2",
+      "type": "System.Byte[]",
+      "exact_type_identity": true,
+      "element": "System.Byte",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-2",
+      "type": "CountedElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 1,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-2",
+      "type": "CountedElement[]",
+      "exact_type_identity": true,
+      "element": "CountedElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-2",
+      "type": "ThrowingElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 0,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-2",
+      "type": "ThrowingElement[]",
+      "exact_type_identity": true,
+      "element": "ThrowingElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-3",
+      "type": "System.Byte[]",
+      "exact_type_identity": true,
+      "element": "System.Byte",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-3",
+      "type": "CountedElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 1,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-3",
+      "type": "CountedElement[]",
+      "exact_type_identity": true,
+      "element": "CountedElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-3",
+      "type": "ThrowingElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 0,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-3",
+      "type": "ThrowingElement[]",
+      "exact_type_identity": true,
+      "element": "ThrowingElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-4",
+      "type": "System.Byte[]",
+      "exact_type_identity": true,
+      "element": "System.Byte",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-4",
+      "type": "CountedElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 1,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-4",
+      "type": "CountedElement[]",
+      "exact_type_identity": true,
+      "element": "CountedElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-4",
+      "type": "ThrowingElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 0,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-4",
+      "type": "ThrowingElement[]",
+      "exact_type_identity": true,
+      "element": "ThrowingElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-5",
+      "type": "System.Byte[]",
+      "exact_type_identity": true,
+      "element": "System.Byte",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-5",
+      "type": "CountedElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 1,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-5",
+      "type": "CountedElement[]",
+      "exact_type_identity": true,
+      "element": "CountedElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-5",
+      "type": "ThrowingElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 0,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-5",
+      "type": "ThrowingElement[]",
+      "exact_type_identity": true,
+      "element": "ThrowingElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-6",
+      "type": "System.Byte[]",
+      "exact_type_identity": true,
+      "element": "System.Byte",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-6",
+      "type": "CountedElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 1,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-6",
+      "type": "CountedElement[]",
+      "exact_type_identity": true,
+      "element": "CountedElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-6",
+      "type": "ThrowingElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 0,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-6",
+      "type": "ThrowingElement[]",
+      "exact_type_identity": true,
+      "element": "ThrowingElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-7",
+      "type": "System.Byte[]",
+      "exact_type_identity": true,
+      "element": "System.Byte",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-7",
+      "type": "CountedElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 1,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-7",
+      "type": "CountedElement[]",
+      "exact_type_identity": true,
+      "element": "CountedElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-7",
+      "type": "ThrowingElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 0,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "before-positive-control-7",
+      "type": "ThrowingElement[]",
+      "exact_type_identity": true,
+      "element": "ThrowingElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 0,
+      "throwing_cctor_runs": 0
+    },
+    {
+      "phase": "after-positive-control",
+      "type": "CountedElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 1,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 1,
+      "throwing_cctor_runs": 1
+    },
+    {
+      "phase": "after-positive-control",
+      "type": "CountedElement[]",
+      "exact_type_identity": true,
+      "element": "CountedElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 1,
+      "throwing_cctor_runs": 1
+    },
+    {
+      "phase": "after-positive-control",
+      "type": "ThrowingElement",
+      "exact_type_identity": true,
+      "element": null,
+      "base_type": "System.Object",
+      "rank": 0,
+      "IsSZArray": false,
+      "static_initializer_present": true,
+      "field_count": 0,
+      "method_count": 6,
+      "constructor_count": 2,
+      "counted_cctor_runs": 1,
+      "throwing_cctor_runs": 1
+    },
+    {
+      "phase": "after-positive-control",
+      "type": "ThrowingElement[]",
+      "exact_type_identity": true,
+      "element": "ThrowingElement",
+      "base_type": "System.Array",
+      "rank": 1,
+      "IsSZArray": true,
+      "static_initializer_present": false,
+      "field_count": 0,
+      "method_count": 58,
+      "constructor_count": 1,
+      "counted_cctor_runs": 1,
+      "throwing_cctor_runs": 1
+    }
+  ],
+  "metadata_observation_count": 44,
+  "pre_control_metadata_observations": 40,
+  "cctor_runs_before_positive_controls": {
+    "counted": 0,
+    "throwing": 0
+  },
+  "cctor_runs_after_positive_controls": {
+    "counted": 1,
+    "throwing": 1
+  },
+  "candidate_first_type": "System.Byte[]",
+  "candidate_translation_implemented": false,
+  "original_il2cpp_source_report_sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594",
+  "actual_runtime": ".NET 10.0.11",
+  "corelib_sha256": "ed80a1a5dd066c0407ad59686f9af90a4f3e55dbf3e4c973b53cc8c9d0706f82",
+  "probe_source_sha256": "c76037bea9b7a10701747e1ceae0cd12fefb5996b679ff09956d0bbd2b337ee6",
+  "core_built": false,
+  "core_edited": false,
+  "original_game_code_executed": false,
+  "scope": "BCL-only host CLR observations of typeof/TypeHandle/GetTypeFromHandle and reflection member metadata. Forty observations precede deliberate .cctor positive controls, including reference-element arrays and a throwing constructor. These APIs leave both canaries untouched; explicit RunClassConstructor is tested separately to prove the canaries. No native cold initialization, metadata helper replacement, production lowering, type-loader failure equivalence or game invocation is implemented."
+}

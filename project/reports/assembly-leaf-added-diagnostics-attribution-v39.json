@@ -1,0 +1,1207 @@
+{
+  "status": "PASS_SIX_ADDED_DIAGNOSTICS_EXPOSE_EXISTING_UNCHANGED_OPERATIONS",
+  "checks": 275,
+  "tests": [
+    {
+      "name": "original78checks and fresh27getter/two-constructor gates passed",
+      "passed": true
+    },
+    {
+      "name": "exact compiler source hash analysis/il2cpp/source-profile-project-build-nso-virtual-companion-copy-v38/Assembly-CSharp-firstpass/Unity/IO/Compression/CopyEncoder.cs",
+      "passed": true
+    },
+    {
+      "name": "exact compiler source hash analysis/il2cpp/source-profile-project-build-nso-virtual-companion-copy-v38/Assembly-CSharp-firstpass/BestHTTP/HTTPManager.cs",
+      "passed": true
+    },
+    {
+      "name": "exact compiler source hash analysis/il2cpp/source-profile-project-build-nso-virtual-companion-copy-v38/Assembly-CSharp-firstpass/Newtonsoft/Json/Serialization/JsonSerializerInternalReader.cs",
+      "passed": true
+    },
+    {
+      "name": "exact compiler source hash analysis/il2cpp/source-profile-project-build-nso-assembly-leaf-getter-v39/Assembly-CSharp-firstpass/Unity/IO/Compression/CopyEncoder.cs",
+      "passed": true
+    },
+    {
+      "name": "exact compiler source hash analysis/il2cpp/source-profile-project-build-nso-assembly-leaf-getter-v39/Assembly-CSharp-firstpass/BestHTTP/HTTPManager.cs",
+      "passed": true
+    },
+    {
+      "name": "exact compiler source hash analysis/il2cpp/source-profile-project-build-nso-assembly-leaf-getter-v39/Assembly-CSharp-firstpass/Newtonsoft/Json/Serialization/JsonSerializerInternalReader.cs",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen complete original opcode row count/shape unchanged",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen uses at least one newly accessible native-proven getter",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen exact original byte length and instruction offsets",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen every non-token byte including64bit operands preserved outside proven substitutions",
+      "passed": true
+    },
+    {
+      "name": "Unity.IO.Compression.CopyEncoder::WriteLenNLen original arithmetic/conversion opcodes and neighboring normalized operand rows retained",
+      "passed": true
+    },
+    {
+      "name": "BestHTTP.HTTPManager::FindOrCreateFreeConnection complete original opcode row count/shape unchanged",
+      "passed": true
+    },
+    {
+      "name": "BestHTTP.HTTPManager::FindOrCreateFreeConnection every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "BestHTTP.HTTPManager::FindOrCreateFreeConnection every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "BestHTTP.HTTPManager::FindOrCreateFreeConnection every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "BestHTTP.HTTPManager::FindOrCreateFreeConnection every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "BestHTTP.HTTPManager::FindOrCreateFreeConnection uses at least one newly accessible native-proven getter",
+      "passed": true
+    },
+    {
+      "name": "BestHTTP.HTTPManager::FindOrCreateFreeConnection exact original byte length and instruction offsets",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "BestHTTP.HTTPManager::FindOrCreateFreeConnection every non-token byte including64bit operands preserved outside proven substitutions",
+      "passed": true
+    },
+    {
+      "name": "BestHTTP.HTTPManager::FindOrCreateFreeConnection original arithmetic/conversion opcodes and neighboring normalized operand rows retained",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary complete original opcode row count/shape unchanged",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary every changed row is exact native-proven same-field internal getter",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary uses at least one newly accessible native-proven getter",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary exact original byte length and instruction offsets",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "exact one-byte field/call opcode substitution",
+      "passed": true
+    },
+    {
+      "name": "metadata-only operand has exact four-byte width",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary every non-token byte including64bit operands preserved outside proven substitutions",
+      "passed": true
+    },
+    {
+      "name": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader::PopulateDictionary original arithmetic/conversion opcodes and neighboring normalized operand rows retained",
+      "passed": true
+    },
+    {
+      "name": "all six added diagnostic occurrences and three owner methods accounted",
+      "passed": true
+    }
+  ],
+  "added_occurrences": 6,
+  "methods": [
+    {
+      "owner": "Unity.IO.Compression.CopyEncoder",
+      "method": "WriteLenNLen",
+      "added_occurrences": 4,
+      "code": "CS0019",
+      "message": "Operator \u0027\u002B\u0027 cannot be applied to operands of type \u0027byte[]\u0027 and \u0027int\u0027",
+      "after_locations": [
+        {
+          "line": 135,
+          "column": 13
+        },
+        {
+          "line": 145,
+          "column": 14
+        },
+        {
+          "line": 155,
+          "column": 14
+        },
+        {
+          "line": 165,
+          "column": 14
+        }
+      ],
+      "rows": 180,
+      "only_native_proven_field_to_getter_substitutions": 12,
+      "all_other_original_rows_and_shape_equal": true,
+      "raw_before_sha256": "e3c1950f403d1c7cae5638eb7330a816e3dd03df16ef8244229cb3e6daf39878",
+      "raw_after_sha256": "2db016e1498a8ca925de7d3bd31784c0069601608d34e58a676b0de60ec8212f",
+      "matched_metadata_operands": 24,
+      "changed_metadata_tokens": 12,
+      "all_other_raw_non_token_bytes_equal": true,
+      "original_add_rows_unchanged": 8,
+      "original_native_int_conversion_rows_unchanged": 0,
+      "classification": "Existing invalid original recovered operation newly diagnosed after its receiver field became accessible through the exact getter; no new arithmetic/cast/control/local instruction was introduced."
+    },
+    {
+      "owner": "BestHTTP.HTTPManager",
+      "method": "FindOrCreateFreeConnection",
+      "added_occurrences": 1,
+      "code": "CS0030",
+      "message": "Cannot convert type \u0027BestHTTP.HTTPProxy\u0027 to \u0027BestHTTP.HTTPConnectionStates\u0027",
+      "after_locations": [
+        {
+          "line": 1289,
+          "column": 53
+        }
+      ],
+      "rows": 630,
+      "only_native_proven_field_to_getter_substitutions": 4,
+      "all_other_original_rows_and_shape_equal": true,
+      "raw_before_sha256": "576884b21e296a34d914ff384d963b3077d5ce251b3404dde2ad259b7ca9bdf4",
+      "raw_after_sha256": "06ff30b900b60bbf020ae82282dc95685dbbd2ef6faa2c1ef80c6d057195b1eb",
+      "matched_metadata_operands": 100,
+      "changed_metadata_tokens": 18,
+      "all_other_raw_non_token_bytes_equal": true,
+      "original_add_rows_unchanged": 6,
+      "original_native_int_conversion_rows_unchanged": 15,
+      "classification": "Existing invalid original recovered operation newly diagnosed after its receiver field became accessible through the exact getter; no new arithmetic/cast/control/local instruction was introduced."
+    },
+    {
+      "owner": "Newtonsoft.Json.Serialization.JsonSerializerInternalReader",
+      "method": "PopulateDictionary",
+      "added_occurrences": 1,
+      "code": "CS0030",
+      "message": "Cannot convert type \u0027System.Type\u0027 to \u0027nint\u0027",
+      "after_locations": [
+        {
+          "line": 2452,
+          "column": 16
+        }
+      ],
+      "rows": 290,
+      "only_native_proven_field_to_getter_substitutions": 8,
+      "all_other_original_rows_and_shape_equal": true,
+      "raw_before_sha256": "379d5374fd091ab7614521decd969b6f72f93f92ec8260ff886bf814d34d1426",
+      "raw_after_sha256": "250433523fd072756b1bcd7bdcb76f9d9bae1b854e31a562d5208d3920b6f53d",
+      "matched_metadata_operands": 80,
+      "changed_metadata_tokens": 31,
+      "all_other_raw_non_token_bytes_equal": true,
+      "original_add_rows_unchanged": 1,
+      "original_native_int_conversion_rows_unchanged": 4,
+      "classification": "Existing invalid original recovered operation newly diagnosed after its receiver field became accessible through the exact getter; no new arithmetic/cast/control/local instruction was introduced."
+    }
+  ],
+  "fatal": null,
+  "source_sha256": "6b4f6ba42b496c39ef0500882d7b1d9bebfb6477fdd980fcd31c302a642593c4",
+  "source_input_sha256": "6a7e74504076cdfcb610aac97466b274bfa9fabd784f3a9e8d738ba7fa64327e",
+  "reused_infrastructure_dll_sha256": "25620af800ae7b19ea3f098e06fc21ef8363aaea4961f93df215bf9f77609f05",
+  "fresh_gate_report_sha256": "25dc9e161c85eca76b7d1495f19759ee36b5220875e6814215c2a1a3ee1c8484",
+  "canonical_delta_sha256": "a4f31d97e12e821b66267390d672f44274d63c27643fecc5617775ee6d2a57c0",
+  "private_cil": "analysis/reconstruction/assembly-leaf-v39/six-added-diagnostic-cil.json",
+  "private_cil_sha256": "45091ea6ca55ae607d48fbbfeea543f9e87ccf1252df20eb1bab7e01dce320b1",
+  "core_dependency_loaded": false,
+  "recovered_game_methods_invoked": 0,
+  "cil_modified": false,
+  "compiler_errors_repaired": false,
+  "full_clean_decompile_ready": false,
+  "scope": "Six canonical added firstpass diagnostics in exactly three original methods. Complete offline38\u219239 CIL compares normalized arg/local macros, branch row labels, metadata identities and full locals/pinning/InitLocals/MaxStack/EH/signature shape, allowing only selected native-proven private field-to-same-field internal getter replacements. Arithmetic/conversion instructions and every other operand/control row were already present. Their original invalid semantics remain unresolved; reduced accessibility errors do not imply complete compilation or behavioral parity."
+}

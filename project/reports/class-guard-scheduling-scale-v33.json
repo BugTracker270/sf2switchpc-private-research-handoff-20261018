@@ -1,0 +1,2919 @@
+{
+  "status": "PASS_FROZEN_V32_VS_V33_EXACT_FDE_STATIC_GUARD_CANDIDATE_SCAN",
+  "parsed_frame_records": 152904,
+  "unique_frame_starts": 152904,
+  "scanned_exact_frames": 152904,
+  "skipped_ambiguous_ranges": 0,
+  "skipped_outside_text_or_alignment": 0,
+  "skipped_over_64k": 0,
+  "known_helper": "0xB2E720",
+  "v32_candidates": 39586,
+  "v33_candidates": 39875,
+  "new_candidates": 289,
+  "removed_candidates": 0,
+  "added": [
+    {
+      "fde_rva": "0x1580",
+      "fde_bytes": 916,
+      "start": "0x17E0",
+      "call": "0x17F0",
+      "skip": "0x17F4",
+      "scheduled_32bit_read_addresses": [
+        "0x17DC"
+      ]
+    },
+    {
+      "fde_rva": "0x22580",
+      "fde_bytes": 356,
+      "start": "0x22628",
+      "call": "0x22638",
+      "skip": "0x2263C",
+      "scheduled_32bit_read_addresses": [
+        "0x22624"
+      ]
+    },
+    {
+      "fde_rva": "0x252D0",
+      "fde_bytes": 364,
+      "start": "0x2531C",
+      "call": "0x2532C",
+      "skip": "0x25334",
+      "scheduled_32bit_read_addresses": [
+        "0x25318"
+      ]
+    },
+    {
+      "fde_rva": "0xBA970",
+      "fde_bytes": 200,
+      "start": "0xBA9C8",
+      "call": "0xBA9D8",
+      "skip": "0xBA9DC",
+      "scheduled_32bit_read_addresses": [
+        "0xBA9C4"
+      ]
+    },
+    {
+      "fde_rva": "0xBACC0",
+      "fde_bytes": 200,
+      "start": "0xBAD18",
+      "call": "0xBAD28",
+      "skip": "0xBAD2C",
+      "scheduled_32bit_read_addresses": [
+        "0xBAD14"
+      ]
+    },
+    {
+      "fde_rva": "0xCE910",
+      "fde_bytes": 384,
+      "start": "0xCE9A8",
+      "call": "0xCE9B8",
+      "skip": "0xCE9BC",
+      "scheduled_32bit_read_addresses": [
+        "0xCE9A4"
+      ]
+    },
+    {
+      "fde_rva": "0xCEB80",
+      "fde_bytes": 384,
+      "start": "0xCEC18",
+      "call": "0xCEC28",
+      "skip": "0xCEC2C",
+      "scheduled_32bit_read_addresses": [
+        "0xCEC14"
+      ]
+    },
+    {
+      "fde_rva": "0xCF2D0",
+      "fde_bytes": 220,
+      "start": "0xCF31C",
+      "call": "0xCF32C",
+      "skip": "0xCF334",
+      "scheduled_32bit_read_addresses": [
+        "0xCF318"
+      ]
+    },
+    {
+      "fde_rva": "0xCF3B0",
+      "fde_bytes": 548,
+      "start": "0xCF4B8",
+      "call": "0xCF4C8",
+      "skip": "0xCF4CC",
+      "scheduled_32bit_read_addresses": [
+        "0xCF4B4"
+      ]
+    },
+    {
+      "fde_rva": "0xCF7B0",
+      "fde_bytes": 164,
+      "start": "0xCF820",
+      "call": "0xCF830",
+      "skip": "0xCF834",
+      "scheduled_32bit_read_addresses": [
+        "0xCF81C"
+      ]
+    },
+    {
+      "fde_rva": "0xCFD50",
+      "fde_bytes": 392,
+      "start": "0xCFDE8",
+      "call": "0xCFDF8",
+      "skip": "0xCFDFC",
+      "scheduled_32bit_read_addresses": [
+        "0xCFDE4"
+      ]
+    },
+    {
+      "fde_rva": "0xCFFD0",
+      "fde_bytes": 392,
+      "start": "0xD0068",
+      "call": "0xD0078",
+      "skip": "0xD007C",
+      "scheduled_32bit_read_addresses": [
+        "0xD0064"
+      ]
+    },
+    {
+      "fde_rva": "0xD0250",
+      "fde_bytes": 392,
+      "start": "0xD02E8",
+      "call": "0xD02F8",
+      "skip": "0xD02FC",
+      "scheduled_32bit_read_addresses": [
+        "0xD02E4"
+      ]
+    },
+    {
+      "fde_rva": "0xD0A50",
+      "fde_bytes": 240,
+      "start": "0xD0AA0",
+      "call": "0xD0AB0",
+      "skip": "0xD0AB8",
+      "scheduled_32bit_read_addresses": [
+        "0xD0A9C"
+      ]
+    },
+    {
+      "fde_rva": "0xD0B40",
+      "fde_bytes": 556,
+      "start": "0xD0C1C",
+      "call": "0xD0C2C",
+      "skip": "0xD0C30",
+      "scheduled_32bit_read_addresses": [
+        "0xD0C18"
+      ]
+    },
+    {
+      "fde_rva": "0xD0FA0",
+      "fde_bytes": 164,
+      "start": "0xD1010",
+      "call": "0xD1020",
+      "skip": "0xD1024",
+      "scheduled_32bit_read_addresses": [
+        "0xD100C"
+      ]
+    },
+    {
+      "fde_rva": "0x114630",
+      "fde_bytes": 200,
+      "start": "0x114678",
+      "call": "0x114688",
+      "skip": "0x11468C",
+      "scheduled_32bit_read_addresses": [
+        "0x114674"
+      ]
+    },
+    {
+      "fde_rva": "0x11BA20",
+      "fde_bytes": 432,
+      "start": "0x11BAB8",
+      "call": "0x11BAC8",
+      "skip": "0x11BACC",
+      "scheduled_32bit_read_addresses": [
+        "0x11BAB4"
+      ]
+    },
+    {
+      "fde_rva": "0x11BBD0",
+      "fde_bytes": 528,
+      "start": "0x11BC5C",
+      "call": "0x11BC6C",
+      "skip": "0x11BC70",
+      "scheduled_32bit_read_addresses": [
+        "0x11BC58"
+      ]
+    },
+    {
+      "fde_rva": "0x12C180",
+      "fde_bytes": 1672,
+      "start": "0x12C2C4",
+      "call": "0x12C2D4",
+      "skip": "0x12C2DC",
+      "scheduled_32bit_read_addresses": [
+        "0x12C2C0"
+      ]
+    },
+    {
+      "fde_rva": "0x14C5B0",
+      "fde_bytes": 356,
+      "start": "0x14C630",
+      "call": "0x14C640",
+      "skip": "0x14C644",
+      "scheduled_32bit_read_addresses": [
+        "0x14C62C"
+      ]
+    },
+    {
+      "fde_rva": "0x1660C0",
+      "fde_bytes": 1720,
+      "start": "0x1664F4",
+      "call": "0x166504",
+      "skip": "0x166508",
+      "scheduled_32bit_read_addresses": [
+        "0x1664F0"
+      ]
+    },
+    {
+      "fde_rva": "0x1660C0",
+      "fde_bytes": 1720,
+      "start": "0x1665B8",
+      "call": "0x1665C8",
+      "skip": "0x1665CC",
+      "scheduled_32bit_read_addresses": [
+        "0x1665B4"
+      ]
+    },
+    {
+      "fde_rva": "0x1660C0",
+      "fde_bytes": 1720,
+      "start": "0x166660",
+      "call": "0x166670",
+      "skip": "0x166674",
+      "scheduled_32bit_read_addresses": [
+        "0x16665C"
+      ]
+    },
+    {
+      "fde_rva": "0x1660C0",
+      "fde_bytes": 1720,
+      "start": "0x16670C",
+      "call": "0x16671C",
+      "skip": "0x166720",
+      "scheduled_32bit_read_addresses": [
+        "0x166708"
+      ]
+    },
+    {
+      "fde_rva": "0x18D5F0",
+      "fde_bytes": 164,
+      "start": "0x18D634",
+      "call": "0x18D644",
+      "skip": "0x18D648",
+      "scheduled_32bit_read_addresses": [
+        "0x18D630"
+      ]
+    },
+    {
+      "fde_rva": "0x1932B0",
+      "fde_bytes": 304,
+      "start": "0x1932F4",
+      "call": "0x193304",
+      "skip": "0x193308",
+      "scheduled_32bit_read_addresses": [
+        "0x1932F0"
+      ]
+    },
+    {
+      "fde_rva": "0x1B90D0",
+      "fde_bytes": 556,
+      "start": "0x1B91B0",
+      "call": "0x1B91C0",
+      "skip": "0x1B91C4",
+      "scheduled_32bit_read_addresses": [
+        "0x1B91AC"
+      ]
+    },
+    {
+      "fde_rva": "0x1B90D0",
+      "fde_bytes": 556,
+      "start": "0x1B928C",
+      "call": "0x1B929C",
+      "skip": "0x1B92A0",
+      "scheduled_32bit_read_addresses": [
+        "0x1B9288"
+      ]
+    },
+    {
+      "fde_rva": "0x1C6790",
+      "fde_bytes": 300,
+      "start": "0x1C6864",
+      "call": "0x1C6874",
+      "skip": "0x1C6878",
+      "scheduled_32bit_read_addresses": [
+        "0x1C6860"
+      ]
+    },
+    {
+      "fde_rva": "0x23A1E0",
+      "fde_bytes": 504,
+      "start": "0x23A2E0",
+      "call": "0x23A2F0",
+      "skip": "0x23A2F8",
+      "scheduled_32bit_read_addresses": [
+        "0x23A2DC"
+      ]
+    },
+    {
+      "fde_rva": "0x23A3E0",
+      "fde_bytes": 836,
+      "start": "0x23A45C",
+      "call": "0x23A46C",
+      "skip": "0x23A474",
+      "scheduled_32bit_read_addresses": [
+        "0x23A458"
+      ]
+    },
+    {
+      "fde_rva": "0x23A3E0",
+      "fde_bytes": 836,
+      "start": "0x23A6C4",
+      "call": "0x23A6D4",
+      "skip": "0x23A6DC",
+      "scheduled_32bit_read_addresses": [
+        "0x23A6C0"
+      ]
+    },
+    {
+      "fde_rva": "0x23A7E0",
+      "fde_bytes": 1692,
+      "start": "0x23A850",
+      "call": "0x23A860",
+      "skip": "0x23A868",
+      "scheduled_32bit_read_addresses": [
+        "0x23A84C"
+      ]
+    },
+    {
+      "fde_rva": "0x23A7E0",
+      "fde_bytes": 1692,
+      "start": "0x23AA40",
+      "call": "0x23AA50",
+      "skip": "0x23AA58",
+      "scheduled_32bit_read_addresses": [
+        "0x23AA3C",
+        "0x23AA38"
+      ]
+    },
+    {
+      "fde_rva": "0x23A7E0",
+      "fde_bytes": 1692,
+      "start": "0x23AA98",
+      "call": "0x23AAA8",
+      "skip": "0x23AAB0",
+      "scheduled_32bit_read_addresses": [
+        "0x23AA94"
+      ]
+    },
+    {
+      "fde_rva": "0x23B7A0",
+      "fde_bytes": 2020,
+      "start": "0x23B8F4",
+      "call": "0x23B904",
+      "skip": "0x23B90C",
+      "scheduled_32bit_read_addresses": [
+        "0x23B8F0"
+      ]
+    },
+    {
+      "fde_rva": "0x23B7A0",
+      "fde_bytes": 2020,
+      "start": "0x23BD70",
+      "call": "0x23BD80",
+      "skip": "0x23BD88",
+      "scheduled_32bit_read_addresses": [
+        "0x23BD68",
+        "0x23BD64"
+      ]
+    },
+    {
+      "fde_rva": "0x23C5D0",
+      "fde_bytes": 312,
+      "start": "0x23C618",
+      "call": "0x23C628",
+      "skip": "0x23C630",
+      "scheduled_32bit_read_addresses": [
+        "0x23C614"
+      ]
+    },
+    {
+      "fde_rva": "0x23C8F0",
+      "fde_bytes": 916,
+      "start": "0x23C94C",
+      "call": "0x23C95C",
+      "skip": "0x23C964",
+      "scheduled_32bit_read_addresses": [
+        "0x23C948"
+      ]
+    },
+    {
+      "fde_rva": "0x23CC90",
+      "fde_bytes": 2292,
+      "start": "0x23CCFC",
+      "call": "0x23CD0C",
+      "skip": "0x23CD14",
+      "scheduled_32bit_read_addresses": [
+        "0x23CCF8"
+      ]
+    },
+    {
+      "fde_rva": "0x23CC90",
+      "fde_bytes": 2292,
+      "start": "0x23CEC8",
+      "call": "0x23CED8",
+      "skip": "0x23CEE0",
+      "scheduled_32bit_read_addresses": [
+        "0x23CEC4"
+      ]
+    },
+    {
+      "fde_rva": "0x23CC90",
+      "fde_bytes": 2292,
+      "start": "0x23D1A4",
+      "call": "0x23D1B4",
+      "skip": "0x23D1BC",
+      "scheduled_32bit_read_addresses": [
+        "0x23D1A0"
+      ]
+    },
+    {
+      "fde_rva": "0x23CC90",
+      "fde_bytes": 2292,
+      "start": "0x23D31C",
+      "call": "0x23D32C",
+      "skip": "0x23D334",
+      "scheduled_32bit_read_addresses": [
+        "0x23D318"
+      ]
+    },
+    {
+      "fde_rva": "0x24A3C0",
+      "fde_bytes": 276,
+      "start": "0x24A44C",
+      "call": "0x24A45C",
+      "skip": "0x24A460",
+      "scheduled_32bit_read_addresses": [
+        "0x24A448"
+      ]
+    },
+    {
+      "fde_rva": "0x261720",
+      "fde_bytes": 232,
+      "start": "0x2617CC",
+      "call": "0x2617DC",
+      "skip": "0x2617E0",
+      "scheduled_32bit_read_addresses": [
+        "0x2617C8"
+      ]
+    },
+    {
+      "fde_rva": "0x265860",
+      "fde_bytes": 7784,
+      "start": "0x265A68",
+      "call": "0x265A78",
+      "skip": "0x265A80",
+      "scheduled_32bit_read_addresses": [
+        "0x265A64"
+      ]
+    },
+    {
+      "fde_rva": "0x3029B0",
+      "fde_bytes": 1608,
+      "start": "0x302CE8",
+      "call": "0x302CF8",
+      "skip": "0x302CFC",
+      "scheduled_32bit_read_addresses": [
+        "0x302CE4"
+      ]
+    },
+    {
+      "fde_rva": "0x337740",
+      "fde_bytes": 124,
+      "start": "0x337784",
+      "call": "0x337794",
+      "skip": "0x33779C",
+      "scheduled_32bit_read_addresses": [
+        "0x337780"
+      ]
+    },
+    {
+      "fde_rva": "0x3C7A20",
+      "fde_bytes": 368,
+      "start": "0x3C7B38",
+      "call": "0x3C7B48",
+      "skip": "0x3C7B4C",
+      "scheduled_32bit_read_addresses": [
+        "0x3C7B34"
+      ]
+    },
+    {
+      "fde_rva": "0x3DC4C0",
+      "fde_bytes": 132,
+      "start": "0x3DC50C",
+      "call": "0x3DC51C",
+      "skip": "0x3DC520",
+      "scheduled_32bit_read_addresses": [
+        "0x3DC508"
+      ]
+    },
+    {
+      "fde_rva": "0x3DC550",
+      "fde_bytes": 132,
+      "start": "0x3DC59C",
+      "call": "0x3DC5AC",
+      "skip": "0x3DC5B0",
+      "scheduled_32bit_read_addresses": [
+        "0x3DC598"
+      ]
+    },
+    {
+      "fde_rva": "0x3DC9F0",
+      "fde_bytes": 172,
+      "start": "0x3DCA74",
+      "call": "0x3DCA84",
+      "skip": "0x3DCA88",
+      "scheduled_32bit_read_addresses": [
+        "0x3DCA70"
+      ]
+    },
+    {
+      "fde_rva": "0x3E5F20",
+      "fde_bytes": 748,
+      "start": "0x3E6100",
+      "call": "0x3E6110",
+      "skip": "0x3E6114",
+      "scheduled_32bit_read_addresses": [
+        "0x3E60FC"
+      ]
+    },
+    {
+      "fde_rva": "0x3E5F20",
+      "fde_bytes": 748,
+      "start": "0x3E6160",
+      "call": "0x3E6170",
+      "skip": "0x3E6174",
+      "scheduled_32bit_read_addresses": [
+        "0x3E615C"
+      ]
+    },
+    {
+      "fde_rva": "0x3E5F20",
+      "fde_bytes": 748,
+      "start": "0x3E61C4",
+      "call": "0x3E61D4",
+      "skip": "0x3E61D8",
+      "scheduled_32bit_read_addresses": [
+        "0x3E61C0"
+      ]
+    },
+    {
+      "fde_rva": "0x3EA190",
+      "fde_bytes": 452,
+      "start": "0x3EA220",
+      "call": "0x3EA230",
+      "skip": "0x3EA234",
+      "scheduled_32bit_read_addresses": [
+        "0x3EA21C"
+      ]
+    },
+    {
+      "fde_rva": "0x3EC290",
+      "fde_bytes": 272,
+      "start": "0x3EC2DC",
+      "call": "0x3EC2EC",
+      "skip": "0x3EC2F0",
+      "scheduled_32bit_read_addresses": [
+        "0x3EC2D8"
+      ]
+    },
+    {
+      "fde_rva": "0x3EDB50",
+      "fde_bytes": 304,
+      "start": "0x3EDB9C",
+      "call": "0x3EDBAC",
+      "skip": "0x3EDBB0",
+      "scheduled_32bit_read_addresses": [
+        "0x3EDB98"
+      ]
+    },
+    {
+      "fde_rva": "0x3EDED0",
+      "fde_bytes": 256,
+      "start": "0x3EDF58",
+      "call": "0x3EDF68",
+      "skip": "0x3EDF6C",
+      "scheduled_32bit_read_addresses": [
+        "0x3EDF54"
+      ]
+    },
+    {
+      "fde_rva": "0x3FD5F0",
+      "fde_bytes": 280,
+      "start": "0x3FD684",
+      "call": "0x3FD694",
+      "skip": "0x3FD698",
+      "scheduled_32bit_read_addresses": [
+        "0x3FD680"
+      ]
+    },
+    {
+      "fde_rva": "0x3FD710",
+      "fde_bytes": 824,
+      "start": "0x3FD8D4",
+      "call": "0x3FD8E4",
+      "skip": "0x3FD8E8",
+      "scheduled_32bit_read_addresses": [
+        "0x3FD8D0"
+      ]
+    },
+    {
+      "fde_rva": "0x3FDCA0",
+      "fde_bytes": 352,
+      "start": "0x3FDD80",
+      "call": "0x3FDD90",
+      "skip": "0x3FDD94",
+      "scheduled_32bit_read_addresses": [
+        "0x3FDD7C"
+      ]
+    },
+    {
+      "fde_rva": "0x411640",
+      "fde_bytes": 400,
+      "start": "0x411730",
+      "call": "0x411740",
+      "skip": "0x411744",
+      "scheduled_32bit_read_addresses": [
+        "0x41172C"
+      ]
+    },
+    {
+      "fde_rva": "0x428D10",
+      "fde_bytes": 1672,
+      "start": "0x4292F4",
+      "call": "0x429304",
+      "skip": "0x42930C",
+      "scheduled_32bit_read_addresses": [
+        "0x4292F0"
+      ]
+    },
+    {
+      "fde_rva": "0x429410",
+      "fde_bytes": 124,
+      "start": "0x429458",
+      "call": "0x429468",
+      "skip": "0x429470",
+      "scheduled_32bit_read_addresses": [
+        "0x429454"
+      ]
+    },
+    {
+      "fde_rva": "0x429680",
+      "fde_bytes": 264,
+      "start": "0x4296CC",
+      "call": "0x4296DC",
+      "skip": "0x4296E4",
+      "scheduled_32bit_read_addresses": [
+        "0x4296C8"
+      ]
+    },
+    {
+      "fde_rva": "0x42B860",
+      "fde_bytes": 876,
+      "start": "0x42B8EC",
+      "call": "0x42B8FC",
+      "skip": "0x42B904",
+      "scheduled_32bit_read_addresses": [
+        "0x42B8E8"
+      ]
+    },
+    {
+      "fde_rva": "0x4C0570",
+      "fde_bytes": 672,
+      "start": "0x4C05E4",
+      "call": "0x4C05F4",
+      "skip": "0x4C05F8",
+      "scheduled_32bit_read_addresses": [
+        "0x4C05E0"
+      ]
+    },
+    {
+      "fde_rva": "0x4C0B20",
+      "fde_bytes": 1844,
+      "start": "0x4C0BA4",
+      "call": "0x4C0BB4",
+      "skip": "0x4C0BB8",
+      "scheduled_32bit_read_addresses": [
+        "0x4C0BA0"
+      ]
+    },
+    {
+      "fde_rva": "0x4C1260",
+      "fde_bytes": 1568,
+      "start": "0x4C12F8",
+      "call": "0x4C1308",
+      "skip": "0x4C130C",
+      "scheduled_32bit_read_addresses": [
+        "0x4C12F4"
+      ]
+    },
+    {
+      "fde_rva": "0x4CA9B0",
+      "fde_bytes": 560,
+      "start": "0x4CAA10",
+      "call": "0x4CAA20",
+      "skip": "0x4CAA28",
+      "scheduled_32bit_read_addresses": [
+        "0x4CAA0C"
+      ]
+    },
+    {
+      "fde_rva": "0x4CA9B0",
+      "fde_bytes": 560,
+      "start": "0x4CAB60",
+      "call": "0x4CAB70",
+      "skip": "0x4CAB78",
+      "scheduled_32bit_read_addresses": [
+        "0x4CAB5C"
+      ]
+    },
+    {
+      "fde_rva": "0x4D47F0",
+      "fde_bytes": 852,
+      "start": "0x4D4AE4",
+      "call": "0x4D4AF4",
+      "skip": "0x4D4AF8",
+      "scheduled_32bit_read_addresses": [
+        "0x4D4AE0"
+      ]
+    },
+    {
+      "fde_rva": "0x4F6B00",
+      "fde_bytes": 748,
+      "start": "0x4F6CB4",
+      "call": "0x4F6CC4",
+      "skip": "0x4F6CC8",
+      "scheduled_32bit_read_addresses": [
+        "0x4F6CB0"
+      ]
+    },
+    {
+      "fde_rva": "0x4F6B00",
+      "fde_bytes": 748,
+      "start": "0x4F6D4C",
+      "call": "0x4F6D5C",
+      "skip": "0x4F6D60",
+      "scheduled_32bit_read_addresses": [
+        "0x4F6D48"
+      ]
+    },
+    {
+      "fde_rva": "0x4F9870",
+      "fde_bytes": 668,
+      "start": "0x4F98E4",
+      "call": "0x4F98F4",
+      "skip": "0x4F98F8",
+      "scheduled_32bit_read_addresses": [
+        "0x4F98E0"
+      ]
+    },
+    {
+      "fde_rva": "0x4F9870",
+      "fde_bytes": 668,
+      "start": "0x4F992C",
+      "call": "0x4F993C",
+      "skip": "0x4F9940",
+      "scheduled_32bit_read_addresses": [
+        "0x4F9928"
+      ]
+    },
+    {
+      "fde_rva": "0x4FB300",
+      "fde_bytes": 796,
+      "start": "0x4FB35C",
+      "call": "0x4FB36C",
+      "skip": "0x4FB370",
+      "scheduled_32bit_read_addresses": [
+        "0x4FB358"
+      ]
+    },
+    {
+      "fde_rva": "0x538800",
+      "fde_bytes": 820,
+      "start": "0x5389D8",
+      "call": "0x5389E8",
+      "skip": "0x5389EC",
+      "scheduled_32bit_read_addresses": [
+        "0x5389D4"
+      ]
+    },
+    {
+      "fde_rva": "0x538DC0",
+      "fde_bytes": 1644,
+      "start": "0x539298",
+      "call": "0x5392A8",
+      "skip": "0x5392AC",
+      "scheduled_32bit_read_addresses": [
+        "0x539294"
+      ]
+    },
+    {
+      "fde_rva": "0x538DC0",
+      "fde_bytes": 1644,
+      "start": "0x5392D4",
+      "call": "0x5392E4",
+      "skip": "0x5392E8",
+      "scheduled_32bit_read_addresses": [
+        "0x5392D0"
+      ]
+    },
+    {
+      "fde_rva": "0x538DC0",
+      "fde_bytes": 1644,
+      "start": "0x539350",
+      "call": "0x539360",
+      "skip": "0x539364",
+      "scheduled_32bit_read_addresses": [
+        "0x53934C"
+      ]
+    },
+    {
+      "fde_rva": "0x538DC0",
+      "fde_bytes": 1644,
+      "start": "0x5393B4",
+      "call": "0x5393C4",
+      "skip": "0x5393C8",
+      "scheduled_32bit_read_addresses": [
+        "0x5393B0"
+      ]
+    },
+    {
+      "fde_rva": "0x547090",
+      "fde_bytes": 252,
+      "start": "0x5470E8",
+      "call": "0x5470F8",
+      "skip": "0x547100",
+      "scheduled_32bit_read_addresses": [
+        "0x5470E4"
+      ]
+    },
+    {
+      "fde_rva": "0x5BF830",
+      "fde_bytes": 1500,
+      "start": "0x5BF8D8",
+      "call": "0x5BF8E8",
+      "skip": "0x5BF8EC",
+      "scheduled_32bit_read_addresses": [
+        "0x5BF8D4"
+      ]
+    },
+    {
+      "fde_rva": "0x5BFE10",
+      "fde_bytes": 2052,
+      "start": "0x5BFEB8",
+      "call": "0x5BFEC8",
+      "skip": "0x5BFECC",
+      "scheduled_32bit_read_addresses": [
+        "0x5BFEB4"
+      ]
+    },
+    {
+      "fde_rva": "0x5C8930",
+      "fde_bytes": 388,
+      "start": "0x5C8A4C",
+      "call": "0x5C8A5C",
+      "skip": "0x5C8A60",
+      "scheduled_32bit_read_addresses": [
+        "0x5C8A48"
+      ]
+    },
+    {
+      "fde_rva": "0x66E700",
+      "fde_bytes": 956,
+      "start": "0x66E778",
+      "call": "0x66E788",
+      "skip": "0x66E78C",
+      "scheduled_32bit_read_addresses": [
+        "0x66E774"
+      ]
+    },
+    {
+      "fde_rva": "0x677B30",
+      "fde_bytes": 632,
+      "start": "0x677BE0",
+      "call": "0x677BF0",
+      "skip": "0x677BF4",
+      "scheduled_32bit_read_addresses": [
+        "0x677BDC"
+      ]
+    },
+    {
+      "fde_rva": "0x677B30",
+      "fde_bytes": 632,
+      "start": "0x677C88",
+      "call": "0x677C98",
+      "skip": "0x677C9C",
+      "scheduled_32bit_read_addresses": [
+        "0x677C84"
+      ]
+    },
+    {
+      "fde_rva": "0x677B30",
+      "fde_bytes": 632,
+      "start": "0x677D30",
+      "call": "0x677D40",
+      "skip": "0x677D44",
+      "scheduled_32bit_read_addresses": [
+        "0x677D2C"
+      ]
+    },
+    {
+      "fde_rva": "0x681210",
+      "fde_bytes": 388,
+      "start": "0x6812EC",
+      "call": "0x6812FC",
+      "skip": "0x681304",
+      "scheduled_32bit_read_addresses": [
+        "0x6812E8"
+      ]
+    },
+    {
+      "fde_rva": "0x6813A0",
+      "fde_bytes": 900,
+      "start": "0x68141C",
+      "call": "0x68142C",
+      "skip": "0x681434",
+      "scheduled_32bit_read_addresses": [
+        "0x681418"
+      ]
+    },
+    {
+      "fde_rva": "0x681830",
+      "fde_bytes": 1392,
+      "start": "0x6818A0",
+      "call": "0x6818B0",
+      "skip": "0x6818B8",
+      "scheduled_32bit_read_addresses": [
+        "0x68189C"
+      ]
+    },
+    {
+      "fde_rva": "0x681830",
+      "fde_bytes": 1392,
+      "start": "0x681A4C",
+      "call": "0x681A5C",
+      "skip": "0x681A64",
+      "scheduled_32bit_read_addresses": [
+        "0x681A48",
+        "0x681A44"
+      ]
+    },
+    {
+      "fde_rva": "0x681DA0",
+      "fde_bytes": 2252,
+      "start": "0x681E08",
+      "call": "0x681E18",
+      "skip": "0x681E20",
+      "scheduled_32bit_read_addresses": [
+        "0x681E04"
+      ]
+    },
+    {
+      "fde_rva": "0x682670",
+      "fde_bytes": 1524,
+      "start": "0x682728",
+      "call": "0x682738",
+      "skip": "0x682740",
+      "scheduled_32bit_read_addresses": [
+        "0x682724"
+      ]
+    },
+    {
+      "fde_rva": "0x682670",
+      "fde_bytes": 1524,
+      "start": "0x6828F8",
+      "call": "0x682908",
+      "skip": "0x682910",
+      "scheduled_32bit_read_addresses": [
+        "0x6828F4",
+        "0x6828F0"
+      ]
+    },
+    {
+      "fde_rva": "0x700560",
+      "fde_bytes": 212,
+      "start": "0x7005DC",
+      "call": "0x7005EC",
+      "skip": "0x7005F0",
+      "scheduled_32bit_read_addresses": [
+        "0x7005D8"
+      ]
+    },
+    {
+      "fde_rva": "0x700640",
+      "fde_bytes": 248,
+      "start": "0x7006C0",
+      "call": "0x7006D0",
+      "skip": "0x7006D4",
+      "scheduled_32bit_read_addresses": [
+        "0x7006BC"
+      ]
+    },
+    {
+      "fde_rva": "0x700740",
+      "fde_bytes": 228,
+      "start": "0x7007BC",
+      "call": "0x7007CC",
+      "skip": "0x7007D0",
+      "scheduled_32bit_read_addresses": [
+        "0x7007B8"
+      ]
+    },
+    {
+      "fde_rva": "0x700830",
+      "fde_bytes": 228,
+      "start": "0x7008AC",
+      "call": "0x7008BC",
+      "skip": "0x7008C0",
+      "scheduled_32bit_read_addresses": [
+        "0x7008A8"
+      ]
+    },
+    {
+      "fde_rva": "0x712E80",
+      "fde_bytes": 3664,
+      "start": "0x713698",
+      "call": "0x7136A8",
+      "skip": "0x7136B0",
+      "scheduled_32bit_read_addresses": [
+        "0x713694"
+      ]
+    },
+    {
+      "fde_rva": "0x712E80",
+      "fde_bytes": 3664,
+      "start": "0x713B18",
+      "call": "0x713B28",
+      "skip": "0x713B30",
+      "scheduled_32bit_read_addresses": [
+        "0x713B14"
+      ]
+    },
+    {
+      "fde_rva": "0x72B560",
+      "fde_bytes": 868,
+      "start": "0x72B6BC",
+      "call": "0x72B6CC",
+      "skip": "0x72B6D0",
+      "scheduled_32bit_read_addresses": [
+        "0x72B6B8"
+      ]
+    },
+    {
+      "fde_rva": "0x72C900",
+      "fde_bytes": 532,
+      "start": "0x72CA6C",
+      "call": "0x72CA7C",
+      "skip": "0x72CA80",
+      "scheduled_32bit_read_addresses": [
+        "0x72CA68"
+      ]
+    },
+    {
+      "fde_rva": "0x72E480",
+      "fde_bytes": 3756,
+      "start": "0x72F210",
+      "call": "0x72F220",
+      "skip": "0x72F224",
+      "scheduled_32bit_read_addresses": [
+        "0x72F20C"
+      ]
+    },
+    {
+      "fde_rva": "0x7467D0",
+      "fde_bytes": 6476,
+      "start": "0x746C74",
+      "call": "0x746C84",
+      "skip": "0x746C88",
+      "scheduled_32bit_read_addresses": [
+        "0x746C70"
+      ]
+    },
+    {
+      "fde_rva": "0x74E610",
+      "fde_bytes": 1344,
+      "start": "0x74EB00",
+      "call": "0x74EB10",
+      "skip": "0x74EB14",
+      "scheduled_32bit_read_addresses": [
+        "0x74EAFC"
+      ]
+    },
+    {
+      "fde_rva": "0x7571D0",
+      "fde_bytes": 2296,
+      "start": "0x757744",
+      "call": "0x757754",
+      "skip": "0x757758",
+      "scheduled_32bit_read_addresses": [
+        "0x757740"
+      ]
+    },
+    {
+      "fde_rva": "0x7571D0",
+      "fde_bytes": 2296,
+      "start": "0x757938",
+      "call": "0x757948",
+      "skip": "0x75794C",
+      "scheduled_32bit_read_addresses": [
+        "0x757934"
+      ]
+    },
+    {
+      "fde_rva": "0x75FC40",
+      "fde_bytes": 380,
+      "start": "0x75FD54",
+      "call": "0x75FD64",
+      "skip": "0x75FD6C",
+      "scheduled_32bit_read_addresses": [
+        "0x75FD50"
+      ]
+    },
+    {
+      "fde_rva": "0x78AEB0",
+      "fde_bytes": 1972,
+      "start": "0x78B490",
+      "call": "0x78B4A0",
+      "skip": "0x78B4A4",
+      "scheduled_32bit_read_addresses": [
+        "0x78B48C"
+      ]
+    },
+    {
+      "fde_rva": "0x78AEB0",
+      "fde_bytes": 1972,
+      "start": "0x78B56C",
+      "call": "0x78B57C",
+      "skip": "0x78B580",
+      "scheduled_32bit_read_addresses": [
+        "0x78B568"
+      ]
+    },
+    {
+      "fde_rva": "0x78AEB0",
+      "fde_bytes": 1972,
+      "start": "0x78B59C",
+      "call": "0x78B5AC",
+      "skip": "0x78B5B0",
+      "scheduled_32bit_read_addresses": [
+        "0x78B598"
+      ]
+    },
+    {
+      "fde_rva": "0x78AEB0",
+      "fde_bytes": 1972,
+      "start": "0x78B5CC",
+      "call": "0x78B5DC",
+      "skip": "0x78B5E0",
+      "scheduled_32bit_read_addresses": [
+        "0x78B5C8"
+      ]
+    },
+    {
+      "fde_rva": "0x7A8220",
+      "fde_bytes": 212,
+      "start": "0x7A826C",
+      "call": "0x7A827C",
+      "skip": "0x7A8284",
+      "scheduled_32bit_read_addresses": [
+        "0x7A8268"
+      ]
+    },
+    {
+      "fde_rva": "0x7A8E00",
+      "fde_bytes": 284,
+      "start": "0x7A8E50",
+      "call": "0x7A8E60",
+      "skip": "0x7A8E68",
+      "scheduled_32bit_read_addresses": [
+        "0x7A8E4C"
+      ]
+    },
+    {
+      "fde_rva": "0x7AB300",
+      "fde_bytes": 492,
+      "start": "0x7AB3F4",
+      "call": "0x7AB404",
+      "skip": "0x7AB408",
+      "scheduled_32bit_read_addresses": [
+        "0x7AB3F0"
+      ]
+    },
+    {
+      "fde_rva": "0x7AB4F0",
+      "fde_bytes": 1016,
+      "start": "0x7AB54C",
+      "call": "0x7AB55C",
+      "skip": "0x7AB564",
+      "scheduled_32bit_read_addresses": [
+        "0x7AB548"
+      ]
+    },
+    {
+      "fde_rva": "0x7AC520",
+      "fde_bytes": 492,
+      "start": "0x7AC614",
+      "call": "0x7AC624",
+      "skip": "0x7AC628",
+      "scheduled_32bit_read_addresses": [
+        "0x7AC610"
+      ]
+    },
+    {
+      "fde_rva": "0x7AD4D0",
+      "fde_bytes": 508,
+      "start": "0x7AD5C4",
+      "call": "0x7AD5D4",
+      "skip": "0x7AD5D8",
+      "scheduled_32bit_read_addresses": [
+        "0x7AD5C0"
+      ]
+    },
+    {
+      "fde_rva": "0x7B0310",
+      "fde_bytes": 248,
+      "start": "0x7B0360",
+      "call": "0x7B0370",
+      "skip": "0x7B0378",
+      "scheduled_32bit_read_addresses": [
+        "0x7B035C"
+      ]
+    },
+    {
+      "fde_rva": "0x7B3E30",
+      "fde_bytes": 284,
+      "start": "0x7B3E80",
+      "call": "0x7B3E90",
+      "skip": "0x7B3E98",
+      "scheduled_32bit_read_addresses": [
+        "0x7B3E7C"
+      ]
+    },
+    {
+      "fde_rva": "0x7FAC10",
+      "fde_bytes": 124,
+      "start": "0x7FAC54",
+      "call": "0x7FAC64",
+      "skip": "0x7FAC6C",
+      "scheduled_32bit_read_addresses": [
+        "0x7FAC50"
+      ]
+    },
+    {
+      "fde_rva": "0x829CB0",
+      "fde_bytes": 1428,
+      "start": "0x829D54",
+      "call": "0x829D64",
+      "skip": "0x829D68",
+      "scheduled_32bit_read_addresses": [
+        "0x829D50"
+      ]
+    },
+    {
+      "fde_rva": "0x837080",
+      "fde_bytes": 312,
+      "start": "0x837170",
+      "call": "0x837180",
+      "skip": "0x837188",
+      "scheduled_32bit_read_addresses": [
+        "0x83716C"
+      ]
+    },
+    {
+      "fde_rva": "0x83A9E0",
+      "fde_bytes": 2676,
+      "start": "0x83B32C",
+      "call": "0x83B33C",
+      "skip": "0x83B340",
+      "scheduled_32bit_read_addresses": [
+        "0x83B328"
+      ]
+    },
+    {
+      "fde_rva": "0x83C240",
+      "fde_bytes": 204,
+      "start": "0x83C2C4",
+      "call": "0x83C2D4",
+      "skip": "0x83C2D8",
+      "scheduled_32bit_read_addresses": [
+        "0x83C2C0"
+      ]
+    },
+    {
+      "fde_rva": "0x83C9A0",
+      "fde_bytes": 324,
+      "start": "0x83CA90",
+      "call": "0x83CAA0",
+      "skip": "0x83CAA8",
+      "scheduled_32bit_read_addresses": [
+        "0x83CA8C"
+      ]
+    },
+    {
+      "fde_rva": "0x83DE80",
+      "fde_bytes": 2856,
+      "start": "0x83E71C",
+      "call": "0x83E72C",
+      "skip": "0x83E730",
+      "scheduled_32bit_read_addresses": [
+        "0x83E718"
+      ]
+    },
+    {
+      "fde_rva": "0x83EBF0",
+      "fde_bytes": 560,
+      "start": "0x83EDD0",
+      "call": "0x83EDE0",
+      "skip": "0x83EDE4",
+      "scheduled_32bit_read_addresses": [
+        "0x83EDCC"
+      ]
+    },
+    {
+      "fde_rva": "0x83F2E0",
+      "fde_bytes": 500,
+      "start": "0x83F40C",
+      "call": "0x83F41C",
+      "skip": "0x83F420",
+      "scheduled_32bit_read_addresses": [
+        "0x83F408"
+      ]
+    },
+    {
+      "fde_rva": "0x840910",
+      "fde_bytes": 592,
+      "start": "0x840A60",
+      "call": "0x840A70",
+      "skip": "0x840A74",
+      "scheduled_32bit_read_addresses": [
+        "0x840A5C"
+      ]
+    },
+    {
+      "fde_rva": "0x8413C0",
+      "fde_bytes": 704,
+      "start": "0x8414EC",
+      "call": "0x8414FC",
+      "skip": "0x841500",
+      "scheduled_32bit_read_addresses": [
+        "0x8414E8"
+      ]
+    },
+    {
+      "fde_rva": "0x8413C0",
+      "fde_bytes": 704,
+      "start": "0x841564",
+      "call": "0x841574",
+      "skip": "0x841578",
+      "scheduled_32bit_read_addresses": [
+        "0x841560"
+      ]
+    },
+    {
+      "fde_rva": "0x8413C0",
+      "fde_bytes": 704,
+      "start": "0x841618",
+      "call": "0x841628",
+      "skip": "0x84162C",
+      "scheduled_32bit_read_addresses": [
+        "0x841614"
+      ]
+    },
+    {
+      "fde_rva": "0x841B20",
+      "fde_bytes": 896,
+      "start": "0x841E4C",
+      "call": "0x841E5C",
+      "skip": "0x841E60",
+      "scheduled_32bit_read_addresses": [
+        "0x841E48"
+      ]
+    },
+    {
+      "fde_rva": "0x841EA0",
+      "fde_bytes": 764,
+      "start": "0x842124",
+      "call": "0x842134",
+      "skip": "0x842138",
+      "scheduled_32bit_read_addresses": [
+        "0x842120"
+      ]
+    },
+    {
+      "fde_rva": "0x842300",
+      "fde_bytes": 668,
+      "start": "0x842468",
+      "call": "0x842478",
+      "skip": "0x84247C",
+      "scheduled_32bit_read_addresses": [
+        "0x842464"
+      ]
+    },
+    {
+      "fde_rva": "0x876FE0",
+      "fde_bytes": 252,
+      "start": "0x87702C",
+      "call": "0x87703C",
+      "skip": "0x877040",
+      "scheduled_32bit_read_addresses": [
+        "0x877028"
+      ]
+    },
+    {
+      "fde_rva": "0x8EEA50",
+      "fde_bytes": 784,
+      "start": "0x8EEC2C",
+      "call": "0x8EEC3C",
+      "skip": "0x8EEC40",
+      "scheduled_32bit_read_addresses": [
+        "0x8EEC28"
+      ]
+    },
+    {
+      "fde_rva": "0x8EEA50",
+      "fde_bytes": 784,
+      "start": "0x8EECA0",
+      "call": "0x8EECB0",
+      "skip": "0x8EECB4",
+      "scheduled_32bit_read_addresses": [
+        "0x8EEC9C"
+      ]
+    },
+    {
+      "fde_rva": "0x8EED60",
+      "fde_bytes": 220,
+      "start": "0x8EEDEC",
+      "call": "0x8EEDFC",
+      "skip": "0x8EEE00",
+      "scheduled_32bit_read_addresses": [
+        "0x8EEDE8"
+      ]
+    },
+    {
+      "fde_rva": "0x8EF0E0",
+      "fde_bytes": 364,
+      "start": "0x8EF1A8",
+      "call": "0x8EF1B8",
+      "skip": "0x8EF1BC",
+      "scheduled_32bit_read_addresses": [
+        "0x8EF1A4"
+      ]
+    },
+    {
+      "fde_rva": "0x8EF250",
+      "fde_bytes": 400,
+      "start": "0x8EF33C",
+      "call": "0x8EF34C",
+      "skip": "0x8EF350",
+      "scheduled_32bit_read_addresses": [
+        "0x8EF338"
+      ]
+    },
+    {
+      "fde_rva": "0x8EFA70",
+      "fde_bytes": 384,
+      "start": "0x8EFB58",
+      "call": "0x8EFB68",
+      "skip": "0x8EFB6C",
+      "scheduled_32bit_read_addresses": [
+        "0x8EFB54"
+      ]
+    },
+    {
+      "fde_rva": "0x8EFBF0",
+      "fde_bytes": 296,
+      "start": "0x8EFCAC",
+      "call": "0x8EFCBC",
+      "skip": "0x8EFCC0",
+      "scheduled_32bit_read_addresses": [
+        "0x8EFCA8"
+      ]
+    },
+    {
+      "fde_rva": "0x90D020",
+      "fde_bytes": 7784,
+      "start": "0x90D228",
+      "call": "0x90D238",
+      "skip": "0x90D240",
+      "scheduled_32bit_read_addresses": [
+        "0x90D224"
+      ]
+    },
+    {
+      "fde_rva": "0x9FF4F0",
+      "fde_bytes": 1708,
+      "start": "0x9FF7B4",
+      "call": "0x9FF7C4",
+      "skip": "0x9FF7C8",
+      "scheduled_32bit_read_addresses": [
+        "0x9FF7B0"
+      ]
+    },
+    {
+      "fde_rva": "0xA01240",
+      "fde_bytes": 1296,
+      "start": "0xA015F4",
+      "call": "0xA01604",
+      "skip": "0xA01608",
+      "scheduled_32bit_read_addresses": [
+        "0xA015F0"
+      ]
+    },
+    {
+      "fde_rva": "0xA01B20",
+      "fde_bytes": 1608,
+      "start": "0xA01BA0",
+      "call": "0xA01BB0",
+      "skip": "0xA01BB4",
+      "scheduled_32bit_read_addresses": [
+        "0xA01B9C"
+      ]
+    },
+    {
+      "fde_rva": "0xA05300",
+      "fde_bytes": 432,
+      "start": "0xA053E4",
+      "call": "0xA053F4",
+      "skip": "0xA053F8",
+      "scheduled_32bit_read_addresses": [
+        "0xA053E0"
+      ]
+    },
+    {
+      "fde_rva": "0xA15760",
+      "fde_bytes": 596,
+      "start": "0xA157CC",
+      "call": "0xA157DC",
+      "skip": "0xA157E0",
+      "scheduled_32bit_read_addresses": [
+        "0xA157C8"
+      ]
+    },
+    {
+      "fde_rva": "0xA1D160",
+      "fde_bytes": 1340,
+      "start": "0xA1D2DC",
+      "call": "0xA1D2EC",
+      "skip": "0xA1D2F0",
+      "scheduled_32bit_read_addresses": [
+        "0xA1D2D8"
+      ]
+    },
+    {
+      "fde_rva": "0xA26830",
+      "fde_bytes": 580,
+      "start": "0xA269AC",
+      "call": "0xA269BC",
+      "skip": "0xA269C0",
+      "scheduled_32bit_read_addresses": [
+        "0xA269A8"
+      ]
+    },
+    {
+      "fde_rva": "0xA2E1B0",
+      "fde_bytes": 492,
+      "start": "0xA2E2AC",
+      "call": "0xA2E2BC",
+      "skip": "0xA2E2C4",
+      "scheduled_32bit_read_addresses": [
+        "0xA2E2A8"
+      ]
+    },
+    {
+      "fde_rva": "0xA2E3A0",
+      "fde_bytes": 832,
+      "start": "0xA2E41C",
+      "call": "0xA2E42C",
+      "skip": "0xA2E434",
+      "scheduled_32bit_read_addresses": [
+        "0xA2E418"
+      ]
+    },
+    {
+      "fde_rva": "0xA2E3A0",
+      "fde_bytes": 832,
+      "start": "0xA2E680",
+      "call": "0xA2E690",
+      "skip": "0xA2E698",
+      "scheduled_32bit_read_addresses": [
+        "0xA2E67C"
+      ]
+    },
+    {
+      "fde_rva": "0xA2E790",
+      "fde_bytes": 264,
+      "start": "0xA2E818",
+      "call": "0xA2E828",
+      "skip": "0xA2E82C",
+      "scheduled_32bit_read_addresses": [
+        "0xA2E814"
+      ]
+    },
+    {
+      "fde_rva": "0xA2E8A0",
+      "fde_bytes": 1684,
+      "start": "0xA2E910",
+      "call": "0xA2E920",
+      "skip": "0xA2E928",
+      "scheduled_32bit_read_addresses": [
+        "0xA2E90C"
+      ]
+    },
+    {
+      "fde_rva": "0xA2E8A0",
+      "fde_bytes": 1684,
+      "start": "0xA2EB00",
+      "call": "0xA2EB10",
+      "skip": "0xA2EB18",
+      "scheduled_32bit_read_addresses": [
+        "0xA2EAFC",
+        "0xA2EAF8"
+      ]
+    },
+    {
+      "fde_rva": "0xA2E8A0",
+      "fde_bytes": 1684,
+      "start": "0xA2EB58",
+      "call": "0xA2EB68",
+      "skip": "0xA2EB70",
+      "scheduled_32bit_read_addresses": [
+        "0xA2EB54"
+      ]
+    },
+    {
+      "fde_rva": "0xA2F860",
+      "fde_bytes": 2008,
+      "start": "0xA2F9B0",
+      "call": "0xA2F9C0",
+      "skip": "0xA2F9C8",
+      "scheduled_32bit_read_addresses": [
+        "0xA2F9AC"
+      ]
+    },
+    {
+      "fde_rva": "0xA2F860",
+      "fde_bytes": 2008,
+      "start": "0xA2FE28",
+      "call": "0xA2FE38",
+      "skip": "0xA2FE40",
+      "scheduled_32bit_read_addresses": [
+        "0xA2FE20",
+        "0xA2FE1C"
+      ]
+    },
+    {
+      "fde_rva": "0xA30550",
+      "fde_bytes": 2280,
+      "start": "0xA305BC",
+      "call": "0xA305CC",
+      "skip": "0xA305D4",
+      "scheduled_32bit_read_addresses": [
+        "0xA305B8"
+      ]
+    },
+    {
+      "fde_rva": "0xA30550",
+      "fde_bytes": 2280,
+      "start": "0xA30788",
+      "call": "0xA30798",
+      "skip": "0xA307A0",
+      "scheduled_32bit_read_addresses": [
+        "0xA30784"
+      ]
+    },
+    {
+      "fde_rva": "0xA30550",
+      "fde_bytes": 2280,
+      "start": "0xA30A60",
+      "call": "0xA30A70",
+      "skip": "0xA30A78",
+      "scheduled_32bit_read_addresses": [
+        "0xA30A5C"
+      ]
+    },
+    {
+      "fde_rva": "0xA30550",
+      "fde_bytes": 2280,
+      "start": "0xA30BD8",
+      "call": "0xA30BE8",
+      "skip": "0xA30BF0",
+      "scheduled_32bit_read_addresses": [
+        "0xA30BD4"
+      ]
+    },
+    {
+      "fde_rva": "0xA5A160",
+      "fde_bytes": 796,
+      "start": "0xA5A350",
+      "call": "0xA5A360",
+      "skip": "0xA5A368",
+      "scheduled_32bit_read_addresses": [
+        "0xA5A34C"
+      ]
+    },
+    {
+      "fde_rva": "0xA5A160",
+      "fde_bytes": 796,
+      "start": "0xA5A3A4",
+      "call": "0xA5A3B4",
+      "skip": "0xA5A3BC",
+      "scheduled_32bit_read_addresses": [
+        "0xA5A3A0"
+      ]
+    },
+    {
+      "fde_rva": "0xA5A160",
+      "fde_bytes": 796,
+      "start": "0xA5A3F0",
+      "call": "0xA5A400",
+      "skip": "0xA5A408",
+      "scheduled_32bit_read_addresses": [
+        "0xA5A3EC"
+      ]
+    },
+    {
+      "fde_rva": "0xA5A160",
+      "fde_bytes": 796,
+      "start": "0xA5A444",
+      "call": "0xA5A454",
+      "skip": "0xA5A45C",
+      "scheduled_32bit_read_addresses": [
+        "0xA5A440"
+      ]
+    },
+    {
+      "fde_rva": "0xA61720",
+      "fde_bytes": 2240,
+      "start": "0xA619D0",
+      "call": "0xA619E0",
+      "skip": "0xA619E4",
+      "scheduled_32bit_read_addresses": [
+        "0xA619CC"
+      ]
+    },
+    {
+      "fde_rva": "0xA68060",
+      "fde_bytes": 332,
+      "start": "0xA680BC",
+      "call": "0xA680CC",
+      "skip": "0xA680D4",
+      "scheduled_32bit_read_addresses": [
+        "0xA680B8"
+      ]
+    },
+    {
+      "fde_rva": "0xA6E7A0",
+      "fde_bytes": 704,
+      "start": "0xA6E89C",
+      "call": "0xA6E8AC",
+      "skip": "0xA6E8B0",
+      "scheduled_32bit_read_addresses": [
+        "0xA6E898"
+      ]
+    },
+    {
+      "fde_rva": "0xA6EA60",
+      "fde_bytes": 876,
+      "start": "0xA6ED3C",
+      "call": "0xA6ED4C",
+      "skip": "0xA6ED50",
+      "scheduled_32bit_read_addresses": [
+        "0xA6ED38"
+      ]
+    },
+    {
+      "fde_rva": "0xA6EDD0",
+      "fde_bytes": 2688,
+      "start": "0xA6EFC4",
+      "call": "0xA6EFD4",
+      "skip": "0xA6EFD8",
+      "scheduled_32bit_read_addresses": [
+        "0xA6EFC0"
+      ]
+    },
+    {
+      "fde_rva": "0xA769F0",
+      "fde_bytes": 1452,
+      "start": "0xA76E04",
+      "call": "0xA76E14",
+      "skip": "0xA76E18",
+      "scheduled_32bit_read_addresses": [
+        "0xA76E00"
+      ]
+    },
+    {
+      "fde_rva": "0xA76FB0",
+      "fde_bytes": 2496,
+      "start": "0xA77610",
+      "call": "0xA77620",
+      "skip": "0xA77624",
+      "scheduled_32bit_read_addresses": [
+        "0xA7760C"
+      ]
+    },
+    {
+      "fde_rva": "0xA78B50",
+      "fde_bytes": 1364,
+      "start": "0xA78D44",
+      "call": "0xA78D54",
+      "skip": "0xA78D58",
+      "scheduled_32bit_read_addresses": [
+        "0xA78D40"
+      ]
+    },
+    {
+      "fde_rva": "0xA79F20",
+      "fde_bytes": 892,
+      "start": "0xA79F88",
+      "call": "0xA79F98",
+      "skip": "0xA79F9C",
+      "scheduled_32bit_read_addresses": [
+        "0xA79F84"
+      ]
+    },
+    {
+      "fde_rva": "0xA7A2A0",
+      "fde_bytes": 1240,
+      "start": "0xA7A454",
+      "call": "0xA7A464",
+      "skip": "0xA7A468",
+      "scheduled_32bit_read_addresses": [
+        "0xA7A450"
+      ]
+    },
+    {
+      "fde_rva": "0xA7A2A0",
+      "fde_bytes": 1240,
+      "start": "0xA7A660",
+      "call": "0xA7A670",
+      "skip": "0xA7A674",
+      "scheduled_32bit_read_addresses": [
+        "0xA7A65C"
+      ]
+    },
+    {
+      "fde_rva": "0xA7EFA0",
+      "fde_bytes": 136,
+      "start": "0xA7EFF0",
+      "call": "0xA7F000",
+      "skip": "0xA7F004",
+      "scheduled_32bit_read_addresses": [
+        "0xA7EFEC"
+      ]
+    },
+    {
+      "fde_rva": "0xAB3480",
+      "fde_bytes": 556,
+      "start": "0xAB3560",
+      "call": "0xAB3570",
+      "skip": "0xAB3574",
+      "scheduled_32bit_read_addresses": [
+        "0xAB355C"
+      ]
+    },
+    {
+      "fde_rva": "0xAB3480",
+      "fde_bytes": 556,
+      "start": "0xAB363C",
+      "call": "0xAB364C",
+      "skip": "0xAB3650",
+      "scheduled_32bit_read_addresses": [
+        "0xAB3638"
+      ]
+    },
+    {
+      "fde_rva": "0xB00170",
+      "fde_bytes": 192,
+      "start": "0xB001B8",
+      "call": "0xB001C8",
+      "skip": "0xB001CC",
+      "scheduled_32bit_read_addresses": [
+        "0xB001B4"
+      ]
+    },
+    {
+      "fde_rva": "0xB00230",
+      "fde_bytes": 192,
+      "start": "0xB00278",
+      "call": "0xB00288",
+      "skip": "0xB0028C",
+      "scheduled_32bit_read_addresses": [
+        "0xB00274"
+      ]
+    },
+    {
+      "fde_rva": "0xB002F0",
+      "fde_bytes": 524,
+      "start": "0xB00360",
+      "call": "0xB00370",
+      "skip": "0xB00374",
+      "scheduled_32bit_read_addresses": [
+        "0xB0035C"
+      ]
+    },
+    {
+      "fde_rva": "0xB002F0",
+      "fde_bytes": 524,
+      "start": "0xB00428",
+      "call": "0xB00438",
+      "skip": "0xB0043C",
+      "scheduled_32bit_read_addresses": [
+        "0xB00424"
+      ]
+    },
+    {
+      "fde_rva": "0xB00510",
+      "fde_bytes": 516,
+      "start": "0xB005BC",
+      "call": "0xB005CC",
+      "skip": "0xB005D0",
+      "scheduled_32bit_read_addresses": [
+        "0xB005B8"
+      ]
+    },
+    {
+      "fde_rva": "0xB00510",
+      "fde_bytes": 516,
+      "start": "0xB00684",
+      "call": "0xB00694",
+      "skip": "0xB00698",
+      "scheduled_32bit_read_addresses": [
+        "0xB00680"
+      ]
+    },
+    {
+      "fde_rva": "0xB01A50",
+      "fde_bytes": 188,
+      "start": "0xB01A94",
+      "call": "0xB01AA4",
+      "skip": "0xB01AA8",
+      "scheduled_32bit_read_addresses": [
+        "0xB01A90"
+      ]
+    },
+    {
+      "fde_rva": "0xB01B10",
+      "fde_bytes": 188,
+      "start": "0xB01B54",
+      "call": "0xB01B64",
+      "skip": "0xB01B68",
+      "scheduled_32bit_read_addresses": [
+        "0xB01B50"
+      ]
+    },
+    {
+      "fde_rva": "0xC927A0",
+      "fde_bytes": 124,
+      "start": "0xC927EC",
+      "call": "0xC927FC",
+      "skip": "0xC92800",
+      "scheduled_32bit_read_addresses": [
+        "0xC927E8"
+      ]
+    },
+    {
+      "fde_rva": "0xC95020",
+      "fde_bytes": 448,
+      "start": "0xC95070",
+      "call": "0xC95080",
+      "skip": "0xC95084",
+      "scheduled_32bit_read_addresses": [
+        "0xC9506C"
+      ]
+    },
+    {
+      "fde_rva": "0xC95880",
+      "fde_bytes": 272,
+      "start": "0xC958CC",
+      "call": "0xC958DC",
+      "skip": "0xC958E0",
+      "scheduled_32bit_read_addresses": [
+        "0xC958C8"
+      ]
+    },
+    {
+      "fde_rva": "0xC9C2B0",
+      "fde_bytes": 2132,
+      "start": "0xC9C368",
+      "call": "0xC9C378",
+      "skip": "0xC9C37C",
+      "scheduled_32bit_read_addresses": [
+        "0xC9C364"
+      ]
+    },
+    {
+      "fde_rva": "0xCA2970",
+      "fde_bytes": 364,
+      "start": "0xCA2A18",
+      "call": "0xCA2A28",
+      "skip": "0xCA2A2C",
+      "scheduled_32bit_read_addresses": [
+        "0xCA2A14"
+      ]
+    },
+    {
+      "fde_rva": "0xCA4B60",
+      "fde_bytes": 940,
+      "start": "0xCA4C40",
+      "call": "0xCA4C50",
+      "skip": "0xCA4C54",
+      "scheduled_32bit_read_addresses": [
+        "0xCA4C3C"
+      ]
+    },
+    {
+      "fde_rva": "0xCAA0D0",
+      "fde_bytes": 352,
+      "start": "0xCAA1B0",
+      "call": "0xCAA1C0",
+      "skip": "0xCAA1C4",
+      "scheduled_32bit_read_addresses": [
+        "0xCAA1AC"
+      ]
+    },
+    {
+      "fde_rva": "0xCDAD50",
+      "fde_bytes": 584,
+      "start": "0xCDAEB4",
+      "call": "0xCDAEC4",
+      "skip": "0xCDAEC8",
+      "scheduled_32bit_read_addresses": [
+        "0xCDAEB0"
+      ]
+    },
+    {
+      "fde_rva": "0xCDAFA0",
+      "fde_bytes": 116,
+      "start": "0xCDAFE8",
+      "call": "0xCDAFF8",
+      "skip": "0xCDAFFC",
+      "scheduled_32bit_read_addresses": [
+        "0xCDAFE4"
+      ]
+    },
+    {
+      "fde_rva": "0xCDB9E0",
+      "fde_bytes": 128,
+      "start": "0xCDBA28",
+      "call": "0xCDBA38",
+      "skip": "0xCDBA3C",
+      "scheduled_32bit_read_addresses": [
+        "0xCDBA24"
+      ]
+    },
+    {
+      "fde_rva": "0xCDC110",
+      "fde_bytes": 476,
+      "start": "0xCDC2B0",
+      "call": "0xCDC2C0",
+      "skip": "0xCDC2C4",
+      "scheduled_32bit_read_addresses": [
+        "0xCDC2AC"
+      ]
+    },
+    {
+      "fde_rva": "0xCE62E0",
+      "fde_bytes": 368,
+      "start": "0xCE6368",
+      "call": "0xCE6378",
+      "skip": "0xCE637C",
+      "scheduled_32bit_read_addresses": [
+        "0xCE6364"
+      ]
+    },
+    {
+      "fde_rva": "0xCE6450",
+      "fde_bytes": 428,
+      "start": "0xCE64DC",
+      "call": "0xCE64EC",
+      "skip": "0xCE64F0",
+      "scheduled_32bit_read_addresses": [
+        "0xCE64D8"
+      ]
+    },
+    {
+      "fde_rva": "0xCE6B50",
+      "fde_bytes": 124,
+      "start": "0xCE6B98",
+      "call": "0xCE6BA8",
+      "skip": "0xCE6BAC",
+      "scheduled_32bit_read_addresses": [
+        "0xCE6B94"
+      ]
+    },
+    {
+      "fde_rva": "0xCE6BD0",
+      "fde_bytes": 124,
+      "start": "0xCE6C18",
+      "call": "0xCE6C28",
+      "skip": "0xCE6C2C",
+      "scheduled_32bit_read_addresses": [
+        "0xCE6C14"
+      ]
+    },
+    {
+      "fde_rva": "0xCE6D00",
+      "fde_bytes": 440,
+      "start": "0xCE6D90",
+      "call": "0xCE6DA0",
+      "skip": "0xCE6DA4",
+      "scheduled_32bit_read_addresses": [
+        "0xCE6D8C"
+      ]
+    },
+    {
+      "fde_rva": "0xCE6EF0",
+      "fde_bytes": 260,
+      "start": "0xCE6F58",
+      "call": "0xCE6F68",
+      "skip": "0xCE6F6C",
+      "scheduled_32bit_read_addresses": [
+        "0xCE6F54"
+      ]
+    },
+    {
+      "fde_rva": "0xCE8740",
+      "fde_bytes": 300,
+      "start": "0xCE8824",
+      "call": "0xCE8834",
+      "skip": "0xCE8838",
+      "scheduled_32bit_read_addresses": [
+        "0xCE8820"
+      ]
+    },
+    {
+      "fde_rva": "0xD00AD0",
+      "fde_bytes": 136,
+      "start": "0xD00B1C",
+      "call": "0xD00B2C",
+      "skip": "0xD00B30",
+      "scheduled_32bit_read_addresses": [
+        "0xD00B18"
+      ]
+    },
+    {
+      "fde_rva": "0xD213B0",
+      "fde_bytes": 1700,
+      "start": "0xD21420",
+      "call": "0xD21430",
+      "skip": "0xD21434",
+      "scheduled_32bit_read_addresses": [
+        "0xD2141C"
+      ]
+    },
+    {
+      "fde_rva": "0xD304C0",
+      "fde_bytes": 660,
+      "start": "0xD30660",
+      "call": "0xD30670",
+      "skip": "0xD30674",
+      "scheduled_32bit_read_addresses": [
+        "0xD3065C"
+      ]
+    },
+    {
+      "fde_rva": "0xD4DF40",
+      "fde_bytes": 784,
+      "start": "0xD4DF9C",
+      "call": "0xD4DFAC",
+      "skip": "0xD4DFB0",
+      "scheduled_32bit_read_addresses": [
+        "0xD4DF98"
+      ]
+    },
+    {
+      "fde_rva": "0xD68790",
+      "fde_bytes": 1468,
+      "start": "0xD68834",
+      "call": "0xD68844",
+      "skip": "0xD68848",
+      "scheduled_32bit_read_addresses": [
+        "0xD68830"
+      ]
+    },
+    {
+      "fde_rva": "0xD69DE0",
+      "fde_bytes": 1496,
+      "start": "0xD69E3C",
+      "call": "0xD69E4C",
+      "skip": "0xD69E50",
+      "scheduled_32bit_read_addresses": [
+        "0xD69E38"
+      ]
+    },
+    {
+      "fde_rva": "0xD6A400",
+      "fde_bytes": 476,
+      "start": "0xD6A470",
+      "call": "0xD6A480",
+      "skip": "0xD6A484",
+      "scheduled_32bit_read_addresses": [
+        "0xD6A46C"
+      ]
+    },
+    {
+      "fde_rva": "0xD74A20",
+      "fde_bytes": 340,
+      "start": "0xD74B2C",
+      "call": "0xD74B3C",
+      "skip": "0xD74B40",
+      "scheduled_32bit_read_addresses": [
+        "0xD74B28"
+      ]
+    },
+    {
+      "fde_rva": "0xD87450",
+      "fde_bytes": 600,
+      "start": "0xD87504",
+      "call": "0xD87514",
+      "skip": "0xD8751C",
+      "scheduled_32bit_read_addresses": [
+        "0xD87500"
+      ]
+    },
+    {
+      "fde_rva": "0xD876B0",
+      "fde_bytes": 360,
+      "start": "0xD8775C",
+      "call": "0xD8776C",
+      "skip": "0xD87774",
+      "scheduled_32bit_read_addresses": [
+        "0xD87758"
+      ]
+    },
+    {
+      "fde_rva": "0xD93FD0",
+      "fde_bytes": 540,
+      "start": "0xD94124",
+      "call": "0xD94134",
+      "skip": "0xD94138",
+      "scheduled_32bit_read_addresses": [
+        "0xD94120"
+      ]
+    },
+    {
+      "fde_rva": "0xD93FD0",
+      "fde_bytes": 540,
+      "start": "0xD94190",
+      "call": "0xD941A0",
+      "skip": "0xD941A4",
+      "scheduled_32bit_read_addresses": [
+        "0xD9418C",
+        "0xD94188"
+      ]
+    },
+    {
+      "fde_rva": "0xD941F0",
+      "fde_bytes": 168,
+      "start": "0xD94248",
+      "call": "0xD94258",
+      "skip": "0xD9425C",
+      "scheduled_32bit_read_addresses": [
+        "0xD94244"
+      ]
+    },
+    {
+      "fde_rva": "0xD94680",
+      "fde_bytes": 208,
+      "start": "0xD94700",
+      "call": "0xD94710",
+      "skip": "0xD94714",
+      "scheduled_32bit_read_addresses": [
+        "0xD946FC"
+      ]
+    },
+    {
+      "fde_rva": "0xDABCB0",
+      "fde_bytes": 1724,
+      "start": "0xDAC238",
+      "call": "0xDAC248",
+      "skip": "0xDAC24C",
+      "scheduled_32bit_read_addresses": [
+        "0xDAC234"
+      ]
+    },
+    {
+      "fde_rva": "0xDB2600",
+      "fde_bytes": 244,
+      "start": "0xDB2698",
+      "call": "0xDB26A8",
+      "skip": "0xDB26AC",
+      "scheduled_32bit_read_addresses": [
+        "0xDB2694"
+      ]
+    },
+    {
+      "fde_rva": "0xDB3100",
+      "fde_bytes": 1420,
+      "start": "0xDB3308",
+      "call": "0xDB3318",
+      "skip": "0xDB331C",
+      "scheduled_32bit_read_addresses": [
+        "0xDB3304"
+      ]
+    },
+    {
+      "fde_rva": "0xDC2800",
+      "fde_bytes": 432,
+      "start": "0xDC2868",
+      "call": "0xDC2878",
+      "skip": "0xDC287C",
+      "scheduled_32bit_read_addresses": [
+        "0xDC2864"
+      ]
+    },
+    {
+      "fde_rva": "0xDC4110",
+      "fde_bytes": 244,
+      "start": "0xDC41C8",
+      "call": "0xDC41D8",
+      "skip": "0xDC41DC",
+      "scheduled_32bit_read_addresses": [
+        "0xDC41C4"
+      ]
+    },
+    {
+      "fde_rva": "0xDCB0E0",
+      "fde_bytes": 2096,
+      "start": "0xDCB690",
+      "call": "0xDCB6A0",
+      "skip": "0xDCB6A4",
+      "scheduled_32bit_read_addresses": [
+        "0xDCB68C"
+      ]
+    },
+    {
+      "fde_rva": "0xDD70C0",
+      "fde_bytes": 672,
+      "start": "0xDD72BC",
+      "call": "0xDD72CC",
+      "skip": "0xDD72D0",
+      "scheduled_32bit_read_addresses": [
+        "0xDD72B8"
+      ]
+    },
+    {
+      "fde_rva": "0xE129A0",
+      "fde_bytes": 116,
+      "start": "0xE129E8",
+      "call": "0xE129F8",
+      "skip": "0xE129FC",
+      "scheduled_32bit_read_addresses": [
+        "0xE129E4"
+      ]
+    },
+    {
+      "fde_rva": "0xE1BD80",
+      "fde_bytes": 6416,
+      "start": "0xE1D3EC",
+      "call": "0xE1D3FC",
+      "skip": "0xE1D400",
+      "scheduled_32bit_read_addresses": [
+        "0xE1D3E8"
+      ]
+    },
+    {
+      "fde_rva": "0xE33B60",
+      "fde_bytes": 236,
+      "start": "0xE33BFC",
+      "call": "0xE33C0C",
+      "skip": "0xE33C10",
+      "scheduled_32bit_read_addresses": [
+        "0xE33BF8"
+      ]
+    },
+    {
+      "fde_rva": "0xE48180",
+      "fde_bytes": 132,
+      "start": "0xE481C8",
+      "call": "0xE481D8",
+      "skip": "0xE481DC",
+      "scheduled_32bit_read_addresses": [
+        "0xE481C4"
+      ]
+    },
+    {
+      "fde_rva": "0xE48650",
+      "fde_bytes": 2020,
+      "start": "0xE48744",
+      "call": "0xE48754",
+      "skip": "0xE48758",
+      "scheduled_32bit_read_addresses": [
+        "0xE48740"
+      ]
+    },
+    {
+      "fde_rva": "0xE48650",
+      "fde_bytes": 2020,
+      "start": "0xE48A20",
+      "call": "0xE48A30",
+      "skip": "0xE48A34",
+      "scheduled_32bit_read_addresses": [
+        "0xE48A1C"
+      ]
+    },
+    {
+      "fde_rva": "0xE66370",
+      "fde_bytes": 732,
+      "start": "0xE66510",
+      "call": "0xE66520",
+      "skip": "0xE66524",
+      "scheduled_32bit_read_addresses": [
+        "0xE6650C"
+      ]
+    },
+    {
+      "fde_rva": "0xE66F70",
+      "fde_bytes": 344,
+      "start": "0xE66FE0",
+      "call": "0xE66FF0",
+      "skip": "0xE66FF4",
+      "scheduled_32bit_read_addresses": [
+        "0xE66FDC"
+      ]
+    },
+    {
+      "fde_rva": "0xE68960",
+      "fde_bytes": 148,
+      "start": "0xE689B4",
+      "call": "0xE689C4",
+      "skip": "0xE689C8",
+      "scheduled_32bit_read_addresses": [
+        "0xE689B0"
+      ]
+    },
+    {
+      "fde_rva": "0xE6F780",
+      "fde_bytes": 320,
+      "start": "0xE6F834",
+      "call": "0xE6F844",
+      "skip": "0xE6F848",
+      "scheduled_32bit_read_addresses": [
+        "0xE6F830"
+      ]
+    },
+    {
+      "fde_rva": "0xE73CE0",
+      "fde_bytes": 212,
+      "start": "0xE73D40",
+      "call": "0xE73D50",
+      "skip": "0xE73D54",
+      "scheduled_32bit_read_addresses": [
+        "0xE73D3C"
+      ]
+    },
+    {
+      "fde_rva": "0xE77440",
+      "fde_bytes": 140,
+      "start": "0xE7748C",
+      "call": "0xE7749C",
+      "skip": "0xE774A0",
+      "scheduled_32bit_read_addresses": [
+        "0xE77488"
+      ]
+    },
+    {
+      "fde_rva": "0xE8BC50",
+      "fde_bytes": 508,
+      "start": "0xE8BCD8",
+      "call": "0xE8BCE8",
+      "skip": "0xE8BCEC",
+      "scheduled_32bit_read_addresses": [
+        "0xE8BCD4"
+      ]
+    },
+    {
+      "fde_rva": "0xEACC90",
+      "fde_bytes": 440,
+      "start": "0xEACCF4",
+      "call": "0xEACD04",
+      "skip": "0xEACD08",
+      "scheduled_32bit_read_addresses": [
+        "0xEACCF0"
+      ]
+    },
+    {
+      "fde_rva": "0xEACC90",
+      "fde_bytes": 440,
+      "start": "0xEACD70",
+      "call": "0xEACD80",
+      "skip": "0xEACD84",
+      "scheduled_32bit_read_addresses": [
+        "0xEACD6C"
+      ]
+    },
+    {
+      "fde_rva": "0xEBEB50",
+      "fde_bytes": 264,
+      "start": "0xEBEBB0",
+      "call": "0xEBEBC0",
+      "skip": "0xEBEBC4",
+      "scheduled_32bit_read_addresses": [
+        "0xEBEBAC"
+      ]
+    },
+    {
+      "fde_rva": "0xECC2A0",
+      "fde_bytes": 1500,
+      "start": "0xECC3C8",
+      "call": "0xECC3D8",
+      "skip": "0xECC3DC",
+      "scheduled_32bit_read_addresses": [
+        "0xECC3C4"
+      ]
+    },
+    {
+      "fde_rva": "0xECC2A0",
+      "fde_bytes": 1500,
+      "start": "0xECC450",
+      "call": "0xECC460",
+      "skip": "0xECC464",
+      "scheduled_32bit_read_addresses": [
+        "0xECC44C"
+      ]
+    },
+    {
+      "fde_rva": "0xECC2A0",
+      "fde_bytes": 1500,
+      "start": "0xECC5F8",
+      "call": "0xECC608",
+      "skip": "0xECC60C",
+      "scheduled_32bit_read_addresses": [
+        "0xECC5F4"
+      ]
+    },
+    {
+      "fde_rva": "0xECD170",
+      "fde_bytes": 3628,
+      "start": "0xECD428",
+      "call": "0xECD438",
+      "skip": "0xECD43C",
+      "scheduled_32bit_read_addresses": [
+        "0xECD424"
+      ]
+    },
+    {
+      "fde_rva": "0xEF6CD0",
+      "fde_bytes": 584,
+      "start": "0xEF6DC4",
+      "call": "0xEF6DD4",
+      "skip": "0xEF6DD8",
+      "scheduled_32bit_read_addresses": [
+        "0xEF6DC0"
+      ]
+    },
+    {
+      "fde_rva": "0xEF6F20",
+      "fde_bytes": 320,
+      "start": "0xEF6FE0",
+      "call": "0xEF6FF0",
+      "skip": "0xEF6FF4",
+      "scheduled_32bit_read_addresses": [
+        "0xEF6FDC"
+      ]
+    },
+    {
+      "fde_rva": "0xEF7060",
+      "fde_bytes": 316,
+      "start": "0xEF7120",
+      "call": "0xEF7130",
+      "skip": "0xEF7134",
+      "scheduled_32bit_read_addresses": [
+        "0xEF711C"
+      ]
+    },
+    {
+      "fde_rva": "0xEF72E0",
+      "fde_bytes": 400,
+      "start": "0xEF7438",
+      "call": "0xEF7448",
+      "skip": "0xEF744C",
+      "scheduled_32bit_read_addresses": [
+        "0xEF7434"
+      ]
+    },
+    {
+      "fde_rva": "0xEF8230",
+      "fde_bytes": 364,
+      "start": "0xEF831C",
+      "call": "0xEF832C",
+      "skip": "0xEF8334",
+      "scheduled_32bit_read_addresses": [
+        "0xEF8314"
+      ]
+    },
+    {
+      "fde_rva": "0xF0D390",
+      "fde_bytes": 148,
+      "start": "0xF0D3DC",
+      "call": "0xF0D3EC",
+      "skip": "0xF0D3F0",
+      "scheduled_32bit_read_addresses": [
+        "0xF0D3D8"
+      ]
+    },
+    {
+      "fde_rva": "0xF0D4A0",
+      "fde_bytes": 144,
+      "start": "0xF0D4EC",
+      "call": "0xF0D4FC",
+      "skip": "0xF0D500",
+      "scheduled_32bit_read_addresses": [
+        "0xF0D4E8"
+      ]
+    },
+    {
+      "fde_rva": "0xF0D530",
+      "fde_bytes": 144,
+      "start": "0xF0D57C",
+      "call": "0xF0D58C",
+      "skip": "0xF0D590",
+      "scheduled_32bit_read_addresses": [
+        "0xF0D578"
+      ]
+    },
+    {
+      "fde_rva": "0xF0D5C0",
+      "fde_bytes": 144,
+      "start": "0xF0D60C",
+      "call": "0xF0D61C",
+      "skip": "0xF0D620",
+      "scheduled_32bit_read_addresses": [
+        "0xF0D608"
+      ]
+    },
+    {
+      "fde_rva": "0xF0D650",
+      "fde_bytes": 144,
+      "start": "0xF0D69C",
+      "call": "0xF0D6AC",
+      "skip": "0xF0D6B0",
+      "scheduled_32bit_read_addresses": [
+        "0xF0D698"
+      ]
+    },
+    {
+      "fde_rva": "0xF2A400",
+      "fde_bytes": 408,
+      "start": "0xF2A534",
+      "call": "0xF2A544",
+      "skip": "0xF2A548",
+      "scheduled_32bit_read_addresses": [
+        "0xF2A530"
+      ]
+    },
+    {
+      "fde_rva": "0xF2B990",
+      "fde_bytes": 460,
+      "start": "0xF2B9E4",
+      "call": "0xF2B9F4",
+      "skip": "0xF2B9F8",
+      "scheduled_32bit_read_addresses": [
+        "0xF2B9E0"
+      ]
+    },
+    {
+      "fde_rva": "0xF2B990",
+      "fde_bytes": 460,
+      "start": "0xF2BAF8",
+      "call": "0xF2BB08",
+      "skip": "0xF2BB0C",
+      "scheduled_32bit_read_addresses": [
+        "0xF2BAF4"
+      ]
+    },
+    {
+      "fde_rva": "0xFDBCD0",
+      "fde_bytes": 228,
+      "start": "0xFDBD5C",
+      "call": "0xFDBD6C",
+      "skip": "0xFDBD70",
+      "scheduled_32bit_read_addresses": [
+        "0xFDBD58"
+      ]
+    },
+    {
+      "fde_rva": "0xFDBDC0",
+      "fde_bytes": 516,
+      "start": "0xFDBE14",
+      "call": "0xFDBE24",
+      "skip": "0xFDBE28",
+      "scheduled_32bit_read_addresses": [
+        "0xFDBE10"
+      ]
+    },
+    {
+      "fde_rva": "0xFF6860",
+      "fde_bytes": 1144,
+      "start": "0xFF68C4",
+      "call": "0xFF68D4",
+      "skip": "0xFF68D8",
+      "scheduled_32bit_read_addresses": [
+        "0xFF68C0"
+      ]
+    },
+    {
+      "fde_rva": "0xFF6860",
+      "fde_bytes": 1144,
+      "start": "0xFF698C",
+      "call": "0xFF699C",
+      "skip": "0xFF69A0",
+      "scheduled_32bit_read_addresses": [
+        "0xFF6988"
+      ]
+    },
+    {
+      "fde_rva": "0xFF6860",
+      "fde_bytes": 1144,
+      "start": "0xFF6A54",
+      "call": "0xFF6A64",
+      "skip": "0xFF6A68",
+      "scheduled_32bit_read_addresses": [
+        "0xFF6A50"
+      ]
+    },
+    {
+      "fde_rva": "0xFF6860",
+      "fde_bytes": 1144,
+      "start": "0xFF6B1C",
+      "call": "0xFF6B2C",
+      "skip": "0xFF6B30",
+      "scheduled_32bit_read_addresses": [
+        "0xFF6B18"
+      ]
+    },
+    {
+      "fde_rva": "0xFF6860",
+      "fde_bytes": 1144,
+      "start": "0xFF6BE4",
+      "call": "0xFF6BF4",
+      "skip": "0xFF6BF8",
+      "scheduled_32bit_read_addresses": [
+        "0xFF6BE0"
+      ]
+    },
+    {
+      "fde_rva": "0xFF6CE0",
+      "fde_bytes": 332,
+      "start": "0xFF6DBC",
+      "call": "0xFF6DCC",
+      "skip": "0xFF6DD0",
+      "scheduled_32bit_read_addresses": [
+        "0xFF6DB8"
+      ]
+    },
+    {
+      "fde_rva": "0xFF83D0",
+      "fde_bytes": 384,
+      "start": "0xFF8450",
+      "call": "0xFF8460",
+      "skip": "0xFF8464",
+      "scheduled_32bit_read_addresses": [
+        "0xFF844C"
+      ]
+    },
+    {
+      "fde_rva": "0x104CF20",
+      "fde_bytes": 556,
+      "start": "0x104CF80",
+      "call": "0x104CF90",
+      "skip": "0x104CF98",
+      "scheduled_32bit_read_addresses": [
+        "0x104CF7C"
+      ]
+    },
+    {
+      "fde_rva": "0x104E4B0",
+      "fde_bytes": 2172,
+      "start": "0x104E540",
+      "call": "0x104E550",
+      "skip": "0x104E558",
+      "scheduled_32bit_read_addresses": [
+        "0x104E53C"
+      ]
+    },
+    {
+      "fde_rva": "0x10E2860",
+      "fde_bytes": 556,
+      "start": "0x10E2940",
+      "call": "0x10E2950",
+      "skip": "0x10E2954",
+      "scheduled_32bit_read_addresses": [
+        "0x10E293C"
+      ]
+    },
+    {
+      "fde_rva": "0x10E2860",
+      "fde_bytes": 556,
+      "start": "0x10E2A1C",
+      "call": "0x10E2A2C",
+      "skip": "0x10E2A30",
+      "scheduled_32bit_read_addresses": [
+        "0x10E2A18"
+      ]
+    },
+    {
+      "fde_rva": "0x11B0930",
+      "fde_bytes": 244,
+      "start": "0x11B09D0",
+      "call": "0x11B09E0",
+      "skip": "0x11B09E4",
+      "scheduled_32bit_read_addresses": [
+        "0x11B09CC"
+      ]
+    },
+    {
+      "fde_rva": "0x11BF530",
+      "fde_bytes": 184,
+      "start": "0x11BF578",
+      "call": "0x11BF588",
+      "skip": "0x11BF58C",
+      "scheduled_32bit_read_addresses": [
+        "0x11BF574"
+      ]
+    },
+    {
+      "fde_rva": "0x11BF530",
+      "fde_bytes": 184,
+      "start": "0x11BF5A8",
+      "call": "0x11BF5B8",
+      "skip": "0x11BF5BC",
+      "scheduled_32bit_read_addresses": [
+        "0x11BF5A4"
+      ]
+    },
+    {
+      "fde_rva": "0x11BFA00",
+      "fde_bytes": 132,
+      "start": "0x11BFA44",
+      "call": "0x11BFA54",
+      "skip": "0x11BFA58",
+      "scheduled_32bit_read_addresses": [
+        "0x11BFA40"
+      ]
+    },
+    {
+      "fde_rva": "0x11BFA90",
+      "fde_bytes": 112,
+      "start": "0x11BFAD4",
+      "call": "0x11BFAE4",
+      "skip": "0x11BFAE8",
+      "scheduled_32bit_read_addresses": [
+        "0x11BFAD0"
+      ]
+    },
+    {
+      "fde_rva": "0x11CB5E0",
+      "fde_bytes": 480,
+      "start": "0x11CB75C",
+      "call": "0x11CB76C",
+      "skip": "0x11CB770",
+      "scheduled_32bit_read_addresses": [
+        "0x11CB758"
+      ]
+    },
+    {
+      "fde_rva": "0x15E75B0",
+      "fde_bytes": 780,
+      "start": "0x15E7750",
+      "call": "0x15E7760",
+      "skip": "0x15E7768",
+      "scheduled_32bit_read_addresses": [
+        "0x15E774C"
+      ]
+    },
+    {
+      "fde_rva": "0x15E8430",
+      "fde_bytes": 780,
+      "start": "0x15E85D0",
+      "call": "0x15E85E0",
+      "skip": "0x15E85E8",
+      "scheduled_32bit_read_addresses": [
+        "0x15E85CC"
+      ]
+    }
+  ],
+  "removed": [],
+  "v32_source_sha256": "619639e8e6f0cd092b1815365c1223f50e261758cb8db5635cbd79dbc1f1691f",
+  "v32_namespaced_source_sha256": "f5000d5ee6c68cfb73e69152f5a3ddd6fd878dc00725c75388f6431c1e5cd215",
+  "v33_source_sha256": "daee4b11808995b6d2333139cd7609b4d32dcfd2f908be39f9adb5943e7ec29c",
+  "original_native_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "scope": "Both actual matcher sources are compiled together into a disjoint BCL-only executable. Baseline is extracted byte-for-byte from frozen v32 patch effbf13 and hash checked; only its namespace changes for co-compilation. Scan uses exact bounded original FDE ranges and known initializer target. Counts measure static native instruction-window candidates only. They do not certify decoded CFG reachability, alternate-entry coverage, integration acceptance, typed class origin, emitted CIL/source, initializer semantics, runtime parity or whole-game completeness."
+}

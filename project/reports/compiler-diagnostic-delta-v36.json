@@ -1,0 +1,1456 @@
+{
+  "status": "PASS_CANONICAL_COMPLETE_SOURCE_COMPILER_COMPARISON",
+  "before_run": "nso-plain-frame-cfg-v35",
+  "after_run": "nso-virtual-dispatch-v36",
+  "before": "nso-plain-frame-cfg-v35",
+  "after": "nso-virtual-dispatch-v36",
+  "source_modified": false,
+  "core_modified": false,
+  "assemblies": {
+    "Assembly-CSharp-firstpass": {
+      "before_unique": 18806,
+      "after_unique": 20843,
+      "old_unique": 18806,
+      "new_unique": 20843,
+      "delta": 2037,
+      "before_error_codes": {
+        "CS0117": 211,
+        "CS0019": 4805,
+        "CS0122": 2730,
+        "CS1061": 1583,
+        "CS0030": 6682,
+        "CS0234": 1067,
+        "CS7036": 98,
+        "CS1729": 25,
+        "CS0103": 105,
+        "CS0023": 340,
+        "CS0266": 458,
+        "CS0037": 279,
+        "CS0149": 22,
+        "CS0029": 7,
+        "CS0165": 35,
+        "CS0250": 11,
+        "CS0269": 66,
+        "CS0177": 167,
+        "CS8174": 37,
+        "CS8172": 1,
+        "CS1510": 9,
+        "CS0191": 16,
+        "CS0079": 32,
+        "CS0221": 3,
+        "CS1540": 1,
+        "CS8373": 2,
+        "CS7003": 5,
+        "CS1503": 4,
+        "CS0152": 2,
+        "CS0246": 3
+      },
+      "after_error_codes": {
+        "CS0117": 211,
+        "CS7036": 98,
+        "CS1061": 1575,
+        "CS0030": 8371,
+        "CS0103": 105,
+        "CS0019": 5076,
+        "CS0122": 2713,
+        "CS0023": 349,
+        "CS1729": 25,
+        "CS0266": 460,
+        "CS0234": 1094,
+        "CS0037": 363,
+        "CS1510": 9,
+        "CS0149": 22,
+        "CS0029": 7,
+        "CS0177": 159,
+        "CS8174": 37,
+        "CS0269": 62,
+        "CS0165": 36,
+        "CS0250": 11,
+        "CS0191": 16,
+        "CS8172": 1,
+        "CS0079": 32,
+        "CS1540": 1,
+        "CS0152": 2,
+        "CS0221": 3,
+        "CS8373": 2,
+        "CS0246": 3
+      },
+      "error_code_delta": {
+        "CS0019": 271,
+        "CS0023": 9,
+        "CS0030": 1689,
+        "CS0037": 84,
+        "CS0122": -17,
+        "CS0165": 1,
+        "CS0177": -8,
+        "CS0234": 27,
+        "CS0266": 2,
+        "CS0269": -4,
+        "CS1061": -8,
+        "CS1503": -4,
+        "CS7003": -5
+      },
+      "semantic_added_occurrences": 2190,
+      "semantic_removed_occurrences": 153,
+      "top_added_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.TextWriter' to 'nint'",
+          "count": 217
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Newtonsoft.Json.JsonReader' to 'nint'",
+          "count": 192
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "count": 148
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Newtonsoft.Json.JsonWriter' to 'nint'",
+          "count": 117
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Newtonsoft.Json.JsonSerializer' to 'nint'",
+          "count": 96
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.Stream' to 'nint'",
+          "count": 90
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 90
+        },
+        {
+          "code": "CS0037",
+          "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+          "count": 87
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.TextReader' to 'nint'",
+          "count": 81
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.MemoryStream' to 'nint'",
+          "count": 69
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.BinaryWriter' to 'nint'",
+          "count": 63
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Text.StringBuilder' to 'nint'",
+          "count": 62
+        }
+      ],
+      "most_added_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.TextWriter' to 'nint'",
+          "count": 217
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Newtonsoft.Json.JsonReader' to 'nint'",
+          "count": 192
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "count": 148
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Newtonsoft.Json.JsonWriter' to 'nint'",
+          "count": 117
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Newtonsoft.Json.JsonSerializer' to 'nint'",
+          "count": 96
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.Stream' to 'nint'",
+          "count": 90
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 90
+        },
+        {
+          "code": "CS0037",
+          "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+          "count": 87
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.TextReader' to 'nint'",
+          "count": 81
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.MemoryStream' to 'nint'",
+          "count": 69
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.BinaryWriter' to 'nint'",
+          "count": 63
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Text.StringBuilder' to 'nint'",
+          "count": 62
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'SimpleJSON.JSONNode' to 'nint'",
+          "count": 46
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Text.Encoding' to 'nint'",
+          "count": 45
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'string' to 'nint'",
+          "count": 42
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '-' cannot be applied to operands of type 'object' and 'int'",
+          "count": 42
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Newtonsoft.Json.JsonTextReader' to 'nint'",
+          "count": 35
+        },
+        {
+          "code": "CS0234",
+          "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+          "count": 27
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '+' cannot be applied to operands of type 'object' and 'int'",
+          "count": 26
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'CodeStage.AntiCheat.Detectors.ObscuredCheatingDetector' to 'nint'",
+          "count": 23
+        }
+      ],
+      "most_added_files": [
+        {
+          "file": "YamlDotNet/Core/Emitter.cs",
+          "count": 161
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/JsonSerializerInternalWriter.cs",
+          "count": 109
+        },
+        {
+          "file": "Newtonsoft/Json/Schema/JsonSchemaBuilder.cs",
+          "count": 107
+        },
+        {
+          "file": "Newtonsoft/Json/JsonTextReader.cs",
+          "count": 106
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/JsonSerializerInternalReader.cs",
+          "count": 99
+        },
+        {
+          "file": "Newtonsoft/Json/Utilities/ReflectionUtils.cs",
+          "count": 62
+        },
+        {
+          "file": "Nekki/Zip/Compressor.cs",
+          "count": 54
+        },
+        {
+          "file": "ServerProviderBase.cs",
+          "count": 54
+        },
+        {
+          "file": "LitJson/JsonWriter.cs",
+          "count": 54
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/DefaultContractResolver.cs",
+          "count": 50
+        },
+        {
+          "file": "Newtonsoft/Json/JsonWriter.cs",
+          "count": 45
+        },
+        {
+          "file": "Newtonsoft/Json/Bson/BsonReader.cs",
+          "count": 41
+        },
+        {
+          "file": "Nekki/Functions/FunctionExtension.cs",
+          "count": 35
+        },
+        {
+          "file": "Newtonsoft/Json/Converters/XmlNodeConverter.cs",
+          "count": 35
+        },
+        {
+          "file": "SimpleJSON/JSONLazyCreator.cs",
+          "count": 31
+        },
+        {
+          "file": "LitJson/Lexer.cs",
+          "count": 31
+        },
+        {
+          "file": "BestHTTP/HTTPRequest.cs",
+          "count": 31
+        },
+        {
+          "file": "SevenZip/Compression/LZMA/Decoder.cs",
+          "count": 31
+        },
+        {
+          "file": "Crypto.cs",
+          "count": 30
+        },
+        {
+          "file": "SimpleJSON/JSONNode.cs",
+          "count": 25
+        }
+      ],
+      "top_removed_messages": [
+        {
+          "code": "CS0122",
+          "message": "'JProperty.ChildrenTokens' is inaccessible due to its protection level",
+          "count": 8
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'Newtonsoft.Json.JsonTextReader'",
+          "count": 6
+        },
+        {
+          "code": "CS7003",
+          "message": "Unexpected use of an unbound generic name",
+          "count": 5
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.Reflection.MethodInfo'",
+          "count": 5
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'SevenZip.Compression.RangeCoder.BitTreeDecoder'",
+          "count": 4
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '+' cannot be applied to operands of type 'byte[]' and 'int'",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'SevenZip.Compression.LZMA.Decoder'",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'byte[]' to 'int'",
+          "count": 3
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '==' cannot be applied to operands of type 'T' and 'T'",
+          "count": 3
+        },
+        {
+          "code": "CS0037",
+          "message": "Cannot convert null to 'T' because it is a non-nullable value type",
+          "count": 3
+        },
+        {
+          "code": "CS1503",
+          "message": "Argument 1: cannot convert from 'T",
+          "count": 3
+        },
+        {
+          "code": "CS0122",
+          "message": "'OutWindow._buffer' is inaccessible due to its protection level",
+          "count": 3
+        }
+      ],
+      "top_changed_files": [
+        {
+          "file": "YamlDotNet/Core/Emitter.cs",
+          "before": 240,
+          "after": 400,
+          "delta": 160,
+          "before_source": {
+            "bytes": 150653,
+            "sha256": "66d294ac785bfc2322aa62a508c8e416d475529eb734f93ede2cf3bf386000f9"
+          },
+          "after_source": {
+            "bytes": 188772,
+            "sha256": "6e23f482b73470f75f97e08b89e85c8c81dd9f637bc5bf761a95e3142457b56f"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/JsonSerializerInternalWriter.cs",
+          "before": 172,
+          "after": 280,
+          "delta": 108,
+          "before_source": {
+            "bytes": 76996,
+            "sha256": "b409ebd54f7a40452abda123018402546d2d74e21c4d583b961dc661c9e380b8"
+          },
+          "after_source": {
+            "bytes": 99954,
+            "sha256": "acb5bf645463c22cfcbd0ff24249330d840f9fdd482cc14cd14b19c1a05975fb"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Schema/JsonSchemaBuilder.cs",
+          "before": 74,
+          "after": 179,
+          "delta": 105,
+          "before_source": {
+            "bytes": 47412,
+            "sha256": "efa75aa96a14c6a5063b240cd9940820fce6a0f4e84cd4078af440aabb137b35"
+          },
+          "after_source": {
+            "bytes": 71327,
+            "sha256": "bd4712ba9bf089f77cee9c0f9e8245cecb584c9f8e93da882bd4bdb8e02698ee"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/JsonTextReader.cs",
+          "before": 215,
+          "after": 315,
+          "delta": 100,
+          "before_source": {
+            "bytes": 126519,
+            "sha256": "7ea1b7bb45ab0b0fb64ad6ceba427b102ba4bc7ead775becee2d7d02a0fe2055"
+          },
+          "after_source": {
+            "bytes": 150215,
+            "sha256": "240833c1ac5a3c03598a50ae6667f3d3b00c41e9d5cc2d4f07bfe88fb0085dd4"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/JsonSerializerInternalReader.cs",
+          "before": 292,
+          "after": 386,
+          "delta": 94,
+          "before_source": {
+            "bytes": 142774,
+            "sha256": "f8558caba0f4ba9657047f1f9f8af105eacbb315462fccbf3205345ec496b9bc"
+          },
+          "after_source": {
+            "bytes": 164740,
+            "sha256": "8be5f13979a85581d09ef01ff7f60cf28e2eaa0fe805b9e1548b26c59c34ecb0"
+          }
+        },
+        {
+          "file": "LitJson/JsonWriter.cs",
+          "before": 27,
+          "after": 81,
+          "delta": 54,
+          "before_source": {
+            "bytes": 33587,
+            "sha256": "5d269ef8b60054bf1f9eb613bb407d9e510e2fc91e3d4ba01f06184210a36f8f"
+          },
+          "after_source": {
+            "bytes": 46395,
+            "sha256": "68ec921634a1ec8675456b71153efe69d9797341775da4a87b92d286a9ac4f7f"
+          }
+        },
+        {
+          "file": "Nekki/Zip/Compressor.cs",
+          "before": 26,
+          "after": 80,
+          "delta": 54,
+          "before_source": {
+            "bytes": 18221,
+            "sha256": "40e2feba297156247fece846b1f1f01cb5b6fbb4433c85ac9f9689c85f8c1b0f"
+          },
+          "after_source": {
+            "bytes": 25984,
+            "sha256": "322c6cdcde89db9c721245fbd53c2889a4b41b22ba4cda3e4df961fd6d381852"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Utilities/ReflectionUtils.cs",
+          "before": 210,
+          "after": 262,
+          "delta": 52,
+          "before_source": {
+            "bytes": 106022,
+            "sha256": "a22149642846d6da114025a0e2ea796621d80fdf4b8a4ba5e4cf665815c33d5a"
+          },
+          "after_source": {
+            "bytes": 116786,
+            "sha256": "755d72600405b2e02d04179f2e64afc96a6ad97c717382ce9a98e67bfa8ab375"
+          }
+        },
+        {
+          "file": "ServerProviderBase.cs",
+          "before": 97,
+          "after": 149,
+          "delta": 52,
+          "before_source": {
+            "bytes": 68186,
+            "sha256": "6b4d2412897e1fca28e3c784011d1ef7a6fd45e774352112db75bb468c3333ab"
+          },
+          "after_source": {
+            "bytes": 80097,
+            "sha256": "3ba91355d61a565bdcb8a4b3532bc7ae2f424c73ea82ddad9768c09457a9aec2"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/JsonWriter.cs",
+          "before": 94,
+          "after": 138,
+          "delta": 44,
+          "before_source": {
+            "bytes": 58267,
+            "sha256": "78015d539d1d3e06d2a18ac2d1991e41ad9cc17983c133ecbb13379f626def1c"
+          },
+          "after_source": {
+            "bytes": 66886,
+            "sha256": "df3344ea1e47fab3eedf3337af672bf37decc4017be7e72aec53c3d70bb57603"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Bson/BsonReader.cs",
+          "before": 54,
+          "after": 93,
+          "delta": 39,
+          "before_source": {
+            "bytes": 44794,
+            "sha256": "e26336c3aabb75e551b22a6e5b635078a0d5e5c6559d82f00109e625404f3761"
+          },
+          "after_source": {
+            "bytes": 53187,
+            "sha256": "ad82018a80897a8f28846d7ec7c132aae4a072950f30a4c056f4f71ab71cd3b1"
+          }
+        },
+        {
+          "file": "Nekki/Functions/FunctionExtension.cs",
+          "before": 44,
+          "after": 79,
+          "delta": 35,
+          "before_source": {
+            "bytes": 46145,
+            "sha256": "5a7316dd851255b7048f44ffbf9884fa5f429db009e8d4efab8aeb122a012f73"
+          },
+          "after_source": {
+            "bytes": 54320,
+            "sha256": "662ba99f5c5c5260d9accf0e48daf256b1e677fbbf1758b976a7bffafe1e7dc8"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Converters/XmlNodeConverter.cs",
+          "before": 70,
+          "after": 103,
+          "delta": 33,
+          "before_source": {
+            "bytes": 52334,
+            "sha256": "961c7a252e9c227f95ebe557ed8f341e858c88ac22c7dc660cfefa8acb84f5bc"
+          },
+          "after_source": {
+            "bytes": 63868,
+            "sha256": "3663857a7ed1cbdcd4fe16968718bd92ea062422580fad1dab62dc58347e1462"
+          }
+        },
+        {
+          "file": "BestHTTP/HTTPRequest.cs",
+          "before": 135,
+          "after": 166,
+          "delta": 31,
+          "before_source": {
+            "bytes": 82069,
+            "sha256": "9d28b4ef30b89e2ff62df2876570d4a53af85207cef3d6c2615eb86444868999"
+          },
+          "after_source": {
+            "bytes": 89018,
+            "sha256": "25dee3764da5cf68a0886e1fbddd752463e1bab5e8f653f53100b9edda8ea06c"
+          }
+        },
+        {
+          "file": "SimpleJSON/JSONLazyCreator.cs",
+          "before": 3,
+          "after": 34,
+          "delta": 31,
+          "before_source": {
+            "bytes": 6930,
+            "sha256": "8302390641cdaef06e1eed73de8c0d2c8667a602e61e35a2f3afd008c88473a6"
+          },
+          "after_source": {
+            "bytes": 15380,
+            "sha256": "530c3115ebdf9a82ff0395d3fe0672c01ef0648907f981e5b85b84017bc04d1b"
+          }
+        },
+        {
+          "file": "Crypto.cs",
+          "before": 14,
+          "after": 44,
+          "delta": 30,
+          "before_source": {
+            "bytes": 7839,
+            "sha256": "72c4cea328dec8d5669e68db26080c07cd8188d0acf445aa703f1d15204e73d9"
+          },
+          "after_source": {
+            "bytes": 13330,
+            "sha256": "ce213c3a1d71605f3345d45c987b1f29f79b74157adaf164110661060ec8214f"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/DefaultContractResolver.cs",
+          "before": 254,
+          "after": 284,
+          "delta": 30,
+          "before_source": {
+            "bytes": 122113,
+            "sha256": "a4658ae87e4d63b985f6f49871c4a7fda4c9b43329699991aeff178ab291717f"
+          },
+          "after_source": {
+            "bytes": 129695,
+            "sha256": "9e45f2094fe1a290cdcf52517711b4d2d4ce288ab45870e7eb0dfa2fe2552870"
+          }
+        },
+        {
+          "file": "LitJson/Lexer.cs",
+          "before": 279,
+          "after": 308,
+          "delta": 29,
+          "before_source": {
+            "bytes": 133873,
+            "sha256": "4f43fa9fe327d544506a962d96e767e98419b61f5b38968cf2ace9f2e57612ea"
+          },
+          "after_source": {
+            "bytes": 140932,
+            "sha256": "6461c52e1b3de2f35dede67ebec878f07a617daa48a6b0306755e9bda8ad6975"
+          }
+        },
+        {
+          "file": "Newtonsoft/Json/Linq/JTokenReader.cs",
+          "before": 16,
+          "after": 41,
+          "delta": 25,
+          "before_source": {
+            "bytes": 15741,
+            "sha256": "8c8b3efdc3d182155785fc21a2956d9e0a3dbf829e9d0ca0317ff15b07d41272"
+          },
+          "after_source": {
+            "bytes": 21970,
+            "sha256": "8beac85156f6d4473751affd794b5216c44923d68718989709b804c1245ec5f1"
+          }
+        },
+        {
+          "file": "SimpleJSON/JSONNode.cs",
+          "before": 52,
+          "after": 77,
+          "delta": 25,
+          "before_source": {
+            "bytes": 35720,
+            "sha256": "eb8b51cc8a74064be57b9d5bc8df3fd9af3c4c802ef9b8bce3bcf8e1808c6717"
+          },
+          "after_source": {
+            "bytes": 39784,
+            "sha256": "10bebc4c36b607ea4137cbc8c0d9265189f9f647b3959d1cbbe82f9bfae90c82"
+          }
+        }
+      ],
+      "source_integrity": {
+        "nso-plain-frame-cfg-v35": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-plain-frame-cfg-v35.json",
+            "sha256": "69c3f963e6e4318d96fe73e0ed1694c7b3ebc003d9df5f9e93a4d418f51aa88f"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-plain-frame-cfg-v35.json",
+            "sha256": "871a31bc7176b0d55ecfdb3f0aefa0fceb52c5828b0a25868054b48b339d3d1b"
+          },
+          "manifest_sha256": "871a31bc7176b0d55ecfdb3f0aefa0fceb52c5828b0a25868054b48b339d3d1b",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-plain-frame-cfg-v35-Assembly-CSharp-firstpass.log",
+            "sha256": "3ff27f655779a3a75cf11a18346e68bfab17efbb22f985254d7d438434383d54"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1342,
+          "diagnostic_source_files_hash_verified": 626,
+          "matching_reference_source_manifest_unchanged": true
+        },
+        "nso-virtual-dispatch-v36": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-virtual-dispatch-v36.json",
+            "sha256": "9f433ee52f8ced9ee90cbaae2815b6bd3b5ac6a17aec0c20a7f0aabb11d9a28d"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-virtual-dispatch-v36.json",
+            "sha256": "2efb5d510d8e8aa8c10407632e96cfcb3d7929bfd99e1302a09ecf2780147f5e"
+          },
+          "manifest_sha256": "2efb5d510d8e8aa8c10407632e96cfcb3d7929bfd99e1302a09ecf2780147f5e",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-virtual-dispatch-v36-Assembly-CSharp-firstpass.log",
+            "sha256": "10f4e6525217fa319fc84813d34390517c90c4d71638d189da2ca23e180f397a"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1342,
+          "diagnostic_source_files_hash_verified": 631,
+          "matching_reference_source_manifest_unchanged": true
+        }
+      }
+    },
+    "Assembly-CSharp": {
+      "before_unique": 29779,
+      "after_unique": 32879,
+      "old_unique": 29779,
+      "new_unique": 32879,
+      "delta": 3100,
+      "before_error_codes": {
+        "CS0122": 4237,
+        "CS1061": 3170,
+        "CS0117": 576,
+        "CS0019": 4807,
+        "CS0030": 13084,
+        "CS0234": 1031,
+        "CS0103": 761,
+        "CS0023": 197,
+        "CS0266": 1018,
+        "CS0037": 410,
+        "CS8174": 2,
+        "CS0165": 22,
+        "CS0029": 30,
+        "CS0246": 2,
+        "CS0177": 24,
+        "CS0191": 107,
+        "CS1540": 20,
+        "CS1510": 13,
+        "CS7036": 103,
+        "CS1729": 10,
+        "CS0250": 1,
+        "CS0149": 73,
+        "CS1503": 38,
+        "CS0120": 2,
+        "CS0020": 1,
+        "CS0272": 3,
+        "CS0079": 30,
+        "CS1501": 3,
+        "CS0269": 4
+      },
+      "after_error_codes": {
+        "CS1061": 3166,
+        "CS0117": 576,
+        "CS0122": 4225,
+        "CS0030": 15855,
+        "CS0019": 4981,
+        "CS0234": 1057,
+        "CS0023": 211,
+        "CS0103": 761,
+        "CS0266": 1023,
+        "CS0037": 533,
+        "CS8174": 2,
+        "CS0165": 24,
+        "CS0177": 24,
+        "CS0029": 30,
+        "CS0191": 107,
+        "CS8172": 1,
+        "CS1510": 14,
+        "CS1540": 20,
+        "CS7036": 103,
+        "CS0250": 1,
+        "CS0149": 73,
+        "CS0246": 1,
+        "CS0020": 1,
+        "CS0272": 3,
+        "CS1729": 10,
+        "CS0079": 30,
+        "CS1503": 38,
+        "CS0120": 2,
+        "CS0269": 4,
+        "CS1501": 3
+      },
+      "error_code_delta": {
+        "CS0019": 174,
+        "CS0023": 14,
+        "CS0030": 2771,
+        "CS0037": 123,
+        "CS0122": -12,
+        "CS0165": 2,
+        "CS0234": 26,
+        "CS0246": -1,
+        "CS0266": 5,
+        "CS1061": -4,
+        "CS1510": 1,
+        "CS8172": 1
+      },
+      "semantic_added_occurrences": 3384,
+      "semantic_removed_occurrences": 284,
+      "top_added_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Xml.XmlNode' to 'nint'",
+          "count": 901
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Xml.XmlAttribute' to 'nint'",
+          "count": 160
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Xml.XmlNodeList' to 'nint'",
+          "count": 135
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'SimpleJSON.JSONClass' to 'nint'",
+          "count": 125
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Xml.XmlDocument' to 'nint'",
+          "count": 124
+        },
+        {
+          "code": "CS0037",
+          "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+          "count": 123
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'SimpleJSON.JSONNode' to 'nint'",
+          "count": 112
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Nekki.SF2.GUI.LabelAlias' to 'nint'",
+          "count": 106
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "count": 106
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 64
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Nekki.SF2.GUI.ResolutionImage' to 'nint'",
+          "count": 63
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Nekki.SF2.Core.Fights.Model.Support.ModelParameters' to 'nint'",
+          "count": 61
+        }
+      ],
+      "most_added_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Xml.XmlNode' to 'nint'",
+          "count": 901
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Xml.XmlAttribute' to 'nint'",
+          "count": 160
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Xml.XmlNodeList' to 'nint'",
+          "count": 135
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'SimpleJSON.JSONClass' to 'nint'",
+          "count": 125
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Xml.XmlDocument' to 'nint'",
+          "count": 124
+        },
+        {
+          "code": "CS0037",
+          "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+          "count": 123
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'SimpleJSON.JSONNode' to 'nint'",
+          "count": 112
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Nekki.SF2.GUI.LabelAlias' to 'nint'",
+          "count": 106
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+          "count": 106
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 64
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Nekki.SF2.GUI.ResolutionImage' to 'nint'",
+          "count": 63
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Nekki.SF2.Core.Fights.Model.Support.ModelParameters' to 'nint'",
+          "count": 61
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Text.StringBuilder' to 'nint'",
+          "count": 41
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Nekki.SF2.Core.API.Items.ItemInfo' to 'nint'",
+          "count": 38
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'UnityEngine.UI.Image' to 'nint'",
+          "count": 34
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'UnityEngine.UI.LayoutElement' to 'nint'",
+          "count": 30
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'ProgressBar' to 'nint'",
+          "count": 28
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Nekki.SF2.Core.Zones.Battle' to 'nint'",
+          "count": 27
+        },
+        {
+          "code": "CS0234",
+          "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+          "count": 26
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.IO.BinaryReader' to 'nint'",
+          "count": 25
+        }
+      ],
+      "most_added_files": [
+        {
+          "file": "Nekki/SF2/Core/API/ListSF.cs",
+          "count": 131
+        },
+        {
+          "file": "Nekki/SF2/Core/Settings/GameSettings.cs",
+          "count": 98
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Animation/Moves/MovesParser.cs",
+          "count": 89
+        },
+        {
+          "file": "Nekki/SF2/Core/API/Items/ItemInfo.cs",
+          "count": 84
+        },
+        {
+          "file": "Nekki/SF2/Core/API/Roster.cs",
+          "count": 84
+        },
+        {
+          "file": "Nekki/SF2/Core/Network/GeneralConfig.cs",
+          "count": 79
+        },
+        {
+          "file": "Nekki/SF2/Core/Statistics/StatisticsEvent.cs",
+          "count": 60
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidConfigParser.cs",
+          "count": 57
+        },
+        {
+          "file": "Nekki/SF2/Core/Statistics/StatisticsGeter.cs",
+          "count": 53
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/Perks/PerkInfoItem.cs",
+          "count": 44
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/GameUtils.cs",
+          "count": 43
+        },
+        {
+          "file": "Nekki/SF2/Core/Statistics/SessionTracker.cs",
+          "count": 42
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/UserItem.cs",
+          "count": 37
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/AI/Data/Tactic.cs",
+          "count": 33
+        },
+        {
+          "file": "XmlExtensions.cs",
+          "count": 32
+        },
+        {
+          "file": "Nekki/SF2/GUI/Dialogs/StoryDialog.cs",
+          "count": 32
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Model.cs",
+          "count": 30
+        },
+        {
+          "file": "Nekki/SF2/Core/Network/ServerResponseReceiver.cs",
+          "count": 29
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/AI/Data/AiData.cs",
+          "count": 29
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Animation/Moves/MovesCompiler.cs",
+          "count": 29
+        }
+      ],
+      "top_removed_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'UnityEngine.Color'",
+          "count": 146
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Collections.IEnumerator' to 'int'",
+          "count": 26
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'UnityEngine.Vector2'",
+          "count": 7
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Collections.IEnumerator' to 'int*'",
+          "count": 7
+        },
+        {
+          "code": "CS0019",
+          "message": "Operator '+' cannot be applied to operands of type 'DiscountInfo' and 'int'",
+          "count": 7
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Xml.XmlNode' to 'nint'",
+          "count": 6
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'Nekki.SF2.GUI.Profile.SubItem' to 'nint'",
+          "count": 6
+        },
+        {
+          "code": "CS0122",
+          "message": "'Rect.m_XMin' is inaccessible due to its protection level",
+          "count": 5
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Collections.IEnumerator' to 'nint'",
+          "count": 5
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Collections.IEnumerator' to 'System.IntPtr'",
+          "count": 5
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Xml.XmlElement' to 'int'",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'string' to 'string*'",
+          "count": 4
+        }
+      ],
+      "top_changed_files": [
+        {
+          "file": "Nekki/SF2/Core/API/ListSF.cs",
+          "before": 634,
+          "after": 759,
+          "delta": 125,
+          "before_source": {
+            "bytes": 449088,
+            "sha256": "5ff7785af4f377603efeb96119bedc64daff68879e0e804779ada534f2f0918d"
+          },
+          "after_source": {
+            "bytes": 487172,
+            "sha256": "c23fcec1588cb022589e8ae5c860a30361411cd36b2acdcb64d3c234bf0bc238"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Settings/GameSettings.cs",
+          "before": 43,
+          "after": 141,
+          "delta": 98,
+          "before_source": {
+            "bytes": 56663,
+            "sha256": "50d50206a745c75ff374b4e2598dfddba948877a8a0d079e3e94c5ce9fed22a4"
+          },
+          "after_source": {
+            "bytes": 85777,
+            "sha256": "5d4456d3f663b33c752b95eb433e8de0a610866b042b614b7bfe1d088344739a"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Animation/Moves/MovesParser.cs",
+          "before": 98,
+          "after": 187,
+          "delta": 89,
+          "before_source": {
+            "bytes": 76150,
+            "sha256": "f6ae3003123fd595c9899a4ab7cf210d15301d7a7e9f700545499b2f250c5005"
+          },
+          "after_source": {
+            "bytes": 99050,
+            "sha256": "6df419cc642cd350950a82010e0a373e1378104266ec3499147ee6465c9d49b5"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/API/Roster.cs",
+          "before": 322,
+          "after": 404,
+          "delta": 82,
+          "before_source": {
+            "bytes": 183422,
+            "sha256": "2c94137bea5bbc178dcd43ea71bf1b85ac0a838681275751a78f3bd4753bec2d"
+          },
+          "after_source": {
+            "bytes": 205820,
+            "sha256": "c5b18153591e55a45e07eb4d3c2fbb0ebe0c65865971dca55b964c432ceb4e3d"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Network/GeneralConfig.cs",
+          "before": 169,
+          "after": 247,
+          "delta": 78,
+          "before_source": {
+            "bytes": 97480,
+            "sha256": "b3ea7893c50282170f1670b518874b16617245c7b1a4f649d8f9954978903ac7"
+          },
+          "after_source": {
+            "bytes": 114881,
+            "sha256": "3ff1e43ef9a3ea5b4fec1541f15fc7679b7e5d09eb2db661093b10dff1259693"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/API/Items/ItemInfo.cs",
+          "before": 256,
+          "after": 333,
+          "delta": 77,
+          "before_source": {
+            "bytes": 160564,
+            "sha256": "e68d884bbaf757a02f3ac6ec4ebe8f5d9994f2bbf12c6b6ded95d8a0e8bc7d9b"
+          },
+          "after_source": {
+            "bytes": 171627,
+            "sha256": "ba3fdf97ebf803c5285c34847c9e91244848e34fb0039fe6b748d00cf1830eaf"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Statistics/StatisticsEvent.cs",
+          "before": 84,
+          "after": 144,
+          "delta": 60,
+          "before_source": {
+            "bytes": 51650,
+            "sha256": "b9254c97c94f79112f79c0153be582a087c07f6ab48a7f9ce3faf866b9bd9aaf"
+          },
+          "after_source": {
+            "bytes": 67466,
+            "sha256": "bc650024c1cbf5ad0e339c60e6e630a2d5d48e702e80435b2d0d5dd9a2a0c2a8"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/MultiplayerSF/RaidConfigParser.cs",
+          "before": 106,
+          "after": 161,
+          "delta": 55,
+          "before_source": {
+            "bytes": 58886,
+            "sha256": "24f3063e44ea195d8f63b12d7489cdae9fad576f5febbed67c28ede67f62be7a"
+          },
+          "after_source": {
+            "bytes": 75187,
+            "sha256": "d79fb513d7adcc88e598f6e34abbd2dcaed5973bd9827dffcd31b7de6cd9dd19"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Statistics/StatisticsGeter.cs",
+          "before": 98,
+          "after": 150,
+          "delta": 52,
+          "before_source": {
+            "bytes": 56851,
+            "sha256": "d1257cfb1a57a99120406512b6caa68201bbecb73b5948f292fdf41451989c79"
+          },
+          "after_source": {
+            "bytes": 67758,
+            "sha256": "cdee50c3fd30f8bb33d538db127f8b2e4b303126b8a11d6bb575abee7ae9aec0"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/Perks/PerkInfoItem.cs",
+          "before": 140,
+          "after": 184,
+          "delta": 44,
+          "before_source": {
+            "bytes": 102691,
+            "sha256": "84a873de1b7e98f2a189b6f924616b3ce0a91f2978546a11708d7605d1d0b837"
+          },
+          "after_source": {
+            "bytes": 113646,
+            "sha256": "a07fcb680915130e9d1dfc66061d8ddec161636bf39fff98adc73cf96af0338b"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/GameUtils.cs",
+          "before": 341,
+          "after": 384,
+          "delta": 43,
+          "before_source": {
+            "bytes": 262865,
+            "sha256": "fdc6bfbb6ef70a417ef72ca2916812980977de32f33d8c67a3cf3b2af07155bc"
+          },
+          "after_source": {
+            "bytes": 274335,
+            "sha256": "5fd4824fc05629d903166e1c0d636a99515bd96c5ff05ae9334b370c6aaaa50b"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Statistics/SessionTracker.cs",
+          "before": 58,
+          "after": 96,
+          "delta": 38,
+          "before_source": {
+            "bytes": 34228,
+            "sha256": "0ef8c9e5f4ad376d3b4aa07f01d18abfb081571e8733ffe002f78261e9601507"
+          },
+          "after_source": {
+            "bytes": 44001,
+            "sha256": "8858dd0a211eaafc57f4d3134fcbe36836de6acc3a4a333cf510f746d9b0cb1b"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/UserItem.cs",
+          "before": 57,
+          "after": 94,
+          "delta": 37,
+          "before_source": {
+            "bytes": 38846,
+            "sha256": "137f0e908e89f49708b37fd95020a7a6e918326839021ea54618ae30550e4044"
+          },
+          "after_source": {
+            "bytes": 48987,
+            "sha256": "833cf05b519992d65f8f84f255fe4238618ee1f8f8b24a0dae7a6d1b0fa9b0d9"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/AI/Data/Tactic.cs",
+          "before": 141,
+          "after": 174,
+          "delta": 33,
+          "before_source": {
+            "bytes": 49532,
+            "sha256": "218409e6092f30c35050003c49aeda2562719ebaeb4c2c3676d3e67106912ad1"
+          },
+          "after_source": {
+            "bytes": 58676,
+            "sha256": "caa30e6d510fd91c945ebcad52d23e671c4a7bf6ec8686fbfb5e44d4ee63dbf2"
+          }
+        },
+        {
+          "file": "XmlExtensions.cs",
+          "before": 48,
+          "after": 80,
+          "delta": 32,
+          "before_source": {
+            "bytes": 27938,
+            "sha256": "fe395f4f5187cdf9c3a7c3556b10498aa42d12c0b136d19187ed8ebfb02ae2e9"
+          },
+          "after_source": {
+            "bytes": 34569,
+            "sha256": "7f434c0940476120060ad622545a19413ff4137970ce4e285367379e47a8a7e1"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Model.cs",
+          "before": 615,
+          "after": 645,
+          "delta": 30,
+          "before_source": {
+            "bytes": 300242,
+            "sha256": "b605947656bf03f2b24a65a8e37dcc055d6549c946eca1a31a0df35c472b3151"
+          },
+          "after_source": {
+            "bytes": 307090,
+            "sha256": "1a75524c472906da0ceb929af9378e3a3ba8db9f9ab5db1929e2413ee921dded"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/AI/Data/AiData.cs",
+          "before": 236,
+          "after": 265,
+          "delta": 29,
+          "before_source": {
+            "bytes": 127168,
+            "sha256": "06b66ca2ddda9cf63bc9cb18ea34b517ade58a1540545f5f8cde81a3aa4e5d96"
+          },
+          "after_source": {
+            "bytes": 138366,
+            "sha256": "c2bbc99a718cc8cb1f292acf05d4d9e4c31461db315a405850f415d19b287c51"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Network/ServerResponseReceiver.cs",
+          "before": 4,
+          "after": 33,
+          "delta": 29,
+          "before_source": {
+            "bytes": 11694,
+            "sha256": "8a0af9b1ca2427a9a2f84c86bd425408cd9db910d4f34ced060ffb36a1122660"
+          },
+          "after_source": {
+            "bytes": 19535,
+            "sha256": "850d5a48efe8dc1270d8a0da0b7693effc671f0599bc0b0681a302e6bb26b585"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Animation/Moves/MovesCompiler.cs",
+          "before": 65,
+          "after": 93,
+          "delta": 28,
+          "before_source": {
+            "bytes": 36176,
+            "sha256": "f4709859c4040b092635eb6f8e49faf38e348bf5d2db26dd8a7639b82cd353a9"
+          },
+          "after_source": {
+            "bytes": 43580,
+            "sha256": "74d55b59684140b3cdfb53ab3f258bcb74ab34c87e1f9a06fde9466b466f68fd"
+          }
+        },
+        {
+          "file": "Nekki/SF2/Core/API/UserPerks.cs",
+          "before": 60,
+          "after": 87,
+          "delta": 27,
+          "before_source": {
+            "bytes": 38146,
+            "sha256": "ec065d92fd46b1dbcb9d68339ddfa282934c54945793abe5798cecf89370a4a6"
+          },
+          "after_source": {
+            "bytes": 45058,
+            "sha256": "60580e2e178e1cb4fef3e4e6946f01e195a2878914cc2c6c65c1fd43c8c10723"
+          }
+        }
+      ],
+      "source_integrity": {
+        "nso-plain-frame-cfg-v35": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-plain-frame-cfg-v35.json",
+            "sha256": "69c3f963e6e4318d96fe73e0ed1694c7b3ebc003d9df5f9e93a4d418f51aa88f"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-plain-frame-cfg-v35.json",
+            "sha256": "871a31bc7176b0d55ecfdb3f0aefa0fceb52c5828b0a25868054b48b339d3d1b"
+          },
+          "manifest_sha256": "871a31bc7176b0d55ecfdb3f0aefa0fceb52c5828b0a25868054b48b339d3d1b",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-plain-frame-cfg-v35-Assembly-CSharp.log",
+            "sha256": "fb7c4e899a915c5052841b6a7f6f1143c31a4ce26a36ae804110b5cc3343733a"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1637,
+          "diagnostic_source_files_hash_verified": 1218,
+          "matching_reference_source_manifest_unchanged": true
+        },
+        "nso-virtual-dispatch-v36": {
+          "summary": {
+            "path": "reports/recovered-source-profile-legacy-reference-check-nso-virtual-dispatch-v36.json",
+            "sha256": "9f433ee52f8ced9ee90cbaae2815b6bd3b5ac6a17aec0c20a7f0aabb11d9a28d"
+          },
+          "export": {
+            "path": "reports/recovered-source-profile-project-build-nso-virtual-dispatch-v36.json",
+            "sha256": "2efb5d510d8e8aa8c10407632e96cfcb3d7929bfd99e1302a09ecf2780147f5e"
+          },
+          "manifest_sha256": "2efb5d510d8e8aa8c10407632e96cfcb3d7929bfd99e1302a09ecf2780147f5e",
+          "compiler_log": {
+            "path": "logs\\source-profile-legacy-reference-build-nso-virtual-dispatch-v36-Assembly-CSharp.log",
+            "sha256": "6c5b30c8794c17d6ce9ad078700431243f4ff52244172e3584109014a4cdc3c3"
+          },
+          "build_exit_code": 1,
+          "restore_exit_code": 0,
+          "source_manifest_files": 1637,
+          "diagnostic_source_files_hash_verified": 1243,
+          "matching_reference_source_manifest_unchanged": true
+        }
+      }
+    }
+  },
+  "compiler_diagnostic_delta": {
+    "Assembly-CSharp-firstpass": 2037,
+    "Assembly-CSharp": 3100
+  },
+  "whole_game_source_ready": false,
+  "full_clean_decompile_ready": false,
+  "portable_game_ready": false,
+  "methodology": "Each complete matching-reference log is streamed. Canonical lines remove build-worker prefixes, surrounding whitespace and duplicate build-summary occurrences, and must exactly match the authoritative summary total and error-code counts. Multisets of relative source path, code and message additionally reduce line-shift inflation; local-name or decompiler presentation changes can still alter messages. Every diagnostic-bearing file is checked against the byte-identical export/matching-reference source manifest. Reports contain no source excerpts.",
+  "limits": "Diagnostic lines include compiler cascades and are not independent bugs, recovered-method counts or completion percentages. This read-only comparison neither executes recovered game methods nor establishes that added or removed diagnostics correspond to correct semantics. Complete source compilation, original-runtime/gameplay parity and portability remain separate requirements."
+}

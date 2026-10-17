@@ -1,0 +1,20 @@
+{
+  "status": "PASS_PINNED_CODEC_LOGIC_IDENTICAL_EXCEPT_RESOLVED_USERSTRING_TOKEN",
+  "compared_cil_rows": 106,
+  "changed_rows": 1,
+  "changed_offset": 195,
+  "changed_operand_bytes": 4,
+  "only_changed_field": "LDSTR user-string token; resolved text identical",
+  "before_body_sha256": "a5205a5ff8db842dd1364036451ba57e703964274a9b2a2c0ee9ae92217d0b0b",
+  "after_body_sha256": "032fd9be8c7af8ecbde49509edd95e66549b4fc3436af8e36e99936e3ae391aa",
+  "reference_assembly_sha256": "224877d85a8b3dcde0a6f3f1d766ee3eafd7b02f00281b142d95b37ba0a64031",
+  "after_assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c",
+  "actual_codec_cases": 342,
+  "actual_codec_checks": 2052,
+  "local_signature_and_header_identical": true,
+  "game_cil_or_source_modified": false,
+  "runtime_tokens_remapped": 0,
+  "active_callback_recovered": false,
+  "source_sha256": "277c7647ca7546d48adfe34d80dfeb1a5f127ae420d147bc445cf6a3b61ef18d",
+  "scope": "Metadata-token relocation proof and original unchanged-CIL absent-detector fixtures only. The source verifier permits one same-text diagnostic token relocation and pins all other body bytes, local types/pinning/InitLocals/maxstack/getter/branch to the immutable v36 reference. It does not recover or execute the active callback."
+}

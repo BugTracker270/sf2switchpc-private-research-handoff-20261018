@@ -1,0 +1,28 @@
+{
+  "status": "CONFIRMED_RECOVERED_ALLOCATION_TYPE_MISMATCH",
+  "recovery_run": "nso-stack-headers-v11",
+  "native": {
+    "allocation_site": "0xC4A74",
+    "allocator": "0xB5B110",
+    "got": "0x397B948",
+    "metadata_slot": "0x3b35180",
+    "metadata_name": "VersionContainer_TypeInfo",
+    "base_ctor_site": "0xC4AC8"
+  },
+  "recovered": {
+    "static_field": "VersionContainer.Zero",
+    "expected_runtime_type": "VersionContainer",
+    "actual_runtime_type": "System.Object",
+    "cil_constructor_targets": [
+      "VersionContainer::SetVersion",
+      "System.Object::.ctor",
+      "Cpp2ILInjected.Cpp2ILHelpers::NoteDecompilerIssue",
+      "Cpp2ILInjected.Cpp2ILHelpers::NoteDecompilerIssue"
+    ],
+    "source_sha256": "4a40100ec650cb3a8acafcb68349723a2773adccd2d220d3ec5df8ec366f0857"
+  },
+  "source_supported_cause": "The emitter fuses an allocation with a later constructor call on the same recovered receiver, without checking the allocated declaring type. This native static initializer contains an inlined derived constructor followed by System.Object::.ctor. The observed CIL instead allocates System.Object; runtime field identity independently confirms the mismatch.",
+  "tool_source_sha256": "3e1f731345f7906766c95092ca7e60b7b524b4a4e51f7066348a167bb01f47e3",
+  "required_research": "Preserve native allocation type and inlined constructor/field-initializer order. Calling an extra managed constructor can duplicate side effects and is not accepted as a general repair.",
+  "scope": "The eight scalar accessors pass 768 direct and isolated cases; that does not certify this static field or the whole class. Original game bytes are unchanged. This report records a failure, not a repaired allocation implementation."
+}

@@ -1,0 +1,503 @@
+{
+  "status": "READ_ONLY_TYPE_POINTER_DIAGNOSTIC_ROOT_AND_BOUNDED_PROPOSAL",
+  "source_modified": false,
+  "core_modified": false,
+  "whole_game_source_ready": false,
+  "before": "nso-value-this-box-v30",
+  "after": "nso-static-getter-v31b",
+  "assemblies": {
+    "Assembly-CSharp-firstpass": {
+      "before": {
+        "canonical_all_errors": 18762,
+        "canonical_type_to_nint_errors": 2526,
+        "correlation_categories": {
+          "near_runtime_class_static_storage_B8": 83,
+          "near_unrecovered_class_guard_122_or_D4": 1325,
+          "other_type_pointer_use": 1118
+        },
+        "unresolved_known_helper_nearby": {},
+        "source_integrity": {
+          "manifest_sha256": "0353b29916e4883ef7b346c58e95542dc0713c70ef388106013809f875a91de6",
+          "diagnostic_source_files_hash_verified": 289
+        },
+        "samples": [
+          {
+            "file": "BestHTTP/WebSocket/WebSocketResponse.cs",
+            "line": 92,
+            "category": "near_runtime_class_static_storage_B8",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "43a3fd53ccb2ff0d98622a1942aa56e9155f101ad505ccbb90f4fe26ef55730d"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 34,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "5666d5121b9a2a3dada60234e9fced3cbdd1cd43095cc6517419000d8872be96"
+          },
+          {
+            "file": "AssetBundleSample.cs",
+            "line": 218,
+            "category": "near_runtime_class_static_storage_B8",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "585717798ed62f2ac88f9ee77b112a606966a32db59bc9a27fd857a6ae07103a"
+          },
+          {
+            "file": "BaseHub.cs",
+            "line": 61,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "732ac541cd86b98a4c4feecc857534212d6e5f30020ffe60947f563d94e0899d"
+          },
+          {
+            "file": "BaseHub.cs",
+            "line": 73,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "732ac541cd86b98a4c4feecc857534212d6e5f30020ffe60947f563d94e0899d"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 110,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "5666d5121b9a2a3dada60234e9fced3cbdd1cd43095cc6517419000d8872be96"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 123,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "5666d5121b9a2a3dada60234e9fced3cbdd1cd43095cc6517419000d8872be96"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 133,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "5666d5121b9a2a3dada60234e9fced3cbdd1cd43095cc6517419000d8872be96"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 183,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "5666d5121b9a2a3dada60234e9fced3cbdd1cd43095cc6517419000d8872be96"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 207,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "5666d5121b9a2a3dada60234e9fced3cbdd1cd43095cc6517419000d8872be96"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 217,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "5666d5121b9a2a3dada60234e9fced3cbdd1cd43095cc6517419000d8872be96"
+          },
+          {
+            "file": "BestHTTP/WebSocket/WebSocketResponse.cs",
+            "line": 360,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "43a3fd53ccb2ff0d98622a1942aa56e9155f101ad505ccbb90f4fe26ef55730d"
+          }
+        ]
+      },
+      "after": {
+        "canonical_all_errors": 19326,
+        "canonical_type_to_nint_errors": 2893,
+        "correlation_categories": {
+          "near_runtime_class_static_storage_B8": 83,
+          "near_unrecovered_class_guard_122_or_D4": 1638,
+          "other_type_pointer_use": 1172
+        },
+        "unresolved_known_helper_nearby": {
+          "near_unrecovered_class_guard_122_or_D4": 1045,
+          "near_runtime_class_static_storage_B8": 7,
+          "other_type_pointer_use": 32
+        },
+        "source_integrity": {
+          "manifest_sha256": "e0401cf3ebfbe6622519317f6f0764cf086f45850a0c7864254ac9f8dde69d4c",
+          "diagnostic_source_files_hash_verified": 322
+        },
+        "samples": [
+          {
+            "file": "BestHTTP/WebSocket/WebSocketResponse.cs",
+            "line": 92,
+            "category": "near_runtime_class_static_storage_B8",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "e1fed49e9b92639a8482c2a6d3cd4845dba55ba2f1d3533d0b5bef69cb1b5878"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 34,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "030be4652f4d88c660cdeebb1ffcdaebd877ab17e42df6ba25272d08e26312b3"
+          },
+          {
+            "file": "AssetBundleSample.cs",
+            "line": 218,
+            "category": "near_runtime_class_static_storage_B8",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "585717798ed62f2ac88f9ee77b112a606966a32db59bc9a27fd857a6ae07103a"
+          },
+          {
+            "file": "BaseHub.cs",
+            "line": 61,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "732ac541cd86b98a4c4feecc857534212d6e5f30020ffe60947f563d94e0899d"
+          },
+          {
+            "file": "BaseHub.cs",
+            "line": 73,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "732ac541cd86b98a4c4feecc857534212d6e5f30020ffe60947f563d94e0899d"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 115,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "030be4652f4d88c660cdeebb1ffcdaebd877ab17e42df6ba25272d08e26312b3"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 129,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "030be4652f4d88c660cdeebb1ffcdaebd877ab17e42df6ba25272d08e26312b3"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 139,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "030be4652f4d88c660cdeebb1ffcdaebd877ab17e42df6ba25272d08e26312b3"
+          },
+          {
+            "file": "AuthenticationSample.cs",
+            "line": 213,
+            "category": "near_runtime_class_static_storage_B8",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "3c4d7109e4f548859844cb4e0526a6f57a5c662913c386a10ace67f129632b4b"
+          },
+          {
+            "file": "AuthenticationSample.cs",
+            "line": 331,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "3c4d7109e4f548859844cb4e0526a6f57a5c662913c386a10ace67f129632b4b"
+          },
+          {
+            "file": "AuthenticationSample.cs",
+            "line": 345,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "3c4d7109e4f548859844cb4e0526a6f57a5c662913c386a10ace67f129632b4b"
+          },
+          {
+            "file": "BestHTTP/WebSocket/WebSocketResponse.cs",
+            "line": 360,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "e1fed49e9b92639a8482c2a6d3cd4845dba55ba2f1d3533d0b5bef69cb1b5878"
+          },
+          {
+            "file": "BundlesUtil.cs",
+            "line": 194,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "030be4652f4d88c660cdeebb1ffcdaebd877ab17e42df6ba25272d08e26312b3"
+          }
+        ]
+      },
+      "type_to_nint_delta": 367
+    },
+    "Assembly-CSharp": {
+      "before": {
+        "canonical_all_errors": 28906,
+        "canonical_type_to_nint_errors": 4209,
+        "correlation_categories": {
+          "near_unrecovered_class_guard_122_or_D4": 2321,
+          "other_type_pointer_use": 1736,
+          "near_runtime_class_static_storage_B8": 152
+        },
+        "unresolved_known_helper_nearby": {},
+        "source_integrity": {
+          "manifest_sha256": "0353b29916e4883ef7b346c58e95542dc0713c70ef388106013809f875a91de6",
+          "diagnostic_source_files_hash_verified": 541
+        },
+        "samples": [
+          {
+            "file": "BinaryReaderNekki.cs",
+            "line": 46,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "d02e311326d5a950f64b548f571b52aff7dfdd5fc159beba581ae13e602e13a7"
+          },
+          {
+            "file": "BinaryReaderNekki.cs",
+            "line": 83,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "d02e311326d5a950f64b548f571b52aff7dfdd5fc159beba581ae13e602e13a7"
+          },
+          {
+            "file": "BinaryReaderNekki.cs",
+            "line": 99,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "d02e311326d5a950f64b548f571b52aff7dfdd5fc159beba581ae13e602e13a7"
+          },
+          {
+            "file": "BinaryReaderNekki.cs",
+            "line": 115,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "d02e311326d5a950f64b548f571b52aff7dfdd5fc159beba581ae13e602e13a7"
+          },
+          {
+            "file": "BinaryReaderNekki.cs",
+            "line": 131,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "d02e311326d5a950f64b548f571b52aff7dfdd5fc159beba581ae13e602e13a7"
+          },
+          {
+            "file": "Constants.cs",
+            "line": 194,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "0f3ab0c8178b6ec44cd8353ff2765b2f1dfe61cf52415a6c52bf97140941ab6d"
+          },
+          {
+            "file": "Constants.cs",
+            "line": 268,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "0f3ab0c8178b6ec44cd8353ff2765b2f1dfe61cf52415a6c52bf97140941ab6d"
+          },
+          {
+            "file": "DebugUtils.cs",
+            "line": 81,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "f234f6ff744b705dd744f3f0bf8f730240a3ede1b7a0dc150cf1fe572365542c"
+          },
+          {
+            "file": "CocosAnimationData.cs",
+            "line": 332,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "b63a456d78e763d50fc87bbb9eb6f79ea276e6ca55dfbcf4f70935630db7b97c"
+          },
+          {
+            "file": "CocosAnimationData.cs",
+            "line": 350,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "b63a456d78e763d50fc87bbb9eb6f79ea276e6ca55dfbcf4f70935630db7b97c"
+          },
+          {
+            "file": "CocosAnimationData.cs",
+            "line": 355,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "b63a456d78e763d50fc87bbb9eb6f79ea276e6ca55dfbcf4f70935630db7b97c"
+          },
+          {
+            "file": "CocosAnimationData.cs",
+            "line": 425,
+            "category": "other_type_pointer_use",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "b63a456d78e763d50fc87bbb9eb6f79ea276e6ca55dfbcf4f70935630db7b97c"
+          }
+        ]
+      },
+      "after": {
+        "canonical_all_errors": 30393,
+        "canonical_type_to_nint_errors": 4920,
+        "correlation_categories": {
+          "near_unrecovered_class_guard_122_or_D4": 2881,
+          "other_type_pointer_use": 1882,
+          "near_runtime_class_static_storage_B8": 157
+        },
+        "unresolved_known_helper_nearby": {
+          "near_unrecovered_class_guard_122_or_D4": 1581,
+          "other_type_pointer_use": 17,
+          "near_runtime_class_static_storage_B8": 9
+        },
+        "source_integrity": {
+          "manifest_sha256": "e0401cf3ebfbe6622519317f6f0764cf086f45850a0c7864254ac9f8dde69d4c",
+          "diagnostic_source_files_hash_verified": 551
+        },
+        "samples": [
+          {
+            "file": "DebugUtils.cs",
+            "line": 44,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": false,
+            "source_sha256": "8633bba9ea187a862ccdc4f19299ce7963a5e71ebfe33c906643b5f996ffe173"
+          },
+          {
+            "file": "Constants.cs",
+            "line": 194,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "3183d0cd707baabacaa3178df01afd940c45ce461f25548cbf950f0f5a10b81f"
+          },
+          {
+            "file": "DebugUtils.cs",
+            "line": 91,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "8633bba9ea187a862ccdc4f19299ce7963a5e71ebfe33c906643b5f996ffe173"
+          },
+          {
+            "file": "Constants.cs",
+            "line": 270,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "3183d0cd707baabacaa3178df01afd940c45ce461f25548cbf950f0f5a10b81f"
+          },
+          {
+            "file": "DumpController.cs",
+            "line": 239,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "a82a13061e791d9e2ac49bde56ef4a905c6dda2e22223b5b05831ca8c5083a60"
+          },
+          {
+            "file": "DumpController.cs",
+            "line": 321,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "a82a13061e791d9e2ac49bde56ef4a905c6dda2e22223b5b05831ca8c5083a60"
+          },
+          {
+            "file": "GooglePlayGames/OurUtils/PlayGamesHelperObject.cs",
+            "line": 114,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "3ae136d5789c69bcac6553a6bfa5d683c34733db4b55efd7319334e761328d8a"
+          },
+          {
+            "file": "InterfaceMovement/ButtonFocus.cs",
+            "line": 21,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "07ded130d86850b7b5fd3986f729a9054707260f11c03c876b26ce84286f22ce"
+          },
+          {
+            "file": "DebugUtils.cs",
+            "line": 155,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "8633bba9ea187a862ccdc4f19299ce7963a5e71ebfe33c906643b5f996ffe173"
+          },
+          {
+            "file": "InterfaceMovement/Button.cs",
+            "line": 36,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "3efde2e0bf09e8fc3544b2e808277cad23af9f8011e5b2a177231f97e03eb58c"
+          },
+          {
+            "file": "DumpController.cs",
+            "line": 446,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "a82a13061e791d9e2ac49bde56ef4a905c6dda2e22223b5b05831ca8c5083a60"
+          },
+          {
+            "file": "DumpController.cs",
+            "line": 454,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "a82a13061e791d9e2ac49bde56ef4a905c6dda2e22223b5b05831ca8c5083a60"
+          },
+          {
+            "file": "BinaryReaderNekki.cs",
+            "line": 46,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "a605f81e6e6a5def8c03de5262e527e9980b11af87bb1c879fece3544e3ab31d"
+          },
+          {
+            "file": "BinaryReaderNekki.cs",
+            "line": 88,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "a605f81e6e6a5def8c03de5262e527e9980b11af87bb1c879fece3544e3ab31d"
+          },
+          {
+            "file": "BinaryReaderNekki.cs",
+            "line": 109,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "a605f81e6e6a5def8c03de5262e527e9980b11af87bb1c879fece3544e3ab31d"
+          },
+          {
+            "file": "BinaryReaderNekki.cs",
+            "line": 130,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "a605f81e6e6a5def8c03de5262e527e9980b11af87bb1c879fece3544e3ab31d"
+          },
+          {
+            "file": "BinaryReaderNekki.cs",
+            "line": 151,
+            "category": "near_unrecovered_class_guard_122_or_D4",
+            "unresolved_known_class_helper_in_window": true,
+            "source_sha256": "a605f81e6e6a5def8c03de5262e527e9980b11af87bb1c879fece3544e3ab31d"
+          }
+        ]
+      },
+      "type_to_nint_delta": 711
+    }
+  },
+  "actual_post_fix_observation": {
+    "method": "BinaryReaderNekki::ReadBoolean",
+    "rva": "0xF0D390",
+    "exact_fde_bytes": 148,
+    "native_class_load": "0xF0D3D4: LDR X0,[X8]",
+    "scheduled_load": "0xF0D3D8: LDR W21,[X19,#0x14]",
+    "guard_start": "0xF0D3DC",
+    "known_call": "0xF0D3EC -> 0xB2E720",
+    "join": "0xF0D3F0",
+    "native_window_sha256": "b83bb2967aeea07417be177b76ad58afd95d49cee49dbf08e9e88186dcb8ded5",
+    "post_fix_ir_sha256": "fa07afb94be89f1b9641483b960c3a296bda268db307207c13bbb81f1e979476",
+    "helper_call_lowered": true,
+    "raw_guard_memory_loads_still_present": [
+      "0x122",
+      "0xD4"
+    ],
+    "survey_sha256": "7466b5911e95624b258acc9c3602dc48a9d24b562efd37ab3e6563ea12e435c1",
+    "core_sha256": "b13429fe68cb08c5f45b0188e3732ec25ae7abfd9d62282084e5150819a0f6b3"
+  },
+  "precise_root": {
+    "file": "refs/Cpp2IL/Cpp2IL.Core/Utils/LegacyArm64AllocationPattern.cs",
+    "method": "FindClassLoad",
+    "issue": "The backward class-load witness accepts ordinary 64-bit loads, selected FP loads and stack-zero/ADRP scheduling, but rejects the intervening unsigned-offset 32-bit LDR W21. Therefore the exact ordinary has_cctor/cctor_finished macro is not semantically folded. Its remaining raw Il2CppClass memory checks require an invalid System.Type-to-native-pointer conversion even after the raw helper itself now lowers correctly.",
+    "related_integration": "NewArmV8InstructionSet.GetIsilFromMethod ordinary exact-FDE class-macro path"
+  },
+  "bounded_proposal": [
+    "Within the existing 16-byte backward witness only, admit the exact unsigned-offset 32-bit LDR form when its destination is not W0. Preserve this scheduled instruction and continue requiring the exact X0 class-slot load, has_cctor/cctor_finished offsets/branches, independently identified target and original FDE bounds.",
+    "Emit the existing semantic class-init call plus jump only at the native guard start. Do not remove the scheduled W21 field read or replace class initialization with a no-op.",
+    "Add original ReadBoolean acceptance and changed W0/writeback/extra-effect negative fixtures. Require post-fix original typed field-read and managed-call provenance, disappearance of both raw guard offsets, and unchanged known runtime initialization semantics."
+  ],
+  "review": [
+    "The approved raw-call correction preserves exact target identity, verifies all 16 physical argument registers, checks one unused unique X0 result through all source/store-address operands, and requires a unique dominating exact represented-type metadata origin.",
+    "The known-helper MethodInfo exclusion fixes an actual stale Enumerator.Dispose resolution without inventing a managed alias; ambiguous origins remain diagnostic.",
+    "Current source observations include class-storage B8 and other type-pointer uses. They are not all class-initializer bugs, and this proposed guard fix cannot be assumed to remove every System.Type-to-nint diagnostic.",
+    "Expected compiler impact is conditional: the raw-call correction removes unresolved helper calls and false aliases, while residual raw guard memory operations can keep the invalid pointer cast. Only a fresh unchanged source export/compiler run can establish the actual diagnostic delta."
+  ],
+  "limits": "Read-only source/native/ISIL review. Correlation windows are categorized observations, not independent root causes. No v32 recovered DLL, whole-source build, whole-caller execution or gameplay claim is made by this report."
+}

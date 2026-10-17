@@ -1,0 +1,18 @@
+{
+  "sha256": {
+    "unpacked\\effective\\romfs\\Data\\Managed\\Metadata\\global-metadata.dat": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+    "refs\\BetterCpp2IL\\src\\Cpp2IL\\bin\\Release\\net10.0\\Cpp2IL.Core.dll": "47b9d6a9ae7b45e5c7ae7c27110864c9f5a7691c29aecc3f42f123661c81f78a",
+    "unpacked\\effective\\exefs\\main": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+    "refs\\BetterCpp2IL\\src\\Cpp2IL\\bin\\Release\\net10.0\\Cpp2IL.dll": "46ad3b468d1975e5ed5bdef08ac4ab0a30eca25ed2bdf70fe8314a74b9bbe610"
+  },
+  "elapsed_seconds": 7.2729231,
+  "license": "MIT",
+  "output": "F:\\SF2SwitchPC\\analysis\\il2cpp\\better-source-v1",
+  "status": "OUTPUT_GENERATED_NOT_VALIDATED",
+  "commit": "43850f644a1584a8ca700cab2f71f4b2462eb255",
+  "scope": "Unmodified alternative C# printer on original NSO/metadata. Exit success is not source compilation, semantic validation, or a portable game.",
+  "type_filter": "AdvLog,VersionContainer,UnityEngine.Vector3,DG.Tweening.Plugins.Vector3WrapperPlugin",
+  "upstream": "https://github.com/smartfish67png/BetterCpp2IL",
+  "exit_code": 0,
+  "log": "F:\\SF2SwitchPC\\logs\\better-source-v1.log"
+}

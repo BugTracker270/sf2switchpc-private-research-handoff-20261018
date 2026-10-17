@@ -1,0 +1,427 @@
+{
+  "status": "ORDINARY_CFG_PRODUCTION_CORRELATION_LIMITATIONS",
+  "checks": 4,
+  "tests": [
+    {
+      "name": "at least one newly matched ordinary plain-frame body traverses actual production analysis",
+      "status": "FAIL"
+    },
+    {
+      "name": "Unload exception-bearing frame remains excluded",
+      "status": "PASS"
+    },
+    {
+      "name": "current parser and reload-stage gate passes on the same Core",
+      "status": "PASS"
+    },
+    {
+      "name": "unsupported GetSafe cold/Phi reload shapes remain explicit",
+      "status": "PASS"
+    }
+  ],
+  "examined_plain_registered_frames": 33479,
+  "candidate_analysis_attempts": 32,
+  "accepted_ordinary_bodies": 0,
+  "selected": [],
+  "candidate_summaries": [
+    {
+      "method": "Nekki.SF2.Core.MultiplayerSF.SFRequestSender::get_LOGIN_MAX_ATTEMPTS",
+      "rva": "0xE200",
+      "bytes": 192,
+      "body_sha256": "b9fe33fb5ab90aa6aec1c62f3729b8d9a9d04028f2f7e1ef20587fa16b4d0aa4",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "Nekki.SF2.Core.MultiplayerSF.SFRequestSender::get_JOINZONE_TIMEOUT",
+      "rva": "0xE2C0",
+      "bytes": 192,
+      "body_sha256": "4882f65fa0b1497b8910e2116f9c444dca9a05641f44cac0792eae84977b8cbd",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "Nekki.SF2.Core.MultiplayerSF.SFRequestSender::get_CREATE_TIMEOUT",
+      "rva": "0xE380",
+      "bytes": 192,
+      "body_sha256": "627afcb285624b2b14b68f7a2feabff6aa62d4eca8b7e6f910d27cba81156ef9",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "Nekki.SF2.Core.Network.NetworkController::OnDumpEnd",
+      "rva": "0x25010",
+      "bytes": 248,
+      "body_sha256": "129505423264923c0c5e6654f76d5e27eb176264f4d23abbd7306211fed53862",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "VersionContainer::op_Inequality",
+      "rva": "0xC3A90",
+      "bytes": 204,
+      "body_sha256": "308bb7b6a002e2eea8d42f4c080045eab8efcfd6b20edd5851566c3e48442f7d",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "UnityEngine.UI.Graphic::SetVerticesDirty",
+      "rva": "0x1151D0",
+      "bytes": 244,
+      "body_sha256": "12aec99e1bd0856e2e88b944510bb67050119e1fd996324944f352417ef5a020",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "UnityEngine.UI.Graphic::SetMaterialDirty",
+      "rva": "0x1152D0",
+      "bytes": 244,
+      "body_sha256": "71aa8c69b8d94c7ce37d7d0726e475c8baf47217b6f5f6fb44a51832e45d4246",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "NekkiLog::OnDestroy",
+      "rva": "0x159F00",
+      "bytes": 196,
+      "body_sha256": "21a300aeb8f1138bb72f3aeb884f899213ce4fa7f9b41280b27cb589a511a4ee",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "BestHTTP.Decompression.Zlib.DeflateManager::_tr_flush_block",
+      "rva": "0x239F30",
+      "bytes": 680,
+      "body_sha256": "2033d4ebcd0b873eb5a5fba2cbee693b0c3b705499431157c2d8aeca99bae211",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Xml.XmlConvert::EncodeLocalName",
+      "rva": "0x2D34E0",
+      "bytes": 268,
+      "body_sha256": "4d593b8f35daaa3350a09017048ae70ebca43c77ed1bf023dd88e15bf6be41f1",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Xml.XmlDocumentNavigator::get_LocalName",
+      "rva": "0x2DECE0",
+      "bytes": 680,
+      "body_sha256": "0b27fcd649a20bf0d0000d99138241efc4dd0e52b0a1561dfff19c26adbcbed0",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Configuration.CustomizableFileSettingsProvider::SetUserRoamingFileName",
+      "rva": "0x374F10",
+      "bytes": 264,
+      "body_sha256": "651d489e466861d891b288ded08f08557c9b4d75219a4aac3da86821ad2d1d20",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Configuration.CustomizableFileSettingsProvider::SetUserLocalFileName",
+      "rva": "0x375020",
+      "bytes": 264,
+      "body_sha256": "02ddeeaf7015a176058b7f0e2c6c93f9f0ddc0035940021a29e88c18e623e4e0",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Configuration.CustomizableFileSettingsProvider::SetCompanyName",
+      "rva": "0x375130",
+      "bytes": 264,
+      "body_sha256": "f3792b84d5bd51dca749b35f8aa959936c3144ad108744667db55a0780325b6b",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Configuration.CustomizableFileSettingsProvider::SetProductName",
+      "rva": "0x375240",
+      "bytes": 264,
+      "body_sha256": "743f1d5aaf602836292242cc907c7e86bc72e8325241e1c6961c5be466408b74",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Configuration.CustomizableFileSettingsProvider::SetVersion",
+      "rva": "0x3758F0",
+      "bytes": 264,
+      "body_sha256": "0a567f70bf3455b28faef3cc5875a21d21c725d34c3278588d66e16ec2e97d95",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.String::Format",
+      "rva": "0x3FC2F0",
+      "bytes": 204,
+      "body_sha256": "88c9c1070409ffcd90532048d0cfb1fc9e53c521b89825cdb4582a9748d4520c",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Runtime.Remoting.RemotingServices::RemoveAppNameFromUri",
+      "rva": "0x42D570",
+      "bytes": 336,
+      "body_sha256": "1bdf2364f180a1d905f71ca27100e99627c2dd289abfb6bca20b97bc66ad3b87",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "Org.BouncyCastle.Crypto.Tls.TlsProtocol::CreateRenegotiationInfo",
+      "rva": "0x4AC360",
+      "bytes": 200,
+      "body_sha256": "876c70f09ad98855b5c057facd99778c8faded0ebc64e593d969917f7bbff6e1",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "Org.BouncyCastle.Math.EC.Custom.Djb.Curve25519Field::FromBigInteger",
+      "rva": "0x4CA5B0",
+      "bytes": 224,
+      "body_sha256": "3f78389f5b6d54406c419a092bf31b7a83d6d97864416f8e907bb15f6d2fcbea",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Xml.Serialization.XmlReflectionImporter::ImportClassMapping",
+      "rva": "0x6153B0",
+      "bytes": 224,
+      "body_sha256": "6b463e3934892277083426632d6fa35d74afa16aa014602f41fb9811b027ef2c",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Xml.Serialization.XmlReflectionImporter::ImportListMapping",
+      "rva": "0x6171F0",
+      "bytes": 248,
+      "body_sha256": "5b0346062736132880602efb216b5003591b988e54de8f6fe2c2d2daebf77d05",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "Ionic.Zip.ZipEntry::HandlePK00Prefix",
+      "rva": "0x72F930",
+      "bytes": 252,
+      "body_sha256": "2042cfc1e9810532d118c680613bf10737aebf90609b8fa9df940eccfdbb3eaf",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Security.Permissions.FileIOPermission::IsSubsetOf",
+      "rva": "0x77B5B0",
+      "bytes": 760,
+      "body_sha256": "27e3127dc24743a623af2f923a57d9405202819a421425d1201990af96136918",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.ComponentModel.TypeDescriptor::GetEvents",
+      "rva": "0x81E840",
+      "bytes": 192,
+      "body_sha256": "9464cce5e488d7e1ba88d779585fb79e4cb145d37bcb03e6677fe539124ba7b6",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.ComponentModel.TypeDescriptor::GetProperties",
+      "rva": "0x81EE20",
+      "bytes": 192,
+      "body_sha256": "a2719e99a805ae74983a3820a39fda76da14e48981f27609f725122d1483cac5",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "System.Text.RegularExpressions.Match::NextMatch",
+      "rva": "0x8719C0",
+      "bytes": 436,
+      "body_sha256": "068f05ad23962638773ebce6c24cf91f44503f16e8ed7e248a5c84582a8d30ff",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "Org.BouncyCastle.Math.EC.ECPointBase::.ctor",
+      "rva": "0x9AA720",
+      "bytes": 248,
+      "body_sha256": "21fee53ac594d85b9fbde51c0ac045d0331de33c4d3dbef3f597781ba40ea641",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "UnityEngine.GUILayout::Label",
+      "rva": "0xA0BF40",
+      "bytes": 436,
+      "body_sha256": "2f7c4906b326039c22b0da4e0d017647b07c7f8745ce9cedd036466f214f7606",
+      "new_cfg_sites": 2
+    },
+    {
+      "method": "UnityEngine.GUILayout::DoLabel",
+      "rva": "0xA0C100",
+      "bytes": 296,
+      "body_sha256": "57165671090c68a2c8d98e67890e532c53793fa7177996f2c0f6c1c4c974d668",
+      "new_cfg_sites": 1
+    },
+    {
+      "method": "UnityEngine.GUILayout::Box",
+      "rva": "0xA0C3D0",
+      "bytes": 436,
+      "body_sha256": "ad630882994b9c95fc7ac83eb09efb044eac8ed18b8434012f5315ff54d1a6b5",
+      "new_cfg_sites": 2
+    },
+    {
+      "method": "UnityEngine.GUILayout::DoBox",
+      "rva": "0xA0C590",
+      "bytes": 296,
+      "body_sha256": "27fc419eeac7d60fc8ceb6d694d9a8dd671f5c35eb62ab6617c8872ba8da371a",
+      "new_cfg_sites": 1
+    }
+  ],
+  "candidate_rejections": [
+    {
+      "method": "Nekki.SF2.Core.MultiplayerSF.SFRequestSender::get_LOGIN_MAX_ATTEMPTS",
+      "rva": "0xE200",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "Nekki.SF2.Core.MultiplayerSF.SFRequestSender::get_JOINZONE_TIMEOUT",
+      "rva": "0xE2C0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "Nekki.SF2.Core.MultiplayerSF.SFRequestSender::get_CREATE_TIMEOUT",
+      "rva": "0xE380",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "Nekki.SF2.Core.Network.NetworkController::OnDumpEnd",
+      "rva": "0x25010",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "VersionContainer::op_Inequality",
+      "rva": "0xC3A90",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "UnityEngine.UI.Graphic::SetVerticesDirty",
+      "rva": "0x1151D0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "UnityEngine.UI.Graphic::SetMaterialDirty",
+      "rva": "0x1152D0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "NekkiLog::OnDestroy",
+      "rva": "0x159F00",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "BestHTTP.Decompression.Zlib.DeflateManager::_tr_flush_block",
+      "rva": "0x239F30",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.Xml.XmlConvert::EncodeLocalName",
+      "rva": "0x2D34E0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.Xml.XmlDocumentNavigator::get_LocalName",
+      "rva": "0x2DECE0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.Configuration.CustomizableFileSettingsProvider::SetUserRoamingFileName",
+      "rva": "0x374F10",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.Configuration.CustomizableFileSettingsProvider::SetUserLocalFileName",
+      "rva": "0x375020",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.Configuration.CustomizableFileSettingsProvider::SetCompanyName",
+      "rva": "0x375130",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.Configuration.CustomizableFileSettingsProvider::SetProductName",
+      "rva": "0x375240",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.Configuration.CustomizableFileSettingsProvider::SetVersion",
+      "rva": "0x3758F0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.String::Format",
+      "rva": "0x3FC2F0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.Runtime.Remoting.RemotingServices::RemoveAppNameFromUri",
+      "rva": "0x42D570",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "Org.BouncyCastle.Crypto.Tls.TlsProtocol::CreateRenegotiationInfo",
+      "rva": "0x4AC360",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "Org.BouncyCastle.Math.EC.Custom.Djb.Curve25519Field::FromBigInteger",
+      "rva": "0x4CA5B0",
+      "error": "System.IO.InvalidDataException: Typed stage requests/raw/flags/semantic call comparison failed: 3/0/2/True\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 123"
+    },
+    {
+      "method": "System.Xml.Serialization.XmlReflectionImporter::ImportClassMapping",
+      "rva": "0x6153B0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.Xml.Serialization.XmlReflectionImporter::ImportListMapping",
+      "rva": "0x6171F0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "Ionic.Zip.ZipEntry::HandlePK00Prefix",
+      "rva": "0x72F930",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.Security.Permissions.FileIOPermission::IsSubsetOf",
+      "rva": "0x77B5B0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.ComponentModel.TypeDescriptor::GetEvents",
+      "rva": "0x81E840",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.ComponentModel.TypeDescriptor::GetProperties",
+      "rva": "0x81EE20",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "System.Text.RegularExpressions.Match::NextMatch",
+      "rva": "0x8719C0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "Org.BouncyCastle.Math.EC.ECPointBase::.ctor",
+      "rva": "0x9AA720",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "UnityEngine.GUILayout::Label",
+      "rva": "0xA0BF40",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "UnityEngine.GUILayout::DoLabel",
+      "rva": "0xA0C100",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "UnityEngine.GUILayout::Box",
+      "rva": "0xA0C3D0",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    },
+    {
+      "method": "UnityEngine.GUILayout::DoBox",
+      "rva": "0xA0C590",
+      "error": "System.IO.InvalidDataException: Non-scaffolding raw loads/stores/calls differ from direct decoding\r\n   at Program.\u003CMain\u003E$(String[] args) in F:\\SF2SwitchPC\\src\\re\\OrdinaryCfgCorrelationProbe\\Program.cs:line 112"
+    }
+  ],
+  "core_sha256": "a5305ef13dff2ddc60a831ef684042701e59640b3be3fa6f72195687b74c4939",
+  "plain_parser_report_sha256": "9b0acff9cf0f9a4523e1aa338909f3c377369d766009bcb9a1faa5322b86e3a6",
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "value_this_source_sha256": "4a24d9598320b91ec19078882d9c46bd90b399c055301cdd81d61c4e2c9f1ee4",
+  "instruction_set_source_sha256": "b463b461da33a0359254813552777d96b4b718bdf195144f418506cea38f3d8b",
+  "cfg_matcher_source_sha256": "e5e9bc6669d38f5879d79ca4a2cc0a2e7b5924cc405434c2e9eea1dd2cbdfcfa",
+  "probe_source_sha256": "76d1d986e3152d4e3f2900063fb4aa6b84726d65a69966949e1641a078c7258d",
+  "core_source_edited_by_probe": false,
+  "ir_rewritten_by_probe": false,
+  "guest_execution_performed": false,
+  "scope": "Original native exact plain-FDE and actual production decoder/type-fixpoint correlation only. Raw non-flag loads/stores and non-constructor calls must have the same canonical ordered operands as direct native instruction conversion; typed constructor and semantic call sites must survive the real pipeline. Complete native/IR snapshots are private ignored evidence. The probe does not execute original or recovered game code, certify all operand types/branch paths/field-read timing, implement exception handling, or claim portable/full source. GetSafe has3 native/type-fixpoint config reads and5 later propagated field operands; those stages are explicitly distinct. Unload zPLR stays excluded."
+}

@@ -1,0 +1,144 @@
+{
+  "status": "PASS_NATIVE_LEAF_ACCESSOR_SELECTION_ONLY",
+  "checks": 19,
+  "fixtures": [
+    {
+      "name": "actual reference field setter native proof",
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "name": "effectful fallback getter rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "cache returns actual original setter",
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "name": "cache rejects effectful original getter",
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "name": "actual reference getter native proof",
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "name": "actual byte boolean getter native proof",
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "name": "protected canonicalizing setter rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "foreign owner rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "wrong aligned field offset rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "object header rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "misaligned field rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "readonly field write rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "static field rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "virtual accessor rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "private accessor rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "static accessor rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "mismatched field signature rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "aggregate field rejected",
+      "expected": false,
+      "status": "PASS"
+    },
+    {
+      "name": "explicit owner layout rejected",
+      "expected": false,
+      "status": "PASS"
+    }
+  ],
+  "fields_examined": 20449,
+  "selected_getters": 1561,
+  "selected_setters": 429,
+  "witnesses": [
+    {
+      "owner": "Nekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode",
+      "field": "_Current",
+      "field_visibility": "Family",
+      "field_offset": "0x20",
+      "type": "Vector3f",
+      "getter": "Nekki.SF2.Core.Fights.Model.Components.Nodes.ModelNode::get_CurrentPosition",
+      "getter_rva": "0xFE9F00",
+      "setter": null,
+      "setter_rva": null
+    },
+    {
+      "owner": "InControl.InputControlMapping",
+      "field": "handle",
+      "field_visibility": "Private",
+      "field_offset": "0x38",
+      "type": "System.String",
+      "getter": null,
+      "getter_rva": null,
+      "setter": "InControl.InputControlMapping::set_Handle",
+      "setter_rva": "0x1520D00"
+    },
+    {
+      "owner": "Nekki.SF2.Core.Utils.Perks.PerkAction",
+      "field": "\u003CModificator\u003Ek__BackingField",
+      "field_visibility": "Private",
+      "field_offset": "0x3C",
+      "type": "System.Boolean",
+      "getter": "Nekki.SF2.Core.Utils.Perks.PerkAction::get_Modificator",
+      "getter_rva": "0xF638A0",
+      "setter": null,
+      "setter_rva": null
+    }
+  ],
+  "game_metadata_modified": false,
+  "original_native_executed": false,
+  "recovered_cil_executed": false,
+  "whole_game_source_ready": false,
+  "scope": "Existing nonvirtual public instance property accessors are selected only after exact original native scalar/ref field-access plus RET proof. Private field flags remain unchanged. Original side-effectful fallback getters, aggregate/value receivers, generic and explicit layouts, readonly stores, static fields and nonpublic or virtual accessors remain rejected. This report validates selection and negative guards; caller emission, compiled behavior and whole-source compilation require separate tests."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS_LOCAL_PRIVATE_BINARY_ROUND_TRIP_PARENT_RETRIEVAL_PENDING",
+  "repository_url": "https://github.com/BugTracker270/sf2switchpc-private-research-handoff-20261018",
+  "repository_id": 1423763135,
+  "private": true,
+  "owner_id": 202965583,
+  "release_url": "https://github.com/BugTracker270/sf2switchpc-private-research-handoff-20261018/releases/tag/private-handoff-access-test-20261017",
+  "release_id": 416076019,
+  "asset_id": 651660008,
+  "asset_api_url": "https://api.github.com/repos/BugTracker270/sf2switchpc-private-research-handoff-20261018/releases/assets/651660008",
+  "asset_download_url": "https://github.com/BugTracker270/sf2switchpc-private-research-handoff-20261018/releases/download/private-handoff-access-test-20261017/transfer-access-test.bin",
+  "asset_name": "transfer-access-test.bin",
+  "asset_bytes": 4194304,
+  "sha256": "9898819a8942f65828608259e33005c087c1adb430fce990bd75b88b43acb50d",
+  "download_sha256": "9898819a8942f65828608259e33005c087c1adb430fce990bd75b88b43acb50d",
+  "parent_cloud_private_download_verified": false,
+  "project_payload_uploaded": false,
+  "receipt_recovered_after_draft_tag_lookup_404": true,
+  "test_release_private_prerelease": true
+}

@@ -1,0 +1,21 @@
+diff --git a/src/main.rs b/src/main.rs
+--- a/src/main.rs
++++ b/src/main.rs
+@@ -1135,9 +1135,15 @@
+         prompt_manual_addresses()?
+     };
+ 
+-    let stream_len = nso.stream.data().len() as u64;
+     let mut il2cpp = Il2Cpp::new(nso.stream.clone(), version, nso.is_32bit);
+-    il2cpp.va_segments = vec![VaSegment { vaddr: 0, memsz: stream_len, offset: 0 }];
++    // NSO addresses are RVAs, not file offsets. Preserve the verified
++    // segment mappings for later metadata and method-body reads too.
++    let image = nso.stream.data();
++    il2cpp.va_segments = [0x10usize, 0x20, 0x30].into_iter().map(|base| {
++        let read = |offset: usize| u32::from_le_bytes(
++            image[offset..offset + 4].try_into().expect("validated NSO header")) as u64;
++        VaSegment { vaddr: read(base + 4), memsz: read(base + 8), offset: read(base) }
++    }).collect();
+     il2cpp.codm = resolve_codm(config, metadata);
+     il2cpp.init_with_auto_plus(cr_addr, mr_addr, &|addr| nso.map_vatr(addr), false)?;
+     il2cpp.data_sections = nso.data_search_sections();

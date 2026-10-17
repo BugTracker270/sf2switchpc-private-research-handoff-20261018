@@ -1,0 +1,27 @@
+{
+  "passed": 3,
+  "failed": 0,
+  "validation": "STATIC_ONLY",
+  "checks": [
+    {
+      "name": "damage_getter",
+      "status": "PASS_STATIC_NATIVE_METADATA_MATCH",
+      "native_address": "7100f968c0",
+      "field_offset": "0x1c"
+    },
+    {
+      "name": "damage_setter",
+      "status": "PASS_STATIC_NATIVE_METADATA_MATCH",
+      "native_address": "7100f968d0",
+      "field_offset": "0x1c"
+    },
+    {
+      "name": "legacy_static_argument_sample",
+      "status": "PASS_SCOPED_CORRECTION",
+      "native_address": "7100f61910",
+      "comparison": "Original recovery lost caller argument; patched recovery retains the name argument used by native string equality.",
+      "limitation": "Many unresolved-memory/IL issues remain. This test does not certify other methods."
+    }
+  ],
+  "corpus": "F:\\SF2SwitchPC\\analysis\\nso\\native-corpus\\functions.jsonl"
+}

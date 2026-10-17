@@ -1,0 +1,19 @@
+{
+  "status": "PASS_BYTE_PARTITION_RESIDUAL_REVIEW_REQUIRED",
+  "source_nso_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "text_bytes": 37181704,
+  "bytes_by_inventory_kind": {
+    "RESIDUAL": 878748,
+    "VALIDATED_FRAME": 36292460,
+    "VALIDATED_PLT": 10496
+  },
+  "residual_regions": 107770,
+  "residual_word_observations": {
+    "zero_bytes": 874372,
+    "nop_bytes": 244,
+    "other_bytes": 4132
+  },
+  "details": "analysis\\nso\\text-residual-partition-v1.jsonl",
+  "complete_source": false,
+  "scope": "Exact nonoverlapping byte partition using validated FDE extents and independently verified PLT entries. Residual zero/NOP words are byte observations and not proof of padding, dead code or source completeness. Other residual words include module/bootstrap material and require code/data review. Function bodies/control flow can cross FDE bounds; no code is modified or automatically discarded."
+}

@@ -1,0 +1,952 @@
+{
+  "status": "READ_ONLY_COMPILER_PRIORITY_AND_SOURCE_CORRELATION",
+  "runs": {
+    "nso-generic-ctor-v27": {
+      "compiler": {
+        "Assembly-CSharp-firstpass": {
+          "unique_error_diagnostics": 20266,
+          "error_codes": {
+            "CS1061": 1935,
+            "CS0117": 166,
+            "CS0103": 105,
+            "CS7036": 94,
+            "CS0030": 5878,
+            "CS0019": 4859,
+            "CS0023": 370,
+            "CS0266": 1381,
+            "CS0122": 3513,
+            "CS0037": 272,
+            "CS0234": 1214,
+            "CS1729": 20,
+            "CS0029": 52,
+            "CS0149": 22,
+            "CS0250": 11,
+            "CS0269": 65,
+            "CS0177": 167,
+            "CS8174": 34,
+            "CS0165": 37,
+            "CS0191": 16,
+            "CS8172": 1,
+            "CS1510": 4,
+            "CS0079": 32,
+            "CS0221": 3,
+            "CS7003": 5,
+            "CS1503": 4,
+            "CS0152": 2,
+            "CS0246": 3,
+            "CS1540": 1
+          },
+          "top_messages": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 2444
+            },
+            {
+              "code": "CS0266",
+              "message": "Cannot implicitly convert type 'object' to 'System.Exception'. An explicit conversion exists (are you missing a cast?)",
+              "count": 1376
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1249
+            },
+            {
+              "code": "CS0234",
+              "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+              "count": 1214
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object[]' to 'nint'",
+              "count": 652
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'int'",
+              "count": 363
+            },
+            {
+              "code": "CS0023",
+              "message": "Operator '++' cannot be applied to operand of type 'object'",
+              "count": 316
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'object' and 'int'",
+              "count": 294
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'object'",
+              "count": 273
+            },
+            {
+              "code": "CS0037",
+              "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+              "count": 239
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'int' and 'object'",
+              "count": 220
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'byte[]' and 'int'",
+              "count": 192
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'string'",
+              "count": 177
+            },
+            {
+              "code": "CS1061",
+              "message": "'Exception' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'Exception' could be found (are you missing a using directive or an assembly reference?)",
+              "count": 175
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'string[]' to 'nint'",
+              "count": 147
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object*' to 'object'",
+              "count": 146
+            }
+          ],
+          "log": "logs\\source-profile-legacy-reference-build-nso-generic-ctor-v27-Assembly-CSharp-firstpass.log",
+          "matches_canonical_summary": true
+        },
+        "Assembly-CSharp": {
+          "unique_error_diagnostics": 33148,
+          "error_codes": {
+            "CS0122": 6349,
+            "CS1061": 3211,
+            "CS0117": 441,
+            "CS0019": 4790,
+            "CS0030": 11930,
+            "CS0266": 3463,
+            "CS0023": 196,
+            "CS0234": 1043,
+            "CS0103": 762,
+            "CS0029": 98,
+            "CS0037": 409,
+            "CS0165": 27,
+            "CS0246": 2,
+            "CS0177": 23,
+            "CS8174": 2,
+            "CS0191": 107,
+            "CS1540": 20,
+            "CS7036": 101,
+            "CS1510": 13,
+            "CS0250": 1,
+            "CS1729": 10,
+            "CS0149": 73,
+            "CS0020": 1,
+            "CS1503": 34,
+            "CS0120": 2,
+            "CS0269": 4,
+            "CS0079": 30,
+            "CS0272": 3,
+            "CS1501": 3
+          },
+          "top_messages": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 4200
+            },
+            {
+              "code": "CS0266",
+              "message": "Cannot implicitly convert type 'object' to 'System.Exception'. An explicit conversion exists (are you missing a cast?)",
+              "count": 3453
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1827
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'InControl.InputControlMapping[]' to 'nint'",
+              "count": 1279
+            },
+            {
+              "code": "CS0234",
+              "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+              "count": 1043
+            },
+            {
+              "code": "CS1061",
+              "message": "'object' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'object' could be found (are you missing a using directive or an assembly reference?)",
+              "count": 784
+            },
+            {
+              "code": "CS0103",
+              "message": "The name '__ldftn' does not exist in the current context",
+              "count": 757
+            },
+            {
+              "code": "CS0122",
+              "message": "'InputControlMapping.handle' is inaccessible due to its protection level",
+              "count": 673
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object[]' to 'nint'",
+              "count": 660
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'string'",
+              "count": 646
+            },
+            {
+              "code": "CS0037",
+              "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+              "count": 406
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'string[]' to 'nint'",
+              "count": 404
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Delegate' to 'nint'",
+              "count": 391
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object*' to 'object'",
+              "count": 340
+            },
+            {
+              "code": "CS0122",
+              "message": "'Rect.m_XMin' is inaccessible due to its protection level",
+              "count": 253
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'object' and 'int'",
+              "count": 223
+            }
+          ],
+          "log": "logs\\source-profile-legacy-reference-build-nso-generic-ctor-v27-Assembly-CSharp.log",
+          "matches_canonical_summary": true
+        }
+      },
+      "source": {
+        "Assembly-CSharp-firstpass": {
+          "source_manifest_hashes_verified": true,
+          "files_checked": 1342,
+          "unresolved_helper_calls": {
+            "B4DA50": 905,
+            "B5B390": 1123,
+            "B5B070": 606,
+            "B04F60": 1396,
+            "B4D8B0": 382
+          },
+          "parameterless_array_mismatch_constructions": 0,
+          "selected_caller": {
+            "path": "analysis\\il2cpp\\source-profile-project-build-nso-generic-ctor-v27\\Assembly-CSharp-firstpass\\AuthenticationSample.cs",
+            "sha256": "d2d5c9f55298e06a8b0420fe5b2af4e73b7dfa24accc1532f820adc83735f366",
+            "bytes": 16287,
+            "unresolved_factory_calls": 9,
+            "parameterless_array_mismatch_constructions": 0
+          }
+        },
+        "Assembly-CSharp": {
+          "source_manifest_hashes_verified": true,
+          "files_checked": 1637,
+          "unresolved_helper_calls": {
+            "B4DA50": 2362,
+            "B5B390": 2637,
+            "B5B070": 570,
+            "B04F60": 989,
+            "B4D8B0": 891
+          },
+          "parameterless_array_mismatch_constructions": 0,
+          "selected_caller": null
+        }
+      }
+    },
+    "nso-native-leaves-v28": {
+      "compiler": {
+        "Assembly-CSharp-firstpass": {
+          "unique_error_diagnostics": 18247,
+          "error_codes": {
+            "CS0030": 5832,
+            "CS1061": 1633,
+            "CS0266": 458,
+            "CS0117": 154,
+            "CS0122": 2816,
+            "CS7036": 94,
+            "CS0103": 105,
+            "CS1729": 20,
+            "CS0234": 1210,
+            "CS0019": 4869,
+            "CS0037": 272,
+            "CS0023": 370,
+            "CS0149": 22,
+            "CS0029": 7,
+            "CS0165": 37,
+            "CS0177": 167,
+            "CS0250": 11,
+            "CS8174": 34,
+            "CS0269": 65,
+            "CS8172": 1,
+            "CS1510": 4,
+            "CS0191": 16,
+            "CS0079": 32,
+            "CS1540": 1,
+            "CS0152": 2,
+            "CS7003": 5,
+            "CS1503": 4,
+            "CS0221": 3,
+            "CS0246": 3
+          },
+          "top_messages": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 2446
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1249
+            },
+            {
+              "code": "CS0234",
+              "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+              "count": 1210
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object[]' to 'nint'",
+              "count": 652
+            },
+            {
+              "code": "CS0266",
+              "message": "Cannot implicitly convert type 'object' to 'System.Exception'. An explicit conversion exists (are you missing a cast?)",
+              "count": 453
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'int'",
+              "count": 363
+            },
+            {
+              "code": "CS0023",
+              "message": "Operator '++' cannot be applied to operand of type 'object'",
+              "count": 316
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'object' and 'int'",
+              "count": 294
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'object'",
+              "count": 273
+            },
+            {
+              "code": "CS0037",
+              "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+              "count": 239
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'int' and 'object'",
+              "count": 220
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'byte[]' and 'int'",
+              "count": 192
+            },
+            {
+              "code": "CS1061",
+              "message": "'Exception' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'Exception' could be found (are you missing a using directive or an assembly reference?)",
+              "count": 175
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'string'",
+              "count": 158
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'string[]' to 'nint'",
+              "count": 147
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object*' to 'object'",
+              "count": 146
+            }
+          ],
+          "log": "logs\\source-profile-legacy-reference-build-nso-native-leaves-v28-Assembly-CSharp-firstpass.log",
+          "matches_canonical_summary": true
+        },
+        "Assembly-CSharp": {
+          "unique_error_diagnostics": 29135,
+          "error_codes": {
+            "CS0019": 4793,
+            "CS1061": 3159,
+            "CS0117": 440,
+            "CS0030": 11797,
+            "CS0234": 1043,
+            "CS0122": 5029,
+            "CS0103": 761,
+            "CS0023": 196,
+            "CS0266": 1019,
+            "CS0165": 27,
+            "CS8174": 2,
+            "CS0037": 409,
+            "CS0029": 29,
+            "CS0246": 2,
+            "CS0177": 23,
+            "CS0191": 107,
+            "CS1540": 20,
+            "CS7036": 101,
+            "CS0149": 73,
+            "CS1510": 13,
+            "CS0079": 30,
+            "CS1729": 10,
+            "CS0269": 4,
+            "CS0120": 2,
+            "CS0250": 1,
+            "CS0272": 3,
+            "CS1503": 38,
+            "CS0020": 1,
+            "CS1501": 3
+          },
+          "top_messages": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 4200
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1827
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'InControl.InputControlMapping[]' to 'nint'",
+              "count": 1279
+            },
+            {
+              "code": "CS0234",
+              "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+              "count": 1043
+            },
+            {
+              "code": "CS0266",
+              "message": "Cannot implicitly convert type 'object' to 'System.Exception'. An explicit conversion exists (are you missing a cast?)",
+              "count": 1011
+            },
+            {
+              "code": "CS1061",
+              "message": "'object' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'object' could be found (are you missing a using directive or an assembly reference?)",
+              "count": 784
+            },
+            {
+              "code": "CS0103",
+              "message": "The name '__ldftn' does not exist in the current context",
+              "count": 756
+            },
+            {
+              "code": "CS0122",
+              "message": "'InputControlMapping.handle' is inaccessible due to its protection level",
+              "count": 673
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object[]' to 'nint'",
+              "count": 660
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'string'",
+              "count": 557
+            },
+            {
+              "code": "CS0037",
+              "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+              "count": 406
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'string[]' to 'nint'",
+              "count": 404
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Delegate' to 'nint'",
+              "count": 391
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object*' to 'object'",
+              "count": 340
+            },
+            {
+              "code": "CS0122",
+              "message": "'Rect.m_XMin' is inaccessible due to its protection level",
+              "count": 253
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'object' and 'int'",
+              "count": 223
+            }
+          ],
+          "log": "logs\\source-profile-legacy-reference-build-nso-native-leaves-v28-Assembly-CSharp.log",
+          "matches_canonical_summary": true
+        }
+      },
+      "source": {
+        "Assembly-CSharp-firstpass": {
+          "source_manifest_hashes_verified": true,
+          "files_checked": 1342,
+          "unresolved_helper_calls": {
+            "B4DA50": 0,
+            "B5B390": 1123,
+            "B5B070": 606,
+            "B04F60": 1396,
+            "B4D8B0": 382
+          },
+          "parameterless_array_mismatch_constructions": 968,
+          "selected_caller": {
+            "path": "analysis\\il2cpp\\source-profile-project-build-nso-native-leaves-v28\\Assembly-CSharp-firstpass\\AuthenticationSample.cs",
+            "sha256": "3c4d7109e4f548859844cb4e0526a6f57a5c662913c386a10ace67f129632b4b",
+            "bytes": 15288,
+            "unresolved_factory_calls": 0,
+            "parameterless_array_mismatch_constructions": 9
+          }
+        },
+        "Assembly-CSharp": {
+          "source_manifest_hashes_verified": true,
+          "files_checked": 1637,
+          "unresolved_helper_calls": {
+            "B4DA50": 0,
+            "B5B390": 2637,
+            "B5B070": 570,
+            "B04F60": 989,
+            "B4D8B0": 891
+          },
+          "parameterless_array_mismatch_constructions": 2513,
+          "selected_caller": null
+        }
+      }
+    },
+    "nso-native-leaves-v29": {
+      "compiler": {
+        "Assembly-CSharp-firstpass": {
+          "unique_error_diagnostics": 18066,
+          "error_codes": {
+            "CS1061": 1547,
+            "CS0117": 143,
+            "CS7036": 94,
+            "CS0030": 5832,
+            "CS0019": 4869,
+            "CS0023": 370,
+            "CS0266": 458,
+            "CS0122": 2732,
+            "CS0103": 105,
+            "CS0037": 272,
+            "CS1729": 20,
+            "CS0234": 1210,
+            "CS0149": 22,
+            "CS0029": 7,
+            "CS0165": 37,
+            "CS0250": 11,
+            "CS0269": 65,
+            "CS0177": 167,
+            "CS8174": 34,
+            "CS8172": 1,
+            "CS1510": 4,
+            "CS0191": 16,
+            "CS0221": 3,
+            "CS7003": 5,
+            "CS1503": 4,
+            "CS0079": 32,
+            "CS1540": 1,
+            "CS0246": 3,
+            "CS0152": 2
+          },
+          "top_messages": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 2446
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1249
+            },
+            {
+              "code": "CS0234",
+              "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+              "count": 1210
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object[]' to 'nint'",
+              "count": 652
+            },
+            {
+              "code": "CS0266",
+              "message": "Cannot implicitly convert type 'object' to 'System.Exception'. An explicit conversion exists (are you missing a cast?)",
+              "count": 453
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'int'",
+              "count": 363
+            },
+            {
+              "code": "CS0023",
+              "message": "Operator '++' cannot be applied to operand of type 'object'",
+              "count": 316
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'object' and 'int'",
+              "count": 294
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'object' and 'object'",
+              "count": 273
+            },
+            {
+              "code": "CS0037",
+              "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+              "count": 239
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'int' and 'object'",
+              "count": 220
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '+' cannot be applied to operands of type 'byte[]' and 'int'",
+              "count": 192
+            },
+            {
+              "code": "CS1061",
+              "message": "'Exception' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'Exception' could be found (are you missing a using directive or an assembly reference?)",
+              "count": 175
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'string'",
+              "count": 158
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'string[]' to 'nint'",
+              "count": 147
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object*' to 'object'",
+              "count": 146
+            }
+          ],
+          "log": "logs\\source-profile-legacy-reference-build-nso-native-leaves-v29-Assembly-CSharp-firstpass.log",
+          "matches_canonical_summary": true
+        },
+        "Assembly-CSharp": {
+          "unique_error_diagnostics": 28290,
+          "error_codes": {
+            "CS0122": 4192,
+            "CS1061": 3152,
+            "CS0117": 439,
+            "CS0030": 11797,
+            "CS0019": 4793,
+            "CS0103": 761,
+            "CS0023": 196,
+            "CS0234": 1043,
+            "CS0037": 409,
+            "CS0266": 1019,
+            "CS0165": 27,
+            "CS8174": 2,
+            "CS0246": 2,
+            "CS0177": 23,
+            "CS0029": 29,
+            "CS0191": 107,
+            "CS1540": 20,
+            "CS7036": 101,
+            "CS1510": 13,
+            "CS0149": 73,
+            "CS0079": 30,
+            "CS0272": 3,
+            "CS1729": 10,
+            "CS1501": 3,
+            "CS1503": 38,
+            "CS0269": 4,
+            "CS0120": 2,
+            "CS0250": 1,
+            "CS0020": 1
+          },
+          "top_messages": [
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Type' to 'nint'",
+              "count": 4200
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '&' cannot be applied to operands of type 'object' and 'int'",
+              "count": 1827
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'InControl.InputControlMapping[]' to 'nint'",
+              "count": 1279
+            },
+            {
+              "code": "CS0234",
+              "message": "The type or namespace name 'Unsafe' does not exist in the namespace 'System.Runtime.CompilerServices' (are you missing an assembly reference?)",
+              "count": 1043
+            },
+            {
+              "code": "CS0266",
+              "message": "Cannot implicitly convert type 'object' to 'System.Exception'. An explicit conversion exists (are you missing a cast?)",
+              "count": 1011
+            },
+            {
+              "code": "CS1061",
+              "message": "'object' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'object' could be found (are you missing a using directive or an assembly reference?)",
+              "count": 784
+            },
+            {
+              "code": "CS0103",
+              "message": "The name '__ldftn' does not exist in the current context",
+              "count": 756
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object[]' to 'nint'",
+              "count": 660
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'int' to 'string'",
+              "count": 557
+            },
+            {
+              "code": "CS0037",
+              "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+              "count": 406
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'string[]' to 'nint'",
+              "count": 404
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Delegate' to 'nint'",
+              "count": 391
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'object*' to 'object'",
+              "count": 340
+            },
+            {
+              "code": "CS0122",
+              "message": "'Rect.m_XMin' is inaccessible due to its protection level",
+              "count": 253
+            },
+            {
+              "code": "CS0019",
+              "message": "Operator '-' cannot be applied to operands of type 'object' and 'int'",
+              "count": 223
+            },
+            {
+              "code": "CS0030",
+              "message": "Cannot convert type 'System.Xml.XmlNode' to 'nint'",
+              "count": 181
+            }
+          ],
+          "log": "logs\\source-profile-legacy-reference-build-nso-native-leaves-v29-Assembly-CSharp.log",
+          "matches_canonical_summary": true
+        }
+      },
+      "source": {
+        "Assembly-CSharp-firstpass": {
+          "source_manifest_hashes_verified": true,
+          "files_checked": 1342,
+          "unresolved_helper_calls": {
+            "B4DA50": 0,
+            "B5B390": 1123,
+            "B5B070": 606,
+            "B04F60": 1396,
+            "B4D8B0": 382
+          },
+          "parameterless_array_mismatch_constructions": 968,
+          "selected_caller": {
+            "path": "analysis\\il2cpp\\source-profile-project-build-nso-native-leaves-v29\\Assembly-CSharp-firstpass\\AuthenticationSample.cs",
+            "sha256": "3c4d7109e4f548859844cb4e0526a6f57a5c662913c386a10ace67f129632b4b",
+            "bytes": 15288,
+            "unresolved_factory_calls": 0,
+            "parameterless_array_mismatch_constructions": 9
+          }
+        },
+        "Assembly-CSharp": {
+          "source_manifest_hashes_verified": true,
+          "files_checked": 1637,
+          "unresolved_helper_calls": {
+            "B4DA50": 0,
+            "B5B390": 2637,
+            "B5B070": 570,
+            "B04F60": 989,
+            "B4D8B0": 891
+          },
+          "parameterless_array_mismatch_constructions": 2513,
+          "selected_caller": null
+        }
+      }
+    }
+  },
+  "recommended_candidate": {
+    "rva": "0xB5B070",
+    "reviewed_bytes": 156,
+    "sha256": "827735a47ad60dc6eb33046526701fa86647e543ab655c6ecc1ff4b766c74aa2",
+    "distinct_direct_callers": 9374,
+    "primitive_corlib_anchors": [
+      {
+        "rva": "0x89e8c0",
+        "name": "System.Boolean$$System.IConvertible.ToType",
+        "signature": "Il2CppObject* System_Boolean__System_IConvertible_ToType (bool __this, System_Type_o* targetType, System_IFormatProvider_o* provider, const MethodInfo* method);",
+        "adjustor_bytes": 8,
+        "adjustor_sha256": "3a6770064475aee047c4817ab4c0084c26090869caca8ca6d4cdd037c0ad678b",
+        "receiver_adjustment": 16,
+        "real_body_rva": "0x89dcc0",
+        "real_body_bytes": 252,
+        "real_body_sha256": "1ea2f4b548e85ca3e0fc255808000fbc0912d24145179acb4d82319ed9e085c9",
+        "validated_unwind_fde_rva": 53096368,
+        "boxing_call_rva": "0x89dd6c",
+        "boxing_target_rva": "0xB5B070"
+      },
+      {
+        "rva": "0x82cfa0",
+        "name": "System.Int32$$System.IConvertible.ToType",
+        "signature": "Il2CppObject* System_Int32__System_IConvertible_ToType (int32_t __this, System_Type_o* targetType, System_IFormatProvider_o* provider, const MethodInfo* method);",
+        "adjustor_bytes": 8,
+        "adjustor_sha256": "48309bf3def49d1686350f31719be90593fa09dd9e31a46598f0132272e3bb2e",
+        "receiver_adjustment": 16,
+        "real_body_rva": "0x82cea0",
+        "real_body_bytes": 252,
+        "real_body_sha256": "c7e0898130034e89a8de15c5cbefadcd2b4ff969a4ff410e2697f95a97703aec",
+        "validated_unwind_fde_rva": 53051304,
+        "boxing_call_rva": "0x82cf44",
+        "boxing_target_rva": "0xB5B070"
+      },
+      {
+        "rva": "0x753670",
+        "name": "System.Double$$System.IConvertible.ToType",
+        "signature": "Il2CppObject* System_Double__System_IConvertible_ToType (double __this, System_Type_o* targetType, System_IFormatProvider_o* provider, const MethodInfo* method);",
+        "adjustor_bytes": 8,
+        "adjustor_sha256": "48309bf3def49d1686350f31719be90593fa09dd9e31a46598f0132272e3bb2e",
+        "receiver_adjustment": 16,
+        "real_body_rva": "0x753570",
+        "real_body_bytes": 252,
+        "real_body_sha256": "6372f10a0c4d160212bbe43818a169a3a9236eb4c1be059f53e7a01a3559be4e",
+        "validated_unwind_fde_rva": 52954944,
+        "boxing_call_rva": "0x753614",
+        "boxing_target_rva": "0xB5B070"
+      }
+    ],
+    "other_corlib_examples": [
+      {
+        "rva": "0x2b41f0",
+        "name": "System.Xml.DTDReader$$ProcessDTDSubset"
+      },
+      {
+        "rva": "0x2b50a0",
+        "name": "System.Xml.DTDReader$$ReadName"
+      },
+      {
+        "rva": "0x2b50b0",
+        "name": "System.Xml.DTDReader$$Expect"
+      },
+      {
+        "rva": "0x2b79b0",
+        "name": "System.Xml.DTDReader$$ExpectAfterWhitespace"
+      },
+      {
+        "rva": "0x2bac90",
+        "name": "System.Xml.DTDReader$$ReadNmToken"
+      },
+      {
+        "rva": "0x2bb950",
+        "name": "System.Xml.DTDReader$$ReadPubidLiteral"
+      },
+      {
+        "rva": "0x2bbf00",
+        "name": "System.Xml.DTDReader$$ReadNameOrNmToken"
+      },
+      {
+        "rva": "0x2c05c0",
+        "name": "System.Xml.Schema.XmlAtomicValue$$get_Value"
+      },
+      {
+        "rva": "0x2c7de0",
+        "name": "System.Xml.Serialization.XmlSerializer$$GenerateSerializers"
+      },
+      {
+        "rva": "0x2ca580",
+        "name": "System.Xml.Serialization.XmlTypeMapMember$$SetValueSpecified"
+      },
+      {
+        "rva": "0x2d1e70",
+        "name": "System.Xml.XmlConvert$$.cctor"
+      },
+      {
+        "rva": "0x2d3050",
+        "name": "System.Xml.XmlConvert$$TryDecoding"
+      }
+    ],
+    "observed_paths": [
+      "Reference-type flag clear: reads *value and returns that existing object.",
+      "Ordinary value type: queries size, allocates the exact class, copies instance_size minus 16 bytes from the supplied value address to object plus 16.",
+      "Nullable value type: obtains its underlying class; absent hasValue returns null before allocation."
+    ],
+    "current_pipeline": {
+      "discovery": "NewArm64KeyFunctionAddresses.AttemptInstructionAnalysisToFillGaps has no legacy boxing fallback.",
+      "lowering": "KeyFunctionRecovery.cs:81 already lowers il2cpp_value_box/il2cpp_vm_object_box calls with typed class operands to OpCode.Box.",
+      "emitter": "IlGenerator.cs OpCode.Box emits box and dereferences AddressOf(LocalVariable) as a value. Unknown address operands still need validation."
+    },
+    "proposed_fix": "Add strict legacy vm::Object::Box discovery from three agreeing corlib anchors plus exact reviewed native witness, then enable existing Box lowering initially only for concrete non-nullable scalar primitives without a metadata .cctor and with known typed value storage.",
+    "required_acceptance": [
+      "Reject mismatched helper bytes, nonzero nullable/reference-type behavior when the narrower lowering lacks its contract, unknown class operands and untyped addresses.",
+      "Execute actual native scalar boxing payloads at explicit allocator/memcpy boundaries and compare recovered CIL box payloads, exact type and new identity.",
+      "Retain unresolved generic/nullable/stack-address cases without substituting values or stubs; measure actual source change."
+    ],
+    "status": "STATIC_NATIVE_CANDIDATE_NOT_IMPLEMENTED_OR_BEHAVIORALLY_VALIDATED"
+  },
+  "alternative": {
+    "rva": "0xB5B390",
+    "meaning": "Object instance-test helper with non-imported assignability and separate imported/COM paths.",
+    "why_not_first": "No ISIL instance-test operation or key-function lowering currently exists; implementing it requires more pipeline surface than connecting the already present Box lowering."
+  },
+  "source_modified": false,
+  "scope": "Counts are diagnostics and unresolved-call observations, not completion percentages. Every source file counted is byte/hash checked against its existing export manifest. Native helper semantics here are static candidates, not recovered executable parity.",
+  "source_count_scope": "Textual C# expression counts can include decompiler duplication; they are not a one-to-one native call count. AuthenticationSample source covers the whole class, while the separate recovered CIL constructor probe covers seven Start expressions."
+}

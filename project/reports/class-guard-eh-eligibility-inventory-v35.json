@@ -1,0 +1,368 @@
+{
+  "status": "READ_ONLY_NATIVE_CIE_CANDIDATES_AND_ACTUAL_CIL_EH_INVENTORY",
+  "recovery_run": "nso-class-guard-load-v33",
+  "original_native_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "exact_frames": 152904,
+  "candidate_sites": 39875,
+  "candidate_scope": "Current sequential native window matcher sites with known B2E720 target; distinct exact FDE callers grouped by original CIE augmentation. These are static candidates, not accepted CFG normalizations or recovered game methods.",
+  "groups": {
+    "zR": {
+      "exact_frames": 145335,
+      "candidate_callers": 14657,
+      "candidate_sites": 30418,
+      "plain_eligibility": true
+    },
+    "zPLR": {
+      "exact_frames": 7569,
+      "candidate_callers": 3144,
+      "candidate_sites": 9457,
+      "plain_eligibility": false
+    }
+  },
+  "native_candidate_details": "analysis\\reconstruction\\class-guard-cfg-v35\\native-candidate-frame-inventory.jsonl",
+  "native_candidate_details_sha256": "9fb2ec517e5a9803c0d413532161585498a04cc9b03887d5104ddd26d2103ef1",
+  "cil_assembly_count": 44,
+  "cil_method_bodies": 60744,
+  "cil_methods_with_exception_regions": 0,
+  "cil_exception_regions": 0,
+  "cil_parse_errors": [],
+  "exceptional_examples": [],
+  "specific_unload": [
+    {
+      "assembly": "Assembly-CSharp-firstpass.dll",
+      "type": "BundlesUtil",
+      "method": "UnloadDependencies",
+      "exception_regions": 0,
+      "body_il_sha256": "44e549534c99b708feb706ab9066fe97297f493b455ff702d4b1cac478577ab2",
+      "handlers": []
+    }
+  ],
+  "specific_get_safe": [
+    {
+      "assembly": "Assembly-CSharp-firstpass.dll",
+      "type": "BundlesUtil",
+      "method": "GetAssetBundleSafe",
+      "exception_regions": 0,
+      "body_il_sha256": "ca3f353600eaeda061242a0dbe52f9a9a92407e0c89fcefe2a3ce7cc68e73bb8",
+      "handlers": []
+    }
+  ],
+  "assemblies": [
+    {
+      "file": "Assembly-CSharp-firstpass.dll",
+      "sha256": "829674de6ee1d1a016b03c4c877de948de31b091d2e11793ade46cf8d83c0e83",
+      "bodies": 10401,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "Assembly-CSharp.dll",
+      "sha256": "74b5f8ab963861370fbd35fc5d17fe77b166e2f62b5cc7c35e43fbdabafe19e5",
+      "bodies": 17718,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "DOTween.dll",
+      "sha256": "bd0a09c56574897ae48aff45f614f3881accb70c6bd2974d91c98bb86590f85e",
+      "bodies": 348,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "DOTween46.dll",
+      "sha256": "fe9dded1c6ac4038e28ab87b5cf42bac90f7ba80c82de5097d92d3fc066b2b94",
+      "bodies": 29,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "Facebook.Unity.Settings.dll",
+      "sha256": "0d3c1248906e1942bf22a47197672a7dd1286145eda4a09dae41077d2515e6fd",
+      "bodies": 40,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "FyberLitJson.dll",
+      "sha256": "5eff52b3cbcb83b7c20f77927f84ae690aca66540cb23434871a3c718a5e9d66",
+      "bodies": 263,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "FyberPlugin.dll",
+      "sha256": "220d91d966b56190bf032425aa695c103c0a129f53c5b2b39ae605eca7fcbb29",
+      "bodies": 338,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "Ionic.Zip.Unity.dll",
+      "sha256": "457b06d674a6c709eb3bdd31ddbbb00ad76ba0a784ce765c2ad00e6d07353788",
+      "bodies": 729,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "Mono.Security.dll",
+      "sha256": "6fc007ddcc169eaf85c4617e6df9fb7ce8e8bf0a9ac7fe81f0a8bf5858cc5fb5",
+      "bodies": 1011,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "mscorlib.dll",
+      "sha256": "d9a4ebaf57be1b9c0e2c262892fea09c76d29cceddcf0ef557c064b44cc7d418",
+      "bodies": 8079,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "protobuf-net.dll",
+      "sha256": "cfe30e60fe224ae3207b103a90ec8b4a496360bf732ba251e1b268330fb6d92a",
+      "bodies": 899,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "SmartFox2X.dll",
+      "sha256": "2f76024654a93dd35fa5eea8c5702d238cd3e0b0ffaf63f821c23beb46ec2c7c",
+      "bodies": 1729,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "System.Configuration.dll",
+      "sha256": "46c7980471b200217e12125d7fea3ad29f60436200fd9ee41fe0f606399ad3bc",
+      "bodies": 460,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "System.Core.dll",
+      "sha256": "2228924512ea3e7bd62105cfff4a0f74ad497fd32cb25ece2e30f6ffb4602431",
+      "bodies": 504,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "System.dll",
+      "sha256": "3a0568ee055720d4c5daf32e59bd0023eeb6bdbf5d4c6945de475e72ab23dfa9",
+      "bodies": 4941,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "System.Xml.dll",
+      "sha256": "f5850d29c68310b8f883fa4c11ded5ec95402199f4a04effbf90b5609a91c2b5",
+      "bodies": 4355,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "System.Xml.Linq.dll",
+      "sha256": "e058bc19b35da8879845f5d433eb3b0402e8c424057b720ce708fca5bffe02ff",
+      "bodies": 240,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "TcpClientImplementation.dll",
+      "sha256": "2eef423718bc7b2c4dbce0aa0c8558217d6953ae1a90e05c75629ef3214ba70a",
+      "bodies": 4491,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.AIModule.dll",
+      "sha256": "58d98a8287dbc46dbc396bb4ea1102a30f22040d5bf8191b80f8ffbea1ad6320",
+      "bodies": 2,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.AnimationModule.dll",
+      "sha256": "5513bfd15865965ded4353e081d9d7694132ccc8137c366ca5826745eec598b7",
+      "bodies": 27,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.AssetBundleModule.dll",
+      "sha256": "684b14881a0b9e89b686b197ea61db0a883378e6d403b00c0246d1c1cc7eba8d",
+      "bodies": 24,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.AudioModule.dll",
+      "sha256": "0c677e18a175f2adda2e25f2f73a44eaf72007e58c96695819a475cf07ab7f33",
+      "bodies": 85,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.CoreModule.dll",
+      "sha256": "1ecd3c5bcb06ff24603abd3aa5e5524791e6f2bce4bdb211856030ddf0aaa05b",
+      "bodies": 1498,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.DirectorModule.dll",
+      "sha256": "ed163d6c581440a7e3836fe18debe3f87338cb234458b4c9241fb34e0693eb6f",
+      "bodies": 4,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.dll",
+      "sha256": "25e50a9e0083fd385f4c7c32e1e48e4a5c09d57984bd4f9d5bfe49fae9560c10",
+      "bodies": 1,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.GameCenterModule.dll",
+      "sha256": "c0bd2e4c61e2e4ea635079830273274f72499709993e65588a2d4ffef480369a",
+      "bodies": 2,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.GridModule.dll",
+      "sha256": "96b44729d5bd9044f777f9ccfcdac6745f9c62159bb57df95584716ae783c96c",
+      "bodies": 1,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.ImageConversionModule.dll",
+      "sha256": "f9da00b925e7e0c4d30e6a646aced399af6b7f11b53fa6b8314238dee013d940",
+      "bodies": 3,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.IMGUIModule.dll",
+      "sha256": "a7379f39386848d701ed40c3ce4d7d286f7fca52cb945b4365de8b9c65595037",
+      "bodies": 504,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.InputModule.dll",
+      "sha256": "9b428a186dd4b3b0eaf714806d3abe0a370a9ee25a8d96ba5f146114bd8db187",
+      "bodies": 6,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.ParticleSystemModule.dll",
+      "sha256": "90e1f3817067a94e3f1d2bc35926349cad7098d7cbf0c5d2f1a56f90c43577ad",
+      "bodies": 6,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.Physics2DModule.dll",
+      "sha256": "da1d198946d5adebf380573362fbcc1462146873751f19a85980812a32a7d75d",
+      "bodies": 40,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.PhysicsModule.dll",
+      "sha256": "69f28b040ff0474069bbc7f72477210f0f196301ebd03aaf4bde3b65e01719d7",
+      "bodies": 44,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.SharedInternalsModule.dll",
+      "sha256": "29619fc231138f261bcefee8fe83a4171d88dec6954b0d8aafa8e228fde4ec49",
+      "bodies": 52,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.TerrainModule.dll",
+      "sha256": "b831e007b46edb1910ea5705eb3b0ebb62fed5a6ceee8cf3f32ee2da8f3715eb",
+      "bodies": 4,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.TextRenderingModule.dll",
+      "sha256": "40f1da58653630fea69cc8e30826434186ff7940814cb8f7a45ce82fa8988668",
+      "bodies": 52,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.TilemapModule.dll",
+      "sha256": "4e2084e0dda1ecb243d09483647981a4b62a3338450b83edd4f60d703c08efb8",
+      "bodies": 21,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.UI.dll",
+      "sha256": "818d6d209e835d23ab601c0e97368e1dc384f2386e3c914c9611fe2e6587063c",
+      "bodies": 1553,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.UIElementsModule.dll",
+      "sha256": "3e16da56479b6d7dcb47d368d4e102f868794383e8e323bde68356826ad4c780",
+      "bodies": 6,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.UIModule.dll",
+      "sha256": "d3f2e78d53de6cc20baeb327074e9bc50998857609ae4cad165a03491b8c7554",
+      "bodies": 76,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "sha256": "e48d42140fa5ffc7c409542cec5bb79f5a3eec08e9e5027d7fa3dc9823f4e027",
+      "bodies": 4,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.UnityWebRequestModule.dll",
+      "sha256": "cb9ca8991e11be586bd084f83551248e2780e4d84b56603aec65c21c6f503013",
+      "bodies": 121,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "sha256": "c45327b440a45af80f1c7bf03a392044ce5adcd2506b3053f998281c9987b1b3",
+      "bodies": 27,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    },
+    {
+      "file": "UnityEngine.VRModule.dll",
+      "sha256": "b171d042a1f79ecee80126bc3c63ff3b94e289fea48ef6fbc0e9a3ae07f65b01",
+      "bodies": 6,
+      "methods_with_exception_regions": 0,
+      "exception_regions": 0
+    }
+  ],
+  "matcher_source_sha256": "daee4b11808995b6d2333139cd7609b4d32dcfd2f908be39f9adb5943e7ec29c",
+  "probe_source_sha256": "d097c51a4a3535ef8f54bf438bd3110bf7950fd0db7dbb2fd58e7d37b0461e9d",
+  "frames_sha256": "aa464d27b080531baa5dfbd5591c63ba331fbded3091ff8eca6f054d87369abf",
+  "cies_sha256": "36612164cd3fc84a23cfb5cd88121706fc5f0f4276166a958017082ff7e2f1c5",
+  "core_referenced_or_built": false,
+  "original_code_modified": false,
+  "assemblies_executed_or_modified": false,
+  "scope": "Read-only static exact-frame/CIE candidate grouping and PE exception-region metadata inventory. The plain zR/no-LSDA/no-personality condition is only a conservative future eligibility gate; native proof, typed origin, effect ordering and production runtime validation remain required. Native frames and emitted managed method bodies have different sharing/ownership denominators; no aggregate EH-recovery percentage is asserted. Existing original Unload LSDA landing entries must be restored before whole-method equivalence can be claimed; an ordinary-branch CFG cannot prove them unreachable. No whole-decompile or portable-game claim."
+}

@@ -1,0 +1,210 @@
+{
+  "status": "READ_ONLY_ARRAY_ZERO_TRIAGE_REJECTS_UNPROVEN_NULL_SUBSTITUTION",
+  "recovery_run": "nso-plain-frame-cfg-v35",
+  "assemblies": {
+    "Assembly-CSharp-firstpass": {
+      "canonical_all_diagnostics": 18806,
+      "exact_int_to_array_diagnostics": 38,
+      "categories": {
+        "literal_zero_near_unmanaged_load_diagnostic": 20,
+        "nonzero_or_variable_array_cast_not_a_null_literal": 17,
+        "literal_zero_requires_independent_CIL_and_native_proof": 1
+      },
+      "candidate_source_files_hash_verified": 20,
+      "samples": [
+        {
+          "file": "BestHTTP/WebSocket/Frames/WebSocketFrameReader.cs",
+          "line": 156,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "2569b598ac0540152325098cd9806d03ecaa446ecdcc54731ef7c8de4e1152e3"
+        },
+        {
+          "file": "SevenZip/Compression/LZ/BinTree.cs",
+          "line": 795,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "33bd384dd7fec0f8ecbdfed61acfc3282ae858e53e102ffdf0922fe232a05a3d"
+        },
+        {
+          "file": "Newtonsoft/Json/Converters/BsonObjectIdConverter.cs",
+          "line": 84,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "18108d1e4ae3e06485b4ad9283b6d282e98e0819de685d8ba58cb0e0cfe26bc2"
+        },
+        {
+          "file": "Newtonsoft/Json/Converters/BsonObjectIdConverter.cs",
+          "line": 89,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "18108d1e4ae3e06485b4ad9283b6d282e98e0819de685d8ba58cb0e0cfe26bc2"
+        },
+        {
+          "file": "BestHTTP/Extensions/HeartbeatManager.cs",
+          "line": 149,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "b87d4fccb1348f7b0c6e96ba5293fa8a9c0d29a7a36612a6aafd7a7cc1f3f383"
+        },
+        {
+          "file": "SevenZip/CommandLineParser/Parser.cs",
+          "line": 813,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "9a6b6d146f9d96bc0514a0ccdf81315802ca36dcb7aa9de002e988516c612460"
+        },
+        {
+          "file": "YamlDotNet/Serialization/TypeInspectors/TypeInspectorSkeleton.cs",
+          "line": 69,
+          "category": "literal_zero_requires_independent_CIL_and_native_proof",
+          "source_sha256": "271f33187b037a476657e4000198e41809bd6a262bde885ea2f0008f1f214df0"
+        },
+        {
+          "file": "BestHTTP/Decompression/Zlib/InfTree.cs",
+          "line": 1837,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "a3663d8fb35e4e810e13643b8ae9e109c3d835147b6afc6f7296533c7f361eca"
+        },
+        {
+          "file": "BestHTTP/Decompression/Zlib/InfTree.cs",
+          "line": 2296,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "a3663d8fb35e4e810e13643b8ae9e109c3d835147b6afc6f7296533c7f361eca"
+        },
+        {
+          "file": "BestHTTP/Decompression/Zlib/InfTree.cs",
+          "line": 2322,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "a3663d8fb35e4e810e13643b8ae9e109c3d835147b6afc6f7296533c7f361eca"
+        },
+        {
+          "file": "SevenZip/Compression/LZMA/Encoder.cs",
+          "line": 8861,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "84bcc80544d02789d8d5e440cc983748d5d42983d2841ef5a9011771065ad861"
+        },
+        {
+          "file": "SevenZip/Compression/LZMA/Encoder.cs",
+          "line": 8897,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "84bcc80544d02789d8d5e440cc983748d5d42983d2841ef5a9011771065ad861"
+        }
+      ]
+    },
+    "Assembly-CSharp": {
+      "canonical_all_diagnostics": 29779,
+      "exact_int_to_array_diagnostics": 22,
+      "categories": {
+        "literal_zero_near_unmanaged_load_diagnostic": 14,
+        "literal_zero_requires_independent_CIL_and_native_proof": 2,
+        "nonzero_or_variable_array_cast_not_a_null_literal": 6
+      },
+      "candidate_source_files_hash_verified": 13,
+      "samples": [
+        {
+          "file": "CUDLR/Console.cs",
+          "line": 207,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "76c302323b725c6772afc065e6b63c6ed004841af72d4595b90e5e1d0ad2fdaf"
+        },
+        {
+          "file": "GooglePlayGames/BasicApi/SavedGame/SavedGameMetadataUpdate.cs",
+          "line": 116,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "c646c5e4785d77fadc9ca61ba1adb81a068fbb6f18787a85584eca459b658db5"
+        },
+        {
+          "file": "GooglePlayGames/BasicApi/SavedGame/SavedGameMetadataUpdate.cs",
+          "line": 78,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "c646c5e4785d77fadc9ca61ba1adb81a068fbb6f18787a85584eca459b658db5"
+        },
+        {
+          "file": "GooglePlayGames/BasicApi/Nearby/ConnectionResponse.cs",
+          "line": 57,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "a2504c2b9c031c42f9fea67da4305580bf0e4bee164294927a63150c1c2e200d"
+        },
+        {
+          "file": "GooglePlayGames/BasicApi/Nearby/ConnectionRequest.cs",
+          "line": 41,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "7b76cd05142119c5c5d4f953c4cf8b8feb669d9c30b0d49f8cd2e80177b8903c"
+        },
+        {
+          "file": "Nekki/SF2/Core/Console/ConsoleCommands.cs",
+          "line": 7075,
+          "category": "literal_zero_requires_independent_CIL_and_native_proof",
+          "source_sha256": "c66f6755d67751908edf9b247837003223918d8519cdc2ce169a1868787bc70b"
+        },
+        {
+          "file": "Nekki/SF2/Core/Console/ConsoleCommands.cs",
+          "line": 7081,
+          "category": "literal_zero_requires_independent_CIL_and_native_proof",
+          "source_sha256": "c66f6755d67751908edf9b247837003223918d8519cdc2ce169a1868787bc70b"
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Support/ModelParameters.cs",
+          "line": 225,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "9ac2736ca27115395c2ebc811ac70db473337c0016d484fc2bbd6397ebc8b604"
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/KeyFrames.cs",
+          "line": 202,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "90de1febd787489e57be1d3b15319cd6e7c2378be745502b246e41f01c1db405"
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Animation/Moves/MovesParser.cs",
+          "line": 627,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "f6ae3003123fd595c9899a4ab7cf210d15301d7a7e9f700545499b2f250c5005"
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Animation/Moves/MovesParser.cs",
+          "line": 633,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "f6ae3003123fd595c9899a4ab7cf210d15301d7a7e9f700545499b2f250c5005"
+        },
+        {
+          "file": "Nekki/SF2/Core/Fights/Model/Animation/Moves/MovesParser.cs",
+          "line": 1807,
+          "category": "literal_zero_near_unmanaged_load_diagnostic",
+          "source_sha256": "f6ae3003123fd595c9899a4ab7cf210d15301d7a7e9f700545499b2f250c5005"
+        }
+      ]
+    }
+  },
+  "source_modified": false,
+  "core_modified": false,
+  "source_manifest_sha256": "871a31bc7176b0d55ecfdb3f0aefa0fceb52c5828b0a25868054b48b339d3d1b",
+  "emitter_sha256": "12e9b48b895b8792203a740f5899a0e1e414944aa0942af9164bd2e7d2d79f32",
+  "existing_emitter": {
+    "file": "refs/Cpp2IL/Cpp2IL.Core/IlGenerator.cs",
+    "exact_immediate_zero_with_reference_expected_type_already_emits_ldnull": true,
+    "typed_move_field_array_call_return_paths_supply_expected_type": true,
+    "unmanaged_memory_fallback_emits_diagnostic_then_ldc_i4_zero_conv_i": true
+  },
+  "selected_native": {
+    "method": "BestHTTP.WebSocket.Frames.WebSocketFrameReader::Read",
+    "registered_rva": "0x4A0D70",
+    "native_window_start": "0x4a0db4",
+    "native_window_sha256": "84c076e46fa4ff21f73f588beb9ce728fb530a3a9d072c77400f8baa0ef84401",
+    "class_load": "LDR X8,[X20]",
+    "function_slot": "LDR X9,[X8,#0x258]",
+    "companion_slot": "LDR X1,[X8,#0x260]",
+    "receiver": "MOV X0,X20",
+    "dispatch": "BLR X9",
+    "literal_zero_instruction_in_window": false,
+    "metadata_slot_correlation": "System.IO.Stream.ReadByte is virtual slot19; legacy vtable base0x128 yields0x258. The companion+8 read is consistent with the hidden MethodInfo pointer, not a proven null."
+  },
+  "actual_cil": {
+    "report": "reports\\recovered-reference-zero-triage-v36.json",
+    "sha256": "f13395cfe197b99d37650e1e2bc71a879b52211e21aae649192039970c1baaf3",
+    "checks": 4,
+    "array_fallbacks": 1,
+    "native_null_proven": false,
+    "game_methods_invoked": 0
+  },
+  "proposal": "Do not change these unmanaged-load diagnostic placeholders to ldnull. First prove the original virtual receiver/slot pair and preserve runtime dispatch; unknown loads must remain explicit failures. No scalar-zero-to-struct or Enumerator initialization is classified as a null reference.",
+  "full_clean_decompile_ready": false,
+  "whole_game_source_ready": false,
+  "portable_game_ready": false,
+  "limits": "Array diagnostics provide certain reference-type targets. Nearby-source classifications are correlations only; the selected original native and unchanged CIL sequence is separately verified. No claim that all remaining reference casts share this cause, and no original method execution or null-emission correction is claimed."
+}

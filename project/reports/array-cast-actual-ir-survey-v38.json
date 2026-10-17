@@ -1,0 +1,11 @@
+{
+  "status": "READ_ONLY_FROZEN_V38_SELECTED_ARRAY_CAST_IR_USES",
+  "source_groups": 650,
+  "completed": 650,
+  "frozen_core_sha256": "197403735d374bdde681ad203cdb3eb18e8cd9eef01897908a8c4f9e786ad99a",
+  "private_results": "analysis\\reconstruction\\compiler-family-v38\\array-cast-actual-ir-uses.json",
+  "private_results_sha256": "daaa20d50ce14e94455599261495179aa09d6c513ba0ce7c5188b35a90109fc3",
+  "source_sha256": "021b01e3173d6b55e422d6435c30cdfd69771d5b3dce30ecfe8276a2cae06806",
+  "core_built": false,
+  "game_or_native_functions_executed": 0
+}

@@ -1,0 +1,182 @@
+{
+  "status": "ALL_SOURCE_SCANNER_FINDINGS_REVIEWED_FALSE_POSITIVE",
+  "reviewed_findings": 11,
+  "secret_values_printed": false,
+  "exceptions": [
+    {
+      "repository_path": "project/refs/Cpp2IL/TestFiles/Simple_2019_4_34/Simple_2019_4_34_Data/il2cpp_data/etc/mono/4.0/machine.config",
+      "line": 234,
+      "rule": "generic-api-key",
+      "classification": "FALSE_POSITIVE_PUBLIC_OR_ARTIFACT_DIGEST",
+      "reason": "Validated CLR strong-name public-only structure (PUBLICKEYBLOB type 6, RSA1, modulus length matching bit length). Mono identity-mapping Token is an assembly identity, not an authentication credential.",
+      "evidence": {
+        "public_blob_bytes": 160,
+        "private_parameters_present": false
+      },
+      "file_sha256": "bedb3515c6a3a796db1c04c996f337b76bfd3d1f736411375c6c8999e6c903f9"
+    },
+    {
+      "repository_path": "project/refs/Cpp2IL/TestFiles/Simple_2019_4_34/Simple_2019_4_34_Data/il2cpp_data/etc/mono/2.0/machine.config",
+      "line": 217,
+      "rule": "generic-api-key",
+      "classification": "FALSE_POSITIVE_PUBLIC_OR_ARTIFACT_DIGEST",
+      "reason": "Validated CLR strong-name public-only structure (PUBLICKEYBLOB type 6, RSA1, modulus length matching bit length). Mono identity-mapping Token is an assembly identity, not an authentication credential.",
+      "evidence": {
+        "public_blob_bytes": 160,
+        "private_parameters_present": false
+      },
+      "file_sha256": "d0e5edaf9233df58e9ac5d6d6f60113912db2765db79b1f2c6a973118932ed04"
+    },
+    {
+      "repository_path": "project/refs/Cpp2IL/TestFiles/Simple_2019_4_34/Simple_2019_4_34_Data/il2cpp_data/etc/mono/4.5/machine.config",
+      "line": 237,
+      "rule": "generic-api-key",
+      "classification": "FALSE_POSITIVE_PUBLIC_OR_ARTIFACT_DIGEST",
+      "reason": "Validated CLR strong-name public-only structure (PUBLICKEYBLOB type 6, RSA1, modulus length matching bit length). Mono identity-mapping Token is an assembly identity, not an authentication credential.",
+      "evidence": {
+        "public_blob_bytes": 160,
+        "private_parameters_present": false
+      },
+      "file_sha256": "5530adac4009537e9104607c33899c3e7bdbe01e6973a97998b2d0aa62d668cb"
+    },
+    {
+      "repository_path": "project/reports/class-layout-runtime-source-v37.json",
+      "line": 104,
+      "rule": "generic-api-key",
+      "classification": "FALSE_POSITIVE_PUBLIC_OR_ARTIFACT_DIGEST",
+      "reason": "64-hex SHA-256 provenance value in an explicitly named file-hash or sha256 report field; generic API-key heuristic matched the filename/API wording.",
+      "evidence": {
+        "json_field_paths": [
+          [
+            "all_common_source_file_hashes",
+            "il2cpp-api-functions.h"
+          ]
+        ],
+        "hex_digest_length": 64
+      },
+      "file_sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594"
+    },
+    {
+      "repository_path": "project/reports/class-layout-runtime-source-v37.json",
+      "line": 105,
+      "rule": "generic-api-key",
+      "classification": "FALSE_POSITIVE_PUBLIC_OR_ARTIFACT_DIGEST",
+      "reason": "64-hex SHA-256 provenance value in an explicitly named file-hash or sha256 report field; generic API-key heuristic matched the filename/API wording.",
+      "evidence": {
+        "json_field_paths": [
+          [
+            "all_common_source_file_hashes",
+            "il2cpp-api.cpp"
+          ]
+        ],
+        "hex_digest_length": 64
+      },
+      "file_sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594"
+    },
+    {
+      "repository_path": "project/reports/class-layout-runtime-source-v37.json",
+      "line": 106,
+      "rule": "generic-api-key",
+      "classification": "FALSE_POSITIVE_PUBLIC_OR_ARTIFACT_DIGEST",
+      "reason": "64-hex SHA-256 provenance value in an explicitly named file-hash or sha256 report field; generic API-key heuristic matched the filename/API wording.",
+      "evidence": {
+        "json_field_paths": [
+          [
+            "all_common_source_file_hashes",
+            "il2cpp-api.h"
+          ]
+        ],
+        "hex_digest_length": 64
+      },
+      "file_sha256": "2541a8779be99b5a8eb1adbb5987a58d0ec96520d8dbfdcbf271de87c84ba594"
+    },
+    {
+      "repository_path": "project/reports/raw-classinit-implementation-pending-v32.json",
+      "line": 31,
+      "rule": "generic-api-key",
+      "classification": "FALSE_POSITIVE_PUBLIC_OR_ARTIFACT_DIGEST",
+      "reason": "64-hex SHA-256 provenance value in an explicitly named file-hash or sha256 report field; generic API-key heuristic matched the filename/API wording.",
+      "evidence": {
+        "json_field_paths": [
+          [
+            "source_sha256",
+            "refs/Cpp2IL/Cpp2IL.Core/Analysis/KeyFunctionRecovery.cs"
+          ]
+        ],
+        "hex_digest_length": 64
+      },
+      "file_sha256": "f8d33bd405b11bdc200b4ae189109df196dc642cdf1705fdc24bd37f4c652032"
+    },
+    {
+      "repository_path": "project/reports/unload-exception-recovery-proposal-v35.json",
+      "line": 292,
+      "rule": "generic-api-key",
+      "classification": "FALSE_POSITIVE_PUBLIC_OR_ARTIFACT_DIGEST",
+      "reason": "64-hex SHA-256 provenance value in an explicitly named file-hash or sha256 report field; generic API-key heuristic matched the filename/API wording.",
+      "evidence": {
+        "json_field_paths": [
+          [
+            "asmresolver_api_xml_sha256"
+          ]
+        ],
+        "hex_digest_length": 64
+      },
+      "file_sha256": "d16957b6c4502d136cb708bc450542d69e866d25028953cd1353e85650aaa70a"
+    },
+    {
+      "repository_path": "project/reports/analysis-coverage.json",
+      "line": 41640,
+      "rule": "generic-api-key",
+      "classification": "FALSE_POSITIVE_PUBLIC_OR_ARTIFACT_DIGEST",
+      "reason": "64-hex SHA-256 provenance value in an explicitly named file-hash or sha256 report field; generic API-key heuristic matched the filename/API wording.",
+      "evidence": {
+        "json_field_paths": [
+          [
+            "exact_common_runtime_class_layout",
+            "all_common_source_file_hashes",
+            "il2cpp-api-functions.h"
+          ]
+        ],
+        "hex_digest_length": 64
+      },
+      "file_sha256": "9033eb7ee60eb99e2c09feda195cce53065881f453c299bfb85d7b504ed5a1b3"
+    },
+    {
+      "repository_path": "project/reports/analysis-coverage.json",
+      "line": 41641,
+      "rule": "generic-api-key",
+      "classification": "FALSE_POSITIVE_PUBLIC_OR_ARTIFACT_DIGEST",
+      "reason": "64-hex SHA-256 provenance value in an explicitly named file-hash or sha256 report field; generic API-key heuristic matched the filename/API wording.",
+      "evidence": {
+        "json_field_paths": [
+          [
+            "exact_common_runtime_class_layout",
+            "all_common_source_file_hashes",
+            "il2cpp-api.cpp"
+          ]
+        ],
+        "hex_digest_length": 64
+      },
+      "file_sha256": "9033eb7ee60eb99e2c09feda195cce53065881f453c299bfb85d7b504ed5a1b3"
+    },
+    {
+      "repository_path": "project/reports/analysis-coverage.json",
+      "line": 41642,
+      "rule": "generic-api-key",
+      "classification": "FALSE_POSITIVE_PUBLIC_OR_ARTIFACT_DIGEST",
+      "reason": "64-hex SHA-256 provenance value in an explicitly named file-hash or sha256 report field; generic API-key heuristic matched the filename/API wording.",
+      "evidence": {
+        "json_field_paths": [
+          [
+            "exact_common_runtime_class_layout",
+            "all_common_source_file_hashes",
+            "il2cpp-api.h"
+          ]
+        ],
+        "hex_digest_length": 64
+      },
+      "file_sha256": "9033eb7ee60eb99e2c09feda195cce53065881f453c299bfb85d7b504ed5a1b3"
+    }
+  ],
+  "scope": "Only these exact file SHA-256 values and line identities; no general scanner suppression."
+}

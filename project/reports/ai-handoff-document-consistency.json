@@ -1,0 +1,20 @@
+{
+  "status": "PASS_HANDOFF_DOCUMENT_AND_SELECTED_TRANSFER_EVIDENCE",
+  "checks": {
+    "literal_paths_exist": true,
+    "code_fences_closed": true,
+    "selected187files_match": true,
+    "live_core_remains_v40": true,
+    "upstream_pin_unchanged": true,
+    "new_v41_probes_still_absent": true,
+    "python_syntax": true
+  },
+  "missing_literal_references": [],
+  "literal_project_references_checked": 83,
+  "handoff_words": 7116,
+  "handoff_sha256": "6f40a624abb4c650fbd4d38208bf05bf6e62a29d328d995ee07826a346e79e99",
+  "manifest_sha256": "fed485e313d19cd34825a4eb03d18698d465fc3efc4566a3c6ead0e27e023935",
+  "current_core_sha256": "14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6",
+  "upstream_commit": "b5ad444b82267cb1e4b88b8b373c008105bdea52",
+  "scope": "Documentation and selected-file transfer validation only. No decompilation, Core build, game test, original input rehash or cloud upload was performed."
+}

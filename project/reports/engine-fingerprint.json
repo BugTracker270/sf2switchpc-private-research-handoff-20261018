@@ -1,0 +1,249 @@
+{
+  "status": "PASS_ENGINE_AND_VERSION_FINGERPRINT",
+  "versions": {
+    "base": {
+      "source": "F:\\SF2SwitchPC\\unpacked\\base\\meta\\meta\\Application_0100ab000abfe000.cnmt",
+      "title_id": "0100AB000ABFE000",
+      "version": 0,
+      "meta_type_id": 128,
+      "content_count": 3,
+      "contents": [
+        {
+          "id": "b5028f4e100d63d35e0e9ff223c7ffcd",
+          "sha256": "b5028f4e100d63d35e0e9ff223c7ffcd05061fb0f0fee811eb244b31502ef517",
+          "size": 1485357056,
+          "type_id": 1,
+          "type": "Program",
+          "supplied_nca_matches": true
+        },
+        {
+          "id": "0d8f90c6c7ee98750ff3071a050e9947",
+          "sha256": "0d8f90c6c7ee98750ff3071a050e99472ec324662e42ff9a5707f15d801ce25b",
+          "size": 992256,
+          "type_id": 3,
+          "type": "Control",
+          "supplied_nca_matches": true
+        },
+        {
+          "id": "fce770151cf290990b26b69f4bcb94ed",
+          "sha256": "fce770151cf290990b26b69f4bcb94ed75a0f903dceb48b71a5d45ce9d3c802b",
+          "size": 191488,
+          "type_id": 5,
+          "type": "LegalInformation",
+          "supplied_nca_matches": true
+        }
+      ],
+      "content_sha256_match": true,
+      "display_version": "1.0.0",
+      "american_english_title": "Shadow Fight 2"
+    },
+    "update": {
+      "source": "F:\\SF2SwitchPC\\unpacked\\update\\meta\\meta\\Patch_0100ab000abfe800.cnmt",
+      "title_id": "0100AB000ABFE800",
+      "version": 131072,
+      "meta_type_id": 129,
+      "content_count": 7,
+      "contents": [
+        {
+          "id": "9e558c3678550db627afa0fe00857d1d",
+          "sha256": "9e558c3678550db627afa0fe00857d1df185f009120924fab3f947fd1010e71c",
+          "size": 132531712,
+          "type_id": 1,
+          "type": "Program",
+          "supplied_nca_matches": true
+        },
+        {
+          "id": "fb9494b9de70bffd0d1797987f0ec51c",
+          "sha256": "fb9494b9de70bffd0d1797987f0ec51cfe06a24c72e01d2da522dde04a798c52",
+          "size": 992256,
+          "type_id": 3,
+          "type": "Control",
+          "supplied_nca_matches": true
+        },
+        {
+          "id": "a34266502d2e83c263c531479e295cc8",
+          "sha256": "a34266502d2e83c263c531479e295cc89653e5e287eb4350e3142a26ed074598",
+          "size": 191488,
+          "type_id": 5,
+          "type": "LegalInformation",
+          "supplied_nca_matches": true
+        },
+        {
+          "id": "fcdea96c88bc705ff053fc856379696f",
+          "sha256": "fcdea96c88bc705ff053fc856379696f9c9fd86f1677ba49b2946342244b49e8",
+          "size": 132612096,
+          "type_id": 6,
+          "type": "DeltaFragment",
+          "supplied_nca_matches": true
+        },
+        {
+          "id": "ba3c9ac7eb1bfa91d5eac431c152eb85",
+          "sha256": "ba3c9ac7eb1bfa91d5eac431c152eb85cec017ba51ddd53b4dd63bc6320479f7",
+          "size": 1032192,
+          "type_id": 6,
+          "type": "DeltaFragment",
+          "supplied_nca_matches": true
+        },
+        {
+          "id": "7b00e159826a73ec6f3007875ca49678",
+          "sha256": "7b00e159826a73ec6f3007875ca49678485ad11528c935fea90835df86e6084a",
+          "size": 229376,
+          "type_id": 6,
+          "type": "DeltaFragment",
+          "supplied_nca_matches": true
+        },
+        {
+          "id": "33d1346cac8b3c2a2b14076ec877083f",
+          "sha256": "33d1346cac8b3c2a2b14076ec877083ffc2d931aca463d707237b7f36755b250",
+          "size": 49152,
+          "type_id": 6,
+          "type": "DeltaFragment",
+          "supplied_nca_matches": true
+        }
+      ],
+      "content_sha256_match": true,
+      "display_version": "1.1.0",
+      "american_english_title": "Shadow Fight 2"
+    }
+  },
+  "engine": "Unity",
+  "unity_version": "2018.1.9f1",
+  "unity_version_source": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\globalgamemanagers",
+  "scripting_backend": "IL2CPP",
+  "metadata_magic": "0xfab11baf",
+  "metadata_version": 24,
+  "metadata_path": "F:\\SF2SwitchPC\\unpacked\\effective\\romfs\\Data\\Managed\\Metadata\\global-metadata.dat",
+  "metadata_bytes": 11230672,
+  "architecture": "AARCH64:LE:64:v8A",
+  "modules": [
+    {
+      "name": "main",
+      "source": "F:\\SF2SwitchPC\\unpacked\\effective\\exefs\\main",
+      "build_id": "e15fc665ec42684aa6edd1ae03624d9600000000000000000000000000000000",
+      "flags": "0x3F",
+      "segments": [
+        {
+          "name": "text",
+          "file_offset": 257,
+          "memory_rva": 0,
+          "uncompressed_bytes": 37181704
+        },
+        {
+          "name": "rodata",
+          "file_offset": 18937178,
+          "memory_rva": 37183488,
+          "uncompressed_bytes": 19911396
+        },
+        {
+          "name": "data",
+          "file_offset": 27098002,
+          "memory_rva": 57098240,
+          "uncompressed_bytes": 3921208
+        }
+      ]
+    },
+    {
+      "name": "rtld",
+      "source": "F:\\SF2SwitchPC\\unpacked\\effective\\exefs\\rtld",
+      "build_id": "6574c7e3a1069ff7c8f9a2523cd3566bf6336a93000000000000000000000000",
+      "flags": "0x3F",
+      "segments": [
+        {
+          "name": "text",
+          "file_offset": 257,
+          "memory_rva": 0,
+          "uncompressed_bytes": 6560
+        },
+        {
+          "name": "rodata",
+          "file_offset": 5388,
+          "memory_rva": 8192,
+          "uncompressed_bytes": 3324
+        },
+        {
+          "name": "data",
+          "file_offset": 7125,
+          "memory_rva": 12288,
+          "uncompressed_bytes": 664
+        }
+      ]
+    },
+    {
+      "name": "sdk",
+      "source": "F:\\SF2SwitchPC\\unpacked\\effective\\exefs\\sdk",
+      "build_id": "26ffb122262ca25e4c016c0af2f92a29483c64a2000000000000000000000000",
+      "flags": "0x3F",
+      "segments": [
+        {
+          "name": "text",
+          "file_offset": 257,
+          "memory_rva": 0,
+          "uncompressed_bytes": 5142880
+        },
+        {
+          "name": "rodata",
+          "file_offset": 2883517,
+          "memory_rva": 5144576,
+          "uncompressed_bytes": 6082664
+        },
+        {
+          "name": "data",
+          "file_offset": 5012989,
+          "memory_rva": 11231232,
+          "uncompressed_bytes": 390528
+        }
+      ]
+    },
+    {
+      "name": "subsdk0",
+      "source": "F:\\SF2SwitchPC\\unpacked\\effective\\exefs\\subsdk0",
+      "build_id": "41097c438a36afd2e879fa6f5e0f08502f90a941000000000000000000000000",
+      "flags": "0x3F",
+      "segments": [
+        {
+          "name": "text",
+          "file_offset": 257,
+          "memory_rva": 0,
+          "uncompressed_bytes": 3414216
+        },
+        {
+          "name": "rodata",
+          "file_offset": 2248031,
+          "memory_rva": 3416064,
+          "uncompressed_bytes": 2503032
+        },
+        {
+          "name": "data",
+          "file_offset": 3293595,
+          "memory_rva": 5922816,
+          "uncompressed_bytes": 226824
+        }
+      ]
+    }
+  ],
+  "scene_files": [
+    "romfs\\Data\\level0",
+    "romfs\\Data\\level1",
+    "romfs\\Data\\level2",
+    "romfs\\Data\\level3",
+    "romfs\\Data\\level4",
+    "romfs\\Data\\level5",
+    "romfs\\Data\\level6",
+    "romfs\\Data\\level7",
+    "romfs\\Data\\level8",
+    "romfs\\Data\\level9"
+  ],
+  "effective_mapping": {
+    "base_program": "b5028f4e100d63d35e0e9ff223c7ffcd.nca",
+    "patch_program": "9e558c3678550db627afa0fe00857d1d.nca",
+    "method": "hactool --basenca; section hash/signature verification requested"
+  },
+  "code_registration_rva": "0x3925210",
+  "metadata_registration_rva": "0x3925280",
+  "registration_confidence": "Il2CppDumper automatic match; independent native caller trace still required",
+  "unresolved": [
+    "AssetRipper folder-only load reports Unknown backend; metadata/native tools independently prove IL2CPP.",
+    "Type shells, function names and successful extraction do not establish full reverse-engineering coverage.",
+    "Switch-specific gameplay, saves, timing and local multiplayer require native/data/behavior validation."
+  ]
+}

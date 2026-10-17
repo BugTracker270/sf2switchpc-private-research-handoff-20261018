@@ -1,0 +1,3361 @@
+{
+  "status": "PASS_ACTUAL_RECOVERED_PREFIX_FRAGMENT_VS_ORIGINAL_NATIVE",
+  "recovery_run": "nso-runtime-helper-abi-v37",
+  "review_only": false,
+  "runtime_eligible": true,
+  "runtime_performed": true,
+  "fragment_invocations_attempted": 802,
+  "runtime_cases": 802,
+  "comparisons": 7218,
+  "failure_count": 0,
+  "first_failures": [],
+  "checks": [
+    {
+      "name": "separate unchanged read-only correlation is clean and not a runtime claim",
+      "passed": true
+    },
+    {
+      "name": "all original native fixtures and unchanged code evidence bound",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-00",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-00",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-00",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-01",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-01",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-01",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-02",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-02",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-02",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-03",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-03",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-03",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-04",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-04",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-04",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-05",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-05",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-05",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-06",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-06",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-06",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-07",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-07",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-07",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-08",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-08",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-08",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-09",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-09",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-09",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-0a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-0a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-0a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-0b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-0b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-0b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-0c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-0c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-0c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-0d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-0d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-0d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-0e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-0e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-0e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-0f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-0f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-0f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-10",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-10",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-10",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-11",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-11",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-11",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-12",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-12",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-12",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-13",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-13",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-13",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-14",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-14",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-14",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-15",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-15",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-15",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-16",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-16",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-16",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-17",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-17",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-17",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-18",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-18",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-18",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-19",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-19",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-19",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-1a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-1a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-1a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-1b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-1b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-1b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-1c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-1c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-1c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-1d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-1d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-1d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-1e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-1e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-1e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-1f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-1f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-1f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-20",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-20",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-20",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-21",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-21",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-21",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-22",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-22",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-22",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-23",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-23",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-23",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-24",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-24",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-24",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-25",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-25",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-25",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-26",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-26",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-26",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-27",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-27",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-27",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-28",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-28",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-28",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-29",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-29",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-29",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-2a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-2a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-2a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-2b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-2b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-2b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-2c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-2c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-2c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-2d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-2d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-2d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-2e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-2e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-2e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-2f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-2f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-2f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-30",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-30",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-30",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-31",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-31",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-31",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-32",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-32",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-32",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-33",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-33",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-33",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-34",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-34",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-34",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-35",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-35",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-35",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-36",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-36",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-36",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-37",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-37",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-37",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-38",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-38",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-38",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-39",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-39",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-39",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-3a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-3a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-3a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-3b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-3b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-3b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-3c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-3c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-3c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-3d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-3d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-3d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-3e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-3e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-3e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-3f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-3f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-3f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-40",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-40",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-40",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-41",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-41",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-41",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-42",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-42",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-42",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-43",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-43",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-43",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-44",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-44",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-44",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-45",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-45",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-45",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-46",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-46",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-46",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-47",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-47",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-47",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-48",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-48",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-48",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-49",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-49",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-49",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-4a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-4a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-4a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-4b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-4b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-4b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-4c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-4c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-4c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-4d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-4d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-4d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-4e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-4e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-4e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-4f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-4f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-4f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-50",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-50",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-50",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-51",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-51",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-51",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-52",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-52",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-52",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-53",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-53",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-53",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-54",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-54",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-54",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-55",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-55",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-55",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-56",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-56",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-56",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-57",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-57",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-57",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-58",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-58",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-58",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-59",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-59",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-59",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-5a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-5a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-5a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-5b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-5b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-5b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-5c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-5c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-5c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-5d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-5d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-5d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-5e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-5e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-5e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-5f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-5f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-5f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-60",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-60",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-60",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-61",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-61",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-61",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-62",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-62",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-62",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-63",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-63",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-63",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-64",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-64",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-64",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-65",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-65",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-65",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-66",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-66",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-66",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-67",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-67",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-67",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-68",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-68",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-68",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-69",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-69",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-69",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-6a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-6a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-6a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-6b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-6b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-6b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-6c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-6c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-6c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-6d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-6d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-6d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-6e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-6e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-6e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-6f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-6f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-6f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-70",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-70",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-70",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-71",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-71",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-71",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-72",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-72",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-72",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-73",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-73",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-73",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-74",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-74",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-74",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-75",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-75",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-75",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-76",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-76",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-76",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-77",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-77",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-77",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-78",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-78",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-78",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-79",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-79",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-79",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-7a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-7a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-7a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-7b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-7b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-7b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-7c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-7c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-7c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-7d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-7d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-7d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-7e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-7e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-7e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-7f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-7f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-7f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-80",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-80",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-80",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-81",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-81",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-81",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-82",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-82",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-82",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-83",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-83",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-83",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-84",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-84",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-84",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-85",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-85",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-85",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-86",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-86",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-86",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-87",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-87",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-87",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-88",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-88",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-88",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-89",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-89",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-89",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-8a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-8a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-8a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-8b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-8b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-8b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-8c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-8c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-8c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-8d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-8d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-8d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-8e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-8e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-8e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-8f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-8f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-8f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-90",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-90",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-90",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-91",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-91",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-91",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-92",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-92",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-92",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-93",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-93",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-93",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-94",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-94",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-94",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-95",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-95",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-95",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-96",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-96",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-96",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-97",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-97",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-97",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-98",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-98",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-98",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-99",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-99",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-99",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-9a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-9a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-9a",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-9b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-9b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-9b",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-9c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-9c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-9c",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-9d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-9d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-9d",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-9e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-9e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-9e",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-9f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-9f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-9f",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-a0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-a0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-a0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-a1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-a1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-a1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-a2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-a2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-a2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-a3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-a3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-a3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-a4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-a4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-a4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-a5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-a5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-a5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-a6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-a6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-a6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-a7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-a7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-a7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-a8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-a8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-a8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-a9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-a9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-a9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-aa",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-aa",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-aa",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ab",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ab",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ab",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ac",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ac",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ac",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ad",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ad",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ad",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ae",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ae",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ae",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-af",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-af",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-af",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-b0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-b0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-b0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-b1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-b1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-b1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-b2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-b2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-b2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-b3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-b3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-b3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-b4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-b4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-b4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-b5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-b5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-b5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-b6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-b6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-b6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-b7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-b7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-b7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-b8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-b8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-b8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-b9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-b9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-b9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ba",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ba",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ba",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-bb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-bb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-bb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-bc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-bc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-bc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-bd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-bd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-bd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-be",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-be",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-be",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-bf",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-bf",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-bf",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-c0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-c0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-c0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-c1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-c1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-c1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-c2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-c2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-c2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-c3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-c3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-c3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-c4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-c4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-c4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-c5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-c5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-c5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-c6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-c6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-c6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-c7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-c7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-c7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-c8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-c8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-c8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-c9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-c9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-c9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ca",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ca",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ca",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-cb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-cb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-cb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-cc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-cc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-cc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-cd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-cd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-cd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ce",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ce",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ce",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-cf",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-cf",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-cf",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-d0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-d0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-d0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-d1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-d1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-d1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-d2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-d2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-d2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-d3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-d3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-d3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-d4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-d4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-d4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-d5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-d5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-d5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-d6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-d6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-d6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-d7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-d7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-d7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-d8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-d8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-d8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-d9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-d9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-d9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-da",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-da",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-da",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-db",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-db",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-db",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-dc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-dc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-dc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-dd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-dd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-dd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-de",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-de",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-de",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-df",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-df",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-df",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-e0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-e0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-e0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-e1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-e1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-e1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-e2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-e2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-e2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-e3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-e3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-e3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-e4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-e4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-e4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-e5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-e5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-e5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-e6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-e6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-e6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-e7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-e7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-e7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-e8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-e8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-e8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-e9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-e9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-e9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ea",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ea",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ea",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-eb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-eb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-eb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ec",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ec",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ec",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ed",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ed",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ed",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ee",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ee",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ee",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ef",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ef",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ef",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-f0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-f0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-f0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-f1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-f1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-f1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-f2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-f2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-f2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-f3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-f3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-f3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-f4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-f4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-f4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-f5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-f5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-f5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-f6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-f6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-f6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-f7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-f7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-f7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-f8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-f8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-f8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-f9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-f9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-f9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-fa",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-fa",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-fa",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-fb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-fb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-fb",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-fc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-fc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-fc",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-fd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-fd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-fd",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-fe",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-fe",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-fe",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls first-byte-ff",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls second-byte-ff",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls one-byte-then-eof-ff",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls empty-position-0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls empty-position-1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls empty-position-2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls mixed-position-0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls mixed-position-1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls mixed-position-2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls mixed-position-3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls mixed-position-4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls mixed-position-5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls mixed-position-6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls mixed-position-7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls mixed-position-8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls mixed-position-9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls mixed-position-10",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-0",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-1",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-2",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-3",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-4",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-5",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-6",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-7",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-8",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-9",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-10",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-11",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-12",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-13",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-14",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-15",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-16",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-17",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-18",
+      "passed": true
+    },
+    {
+      "name": "native fixture unique/prefix/two virtual calls ramp17-position-19",
+      "passed": true
+    },
+    {
+      "name": "native complete802 cases/both byte domains/276 EOF returns",
+      "passed": true
+    },
+    {
+      "name": "actual immutable v37 method and assembly match inspected evidence",
+      "passed": true
+    },
+    {
+      "name": "no hidden original type initializer or exception region contract",
+      "passed": true
+    },
+    {
+      "name": "four exact actual game field identities/types retained",
+      "passed": true
+    },
+    {
+      "name": "exact original47 instructions/two callvirt/four ordered field stores and firstLength fence",
+      "passed": true
+    },
+    {
+      "name": "original entry traversal agrees with independent inspection offsets",
+      "passed": true
+    },
+    {
+      "name": "clone uses exact members/one branch relocation/no opcode or member substitution",
+      "passed": true
+    },
+    {
+      "name": "independent synthetic override control",
+      "passed": true
+    },
+    {
+      "name": "independent synthetic base-call control",
+      "passed": true
+    },
+    {
+      "name": "all802 original fixtures/1604 observed virtual entries/276 EOF returns",
+      "passed": true
+    },
+    {
+      "name": "actual original game method and DLL remain byte-identical",
+      "passed": true
+    }
+  ],
+  "fatal": null,
+  "observed_virtual_override_calls": 1604,
+  "observed_eof_returns": 276,
+  "synthetic_dispatch_controls": [
+    {
+      "opcode": "callvirt",
+      "expected_override_calls": 1,
+      "actual_override_calls": 1,
+      "result": 165,
+      "passed": true
+    },
+    {
+      "opcode": "call",
+      "expected_override_calls": 0,
+      "actual_override_calls": 0,
+      "result": 165,
+      "passed": true
+    }
+  ],
+  "original_body_il_sha256": "c6c68dce34f0d23792145aee33254a1d7cc01ddfa3f19dfa7bc75c12b98f5048",
+  "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c",
+  "correlation_report_sha256": "aed4c2e88439e96cd07727f319340fc2d8a0faf88584829cf06788ec674a553d",
+  "native_report_sha256": "d4e4a1ccacde74234377028dbbdd6e7213d9157674bbd3ba76428902dadba6b4",
+  "fixture_sha256": "5e99153391701ec6d1070799ab3e89a441e99afc80273686fd7c3910ed6003eb",
+  "probe_source_sha256": "d5503c9e8ee5e686aceed2c584553c59027ee655b4f7a9fbdcebf5a0fbd7e5e5",
+  "original_prefix_instructions": 47,
+  "original_declared_locals_retained": 95,
+  "receiver_is_original_value_type": false,
+  "original_dll_unchanged": true,
+  "recovered_fragment_dynamic_clones": 1,
+  "member_token_remap_sites": 6,
+  "member_token_mappings": [
+    {
+      "offset": 1128,
+      "kind": "method",
+      "source_token": "0x0A000191",
+      "exact_original_identity": true,
+      "member": "Int32 ReadByte()"
+    },
+    {
+      "offset": 1170,
+      "kind": "field",
+      "source_token": "0x0400037D",
+      "exact_original_identity": true,
+      "member": "Boolean \u003CIsFinal\u003Ek__BackingField"
+    },
+    {
+      "offset": 1194,
+      "kind": "field",
+      "source_token": "0x0400037E",
+      "exact_original_identity": true,
+      "member": "BestHTTP.WebSocket.Frames.WebSocketFrameTypes \u003CType\u003Ek__BackingField"
+    },
+    {
+      "offset": 1203,
+      "kind": "method",
+      "source_token": "0x0A000191",
+      "exact_original_identity": true,
+      "member": "Int32 ReadByte()"
+    },
+    {
+      "offset": 1274,
+      "kind": "field",
+      "source_token": "0x0400037F",
+      "exact_original_identity": true,
+      "member": "Boolean \u003CHasMask\u003Ek__BackingField"
+    },
+    {
+      "offset": 1284,
+      "kind": "field",
+      "source_token": "0x04000380",
+      "exact_original_identity": true,
+      "member": "UInt64 \u003CLength\u003Ek__BackingField"
+    }
+  ],
+  "local_signature_reencoded": true,
+  "branch_offsets_relocated": 1,
+  "inserted_return_fences": 1,
+  "source_opcode_changes": 0,
+  "original_member_substitutions": 0,
+  "helper_substitutions": 0,
+  "private_fragment_plan_sha256": "aefac61b17516974888b4b51d91baf90263b1103c4c871c8acb03851a6e92565",
+  "access_bypass": "DynamicMethod uses the original method Module and skipVisibility=true solely to access the original private fields",
+  "actual_whole_read_invocations": 0,
+  "game_instance_constructors_invoked": 0,
+  "host_boundary": "Real host ObservedMemoryStream overrides ReadByte, records original virtual-call results and delegates to host MemoryStream.ReadByte. Actual game receiver type, enum and four field identities are retained; original Stream.ReadByte MethodInfo is unchanged. All locals/branch/store order are retained in one isolated cloned prefix ending at an inserted return after the original first Length store.",
+  "scope": "Fragment comparison only, not direct invocation of the entire recovered Read. Member metadata tokens and branch offsets are remapped to their exact original identities in an isolated host method; no diagnostic, call opcode, field type, helper, getter or member is replaced. Original ARM64 native fixtures provide the separate reference. Game/runtime initialization, native object layout/GC/padding, extended lengths, payload, masks, null/closed/error paths, concurrency, helpers, EH and full source portability remain outside this boundary."
+}

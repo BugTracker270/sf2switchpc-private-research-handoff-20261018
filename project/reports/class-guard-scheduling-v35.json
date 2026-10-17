@@ -1,0 +1,80 @@
+{
+  "status": "PASS_BOUNDED_32BIT_CLASS_GUARD_SCHEDULING_RECOGNITION",
+  "checks": 58,
+  "fixtures": [
+    "scheduled unsigned-offset W21 read",
+    "existing adjacent X0 class load",
+    "scheduled unsigned-offset W1 read",
+    "scheduled unsigned-offset WZR read",
+    "scheduled W0 overwrites X0 receiver",
+    "scheduled pre-index W21 load writes back base",
+    "scheduled post-index W21 load writes back base",
+    "scheduled W21 store is outside witness",
+    "scheduled ADD changes class receiver",
+    "scheduled extra call is outside witness",
+    "class slot load with nonzero addend",
+    "wrong has-cctor offset",
+    "wrong cctor-finished offset",
+    "class guard branches disagree",
+    "different known-helper target excluded by caller identity gate",
+    "paired flag load/test W0 overwrites X0 class receiver",
+    "paired finished load/test W0 overwrites X0 class receiver"
+  ],
+  "source_sha256": "daee4b11808995b6d2333139cd7609b4d32dcfd2f908be39f9adb5943e7ec29c",
+  "native": [
+    {
+      "method": "BinaryReaderNekki::ReadBoolean",
+      "rva": "0xF0D390",
+      "exact_fde_bytes": 148,
+      "native_class_init_calls": 1,
+      "recognized_guards": 1,
+      "remaining_unmatched_calls": 0,
+      "body_sha256": "a2c22a6bcf2d17e31452dd9f67a08c42b7b246e10cf3db95f8e6cac2a1fef722",
+      "guards": [
+        {
+          "start": "0xF0D3DC",
+          "skip": "0xF0D3F0",
+          "target": "0xB2E720"
+        }
+      ]
+    },
+    {
+      "method": "BundlesUtil::UnloadDependencies",
+      "rva": "0x4A83A0",
+      "exact_fde_bytes": 384,
+      "native_class_init_calls": 2,
+      "recognized_guards": 2,
+      "remaining_unmatched_calls": 0,
+      "body_sha256": "0fd52a9b449be83e29a7424dab0003da060929dbe574320d54ecfac5121483f2",
+      "guards": [
+        {
+          "start": "0x4A83EC",
+          "skip": "0x4A8404",
+          "target": "0xB2E720"
+        },
+        {
+          "start": "0x4A84D8",
+          "skip": "0x4A84F0",
+          "target": "0xB2E720"
+        }
+      ]
+    },
+    {
+      "method": "BundlesUtil::GetAssetBundleSafe",
+      "rva": "0x4A8920",
+      "exact_fde_bytes": 256,
+      "native_class_init_calls": 3,
+      "recognized_guards": 1,
+      "remaining_unmatched_calls": 2,
+      "body_sha256": "07369c1cddf45700ee6c60c559312bc29ed5debc2c953755d9ac7d7c1414991c",
+      "guards": [
+        {
+          "start": "0x4A89D0",
+          "skip": "0x4A89E4",
+          "target": "0xB2E720"
+        }
+      ]
+    }
+  ],
+  "scope": "BCL-only fixture compiles the actual matcher source into a disjoint executable, without building shared Core. It verifies exact original FDE/native call correlation, the newly accepted independent unsigned-offset Wn scheduling, unchanged input bytes and strict malformed receiver/writeback/effect/layout/target rejection. Original ReadBoolean scheduled W21 load precedes and remains outside the replaced guard. No emitted CIL, class-initializer execution, source compilation, whole-caller behavior or whole-game claim is made here."
+}

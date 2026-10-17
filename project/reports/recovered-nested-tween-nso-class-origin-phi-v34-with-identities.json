@@ -1,0 +1,75 @@
+{
+  "status": "PASS_RECOVERED_NESTED_HFA_AND_CALLER_NATIVE_COMPARISON",
+  "recovery_run": "nso-class-origin-phi-v34",
+  "cases": 64,
+  "checks": 576,
+  "nested_field_address_instructions": 48,
+  "caller_nested_field_addresses": 18,
+  "identity_cases": 240,
+  "identity_checks": 720,
+  "total_checks": 1451,
+  "failure_count": 0,
+  "statically_unreachable_analysis_warning_calls": 3,
+  "diagnostic_tail_termination_experiment": false,
+  "first_failures": [],
+  "fatal": null,
+  "body_il_sha256": {
+    "RecoveredVector3Add": "5fefdde948ee2a6cb8e1c66184d65db369f2bafbe72e168e2154ad34978f2536",
+    "RecoveredNestedTweenCaller": "cd3c7fc959c89d5a163f9d028e9c30b21a7dc80bcfb28bd075bf361b4f69340b",
+    "RecoveredNestedTweenCallerThrowingBoundary": "cd3c7fc959c89d5a163f9d028e9c30b21a7dc80bcfb28bd075bf361b4f69340b",
+    "RecoveredWrapperConvert": "66feca2138ea4c7cab501fad371dc739390fae69c34a5e334fb70a203cd5fd40",
+    "RecoveredWrapperUnwrap": "f06510cec9e35ceae25a2806c6b05006e73ef83ff5e5d10aa40378b0d6471900",
+    "RecoveredWrapperWrap": "c918488bc28b161316753431350b9dc93a7f3482fc6637a7a0a34008e2659099"
+  },
+  "initialization_token_observations": [
+    {
+      "method": "Void SetRelativeEndValue(DG.Tweening.Core.TweenerCore\u00603[DG.Tweening.Core.Surrogates.Vector3Wrapper,DG.Tweening.Core.Surrogates.Vector3Wrapper,DG.Tweening.Plugins.Options.VectorOptions])",
+      "instructionOffset": 275,
+      "token": "0x01000006",
+      "resolved": "UnityEngine.Vector3",
+      "mapped_host_type": "VectorInitializationBoundary",
+      "managed_call": "Void RunClassConstructor(System.RuntimeTypeHandle)",
+      "opcodes_preserved": true
+    },
+    {
+      "method": "Void SetRelativeEndValue(DG.Tweening.Core.TweenerCore\u00603[DG.Tweening.Core.Surrogates.Vector3Wrapper,DG.Tweening.Core.Surrogates.Vector3Wrapper,DG.Tweening.Plugins.Options.VectorOptions])",
+      "instructionOffset": 275,
+      "token": "0x01000006",
+      "resolved": "UnityEngine.Vector3",
+      "mapped_host_type": "VectorThrowingInitializationBoundary",
+      "managed_call": "Void RunClassConstructor(System.RuntimeTypeHandle)",
+      "opcodes_preserved": true
+    }
+  ],
+  "initialization_native_witness": {
+    "caller_rva": "0xA6A1F0",
+    "native_bytes": 172,
+    "native_sha256": "e0230943b6c3767067ee367a6c318f9c707997f2790287560a4fe042419d0467",
+    "class_guard_rva": "0xA6A244",
+    "initializer_call_rva": "0xA6A254",
+    "initializer_target": "0xB2E720",
+    "class_got": "0x3981A50",
+    "type_usage_slot": "0x3B317B8",
+    "type_usage": "UnityEngine.Vector3_TypeInfo",
+    "original_initializer_contents_executed": false,
+    "native_evidence": "reports/native-fp-class-guard-caller.json"
+  },
+  "initialization_pair_counts": {
+    "RecoveredVector3Add": 0,
+    "RecoveredNestedTweenCaller": 1,
+    "RecoveredNestedTweenCallerThrowingBoundary": 1,
+    "RecoveredWrapperConvert": 0,
+    "RecoveredWrapperUnwrap": 0,
+    "RecoveredWrapperWrap": 0
+  },
+  "initializer_boundary_checks": 155,
+  "initializer_effect_count": 1,
+  "initializer_nondefault_marker": 85928471,
+  "throwing_initializer_requests": 2,
+  "throwing_initializer_effect_count": 1,
+  "vector_assembly_sha256": "dd2bdb9b8427f42336b465326a14c685a96dc8afdf8c04f73aed402108aa79e4",
+  "tween_assembly_sha256": "8affd5ca668eb34e68dec3e159a6ca1df2613afc4b6198105527a2596c122758",
+  "fixture_sha256": "a90434a7d325d6761703a46412a5e30e7585b90179a80568c3c74ca673330c6f",
+  "identity_fixture_sha256": "92ebd80f174a7945688f6436c9cd72d20b2f351a3a267f5b0085b2e584c94740",
+  "scope": "Actual recovered caller and addition CIL, with exact vector/wrapper/closed-generic field tokens replaced by isolated equivalent storage types. Scalar instructions, local layout, branches and stores retained; managed addition call target replaced by the actual recovered addition DynamicMethod. The exact original UnityEngine.Vector3 ldtoken/RuntimeHelpers.RunClassConstructor pair is retained; only its handle token maps to disclosed host initialization fixtures. Nondefault once-only effects and persistent constructor failure before all tween writes are measured. This is an explicit initializer-content boundary, not execution/parity of original Unity/game .cctor contents or original global initialization ordering. Appended analysis-warning calls are allowed only after full reachability proves them unreachable and map to a throwing trap without removing bytes. Three resulting component bits and six unchanged start/change bits per native math case. Every reachable diagnostic/helper or unreviewed substitution is rejected. No whole assembly, complete SetStage or portable-game claim. Original caller/initializer-request evidence: reports/native-fp-class-guard-caller.json. Also executes three actual recovered nested-wrapper argument/return methods against all 240 original-code identity fixtures (720 checks); no game-method call substitutions in those identities."
+}

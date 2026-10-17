@@ -1,0 +1,13 @@
+{
+  "status": "RECOVERED_VECTOR3_ABI_LIMITATION",
+  "recovery_run": "rust-source-v3-uncompressed",
+  "cases": 0,
+  "checks": 0,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": "System.TypeLoadException: Could not load type \u0027__External_2\u0027 from assembly \u0027mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\u0027.",
+  "body_il_sha256": null,
+  "assembly_sha256": "edbc70fdd313bb26873011a633b81b300be2b4b0d6207ea70ae8f197a7e46865",
+  "fixture_sha256": "a90434a7d325d6761703a46412a5e30e7585b90179a80568c3c74ca673330c6f",
+  "scope": "Recovered addition CIL in a DynamicMethod with the same-size three-float struct substituted only for the Unity value type and exact x/y/z field/type tokens. Arithmetic, control-flow bytes and scalar locals remain. Avoids Unity class initialization; no game DLL edits, runtime method mocks or whole-game/other-ABI certification."
+}

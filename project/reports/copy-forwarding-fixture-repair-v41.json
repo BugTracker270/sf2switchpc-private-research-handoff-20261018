@@ -1,0 +1,7 @@
+{
+  "status": "FIXTURE_TOPOLOGY_REPAIRED_BEFORE_RESULTS_ACCEPTED",
+  "before_sha256": "0ae38f81a77e430742eba41956ec06641e171beef52428094039461e8523bba9",
+  "after_sha256": "3b626b416ef2f2927f7534c803fb137b31264e7bd830a9c8acfe27bc7e34ea50",
+  "reason": "The empty CFG constructor had an entry-to-exit edge; manual branch fixture did not remove it, producing three successors and an interpreter rejection. Removed both reciprocal initial sentinel edges before constructing a valid two-successor branch. No optimizer result accepted from the failed invocation.",
+  "failed_exit_code": -532462766
+}

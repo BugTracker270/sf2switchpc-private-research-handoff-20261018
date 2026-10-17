@@ -1,0 +1,264 @@
+{
+  "status": "PASS_SCOPED_VALUE_THIS_THUNK_SELECTION_AND_ALIASES",
+  "observations": [
+    {
+      "type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt",
+      "IsValueType": true,
+      "method": "InternalDecrypt",
+      "underlying_pointer": "0x7A9200",
+      "definition_pointer": "0x7A9200",
+      "first_instruction": "0x91004000",
+      "second_instruction": "0x17FFFF47",
+      "exact_add16_tail_branch": true,
+      "target": "0x7A8F20",
+      "registered_aliases": [
+        "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt::InternalDecrypt"
+      ],
+      "target_aliases": [
+        "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt::InternalDecrypt"
+      ],
+      "IsStatic": false,
+      "parameters": [],
+      "returns": "System.Int32"
+    },
+    {
+      "type": "System.Boolean",
+      "IsValueType": true,
+      "method": "System.IConvertible.ToType",
+      "underlying_pointer": "0x89E8C0",
+      "definition_pointer": "0x89E8C0",
+      "first_instruction": "0x91004000",
+      "second_instruction": "0x17FFFCFF",
+      "exact_add16_tail_branch": true,
+      "target": "0x89DCC0",
+      "registered_aliases": [
+        "System.Boolean::System.IConvertible.ToType"
+      ],
+      "target_aliases": [
+        "System.Boolean::System.IConvertible.ToType"
+      ],
+      "IsStatic": false,
+      "parameters": [
+        "System.Type",
+        "System.IFormatProvider"
+      ],
+      "returns": "System.Object"
+    },
+    {
+      "type": "System.Int32",
+      "IsValueType": true,
+      "method": "System.IConvertible.ToType",
+      "underlying_pointer": "0x82CFA0",
+      "definition_pointer": "0x82CFA0",
+      "first_instruction": "0x91004000",
+      "second_instruction": "0x17FFFFBF",
+      "exact_add16_tail_branch": true,
+      "target": "0x82CEA0",
+      "registered_aliases": [
+        "System.Int32::System.IConvertible.ToType"
+      ],
+      "target_aliases": [
+        "System.Int32::System.IConvertible.ToType"
+      ],
+      "IsStatic": false,
+      "parameters": [
+        "System.Type",
+        "System.IFormatProvider"
+      ],
+      "returns": "System.Object"
+    },
+    {
+      "type": "System.Double",
+      "IsValueType": true,
+      "method": "System.IConvertible.ToType",
+      "underlying_pointer": "0x753670",
+      "definition_pointer": "0x753670",
+      "first_instruction": "0x91004000",
+      "second_instruction": "0x17FFFFBF",
+      "exact_add16_tail_branch": true,
+      "target": "0x753570",
+      "registered_aliases": [
+        "System.Double::System.IConvertible.ToType"
+      ],
+      "target_aliases": [
+        "System.Double::System.IConvertible.ToType"
+      ],
+      "IsStatic": false,
+      "parameters": [
+        "System.Type",
+        "System.IFormatProvider"
+      ],
+      "returns": "System.Object"
+    }
+  ],
+  "checks": 35,
+  "tests": [
+    {
+      "name": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt exact selected body",
+      "status": "PASS"
+    },
+    {
+      "name": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt registered pointer remains",
+      "status": "PASS"
+    },
+    {
+      "name": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt unique direct unboxed alias",
+      "status": "PASS"
+    },
+    {
+      "name": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt registered alias retained",
+      "status": "PASS"
+    },
+    {
+      "name": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt exact raw body",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Boolean exact selected body",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Boolean registered pointer remains",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Boolean unique direct unboxed alias",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Boolean registered alias retained",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Boolean exact raw body",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Int32 exact selected body",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Int32 registered pointer remains",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Int32 unique direct unboxed alias",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Int32 registered alias retained",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Int32 exact raw body",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Double exact selected body",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Double registered pointer remains",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Double unique direct unboxed alias",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Double registered alias retained",
+      "status": "PASS"
+    },
+    {
+      "name": "System.Double exact raw body",
+      "status": "PASS"
+    },
+    {
+      "name": "signed backward tail branch decoded",
+      "status": "PASS"
+    },
+    {
+      "name": "different receiver adjustor rejected 91002000",
+      "status": "PASS"
+    },
+    {
+      "name": "different receiver adjustor rejected 91008000",
+      "status": "PASS"
+    },
+    {
+      "name": "different receiver adjustor rejected 91004001",
+      "status": "PASS"
+    },
+    {
+      "name": "different receiver adjustor rejected 91004020",
+      "status": "PASS"
+    },
+    {
+      "name": "different receiver adjustor rejected D503201F",
+      "status": "PASS"
+    },
+    {
+      "name": "call instead of tail branch rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "self target rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "unaligned entry rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "actual ordinary receiver metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "static metadata rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "reference receiver metadata rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "shared target overload identities rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "opt-in disabled lookup",
+      "status": "PASS"
+    },
+    {
+      "name": "native frame table accepted",
+      "status": "PASS"
+    }
+  ],
+  "accepted_bodies": 287,
+  "rejections": [
+    {
+      "RegisteredAddress": 8561840,
+      "Target": 8561312,
+      "Reason": "Shared native body has ambiguous managed identity/signature"
+    },
+    {
+      "RegisteredAddress": 8561872,
+      "Target": 8561312,
+      "Reason": "Shared native body has ambiguous managed identity/signature"
+    },
+    {
+      "RegisteredAddress": 5896688,
+      "Target": 5896272,
+      "Reason": "Shared native body has ambiguous managed identity/signature"
+    },
+    {
+      "RegisteredAddress": 5896704,
+      "Target": 5896272,
+      "Reason": "Shared native body has ambiguous managed identity/signature"
+    }
+  ],
+  "frame_error": null,
+  "source_binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "source_metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "scope": "Metadata/native exact FDE body selection, retained registered pointers, unique aliases and rejection guards only. Original boxed/unboxed codec equivalence is separately tested; recovered InternalDecrypt CIL and complete source still require validation."
+}

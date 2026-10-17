@@ -1,0 +1,46 @@
+{
+  "status": "PASS_NATIVE_FACTORY_METADATA_AND_EXACT_CONSTRUCTOR_PAIR",
+  "checks": 26,
+  "factory_rva": "0xB4DA50",
+  "caller_rva": "0x224AC0",
+  "caller_factories": [
+    {
+      "block": 84,
+      "type": "System.ArrayTypeMismatchException",
+      "constructor": "System.ArrayTypeMismatchException::.ctor"
+    },
+    {
+      "block": 88,
+      "type": "System.ArrayTypeMismatchException",
+      "constructor": "System.ArrayTypeMismatchException::.ctor"
+    },
+    {
+      "block": 92,
+      "type": "System.ArrayTypeMismatchException",
+      "constructor": "System.ArrayTypeMismatchException::.ctor"
+    },
+    {
+      "block": 96,
+      "type": "System.ArrayTypeMismatchException",
+      "constructor": "System.ArrayTypeMismatchException::.ctor"
+    },
+    {
+      "block": 100,
+      "type": "System.ArrayTypeMismatchException",
+      "constructor": "System.ArrayTypeMismatchException::.ctor"
+    },
+    {
+      "block": 104,
+      "type": "System.ArrayTypeMismatchException",
+      "constructor": "System.ArrayTypeMismatchException::.ctor"
+    },
+    {
+      "block": 108,
+      "type": "System.ArrayTypeMismatchException",
+      "constructor": "System.ArrayTypeMismatchException::.ctor"
+    }
+  ],
+  "binary_sha256": "94af5c70b20f0ae063c640b83578100459050f68f520088a9eb2e2aea234f238",
+  "metadata_sha256": "f37df12eb1e4b3bb6972ab650a20659010096fd1932dc4f4f930150f279bde85",
+  "scope": "Native witness and actual normalized caller IR plus strict generator pair selection. This probe does not execute recovered CIL, original constructor bodies or whole gameplay."
+}

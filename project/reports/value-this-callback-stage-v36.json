@@ -1,0 +1,12 @@
+{
+  "status": "READ_ONLY_ACTUAL_VALUE_THIS_CALLBACK_STAGE",
+  "core_sha256": "23b43f3a1d07dca7483ec0fac031380d934a16f2fc8c34bc5922f52af0ac6044",
+  "registered_rva": "0x7A9200",
+  "indirect_calls": 1,
+  "private_stage_path": "analysis\\reconstruction\\value-this-regression-v36\\callback-after-type-stage.json",
+  "private_stage_sha256": "919a719c581b699895cd29ad0561d9be185a9d8fd7fde3e60bd5a1a1390b85ff",
+  "probe_source_sha256": "144127cb5c0b8afa64de87194a41c40749ad917c1564989b7acb2967cf553f80",
+  "core_modified": false,
+  "game_methods_invoked": 0,
+  "scope": "Unchanged one-method production SSA/type graph observation only; no alternate receiver root or void dispatch witness is implemented or accepted."
+}

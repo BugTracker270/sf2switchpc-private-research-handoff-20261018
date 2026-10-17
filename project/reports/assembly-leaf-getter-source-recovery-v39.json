@@ -1,0 +1,372 @@
+{
+  "status": "SCOPED_ASSEMBLY_GETTER_RECOVERY_VALIDATED_WHOLE_SOURCE_INCOMPLETE",
+  "recovery_run": "nso-assembly-leaf-getter-v39",
+  "baseline_run": "nso-virtual-companion-copy-v38",
+  "updated": "2026-10-17T18:50:54.730897+00:00",
+  "recovery_core_sha256": "52e9fa40275b71be5ea48e1bab1816e59dc4412ddfc0c627c29345f3086a4929",
+  "evidence": {
+    "invocation": {
+      "path": "logs/cpp2il-nso-assembly-leaf-getter-v39-result.json",
+      "sha256": "3a6c718323193358e4d138940fda87bea1c9196d9c1616f63d71ff10a42f5350",
+      "status": null
+    },
+    "frozen_sources": {
+      "path": "reports/assembly-leaf-getter-v39-source-snapshot.json",
+      "sha256": "bf3f83c4c0889cbe0b7dbff0b206b35e5f6f5b3847ef5fe2bedad03d2dfbffbb",
+      "status": "PASS_IMMUTABLE_COMPLETE_CANDIDATE_SOURCE_CAPTURE"
+    },
+    "frozen_tool_binaries": {
+      "path": "reports/assembly-leaf-getter-v39-tool-binary-snapshot.json",
+      "sha256": "3cf42b6b7105f00ca9e5a8bc955d939c2308cb1995f5beb18015c31e420abb47",
+      "status": "PASS_FROZEN_V39_THREE_TOOL_ASSEMBLIES_AND_COMPLETE_PATCH"
+    },
+    "candidate": {
+      "path": "reports/cpp2il-hfa-experimental-lock-assembly-leaf-getter-v39.json",
+      "sha256": "159ecbd793eb372959cee7c3f30feaafbc12f1185b457c5e0b216c97297bd598",
+      "status": "EXPERIMENTAL_SAVED_NOT_PROMOTED"
+    },
+    "native_getter": {
+      "path": "reports/native-assembly-leaf-getter-v39.json",
+      "sha256": "8e0d14bb2961d2d12e7569b09035d068cd6ae128484967f4bca20b2af0c65535",
+      "status": "PASS_ORIGINAL_INTERNAL_REFERENCE_LEAF_GETTER"
+    },
+    "baseline": {
+      "path": "reports/assembly-leaf-accessor-contract-v39-baseline.json",
+      "sha256": "28ee57c46401a5d2bd2c37658be537bdde181eda2c6ef785f5189364d97031b1",
+      "status": "PASS_BASELINE_PUBLIC_ONLY_LEAF_ROUTE_REJECTS_INTERNAL_GETTER"
+    },
+    "contract": {
+      "path": "reports/assembly-leaf-accessor-contract-v39.json",
+      "sha256": "5ecbc526d3fb1689d41277014cd9fca9aa078318981de646357ddc18917dd806",
+      "status": "PASS_ASSEMBLY_LEAF_GETTER_NATIVE_ACCESSIBILITY_AND_EMISSION_CONTRACT"
+    },
+    "production": {
+      "path": "reports/assembly-leaf-accessor-production-v39.json",
+      "sha256": "4c03b923fb775f36838a87af9c39e0b2030978331695e9af2a7612c96dd7ba24",
+      "status": "PASS_ACTUAL_ORIGINAL_CONSTRUCTOR_RECEIVER_AND_ASSEMBLY_GETTER_EMISSION"
+    },
+    "fresh_output": {
+      "path": "reports/recovered-assembly-leaves-nso-assembly-leaf-getter-v39.json",
+      "sha256": "25dc9e161c85eca76b7d1495f19759ee36b5220875e6814215c2a1a3ee1c8484",
+      "status": "PASS_FRESH_ORIGINAL_ASSEMBLY_GETTERS_AND_CONSTRUCTOR_CALL_CORRELATION"
+    },
+    "regressions": {
+      "path": "reports/recovery-regression-nso-assembly-leaf-getter-v39.json",
+      "sha256": "7309938c0c3669ea96cc2ea7aab848cdf6c09d08e4e3978c3d1255e63d7a7e32",
+      "status": "PASS_SCOPED_RECOVERY_REGRESSIONS"
+    },
+    "syntax": {
+      "path": "analysis/il2cpp/cil-audit-nso-assembly-leaf-getter-v39/summary.json",
+      "sha256": "85bdc0348077782d8c519090eb205fe324160633831e464a9dbb81237c7b575f",
+      "status": null
+    },
+    "stack": {
+      "path": "reports/cil-stack-audit-nso-assembly-leaf-getter-v39.json",
+      "sha256": "1d461aee7965c0baf8a3154c9221b989121f32f6923559c811b81292a89a3bb8",
+      "status": "PASS_STACK_DEPTH_AND_HEADERS_ONLY"
+    },
+    "compiler_comparison": {
+      "path": "reports/compiler-diagnostic-delta-v39.json",
+      "sha256": "a4f31d97e12e821b66267390d672f44274d63c27643fecc5617775ee6d2a57c0",
+      "status": "PASS_CANONICAL_COMPLETE_SOURCE_COMPILER_COMPARISON"
+    },
+    "focused_source": {
+      "path": "reports/assembly-leaf-accessor-source-v39.json",
+      "sha256": "4f73d2ce5e71857c47511c6d0d13ba5b9699b9b882ed4556c30651f56d4d9ce2",
+      "status": "PASS_SCOPED_NATIVE_ASSEMBLY_GETTER_SOURCE_CORRELATION"
+    },
+    "added_diagnostics_audit": {
+      "path": "reports/assembly-leaf-added-diagnostics-attribution-v39.json",
+      "sha256": "152a95b1118c00e1179c4169ea8f66ff7ec9df626d44592655cdb7c2ba784ed5",
+      "status": "PASS_SIX_ADDED_DIAGNOSTICS_EXPOSE_EXISTING_UNCHANGED_OPERATIONS"
+    }
+  },
+  "gates": [
+    {
+      "name": "completed_reviewed_core_invocation",
+      "status": "PASS"
+    },
+    {
+      "name": "all44_output_assemblies",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_sources_status",
+      "status": "PASS"
+    },
+    {
+      "name": "all40_frozen_sources_match_invocation",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_tool_binaries_status",
+      "status": "PASS"
+    },
+    {
+      "name": "three_frozen_tool_binaries_and_reverse_check",
+      "status": "PASS"
+    },
+    {
+      "name": "candidate_status",
+      "status": "PASS"
+    },
+    {
+      "name": "complete40_file_candidate_binds_frozen_source",
+      "status": "PASS"
+    },
+    {
+      "name": "native_getter_status",
+      "status": "PASS"
+    },
+    {
+      "name": "native_128cases384checks_and_null_boundary",
+      "status": "PASS"
+    },
+    {
+      "name": "baseline_status",
+      "status": "PASS"
+    },
+    {
+      "name": "original_public_only_baseline9",
+      "status": "PASS"
+    },
+    {
+      "name": "contract_status",
+      "status": "PASS"
+    },
+    {
+      "name": "independent78_contract_checks",
+      "status": "PASS"
+    },
+    {
+      "name": "production_status",
+      "status": "PASS"
+    },
+    {
+      "name": "original_two_constructor_pipeline15",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh_output_status",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh27_getters_two_constructors118",
+      "status": "PASS"
+    },
+    {
+      "name": "regressions_status",
+      "status": "PASS"
+    },
+    {
+      "name": "all18_existing_bounded_regressions",
+      "status": "PASS"
+    },
+    {
+      "name": "all44_cil_syntax",
+      "status": "PASS"
+    },
+    {
+      "name": "stack_status",
+      "status": "PASS"
+    },
+    {
+      "name": "all44_stack_depth_headers_only",
+      "status": "PASS"
+    },
+    {
+      "name": "compiler_comparison_status",
+      "status": "PASS"
+    },
+    {
+      "name": "compiler_comparison_exact_runs",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_source_profile_Assembly-CSharp-firstpass_nso-virtual-companion-copy-v38",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_manifest_hash_reports/recovered-source-profile-legacy-reference-check-nso-virtual-companion-copy-v38.json",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_manifest_hash_reports/recovered-source-profile-project-build-nso-virtual-companion-copy-v38.json",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_source_profile_Assembly-CSharp-firstpass_nso-assembly-leaf-getter-v39",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_manifest_hash_reports/recovered-source-profile-legacy-reference-check-nso-assembly-leaf-getter-v39.json",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_manifest_hash_reports/recovered-source-profile-project-build-nso-assembly-leaf-getter-v39.json",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_source_profile_Assembly-CSharp_nso-virtual-companion-copy-v38",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_source_profile_Assembly-CSharp_nso-assembly-leaf-getter-v39",
+      "status": "PASS"
+    },
+    {
+      "name": "focused_source_status",
+      "status": "PASS"
+    },
+    {
+      "name": "99_source_reads_and_two_remaining_private_stores",
+      "status": "PASS"
+    },
+    {
+      "name": "six_added_diagnostics_independently_audited",
+      "status": "PASS"
+    }
+  ],
+  "failed_gates": [],
+  "pending_gates": [],
+  "assembly_hashes": {
+    "Assembly-CSharp-firstpass.dll": "410c413e323aab5c3c8f974ee296bf76c91e9ca0be108f594de872e1c5c9cff5",
+    "Assembly-CSharp.dll": "f1807583f68e4e2da6c65f57009d3c3207b400be56d1ba3b589cdb10c5d0c604",
+    "DOTween.dll": "8def873e5423a48dd13dbba985e1e8f5837f6b9cdf8333dfe14652153f2e1229",
+    "DOTween46.dll": "4533ea82c863588c79b72c04d15ae3306adc5098f12ca9c6e3479e017a339383",
+    "Facebook.Unity.Settings.dll": "d0095cd3b52d33881ba4e2e02f164d73e8bdb0a39790ebd14d2f483fccb53c83",
+    "FyberLitJson.dll": "d13a87f8048e7ed36088382fa29a6931240bede1236eec26fd906e87e53b9fad",
+    "FyberPlugin.dll": "fb79c98dc52404009c3a9d00fdea25364e232dfd3f9a168e1f7dcd89481d1c91",
+    "Ionic.Zip.Unity.dll": "a24d6c8e77bada18b9f34d807acb08a825f66247deb026000860a2e52e717692",
+    "Mono.Security.dll": "f5c7bc3ac5be0bcb56737d1e512108a51d902e0c64d4c8228b94b3b358516963",
+    "mscorlib.dll": "d952f8276e9261706a614c009e7fcb56d0b09fbbebdbf85cf62b19effd3950be",
+    "protobuf-net.dll": "fd5b9d976494c2f19e03021aa2c06e280ede178aff004fff44528116932ed62f",
+    "SmartFox2X.dll": "62236f3abb42ddba603e751c3cd46b828ccb34d8f205d8d3f2ca5c53bea24ce8",
+    "System.Configuration.dll": "7a4f192e3d9adf27d7e9fa4ea689245537297b443b53de8c922c0a72a41e939a",
+    "System.Core.dll": "23f5216d15c64e192c8dbc66b0c1ef422f89744a1296d33f1ae618fb0b777e7a",
+    "System.dll": "4e328f37c9337a3b16c9ec779f181cd2247f03433f5f5c4cdcc5427a150edc60",
+    "System.Xml.dll": "9b171ed602ec449bb3cc44d076998b60cfc2df68d0b9f6d20d01df1583f2d7b1",
+    "System.Xml.Linq.dll": "6455efe359f4c69c67dad7b0233c0be840bff4a6b9760a0b347b5bd73d009731",
+    "TcpClientImplementation.dll": "a45afc4d03080e0dfde686a4457e5276e9a9e5e1bbbba4fca71a6b36f0b9f888",
+    "UnityEngine.AIModule.dll": "4555da3d4e9635a96c37029ba99d66e9bfa12cb27ce72b2c37bf1b84b0a32c2e",
+    "UnityEngine.AnimationModule.dll": "6c06869376c647b81d4504f4f907dc617f4fa9f80268324c08b5b740ea8b4e89",
+    "UnityEngine.AssetBundleModule.dll": "d2f35d39dac45247a039a250a2f497b700fd5435c7814f3d0538a491d3ff6f67",
+    "UnityEngine.AudioModule.dll": "f211c85aa461e14ec6d8633b3912af9f9dd7b6bfc374fe68eeafca699265cfbd",
+    "UnityEngine.CoreModule.dll": "9ef97ea35b2fab2ecc4426939bcd8437625bc005cc8ca8a9328af45eab6d66e4",
+    "UnityEngine.DirectorModule.dll": "33ae3fd7778d4864479f9fb033837c6a4f9e5fdd9fe10055f28c11d94ea13877",
+    "UnityEngine.dll": "0d291f2c87d2279e7b0b294b31210ab2201fb52a7d65d68de2e485d0fe7e6880",
+    "UnityEngine.GameCenterModule.dll": "bde72fe0653cb44592cda79736a3abb3decbd8086e1709a378613c8bb0d88726",
+    "UnityEngine.GridModule.dll": "fbe97071900938e14e09e54011167d66700df24b6276e2050ecdc71b5472c0b0",
+    "UnityEngine.ImageConversionModule.dll": "f26852f5bc297346527239a7b18a387a8a46e1e4f1bbf852d7599972006ada6b",
+    "UnityEngine.IMGUIModule.dll": "ffdc90c0efb8f572bb09af643ddcd138031f316a1170059dcec7d6757e86df53",
+    "UnityEngine.InputModule.dll": "19f8781c36fa58b69c5f4f2de0c8abc4eb2185e6a71164df6ea11c493b4aab31",
+    "UnityEngine.ParticleSystemModule.dll": "f4df8c729d6e9a5c51f72d183d96d047c8c6d40ed809bfbbb232791ff87e6dcb",
+    "UnityEngine.Physics2DModule.dll": "4c6ca3ccff92e03615c614f2ae09da8af12a45c44f5f469b6e81638bd8e57d9c",
+    "UnityEngine.PhysicsModule.dll": "3221825479e8e4136c5ae6c605d99472afbf912c7969598b6237c521b92b452d",
+    "UnityEngine.SharedInternalsModule.dll": "7949df2ec08004914bc819397d9efe795531656aba628ea2fd4aa0be04d5ef66",
+    "UnityEngine.TerrainModule.dll": "7985680f2ede854c13cd851f1e3492076746ffbecd4cea6eb21095a1032be84f",
+    "UnityEngine.TextRenderingModule.dll": "53aa53f88a08597fe07902a7b14b3063465e8ee99ce5117a3fbf7be541d5bd1c",
+    "UnityEngine.TilemapModule.dll": "ec2e6c091ce3ce344406631baaab434fd73257775e52ef4b35db079d6e1024d6",
+    "UnityEngine.UI.dll": "8dc0ab76830d8d891b473a912236cfe7ba5c7db9789be46cab5ad29423e6a602",
+    "UnityEngine.UIElementsModule.dll": "bfb5251f4ef29bd17e753b015361526e95222646616aa777eb1fde6945390a61",
+    "UnityEngine.UIModule.dll": "7d8000c7bd5980edf2c3a73f114e7ae0fb290fdafcb4e298728908245573751b",
+    "UnityEngine.UnityWebRequestAssetBundleModule.dll": "549b2f275d1ec2d8cf212dfdea4f0799776c196ee2c982c334276628d9341f3b",
+    "UnityEngine.UnityWebRequestModule.dll": "1e6498470bf8947de28ea299d04f4b67c0f4c65dc4c919d31b9500164204a4a0",
+    "UnityEngine.UnityWebRequestWWWModule.dll": "7230428cdc0482131a708551e687cd6e0bf2ec7d862b2a97aced6bb1c9cd8d6c",
+    "UnityEngine.VRModule.dll": "d56dded270c2e65b237df72c23404fc0805a1eb1f02c8a713b3b3cf9c0c3bd4e"
+  },
+  "source_audit_reuse": {
+    "canonical_report_sha256": "a4f31d97e12e821b66267390d672f44274d63c27643fecc5617775ee6d2a57c0",
+    "completed_canonical_manifest_and_diagnostic_source_audit_reused": true,
+    "new_full_source_tree_byte_hash_reads": false,
+    "profiles": {
+      "nso-virtual-companion-copy-v38": {
+        "Assembly-CSharp-firstpass": {
+          "manifest_entries": 1342,
+          "diagnostic_source_byte_hashes_previously_verified": 631,
+          "matching_reference_source_manifest_unchanged": true
+        },
+        "Assembly-CSharp": {
+          "manifest_entries": 1637,
+          "diagnostic_source_byte_hashes_previously_verified": 1242,
+          "matching_reference_source_manifest_unchanged": true
+        }
+      },
+      "nso-assembly-leaf-getter-v39": {
+        "Assembly-CSharp-firstpass": {
+          "manifest_entries": 1342,
+          "diagnostic_source_byte_hashes_previously_verified": 630,
+          "matching_reference_source_manifest_unchanged": true
+        },
+        "Assembly-CSharp": {
+          "manifest_entries": 1637,
+          "diagnostic_source_byte_hashes_previously_verified": 1242,
+          "matching_reference_source_manifest_unchanged": true
+        }
+      }
+    }
+  },
+  "compiler": {
+    "Assembly-CSharp-firstpass": {
+      "before": 20728,
+      "after": 20534,
+      "delta": -194,
+      "before_cs0122": 2713,
+      "after_cs0122": 2528,
+      "added_semantic_diagnostic_occurrences": 6,
+      "added_diagnostics": [
+        {
+          "code": "CS0019",
+          "message": "Operator '+' cannot be applied to operands of type 'byte[]' and 'int'",
+          "count": 4
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'BestHTTP.HTTPProxy' to 'BestHTTP.HTTPConnectionStates'",
+          "count": 1
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 1
+        }
+      ]
+    },
+    "Assembly-CSharp": {
+      "before": 32710,
+      "after": 32710,
+      "delta": 0,
+      "before_cs0122": 4225,
+      "after_cs0122": 4225,
+      "added_semantic_diagnostic_occurrences": 0,
+      "added_diagnostics": []
+    }
+  },
+  "candidate_patch": {
+    "path": "src\\re\\tool-patches\\cpp2il-sf2-hfa-experimental-assembly-leaf-getter-v39.patch",
+    "sha256": "e0dcd499d3b0bde0c755fa0adef2f2e9a836a1a2999a8d667d180cf9c97f532c",
+    "files": 40,
+    "promoted": false
+  },
+  "bounded_scopes": {
+    "native_getter_cases": 128,
+    "native_getter_checks": 384,
+    "null_receiver_boundary": true,
+    "baseline_contract_checks": 9,
+    "assembly_contract_checks": 78,
+    "original_constructor_pipeline_checks": 15,
+    "fresh_output_checks": 118,
+    "fresh_getters": 27,
+    "fresh_constructors": 2,
+    "bounded_regression_jobs": 18,
+    "focused_source_private_reads_recovered_as_existing_internal_property": 99,
+    "private_constructor_stores_remaining": 2
+  },
+  "original_visibility_changed": false,
+  "source_text_edited": false,
+  "full_clean_decompile_ready": false,
+  "whole_game_source_ready": false,
+  "portable_game_ready": false,
+  "summary_tool_sha256": "3d72ccfa16c2d6ac834bed55f550128f1ac82bcaf4be7d9500720af7d247e990",
+  "limits": "Exact nonpublic accessor recovery preserves field flags and requires the same actual output assembly. Native reads, synthetic native/accessibility/emitter contracts, actual constructor IR/CIL correlation and whole source compilation remain separate scopes. Both complete matching source builds still fail. Six newly diagnosed arithmetic/cast occurrences were independently traced to unchanged prior recovered operations; those invalid operations remain unresolved. No original game code executes in the getter/constructor inspection probes, and no full game parity or clean portable decompile is claimed."
+}

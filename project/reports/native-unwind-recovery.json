@@ -1,0 +1,15 @@
+{
+  "status": "UNWIND_RANGE_EXPORT_COMPLETE",
+  "utc": "2026-10-17T01:03:24.452422+00:00",
+  "validated_ranges": 152904,
+  "ranges_with_pseudocode": 152904,
+  "failed_ranges": 0,
+  "unattempted_ranges": 0,
+  "exported_range_bytes": 36292460,
+  "validated_range_bytes": 36292460,
+  "indexed_native_records": 152914,
+  "frame_file_sha256": "aa464d27b080531baa5dfbd5591c63ba331fbded3091ff8eca6f054d87369abf",
+  "source_nso_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "full_semantic_reverse_engineering": "NOT_COMPLETE",
+  "scope": "Exact-entry pseudocode export coverage of independently validated, nonoverlapping exception-frame code ranges. Extra native entries, residual text, actual CFI/LSDA behavior, operand types and all game/engine semantics remain separate. Exported range bytes are not verified source or behavior coverage."
+}

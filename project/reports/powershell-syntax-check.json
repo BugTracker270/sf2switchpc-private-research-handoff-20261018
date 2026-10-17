@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-16T19:57:51.9117287Z",
+  "error_count": 0,
+  "files": [
+    {
+      "path": "F:\\SF2SwitchPC\\src\\tools\\Initialize-UsbWorkspace.ps1",
+      "errors": []
+    },
+    {
+      "path": "F:\\SF2SwitchPC\\src\\tools\\Invoke-Cpp2IlMetadataRecovery.ps1",
+      "errors": []
+    },
+    {
+      "path": "F:\\SF2SwitchPC\\src\\tools\\Invoke-NativeCorpus.ps1",
+      "errors": []
+    },
+    {
+      "path": "F:\\SF2SwitchPC\\src\\tools\\Invoke-NativePostprocess.ps1",
+      "errors": []
+    },
+    {
+      "path": "F:\\SF2SwitchPC\\src\\tools\\Invoke-ScopedNativeCorpus.ps1",
+      "errors": []
+    },
+    {
+      "path": "F:\\SF2SwitchPC\\src\\tools\\Measure-UsbIo.ps1",
+      "errors": []
+    },
+    {
+      "path": "F:\\SF2SwitchPC\\src\\tools\\Prepare-Inputs.ps1",
+      "errors": []
+    },
+    {
+      "path": "F:\\SF2SwitchPC\\src\\tools\\Test-UsbWriteBoundary.ps1",
+      "errors": []
+    },
+    {
+      "path": "F:\\SF2SwitchPC\\src\\tools\\UsbBoundary.ps1",
+      "errors": []
+    }
+  ]
+}

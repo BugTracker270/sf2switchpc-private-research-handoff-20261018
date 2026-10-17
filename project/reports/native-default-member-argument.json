@@ -1,0 +1,41 @@
+{
+  "status": "PASS_ORIGINAL_DEFAULT_MEMBER_ARGUMENT_AT_RUNTIME_BOUNDARIES",
+  "cases": 1,
+  "checks": 3,
+  "generator": "0xBD1480",
+  "owner": "Newtonsoft.Json.Utilities.ListWrapper<T>",
+  "recovered_member_name": "Item",
+  "executed_functions": {
+    "generator_list_wrapper": 2,
+    "utf8_string_wrapper": 2,
+    "utf8_string_length": 8,
+    "utf8_conversion": 17,
+    "utf8_codepoint_decoder": 24,
+    "short_utf16_reserve": 5,
+    "utf16_writer": 27,
+    "string_character_buffer": 1,
+    "default_member_ctor": 2,
+    "attribute_base_ctor": 1,
+    "object_base_ctor": 1
+  },
+  "runtime_boundaries": {
+    "supplied_libc_strlen": 1,
+    "supplied_managed_string_allocation": 1,
+    "supplied_libc_memcpy": 1
+  },
+  "original_text_sha256": {
+    "generator_list_wrapper": "2150baaecc21e25f14a0d95694f40014a5b35dc0a355fb5b79e710fefb650471",
+    "utf8_string_wrapper": "c1230cc745df96af92757962b474379d254f4c18ddb535544ce73439c0876613",
+    "utf8_string_length": "5e096c7dc982f8f2e2ef56dcf46745365825a4a1045d7f29a4b2cd43dbf6e409",
+    "utf8_conversion": "de862a8e4f97f3d31cdfb6954f90bb595c74c8ae3ad91acf6c234ee3913a0a4f",
+    "utf8_codepoint_decoder": "3544dca3628dcd0c53d20fe975ab3387cb70e011854e46db7117e947d2ccd660",
+    "utf16_writer": "4fa98c034dce3b637e313e93de025535c26004b99ab4b568bdd6fb1d358b6951",
+    "short_utf16_reserve": "e04494c7906702290c038506e928f5895eed2cd1aa730621056a6ed86fb40b79",
+    "string_character_buffer": "a98af38dc050ac8d15d58f41cafbb47ad7f553a27c03ad5bfbfb7700eafbd7d9",
+    "default_member_ctor": "be4e74039838c8658683aed0fa9d0470308ac019f590493b7d47073129ca5151",
+    "attribute_base_ctor": "d1f9413eaeee27ff6dfaff4894100b012c11764c74516944e318860347700f86",
+    "object_base_ctor": "110f46b5b35c069160560c6ad6786f647dd44e8760a52a46fc22dbbcd7630b91"
+  },
+  "text_modified": false,
+  "scope": "Original cache generator, UTF-8 conversion, string copy/buffer code and attribute/base constructors. Managed string allocation and libc strlen/memcpy are explicit supplied boundaries. Preallocated attribute cache/object are synthetic. Does not certify all attribute generators, long/unicode strings, GC or complete source recovery."
+}

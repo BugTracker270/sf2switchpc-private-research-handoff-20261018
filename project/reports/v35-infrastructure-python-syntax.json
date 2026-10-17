@@ -1,0 +1,853 @@
+{
+  "status": "PASS_ORIGINAL_PYTHON_SYNTAX",
+  "files": 140,
+  "failures": 0,
+  "scope": [
+    "src/tools",
+    "src/re/tools",
+    "tests"
+  ],
+  "source_execution": false,
+  "tests": [
+    {
+      "path": "src/re/tools/aggregate_abi_adjustor_inventory.py",
+      "sha256": "ac9ea1447d0d5c9ffee5a5f596d0882ad811e9be80e951fcd6961386ede6dcdd",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/aggregate_abi_class_guard_cfg_v35.py",
+      "sha256": "e04d009f84a10b09143e28dea9ed5a6c7c3da0e9950865d6df3203a6ad37ed80",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/aggregate_abi_exception_metadata_review.py",
+      "sha256": "5db422d84807ef305db22a20260f34b49ceb445eefe8f5ce8cdf7b8dc8f7034a",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/aggregate_abi_native_leaf_fixtures.py",
+      "sha256": "aa9438f133f5cc247eabc998604901ce503f3233f5cb4783fd73a3452fd94341",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/aggregate_abi_virtual_stream_inspect.py",
+      "sha256": "25701faacfa2c7b4b71f734c0a207ab8031db888e26cc0ce9c9d0d1a2cec127c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/audit_allocation_identity_repair.py",
+      "sha256": "3c4eb64cbda73b8b107275389d5786fb2db9f08b80345f477e4b5ed912143ac9",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/audit_class_guard_recovery.py",
+      "sha256": "2420375edd260b9b184f9850505d88d389d5cf3d5e95525cdd3cded7d3439375",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/audit_currency_abi_recovery.py",
+      "sha256": "59af0ceae98814ec860e37e851fff24a086b9b87a12019e10fa81a4cc9f6f636",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/audit_default_member_recovery.py",
+      "sha256": "e88a1dfb6f3a84f7592330df594a7aa945fa9f1d3d0fb90564fe35c1b68aa1e9",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/audit_empty_object_ctor.py",
+      "sha256": "83216a64d2b06ee80fb9c0d266403aba6e79462edabc3cea250c6b15809c3239",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/audit_indirect_return_parity.py",
+      "sha256": "9f5f226d5ec41c653e0c6878de22a28101c14875e9e7ac7d051c924a0499b811",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/audit_native_pseudocode.py",
+      "sha256": "095782bcfd97d7dd1a605120f2032dd544152a59f4da1b00ffeee2036f3d0cdc",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/audit_native_text_partition.py",
+      "sha256": "16808c40e9f8e6dadc23889e60c7dc5f91ff91c9e35a7f9e36fc4fbff4baccc4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/audit_recovered_allocation.py",
+      "sha256": "587f961dc30060ea81007533b93f9bcabdd5d78708d214a936362c12e415d388",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/audit_scoped_csharp_types.py",
+      "sha256": "5e3e77a252228df0bc3b4d05e34628db63e43edad2b8eeac0cccbc557b0f5a61",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/auxiliary_recovery_overlay.py",
+      "sha256": "9f98a0a04bc979b314d14c4aa8b8cb478f4e8c16e3196e3152f67f2657c1fe48",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/boolean_reader_native_inspect.py",
+      "sha256": "e42289dd66981f1fef8fab36e2314f1a21eb41bfb9738e1eaa104f7bd76e34c4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/boxing_input_provenance.py",
+      "sha256": "1dc08ac1b27194d65ff2742006e739588054384909c82144ef9df961d07c948b",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/boxing_source_correlation.py",
+      "sha256": "191b68b4732742af0e38bb320b3337a2257dd556b4d32254f447746b2000651d",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/build_research_index.py",
+      "sha256": "4f8f83b63afb9cd3818dd6aa65925fda18476f456413e26aa2b2f3150f6acd2c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/catalog_assets.py",
+      "sha256": "779859a5b5cd3535df9a0953954abdda54a5aafb7d91e6041bb5412c525d59e7",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/catalog_game_content.py",
+      "sha256": "45c4a5b6670fab2c2373a5c0a6c2033f277115a0b5809d50b7fb980b47f5f4bc",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/check_fp_class_guard_source.py",
+      "sha256": "1f3ec303729c3784f4d05ac93b8d2bbe2094afe343451f149a20cfd3354049c0",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/check_generic_constructor_source.py",
+      "sha256": "b5b21441f0601d433f3a7d531e1c7c6b4ed366cbe2cc03496e94bfd86c0204fa",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/check_generic_field_source.py",
+      "sha256": "e06af6439ffcf5aa02b223a694f80d362ccd6dd61a839b554251eb999974d9ce",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/check_type_handle_source.py",
+      "sha256": "1bd6936eefbbd9f4e5897b629d6774ddd22e85c283513226f723a42038cc526e",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/checkpoint_recovery.py",
+      "sha256": "acb7b17f315cc10ca9a4fb997e39bf5dfed0679591c3ab85592552c41f170ab9",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/compiler_diagnostic_delta.py",
+      "sha256": "098133fbacc479de43655e173676fcca7cb7b893b93fc55d8cf38022720cd38e",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/compiler_priority_exception_factory.py",
+      "sha256": "75137abb189a01f0b506a50420e6cc5135c847736244d9ab5bef490a917939ec",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/compiler_priority_next.py",
+      "sha256": "899372bd33d114f7c105b4dc7d5a7e5cf04b39cdfaa1674083762f7d255a5901",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/decode_ai_tables.py",
+      "sha256": "003fb3ceee308c68d7c1afea0646af5a01c62b840ca461646851585f86b49022",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/decode_audio.py",
+      "sha256": "03362bfc9b3d6a1a2046503f46967f0c922421d8e6c41d052fd9ba1291999c40",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/enumerator_storage_native.py",
+      "sha256": "57515538def34a15f75c092b17779e6572c25a7bbb4ae7d9399c3e1c86272096",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_ai_leaves.py",
+      "sha256": "38c92568470558db0f5d21c0e59588959789fbbb45d9584d7d9e1697dcab9763",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_animation_step.py",
+      "sha256": "5327654232f5ee737c37d59ac16704b1fce71ac9f409426e235d85cdb8122de9",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_array_boundary.py",
+      "sha256": "a02701b9520b3a5c3ac7fce1e529cdf9ce9dbf3f2949d7330df2dda87623ebc8",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_bezier.py",
+      "sha256": "75c93c321bb72abcac512f47cf64812dcaf87805b9618bd7df6d105a595fc03b",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_boolean_reader.py",
+      "sha256": "ee088d4313ce57fc4e4d06347e277ad003ef8e3a72a8b02c054bcf9b1d133a35",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_boolean_setter.py",
+      "sha256": "d3f02a04c8486d392d1b0a21cec38edd4624766dddb7d474db0388e10930d0f6",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_capsules.py",
+      "sha256": "a3e69e25414c11fb652ffb7361494800442af397de4d0744e87a2422f0077e57",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_class_guards.py",
+      "sha256": "f1eae4f433dd075b5afa170524a9eb3f2b8d5130192c91636758f658b2c10e59",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_contact_geometry.py",
+      "sha256": "c99c0ba46753dae02494800d9b89f7bb7702895d9e43be4517d37c2ddf35c153",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_currency_codec.py",
+      "sha256": "141206499ba6fd18f2fcdeec51fa9109e5d297beefceaf9ef0d6d6a04c44d71a",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_currency_long.py",
+      "sha256": "071496c1e60cc14c4936b77d301d8c9ac6222396e03887911f1af5bb9960dde4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_damage_combination.py",
+      "sha256": "d90b0054e4db39f8ee0fe0748488006ee34a7eda31681ba551d9f7ff97007617",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_default_member.py",
+      "sha256": "9974426ccc276bfd2b87807a380aa3a7c257cc0a5876a8c6357a9ef167209687",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_empty_animation_gate.py",
+      "sha256": "9e272632ccb3bf23e327a1ccc9ab3413c0dc7d9b7514b14d96e858a4add69a2f",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_exception_boundary.py",
+      "sha256": "5c014d2e4063d9424224366c19a2661b9e975e4a5a23de077fe31c0721a1ba85",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_fp_class_guard_caller.py",
+      "sha256": "6f828f8d5ff1125f5b6a19b9fa77407f24bde43eb6c70c92d235003402d08f4c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_nested_hfa_identity.py",
+      "sha256": "ce28a0ded4c53d94058738703eea4c7a4a54ddfdadda425bb71e7c823bbf69f5",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_node_step.py",
+      "sha256": "ebddd8adf370f50f00ec0b73260752589e47307ff5ce4327deef9541dee7039c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_quest_lookup.py",
+      "sha256": "6d673d9b5ff4bacada06ff4fe1cd66d5613366e600ca333bb5a6397e34909c43",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_save_gate.py",
+      "sha256": "cf0dbfe0d154d86679c059875c01968e091c3a43f72d50d04ea2d0923b131173",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_save_scheduler.py",
+      "sha256": "fdd3f138767d4a97bb5d9c100f4a1aeb302830075a43574da70301671f42f6ef",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_scalar_accessors.py",
+      "sha256": "3e86d44647ce70cb416935f5fd9b4187b17120cd61d270c99f8ebc537762208f",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_scalar_boxing.py",
+      "sha256": "6126c5f905c4b2066cb6d5644eaff2ceab9cd3e08a18d930d645028257ab412b",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_static_getter.py",
+      "sha256": "18af313bde4659f4165e8e18418faf30f2fedfb3284b18a3c5c6d8c0b7c1df2c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_strike_selection.py",
+      "sha256": "9a80230d8e91f74ade6284f228d3ca3c511bdc5fb9c8144524a009b15042924d",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_vector3_add.py",
+      "sha256": "022533dca385c7a7d291b7d605d82d8fc9ede5c3105b0fe8a53801d68cd59ebe",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/execute_native_wallet.py",
+      "sha256": "1c631c66a59560529a5272ff564d6f6a2fc2bea9c627682cc9011a5483f7c891",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/export_typed_components.py",
+      "sha256": "56fb40d97374cd9907920dc5313028c8758ad2f54624b3fc84423691682798ed",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/extract_class_guard_baseline_v32.py",
+      "sha256": "00a669359e06dfef43c65080506ecad1f12748da2cc6483e0246e6ceece9546f",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/fetch_legacy_reference_assemblies.py",
+      "sha256": "e88e978a41d012ae9ff80d96db08f67960b3629f17220a18adeb6a31b79f0e23",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/fingerprint.py",
+      "sha256": "40a25bafe54a3b065170986eeffe6d7381d2946396a5cdb22c7579286cea4a18",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/indirect_return_tail_provenance.py",
+      "sha256": "23a50c11211ecb43218ab8ceaba044dba8258ae440fc46b71a9aac44fd910b44",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/inspect_move_inheritance.py",
+      "sha256": "8fbc493890c56f89b6bf09c2fc654f4ff9eb0e5e0fe2cde93779ed7383451ac6",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/inspect_native_modules.py",
+      "sha256": "ef6067a416a128b5193db13a8d1738b54db13e4e8fe4141a61823eb3d7afaf75",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/inspect_unload_exception_contract.py",
+      "sha256": "830d8cab4a565190418e4fd5d8ccbf6ccc400b4038527402668ed2fbed38f0e6",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/map_quest_loading.py",
+      "sha256": "04a5394c68401d4fa6497d7bab3ae690328631ad9b41ced82c330e1021bc4d7f",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/map_save_structure.py",
+      "sha256": "429da4a14e7e840042bfc426f31e8876fcc0709031f6cb577f2dc4e6f6fc9cb2",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/native_corpus_index.py",
+      "sha256": "90e766c85342f1ea5cccb87bf0ac5765f6cc0aabded65404d85e525cfc7ebe12",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/native_data_refs.py",
+      "sha256": "4e63f290a7782eac7a35c1b8c63d9649b1bba36ea0e6a845df46ed6d93f77ef7",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/native_unwind_inventory.py",
+      "sha256": "acbc9cff4c2b29d920313587ab68adacb3825387b905f7782a92bdfbcad47011",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/native_zero_reference_triage.py",
+      "sha256": "50b73dd62c7d141425e7b19b4b3b883c75bd36534688bcd4ed816834bed4ca70",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/nso_symbol_inventory.py",
+      "sha256": "4c39d5e1f6a2ec06286eadcfbe954029e446bfc52c88d19c535bb1ce75e28c3e",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/package_cpp2il_corrections.py",
+      "sha256": "c9e622711d45fcc084795082e1becb8c6386268d44f0087b9a877dcabc5034a7",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/package_cpp2il_hfa_experiment.py",
+      "sha256": "475573e63ca2965aa3ecc20b456dbf947d8bdbdb1e60ee4f18a636f0efebe365",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/prepare_auxiliary_module.py",
+      "sha256": "4fce05995b5b3e942e1884b7a1ef5470adb87f71d37a6af4bf6166235988c0a0",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/prepare_decompiler_reference_view.py",
+      "sha256": "f22553ae2d4d0b819d2381dfea558408e537c074cf70c6eb2e892839e6114386",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/prepare_native_followup.py",
+      "sha256": "6aad15d1ae7fd42484316fcd0dd4e1e84ceae099647d63f6911428f7f9af1b33",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/prepare_regex_switch_repair.py",
+      "sha256": "661372b8163103afc6fe2d2defbbf3e54c35b7ef00f4e7959fcbb88932a3d05a",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/prepare_runtime_header.py",
+      "sha256": "942c76d128fde4172981d1cbf32abd1180784500b4a5aa5e64f3511831f4b9d0",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/prepare_rust_nso_mapping_patch.py",
+      "sha256": "4c152d7765c21ffb6a63884b71b0e0710b87258c8b786602400b5d0a6856dd49",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/prepare_scoped_corpus.py",
+      "sha256": "6b6e1f2213f5b8897d429c88c2a86f9b0c85116b1d68b4a836d290b5ed065c0d",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/private_access_diagnostics.py",
+      "sha256": "a5e5ec44dacd0b324dd2690faf9c25e7598c9838762c6a81cfd7b0d308a2f417",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/private_access_native_store.py",
+      "sha256": "d278089d23e0d2d6905686edd70014449545d65bbd0170a87bdb07728381ce0c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/private_access_protected.py",
+      "sha256": "2853fd50b7dd0935409de2bbdd8d071b2f98c829fe038c7186372d0138b7f9a2",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/private_access_source.py",
+      "sha256": "86fef47889f3c8ba8f0fbd0d28d38c7aebd318e1b617d6e65e50519750e0bb14",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/propose_unload_exception_recovery.py",
+      "sha256": "cac799a6b717a893d2a94b18a3ee9ca502bf08ff7d5c31dcaaad17ed059d6922",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/raw_classinit_native_correlation.py",
+      "sha256": "d7d19d97f9b60d2c1c3d0933852c4ca5bf52a76248d432a4c389d9d0f8e0576f",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/raw_classinit_source_impact_v32.py",
+      "sha256": "fc6b1a23a71cf7e3d679ae375144fff664dad974c82ff4bbd6ff5f577da36a35",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/recover_tactics.py",
+      "sha256": "4e62d4e320adce611536e259e3d1749c454affaa12c5a2953adbb8e8e34fc9c6",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/refresh_behavior_reports.py",
+      "sha256": "c81d5e0efd3bcc113b45f7d113e45745f9dbaf1665b03c4b12689e8316c9f57c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/refresh_reports.py",
+      "sha256": "a4546b5ec8386960be515f047602f94eed13c8658645ad53cfda99b9fc27f65f",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/resolve_asset_graph.py",
+      "sha256": "1bca24c6681cb88ea0600529b803d3218f38b72eeabd0ef3756f0c58049f4b61",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/resolve_move_templates.py",
+      "sha256": "75584607fc57881803e1239ecef035d432d74e9fa8a3b85e72d80b2b1e9b3883",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/run_infrastructure_syntax_gate.py",
+      "sha256": "164137f059a59d56f759cda8599168f0ea1f041cc2a9927ccf3136e1f0179cbd",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/select_unindexed_native.py",
+      "sha256": "a7ed3fba06881b3795e693d46e075c9124fe950d26379f6b091b39bc93fae3ab",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/select_unwind_native.py",
+      "sha256": "8b1f207eaca92feb504a912e02ab23377d31ca9057a5b41ae98b18db0800a032",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/summarize_cfg_initialization_recovery.py",
+      "sha256": "15611772fb47a8020190221158c9fe08275d22518bbe959a9c50055a806cca9d",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/summarize_class_guard_load_recovery.py",
+      "sha256": "7037be9de036ea606c3c97b96cb6ca7729db6eb30459895ad2d77866af6e7cf1",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/summarize_class_origin_phi_recovery.py",
+      "sha256": "3ff11e69fc04fc20c9405f03cc5f50ba695ef90aa27e3947cf045b750c4800a6",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/summarize_generic_source_recovery.py",
+      "sha256": "24751734536a08a7cbb182bb126337a8a26b2aa0713d82b49c04c37b59d985d9",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/summarize_indirect_return_recovery.py",
+      "sha256": "e980cd49a54029153f0bfbfa5da28d8d8bb3f08e6cca539cc2f185d92bf93e57",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/summarize_native_leaf_recovery.py",
+      "sha256": "12d55e82e5f3b758cf1c5bfcb6519138b0b21c5c58155e2ba5c73b0f0f18860d",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/summarize_plain_frame_recovery.py",
+      "sha256": "d624c5f9f4763f3d31ff61d424dcd03e9ea430dd0e464fce2075687a5417ce7a",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/summarize_reference_enumerator_sret_survey.py",
+      "sha256": "2d1abebf63c4d70f77f12e6e541285a323f9b4248198acf4f1aef6d4833613d2",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/summarize_source_build.py",
+      "sha256": "2329529c25ced3015ec05ebb609305180260f4f73764189545c63383c7edaf16",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/summarize_unwind_recovery.py",
+      "sha256": "02db46196747f70cf467490c52fc1d1178a386ec624fe85c1b6ae735abffaa3d",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/summarize_value_this_box_recovery.py",
+      "sha256": "ff6e66ccd077f15917217b2ec514082e06d9921311fe9429bfb877328632e756",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/survey_reference_enumerator_sret.py",
+      "sha256": "ac8c4ed91111cb965284b1ef12f5d8dc7bc339eb18b15598d253bbe066beab22",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/trace_registrations.py",
+      "sha256": "3db9bd1c604842b10e27eb917cf1b506f3290a88e28bc4c0479caa277f007622",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/unity_v17_manifest.py",
+      "sha256": "d3b6d2a11c9fb1f469d1f583222b71298e2df2526231e17aeebaa70eec9aad4c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/v30_diagnostic_delta.py",
+      "sha256": "a6269d28602757b84592a7b7222fcbf447eb73133646fb13c2604f1b431b4d2e",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/validate_components_sequential.py",
+      "sha256": "c27a6e874a0cab042be051703456364b6a16305928efc32f8c587bb688e2dd53",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/validate_exception_metadata.py",
+      "sha256": "b5111f295cbf234af8daf7fd0523e11dc8b4249e2d9289ebbadfe7afce22ebfb",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/verify_behavior_leaves.py",
+      "sha256": "2e451e909714535cf39be49c8245ca546f608ad3091ceef53a5de1210e931706",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/verify_recovery_evidence.py",
+      "sha256": "d372ad6bfe7e11d28c2c55af791896c8f3f0e57e91644d6624056cd9c6949f5d",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/re/tools/verify_registration_tables.py",
+      "sha256": "279890572bc4a2e3382b42ac6da29ee0c2cfcfcb90292ecad010d51a4ade9ac2",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/tools/audit_upstreams.py",
+      "sha256": "77c30b9adcbccda558bf22430c28c04262dc56d75a721adc2ea16259c939d6d5",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/tools/exception_metadata.py",
+      "sha256": "96540cbea573f9b34b4cc6dab7ae8bdf2643a49cb8195563da1e4771fba9cd95",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/tools/extract_ncas.py",
+      "sha256": "97866de75a86cda6e0df22b4ac29ba953393d20e5382c565ea1da9edfd631427",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/tools/inspect_ncas.py",
+      "sha256": "96056a73af3cdc1a5c0069f36080541bb5e806ec5dae950b682430599bf8e76c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/tools/inspect_pfs0.py",
+      "sha256": "79276a20e49a1210ff579d4f5bf3d7cb37f517bb9f3105f7346cc60b850088d9",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/tools/usb_boundary.py",
+      "sha256": "0cf32a3cd5e8ba9963c7af52390e834c69de628ee2e26fd747b0879ef1ee1883",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/tools/vendor_locked_rust_dependencies.py",
+      "sha256": "69cd3d398c4c66a2424b04bd981b557e7c707ec9d20701bb1a3f042e14129c52",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "src/tools/verify_private_git_boundary.py",
+      "sha256": "3cb1a03e41dc448c69e6d6d1d956149e7d52c9c196c26b77c9b98d40376d9d46",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_ai_tables.py",
+      "sha256": "eb6098762e3efc3572c0f82893cf3432fedc589ea1b0f9fff48e940453d96b24",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_arm64_registration_trace.py",
+      "sha256": "a31e44d22d17e30c4843c982a3b82ce216ab5b2ce3c8e9e013e4936ceb8141bf",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_exception_metadata.py",
+      "sha256": "43338f15e91be03ab3865d12efe30df030da6eeb3a8bef52ef120d52c173900a",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_move_inheritance.py",
+      "sha256": "ab76e305f91dac4076e01ab713f7832a88b6ddb1dde726e0d7123c866a7c3ef4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_native_corpus_ingest.py",
+      "sha256": "2a036228ee98af89325f62ca712e968c5cacb8c87848402812d5ee2ed67771be",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_native_pseudocode_audit.py",
+      "sha256": "6cc39a1770fdeca8d18980ccd25ba92dda2cc8644e4e6842dbbee59c5b07645b",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_native_text_partition.py",
+      "sha256": "41cf2d273d738328818cda801a66d613000c214557786daa7c8b36e51719105f",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_native_unwind_inventory.py",
+      "sha256": "3ce508b90ef4e8825a62944dab6a84838416c2eca5bd30dd906281e56905f9f1",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_pfs0.py",
+      "sha256": "b00d0c1fd29e9065c1aa9d6d25ad6480a2383079f09aabc8185d7f84e0e1e0f7",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_point_frames.py",
+      "sha256": "786d8700eb2f4b951eb981e19daf8bfa087eac70ee12408c3f7df29992769a37",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_registration_bounds.py",
+      "sha256": "51b63537a9ebc28efea757b2114ac6f0db456d914525a06412e53fd7c50f1bc1",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_tactics_decompression.py",
+      "sha256": "696025def01a21a7c6492dd8c8cce1d811f833811a48e87288ef4c07c5b04fb8",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/test_unity_manifest.py",
+      "sha256": "67c55cc04ff5d029e0de169791da9b0373489ac43291fbbd0bb260f463822718",
+      "passed": true,
+      "error": null
+    }
+  ]
+}

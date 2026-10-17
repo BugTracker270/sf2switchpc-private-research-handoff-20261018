@@ -1,0 +1,15 @@
+{
+  "status": "PASS_RECORDED_SERIAL_BUILD_SOURCE_AND_INVOCATION_BINDING",
+  "recovery_run": "nso-class-origin-phi-v34",
+  "source_snapshot": "analysis\\reference\\class-origin-v34\\KeyFunctionRecovery.cs",
+  "source_sha256": "9064474aed01a88a959be70f338e7597ed46b69c6dea487a58ae13a3e9d3a5f0",
+  "core_sha256": "eb14e6f7fe579f6553eefc2493b9513a0caa047fc448251ae208d86289439baa",
+  "recovery_invocation_sha256": "b69067dfb8373d399c1618f03571a5c732a0ae7fa654d22cb80c6f6bc93fa93c",
+  "build_log": "logs\\cpp2il-class-metadata-phi-v34-build.log",
+  "build_log_sha256": "bc95fdc526d764ca9d8f87cb9a3d16ec685c6ca7cd013cf33c4091411dd2a835",
+  "independent_source_review_sha256": "0ff4306549edd0894890e1ffde691bb282e67fe3bec236fbe3cb50c10184d437",
+  "production_fixture_sha256": "6c4ff3712878dd50c139ea5e628685883ca01ace331f97b9dd68db86e8713a47",
+  "historical_proposal_sha256": "b27a175c245b0177a09dea4a3b57d74963a5aa853cfc7f03f33c1dde4cfe1f4a",
+  "historical_proposal_core_sha256": "08f55a8f59aa06ebc5bb899806b297b750b275b09d58255ebd966cbfbc8eba1e",
+  "scope": "Immutable recorded source copy and observed successful serial build bind the independently reviewed KFR snapshot to the exact Core used by production fixtures and completed recovery. This is recorded build provenance, not an independent bit-for-bit rebuild. The proposal30 is historical independent-checker evidence on old v33 Core and is not relabeled as current production execution."
+}

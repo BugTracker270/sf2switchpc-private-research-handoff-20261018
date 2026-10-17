@@ -1,0 +1,105 @@
+diff --git a/Cpp2IL.Core/Analysis/MetadataResolver.cs b/Cpp2IL.Core/Analysis/MetadataResolver.cs
+index de03988..29d4a9a 100644
+--- a/Cpp2IL.Core/Analysis/MetadataResolver.cs
++++ b/Cpp2IL.Core/Analysis/MetadataResolver.cs
+@@ -1,4 +1,5 @@
+ using System.Collections.Generic;
++using System;
+ using System.Linq;
+ using System.Reflection;
+ using Cpp2IL.Core.Extensions;
+@@ -8,6 +9,7 @@ using Cpp2IL.Core.ISIL;
+ using Cpp2IL.Core.Model.Contexts;
+ using Cpp2IL.Core.Utils;
+ using LibCpp2IL;
++using LibCpp2IL.NintendoSwitch;
+ 
+ namespace Cpp2IL.Core.Analysis;
+ 
+@@ -67,6 +69,25 @@ public static class MetadataResolver
+     private static void ResolveMetadataUsages(MethodAnalysisContext method)
+     {
+         var libContext = method.AppContext.LibCpp2IlContext;
++        var definitions = new Dictionary<LocalVariable, Instruction>();
++        foreach (var candidate in method.ControlFlowGraph!.Instructions)
++            if (candidate.Destination is LocalVariable destination)
++                definitions[destination] = candidate;
++
++        // A Switch GOT load yields the address of a metadata slot, not its runtime value.
++        // Only follow file-backed pointers which land on a registered legacy metadata usage.
++        ulong? ReadKnownNsoMetadataPointer(ulong address)
++        {
++            if (method.AppContext.Binary is not NsoFile binary || method.AppContext.MetadataVersion >= 27f
++                || !binary.TryMapVirtualAddressToRaw(address, out _))
++                return null;
++            try
++            {
++                var pointer = binary.ReadPointerAtVirtualAddress(address);
++                return libContext.GetAnyGlobalByAddress(pointer) != null ? pointer : null;
++            }
++            catch (Exception) { return null; } // Keep the original diagnostic for unreadable pointers.
++        }
+ 
+         foreach (var instruction in method.ControlFlowGraph!.Instructions)
+         {
+@@ -78,7 +99,7 @@ public static class MetadataResolver
+ 
+             var address = instruction.Operands[1] switch
+             {
+-                MemoryOperand { Base: null, Index: null, Scale: 0 } memory => (ulong)memory.Addend,
++                MemoryOperand memory => MetadataAddressResolver.LoadAddress(memory, definitions, ReadKnownNsoMetadataPointer) ?? 0ul,
+                 Immediate immediate => immediate.UnsignedValue,
+                 _ => 0ul,
+             };
+diff --git a/Cpp2IL.Core/Analysis/MetadataAddressResolver.cs b/Cpp2IL.Core/Analysis/MetadataAddressResolver.cs
+new file mode 100644
+--- /dev/null
++++ b/Cpp2IL.Core/Analysis/MetadataAddressResolver.cs
+@@ -0,0 +1,47 @@
++using System;
++using System.Collections.Generic;
++using Cpp2IL.Core.ISIL;
++
++namespace Cpp2IL.Core.Analysis;
++
++/// <summary>Keep the address of a metadata load distinct from a GOT pointer load.</summary>
++public static class MetadataAddressResolver
++{
++    public static ulong? LoadAddress(MemoryOperand memory, Dictionary<LocalVariable, Instruction> definitions,
++        Func<ulong, ulong?> readKnownPointer)
++        => LoadAddress(memory, definitions, readKnownPointer, new HashSet<LocalVariable>(), 0);
++
++    private static ulong? LoadAddress(MemoryOperand memory, Dictionary<LocalVariable, Instruction> definitions,
++        Func<ulong, ulong?> readKnownPointer, HashSet<LocalVariable> visiting, int depth)
++    {
++        if (depth > 32 || memory.Index != null || memory.Scale != 0)
++            return null;
++        if (memory.Base == null)
++            return unchecked((ulong)memory.Addend);
++        var value = Value(memory.Base, definitions, readKnownPointer, visiting, depth + 1);
++        return value.HasValue ? unchecked(value.Value + (ulong)memory.Addend) : null;
++    }
++
++    private static ulong? Value(IOperand operand, Dictionary<LocalVariable, Instruction> definitions,
++        Func<ulong, ulong?> readKnownPointer, HashSet<LocalVariable> visiting, int depth)
++    {
++        if (depth > 32)
++            return null;
++        if (operand is Immediate immediate)
++            return immediate.UnsignedValue;
++        if (operand is LocalVariable local && visiting.Add(local))
++        {
++            try
++            {
++                if (definitions.TryGetValue(local, out var definition)
++                    && definition is { OpCode: OpCode.Move, Operands: [_, var source] })
++                    return Value(source, definitions, readKnownPointer, visiting, depth + 1);
++            }
++            finally { visiting.Remove(local); }
++        }
++        if (operand is MemoryOperand memory
++            && LoadAddress(memory, definitions, readKnownPointer, visiting, depth + 1) is { } address)
++            return readKnownPointer(address);
++        return null;
++    }
++}

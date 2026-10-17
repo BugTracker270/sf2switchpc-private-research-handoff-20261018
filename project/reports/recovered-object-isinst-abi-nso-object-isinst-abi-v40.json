@@ -1,0 +1,579 @@
+{
+  "status": "PASS_FRESH_ABI_ONLY_CIL_CORRELATION_WITH_EXPLICIT_UNRECOVERED_SCAFFOLD_LIMITATIONS",
+  "recovery_run": "nso-object-isinst-abi-v40",
+  "baseline_run": "nso-assembly-leaf-getter-v39",
+  "checks": 41,
+  "tests": [
+    {
+      "name": "completed exact v40 invocation/Core/input identities",
+      "passed": true
+    },
+    {
+      "name": "full invocation contains44 output assemblies",
+      "passed": true
+    },
+    {
+      "name": "frozen actual production41 and unresolved class/helper semantics bound",
+      "passed": true
+    },
+    {
+      "name": "actual injected diagnostic helper is only a no-op ret: nso-assembly-leaf-getter-v39",
+      "passed": true
+    },
+    {
+      "name": "actual diagnostic helper exact ret byte: nso-assembly-leaf-getter-v39",
+      "passed": true
+    },
+    {
+      "name": "actual injected diagnostic helper is only a no-op ret: nso-object-isinst-abi-v40",
+      "passed": true
+    },
+    {
+      "name": "actual diagnostic helper exact ret byte: nso-object-isinst-abi-v40",
+      "passed": true
+    },
+    {
+      "name": "no semantic isinst translation in actual output: InControl.PlayStation4MacBTProfile::.ctor",
+      "passed": true
+    },
+    {
+      "name": "all unresolved numeric/effect diagnostic strings stay ordered: InControl.PlayStation4MacBTProfile::.ctor",
+      "passed": true
+    },
+    {
+      "name": "all28 original helper diagnostics retain exact emitted count",
+      "passed": true
+    },
+    {
+      "name": "constructor adds no explicit ldnull/initobj substitution",
+      "passed": true
+    },
+    {
+      "name": "complete constructor operation alignment consumes both bodies",
+      "passed": true
+    },
+    {
+      "name": "only four proven unused zero stores become Nop",
+      "passed": true
+    },
+    {
+      "name": "all constructor locals retain bijective type/pinning identities",
+      "passed": true
+    },
+    {
+      "name": "all constructor nonlocal operands/raw bytes and original branch targets retained",
+      "passed": true
+    },
+    {
+      "name": "relocated metadata operands are only identical literal strings",
+      "passed": true
+    },
+    {
+      "name": "only fourteen unreferenced Object locals disappear",
+      "passed": true
+    },
+    {
+      "name": "method flags/signature/InitLocals/MaxStack and absent EH remain unchanged",
+      "passed": true
+    },
+    {
+      "name": "actual28 distinct unassigned result locals/null checks and implicit InitLocals boundary: nso-assembly-leaf-getter-v39",
+      "passed": true
+    },
+    {
+      "name": "actual28 distinct unassigned result locals/null checks and implicit InitLocals boundary: nso-object-isinst-abi-v40",
+      "passed": true
+    },
+    {
+      "name": "no semantic isinst translation in actual output: System.Array::get_swapper",
+      "passed": true
+    },
+    {
+      "name": "all unresolved numeric/effect diagnostic strings stay ordered: System.Array::get_swapper",
+      "passed": true
+    },
+    {
+      "name": "actual Array body is only unchanged pre-existing default scaffold: get_swapper",
+      "passed": true
+    },
+    {
+      "name": "forced-stage Array calls are not claimed present in full output: get_swapper",
+      "passed": true
+    },
+    {
+      "name": "no semantic isinst translation in actual output: System.Array::int_swapper",
+      "passed": true
+    },
+    {
+      "name": "all unresolved numeric/effect diagnostic strings stay ordered: System.Array::int_swapper",
+      "passed": true
+    },
+    {
+      "name": "actual Array body is only unchanged pre-existing default scaffold: int_swapper",
+      "passed": true
+    },
+    {
+      "name": "forced-stage Array calls are not claimed present in full output: int_swapper",
+      "passed": true
+    },
+    {
+      "name": "no semantic isinst translation in actual output: System.Array::obj_swapper",
+      "passed": true
+    },
+    {
+      "name": "all unresolved numeric/effect diagnostic strings stay ordered: System.Array::obj_swapper",
+      "passed": true
+    },
+    {
+      "name": "actual Array body is only unchanged pre-existing default scaffold: obj_swapper",
+      "passed": true
+    },
+    {
+      "name": "forced-stage Array calls are not claimed present in full output: obj_swapper",
+      "passed": true
+    },
+    {
+      "name": "no semantic isinst translation in actual output: System.Array::double_swapper",
+      "passed": true
+    },
+    {
+      "name": "all unresolved numeric/effect diagnostic strings stay ordered: System.Array::double_swapper",
+      "passed": true
+    },
+    {
+      "name": "actual Array body is only unchanged pre-existing default scaffold: double_swapper",
+      "passed": true
+    },
+    {
+      "name": "forced-stage Array calls are not claimed present in full output: double_swapper",
+      "passed": true
+    },
+    {
+      "name": "no semantic isinst translation in actual output: System.Array::compare",
+      "passed": true
+    },
+    {
+      "name": "all unresolved numeric/effect diagnostic strings stay ordered: System.Array::compare",
+      "passed": true
+    },
+    {
+      "name": "actual Array body is only unchanged pre-existing default scaffold: compare",
+      "passed": true
+    },
+    {
+      "name": "forced-stage Array calls are not claimed present in full output: compare",
+      "passed": true
+    },
+    {
+      "name": "all six original callers inspected without executing any method",
+      "passed": true
+    }
+  ],
+  "methods": [
+    {
+      "assembly": "Assembly-CSharp",
+      "owner": "InControl.PlayStation4MacBTProfile",
+      "method": ".ctor",
+      "forced_production_ir_helper_calls": 28,
+      "actual_helper_diagnostics": 28,
+      "full_output_array_body_recovered": false,
+      "before": {
+        "token": "060020AC",
+        "rows": 3072,
+        "locals": 569,
+        "local_types": [
+          {
+            "type": "InControl.PlayStation4MacBTProfile",
+            "count": 1
+          },
+          {
+            "type": "System.Boolean",
+            "count": 316
+          },
+          {
+            "type": "System.String[]",
+            "count": 2
+          },
+          {
+            "type": "System.Object",
+            "count": 46
+          },
+          {
+            "type": "System.IntPtr",
+            "count": 72
+          },
+          {
+            "type": "System.IndexOutOfRangeException",
+            "count": 28
+          },
+          {
+            "type": "System.ArrayTypeMismatchException",
+            "count": 28
+          },
+          {
+            "type": "InControl.InputControlMapping[]",
+            "count": 2
+          },
+          {
+            "type": "InControl.InputControlMapping",
+            "count": 26
+          },
+          {
+            "type": "System.Int32",
+            "count": 48
+          }
+        ],
+        "numeric_diagnostics": 32,
+        "diagnostic_sequence_sha256": "4773ae7a2e18187ac2ec40fa4ee443ab32a563cb8bd6d9088a644cb594478034",
+        "helper_diagnostics": 28,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 0,
+        "InitializeLocals": true,
+        "MaxStack": 3,
+        "eh_handlers": 0
+      },
+      "after": {
+        "token": "060020AC",
+        "rows": 3068,
+        "locals": 555,
+        "local_types": [
+          {
+            "type": "InControl.PlayStation4MacBTProfile",
+            "count": 1
+          },
+          {
+            "type": "System.Boolean",
+            "count": 316
+          },
+          {
+            "type": "System.String[]",
+            "count": 2
+          },
+          {
+            "type": "System.IntPtr",
+            "count": 72
+          },
+          {
+            "type": "System.Object",
+            "count": 32
+          },
+          {
+            "type": "System.IndexOutOfRangeException",
+            "count": 28
+          },
+          {
+            "type": "System.ArrayTypeMismatchException",
+            "count": 28
+          },
+          {
+            "type": "InControl.InputControlMapping[]",
+            "count": 2
+          },
+          {
+            "type": "InControl.InputControlMapping",
+            "count": 26
+          },
+          {
+            "type": "System.Int32",
+            "count": 48
+          }
+        ],
+        "numeric_diagnostics": 32,
+        "diagnostic_sequence_sha256": "4773ae7a2e18187ac2ec40fa4ee443ab32a563cb8bd6d9088a644cb594478034",
+        "helper_diagnostics": 28,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 0,
+        "InitializeLocals": true,
+        "MaxStack": 3,
+        "eh_handlers": 0
+      },
+      "baseline_assembly_sha256": "f1807583f68e4e2da6c65f57009d3c3207b400be56d1ba3b589cdb10c5d0c604",
+      "actual_assembly_sha256": "e5026c3658a143007dabd8feee3fe629ae69d0aba4990c3fd7078e34f65213c5",
+      "baseline_body_sha256": "376598b1081c23a2835c9d5818f9360d9fff78b125c44fd6dfadc84bda418557",
+      "actual_body_sha256": "8f3b68490dfcd8980889eccbb20804c50094354974047c273736dd15153a865f"
+    },
+    {
+      "assembly": "mscorlib",
+      "owner": "System.Array",
+      "method": "get_swapper",
+      "forced_production_ir_helper_calls": 3,
+      "actual_helper_diagnostics": 0,
+      "full_output_array_body_recovered": false,
+      "before": {
+        "token": "060003A8",
+        "rows": 2,
+        "locals": 0,
+        "local_types": [],
+        "numeric_diagnostics": 0,
+        "diagnostic_sequence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "helper_diagnostics": 0,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 1,
+        "InitializeLocals": false,
+        "MaxStack": 8,
+        "eh_handlers": 0
+      },
+      "after": {
+        "token": "060003A8",
+        "rows": 2,
+        "locals": 0,
+        "local_types": [],
+        "numeric_diagnostics": 0,
+        "diagnostic_sequence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "helper_diagnostics": 0,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 1,
+        "InitializeLocals": false,
+        "MaxStack": 8,
+        "eh_handlers": 0
+      },
+      "baseline_assembly_sha256": "d952f8276e9261706a614c009e7fcb56d0b09fbbebdbf85cf62b19effd3950be",
+      "actual_assembly_sha256": "ecaaa05d98f1d7255175ac748c51c94c3d694e2c348ca80036a24aacf5bc3aed",
+      "baseline_body_sha256": "431f576f0b83e175b09ff43a505071b517544479f36ad22c833813b9450c0045",
+      "actual_body_sha256": "431f576f0b83e175b09ff43a505071b517544479f36ad22c833813b9450c0045"
+    },
+    {
+      "assembly": "mscorlib",
+      "owner": "System.Array",
+      "method": "int_swapper",
+      "forced_production_ir_helper_calls": 1,
+      "actual_helper_diagnostics": 0,
+      "full_output_array_body_recovered": false,
+      "before": {
+        "token": "060003B4",
+        "rows": 1,
+        "locals": 0,
+        "local_types": [],
+        "numeric_diagnostics": 0,
+        "diagnostic_sequence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "helper_diagnostics": 0,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 0,
+        "InitializeLocals": false,
+        "MaxStack": 8,
+        "eh_handlers": 0
+      },
+      "after": {
+        "token": "060003B4",
+        "rows": 1,
+        "locals": 0,
+        "local_types": [],
+        "numeric_diagnostics": 0,
+        "diagnostic_sequence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "helper_diagnostics": 0,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 0,
+        "InitializeLocals": false,
+        "MaxStack": 8,
+        "eh_handlers": 0
+      },
+      "baseline_assembly_sha256": "d952f8276e9261706a614c009e7fcb56d0b09fbbebdbf85cf62b19effd3950be",
+      "actual_assembly_sha256": "ecaaa05d98f1d7255175ac748c51c94c3d694e2c348ca80036a24aacf5bc3aed",
+      "baseline_body_sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+      "actual_body_sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+    },
+    {
+      "assembly": "mscorlib",
+      "owner": "System.Array",
+      "method": "obj_swapper",
+      "forced_production_ir_helper_calls": 3,
+      "actual_helper_diagnostics": 0,
+      "full_output_array_body_recovered": false,
+      "before": {
+        "token": "060003B5",
+        "rows": 1,
+        "locals": 0,
+        "local_types": [],
+        "numeric_diagnostics": 0,
+        "diagnostic_sequence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "helper_diagnostics": 0,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 0,
+        "InitializeLocals": false,
+        "MaxStack": 8,
+        "eh_handlers": 0
+      },
+      "after": {
+        "token": "060003B5",
+        "rows": 1,
+        "locals": 0,
+        "local_types": [],
+        "numeric_diagnostics": 0,
+        "diagnostic_sequence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "helper_diagnostics": 0,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 0,
+        "InitializeLocals": false,
+        "MaxStack": 8,
+        "eh_handlers": 0
+      },
+      "baseline_assembly_sha256": "d952f8276e9261706a614c009e7fcb56d0b09fbbebdbf85cf62b19effd3950be",
+      "actual_assembly_sha256": "ecaaa05d98f1d7255175ac748c51c94c3d694e2c348ca80036a24aacf5bc3aed",
+      "baseline_body_sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+      "actual_body_sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+    },
+    {
+      "assembly": "mscorlib",
+      "owner": "System.Array",
+      "method": "double_swapper",
+      "forced_production_ir_helper_calls": 1,
+      "actual_helper_diagnostics": 0,
+      "full_output_array_body_recovered": false,
+      "before": {
+        "token": "060003B7",
+        "rows": 1,
+        "locals": 0,
+        "local_types": [],
+        "numeric_diagnostics": 0,
+        "diagnostic_sequence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "helper_diagnostics": 0,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 0,
+        "InitializeLocals": false,
+        "MaxStack": 8,
+        "eh_handlers": 0
+      },
+      "after": {
+        "token": "060003B7",
+        "rows": 1,
+        "locals": 0,
+        "local_types": [],
+        "numeric_diagnostics": 0,
+        "diagnostic_sequence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "helper_diagnostics": 0,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 0,
+        "InitializeLocals": false,
+        "MaxStack": 8,
+        "eh_handlers": 0
+      },
+      "baseline_assembly_sha256": "d952f8276e9261706a614c009e7fcb56d0b09fbbebdbf85cf62b19effd3950be",
+      "actual_assembly_sha256": "ecaaa05d98f1d7255175ac748c51c94c3d694e2c348ca80036a24aacf5bc3aed",
+      "baseline_body_sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+      "actual_body_sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1"
+    },
+    {
+      "assembly": "mscorlib",
+      "owner": "System.Array",
+      "method": "compare",
+      "forced_production_ir_helper_calls": 1,
+      "actual_helper_diagnostics": 0,
+      "full_output_array_body_recovered": false,
+      "before": {
+        "token": "060003BE",
+        "rows": 2,
+        "locals": 0,
+        "local_types": [],
+        "numeric_diagnostics": 0,
+        "diagnostic_sequence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "helper_diagnostics": 0,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 0,
+        "InitializeLocals": false,
+        "MaxStack": 8,
+        "eh_handlers": 0
+      },
+      "after": {
+        "token": "060003BE",
+        "rows": 2,
+        "locals": 0,
+        "local_types": [],
+        "numeric_diagnostics": 0,
+        "diagnostic_sequence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "helper_diagnostics": 0,
+        "isinst": 0,
+        "initobj": 0,
+        "ldnull": 0,
+        "InitializeLocals": false,
+        "MaxStack": 8,
+        "eh_handlers": 0
+      },
+      "baseline_assembly_sha256": "d952f8276e9261706a614c009e7fcb56d0b09fbbebdbf85cf62b19effd3950be",
+      "actual_assembly_sha256": "ecaaa05d98f1d7255175ac748c51c94c3d694e2c348ca80036a24aacf5bc3aed",
+      "baseline_body_sha256": "84a0936ff1fba6d2811d094757231685673447aed2170738872305076026a316",
+      "actual_body_sha256": "84a0936ff1fba6d2811d094757231685673447aed2170738872305076026a316"
+    }
+  ],
+  "constructor_alignment": {
+    "matched_rows": 3064,
+    "branches": 342,
+    "metadata_operands": 375,
+    "relocated_metadata_tokens": 38,
+    "relocated_operand_kinds": {
+      "InlineString": 38
+    },
+    "other_raw_exact_rows": 1088,
+    "bijective_used_locals": 506,
+    "removed_dead_zero_stores": 4,
+    "removed_unused_object_locals": 14,
+    "all_other_opcodes_operands_raw_bytes_and_control_preserved": true
+  },
+  "diagnostic_helpers": [
+    {
+      "run": "nso-assembly-leaf-getter-v39",
+      "method_token": "060040E1",
+      "body_bytes_hex": "2A",
+      "body_sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+      "no_throw_or_log": true,
+      "recovered_runtime_effects": false
+    },
+    {
+      "run": "nso-object-isinst-abi-v40",
+      "method_token": "060040E1",
+      "body_bytes_hex": "2A",
+      "body_sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+      "no_throw_or_log": true,
+      "recovered_runtime_effects": false
+    }
+  ],
+  "implicit_result_boundary": [
+    {
+      "run": "nso-assembly-leaf-getter-v39",
+      "helper_diagnostic_calls": 28,
+      "all_issue_helper_calls": 32,
+      "distinct_unassigned_object_results": 28,
+      "implicit_initlocals_null": true,
+      "no_op_issue_helper_does_not_stop_result_read": true
+    },
+    {
+      "run": "nso-object-isinst-abi-v40",
+      "helper_diagnostic_calls": 28,
+      "all_issue_helper_calls": 32,
+      "distinct_unassigned_object_results": 28,
+      "implicit_initlocals_null": true,
+      "no_op_issue_helper_does_not_stop_result_read": true
+    }
+  ],
+  "fatal": null,
+  "expected_core_sha256": "14232d46ca291ffb67944705e94ec5460bc8ee70c3df88ee3ef27e77b6e736d6",
+  "source_sha256": "356a0b0c961e0086390d109aab38978669036e0c4e955b5eb841e0d167bd1b0a",
+  "invocation_report_sha256": "3cd258cb7c4f4ba455cef66e5f05fee040dc83dff38bd80fd7ec03546ade6e1b",
+  "baseline_invocation_report_sha256": "3a6c718323193358e4d138940fda87bea1c9196d9c1616f63d71ff10a42f5350",
+  "production_report_sha256": "59fc6915edc66ec5a0795d282984ffc9b91280ef605b8649508554201fbc0952",
+  "private_evidence": "analysis/reconstruction/object-isinst-v40/fresh-output/correlation40.json",
+  "private_evidence_sha256": "bc65c8777bb44cf0d4605bc468466badceed6fd4f86dab30017feceaf5adfbc5",
+  "reused_infrastructure_dll_sha256": "25620af800ae7b19ea3f098e06fc21ef8363aaea4961f93df215bf9f77609f05",
+  "core_dependency_loaded": false,
+  "recovered_game_methods_invoked": 0,
+  "constructors_invoked": 0,
+  "semantic_isinst_recovered": false,
+  "emitted_class_input_evaluation_recovered": false,
+  "emitted_helper_return_semantics_recovered": false,
+  "original_cil_modified": false,
+  "new_explicit_default_substitution": false,
+  "existing_implicit_defaults_unresolved": true,
+  "array_forced_analysis_does_not_match_full_output_body_recovery": true,
+  "full_clean_decompile_ready": false,
+  "scope": "Offline actual v39/v40 CIL only. The original profile constructor retains28 unresolved numeric-helper diagnostics and the full remaining operation/member/control sequence under bijective typed local renaming, except four zero stores into a never-read/address-taken local becoming Nop and fourteen unreferenced Object locals disappearing. The injected issue helper is a single ret, not a trap/logger; each unresolved helper result has no emitted assignment, so InitLocals supplies implicit null if reached. No execution/JIT validity, class-input evaluation, helper return/effect or IsInst semantics are established. The five Array methods keep their pre-existing default stubs unchanged; their nine calls exist only in the separately forced production-stage analysis, not actual full-run emitted CIL. No Array body recovery credit, original constructor execution, managed isinst or new default substitution is claimed. A separate fail-loud unknown-operation emitter contract should be considered; it would expose missing semantics, not recover them."
+}

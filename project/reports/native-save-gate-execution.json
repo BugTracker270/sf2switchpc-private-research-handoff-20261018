@@ -1,0 +1,145 @@
+{
+  "status": "PASS_BOUNDED_ORIGINAL_ARM64_GATE_EXECUTION",
+  "checks": [
+    {
+      "name": "Getter reflects initialized static field",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "InitHashChecking clears the field",
+      "actual": "00",
+      "expected": "00",
+      "status": "PASS"
+    },
+    {
+      "name": "Getter returns false after init",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Disabled checking returns true with null inputs",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "hash_update_file returns without IO or flag mutation",
+      "actual": "00",
+      "expected": "00",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_update_document returns without IO or flag mutation",
+      "actual": "00",
+      "expected": "00",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_delete returns without IO or flag mutation",
+      "actual": "00",
+      "expected": "00",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_copy returns without IO or flag mutation",
+      "actual": "00",
+      "expected": "00",
+      "status": "PASS"
+    },
+    {
+      "name": "Getter reflects initialized static field",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "InitHashChecking clears the field",
+      "actual": "00",
+      "expected": "00",
+      "status": "PASS"
+    },
+    {
+      "name": "Getter returns false after init",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Disabled checking returns true with null inputs",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "hash_update_file returns without IO or flag mutation",
+      "actual": "00",
+      "expected": "00",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_update_document returns without IO or flag mutation",
+      "actual": "00",
+      "expected": "00",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_delete returns without IO or flag mutation",
+      "actual": "00",
+      "expected": "00",
+      "status": "PASS"
+    },
+    {
+      "name": "hash_copy returns without IO or flag mutation",
+      "actual": "00",
+      "expected": "00",
+      "status": "PASS"
+    }
+  ],
+  "passed": 16,
+  "failed": 0,
+  "metadata_slot_rva": "0x3b373d0",
+  "static_field_offset": 9,
+  "guards": [
+    "0x3b85640",
+    "0x3b85645",
+    "0x3b84742",
+    "0x3b84853",
+    "0x3b84854",
+    "0x3b84744",
+    "0x3b84745"
+  ],
+  "calls": {
+    "hash_enabled": 4,
+    "hash_init": 2,
+    "check_hash": 2,
+    "hash_update_file": 2,
+    "hash_update_document": 2,
+    "hash_delete": 2,
+    "hash_copy": 2
+  },
+  "executed_functions": {
+    "hash_enabled": 42,
+    "hash_init": 6,
+    "check_hash": 12,
+    "hash_update_file": 10,
+    "hash_update_document": 10,
+    "hash_delete": 10,
+    "hash_copy": 10
+  },
+  "original_text_sha256": {
+    "hash_init": "efbb31c4a3bb6aa2a03b3987e8c9b614dfd75d14c42e3b377c1152d4ee7648e4",
+    "hash_enabled": "d48c14f16aecf839035e919021a13e012e41f2145697b0611049c62b16b53259",
+    "check_hash": "e8be6831518815e3433e28720b4a699212d746532a0a6d617b1ebfd66e7f44a6",
+    "hash_update_file": "841cb0dd169eda7b188dd8d422097f53f9b06e7c3e8eaa4fc4389f9fc3f8844d",
+    "hash_update_document": "0c61662dbbb8fc51d47c82bdeed015510c56a6894fdc8a5439f566155d106096",
+    "hash_delete": "2a06c8768f7ced0e136d40dcd0fddaba7c762039b961d24b57679de2c3e4a313",
+    "hash_copy": "26221aa2086e1246b8e6ab980fadb1249e4edeb91d86ec35e71bc04d4d7b640d"
+  },
+  "game_function_mocks": 0,
+  "text_modified": false,
+  "real_save_files_opened": 0,
+  "scope": "Valid synthetic metadata class/static storage, initialization guards pre-set. Original disabled CheckFileHash and UpdateFileHash(file/document)/DeleteFileHash/CopyFileHash paths return with null inputs and no string/XML/hash/IO callees. Enabled hashing and complete bootstrap ordering remain separate analyses."
+}

@@ -1,0 +1,463 @@
+{
+  "status": "HASH_VERIFIED_CANONICAL_COMPILER_DELTA",
+  "before": "nso-static-getter-v31b",
+  "after": "nso-enumerator-return-v32",
+  "source_modified": false,
+  "whole_game_source_ready": false,
+  "assemblies": {
+    "Assembly-CSharp-firstpass": {
+      "old_unique": 19326,
+      "new_unique": 19263,
+      "delta": -63,
+      "source_integrity": {
+        "nso-static-getter-v31b": {
+          "manifest_sha256": "e0401cf3ebfbe6622519317f6f0764cf086f45850a0c7864254ac9f8dde69d4c",
+          "diagnostic_source_files_hash_verified": 620
+        },
+        "nso-enumerator-return-v32": {
+          "manifest_sha256": "da22200a41fda5b5e0bb8c520bdb659e90777f4abbb7c9febde5de899f52beab",
+          "diagnostic_source_files_hash_verified": 629
+        }
+      },
+      "error_code_delta": {
+        "CS0030": -84,
+        "CS0037": -52,
+        "CS0103": -3,
+        "CS0117": 68,
+        "CS0122": 3,
+        "CS0234": -5,
+        "CS1061": 1,
+        "CS1729": 5,
+        "CS7036": 4
+      },
+      "operand_categories": {
+        "nso-static-getter-v31b": {
+          "int_zero_cast_to_enumerator": 34,
+          "int_zero_cast_to_other_nonprimitive": 327,
+          "value_cast_to_pointer_of_same_type": 394
+        },
+        "nso-enumerator-return-v32": {
+          "int_zero_cast_to_other_nonprimitive": 278,
+          "int_zero_cast_to_enumerator": 34,
+          "value_cast_to_pointer_of_same_type": 393
+        }
+      },
+      "semantic_added_occurrences": 189,
+      "semantic_removed_occurrences": 252,
+      "most_added_messages": [
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 85
+        },
+        {
+          "code": "CS0117",
+          "message": "'Token' does not contain a definition for '_002Ector'",
+          "count": 22
+        },
+        {
+          "code": "CS0117",
+          "message": "'Stream' does not contain a definition for '_002Ector'",
+          "count": 10
+        },
+        {
+          "code": "CS0117",
+          "message": "'object' does not contain a definition for '_002Ector'",
+          "count": 8
+        },
+        {
+          "code": "CS0117",
+          "message": "'ParsingEvent' does not contain a definition for '_002Ector'",
+          "count": 8
+        },
+        {
+          "code": "CS0037",
+          "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+          "count": 7
+        },
+        {
+          "code": "CS0117",
+          "message": "'MonoBehaviour' does not contain a definition for '_002Ector'",
+          "count": 4
+        },
+        {
+          "code": "CS0122",
+          "message": "'JContainer.JTokenReferenceEqualityComparer' is inaccessible due to its protection level",
+          "count": 4
+        },
+        {
+          "code": "CS0117",
+          "message": "'WebSocketBinaryFrame' does not contain a definition for '_002Ector'",
+          "count": 3
+        },
+        {
+          "code": "CS1061",
+          "message": "'Exception' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'Exception' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 3
+        },
+        {
+          "code": "CS1061",
+          "message": "'object' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'object' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 2
+        },
+        {
+          "code": "CS1061",
+          "message": "'CrcCalculatorStream' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'CrcCalculatorStream' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 2
+        },
+        {
+          "code": "CS0117",
+          "message": "'Exception' does not contain a definition for '_002Ector'",
+          "count": 2
+        },
+        {
+          "code": "CS0117",
+          "message": "'EventArgs' does not contain a definition for '_002Ector'",
+          "count": 2
+        },
+        {
+          "code": "CS7036",
+          "message": "There is no argument given that corresponds to the required parameter 'start' of 'ParsingEvent.ParsingEvent(Mark, Mark)'",
+          "count": 2
+        },
+        {
+          "code": "CS1729",
+          "message": "'NodeEvent' does not contain a constructor that takes 0 arguments",
+          "count": 2
+        },
+        {
+          "code": "CS0117",
+          "message": "'NodeEvent' does not contain a definition for '_002Ector'",
+          "count": 2
+        },
+        {
+          "code": "CS1061",
+          "message": "'WebSocket' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'WebSocket' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 1
+        },
+        {
+          "code": "CS0117",
+          "message": "'MNP_Singleton<MNP_EditorTesting>' does not contain a definition for '_002Ector'",
+          "count": 1
+        },
+        {
+          "code": "CS1729",
+          "message": "'Uri' does not contain a constructor that takes 0 arguments",
+          "count": 1
+        }
+      ],
+      "most_added_files": [
+        {
+          "file": "RpnParser.cs",
+          "count": 54
+        },
+        {
+          "file": "Nekki/Audio/AudioManager.cs",
+          "count": 8
+        },
+        {
+          "file": "BestHTTP/HTTPManager.cs",
+          "count": 6
+        },
+        {
+          "file": "CodeStage/AntiCheat/ObscuredTypes/ObscuredPrefs.cs",
+          "count": 5
+        },
+        {
+          "file": "BestHTTP/WebSocket/Frames/WebSocketFrameReader.cs",
+          "count": 4
+        },
+        {
+          "file": "BestHTTP/Decompression/Zlib/ZlibStream.cs",
+          "count": 4
+        },
+        {
+          "file": "Newtonsoft/Json/Serialization/DefaultContractResolver.cs",
+          "count": 4
+        },
+        {
+          "file": "BestHTTP/Decompression/Zlib/GZipStream.cs",
+          "count": 4
+        },
+        {
+          "file": "Nekki/Audio/OverallUnitPool.cs",
+          "count": 3
+        },
+        {
+          "file": "BestHTTP/Decompression/Crc/CrcCalculatorStream.cs",
+          "count": 3
+        },
+        {
+          "file": "BestHTTP/WebSocket/WebSocketResponse.cs",
+          "count": 2
+        },
+        {
+          "file": "NekkiUri.cs",
+          "count": 2
+        },
+        {
+          "file": "Rand.cs",
+          "count": 2
+        },
+        {
+          "file": "BundlesUtil.cs",
+          "count": 2
+        },
+        {
+          "file": "TypedDemoHub.cs",
+          "count": 2
+        },
+        {
+          "file": "BestHTTP/WebSocket/Frames/WebSocketContinuationFrame.cs",
+          "count": 2
+        },
+        {
+          "file": "BestHTTP/Caching/HTTPCacheService.cs",
+          "count": 2
+        },
+        {
+          "file": "SevenZip/CommandLineParser/SwitchForm.cs",
+          "count": 2
+        },
+        {
+          "file": "YamlDotNet/Serialization/ObjectGraphTraversalStrategies/RoundtripObjectGraphTraversalStrategy.cs",
+          "count": 2
+        },
+        {
+          "file": "YamlDotNet/CultureInfoAdapter.cs",
+          "count": 2
+        }
+      ]
+    },
+    "Assembly-CSharp": {
+      "old_unique": 30393,
+      "new_unique": 30155,
+      "delta": -238,
+      "source_integrity": {
+        "nso-static-getter-v31b": {
+          "manifest_sha256": "e0401cf3ebfbe6622519317f6f0764cf086f45850a0c7864254ac9f8dde69d4c",
+          "diagnostic_source_files_hash_verified": 1187
+        },
+        "nso-enumerator-return-v32": {
+          "manifest_sha256": "da22200a41fda5b5e0bb8c520bdb659e90777f4abbb7c9febde5de899f52beab",
+          "diagnostic_source_files_hash_verified": 1221
+        }
+      },
+      "error_code_delta": {
+        "CS0019": -7,
+        "CS0030": -277,
+        "CS0037": -15,
+        "CS0103": -5,
+        "CS0117": 129,
+        "CS0122": -11,
+        "CS0149": -7,
+        "CS0165": -4,
+        "CS0177": 1,
+        "CS0234": -3,
+        "CS0272": -1,
+        "CS1061": -39,
+        "CS1540": -1,
+        "CS7036": 2
+      },
+      "operand_categories": {
+        "nso-static-getter-v31b": {
+          "int_zero_cast_to_other_nonprimitive": 716,
+          "int_zero_cast_to_enumerator": 493,
+          "value_cast_to_pointer_of_same_type": 249
+        },
+        "nso-enumerator-return-v32": {
+          "int_zero_cast_to_other_nonprimitive": 698,
+          "int_zero_cast_to_enumerator": 492,
+          "value_cast_to_pointer_of_same_type": 246
+        }
+      },
+      "semantic_added_occurrences": 215,
+      "semantic_removed_occurrences": 453,
+      "most_added_messages": [
+        {
+          "code": "CS0117",
+          "message": "'UnityInputDeviceProfile' does not contain a definition for '_002Ector'",
+          "count": 34
+        },
+        {
+          "code": "CS0117",
+          "message": "'object' does not contain a definition for '_002Ector'",
+          "count": 33
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'System.Type' to 'nint'",
+          "count": 31
+        },
+        {
+          "code": "CS0037",
+          "message": "Cannot convert null to 'nint' because it is a non-nullable value type",
+          "count": 24
+        },
+        {
+          "code": "CS0117",
+          "message": "'QuestAction' does not contain a definition for '_002Ector'",
+          "count": 22
+        },
+        {
+          "code": "CS0117",
+          "message": "'UIModule' does not contain a definition for '_002Ector'",
+          "count": 9
+        },
+        {
+          "code": "CS1061",
+          "message": "'UIModule' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'UIModule' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 4
+        },
+        {
+          "code": "CS1061",
+          "message": "'object' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'object' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 3
+        },
+        {
+          "code": "CS0117",
+          "message": "'ItemInfo' does not contain a definition for '_002Ector'",
+          "count": 3
+        },
+        {
+          "code": "CS0117",
+          "message": "'MonoBehaviour' does not contain a definition for '_002Ector'",
+          "count": 3
+        },
+        {
+          "code": "CS0117",
+          "message": "'BaseDialog' does not contain a definition for '_002Ector'",
+          "count": 3
+        },
+        {
+          "code": "CS0117",
+          "message": "'LabelButton' does not contain a definition for '_002Ector'",
+          "count": 2
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'int' to 'System.DateTime'",
+          "count": 2
+        },
+        {
+          "code": "CS7036",
+          "message": "There is no argument given that corresponds to the required parameter 'name' of 'InputDevice.InputDevice(string)'",
+          "count": 2
+        },
+        {
+          "code": "CS0117",
+          "message": "'InputDevice' does not contain a definition for '_002Ector'",
+          "count": 2
+        },
+        {
+          "code": "CS1061",
+          "message": "'Image' does not contain a definition for '_002Ector' and no accessible extension method '_002Ector' accepting a first argument of type 'Image' could be found (are you missing a using directive or an assembly reference?)",
+          "count": 2
+        },
+        {
+          "code": "CS0030",
+          "message": "Cannot convert type 'UnityEngine.UI.LayoutElement' to 'nint'",
+          "count": 2
+        },
+        {
+          "code": "CS0117",
+          "message": "'MapContainer' does not contain a definition for '_002Ector'",
+          "count": 2
+        },
+        {
+          "code": "CS0117",
+          "message": "'SubItem' does not contain a definition for '_002Ector'",
+          "count": 2
+        },
+        {
+          "code": "CS0117",
+          "message": "'ModelParameters' does not contain a definition for '_002Ector'",
+          "count": 2
+        }
+      ],
+      "most_added_files": [
+        {
+          "file": "InControl/InputManager.cs",
+          "count": 11
+        },
+        {
+          "file": "DumpController.cs",
+          "count": 7
+        },
+        {
+          "file": "Nekki/SF2/Core/Console/ConsoleCommands.cs",
+          "count": 5
+        },
+        {
+          "file": "Nekki/SF2/Core/API/UserDataWriter.cs",
+          "count": 4
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/Perks/PerkTree.cs",
+          "count": 4
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/GameUtils.cs",
+          "count": 4
+        },
+        {
+          "file": "InControl/UnityInputDevice.cs",
+          "count": 4
+        },
+        {
+          "file": "InControl/SwitchInputDeviceManager.cs",
+          "count": 4
+        },
+        {
+          "file": "Nekki/SF2/GUI/Map/MapContainer.cs",
+          "count": 3
+        },
+        {
+          "file": "Nekki/SF2/GUI/Dialogs/DialogsOpener.cs",
+          "count": 3
+        },
+        {
+          "file": "LabelButton.cs",
+          "count": 2
+        },
+        {
+          "file": "TokenHelper.cs",
+          "count": 2
+        },
+        {
+          "file": "Nekki/SF2/Core/Settings/GameSettings.cs",
+          "count": 2
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/RepostAchievement.cs",
+          "count": 2
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/RemoteLicenseCache.cs",
+          "count": 2
+        },
+        {
+          "file": "Nekki/SF2/Core/API/RosterQuest.cs",
+          "count": 2
+        },
+        {
+          "file": "Nekki/SF2/GUI/BaseScrollContent.cs",
+          "count": 2
+        },
+        {
+          "file": "Nekki/SF2/Core/Utils/Perks/PerksStage.cs",
+          "count": 2
+        },
+        {
+          "file": "Nekki/SF2/GUI/ResolutionImageLE.cs",
+          "count": 2
+        },
+        {
+          "file": "Nekki/SF2/GUI/Pvp/PvpScene.cs",
+          "count": 2
+        }
+      ]
+    }
+  },
+  "limits": "Diagnostic lines include cascades and are not independent bug counts or completion percentages. Semantic multisets ignore line movement but local-variable spelling can still change a message. Every diagnostic-bearing source file is hash/size checked against its original export manifest. This report measures changes without certifying whether any change preserves behavior."
+}

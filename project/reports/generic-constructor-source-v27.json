@@ -1,0 +1,27 @@
+{
+  "status": "PASS_SCOPED_CLOSED_GENERIC_CONSTRUCTION_CIL_AND_SOURCE_CORRELATION",
+  "recovery_run": "nso-generic-ctor-v27",
+  "assemblies": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "escaped_constructor_calls_before": 1837,
+      "escaped_constructor_calls_after": 1066
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "escaped_constructor_calls_before": 5401,
+      "escaped_constructor_calls_after": 3312
+    }
+  ],
+  "selected_escaped_constructor_calls_before": 2,
+  "selected_escaped_constructor_calls_after": 0,
+  "before_source_sha256": "f6578884e92543dd51d44b6abec9545443be934f34567f60bb2beb9d9e92ac41",
+  "after_source_sha256": "d9d6377d99066096ff1d84b761c65a4fec4cd47b4022e475800fe739325e3535",
+  "constructor_checks_before": 128,
+  "constructor_checks_after": 128,
+  "separate_allocation_identity": "PASS_STATIC_ALLOCATION_IDENTITY_ONLY",
+  "source_edits": false,
+  "full_constructor_validated": false,
+  "whole_game_source_ready": false,
+  "scope": "The exact closed generic constructor owner mismatch is corrected without moving across block, receiver or ordering barriers. Actual recovered expressions compare at the host CLR List<T> boundary, stopping before Unity base initialization. An unrelated native-witnessed separate allocation retains VersionContainer identity. The selected source renders an instance initializer and implicit base constructor; no source text is rewritten. Original ARM64 constructor/GC/initialization, the remainder of this class and complete assemblies remain unverified or fail compilation."
+}

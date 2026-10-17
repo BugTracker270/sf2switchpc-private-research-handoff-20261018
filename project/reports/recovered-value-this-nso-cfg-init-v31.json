@@ -1,0 +1,19 @@
+{
+  "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovery_run": "nso-cfg-init-v31",
+  "cases": 0,
+  "checks": 0,
+  "lazy_initialization_cases": 0,
+  "already_initialized_cases": 0,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. -\u003E System.FieldAccessException: Attempt by method \u0027CodeStage.AntiCheat.ObscuredTypes.ObscuredInt.InternalDecrypt()\u0027 to access field \u0027CodeStage.AntiCheat.Detectors.ObscuredCheatingDetector.\u003CInstance\u003Ek__BackingField\u0027 failed.",
+  "blocked_calls": [],
+  "unreachable_helper_calls": 0,
+  "cil_sha256": "10f23f449ef751b98ddc4f93f02ef65692185e13046ac4f3321dc4eee540c2ab",
+  "assembly_sha256": "1c03dc559015e0001a0a4b0258f036fb80b5a63784fa1d38168614e701ee7d51",
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+}

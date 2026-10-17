@@ -1,0 +1,84 @@
+{
+  "status": "PASS_ORIGINAL_NATIVE_INDIRECT_ENUMERATOR_RETURN_ONLY",
+  "cases": 6,
+  "checks": 36,
+  "probe_source_sha256": "57515538def34a15f75c092b17779e6572c25a7bbb4ae7d9399c3e1c86272096",
+  "native_source_sha256": "bcdbf6a3d36d884a31288243ea0269d1665488ff2fd1461851f375cd16bd9968",
+  "source_input": "analysis\\nso\\main-uncompressed.nso",
+  "code_unmodified": true,
+  "getenumerator_rva": "0x1585F60",
+  "constructor_rva": "0x11DD130",
+  "getenumerator_code_sha256": "43694a140756dab00d417fb317762c8d7e917bea857ba9368f482b6e80c7235a",
+  "constructor_code_sha256": "93f97aee4056e153eb26e662e2518b5597090fb7491333fa0a160c01ed376afe",
+  "selected_caller": "Nekki.SF2.Core.Fights.Fight.SetStage",
+  "caller_rva": "0xC9F3F0",
+  "caller_zero_window_rva": "0xC9F440",
+  "caller_zero_window_sha256": "77d0edbc8f8a555aa01a857d01605a282ffe87eac77d59cfe283b62656171ddd",
+  "caller_call_window_rva": "0xC9F4C8",
+  "caller_call_window_sha256": "664fd5d9a2b431d9e4978207753ab67f489ee8a50f401dfe572d7cb085d49e47",
+  "caller_consumer_window_sha256": [
+    "582cb3dec8e08ddd773c1e5cd3505598833d944a7b9ba2ccdcd15e26a17b68c8",
+    "56aacf523d6b21730e893ade643848b0cc36e7ef146d4ee5e1fc98f7e036a2e3",
+    "9c4661ec6ea5b5f0665e431407c3a302351797dc3e61b67cd84cb63ee143a600"
+  ],
+  "caller_static_observations": {
+    "zero_coverage": "STP XZR,XZR at SP+0x10 plus STR XZR at SP+0x8 covers precisely SP+0x8..0x1F",
+    "hidden_return_buffer": "X8=SP+0x8 immediately before BL GetEnumerator at 0xC9F4DC",
+    "consumer_receivers": "X0=SP+0x8 before MoveNext, get_Current and Dispose",
+    "constructor_return": "X0 remains the buffer address; this is not aggregate return bits in X0",
+    "callsite_recovery_requirement": "Preserve incoming X8 buffer identity before the native call; X8 is overwritten inside the constructor"
+  },
+  "synthetic_boundaries": "Opaque list storage with supplied native version field, MethodInfo/context pointer tables and result memory. No original metadata initialization or game class method is executed. These two unchanged native bodies execute fully with no code/runtime replacement hooks; the write hook observes only.",
+  "caller_itself_executed": false,
+  "whole_game_execution": false,
+  "results": [
+    {
+      "version_bits": "0x00000000",
+      "result_payload_sha256": "631f81c1d50318ec89943d5a8da19c7c051319043f9c0fc99861b68c5d0c6220",
+      "result_buffer_complete_24_byte_write": true,
+      "output_x0_is_buffer_address": true,
+      "x8_overwritten_by_constructor": true,
+      "writes": 5
+    },
+    {
+      "version_bits": "0x00000001",
+      "result_payload_sha256": "5ab3f4d96865ceafe0662e860009e163b1b25389702c297b5ab921ede33471ba",
+      "result_buffer_complete_24_byte_write": true,
+      "output_x0_is_buffer_address": true,
+      "x8_overwritten_by_constructor": true,
+      "writes": 5
+    },
+    {
+      "version_bits": "0x00000002",
+      "result_payload_sha256": "8a5b93fa74741bed175fe77e7e91ed1fc49a504946fb0c1e15b710c84f13fc23",
+      "result_buffer_complete_24_byte_write": true,
+      "output_x0_is_buffer_address": true,
+      "x8_overwritten_by_constructor": true,
+      "writes": 5
+    },
+    {
+      "version_bits": "0x7FFFFFFF",
+      "result_payload_sha256": "39664b4b2425bbc1f37754cd41f191106ba9936dc4ce2fbcb763e7488cfb665d",
+      "result_buffer_complete_24_byte_write": true,
+      "output_x0_is_buffer_address": true,
+      "x8_overwritten_by_constructor": true,
+      "writes": 5
+    },
+    {
+      "version_bits": "0x80000000",
+      "result_payload_sha256": "75417c560c121e3b551d836f7f19913fefada07d08061b43b0546b61cb42465f",
+      "result_buffer_complete_24_byte_write": true,
+      "output_x0_is_buffer_address": true,
+      "x8_overwritten_by_constructor": true,
+      "writes": 5
+    },
+    {
+      "version_bits": "0xFFFFFFFF",
+      "result_payload_sha256": "b5c739ddb3c2e0b40e409531c1e4ef98b7de043a3dd2918545b41234bacd315b",
+      "result_buffer_complete_24_byte_write": true,
+      "output_x0_is_buffer_address": true,
+      "x8_overwritten_by_constructor": true,
+      "writes": 5
+    }
+  ]
+}

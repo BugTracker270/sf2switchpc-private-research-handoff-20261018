@@ -1,0 +1,939 @@
+{
+  "status": "READ_ONLY_CANONICAL_COMPILER_TYPE_FAMILY_COUNTS",
+  "recovery_run": "nso-runtime-helper-abi-v37",
+  "assemblies": [
+    {
+      "assembly": "Assembly-CSharp-firstpass",
+      "unique_diagnostic_lines": 20733,
+      "build_exit_code": 1,
+      "compiler_log": "logs/source-profile-legacy-reference-build-nso-runtime-helper-abi-v37-Assembly-CSharp-firstpass.log",
+      "compiler_log_sha256": "c3bdb131eaa47d9f07b42f6ea8e66a8ea91f1558bdadc1cada5749f1f04079f4",
+      "error_codes": {
+        "CS0117": 211,
+        "CS0030": 8309,
+        "CS7036": 98,
+        "CS1061": 1555,
+        "CS1729": 25,
+        "CS0122": 2713,
+        "CS0103": 104,
+        "CS0234": 1092,
+        "CS0019": 5076,
+        "CS0037": 341,
+        "CS0266": 458,
+        "CS0023": 349,
+        "CS0149": 22,
+        "CS0029": 6,
+        "CS0165": 36,
+        "CS0250": 11,
+        "CS0269": 62,
+        "CS0177": 159,
+        "CS8174": 37,
+        "CS8172": 1,
+        "CS1510": 9,
+        "CS0191": 16,
+        "CS0079": 32,
+        "CS1540": 1,
+        "CS0152": 2,
+        "CS0221": 3,
+        "CS8373": 2,
+        "CS0246": 3
+      },
+      "selected_family_counts": {
+        "CS0030": 8309,
+        "CS0019": 5076,
+        "CS0023": 349,
+        "CS0266": 458,
+        "CS1061": 1555,
+        "CS0117": 211
+      },
+      "cast_pairs": [
+        {
+          "source_type": "System.Type",
+          "target_type": "nint",
+          "count": 2858
+        },
+        {
+          "source_type": "object[]",
+          "target_type": "nint",
+          "count": 783
+        },
+        {
+          "source_type": "System.IO.TextWriter",
+          "target_type": "nint",
+          "count": 243
+        },
+        {
+          "source_type": "Newtonsoft.Json.JsonReader",
+          "target_type": "nint",
+          "count": 203
+        },
+        {
+          "source_type": "int",
+          "target_type": "string",
+          "count": 159
+        },
+        {
+          "source_type": "Newtonsoft.Json.JsonWriter",
+          "target_type": "nint",
+          "count": 155
+        },
+        {
+          "source_type": "object*",
+          "target_type": "object",
+          "count": 153
+        },
+        {
+          "source_type": "string[]",
+          "target_type": "nint",
+          "count": 147
+        },
+        {
+          "source_type": "System.IO.Stream",
+          "target_type": "nint",
+          "count": 145
+        },
+        {
+          "source_type": "System.Text.StringBuilder",
+          "target_type": "nint",
+          "count": 118
+        },
+        {
+          "source_type": "Newtonsoft.Json.JsonSerializer",
+          "target_type": "nint",
+          "count": 114
+        },
+        {
+          "source_type": "System.Delegate",
+          "target_type": "nint",
+          "count": 106
+        },
+        {
+          "source_type": "System.IO.TextReader",
+          "target_type": "nint",
+          "count": 101
+        },
+        {
+          "source_type": "System.IO.MemoryStream",
+          "target_type": "nint",
+          "count": 86
+        },
+        {
+          "source_type": "string",
+          "target_type": "nint",
+          "count": 81
+        },
+        {
+          "source_type": "System.IO.BinaryWriter",
+          "target_type": "nint",
+          "count": 68
+        },
+        {
+          "source_type": "System.Text.Encoding",
+          "target_type": "nint",
+          "count": 66
+        },
+        {
+          "source_type": "YamlDotNet.Core.Tokens.Token",
+          "target_type": "nint",
+          "count": 65
+        },
+        {
+          "source_type": "SimpleJSON.JSONNode",
+          "target_type": "nint",
+          "count": 53
+        },
+        {
+          "source_type": "Newtonsoft.Json.JsonTextReader",
+          "target_type": "nint",
+          "count": 49
+        },
+        {
+          "source_type": "int",
+          "target_type": "System.DateTime",
+          "count": 47
+        },
+        {
+          "source_type": "string",
+          "target_type": "string*",
+          "count": 45
+        },
+        {
+          "source_type": "System.Type",
+          "target_type": "int",
+          "count": 44
+        },
+        {
+          "source_type": "System.Type[]",
+          "target_type": "nint",
+          "count": 44
+        },
+        {
+          "source_type": "SevenZip.Compression.RangeCoder.BitEncoder",
+          "target_type": "SevenZip.Compression.RangeCoder.BitEncoder*",
+          "count": 44
+        },
+        {
+          "source_type": "System.Reflection.MemberInfo",
+          "target_type": "nint",
+          "count": 44
+        },
+        {
+          "source_type": "YamlDotNet.Core.Events.ParsingEvent",
+          "target_type": "nint",
+          "count": 36
+        },
+        {
+          "source_type": "YamlDotNet.RepresentationModel.YamlNode",
+          "target_type": "nint",
+          "count": 34
+        },
+        {
+          "source_type": "int",
+          "target_type": "System.Type",
+          "count": 34
+        },
+        {
+          "source_type": "SevenZip.Compression.RangeCoder.BitTreeEncoder",
+          "target_type": "SevenZip.Compression.RangeCoder.BitTreeEncoder*",
+          "count": 33
+        }
+      ],
+      "operator_pairs": [
+        {
+          "operator": "&",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 1401
+        },
+        {
+          "operator": "-",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 347
+        },
+        {
+          "operator": "+",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 296
+        },
+        {
+          "operator": "+",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 278
+        },
+        {
+          "operator": "+",
+          "left_type": "int",
+          "right_type": "object",
+          "count": 227
+        },
+        {
+          "operator": "+",
+          "left_type": "byte[]",
+          "right_type": "int",
+          "count": 190
+        },
+        {
+          "operator": "+",
+          "left_type": "uint[]",
+          "right_type": "int",
+          "count": 83
+        },
+        {
+          "operator": "+",
+          "left_type": "short[]",
+          "right_type": "int",
+          "count": 83
+        },
+        {
+          "operator": "+",
+          "left_type": "Type",
+          "right_type": "int",
+          "count": 73
+        },
+        {
+          "operator": "-",
+          "left_type": "int",
+          "right_type": "object",
+          "count": 73
+        },
+        {
+          "operator": ">>",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 72
+        },
+        {
+          "operator": "&",
+          "left_type": "object",
+          "right_type": "long",
+          "count": 69
+        },
+        {
+          "operator": "+",
+          "left_type": "HTTPRequest",
+          "right_type": "int",
+          "count": 62
+        },
+        {
+          "operator": "-",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 56
+        },
+        {
+          "operator": "&",
+          "left_type": "AppId_t",
+          "right_type": "long",
+          "count": 52
+        },
+        {
+          "operator": "+",
+          "left_type": "int[]",
+          "right_type": "int",
+          "count": 45
+        },
+        {
+          "operator": "&",
+          "left_type": "HTTPRequestHandle",
+          "right_type": "long",
+          "count": 44
+        },
+        {
+          "operator": "+=",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 40
+        },
+        {
+          "operator": "^",
+          "left_type": "float",
+          "right_type": "float",
+          "count": 39
+        },
+        {
+          "operator": "^",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 36
+        },
+        {
+          "operator": "+",
+          "left_type": "BitEncoder[]",
+          "right_type": "int",
+          "count": 36
+        },
+        {
+          "operator": "&",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 34
+        },
+        {
+          "operator": "|",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 33
+        },
+        {
+          "operator": "&",
+          "left_type": "HHTMLBrowser",
+          "right_type": "long",
+          "count": 31
+        },
+        {
+          "operator": "+",
+          "left_type": "string[]",
+          "right_type": "int",
+          "count": 30
+        },
+        {
+          "operator": "&",
+          "left_type": "HSteamUser",
+          "right_type": "long",
+          "count": 28
+        },
+        {
+          "operator": "&",
+          "left_type": "HSteamPipe",
+          "right_type": "long",
+          "count": 28
+        },
+        {
+          "operator": "+",
+          "left_type": "object",
+          "right_type": "uint",
+          "count": 27
+        },
+        {
+          "operator": "^",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 27
+        },
+        {
+          "operator": "+",
+          "left_type": "Emitter",
+          "right_type": "int",
+          "count": 25
+        }
+      ],
+      "top_cast_operator_files": [
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\SevenZip\\Compression\\LZMA\\Encoder.cs",
+          "count": 712
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\QiHe\\Yaml\\Grammar\\YamlParser.cs",
+          "count": 373
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\BestHTTP\\Decompression\\Zlib\\DeflateManager.cs",
+          "count": 372
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\YamlDotNet\\Core\\Emitter.cs",
+          "count": 362
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\LitJson\\JsonMapper.cs",
+          "count": 265
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\Serialization\\JsonSerializerInternalReader.cs",
+          "count": 258
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\JsonTextReader.cs",
+          "count": 236
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\LitJson\\Lexer.cs",
+          "count": 217
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\YamlDotNet\\Core\\Parser.cs",
+          "count": 217
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\SevenZip\\Compression\\LZMA\\Decoder.cs",
+          "count": 197
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\Utilities\\ReflectionUtils.cs",
+          "count": 195
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\Serialization\\JsonSerializerInternalWriter.cs",
+          "count": 180
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\Serialization\\DefaultContractResolver.cs",
+          "count": 178
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\CodeStage\\AntiCheat\\ObscuredTypes\\ObscuredPrefs.cs",
+          "count": 166
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\RpnParser.cs",
+          "count": 154
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\Schema\\JsonSchemaBuilder.cs",
+          "count": 141
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\SystemProperties.cs",
+          "count": 121
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\SevenZip\\Compression\\LZ\\BinTree.cs",
+          "count": 120
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\Newtonsoft\\Json\\JsonConvert.cs",
+          "count": 114
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp-firstpass\\BestHTTP\\Decompression\\Zlib\\InfTree.cs",
+          "count": 113
+        }
+      ]
+    },
+    {
+      "assembly": "Assembly-CSharp",
+      "unique_diagnostic_lines": 32724,
+      "build_exit_code": 1,
+      "compiler_log": "logs/source-profile-legacy-reference-build-nso-runtime-helper-abi-v37-Assembly-CSharp.log",
+      "compiler_log_sha256": "17eabac3eee25fb8dc65d9a6e9a2ea156c96e4ca7dd3594f1d27c0424a2aa1da",
+      "error_codes": {
+        "CS0122": 4225,
+        "CS1061": 3139,
+        "CS0117": 576,
+        "CS0030": 15773,
+        "CS0019": 4981,
+        "CS0103": 738,
+        "CS0234": 1057,
+        "CS0266": 1021,
+        "CS0037": 514,
+        "CS0023": 211,
+        "CS8174": 2,
+        "CS0165": 24,
+        "CS8172": 1,
+        "CS1510": 14,
+        "CS0029": 30,
+        "CS0177": 24,
+        "CS0191": 107,
+        "CS1540": 20,
+        "CS7036": 103,
+        "CS0149": 71,
+        "CS0272": 3,
+        "CS0250": 1,
+        "CS1503": 38,
+        "CS0246": 1,
+        "CS0079": 30,
+        "CS0120": 2,
+        "CS1729": 10,
+        "CS0269": 4,
+        "CS1501": 3,
+        "CS0020": 1
+      },
+      "selected_family_counts": {
+        "CS0030": 15773,
+        "CS0019": 4981,
+        "CS0023": 211,
+        "CS0266": 1021,
+        "CS1061": 3139,
+        "CS0117": 576
+      },
+      "cast_pairs": [
+        {
+          "source_type": "System.Type",
+          "target_type": "nint",
+          "count": 4764
+        },
+        {
+          "source_type": "InControl.InputControlMapping[]",
+          "target_type": "nint",
+          "count": 1279
+        },
+        {
+          "source_type": "System.Xml.XmlNode",
+          "target_type": "nint",
+          "count": 1075
+        },
+        {
+          "source_type": "object[]",
+          "target_type": "nint",
+          "count": 668
+        },
+        {
+          "source_type": "int",
+          "target_type": "string",
+          "count": 562
+        },
+        {
+          "source_type": "System.Delegate",
+          "target_type": "nint",
+          "count": 431
+        },
+        {
+          "source_type": "string[]",
+          "target_type": "nint",
+          "count": 404
+        },
+        {
+          "source_type": "object*",
+          "target_type": "object",
+          "count": 341
+        },
+        {
+          "source_type": "System.Xml.XmlAttribute",
+          "target_type": "nint",
+          "count": 215
+        },
+        {
+          "source_type": "SimpleJSON.JSONClass",
+          "target_type": "nint",
+          "count": 168
+        },
+        {
+          "source_type": "System.Xml.XmlNodeList",
+          "target_type": "nint",
+          "count": 146
+        },
+        {
+          "source_type": "System.Xml.XmlDocument",
+          "target_type": "nint",
+          "count": 127
+        },
+        {
+          "source_type": "SimpleJSON.JSONNode",
+          "target_type": "nint",
+          "count": 124
+        },
+        {
+          "source_type": "Nekki.SF2.GUI.LabelAlias",
+          "target_type": "nint",
+          "count": 115
+        },
+        {
+          "source_type": "object*",
+          "target_type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredLong",
+          "count": 87
+        },
+        {
+          "source_type": "nint",
+          "target_type": "System.Delegate",
+          "count": 80
+        },
+        {
+          "source_type": "int",
+          "target_type": "UnityEngine.Vector2",
+          "count": 79
+        },
+        {
+          "source_type": "Nekki.SF2.Core.Fights.Model.Support.ModelParameters",
+          "target_type": "nint",
+          "count": 76
+        },
+        {
+          "source_type": "Nekki.SF2.GUI.ResolutionImage",
+          "target_type": "nint",
+          "count": 70
+        },
+        {
+          "source_type": "System.Type",
+          "target_type": "int",
+          "count": 70
+        },
+        {
+          "source_type": "System.Text.StringBuilder",
+          "target_type": "nint",
+          "count": 56
+        },
+        {
+          "source_type": "Nekki.SF2.GUI.TableViewCell",
+          "target_type": "nint",
+          "count": 50
+        },
+        {
+          "source_type": "Nekki.SF2.Core.Zones.Battle",
+          "target_type": "nint",
+          "count": 49
+        },
+        {
+          "source_type": "object*",
+          "target_type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat",
+          "count": 48
+        },
+        {
+          "source_type": "nint",
+          "target_type": "string",
+          "count": 46
+        },
+        {
+          "source_type": "Nekki.SF2.Core.API.Items.ItemInfo",
+          "target_type": "nint",
+          "count": 44
+        },
+        {
+          "source_type": "Nekki.SF2.GUI.Pvp.PhaseItem",
+          "target_type": "nint",
+          "count": 44
+        },
+        {
+          "source_type": "System.Xml.XmlElement",
+          "target_type": "nint",
+          "count": 43
+        },
+        {
+          "source_type": "UnityEngine.UI.Image",
+          "target_type": "nint",
+          "count": 41
+        },
+        {
+          "source_type": "ProgressBar",
+          "target_type": "nint",
+          "count": 37
+        }
+      ],
+      "operator_pairs": [
+        {
+          "operator": "&",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 1920
+        },
+        {
+          "operator": "-",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 230
+        },
+        {
+          "operator": "+",
+          "left_type": "int",
+          "right_type": "object",
+          "count": 168
+        },
+        {
+          "operator": "+",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 155
+        },
+        {
+          "operator": "^",
+          "left_type": "float",
+          "right_type": "float",
+          "count": 130
+        },
+        {
+          "operator": "&",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 116
+        },
+        {
+          "operator": "+",
+          "left_type": "Type",
+          "right_type": "int",
+          "count": 98
+        },
+        {
+          "operator": "+",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 95
+        },
+        {
+          "operator": "-",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 54
+        },
+        {
+          "operator": "^",
+          "left_type": "object",
+          "right_type": "object",
+          "count": 52
+        },
+        {
+          "operator": "+",
+          "left_type": "Model",
+          "right_type": "int",
+          "count": 51
+        },
+        {
+          "operator": "+",
+          "left_type": "SFScrollRect",
+          "right_type": "int",
+          "count": 48
+        },
+        {
+          "operator": "+",
+          "left_type": "string[]",
+          "right_type": "int",
+          "count": 47
+        },
+        {
+          "operator": "-",
+          "left_type": "int",
+          "right_type": "Type",
+          "count": 42
+        },
+        {
+          "operator": "+=",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 31
+        },
+        {
+          "operator": "+",
+          "left_type": "ItemInfo",
+          "right_type": "int",
+          "count": 28
+        },
+        {
+          "operator": "+",
+          "left_type": "SwitchInputDevice",
+          "right_type": "int",
+          "count": 28
+        },
+        {
+          "operator": "^",
+          "left_type": "double",
+          "right_type": "double",
+          "count": 25
+        },
+        {
+          "operator": "^",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 24
+        },
+        {
+          "operator": ">>",
+          "left_type": "VersionInfo",
+          "right_type": "int",
+          "count": 23
+        },
+        {
+          "operator": "-",
+          "left_type": "int",
+          "right_type": "object",
+          "count": 22
+        },
+        {
+          "operator": "+",
+          "left_type": "FightList",
+          "right_type": "int",
+          "count": 21
+        },
+        {
+          "operator": "+",
+          "left_type": "MenuItemStory",
+          "right_type": "int",
+          "count": 20
+        },
+        {
+          "operator": "+",
+          "left_type": "RewardPrize",
+          "right_type": "int",
+          "count": 19
+        },
+        {
+          "operator": "+",
+          "left_type": "Roster",
+          "right_type": "int",
+          "count": 19
+        },
+        {
+          "operator": "+",
+          "left_type": "CharacterSelectModule",
+          "right_type": "int",
+          "count": 19
+        },
+        {
+          "operator": "+",
+          "left_type": "SelectModule",
+          "right_type": "int",
+          "count": 18
+        },
+        {
+          "operator": "+",
+          "left_type": "Fight",
+          "right_type": "int",
+          "count": 17
+        },
+        {
+          "operator": "*",
+          "left_type": "object",
+          "right_type": "int",
+          "count": 16
+        },
+        {
+          "operator": "+",
+          "left_type": "RaidLeaderboardsManager",
+          "right_type": "int",
+          "count": 16
+        }
+      ],
+      "top_cast_operator_files": [
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\API\\ListSF.cs",
+          "count": 568
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Console\\ConsoleCommands.cs",
+          "count": 420
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Fights\\Model\\Model.cs",
+          "count": 328
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\API\\Roster.cs",
+          "count": 323
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Utils\\GameUtils.cs",
+          "count": 285
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Fights\\Fight.cs",
+          "count": 280
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\InControl\\InputManager.cs",
+          "count": 279
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\API\\Items\\ItemInfo.cs",
+          "count": 230
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Localization\\LocalizationManager.cs",
+          "count": 197
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Network\\GeneralConfig.cs",
+          "count": 187
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Fights\\Model\\Animation\\Moves\\InfoAnimation.cs",
+          "count": 186
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\GUI\\SFScrollRect.cs",
+          "count": 184
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Fights\\Model\\AI\\Data\\AiData.cs",
+          "count": 182
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Fights\\Model\\Animation\\Moves\\MovesParser.cs",
+          "count": 156
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\MultiplayerSF\\IconPathHelper.cs",
+          "count": 155
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Fights\\Model\\AI\\ModelAi.cs",
+          "count": 154
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Utils\\Perks\\PerkInfoItem.cs",
+          "count": 152
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\Core\\Utils\\Perks\\InfoPerk.cs",
+          "count": 149
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\GUI\\Map\\MapButtonController.cs",
+          "count": 145
+        },
+        {
+          "path": "analysis\\il2cpp\\source-profile-project-build-nso-runtime-helper-abi-v37\\Assembly-CSharp\\Nekki\\SF2\\GUI\\Common\\BottomPanel.cs",
+          "count": 142
+        }
+      ]
+    }
+  ],
+  "complete_matching_reference_report_sha256": "7f2c56bf344f90615965cfabde9196d998d65dad3e5e2220e8bfab931a955115",
+  "private_diagnostic_path": "analysis\\reconstruction\\compiler-family-v37\\canonical-diagnostics.json",
+  "private_diagnostic_sha256": "6147db3bc2a1bd15322044d85718151f6bd0a5d93b4c5c4c114c28cd2a86fa47",
+  "source_edited": false,
+  "core_edited": false,
+  "export_performed": false,
+  "source_excerpts_in_report": false,
+  "full_clean_decompile_ready": false,
+  "scope": "Complete canonical unique compiler lines, deduplicated repeated build summaries. Diagnostic counts are not independent root causes or a decompilation completeness percentage. Source/native/IR candidate review is separate."
+}

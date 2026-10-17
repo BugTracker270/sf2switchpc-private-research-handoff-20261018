@@ -1,0 +1,12 @@
+{
+  "status": "PASS_RECOVERED_BOOLEAN_DECISIONS_VS_ORIGINAL_NATIVE",
+  "recovery_run": "nso-sparse-params-v25",
+  "cases": 4,
+  "checks": 12,
+  "isolation_reference_cases": 4,
+  "failures": [],
+  "fatal": null,
+  "assembly_sha256": "6a37f1ce7bd0dc4edcb24567ef80e2a37f945b2adf8a20e1b2c9c88b42bc5dbe",
+  "fixture_sha256": "2f5f22d9afbf62d51148ff4dbe1e787cf6a0624ae110640deaad68fc2e6684dc",
+  "scope": "Executes recovered getter/setter CIL in DynamicMethods. Exact field tokens map to a same-type boolean test field and the sole Init callback maps to an observable counter. All other instruction and branch bytes/local types remain. No game DLL modification; class initialization, Init contents and complete-game parity are outside scope."
+}

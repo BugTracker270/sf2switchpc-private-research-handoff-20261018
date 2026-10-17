@@ -1,0 +1,26 @@
+{
+  "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovery_run": "nso-virtual-dispatch-v36",
+  "cases": 0,
+  "checks": 0,
+  "lazy_initialization_cases": 0,
+  "already_initialized_cases": 0,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": "System.IO.InvalidDataException: Reachable unresolved helper/unsafe address operation; actual body was not executed",
+  "blocked_calls": [
+    {
+      "offset": 200,
+      "target": "Void NoteDecompilerIssue(System.String)",
+      "declaring_type": "Cpp2ILInjected.Cpp2ILHelpers",
+      "diagnostic": "Indirect call: [v97 @ X8_v13 (Il2CppClass\u003CCodeStage.AntiCheat.Detectors.ObscuredCheatingDetector\u003E)\u002B198] (should have been resolved before IL gen)"
+    }
+  ],
+  "unreachable_helper_calls": 0,
+  "cil_sha256": "a5205a5ff8db842dd1364036451ba57e703964274a9b2a2c0ee9ae92217d0b0b",
+  "assembly_sha256": "224877d85a8b3dcde0a6f3f1d766ee3eafd7b02f00281b142d95b37ba0a64031",
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+}

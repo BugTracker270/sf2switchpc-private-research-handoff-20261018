@@ -1,0 +1,14 @@
+{
+  "status": "AUXILIARY_RANGE_EXPORT_COMPLETE",
+  "progress": {
+    "total_targets": 9774,
+    "completed_records": 9774,
+    "new_pseudocode_exports": 1774,
+    "failed_records": 0
+  },
+  "exit_code": 0,
+  "scope": "Independent module range pseudocode/disassembly exports only. No main index mutation or complete clean source claim.",
+  "console": "F:\\SF2SwitchPC\\logs\\auxiliary-subsdk0-20261017-015822-console.log",
+  "project": "SF2-aux-subsdk0-v1",
+  "module": "subsdk0"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "RECOVERY_EXECUTION_LIMITATION_CONFIRMED",
+  "recovery_run": "nso-runtime-helper-abi-v37",
+  "cases": 0,
+  "checks": 0,
+  "lazy_initialization_cases": 0,
+  "already_initialized_cases": 0,
+  "failure_count": 0,
+  "first_failures": [],
+  "fatal": "System.IO.InvalidDataException: Unresolved helper has no exact verified absent-detector exclusion or negative control failed",
+  "blocked_calls": [],
+  "unreachable_helper_calls": 0,
+  "cil_sha256": "032fd9be8c7af8ecbde49509edd95e66549b4fc3436af8e36e99936e3ae391aa",
+  "assembly_sha256": "3ab76612b0ec3f84951a6b3071b019185f1b9f699b0558dcf202d6bf5f73468c",
+  "fixture_sha256": "57a4115d9c06994d6f6d18bdf58ce8dccdec5ef9f385b3fa27c2cc5562014ff0",
+  "cil_or_source_edited": false,
+  "tokens_remapped": 0,
+  "probe_source_sha256": "9039f5bb867001443d7a3f081fda0f0905b74d3864b3e30a294db1279d525cf8",
+  "getter_cil_sha256": "e2fc24869b8d39bb20cf308dda7ffe9c838bfb5cca2ea6af9a92b3d391c8c0fb",
+  "exact_null_getter_boundary_proved": false,
+  "null_boundary_checks": 0,
+  "scope_guard_controls": [
+    {
+      "control": "exact_original_null_getter_branch",
+      "passed": false
+    },
+    {
+      "control": "non_null_detector_rejected_without_invocation",
+      "passed": true
+    },
+    {
+      "control": "altered_getter_copy_rejected_without_execution",
+      "passed": true
+    },
+    {
+      "control": "altered_branch_copy_rejected_without_execution",
+      "passed": true
+    }
+  ],
+  "scope_excluded_helpers": [],
+  "analysis_only_forced_null_branch": null,
+  "active_detector_callback_recovered": false,
+  "active_detector_callback_executed": false,
+  "scope": "Calls actual recovered private InternalDecrypt CIL directly on a CLR-boxed value with original fields, no clones or CIL/source/token edits. Native absent-detector fixtures only, explicit initialized cryptoKey and detector statics; original CLR type initializers may execute. Checks return bits, all declared post-state fields, lazy initialization and unchanged key. Native padding, native object header/GC, constructors, active detector/callback, general integer aggregate ABI, conversions and complete source remain outside this comparison."
+}
